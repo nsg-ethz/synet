@@ -1,0 +1,35 @@
++Fwd("NYC_N_1", "ATL", "DC",  "static").
++Fwd("NYC_N_1", "CHIC", "NYC", "static").
++Fwd("NYC_N_1", "DC",  "NYC", "static").
++Fwd("NYC_N_1", "HOUS", "ATL", "static").
++Fwd("NYC_N_1", "KANS", "CHIC", "static").
++Fwd("NYC_N_1", "LAX", "HOUS", "static").
++Fwd("NYC_N_1", "SALT", "KANS", "static").
++Fwd("NYC_N_1", "SEAT", "SALT", "static").
+
++Fwd("NYC_N_2", "ATL", "DC",  "static").
++Fwd("NYC_N_2", "CHIC", "NYC", "static").
++Fwd("NYC_N_2", "DC",  "NYC", "static").
++Fwd("NYC_N_2", "HOUS", "KANS", "static").
++Fwd("NYC_N_2", "KANS", "CHIC", "static").
++Fwd("NYC_N_2", "LAX", "HOUS", "static").
++Fwd("NYC_N_2", "SALT", "KANS", "static").
++Fwd("NYC_N_2", "SEAT", "SALT", "static").
+
++Fwd("SEAT_N_1", "ATL", "CHIC", "static").
++Fwd("SEAT_N_1", "CHIC", "KANS", "static").
++Fwd("SEAT_N_1", "DC",  "CHIC", "static").
++Fwd("SEAT_N_1", "HOUS", "KANS", "static").
++Fwd("SEAT_N_1", "KANS", "SALT", "static").
++Fwd("SEAT_N_1", "LAX", "SEAT", "static").
++Fwd("SEAT_N_1", "NYC", "CHIC", "static").
++Fwd("SEAT_N_1", "SALT", "SEAT", "static").
+
+
+//+Fwd("GOOGLE", "ATL",  "CHIC",  "bgp").
+//+Fwd("GOOGLE", "CHIC", "KANS",  "bgp").
+//+Fwd("GOOGLE", "DC",   "CHIC",  "bgp").
+//+Fwd("GOOGLE", "HOUS", "KANS",  "bgp").
+//+Fwd("GOOGLE", "KANS", "SALT",  "bgp").
+//+Fwd("GOOGLE", "LAX",  "SEAT",  "bgp").
+//+Fwd("GOOGLE", "SALT", "SEAT",  "bgp").

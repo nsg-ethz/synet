@@ -1,0 +1,22 @@
+// ----------------------------- TYPES ----------------------------- //
+Vertex(n) -> string(n).
+
+// EDB: BGPLocalPref, SetBGPAnnouncement
+SetBGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath), int(ASPathLength).
+
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+// IDB: BGPAnnouncement,
+BGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+    
+// ------------------------------ IBGP 2/9 ------------------------------//
+
+BGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    SetBGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength),
+    BGPLocalPref(node, next_hop, prefix, pref).
+
+// ------------------------------ THE END ------------------------------//

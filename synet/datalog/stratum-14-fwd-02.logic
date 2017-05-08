@@ -1,0 +1,30 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+// Generic Vertex type
+Vertex(n) -> string(n).
+
+// EDB: Fwd, EdgePhy
+//EdgePhy(node1, node2) -> Vertex(node1), Vertex(node2).
+ConnectedNodes(snode, siface, diface, dnode) ->
+    Vertex(snode), Vertex(siface), Vertex(diface), Vertex(dnode).
+Fwd(net, snode, dnode, protocol) -> Vertex(net), Vertex(snode), Vertex(dnode), string(protocol).
+
+// IDB: OutgoingFwdInterface, IncomingFwdInterface
+OutgoingFwdInterface(net, snode, siface) -> Vertex(net), Vertex(snode), Vertex(siface).
+IncomingFwdInterface(net, diface, dnode) -> Vertex(net), Vertex(diface), Vertex(dnode).
+
+// ------------------------------ FWD 2/3 ------------------------------//
+
+//Outgoing edge of of the router, used to prevent loops
+OutgoingFwdInterface(network, snode, siface) <-
+    Fwd(network, snode, dnode, _),
+    ConnectedNodes(snode, siface, _, dnode).
+    //EdgePhy(snode, siface), EdgePhy(siface, diface), EdgePhy(diface, dnode).
+
+IncomingFwdInterface(network, diface, dnode) <-
+    Fwd(network, snode, dnode, _),
+    ConnectedNodes(snode, _, diface, dnode).
+    //EdgePhy(snode, siface), EdgePhy(siface, diface), EdgePhy(diface, dnode).
+
+// ------------------------------ THE END ------------------------------//

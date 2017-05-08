@@ -1,0 +1,239 @@
+IN BOX ospf01
+IN BOX ospf02-0
+IN BOX ospf02-1
+IN BOX fwd01-0
+IN BOX fwd01-1
+Couldn't import dot_parser, loading of dot files will not be possible.
+Loading user provided input for box: ospf01 []
+Checking initial inputs for box ospf01
+Loading user provided outputs for box: ospf01 []
+Loading user provided input for box: ospf02-0 []
+Checking initial inputs for box ospf02-0
+Loading user provided outputs for box: ospf02-0 []
+Loading user provided input for box: ospf02-1 []
+Checking initial inputs for box ospf02-1
+Loading user provided outputs for box: ospf02-1 []
+Loading user provided input for box: fwd01-0 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True]
+Checking initial inputs for box fwd01-0
+Loading user provided outputs for box: fwd01-0 []
+HEY
+Loading user provided input for box: fwd01-1 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True]
+Checking initial inputs for box fwd01-1
+Loading user provided outputs for box: fwd01-1 [Fwd(R11_N0, R12, R11, 1) == True, Fwd(R11_N0, R13, R12, 1) == True, Fwd(R11_N0, R31, R21, 1) == True, Fwd(R11_N0, R32, R31, 1) == True, Fwd(R11_N0, R33, R32, 1) == True, Fwd(R11_N0, R23, R22, 1) == True, Fwd(R11_N0, R22, R21, 1) == True, Fwd(R11_N0, R21, R11, 0) == True]
+
+Beginning Synthesis...
+##############################
+Synthesizing for box 4 fwd01-1
+Feeding desired outputs for fwd01-1...
+Checking SAT for box fwd01-1 ...
+SAT, reading inputs...
+	Synthesized input SetAdminDist [[R11, 0, 1, True], [R11, 2, 2, True], [R11, 1, 3, True], [R12, 0, 1, True], [R12, 2, 2, True], [R12, 1, 3, True], [R13, 0, 1, True], [R13, 2, 2, True], [R13, 1, 3, True], [R21, 0, 1, True], [R21, 2, 2, True], [R21, 1, 3, True], [R22, 0, 1, True], [R22, 2, 2, True], [R22, 1, 3, True], [R23, 0, 1, True], [R23, 2, 2, True], [R23, 1, 3, True], [R31, 0, 1, True], [R31, 2, 2, True], [R31, 1, 3, True], [R32, 0, 1, True], [R32, 2, 2, True], [R32, 1, 3, True], [R33, 0, 1, True], [R33, 2, 2, True], [R33, 1, 3, True], 'False']
+	Synthesized input Route [[R11_N0, R12, R11, 1, True], [R11_N0, R13, R12, 1, True], [R11_N0, R31, R21, 1, True], [R11_N0, R32, R31, 1, True], [R11_N0, R33, R32, 1, True], [R11_N0, R23, R22, 1, True], [R11_N0, R22, R21, 1, True], [R11_N0, R21, R11, 0, True], [R11_N0, R21, R11, 1, True], 'False']
+	Synthesized input nonMinCostAD [[R11_N0, R21, 3, True], [R11_N0, R21, 2, True], 'False']
+##############################
+Synthesizing for box 3 fwd01-0
+Feeding desired outputs for fwd01-0...
+	Feeding desired output fwd01-0 [Route(R11_N0, R12, R11, 1) == True, Route(R11_N0, R13, R12, 1) == True, Route(R11_N0, R31, R21, 1) == True, Route(R11_N0, R32, R31, 1) == True, Route(R11_N0, R33, R32, 1) == True, Route(R11_N0, R23, R22, 1) == True, Route(R11_N0, R22, R21, 1) == True, Route(R11_N0, R21, R11, 0) == True, Route(R11_N0, R21, R11, 1) == True, ForAll([t0, t1, t2, t3],
+       Implies(Not(Or(And(t0 == R11_N0,
+                          t1 == R12,
+                          t2 == R11,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R13,
+                          t2 == R12,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R31,
+                          t2 == R21,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R32,
+                          t2 == R31,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R33,
+                          t2 == R32,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R23,
+                          t2 == R22,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R22,
+                          t2 == R21,
+                          t3 == 1),
+                      And(t0 == R11_N0,
+                          t1 == R21,
+                          t2 == R11,
+                          t3 == 0),
+                      And(t0 == R11_N0,
+                          t1 == R21,
+                          t2 == R11,
+                          t3 == 1))),
+               Route(t0, t1, t2, t3) == False))]
+	Feeding desired output fwd01-0 [nonMinCostAD(R11_N0, R21, 3) == True, nonMinCostAD(R11_N0, R21, 2) == True, ForAll([t0, t1, t2],
+       Implies(Not(Or(And(t0 == R11_N0, t1 == R21, t2 == 3),
+                      And(t0 == R11_N0, t1 == R21, t2 == 2))),
+               nonMinCostAD(t0, t1, t2) == False))]
+	Feeding shortcut INPUT fwd01-0 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, ForAll([t0, t1, t2],
+       Implies(Not(Or(And(t0 == R11, t1 == 0, t2 == 1),
+                      And(t0 == R11, t1 == 2, t2 == 2),
+                      And(t0 == R11, t1 == 1, t2 == 3),
+                      And(t0 == R12, t1 == 0, t2 == 1),
+                      And(t0 == R12, t1 == 2, t2 == 2),
+                      And(t0 == R12, t1 == 1, t2 == 3),
+                      And(t0 == R13, t1 == 0, t2 == 1),
+                      And(t0 == R13, t1 == 2, t2 == 2),
+                      And(t0 == R13, t1 == 1, t2 == 3),
+                      And(t0 == R21, t1 == 0, t2 == 1),
+                      And(t0 == R21, t1 == 2, t2 == 2),
+                      And(t0 == R21, t1 == 1, t2 == 3),
+                      And(t0 == R22, t1 == 0, t2 == 1),
+                      And(t0 == R22, t1 == 2, t2 == 2),
+                      And(t0 == R22, t1 == 1, t2 == 3),
+                      And(t0 == R23, t1 == 0, t2 == 1),
+                      And(t0 == R23, t1 == 2, t2 == 2),
+                      And(t0 == R23, t1 == 1, t2 == 3),
+                      And(t0 == R31, t1 == 0, t2 == 1),
+                      And(t0 == R31, t1 == 2, t2 == 2),
+                      And(t0 == R31, t1 == 1, t2 == 3),
+                      And(t0 == R32, t1 == 0, t2 == 1),
+                      And(t0 == R32, t1 == 2, t2 == 2),
+                      And(t0 == R32, t1 == 1, t2 == 3),
+                      And(t0 == R33, t1 == 0, t2 == 1),
+                      And(t0 == R33, t1 == 2, t2 == 2),
+                      And(t0 == R33, t1 == 1, t2 == 3))),
+               SetAdminDist(t0, t1, t2) == False))]
+Checking SAT for box fwd01-0 ...
+SAT, reading inputs...
+	Synthesized input MinIGPBGPRoute ['False']
+	Synthesized input SetAdminDist [[R11, 0, 1, True], [R11, 2, 2, True], [R11, 1, 3, True], [R12, 0, 1, True], [R12, 2, 2, True], [R12, 1, 3, True], [R13, 0, 1, True], [R13, 2, 2, True], [R13, 1, 3, True], [R21, 0, 1, True], [R21, 2, 2, True], [R21, 1, 3, True], [R22, 0, 1, True], [R22, 2, 2, True], [R22, 1, 3, True], [R23, 0, 1, True], [R23, 2, 2, True], [R23, 1, 3, True], [R31, 0, 1, True], [R31, 2, 2, True], [R31, 1, 3, True], [R32, 0, 1, True], [R32, 2, 2, True], [R32, 1, 3, True], [R33, 0, 1, True], [R33, 2, 2, True], [R33, 1, 3, True], 'False']
+	Synthesized input SetStaticRoute [[R11_N0, R21, R11, True], 'False']
+	Synthesized input BestOSPFRoute [[R11_N0, R12, R11, 11, True], [R11_N0, R13, R12, 12, True], [R11_N0, R31, R21, 8, True], [R11_N0, R32, R31, 10, True], [R11_N0, R33, R32, 13, True], [R11_N0, R23, R22, 17, True], [R11_N0, R22, R21, 9, True], [R11_N0, R21, R11, 6, True], 'False']
+##############################
+Synthesizing for box 2 ospf02-1
+Feeding desired outputs for ospf02-1...
+	Feeding desired output ospf02-1 [BestOSPFRoute(R11_N0, R12, R11, 11) == True, BestOSPFRoute(R11_N0, R13, R12, 12) == True, BestOSPFRoute(R11_N0, R31, R21, 8) == True, BestOSPFRoute(R11_N0, R32, R31, 10) == True, BestOSPFRoute(R11_N0, R33, R32, 13) == True, BestOSPFRoute(R11_N0, R23, R22, 17) == True, BestOSPFRoute(R11_N0, R22, R21, 9) == True, BestOSPFRoute(R11_N0, R21, R11, 6) == True, ForAll([t0, t1, t2, t3],
+       Implies(Not(Or(And(t0 == R11_N0,
+                          t1 == R12,
+                          t2 == R11,
+                          t3 == 11),
+                      And(t0 == R11_N0,
+                          t1 == R13,
+                          t2 == R12,
+                          t3 == 12),
+                      And(t0 == R11_N0,
+                          t1 == R31,
+                          t2 == R21,
+                          t3 == 8),
+                      And(t0 == R11_N0,
+                          t1 == R32,
+                          t2 == R31,
+                          t3 == 10),
+                      And(t0 == R11_N0,
+                          t1 == R33,
+                          t2 == R32,
+                          t3 == 13),
+                      And(t0 == R11_N0,
+                          t1 == R23,
+                          t2 == R22,
+                          t3 == 17),
+                      And(t0 == R11_N0,
+                          t1 == R22,
+                          t2 == R21,
+                          t3 == 9),
+                      And(t0 == R11_N0,
+                          t1 == R21,
+                          t2 == R11,
+                          t3 == 6))),
+               BestOSPFRoute(t0, t1, t2, t3) == False))]
+Checking SAT for box ospf02-1 ...
+SAT, reading inputs...
+	Synthesized input nonMinOSPFRouteCost ['False']
+	Synthesized input OSPFRoute [[R11_N0, R12, R11, 11, True], [R11_N0, R13, R12, 12, True], [R11_N0, R31, R21, 8, True], [R11_N0, R32, R31, 10, True], [R11_N0, R33, R32, 13, True], [R11_N0, R23, R22, 17, True], [R11_N0, R22, R21, 9, True], [R11_N0, R21, R11, 6, True], 'False']
+##############################
+Synthesizing for box 1 ospf02-0
+Feeding desired outputs for ospf02-0...
+	Feeding desired output ospf02-0 [ForAll([t0, t1, t2],
+       nonMinOSPFRouteCost(t0, t1, t2) == False)]
+	Feeding shortcut INPUT ospf02-0 [OSPFRoute(R11_N0, R12, R11, 11) == True, OSPFRoute(R11_N0, R13, R12, 12) == True, OSPFRoute(R11_N0, R31, R21, 8) == True, OSPFRoute(R11_N0, R32, R31, 10) == True, OSPFRoute(R11_N0, R33, R32, 13) == True, OSPFRoute(R11_N0, R23, R22, 17) == True, OSPFRoute(R11_N0, R22, R21, 9) == True, OSPFRoute(R11_N0, R21, R11, 6) == True]
+Checking SAT for box ospf02-0 ...
+SAT, reading inputs...
+	Synthesized input OSPFRoute [[R11_N0, R12, R11, 11, True], [R11_N0, R13, R12, 12, True], [R11_N0, R31, R21, 8, True], [R11_N0, R32, R31, 10, True], [R11_N0, R33, R32, 13, True], [R11_N0, R23, R22, 17, True], [R11_N0, R22, R21, 9, True], [R11_N0, R21, R11, 6, True], 'False']
+partially evaluate the OSPF Datalog rules
+OSPFRoute(network, src, next, cost) <- !EdgePhy(src, network), Network(network), ConnectedNodes(src, siface, diface, next), SetOSPFEdgeCost(siface, diface, cost1), OSPFRoute(network, next, next2, cost2), cost = cost1 + cost2, cost < 100, src != next2
+OSPFRoute_R11_N0_R12_R11(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="I12_2", nxt="I11_1", cost = 11.
+OSPFRoute_R11_N0_R12_R11(cost) -> int(cost).
+OSPFRoute_R11_N0_R13_R12(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I13_2", nxt="I12_1", cost = cost1 + 11.
+OSPFRoute_R11_N0_R13_R12(cost) -> int(cost).
+OSPFRoute_R11_N0_R22_R21(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I22_2", nxt="I21_1", cost = cost1 + 6.
+OSPFRoute_R11_N0_R22_R21(cost) -> int(cost).
+OSPFRoute_R11_N0_R21_R11(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="I21_4", nxt="I11_3", cost = 6.
+OSPFRoute_R11_N0_R21_R11(cost) -> int(cost).
+OSPFRoute_R11_N0_R23_R22(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I23_2", nxt="I22_1", cost = cost1 + 9.
+OSPFRoute_R11_N0_R23_R22(cost) -> int(cost).
+OSPFRoute_R11_N0_R31_R21(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I31_4", nxt="I21_3", cost = cost1 + 6.
+OSPFRoute_R11_N0_R31_R21(cost) -> int(cost).
+OSPFRoute_R11_N0_R32_R31(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I32_2", nxt="I31_1", cost = cost1 + 8.
+OSPFRoute_R11_N0_R32_R31(cost) -> int(cost).
+OSPFRoute_R11_N0_R33_R32(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I33_2", nxt="I32_1", cost = cost1 + 10.
+OSPFRoute_R11_N0_R33_R32(cost) -> int(cost).
+OSPFRoute_R11_N0_R12_R11(11) == True
+ForAll(cost, OSPFRoute_R11_N0_R12_R11(cost) == (cost == 11))
+OSPFRoute_R11_N0_R13_R12(12) == True
+ForAll(cost, OSPFRoute_R11_N0_R13_R12(cost) == (cost == 12))
+OSPFRoute_R11_N0_R31_R21(8) == True
+ForAll(cost, OSPFRoute_R11_N0_R31_R21(cost) == (cost == 8))
+OSPFRoute_R11_N0_R32_R31(10) == True
+ForAll(cost, OSPFRoute_R11_N0_R32_R31(cost) == (cost == 10))
+OSPFRoute_R11_N0_R33_R32(13) == True
+ForAll(cost, OSPFRoute_R11_N0_R33_R32(cost) == (cost == 13))
+OSPFRoute_R11_N0_R23_R22(17) == True
+ForAll(cost, OSPFRoute_R11_N0_R23_R22(cost) == (cost == 17))
+OSPFRoute_R11_N0_R22_R21(9) == True
+ForAll(cost, OSPFRoute_R11_N0_R22_R21(cost) == (cost == 9))
+OSPFRoute_R11_N0_R21_R11(6) == True
+ForAll(cost, OSPFRoute_R11_N0_R21_R11(cost) == (cost == 6))
+##############################
+Synthesizing for box 0 ospf01
+Feeding desired outputs for ospf01...
+	Feeding desired output ospf01 [OSPFRoute_1(R11_N0, R12, R11, 11) == True, OSPFRoute_1(R11_N0, R13, R12, 12) == True, OSPFRoute_1(R11_N0, R31, R21, 8) == True, OSPFRoute_1(R11_N0, R32, R31, 10) == True, OSPFRoute_1(R11_N0, R33, R32, 13) == True, OSPFRoute_1(R11_N0, R23, R22, 17) == True, OSPFRoute_1(R11_N0, R22, R21, 9) == True, OSPFRoute_1(R11_N0, R21, R11, 6) == True]
+	Feeding desired output ospf01 [OSPFRoute_1(R11_N0, R12, R11, 11) == True, OSPFRoute_1(R11_N0, R13, R12, 12) == True, OSPFRoute_1(R11_N0, R31, R21, 8) == True, OSPFRoute_1(R11_N0, R32, R31, 10) == True, OSPFRoute_1(R11_N0, R33, R32, 13) == True, OSPFRoute_1(R11_N0, R23, R22, 17) == True, OSPFRoute_1(R11_N0, R22, R21, 9) == True, OSPFRoute_1(R11_N0, R21, R11, 6) == True]
+Checking SAT for box ospf01 ...
+SAT, reading inputs...
+	Synthesized input ConnectedNodes [[R12, I12_3, I22_4, R22, True], [R12, I12_1, I13_2, R13, True], [R12, I12_2, I11_1, R11, True], [R23, I23_4, I13_3, R13, True], [R11, I11_3, I21_4, R21, True], [R11, I11_1, I12_2, R12, True], [R31, I31_4, I21_3, R21, True], [R31, I31_1, I32_2, R32, True], [R23, I23_2, I22_1, R22, True], [R22, I22_1, I23_2, R23, True], [R13, I13_3, I23_4, R23, True], [R22, I22_2, I21_1, R21, True], [R21, I21_3, I31_4, R31, True], [R21, I21_1, I22_2, R22, True], [R32, I32_1, I33_2, R33, True], [R33, I33_2, I32_1, R32, True], [R22, I22_3, I32_4, R32, True], [R33, I33_4, I23_3, R23, True], [R21, I21_4, I11_3, R11, True], [R22, I22_4, I12_3, R12, True], [R32, I32_4, I22_3, R22, True], [R32, I32_2, I31_1, R31, True], [R23, I23_3, I33_4, R33, True], [R13, I13_2, I12_1, R12, True], 'False']
+	Synthesized input EdgePhy [[I13_4, R13, True], [I23_1, R23, True], [I23_2, I22_1, True], [I23_2, R23, True], [I23_3, I33_4, True], [I23_3, R23, True], [R12, I12_4, True], [R12, I12_1, True], [R12, I12_2, True], [R12, I12_3, True], [R13, I13_4, True], [R13, I13_1, True], [R13, I13_3, True], [R13, I13_2, True], [R11, R11_N0, True], [R11, I11_3, True], [R11, I11_2, True], [R11, I11_1, True], [R11, I11_4, True], [I21_4, I11_3, True], [I21_4, R21, True], [R11_N0, R11, True], [I21_2, R21, True], [I21_3, I31_4, True], [I21_3, R21, True], [I21_1, I22_2, True], [I21_1, R21, True], [I22_1, I23_2, True], [I22_1, R22, True], [I22_3, I32_4, True], [I22_3, R22, True], [I22_2, I21_1, True], [I22_2, R22, True], [I22_4, I12_3, True], [I22_4, R22, True], [R32, I32_4, True], [R32, I32_2, True], [R32, I32_3, True], [R32, I32_1, True], [R33, I33_4, True], [R33, I33_3, True], [R33, I33_2, True], [R33, I33_1, True], [I12_4, R12, True], [I12_1, R12, True], [I12_1, I13_2, True], [I12_2, R12, True], [I12_2, I11_1, True], [I12_3, R12, True], [I12_3, I22_4, True], [I33_4, I23_3, True], [I33_4, R33, True], [I33_3, R33, True], [I33_2, R33, True], [I33_2, I32_1, True], [I33_1, R33, True], [I31_4, I21_3, True], [I31_4, R31, True], [I23_4, I13_3, True], [I23_4, R23, True], [I13_1, R13, True], [I13_3, R13, True], [I13_3, I23_4, True], [I13_2, R13, True], [I13_2, I12_1, True], [I11_3, R11, True], [I11_3, I21_4, True], [I11_2, R11, True], [I11_1, R11, True], [I11_1, I12_2, True], [I11_4, R11, True], [R31, I31_4, True], [R31, I31_1, True], [R31, I31_3, True], [R31, I31_2, True], [I32_4, I22_3, True], [I32_4, R32, True], [I32_2, R32, True], [I32_2, I31_1, True], [I32_3, R32, True], [I32_1, R32, True], [I32_1, I33_2, True], [I31_1, R31, True], [I31_1, I32_2, True], [I31_3, R31, True], [I31_2, R31, True], [R23, I23_1, True], [R23, I23_2, True], [R23, I23_3, True], [R23, I23_4, True], [R22, I22_1, True], [R22, I22_3, True], [R22, I22_2, True], [R22, I22_4, True], [R21, I21_4, True], [R21, I21_2, True], [R21, I21_3, True], [R21, I21_1, True], 'False']
+	Synthesized input Network [[R11_N0, True], 'False']
+	Synthesized input SetOSPFEdgeCost [[I22_2, I21_1, 3, True], [I21_4, I11_3, 6, True], [I23_2, I22_1, 8, True], [I31_4, I21_3, 2, True], [I13_2, I12_1, 1, True], [I12_2, I11_1, 11, True], [I32_2, I31_1, 2, True], [I33_2, I32_1, 3, True], 'False']
+Done!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Final results...
+For box ospf01
+	Synthesized input ConnectedNodes [[R12, I12_3, I22_4, R22], [R12, I12_1, I13_2, R13], [R12, I12_2, I11_1, R11], [R23, I23_4, I13_3, R13], [R11, I11_3, I21_4, R21], [R11, I11_1, I12_2, R12], [R31, I31_4, I21_3, R21], [R31, I31_1, I32_2, R32], [R23, I23_2, I22_1, R22], [R22, I22_1, I23_2, R23], [R13, I13_3, I23_4, R23], [R22, I22_2, I21_1, R21], [R21, I21_3, I31_4, R31], [R21, I21_1, I22_2, R22], [R32, I32_1, I33_2, R33], [R33, I33_2, I32_1, R32], [R22, I22_3, I32_4, R32], [R33, I33_4, I23_3, R23], [R21, I21_4, I11_3, R11], [R22, I22_4, I12_3, R12], [R32, I32_4, I22_3, R22], [R32, I32_2, I31_1, R31], [R23, I23_3, I33_4, R33], [R13, I13_2, I12_1, R12], 'False']
+	Synthesized input EdgePhy [[I13_4, R13], [I23_1, R23], [I23_2, I22_1], [I23_2, R23], [I23_3, I33_4], [I23_3, R23], [R12, I12_4], [R12, I12_1], [R12, I12_2], [R12, I12_3], [R13, I13_4], [R13, I13_1], [R13, I13_3], [R13, I13_2], [R11, R11_N0], [R11, I11_3], [R11, I11_2], [R11, I11_1], [R11, I11_4], [I21_4, I11_3], [I21_4, R21], [R11_N0, R11], [I21_2, R21], [I21_3, I31_4], [I21_3, R21], [I21_1, I22_2], [I21_1, R21], [I22_1, I23_2], [I22_1, R22], [I22_3, I32_4], [I22_3, R22], [I22_2, I21_1], [I22_2, R22], [I22_4, I12_3], [I22_4, R22], [R32, I32_4], [R32, I32_2], [R32, I32_3], [R32, I32_1], [R33, I33_4], [R33, I33_3], [R33, I33_2], [R33, I33_1], [I12_4, R12], [I12_1, R12], [I12_1, I13_2], [I12_2, R12], [I12_2, I11_1], [I12_3, R12], [I12_3, I22_4], [I33_4, I23_3], [I33_4, R33], [I33_3, R33], [I33_2, R33], [I33_2, I32_1], [I33_1, R33], [I31_4, I21_3], [I31_4, R31], [I23_4, I13_3], [I23_4, R23], [I13_1, R13], [I13_3, R13], [I13_3, I23_4], [I13_2, R13], [I13_2, I12_1], [I11_3, R11], [I11_3, I21_4], [I11_2, R11], [I11_1, R11], [I11_1, I12_2], [I11_4, R11], [R31, I31_4], [R31, I31_1], [R31, I31_3], [R31, I31_2], [I32_4, I22_3], [I32_4, R32], [I32_2, R32], [I32_2, I31_1], [I32_3, R32], [I32_1, R32], [I32_1, I33_2], [I31_1, R31], [I31_1, I32_2], [I31_3, R31], [I31_2, R31], [R23, I23_1], [R23, I23_2], [R23, I23_3], [R23, I23_4], [R22, I22_1], [R22, I22_3], [R22, I22_2], [R22, I22_4], [R21, I21_4], [R21, I21_2], [R21, I21_3], [R21, I21_1], 'False']
+	Synthesized input Network [[R11_N0], 'False']
+	Synthesized input SetOSPFEdgeCost [[I22_2, I21_1, 3], [I21_4, I11_3, 6], [I23_2, I22_1, 8], [I31_4, I21_3, 2], [I13_2, I12_1, 1], [I12_2, I11_1, 11], [I32_2, I31_1, 2], [I33_2, I32_1, 3], 'False']
+	Synthesized output OSPFRoute_1 [[R11_N0, R12, R11, 11], [R11_N0, R13, R12, 12], [R11_N0, R31, R21, 8], [R11_N0, R32, R31, 10], [R11_N0, R33, R32, 13], [R11_N0, R23, R22, 17], [R11_N0, R22, R21, 9], [R11_N0, R21, R11, 6]]
+	Synthesized output OSPFRoute []
+For box ospf02-0
+	Synthesized input OSPFRoute [[R11_N0, R12, R11, 11], [R11_N0, R13, R12, 12], [R11_N0, R31, R21, 8], [R11_N0, R32, R31, 10], [R11_N0, R33, R32, 13], [R11_N0, R23, R22, 17], [R11_N0, R22, R21, 9], [R11_N0, R21, R11, 6], 'False']
+	Synthesized output nonMinOSPFRouteCost []
+For box ospf02-1
+	Synthesized input nonMinOSPFRouteCost ['False']
+	Synthesized input OSPFRoute [[R11_N0, R12, R11, 11], [R11_N0, R13, R12, 12], [R11_N0, R31, R21, 8], [R11_N0, R32, R31, 10], [R11_N0, R33, R32, 13], [R11_N0, R23, R22, 17], [R11_N0, R22, R21, 9], [R11_N0, R21, R11, 6], 'False']
+	Synthesized output minOSPFRouteCost [[R11_N0, R12, 11], [R11_N0, R13, 12], [R11_N0, R31, 8], [R11_N0, R32, 10], [R11_N0, R33, 13], [R11_N0, R23, 17], [R11_N0, R22, 9], [R11_N0, R21, 6]]
+	Synthesized output BestOSPFRoute [[R11_N0, R12, R11, 11], [R11_N0, R13, R12, 12], [R11_N0, R31, R21, 8], [R11_N0, R32, R31, 10], [R11_N0, R33, R32, 13], [R11_N0, R23, R22, 17], [R11_N0, R22, R21, 9], [R11_N0, R21, R11, 6]]
+For box fwd01-0
+	Synthesized input MinIGPBGPRoute ['False']
+	Synthesized input SetAdminDist [[R11, 0, 1], [R11, 2, 2], [R11, 1, 3], [R12, 0, 1], [R12, 2, 2], [R12, 1, 3], [R13, 0, 1], [R13, 2, 2], [R13, 1, 3], [R21, 0, 1], [R21, 2, 2], [R21, 1, 3], [R22, 0, 1], [R22, 2, 2], [R22, 1, 3], [R23, 0, 1], [R23, 2, 2], [R23, 1, 3], [R31, 0, 1], [R31, 2, 2], [R31, 1, 3], [R32, 0, 1], [R32, 2, 2], [R32, 1, 3], [R33, 0, 1], [R33, 2, 2], [R33, 1, 3], 'False']
+	Synthesized input SetStaticRoute [[R11_N0, R21, R11], 'False']
+	Synthesized input BestOSPFRoute [[R11_N0, R12, R11, 11], [R11_N0, R13, R12, 12], [R11_N0, R31, R21, 8], [R11_N0, R32, R31, 10], [R11_N0, R33, R32, 13], [R11_N0, R23, R22, 17], [R11_N0, R22, R21, 9], [R11_N0, R21, R11, 6], 'False']
+	Synthesized output Route [[R11_N0, R12, R11, 1], [R11_N0, R13, R12, 1], [R11_N0, R31, R21, 1], [R11_N0, R32, R31, 1], [R11_N0, R33, R32, 1], [R11_N0, R23, R22, 1], [R11_N0, R22, R21, 1], [R11_N0, R21, R11, 0], [R11_N0, R21, R11, 1]]
+	Synthesized output nonMinCostAD [[R11_N0, R21, 3], [R11_N0, R21, 2]]
+	Synthesized output BestBGPRoute []
+For box fwd01-1
+	Synthesized input SetAdminDist [[R11, 0, 1], [R11, 2, 2], [R11, 1, 3], [R12, 0, 1], [R12, 2, 2], [R12, 1, 3], [R13, 0, 1], [R13, 2, 2], [R13, 1, 3], [R21, 0, 1], [R21, 2, 2], [R21, 1, 3], [R22, 0, 1], [R22, 2, 2], [R22, 1, 3], [R23, 0, 1], [R23, 2, 2], [R23, 1, 3], [R31, 0, 1], [R31, 2, 2], [R31, 1, 3], [R32, 0, 1], [R32, 2, 2], [R32, 1, 3], [R33, 0, 1], [R33, 2, 2], [R33, 1, 3], 'False']
+	Synthesized input Route [[R11_N0, R12, R11, 1], [R11_N0, R13, R12, 1], [R11_N0, R31, R21, 1], [R11_N0, R32, R31, 1], [R11_N0, R33, R32, 1], [R11_N0, R23, R22, 1], [R11_N0, R22, R21, 1], [R11_N0, R21, R11, 0], [R11_N0, R21, R11, 1], 'False']
+	Synthesized input nonMinCostAD [[R11_N0, R21, 3], [R11_N0, R21, 2], 'False']
+	Synthesized output Fwd [[R11_N0, R12, R11, 1], [R11_N0, R13, R12, 1], [R11_N0, R31, R21, 1], [R11_N0, R32, R31, 1], [R11_N0, R33, R32, 1], [R11_N0, R23, R22, 1], [R11_N0, R22, R21, 1], [R11_N0, R21, R11, 0]]
+Synthesis time: 10

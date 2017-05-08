@@ -1,0 +1,18 @@
++Fwd("N1",     "A", "D", "static").
++Fwd("N1",     "B", "C", "static").
++Fwd("N1",     "C", "D", "static").
+
++Fwd("N2",     "A", "B", "static").
++Fwd("N2",     "B", "C", "static").
++Fwd("N2",     "C", "D", "static").
+
+//+Fwd("B_BGP" , "A", "C", "static").
+//+Fwd("B_BGP" , "C", "B", "static").
+//+Fwd("B_BGP" , "D", "C", "static").
+
+//+Fwd("C_BGP" , "A", "B", "static").
+//+Fwd("C_BGP" , "B", "C", "static").
+//+Fwd("C_BGP" , "D", "B", "static").
+
+//+Fwd("GOOGLE", "A", "B", "bgp").
+//+Fwd("GOOGLE", "D", "C", "bgp").

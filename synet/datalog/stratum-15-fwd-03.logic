@@ -1,0 +1,83 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+// Generic Vertex type
+Vertex(n) -> string(n).
+
+// EDB: Node, Network, Interface, EdgePhy, Fwd, ConnectedDirectly, IncomingFwdInterface, OutgoingFwdInterface
+Node(n) -> Vertex(n).
+Network(n) -> Vertex(n).
+Interface(iface) -> Vertex(iface).
+EdgePhy(node1, node2) -> Vertex(node1), Vertex(node2).
+Fwd(net, snode, dnode, protocol) -> Vertex(net), Vertex(snode), Vertex(dnode), string(protocol).
+OutgoingFwdInterface(net, snode, siface) -> Vertex(net), Vertex(snode), Vertex(siface).
+IncomingFwdInterface(net, diface, dnode) -> Vertex(net), Vertex(diface), Vertex(dnode).
+ConnectedDirectly(obj, node) -> Vertex(obj), Vertex(node).
+ConnectedNodes(snode, siface, diface, dnode) ->
+    Vertex(snode), Vertex(siface), Vertex(diface), Vertex(dnode).
+
+// IDB: EdgeFwd, ReachFwd
+EdgeFwd(net, src, dst) -> Vertex(net), Vertex(src), Vertex(dst).
+//ReachFwd(net, src, dst) -> Vertex(net), Vertex(src), Vertex(dst).
+
+// ------------------------------ FWD 3/3 ------------------------------//
+
+ConnectedDirectly(obj, node) <-
+    Node(node),
+    EdgePhy(obj, node).
+
+// Last mile for the destination network is for free
+EdgeFwd(network, src, dst) <-
+    Network(network), Node(src), Network(dst),
+    EdgePhy(src, dst), network=dst.
+
+// Free edge for each source network connected directly at
+// at each router if it has a route to the destination network.
+EdgeFwd(network, snet, node) <-
+    Fwd(network, node, _, _),
+    snet != network,
+    Network(snet),
+    EdgePhy(snet, node).
+
+// Free edge for each source interface connected directly at
+// at each router if it has a route to the destination network.
+EdgeFwd(network, siface, node) <-
+    Fwd(network, node, _, _),
+    Interface(siface), EdgePhy(siface, node),
+    !OutgoingFwdInterface(network, node, siface).
+
+// Free edge for each source interface connected directly at
+// at each router
+EdgeFwd(network, siface, node) <-
+    Network(network),
+    ConnectedDirectly(network, node),
+    Interface(siface),
+    !OutgoingFwdInterface(network, node, siface),
+    ConnectedDirectly(siface, node).
+
+// Free edge for each source network connected directly at
+// at each router
+EdgeFwd(network, snet, node) <-
+    Network(network),
+    Network(snet),
+    ConnectedDirectly(network, node),
+    ConnectedDirectly(snet, node),
+    snet != network.
+
+// Now add edge from the node to the outgoing edge
+EdgeFwd(network, snode, siface) <-
+   OutgoingFwdInterface(network, snode, siface).
+
+// Now add edge outgoing interface to the incoming interface on the other node
+EdgeFwd(network, siface, diface) <-
+ OutgoingFwdInterface(network, snode, siface),
+ IncomingFwdInterface(network, diface, dnode),
+ ConnectedNodes(snode, siface, diface, dnode).
+ //EdgePhy(siface, diface).
+
+// Properties
+//ReachFwd(network, src, dst) <- EdgeFwd(network, src, dst).
+//ReachFwd(network, src, dst) <-
+//   EdgeFwd(network, src, tmp), ReachFwd(network, tmp, dst).
+
+// ------------------------------ THE END ------------------------------//

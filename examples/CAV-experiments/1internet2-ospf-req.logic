@@ -1,0 +1,35 @@
++Fwd("NYC_N_1", "ATL", "DC",  "ospf").
++Fwd("NYC_N_1", "CHIC", "NYC", "ospf").
++Fwd("NYC_N_1", "DC",  "NYC", "ospf").
++Fwd("NYC_N_1", "HOUS", "ATL", "ospf").
++Fwd("NYC_N_1", "KANS", "CHIC", "ospf").
++Fwd("NYC_N_1", "LAX", "HOUS", "ospf").
++Fwd("NYC_N_1", "SALT", "KANS", "ospf").
++Fwd("NYC_N_1", "SEAT", "SALT", "ospf").
+
++Fwd("NYC_N_2", "ATL", "DC",  "ospf").
++Fwd("NYC_N_2", "CHIC", "NYC", "ospf").
++Fwd("NYC_N_2", "DC",  "NYC", "ospf").
++Fwd("NYC_N_2", "HOUS", "KANS", "static").
++Fwd("NYC_N_2", "KANS", "CHIC", "ospf").
++Fwd("NYC_N_2", "LAX", "HOUS", "ospf").
++Fwd("NYC_N_2", "SALT", "KANS", "ospf").
++Fwd("NYC_N_2", "SEAT", "SALT", "ospf").
+
++Fwd("SEAT_N_1", "ATL", "CHIC", "ospf").
++Fwd("SEAT_N_1", "CHIC", "KANS", "ospf").
++Fwd("SEAT_N_1", "DC",  "CHIC", "ospf").
++Fwd("SEAT_N_1", "HOUS", "KANS", "ospf").
++Fwd("SEAT_N_1", "KANS", "SALT", "ospf").
++Fwd("SEAT_N_1", "LAX", "SEAT", "ospf").
++Fwd("SEAT_N_1", "NYC", "CHIC", "ospf").
++Fwd("SEAT_N_1", "SALT", "SEAT", "ospf").
+
+
+//+Fwd("GOOGLE", "ATL",  "CHIC",  "bgp").
+//+Fwd("GOOGLE", "CHIC", "KANS",  "bgp").
+//+Fwd("GOOGLE", "DC",   "CHIC",  "bgp").
+//+Fwd("GOOGLE", "HOUS", "KANS",  "bgp").
+//+Fwd("GOOGLE", "KANS", "SALT",  "bgp").
+//+Fwd("GOOGLE", "LAX",  "SEAT",  "bgp").
+//+Fwd("GOOGLE", "SALT", "SEAT",  "bgp").

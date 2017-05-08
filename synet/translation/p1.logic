@@ -1,0 +1,6 @@
+AA(x, y) -> int(x), int(y).
+BB(x, y) -> int(x), int(y).
+
+ZZ(x, y) -> int(x), int(y).
+
+ZZ(x, y) <- AA(x, z), BB(y, z).

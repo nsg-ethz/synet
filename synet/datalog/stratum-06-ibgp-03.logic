@@ -1,0 +1,41 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: BFPLocalPref, BGPAnnouncement, Node
+Node(n) -> Vertex(n).
+
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+BGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+
+// IDB: BGPRoute, nonMaxBGPLocalPref
+BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+nonMaxBGPLocalPref(prefix, pref) -> Vertex(prefix), int(pref).
+
+// ------------------------------ IBGP 3/9 ------------------------------//
+
+// Step 1
+
+// Receive BGP route announcements from all other routers
+BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    Node(node2),
+    BGPAnnouncement(node2, next_hop, prefix, ASPath, ASPathLength, pref),
+    node!=node2.
+
+
+
+nonMaxBGPLocalPref(prefix, pref) <- 
+    BGPLocalPref(_, _, prefix, pref),
+    BGPLocalPref(_, _, prefix, biggerPref),
+    pref < biggerPref.
+
+// ------------------------------ THE END ------------------------------//

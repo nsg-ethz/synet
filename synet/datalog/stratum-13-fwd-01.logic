@@ -1,0 +1,57 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+// Generic Vertex type
+Vertex(n) -> string(n).
+
+// EDB: BestOSPFRoute, SetStaticRoute, SetAdminDist
+BestOSPFRoute(net, node, nxt, cost) -> Vertex(net), Vertex(node), Vertex(nxt), int(cost).
+SetStaticRoute(net, node, nxt) -> Vertex(net), Vertex(node), Vertex(nxt).
+SetAdminDist(node, protocol, cost) -> Vertex(node), string(protocol), int(cost).
+MinIGPBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// IDB: Route, nonMinCostAD, Fwd
+BestBGPRoute(network, src, next) -> Vertex(network), Vertex(src), Vertex(next).
+Route(net, node, nxt, protocol) -> Vertex(net), Vertex(node), Vertex(node), string(protocol).
+nonMinCostAD(network, node, cost) -> Vertex(network), Vertex(node), int(cost).
+Fwd(net, node, nxt, protocol) -> Vertex(net), Vertex(node), Vertex(nxt), string(protocol).
+
+// ------------------------------ FWD 1/3 ------------------------------//
+
+// This can move to Fwd module
+BestBGPRoute(network, src, next) <-
+    MinIGPBGPRoute(src, next_hop, network, _, _, _),
+    BestOSPFRoute(next_hop, src, next, _).
+
+BestBGPRoute(network, src, next) <-
+    MinIGPBGPRoute(src, next_hop, network, _, _, _),
+    SetStaticRoute(next_hop, src, next).
+
+Route(net, node, nxt, protocol) <-
+    BestBGPRoute(net, node, nxt),
+    protocol="bgp".
+
+Route(net, node, nxt, protocol) <-
+    BestOSPFRoute(net, node, nxt, _),
+    protocol="ospf".
+
+Route(net, node, nxt, protocol) <-
+    SetStaticRoute(net, node, nxt),
+    protocol="static".
+
+// Computation
+nonMinCostAD(network, node, cost) <- 
+    SetAdminDist(node, _, cost),
+    Route(network, node, _, protocol),
+    SetAdminDist(node, protocol, smallerCost),
+    smallerCost < cost.
+
+Fwd(network, node, nxt, protocol) <-
+    Route(network, node, nxt, protocol),
+    SetAdminDist(node, protocol, cost),
+    !nonMinCostAD(network, node, cost).
+
+
+// ------------------------------ THE END ------------------------------//

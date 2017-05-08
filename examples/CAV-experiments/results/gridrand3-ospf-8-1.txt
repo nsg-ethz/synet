@@ -1,0 +1,6 @@
+IN BOX ospf01
+IN BOX ospf02-0
+IN BOX ospf02-1
+IN BOX fwd01-0
+IN BOX fwd01-1
+Synthesis time: 2

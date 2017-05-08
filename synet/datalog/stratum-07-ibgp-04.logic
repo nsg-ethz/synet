@@ -1,0 +1,37 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: nonMaxBGPLocalPref, BGPLocalPref, BGPRoute, SetNetwork
+nonMaxBGPLocalPref(prefix, pref) -> Vertex(prefix), int(pref).
+
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+SetNetwork(node, network) -> Vertex(node), Vertex(network).
+
+// IDB: MaxBGPLocalPrefBGPRoute, ConnectedBGPAnnouncement
+MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+ConnectedBGPAnnouncement(node, next_hop, prefix) -> Vertex(node), Vertex(next_hop), Vertex(prefix).
+
+// ------------------------------ IBGP 4/9 ------------------------------//
+
+// Step 2
+MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    BGPLocalPref(_, next_hop, prefix, pref),
+    !nonMaxBGPLocalPref(prefix, pref),
+    BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+ConnectedBGPAnnouncement(node, next_hop, prefix) <-
+    MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, _, _, _),
+    SetNetwork(node, next_hop).
+
+// ------------------------------ THE END ------------------------------//

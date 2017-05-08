@@ -1,0 +1,49 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: nonMinAsPath, ConnectedBGPRoute, SetStaticRoute, SetStaticRouteCost, SetNetwork, BestOSPFRoute
+nonMinAsPath(node, prefix, asPathLength) -> Vertex(node), Vertex(prefix), int(asPathLength).
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+//SetStaticRoute(network, src, next) -> Vertex(network), Vertex(src), Vertex(next).
+//SetStaticRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+//SetNetwork(src, network) -> Vertex(src), Vertex(network).
+BestOSPFRoute(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+
+// IBGP: MinAsPathBGPRoute, StaticRouteCost
+MinAsPathBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath), int(ASPathLength), int(pref).
+
+//StaticRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+
+// ------------------------------ IBGP 7/9 ------------------------------//
+
+MinAsPathBGPRoute(node, next_hop, prefix, ASPath, minASPathLength, pref) <-
+    ConnectedBGPRoute(node, next_hop, prefix, ASPath, minASPathLength, pref),
+    !nonMinAsPath(node, prefix, minASPathLength).
+
+// Step 4
+
+// Static Routes do not compute cost directly
+// So either the use configure them or they have a default
+// cost
+//StaticRouteCost(network, src, next, cost) <-
+//    SetStaticRoute(network, src, next),
+//    SetStaticRouteCost(network, src, next, cost).
+//
+//StaticRouteCost(network, src, next, cost) <-
+//    SetStaticRoute(network, src, next),
+//    !SetStaticRouteCost(network, src, _, cost),
+//    cost=1.
+
+// Zero cost for directly connected networks
+//IGPRouteCost(network, src, next, cost) <- SetNetwork(src, network), cost=0, next=src.
+//IGPRouteCost(network, src, next, cost) <- StaticRouteCost(network, src, next, cost).
+// Take the OSPF cost directly
+IGPRouteCost(network, src, next, cost) <- BestOSPFRoute(network, src, next, cost).
+
+// ------------------------------ THE END ------------------------------//

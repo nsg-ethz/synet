@@ -1,0 +1,37 @@
+// ----------------------------- TYPES ----------------------------- //
+
+// EDB: SetNode, SetNetwork, SetInterface, SetLink
+Vertex(n) -> string(n).
+SetNode(n) -> Vertex(n).
+SetInterface(node, iface) -> Vertex(node), Vertex(iface).
+SetNetwork(node, network) -> Vertex(node), Vertex(network).
+SetLink(siface, diface) -> Vertex(siface), Vertex(diface).
+
+// IDB: Node, Interface, Network, EdgePhy
+Node(node) -> Vertex(node).
+Interface(iface) -> Vertex(iface).
+Network(net) -> Vertex(net).
+EdgePhy(node1, node2) -> Vertex(node1), Vertex(node2).
+ConnectedNodes(snode, siface, diface, dnode) ->
+    Vertex(snode), Vertex(siface), Vertex(diface), Vertex(dnode).
+
+
+// ----------------------------- PHYSICAL ----------------------------- //
+
+Node(n) <- SetNode(n).
+Interface(x) <- SetInterface(_, x).
+Network(x) <- SetNetwork(_, x).
+
+EdgePhy(node, iface) <- SetInterface(node, iface).
+EdgePhy(iface, node) <- SetInterface(node, iface).
+EdgePhy(siface, diface) <- SetLink(siface, diface).
+EdgePhy(diface, siface) <- SetLink(siface, diface).
+EdgePhy(node, net) <- SetNetwork(node, net).
+EdgePhy(net, node) <- SetNetwork(node, net).
+
+ConnectedNodes(snode, siface, diface, dnode) <-
+    SetInterface(snode, siface),
+    SetLink(siface, diface),
+    SetInterface(dnode, diface).
+
+// ------------------------------ THE END ------------------------------//

@@ -1,0 +1,54 @@
++SetNode("A").
++SetNode("C").
++SetNode("B").
++SetNode("D").
+
++SetInterface("C", "C_I_3").
++SetInterface("A", "A_I_1").
++SetInterface("C", "C_I_2").
++SetInterface("C", "C_I_1").
++SetInterface("A", "A_I_2").
++SetInterface("A", "A_I_3").
++SetInterface("D", "D_I_1").
++SetInterface("D", "D_I_3").
++SetInterface("B", "B_I_2").
++SetInterface("B", "B_I_3").
++SetInterface("D", "D_I_2").
++SetInterface("B", "B_I_1").
+
+//+SetNetwork("B", "B_BGP").
+//+SetNetwork("C", "C_BGP").
++SetNetwork("D", "N1").
++SetNetwork("D", "N2").
+
+//+SetBGPAnnouncement("C", "C_BGP", "GOOGLE", "1;2;3", 3).
+//+SetBGPAnnouncement("B", "B_BGP", "GOOGLE", "1;2;3", 3).
+
+//+SetBGPLocalPref("A", "B_BGP", "GOOGLE", 6).
+//+SetBGPLocalPref("B", "B_BGP", "GOOGLE", 6).
+//+SetBGPLocalPref("C", "C_BGP", "GOOGLE", 6).
+//+SetBGPLocalPref("D", "C_BGP", "GOOGLE", 6).
+
++SetLink("A_I_1", "B_I_1").
++SetLink("A_I_3", "D_I_1").
++SetLink("A_I_2", "C_I_1").
++SetLink("B_I_3", "D_I_2").
++SetLink("B_I_2", "C_I_2").
++SetLink("C_I_3", "D_I_3").
+
++SetAdminDist("A", "static", 1).
++SetAdminDist("A", "bgp", 2).
++SetAdminDist("A", "ospf", 3).
+
++SetAdminDist("B", "static", 1).
++SetAdminDist("B", "bgp", 2).
++SetAdminDist("B", "ospf", 3).
+
++SetAdminDist("C", "static", 1).
++SetAdminDist("C", "bgp", 2).
++SetAdminDist("C", "ospf", 3).
+
++SetAdminDist("D", "static", 1).
++SetAdminDist("D", "bgp", 2).
++SetAdminDist("D", "ospf", 3).
+

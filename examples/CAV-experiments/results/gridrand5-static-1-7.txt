@@ -1,0 +1,21 @@
+IN BOX fwd01-1-static
+Couldn't import dot_parser, loading of dot files will not be possible.
+HEY
+Loading user provided input for box: fwd01-1-static []
+Checking initial inputs for box fwd01-1-static
+Loading user provided outputs for box: fwd01-1-static [Fwd(R51_N0, R35, R45, 0) == True, Fwd(R51_N0, R32, R42, 0) == True, Fwd(R51_N0, R33, R43, 0) == True, Fwd(R51_N0, R15, R25, 0) == True, Fwd(R51_N0, R12, R22, 0) == True, Fwd(R51_N0, R13, R23, 0) == True, Fwd(R51_N0, R11, R21, 0) == True, Fwd(R51_N0, R14, R13, 0) == True, Fwd(R51_N0, R34, R33, 0) == True, Fwd(R51_N0, R31, R32, 0) == True, Fwd(R51_N0, R45, R44, 0) == True, Fwd(R51_N0, R44, R43, 0) == True, Fwd(R51_N0, R41, R42, 0) == True, Fwd(R51_N0, R43, R42, 0) == True, Fwd(R51_N0, R42, R52, 0) == True, Fwd(R51_N0, R52, R51, 0) == True, Fwd(R51_N0, R53, R52, 0) == True, Fwd(R51_N0, R54, R53, 0) == True, Fwd(R51_N0, R55, R54, 0) == True, Fwd(R51_N0, R25, R24, 0) == True, Fwd(R51_N0, R24, R34, 0) == True, Fwd(R51_N0, R23, R33, 0) == True, Fwd(R51_N0, R22, R32, 0) == True, Fwd(R51_N0, R21, R31, 0) == True]
+
+Beginning Synthesis...
+##############################
+Synthesizing for box 0 fwd01-1-static
+Feeding desired outputs for fwd01-1-static...
+Checking SAT for box fwd01-1-static ...
+SAT, reading inputs...
+	Synthesized input SetStaticRoute [[R51_N0, R35, R45, True], [R51_N0, R32, R42, True], [R51_N0, R33, R43, True], [R51_N0, R15, R25, True], [R51_N0, R12, R22, True], [R51_N0, R13, R23, True], [R51_N0, R11, R21, True], [R51_N0, R14, R13, True], [R51_N0, R34, R33, True], [R51_N0, R31, R32, True], [R51_N0, R45, R44, True], [R51_N0, R44, R43, True], [R51_N0, R41, R42, True], [R51_N0, R43, R42, True], [R51_N0, R42, R52, True], [R51_N0, R52, R51, True], [R51_N0, R53, R52, True], [R51_N0, R54, R53, True], [R51_N0, R55, R54, True], [R51_N0, R25, R24, True], [R51_N0, R24, R34, True], [R51_N0, R23, R33, True], [R51_N0, R22, R32, True], [R51_N0, R21, R31, True], 'False']
+Done!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Final results...
+For box fwd01-1-static
+	Synthesized input SetStaticRoute [[R51_N0, R35, R45], [R51_N0, R32, R42], [R51_N0, R33, R43], [R51_N0, R15, R25], [R51_N0, R12, R22], [R51_N0, R13, R23], [R51_N0, R11, R21], [R51_N0, R14, R13], [R51_N0, R34, R33], [R51_N0, R31, R32], [R51_N0, R45, R44], [R51_N0, R44, R43], [R51_N0, R41, R42], [R51_N0, R43, R42], [R51_N0, R42, R52], [R51_N0, R52, R51], [R51_N0, R53, R52], [R51_N0, R54, R53], [R51_N0, R55, R54], [R51_N0, R25, R24], [R51_N0, R24, R34], [R51_N0, R23, R33], [R51_N0, R22, R32], [R51_N0, R21, R31], 'False']
+	Synthesized output Fwd [[R51_N0, R35, R45, 0], [R51_N0, R32, R42, 0], [R51_N0, R33, R43, 0], [R51_N0, R15, R25, 0], [R51_N0, R12, R22, 0], [R51_N0, R13, R23, 0], [R51_N0, R11, R21, 0], [R51_N0, R14, R13, 0], [R51_N0, R34, R33, 0], [R51_N0, R31, R32, 0], [R51_N0, R45, R44, 0], [R51_N0, R44, R43, 0], [R51_N0, R41, R42, 0], [R51_N0, R43, R42, 0], [R51_N0, R42, R52, 0], [R51_N0, R52, R51, 0], [R51_N0, R53, R52, 0], [R51_N0, R54, R53, 0], [R51_N0, R55, R54, 0], [R51_N0, R25, R24, 0], [R51_N0, R24, R34, 0], [R51_N0, R23, R33, 0], [R51_N0, R22, R32, 0], [R51_N0, R21, R31, 0]]
+Synthesis time: 38

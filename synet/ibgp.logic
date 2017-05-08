@@ -1,0 +1,273 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: SetBGPAnnouncement, SetBGPLocalPref
+//SetBGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength) ->
+//    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath), int(ASPathLength).
+
+SetBGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+// IDB: BGPLocalPref
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+// ------------------------------ IBGP 1/9 ------------------------------//
+
+
+// All local pref including default for the ones was not set explicitly by the user.
+
+BGPLocalPref(node, next_hop, prefix, pref) <-
+    SetBGPLocalPref(node, next_hop, prefix, pref).
+
+// ------------------------------ THE END ------------------------------//
+// ----------------------------- TYPES ----------------------------- //
+Vertex(n) -> string(n).
+
+// EDB: BGPLocalPref, SetBGPAnnouncement
+SetBGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath), int(ASPathLength).
+
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+// IDB: BGPAnnouncement,
+BGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+    
+// ------------------------------ IBGP 2/9 ------------------------------//
+
+BGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    SetBGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength),
+    BGPLocalPref(node, next_hop, prefix, pref).
+
+// ------------------------------ THE END ------------------------------//
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: BFPLocalPref, BGPAnnouncement, Node
+Node(n) -> Vertex(n).
+
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+BGPAnnouncement(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+
+// IDB: BGPRoute, nonMaxBGPLocalPref
+BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+nonMaxBGPLocalPref(prefix, pref) -> Vertex(prefix), int(pref).
+
+// ------------------------------ IBGP 3/9 ------------------------------//
+
+// Step 1
+
+// Receive BGP route announcements from all other routers
+BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    Node(node),
+    BGPAnnouncement(node2, next_hop, prefix, ASPath, ASPathLength, pref),
+    node!=node2.
+
+nonMaxBGPLocalPref(prefix, pref) <- 
+    BGPLocalPref(_, _, prefix, pref),
+    BGPLocalPref(_, _, prefix, biggerPref),
+    pref < biggerPref.
+
+// ------------------------------ THE END ------------------------------//
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: nonMaxBGPLocalPref, BGPLocalPref, BGPRoute, SetNetwork
+nonMaxBGPLocalPref(prefix, pref) -> Vertex(prefix), int(pref).
+
+BGPLocalPref(node, next_hop, prefix, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+
+BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+SetNetwork(node, network) -> Vertex(node), Vertex(network).
+
+// IDB: MaxBGPLocalPrefBGPRoute, ConnectedBGPAnnouncement
+MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+//ConnectedBGPAnnouncement(node, next_hop, prefix) -> Vertex(node), Vertex(next_hop), Vertex(prefix).
+
+// ------------------------------ IBGP 4/9 ------------------------------//
+
+// Step 2
+MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    BGPLocalPref(_, next_hop, prefix, pref),
+    !nonMaxBGPLocalPref(prefix, pref),
+    BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+//ConnectedBGPAnnouncement(node, next_hop, prefix) <-
+//    MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, _, _, _),
+//    SetNetwork(node, next_hop).
+
+// ------------------------------ THE END ------------------------------//
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: ConnectedBGPAnnouncement, MaxBGPLocalPrefBFPRoute
+//ConnectedBGPAnnouncement(node, next_hop, prefix) -> Vertex(node), Vertex(next_hop), Vertex(prefix).
+
+MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// IDB: ConnectedBGPRoute
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref)  ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// ------------------------------ IBGP 5/9 ------------------------------//
+
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+
+//ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+//    ConnectedBGPAnnouncement(node, next_hop, prefix),
+//   MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+//ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+//    !ConnectedBGPAnnouncement(node, _, prefix),
+//    MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+// ------------------------------ THE END ------------------------------//
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: ConnectedBGPRoute
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref)  ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// IDB: nonMinAsPath
+nonMinAsPath(node, prefix, asPathLength) -> Vertex(node), Vertex(prefix), int(asPathLength).
+
+// ------------------------------ IBGP 6/9 ------------------------------//
+
+// Step 3
+nonMinAsPath(node, prefix, asPathLength) <- 
+    ConnectedBGPRoute(node, _, prefix, _, asPathLength, _),
+    ConnectedBGPRoute(node, _, prefix, _, smallerASPathLength, _),
+    smallerASPathLength < asPathLength.
+
+// ------------------------------ THE END ------------------------------//
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: nonMinAsPath, ConnectedBGPRoute, SetStaticRoute, SetStaticRouteCost, SetNetwork, BestOSPFRoute
+nonMinAsPath(node, prefix, asPathLength) -> Vertex(node), Vertex(prefix), int(asPathLength).
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+//SetStaticRoute(network, src, next) -> Vertex(network), Vertex(src), Vertex(next).
+//SetStaticRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+//SetNetwork(src, network) -> Vertex(src), Vertex(network).
+BestOSPFRoute(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+
+// IBGP: MinAsPathBGPRoute, StaticRouteCost
+MinAsPathBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath), int(ASPathLength), int(pref).
+
+//StaticRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+
+// ------------------------------ IBGP 7/9 ------------------------------//
+
+// Find the lest length AS Path Length
+MinAsPathBGPRoute(node, next_hop, prefix, ASPath, minASPathLength, pref) <-
+    ConnectedBGPRoute(node, next_hop, prefix, ASPath, minASPathLength, pref),
+    !nonMinAsPath(node, prefix, minASPathLength).
+
+// Step 4
+
+// Static Routes do not compute cost directly
+// So either the use configure them or they have a default
+// cost
+//StaticRouteCost(network, src, next, cost) <-
+//    SetStaticRoute(network, src, next),
+//    SetStaticRouteCost(network, src, next, cost).
+//
+//StaticRouteCost(network, src, next, cost) <-
+//    SetStaticRoute(network, src, next),
+//    !SetStaticRouteCost(network, src, _, cost),
+//    cost=1.
+
+// Zero cost for directly connected networks
+//IGPRouteCost(network, src, next, cost) <- SetNetwork(src, network), cost=0, next=src.
+//IGPRouteCost(network, src, next, cost) <- StaticRouteCost(network, src, next, cost).
+// Take the OSPF cost directly
+IGPRouteCost(network, src, next, cost) <- BestOSPFRoute(network, src, next, cost).
+
+// ------------------------------ THE END ------------------------------//
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: IGPRouteCost
+IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+
+// IDB: nonMinIGPCost
+nonMinIGPCost(node, next_hop, cost) -> Vertex(node), Vertex(next_hop), int(cost).
+
+
+// ------------------------------ IBGP 8/9 ------------------------------//
+
+nonMinIGPCost(node, next_hop, cost) <-
+        IGPRouteCost(next_hop, node, _, cost),
+        IGPRouteCost(next_hop, node, _, smallerCost),
+        smallerCost < cost.
+
+// ------------------------------ THE END ------------------------------//
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: IGPRouteCost, nonMinIGPCost, MinAsPathBGPRoute, Route
+IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+nonMinIGPCost(node, next_hop, cost) -> Vertex(node), Vertex(next_hop), int(cost).
+MinAsPathBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// IDB: MinIGPBGPRoute
+MinIGPBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// ------------------------------ IBGP 9/9 ------------------------------//
+
+// Select routes with min IGP cost and MinAsPath Length
+
+MinIGPBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    IGPRouteCost(next_hop, node, _, minIGPCost),
+    !nonMinIGPCost(node, next_hop, minIGPCost),
+    MinAsPathBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+// ------------------------------ THE END ------------------------------//

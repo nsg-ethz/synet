@@ -1,0 +1,21 @@
+IN BOX fwd01-1-static
+Couldn't import dot_parser, loading of dot files will not be possible.
+HEY
+Loading user provided input for box: fwd01-1-static []
+Checking initial inputs for box fwd01-1-static
+Loading user provided outputs for box: fwd01-1-static [Fwd(R11_N0, R12, R11, 0) == True, Fwd(R11_N0, R13, R12, 0) == True, Fwd(R11_N0, R31, R21, 0) == True, Fwd(R11_N0, R32, R31, 0) == True, Fwd(R11_N0, R33, R32, 0) == True, Fwd(R11_N0, R23, R22, 0) == True, Fwd(R11_N0, R22, R21, 0) == True, Fwd(R11_N0, R21, R11, 0) == True]
+
+Beginning Synthesis...
+##############################
+Synthesizing for box 0 fwd01-1-static
+Feeding desired outputs for fwd01-1-static...
+Checking SAT for box fwd01-1-static ...
+SAT, reading inputs...
+	Synthesized input SetStaticRoute [[R11_N0, R12, R11, True], [R11_N0, R13, R12, True], [R11_N0, R31, R21, True], [R11_N0, R32, R31, True], [R11_N0, R33, R32, True], [R11_N0, R23, R22, True], [R11_N0, R22, R21, True], [R11_N0, R21, R11, True], 'False']
+Done!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Final results...
+For box fwd01-1-static
+	Synthesized input SetStaticRoute [[R11_N0, R12, R11], [R11_N0, R13, R12], [R11_N0, R31, R21], [R11_N0, R32, R31], [R11_N0, R33, R32], [R11_N0, R23, R22], [R11_N0, R22, R21], [R11_N0, R21, R11], 'False']
+	Synthesized output Fwd [[R11_N0, R12, R11, 0], [R11_N0, R13, R12, 0], [R11_N0, R31, R21, 0], [R11_N0, R32, R31, 0], [R11_N0, R33, R32, 0], [R11_N0, R23, R22, 0], [R11_N0, R22, R21, 0], [R11_N0, R21, R11, 0]]
+Synthesis time: 2

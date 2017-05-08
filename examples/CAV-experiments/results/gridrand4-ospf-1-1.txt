@@ -1,0 +1,368 @@
+IN BOX ospf01
+IN BOX ospf02-0
+IN BOX ospf02-1
+IN BOX fwd01-0
+IN BOX fwd01-1
+Couldn't import dot_parser, loading of dot files will not be possible.
+Loading user provided input for box: ospf01 []
+Checking initial inputs for box ospf01
+Loading user provided outputs for box: ospf01 []
+Loading user provided input for box: ospf02-0 []
+Checking initial inputs for box ospf02-0
+Loading user provided outputs for box: ospf02-0 []
+Loading user provided input for box: ospf02-1 []
+Checking initial inputs for box ospf02-1
+Loading user provided outputs for box: ospf02-1 []
+Loading user provided input for box: fwd01-0 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R14, 0, 1) == True, SetAdminDist(R14, 2, 2) == True, SetAdminDist(R14, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R24, 0, 1) == True, SetAdminDist(R24, 2, 2) == True, SetAdminDist(R24, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, SetAdminDist(R34, 0, 1) == True, SetAdminDist(R34, 2, 2) == True, SetAdminDist(R34, 1, 3) == True, SetAdminDist(R41, 0, 1) == True, SetAdminDist(R41, 2, 2) == True, SetAdminDist(R41, 1, 3) == True, SetAdminDist(R42, 0, 1) == True, SetAdminDist(R42, 2, 2) == True, SetAdminDist(R42, 1, 3) == True, SetAdminDist(R43, 0, 1) == True, SetAdminDist(R43, 2, 2) == True, SetAdminDist(R43, 1, 3) == True, SetAdminDist(R44, 0, 1) == True, SetAdminDist(R44, 2, 2) == True, SetAdminDist(R44, 1, 3) == True]
+Checking initial inputs for box fwd01-0
+Loading user provided outputs for box: fwd01-0 []
+HEY
+Loading user provided input for box: fwd01-1 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R14, 0, 1) == True, SetAdminDist(R14, 2, 2) == True, SetAdminDist(R14, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R24, 0, 1) == True, SetAdminDist(R24, 2, 2) == True, SetAdminDist(R24, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, SetAdminDist(R34, 0, 1) == True, SetAdminDist(R34, 2, 2) == True, SetAdminDist(R34, 1, 3) == True, SetAdminDist(R41, 0, 1) == True, SetAdminDist(R41, 2, 2) == True, SetAdminDist(R41, 1, 3) == True, SetAdminDist(R42, 0, 1) == True, SetAdminDist(R42, 2, 2) == True, SetAdminDist(R42, 1, 3) == True, SetAdminDist(R43, 0, 1) == True, SetAdminDist(R43, 2, 2) == True, SetAdminDist(R43, 1, 3) == True, SetAdminDist(R44, 0, 1) == True, SetAdminDist(R44, 2, 2) == True, SetAdminDist(R44, 1, 3) == True]
+Checking initial inputs for box fwd01-1
+Loading user provided outputs for box: fwd01-1 [Fwd(R44_N0, R14, R24, 1) == True, Fwd(R44_N0, R12, R13, 1) == True, Fwd(R44_N0, R13, R23, 1) == True, Fwd(R44_N0, R11, R21, 1) == True, Fwd(R44_N0, R34, R44, 0) == True, Fwd(R44_N0, R31, R32, 1) == True, Fwd(R44_N0, R32, R33, 1) == True, Fwd(R44_N0, R33, R34, 1) == True, Fwd(R44_N0, R41, R42, 1) == True, Fwd(R44_N0, R43, R44, 1) == True, Fwd(R44_N0, R42, R43, 1) == True, Fwd(R44_N0, R24, R34, 0) == True, Fwd(R44_N0, R23, R24, 0) == True, Fwd(R44_N0, R22, R23, 0) == True, Fwd(R44_N0, R21, R22, 0) == True]
+
+Beginning Synthesis...
+##############################
+Synthesizing for box 4 fwd01-1
+Feeding desired outputs for fwd01-1...
+Checking SAT for box fwd01-1 ...
+SAT, reading inputs...
+	Synthesized input SetAdminDist [[R11, 0, 1, True], [R11, 2, 2, True], [R11, 1, 3, True], [R12, 0, 1, True], [R12, 2, 2, True], [R12, 1, 3, True], [R13, 0, 1, True], [R13, 2, 2, True], [R13, 1, 3, True], [R14, 0, 1, True], [R14, 2, 2, True], [R14, 1, 3, True], [R21, 0, 1, True], [R21, 2, 2, True], [R21, 1, 3, True], [R22, 0, 1, True], [R22, 2, 2, True], [R22, 1, 3, True], [R23, 0, 1, True], [R23, 2, 2, True], [R23, 1, 3, True], [R24, 0, 1, True], [R24, 2, 2, True], [R24, 1, 3, True], [R31, 0, 1, True], [R31, 2, 2, True], [R31, 1, 3, True], [R32, 0, 1, True], [R32, 2, 2, True], [R32, 1, 3, True], [R33, 0, 1, True], [R33, 2, 2, True], [R33, 1, 3, True], [R34, 0, 1, True], [R34, 2, 2, True], [R34, 1, 3, True], [R41, 0, 1, True], [R41, 2, 2, True], [R41, 1, 3, True], [R42, 0, 1, True], [R42, 2, 2, True], [R42, 1, 3, True], [R43, 0, 1, True], [R43, 2, 2, True], [R43, 1, 3, True], [R44, 0, 1, True], [R44, 2, 2, True], [R44, 1, 3, True], 'False']
+	Synthesized input Route [[R44_N0, R14, R24, 1, True], [R44_N0, R12, R13, 1, True], [R44_N0, R13, R23, 1, True], [R44_N0, R11, R21, 1, True], [R44_N0, R34, R44, 0, True], [R44_N0, R31, R32, 1, True], [R44_N0, R32, R33, 1, True], [R44_N0, R33, R34, 1, True], [R44_N0, R41, R42, 1, True], [R44_N0, R43, R44, 1, True], [R44_N0, R42, R43, 1, True], [R44_N0, R24, R34, 0, True], [R44_N0, R23, R24, 0, True], [R44_N0, R22, R23, 0, True], [R44_N0, R21, R22, 0, True], [R44_N0, R34, R44, 1, True], [R44_N0, R24, R34, 1, True], [R44_N0, R23, R33, 1, True], [R44_N0, R22, R23, 1, True], [R44_N0, R21, R22, 1, True], 'False']
+	Synthesized input nonMinCostAD [[R44_N0, R34, 3, True], [R44_N0, R21, 3, True], [R44_N0, R23, 3, True], [R44_N0, R24, 3, True], [R44_N0, R22, 3, True], [R44_N0, R34, 2, True], [R44_N0, R23, 2, True], [R44_N0, R22, 2, True], [R44_N0, R24, 2, True], [R44_N0, R21, 2, True], 'False']
+##############################
+Synthesizing for box 3 fwd01-0
+Feeding desired outputs for fwd01-0...
+	Feeding desired output fwd01-0 [Route(R44_N0, R14, R24, 1) == True, Route(R44_N0, R12, R13, 1) == True, Route(R44_N0, R13, R23, 1) == True, Route(R44_N0, R11, R21, 1) == True, Route(R44_N0, R34, R44, 0) == True, Route(R44_N0, R31, R32, 1) == True, Route(R44_N0, R32, R33, 1) == True, Route(R44_N0, R33, R34, 1) == True, Route(R44_N0, R41, R42, 1) == True, Route(R44_N0, R43, R44, 1) == True, Route(R44_N0, R42, R43, 1) == True, Route(R44_N0, R24, R34, 0) == True, Route(R44_N0, R23, R24, 0) == True, Route(R44_N0, R22, R23, 0) == True, Route(R44_N0, R21, R22, 0) == True, Route(R44_N0, R34, R44, 1) == True, Route(R44_N0, R24, R34, 1) == True, Route(R44_N0, R23, R33, 1) == True, Route(R44_N0, R22, R23, 1) == True, Route(R44_N0, R21, R22, 1) == True, ForAll([t0, t1, t2, t3],
+       Implies(Not(Or(And(t0 == R44_N0,
+                          t1 == R14,
+                          t2 == R24,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R12,
+                          t2 == R13,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R13,
+                          t2 == R23,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R11,
+                          t2 == R21,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R34,
+                          t2 == R44,
+                          t3 == 0),
+                      And(t0 == R44_N0,
+                          t1 == R31,
+                          t2 == R32,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R32,
+                          t2 == R33,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R33,
+                          t2 == R34,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R41,
+                          t2 == R42,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R43,
+                          t2 == R44,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R42,
+                          t2 == R43,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R24,
+                          t2 == R34,
+                          t3 == 0),
+                      And(t0 == R44_N0,
+                          t1 == R23,
+                          t2 == R24,
+                          t3 == 0),
+                      And(t0 == R44_N0,
+                          t1 == R22,
+                          t2 == R23,
+                          t3 == 0),
+                      And(t0 == R44_N0,
+                          t1 == R21,
+                          t2 == R22,
+                          t3 == 0),
+                      And(t0 == R44_N0,
+                          t1 == R34,
+                          t2 == R44,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R24,
+                          t2 == R34,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R23,
+                          t2 == R33,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R22,
+                          t2 == R23,
+                          t3 == 1),
+                      And(t0 == R44_N0,
+                          t1 == R21,
+                          t2 == R22,
+                          t3 == 1))),
+               Route(t0, t1, t2, t3) == False))]
+	Feeding desired output fwd01-0 [nonMinCostAD(R44_N0, R34, 3) == True, nonMinCostAD(R44_N0, R21, 3) == True, nonMinCostAD(R44_N0, R23, 3) == True, nonMinCostAD(R44_N0, R24, 3) == True, nonMinCostAD(R44_N0, R22, 3) == True, nonMinCostAD(R44_N0, R34, 2) == True, nonMinCostAD(R44_N0, R23, 2) == True, nonMinCostAD(R44_N0, R22, 2) == True, nonMinCostAD(R44_N0, R24, 2) == True, nonMinCostAD(R44_N0, R21, 2) == True, ForAll([t0, t1, t2],
+       Implies(Not(Or(And(t0 == R44_N0, t1 == R34, t2 == 3),
+                      And(t0 == R44_N0, t1 == R21, t2 == 3),
+                      And(t0 == R44_N0, t1 == R23, t2 == 3),
+                      And(t0 == R44_N0, t1 == R24, t2 == 3),
+                      And(t0 == R44_N0, t1 == R22, t2 == 3),
+                      And(t0 == R44_N0, t1 == R34, t2 == 2),
+                      And(t0 == R44_N0, t1 == R23, t2 == 2),
+                      And(t0 == R44_N0, t1 == R22, t2 == 2),
+                      And(t0 == R44_N0, t1 == R24, t2 == 2),
+                      And(t0 == R44_N0, t1 == R21, t2 == 2))),
+               nonMinCostAD(t0, t1, t2) == False))]
+	Feeding shortcut INPUT fwd01-0 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R14, 0, 1) == True, SetAdminDist(R14, 2, 2) == True, SetAdminDist(R14, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R24, 0, 1) == True, SetAdminDist(R24, 2, 2) == True, SetAdminDist(R24, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, SetAdminDist(R34, 0, 1) == True, SetAdminDist(R34, 2, 2) == True, SetAdminDist(R34, 1, 3) == True, SetAdminDist(R41, 0, 1) == True, SetAdminDist(R41, 2, 2) == True, SetAdminDist(R41, 1, 3) == True, SetAdminDist(R42, 0, 1) == True, SetAdminDist(R42, 2, 2) == True, SetAdminDist(R42, 1, 3) == True, SetAdminDist(R43, 0, 1) == True, SetAdminDist(R43, 2, 2) == True, SetAdminDist(R43, 1, 3) == True, SetAdminDist(R44, 0, 1) == True, SetAdminDist(R44, 2, 2) == True, SetAdminDist(R44, 1, 3) == True, ForAll([t0, t1, t2],
+       Implies(Not(Or(And(t0 == R11, t1 == 0, t2 == 1),
+                      And(t0 == R11, t1 == 2, t2 == 2),
+                      And(t0 == R11, t1 == 1, t2 == 3),
+                      And(t0 == R12, t1 == 0, t2 == 1),
+                      And(t0 == R12, t1 == 2, t2 == 2),
+                      And(t0 == R12, t1 == 1, t2 == 3),
+                      And(t0 == R13, t1 == 0, t2 == 1),
+                      And(t0 == R13, t1 == 2, t2 == 2),
+                      And(t0 == R13, t1 == 1, t2 == 3),
+                      And(t0 == R14, t1 == 0, t2 == 1),
+                      And(t0 == R14, t1 == 2, t2 == 2),
+                      And(t0 == R14, t1 == 1, t2 == 3),
+                      And(t0 == R21, t1 == 0, t2 == 1),
+                      And(t0 == R21, t1 == 2, t2 == 2),
+                      And(t0 == R21, t1 == 1, t2 == 3),
+                      And(t0 == R22, t1 == 0, t2 == 1),
+                      And(t0 == R22, t1 == 2, t2 == 2),
+                      And(t0 == R22, t1 == 1, t2 == 3),
+                      And(t0 == R23, t1 == 0, t2 == 1),
+                      And(t0 == R23, t1 == 2, t2 == 2),
+                      And(t0 == R23, t1 == 1, t2 == 3),
+                      And(t0 == R24, t1 == 0, t2 == 1),
+                      And(t0 == R24, t1 == 2, t2 == 2),
+                      And(t0 == R24, t1 == 1, t2 == 3),
+                      And(t0 == R31, t1 == 0, t2 == 1),
+                      And(t0 == R31, t1 == 2, t2 == 2),
+                      And(t0 == R31, t1 == 1, t2 == 3),
+                      And(t0 == R32, t1 == 0, t2 == 1),
+                      And(t0 == R32, t1 == 2, t2 == 2),
+                      And(t0 == R32, t1 == 1, t2 == 3),
+                      And(t0 == R33, t1 == 0, t2 == 1),
+                      And(t0 == R33, t1 == 2, t2 == 2),
+                      And(t0 == R33, t1 == 1, t2 == 3),
+                      And(t0 == R34, t1 == 0, t2 == 1),
+                      And(t0 == R34, t1 == 2, t2 == 2),
+                      And(t0 == R34, t1 == 1, t2 == 3),
+                      And(t0 == R41, t1 == 0, t2 == 1),
+                      And(t0 == R41, t1 == 2, t2 == 2),
+                      And(t0 == R41, t1 == 1, t2 == 3),
+                      And(t0 == R42, t1 == 0, t2 == 1),
+                      And(t0 == R42, t1 == 2, t2 == 2),
+                      And(t0 == R42, t1 == 1, t2 == 3),
+                      And(t0 == R43, t1 == 0, t2 == 1),
+                      And(t0 == R43, t1 == 2, t2 == 2),
+                      And(t0 == R43, t1 == 1, t2 == 3),
+                      And(t0 == R44, t1 == 0, t2 == 1),
+                      And(t0 == R44, t1 == 2, t2 == 2),
+                      And(t0 == R44, t1 == 1, t2 == 3))),
+               SetAdminDist(t0, t1, t2) == False))]
+Checking SAT for box fwd01-0 ...
+SAT, reading inputs...
+	Synthesized input MinIGPBGPRoute ['False']
+	Synthesized input SetAdminDist [[R11, 0, 1, True], [R11, 2, 2, True], [R11, 1, 3, True], [R12, 0, 1, True], [R12, 2, 2, True], [R12, 1, 3, True], [R13, 0, 1, True], [R13, 2, 2, True], [R13, 1, 3, True], [R14, 0, 1, True], [R14, 2, 2, True], [R14, 1, 3, True], [R21, 0, 1, True], [R21, 2, 2, True], [R21, 1, 3, True], [R22, 0, 1, True], [R22, 2, 2, True], [R22, 1, 3, True], [R23, 0, 1, True], [R23, 2, 2, True], [R23, 1, 3, True], [R24, 0, 1, True], [R24, 2, 2, True], [R24, 1, 3, True], [R31, 0, 1, True], [R31, 2, 2, True], [R31, 1, 3, True], [R32, 0, 1, True], [R32, 2, 2, True], [R32, 1, 3, True], [R33, 0, 1, True], [R33, 2, 2, True], [R33, 1, 3, True], [R34, 0, 1, True], [R34, 2, 2, True], [R34, 1, 3, True], [R41, 0, 1, True], [R41, 2, 2, True], [R41, 1, 3, True], [R42, 0, 1, True], [R42, 2, 2, True], [R42, 1, 3, True], [R43, 0, 1, True], [R43, 2, 2, True], [R43, 1, 3, True], [R44, 0, 1, True], [R44, 2, 2, True], [R44, 1, 3, True], 'False']
+	Synthesized input SetStaticRoute [[R44_N0, R34, R44, True], [R44_N0, R24, R34, True], [R44_N0, R23, R24, True], [R44_N0, R22, R23, True], [R44_N0, R21, R22, True], 'False']
+	Synthesized input BestOSPFRoute [[R44_N0, R14, R24, 6, True], [R44_N0, R12, R13, 11, True], [R44_N0, R13, R23, 9, True], [R44_N0, R11, R21, 16, True], [R44_N0, R31, R32, 17, True], [R44_N0, R32, R33, 13, True], [R44_N0, R33, R34, 3, True], [R44_N0, R41, R42, 17, True], [R44_N0, R43, R44, 8, True], [R44_N0, R42, R43, 10, True], [R44_N0, R34, R44, 2, True], [R44_N0, R24, R34, 3, True], [R44_N0, R23, R33, 7, True], [R44_N0, R22, R23, 12, True], [R44_N0, R21, R22, 14, True], 'False']
+##############################
+Synthesizing for box 2 ospf02-1
+Feeding desired outputs for ospf02-1...
+	Feeding desired output ospf02-1 [BestOSPFRoute(R44_N0, R14, R24, 6) == True, BestOSPFRoute(R44_N0, R12, R13, 11) == True, BestOSPFRoute(R44_N0, R13, R23, 9) == True, BestOSPFRoute(R44_N0, R11, R21, 16) == True, BestOSPFRoute(R44_N0, R31, R32, 17) == True, BestOSPFRoute(R44_N0, R32, R33, 13) == True, BestOSPFRoute(R44_N0, R33, R34, 3) == True, BestOSPFRoute(R44_N0, R41, R42, 17) == True, BestOSPFRoute(R44_N0, R43, R44, 8) == True, BestOSPFRoute(R44_N0, R42, R43, 10) == True, BestOSPFRoute(R44_N0, R34, R44, 2) == True, BestOSPFRoute(R44_N0, R24, R34, 3) == True, BestOSPFRoute(R44_N0, R23, R33, 7) == True, BestOSPFRoute(R44_N0, R22, R23, 12) == True, BestOSPFRoute(R44_N0, R21, R22, 14) == True, ForAll([t0, t1, t2, t3],
+       Implies(Not(Or(And(t0 == R44_N0,
+                          t1 == R14,
+                          t2 == R24,
+                          t3 == 6),
+                      And(t0 == R44_N0,
+                          t1 == R12,
+                          t2 == R13,
+                          t3 == 11),
+                      And(t0 == R44_N0,
+                          t1 == R13,
+                          t2 == R23,
+                          t3 == 9),
+                      And(t0 == R44_N0,
+                          t1 == R11,
+                          t2 == R21,
+                          t3 == 16),
+                      And(t0 == R44_N0,
+                          t1 == R31,
+                          t2 == R32,
+                          t3 == 17),
+                      And(t0 == R44_N0,
+                          t1 == R32,
+                          t2 == R33,
+                          t3 == 13),
+                      And(t0 == R44_N0,
+                          t1 == R33,
+                          t2 == R34,
+                          t3 == 3),
+                      And(t0 == R44_N0,
+                          t1 == R41,
+                          t2 == R42,
+                          t3 == 17),
+                      And(t0 == R44_N0,
+                          t1 == R43,
+                          t2 == R44,
+                          t3 == 8),
+                      And(t0 == R44_N0,
+                          t1 == R42,
+                          t2 == R43,
+                          t3 == 10),
+                      And(t0 == R44_N0,
+                          t1 == R34,
+                          t2 == R44,
+                          t3 == 2),
+                      And(t0 == R44_N0,
+                          t1 == R24,
+                          t2 == R34,
+                          t3 == 3),
+                      And(t0 == R44_N0,
+                          t1 == R23,
+                          t2 == R33,
+                          t3 == 7),
+                      And(t0 == R44_N0,
+                          t1 == R22,
+                          t2 == R23,
+                          t3 == 12),
+                      And(t0 == R44_N0,
+                          t1 == R21,
+                          t2 == R22,
+                          t3 == 14))),
+               BestOSPFRoute(t0, t1, t2, t3) == False))]
+Checking SAT for box ospf02-1 ...
+SAT, reading inputs...
+	Synthesized input nonMinOSPFRouteCost ['False']
+	Synthesized input OSPFRoute [[R44_N0, R14, R24, 6, True], [R44_N0, R12, R13, 11, True], [R44_N0, R13, R23, 9, True], [R44_N0, R11, R21, 16, True], [R44_N0, R31, R32, 17, True], [R44_N0, R32, R33, 13, True], [R44_N0, R33, R34, 3, True], [R44_N0, R41, R42, 17, True], [R44_N0, R43, R44, 8, True], [R44_N0, R42, R43, 10, True], [R44_N0, R34, R44, 2, True], [R44_N0, R24, R34, 3, True], [R44_N0, R23, R33, 7, True], [R44_N0, R22, R23, 12, True], [R44_N0, R21, R22, 14, True], 'False']
+##############################
+Synthesizing for box 1 ospf02-0
+Feeding desired outputs for ospf02-0...
+	Feeding desired output ospf02-0 [ForAll([t0, t1, t2],
+       nonMinOSPFRouteCost(t0, t1, t2) == False)]
+	Feeding shortcut INPUT ospf02-0 [OSPFRoute(R44_N0, R14, R24, 6) == True, OSPFRoute(R44_N0, R12, R13, 11) == True, OSPFRoute(R44_N0, R13, R23, 9) == True, OSPFRoute(R44_N0, R11, R21, 16) == True, OSPFRoute(R44_N0, R31, R32, 17) == True, OSPFRoute(R44_N0, R32, R33, 13) == True, OSPFRoute(R44_N0, R33, R34, 3) == True, OSPFRoute(R44_N0, R41, R42, 17) == True, OSPFRoute(R44_N0, R43, R44, 8) == True, OSPFRoute(R44_N0, R42, R43, 10) == True, OSPFRoute(R44_N0, R34, R44, 2) == True, OSPFRoute(R44_N0, R24, R34, 3) == True, OSPFRoute(R44_N0, R23, R33, 7) == True, OSPFRoute(R44_N0, R22, R23, 12) == True, OSPFRoute(R44_N0, R21, R22, 14) == True]
+Checking SAT for box ospf02-0 ...
+SAT, reading inputs...
+	Synthesized input OSPFRoute [[R44_N0, R14, R24, 6, True], [R44_N0, R12, R13, 11, True], [R44_N0, R13, R23, 9, True], [R44_N0, R11, R21, 16, True], [R44_N0, R31, R32, 17, True], [R44_N0, R32, R33, 13, True], [R44_N0, R33, R34, 3, True], [R44_N0, R41, R42, 17, True], [R44_N0, R43, R44, 8, True], [R44_N0, R42, R43, 10, True], [R44_N0, R34, R44, 2, True], [R44_N0, R24, R34, 3, True], [R44_N0, R23, R33, 7, True], [R44_N0, R22, R23, 12, True], [R44_N0, R21, R22, 14, True], 'False']
+partially evaluate the OSPF Datalog rules
+OSPFRoute(network, src, next, cost) <- !EdgePhy(src, network), Network(network), ConnectedNodes(src, siface, diface, next), SetOSPFEdgeCost(siface, diface, cost1), OSPFRoute(network, next, next2, cost2), cost = cost1 + cost2, cost < 100, src != next2
+OSPFRoute_R44_N0_R14_R24(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I14_3", nxt="I24_4", cost = cost1 + 3.
+OSPFRoute_R44_N0_R14_R24(cost) -> int(cost).
+OSPFRoute_R44_N0_R12_R13(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I12_1", nxt="I13_2", cost = cost1 + 9.
+OSPFRoute_R44_N0_R12_R13(cost) -> int(cost).
+OSPFRoute_R44_N0_R13_R23(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I13_3", nxt="I23_4", cost = cost1 + 7.
+OSPFRoute_R44_N0_R13_R23(cost) -> int(cost).
+OSPFRoute_R44_N0_R11_R21(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I11_3", nxt="I21_4", cost = cost1 + 14.
+OSPFRoute_R44_N0_R11_R21(cost) -> int(cost).
+OSPFRoute_R44_N0_R22_R23(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I22_1", nxt="I23_2", cost = cost1 + 7.
+OSPFRoute_R44_N0_R22_R23(cost) -> int(cost).
+OSPFRoute_R44_N0_R41_R42(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I41_1", nxt="I42_2", cost = cost1 + 10.
+OSPFRoute_R44_N0_R41_R42(cost) -> int(cost).
+OSPFRoute_R44_N0_R21_R22(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I21_1", nxt="I22_2", cost = cost1 + 12.
+OSPFRoute_R44_N0_R21_R22(cost) -> int(cost).
+OSPFRoute_R44_N0_R43_R44(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="I43_1", nxt="I44_2", cost = 8.
+OSPFRoute_R44_N0_R43_R44(cost) -> int(cost).
+OSPFRoute_R44_N0_R42_R43(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I42_1", nxt="I43_2", cost = cost1 + 8.
+OSPFRoute_R44_N0_R42_R43(cost) -> int(cost).
+OSPFRoute_R44_N0_R34_R44(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="I34_3", nxt="I44_4", cost = 2.
+OSPFRoute_R44_N0_R34_R44(cost) -> int(cost).
+OSPFRoute_R44_N0_R24_R34(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I24_3", nxt="I34_4", cost = cost1 + 2.
+OSPFRoute_R44_N0_R24_R34(cost) -> int(cost).
+OSPFRoute_R44_N0_R23_R33(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I23_3", nxt="I33_4", cost = cost1 + 3.
+OSPFRoute_R44_N0_R23_R33(cost) -> int(cost).
+OSPFRoute_R44_N0_R31_R32(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I31_1", nxt="I32_2", cost = cost1 + 13.
+OSPFRoute_R44_N0_R31_R32(cost) -> int(cost).
+OSPFRoute_R44_N0_R32_R33(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I32_1", nxt="I33_2", cost = cost1 + 3.
+OSPFRoute_R44_N0_R32_R33(cost) -> int(cost).
+OSPFRoute_R44_N0_R33_R34(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I33_1", nxt="I34_2", cost = cost1 + 2.
+OSPFRoute_R44_N0_R33_R34(cost) -> int(cost).
+OSPFRoute_R44_N0_R14_R24(6) == True
+ForAll(cost, OSPFRoute_R44_N0_R14_R24(cost) == (cost == 6))
+OSPFRoute_R44_N0_R12_R13(11) == True
+ForAll(cost, OSPFRoute_R44_N0_R12_R13(cost) == (cost == 11))
+OSPFRoute_R44_N0_R13_R23(9) == True
+ForAll(cost, OSPFRoute_R44_N0_R13_R23(cost) == (cost == 9))
+OSPFRoute_R44_N0_R11_R21(16) == True
+ForAll(cost, OSPFRoute_R44_N0_R11_R21(cost) == (cost == 16))
+OSPFRoute_R44_N0_R31_R32(17) == True
+ForAll(cost, OSPFRoute_R44_N0_R31_R32(cost) == (cost == 17))
+OSPFRoute_R44_N0_R32_R33(13) == True
+ForAll(cost, OSPFRoute_R44_N0_R32_R33(cost) == (cost == 13))
+OSPFRoute_R44_N0_R33_R34(3) == True
+ForAll(cost, OSPFRoute_R44_N0_R33_R34(cost) == (cost == 3))
+OSPFRoute_R44_N0_R41_R42(17) == True
+ForAll(cost, OSPFRoute_R44_N0_R41_R42(cost) == (cost == 17))
+OSPFRoute_R44_N0_R43_R44(8) == True
+ForAll(cost, OSPFRoute_R44_N0_R43_R44(cost) == (cost == 8))
+OSPFRoute_R44_N0_R42_R43(10) == True
+ForAll(cost, OSPFRoute_R44_N0_R42_R43(cost) == (cost == 10))
+OSPFRoute_R44_N0_R34_R44(2) == True
+ForAll(cost, OSPFRoute_R44_N0_R34_R44(cost) == (cost == 2))
+OSPFRoute_R44_N0_R24_R34(3) == True
+ForAll(cost, OSPFRoute_R44_N0_R24_R34(cost) == (cost == 3))
+OSPFRoute_R44_N0_R23_R33(7) == True
+ForAll(cost, OSPFRoute_R44_N0_R23_R33(cost) == (cost == 7))
+OSPFRoute_R44_N0_R22_R23(12) == True
+ForAll(cost, OSPFRoute_R44_N0_R22_R23(cost) == (cost == 12))
+OSPFRoute_R44_N0_R21_R22(14) == True
+ForAll(cost, OSPFRoute_R44_N0_R21_R22(cost) == (cost == 14))
+##############################
+Synthesizing for box 0 ospf01
+Feeding desired outputs for ospf01...
+	Feeding desired output ospf01 [OSPFRoute_1(R44_N0, R14, R24, 6) == True, OSPFRoute_1(R44_N0, R12, R13, 11) == True, OSPFRoute_1(R44_N0, R13, R23, 9) == True, OSPFRoute_1(R44_N0, R11, R21, 16) == True, OSPFRoute_1(R44_N0, R31, R32, 17) == True, OSPFRoute_1(R44_N0, R32, R33, 13) == True, OSPFRoute_1(R44_N0, R33, R34, 3) == True, OSPFRoute_1(R44_N0, R41, R42, 17) == True, OSPFRoute_1(R44_N0, R43, R44, 8) == True, OSPFRoute_1(R44_N0, R42, R43, 10) == True, OSPFRoute_1(R44_N0, R34, R44, 2) == True, OSPFRoute_1(R44_N0, R24, R34, 3) == True, OSPFRoute_1(R44_N0, R23, R33, 7) == True, OSPFRoute_1(R44_N0, R22, R23, 12) == True, OSPFRoute_1(R44_N0, R21, R22, 14) == True]
+	Feeding desired output ospf01 [OSPFRoute_1(R44_N0, R14, R24, 6) == True, OSPFRoute_1(R44_N0, R12, R13, 11) == True, OSPFRoute_1(R44_N0, R13, R23, 9) == True, OSPFRoute_1(R44_N0, R11, R21, 16) == True, OSPFRoute_1(R44_N0, R31, R32, 17) == True, OSPFRoute_1(R44_N0, R32, R33, 13) == True, OSPFRoute_1(R44_N0, R33, R34, 3) == True, OSPFRoute_1(R44_N0, R41, R42, 17) == True, OSPFRoute_1(R44_N0, R43, R44, 8) == True, OSPFRoute_1(R44_N0, R42, R43, 10) == True, OSPFRoute_1(R44_N0, R34, R44, 2) == True, OSPFRoute_1(R44_N0, R24, R34, 3) == True, OSPFRoute_1(R44_N0, R23, R33, 7) == True, OSPFRoute_1(R44_N0, R22, R23, 12) == True, OSPFRoute_1(R44_N0, R21, R22, 14) == True]
+Checking SAT for box ospf01 ...
+SAT, reading inputs...
+	Synthesized input ConnectedNodes [[R14, I14_2, I13_1, R13, True], [R14, I14_3, I24_4, R24, True], [R41, I41_4, I31_3, R31, True], [R22, I22_2, I21_1, R21, True], [R13, I13_1, I14_2, R14, True], [R24, I24_4, I14_3, R14, True], [R44, I44_4, I34_3, R34, True], [R44, I44_2, I43_1, R43, True], [R34, I34_4, I24_3, R24, True], [R23, I23_1, I24_2, R24, True], [R32, I32_4, I22_3, R22, True], [R23, I23_2, I22_1, R22, True], [R11, I11_3, I21_4, R21, True], [R23, I23_3, I33_4, R33, True], [R33, I33_1, I34_2, R34, True], [R33, I33_2, I32_1, R32, True], [R33, I33_3, I43_4, R43, True], [R33, I33_4, I23_3, R23, True], [R31, I31_3, I41_4, R41, True], [R12, I12_2, I11_1, R11, True], [R12, I12_1, I13_2, R13, True], [R21, I21_4, I11_3, R11, True], [R21, I21_3, I31_4, R31, True], [R21, I21_1, I22_2, R22, True], [R43, I43_1, I44_2, R44, True], [R34, I34_3, I44_4, R44, True], [R23, I23_4, I13_3, R13, True], [R32, I32_2, I31_1, R31, True], [R13, I13_3, I23_4, R23, True], [R11, I11_1, I12_2, R12, True], [R42, I42_4, I32_3, R32, True], [R42, I42_1, I43_2, R43, True], [R42, I42_2, I41_1, R41, True], [R13, I13_2, I12_1, R12, True], [R22, I22_4, I12_3, R12, True], [R12, I12_3, I22_4, R22, True], [R43, I43_4, I33_3, R33, True], [R22, I22_1, I23_2, R23, True], [R24, I24_3, I34_4, R34, True], [R34, I34_2, I33_1, R33, True], [R32, I32_1, I33_2, R33, True], [R32, I32_3, I42_4, R42, True], [R24, I24_2, I23_1, R23, True], [R31, I31_1, I32_2, R32, True], [R43, I43_2, I42_1, R42, True], [R31, I31_4, I21_3, R21, True], [R22, I22_3, I32_4, R32, True], [R41, I41_1, I42_2, R42, True], 'False']
+	Synthesized input EdgePhy [[I12_4, R12, True], [I44_2, I43_1, True], [I44_2, R44, True], [I41_4, R41, True], [I41_4, I31_3, True], [I24_1, R24, True], [I42_3, R42, True], [I42_2, I41_1, True], [I42_2, R42, True], [I42_1, I43_2, True], [I42_1, R42, True], [I42_4, I32_3, True], [I42_4, R42, True], [I43_2, I42_1, True], [I43_2, R43, True], [I43_3, R43, True], [I43_1, I44_2, True], [I43_1, R43, True], [I43_4, I33_3, True], [I43_4, R43, True], [I12_1, R12, True], [I12_1, I13_2, True], [I24_3, I34_4, True], [I24_3, R24, True], [I23_1, I24_2, True], [I23_1, R23, True], [R14, I14_4, True], [R14, I14_2, True], [R14, I14_3, True], [R14, I14_1, True], [I23_3, I33_4, True], [I23_3, R23, True], [R12, I12_4, True], [R12, I12_1, True], [R12, I12_3, True], [R12, I12_2, True], [R13, I13_1, True], [R13, I13_4, True], [R13, I13_3, True], [R13, I13_2, True], [R11, I11_4, True], [R11, I11_3, True], [R11, I11_2, True], [R11, I11_1, True], [I13_1, R13, True], [I13_1, I14_2, True], [I12_3, R12, True], [I12_3, I22_4, True], [I14_4, R14, True], [I21_4, I11_3, True], [I21_4, R21, True], [I21_2, R21, True], [I21_3, I31_4, True], [I21_3, R21, True], [I13_4, R13, True], [I21_1, I22_2, True], [I21_1, R21, True], [R34, I34_4, True], [R34, I34_1, True], [R34, I34_2, True], [R34, I34_3, True], [I32_2, R32, True], [I32_2, I31_1, True], [I22_3, I32_4, True], [I22_3, R22, True], [I22_2, I21_1, True], [I22_2, R22, True], [I31_4, I21_3, True], [I31_4, R31, True], [R31, I31_4, True], [R31, I31_2, True], [R31, I31_1, True], [R31, I31_3, True], [R32, I32_2, True], [R32, I32_1, True], [R32, I32_4, True], [R32, I32_3, True], [R33, I33_4, True], [R33, I33_3, True], [R33, I33_1, True], [R33, I33_2, True], [I34_4, I24_3, True], [I34_4, R34, True], [I41_2, R41, True], [I34_1, R34, True], [I34_2, R34, True], [I34_2, I33_1, True], [I34_3, R34, True], [I34_3, I44_4, True], [R44_N0, R44, True], [I33_4, I23_3, True], [I33_4, R33, True], [I33_3, I43_4, True], [I33_3, R33, True], [I23_2, I22_1, True], [I23_2, R23, True], [I33_1, R33, True], [I33_1, I34_2, True], [I33_2, R33, True], [I33_2, I32_1, True], [I14_2, R14, True], [I14_2, I13_1, True], [I22_1, I23_2, True], [I22_1, R22, True], [I41_3, R41, True], [I23_4, I13_3, True], [I23_4, R23, True], [I11_4, R11, True], [I41_1, I42_2, True], [I41_1, R41, True], [I14_3, R14, True], [I14_3, I24_4, True], [I13_3, R13, True], [I13_3, I23_4, True], [I13_2, I12_1, True], [I13_2, R13, True], [I11_3, R11, True], [I11_3, I21_4, True], [I11_2, R11, True], [I11_1, R11, True], [I11_1, I12_2, True], [I31_2, R31, True], [I14_1, R14, True], [I32_1, R32, True], [I32_1, I33_2, True], [I44_1, R44, True], [I44_3, R44, True], [I24_4, I14_3, True], [I24_4, R24, True], [I44_4, I34_3, True], [I44_4, R44, True], [I22_4, I12_3, True], [I22_4, R22, True], [I12_2, R12, True], [I12_2, I11_1, True], [R44, I44_2, True], [R44, R44_N0, True], [R44, I44_1, True], [R44, I44_3, True], [R44, I44_4, True], [I32_4, I22_3, True], [I32_4, R32, True], [R41, I41_4, True], [R41, I41_2, True], [R41, I41_3, True], [R41, I41_1, True], [I32_3, I42_4, True], [I32_3, R32, True], [R43, I43_2, True], [R43, I43_3, True], [R43, I43_1, True], [R43, I43_4, True], [R42, I42_3, True], [R42, I42_2, True], [R42, I42_1, True], [R42, I42_4, True], [I31_1, I32_2, True], [I31_1, R31, True], [I24_2, I23_1, True], [I24_2, R24, True], [I31_3, I41_4, True], [I31_3, R31, True], [R24, I24_1, True], [R24, I24_3, True], [R24, I24_4, True], [R24, I24_2, True], [R23, I23_1, True], [R23, I23_3, True], [R23, I23_2, True], [R23, I23_4, True], [R22, I22_3, True], [R22, I22_2, True], [R22, I22_1, True], [R22, I22_4, True], [R21, I21_4, True], [R21, I21_2, True], [R21, I21_3, True], [R21, I21_1, True], 'False']
+	Synthesized input Network [[R44_N0, True], 'False']
+	Synthesized input SetOSPFEdgeCost [[I22_1, I23_2, 5, True], [I31_1, I32_2, 4, True], [I23_3, I33_4, 4, True], [I14_3, I24_4, 3, True], [I41_1, I42_2, 7, True], [I13_3, I23_4, 2, True], [I21_1, I22_2, 2, True], [I11_3, I21_4, 2, True], [I33_1, I34_2, 1, True], [I12_1, I13_2, 2, True], [I24_3, I34_4, 1, True], [I32_1, I33_2, 10, True], [I34_3, I44_4, 2, True], [I42_1, I43_2, 2, True], [I43_1, I44_2, 8, True], 'False']
+Done!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Final results...
+For box ospf01
+	Synthesized input ConnectedNodes [[R14, I14_2, I13_1, R13], [R14, I14_3, I24_4, R24], [R41, I41_4, I31_3, R31], [R22, I22_2, I21_1, R21], [R13, I13_1, I14_2, R14], [R24, I24_4, I14_3, R14], [R44, I44_4, I34_3, R34], [R44, I44_2, I43_1, R43], [R34, I34_4, I24_3, R24], [R23, I23_1, I24_2, R24], [R32, I32_4, I22_3, R22], [R23, I23_2, I22_1, R22], [R11, I11_3, I21_4, R21], [R23, I23_3, I33_4, R33], [R33, I33_1, I34_2, R34], [R33, I33_2, I32_1, R32], [R33, I33_3, I43_4, R43], [R33, I33_4, I23_3, R23], [R31, I31_3, I41_4, R41], [R12, I12_2, I11_1, R11], [R12, I12_1, I13_2, R13], [R21, I21_4, I11_3, R11], [R21, I21_3, I31_4, R31], [R21, I21_1, I22_2, R22], [R43, I43_1, I44_2, R44], [R34, I34_3, I44_4, R44], [R23, I23_4, I13_3, R13], [R32, I32_2, I31_1, R31], [R13, I13_3, I23_4, R23], [R11, I11_1, I12_2, R12], [R42, I42_4, I32_3, R32], [R42, I42_1, I43_2, R43], [R42, I42_2, I41_1, R41], [R13, I13_2, I12_1, R12], [R22, I22_4, I12_3, R12], [R12, I12_3, I22_4, R22], [R43, I43_4, I33_3, R33], [R22, I22_1, I23_2, R23], [R24, I24_3, I34_4, R34], [R34, I34_2, I33_1, R33], [R32, I32_1, I33_2, R33], [R32, I32_3, I42_4, R42], [R24, I24_2, I23_1, R23], [R31, I31_1, I32_2, R32], [R43, I43_2, I42_1, R42], [R31, I31_4, I21_3, R21], [R22, I22_3, I32_4, R32], [R41, I41_1, I42_2, R42], 'False']
+	Synthesized input EdgePhy [[I12_4, R12], [I44_2, I43_1], [I44_2, R44], [I41_4, R41], [I41_4, I31_3], [I24_1, R24], [I42_3, R42], [I42_2, I41_1], [I42_2, R42], [I42_1, I43_2], [I42_1, R42], [I42_4, I32_3], [I42_4, R42], [I43_2, I42_1], [I43_2, R43], [I43_3, R43], [I43_1, I44_2], [I43_1, R43], [I43_4, I33_3], [I43_4, R43], [I12_1, R12], [I12_1, I13_2], [I24_3, I34_4], [I24_3, R24], [I23_1, I24_2], [I23_1, R23], [R14, I14_4], [R14, I14_2], [R14, I14_3], [R14, I14_1], [I23_3, I33_4], [I23_3, R23], [R12, I12_4], [R12, I12_1], [R12, I12_3], [R12, I12_2], [R13, I13_1], [R13, I13_4], [R13, I13_3], [R13, I13_2], [R11, I11_4], [R11, I11_3], [R11, I11_2], [R11, I11_1], [I13_1, R13], [I13_1, I14_2], [I12_3, R12], [I12_3, I22_4], [I14_4, R14], [I21_4, I11_3], [I21_4, R21], [I21_2, R21], [I21_3, I31_4], [I21_3, R21], [I13_4, R13], [I21_1, I22_2], [I21_1, R21], [R34, I34_4], [R34, I34_1], [R34, I34_2], [R34, I34_3], [I32_2, R32], [I32_2, I31_1], [I22_3, I32_4], [I22_3, R22], [I22_2, I21_1], [I22_2, R22], [I31_4, I21_3], [I31_4, R31], [R31, I31_4], [R31, I31_2], [R31, I31_1], [R31, I31_3], [R32, I32_2], [R32, I32_1], [R32, I32_4], [R32, I32_3], [R33, I33_4], [R33, I33_3], [R33, I33_1], [R33, I33_2], [I34_4, I24_3], [I34_4, R34], [I41_2, R41], [I34_1, R34], [I34_2, R34], [I34_2, I33_1], [I34_3, R34], [I34_3, I44_4], [R44_N0, R44], [I33_4, I23_3], [I33_4, R33], [I33_3, I43_4], [I33_3, R33], [I23_2, I22_1], [I23_2, R23], [I33_1, R33], [I33_1, I34_2], [I33_2, R33], [I33_2, I32_1], [I14_2, R14], [I14_2, I13_1], [I22_1, I23_2], [I22_1, R22], [I41_3, R41], [I23_4, I13_3], [I23_4, R23], [I11_4, R11], [I41_1, I42_2], [I41_1, R41], [I14_3, R14], [I14_3, I24_4], [I13_3, R13], [I13_3, I23_4], [I13_2, I12_1], [I13_2, R13], [I11_3, R11], [I11_3, I21_4], [I11_2, R11], [I11_1, R11], [I11_1, I12_2], [I31_2, R31], [I14_1, R14], [I32_1, R32], [I32_1, I33_2], [I44_1, R44], [I44_3, R44], [I24_4, I14_3], [I24_4, R24], [I44_4, I34_3], [I44_4, R44], [I22_4, I12_3], [I22_4, R22], [I12_2, R12], [I12_2, I11_1], [R44, I44_2], [R44, R44_N0], [R44, I44_1], [R44, I44_3], [R44, I44_4], [I32_4, I22_3], [I32_4, R32], [R41, I41_4], [R41, I41_2], [R41, I41_3], [R41, I41_1], [I32_3, I42_4], [I32_3, R32], [R43, I43_2], [R43, I43_3], [R43, I43_1], [R43, I43_4], [R42, I42_3], [R42, I42_2], [R42, I42_1], [R42, I42_4], [I31_1, I32_2], [I31_1, R31], [I24_2, I23_1], [I24_2, R24], [I31_3, I41_4], [I31_3, R31], [R24, I24_1], [R24, I24_3], [R24, I24_4], [R24, I24_2], [R23, I23_1], [R23, I23_3], [R23, I23_2], [R23, I23_4], [R22, I22_3], [R22, I22_2], [R22, I22_1], [R22, I22_4], [R21, I21_4], [R21, I21_2], [R21, I21_3], [R21, I21_1], 'False']
+	Synthesized input Network [[R44_N0], 'False']
+	Synthesized input SetOSPFEdgeCost [[I22_1, I23_2, 5], [I31_1, I32_2, 4], [I23_3, I33_4, 4], [I14_3, I24_4, 3], [I41_1, I42_2, 7], [I13_3, I23_4, 2], [I21_1, I22_2, 2], [I11_3, I21_4, 2], [I33_1, I34_2, 1], [I12_1, I13_2, 2], [I24_3, I34_4, 1], [I32_1, I33_2, 10], [I34_3, I44_4, 2], [I42_1, I43_2, 2], [I43_1, I44_2, 8], 'False']
+	Synthesized output OSPFRoute_1 [[R44_N0, R14, R24, 6], [R44_N0, R12, R13, 11], [R44_N0, R13, R23, 9], [R44_N0, R11, R21, 16], [R44_N0, R31, R32, 17], [R44_N0, R32, R33, 13], [R44_N0, R33, R34, 3], [R44_N0, R41, R42, 17], [R44_N0, R43, R44, 8], [R44_N0, R42, R43, 10], [R44_N0, R34, R44, 2], [R44_N0, R24, R34, 3], [R44_N0, R23, R33, 7], [R44_N0, R22, R23, 12], [R44_N0, R21, R22, 14]]
+	Synthesized output OSPFRoute []
+For box ospf02-0
+	Synthesized input OSPFRoute [[R44_N0, R14, R24, 6], [R44_N0, R12, R13, 11], [R44_N0, R13, R23, 9], [R44_N0, R11, R21, 16], [R44_N0, R31, R32, 17], [R44_N0, R32, R33, 13], [R44_N0, R33, R34, 3], [R44_N0, R41, R42, 17], [R44_N0, R43, R44, 8], [R44_N0, R42, R43, 10], [R44_N0, R34, R44, 2], [R44_N0, R24, R34, 3], [R44_N0, R23, R33, 7], [R44_N0, R22, R23, 12], [R44_N0, R21, R22, 14], 'False']
+	Synthesized output nonMinOSPFRouteCost []
+For box ospf02-1
+	Synthesized input nonMinOSPFRouteCost ['False']
+	Synthesized input OSPFRoute [[R44_N0, R14, R24, 6], [R44_N0, R12, R13, 11], [R44_N0, R13, R23, 9], [R44_N0, R11, R21, 16], [R44_N0, R31, R32, 17], [R44_N0, R32, R33, 13], [R44_N0, R33, R34, 3], [R44_N0, R41, R42, 17], [R44_N0, R43, R44, 8], [R44_N0, R42, R43, 10], [R44_N0, R34, R44, 2], [R44_N0, R24, R34, 3], [R44_N0, R23, R33, 7], [R44_N0, R22, R23, 12], [R44_N0, R21, R22, 14], 'False']
+	Synthesized output minOSPFRouteCost [[R44_N0, R14, 6], [R44_N0, R12, 11], [R44_N0, R13, 9], [R44_N0, R11, 16], [R44_N0, R31, 17], [R44_N0, R32, 13], [R44_N0, R33, 3], [R44_N0, R41, 17], [R44_N0, R43, 8], [R44_N0, R42, 10], [R44_N0, R34, 2], [R44_N0, R24, 3], [R44_N0, R23, 7], [R44_N0, R22, 12], [R44_N0, R21, 14]]
+	Synthesized output BestOSPFRoute [[R44_N0, R14, R24, 6], [R44_N0, R12, R13, 11], [R44_N0, R13, R23, 9], [R44_N0, R11, R21, 16], [R44_N0, R31, R32, 17], [R44_N0, R32, R33, 13], [R44_N0, R33, R34, 3], [R44_N0, R41, R42, 17], [R44_N0, R43, R44, 8], [R44_N0, R42, R43, 10], [R44_N0, R34, R44, 2], [R44_N0, R24, R34, 3], [R44_N0, R23, R33, 7], [R44_N0, R22, R23, 12], [R44_N0, R21, R22, 14]]
+For box fwd01-0
+	Synthesized input MinIGPBGPRoute ['False']
+	Synthesized input SetAdminDist [[R11, 0, 1], [R11, 2, 2], [R11, 1, 3], [R12, 0, 1], [R12, 2, 2], [R12, 1, 3], [R13, 0, 1], [R13, 2, 2], [R13, 1, 3], [R14, 0, 1], [R14, 2, 2], [R14, 1, 3], [R21, 0, 1], [R21, 2, 2], [R21, 1, 3], [R22, 0, 1], [R22, 2, 2], [R22, 1, 3], [R23, 0, 1], [R23, 2, 2], [R23, 1, 3], [R24, 0, 1], [R24, 2, 2], [R24, 1, 3], [R31, 0, 1], [R31, 2, 2], [R31, 1, 3], [R32, 0, 1], [R32, 2, 2], [R32, 1, 3], [R33, 0, 1], [R33, 2, 2], [R33, 1, 3], [R34, 0, 1], [R34, 2, 2], [R34, 1, 3], [R41, 0, 1], [R41, 2, 2], [R41, 1, 3], [R42, 0, 1], [R42, 2, 2], [R42, 1, 3], [R43, 0, 1], [R43, 2, 2], [R43, 1, 3], [R44, 0, 1], [R44, 2, 2], [R44, 1, 3], 'False']
+	Synthesized input SetStaticRoute [[R44_N0, R34, R44], [R44_N0, R24, R34], [R44_N0, R23, R24], [R44_N0, R22, R23], [R44_N0, R21, R22], 'False']
+	Synthesized input BestOSPFRoute [[R44_N0, R14, R24, 6], [R44_N0, R12, R13, 11], [R44_N0, R13, R23, 9], [R44_N0, R11, R21, 16], [R44_N0, R31, R32, 17], [R44_N0, R32, R33, 13], [R44_N0, R33, R34, 3], [R44_N0, R41, R42, 17], [R44_N0, R43, R44, 8], [R44_N0, R42, R43, 10], [R44_N0, R34, R44, 2], [R44_N0, R24, R34, 3], [R44_N0, R23, R33, 7], [R44_N0, R22, R23, 12], [R44_N0, R21, R22, 14], 'False']
+	Synthesized output Route [[R44_N0, R14, R24, 1], [R44_N0, R12, R13, 1], [R44_N0, R13, R23, 1], [R44_N0, R11, R21, 1], [R44_N0, R34, R44, 0], [R44_N0, R31, R32, 1], [R44_N0, R32, R33, 1], [R44_N0, R33, R34, 1], [R44_N0, R41, R42, 1], [R44_N0, R43, R44, 1], [R44_N0, R42, R43, 1], [R44_N0, R24, R34, 0], [R44_N0, R23, R24, 0], [R44_N0, R22, R23, 0], [R44_N0, R21, R22, 0], [R44_N0, R34, R44, 1], [R44_N0, R24, R34, 1], [R44_N0, R23, R33, 1], [R44_N0, R22, R23, 1], [R44_N0, R21, R22, 1]]
+	Synthesized output nonMinCostAD [[R44_N0, R34, 3], [R44_N0, R21, 3], [R44_N0, R23, 3], [R44_N0, R24, 3], [R44_N0, R22, 3], [R44_N0, R34, 2], [R44_N0, R23, 2], [R44_N0, R22, 2], [R44_N0, R24, 2], [R44_N0, R21, 2]]
+	Synthesized output BestBGPRoute []
+For box fwd01-1
+	Synthesized input SetAdminDist [[R11, 0, 1], [R11, 2, 2], [R11, 1, 3], [R12, 0, 1], [R12, 2, 2], [R12, 1, 3], [R13, 0, 1], [R13, 2, 2], [R13, 1, 3], [R14, 0, 1], [R14, 2, 2], [R14, 1, 3], [R21, 0, 1], [R21, 2, 2], [R21, 1, 3], [R22, 0, 1], [R22, 2, 2], [R22, 1, 3], [R23, 0, 1], [R23, 2, 2], [R23, 1, 3], [R24, 0, 1], [R24, 2, 2], [R24, 1, 3], [R31, 0, 1], [R31, 2, 2], [R31, 1, 3], [R32, 0, 1], [R32, 2, 2], [R32, 1, 3], [R33, 0, 1], [R33, 2, 2], [R33, 1, 3], [R34, 0, 1], [R34, 2, 2], [R34, 1, 3], [R41, 0, 1], [R41, 2, 2], [R41, 1, 3], [R42, 0, 1], [R42, 2, 2], [R42, 1, 3], [R43, 0, 1], [R43, 2, 2], [R43, 1, 3], [R44, 0, 1], [R44, 2, 2], [R44, 1, 3], 'False']
+	Synthesized input Route [[R44_N0, R14, R24, 1], [R44_N0, R12, R13, 1], [R44_N0, R13, R23, 1], [R44_N0, R11, R21, 1], [R44_N0, R34, R44, 0], [R44_N0, R31, R32, 1], [R44_N0, R32, R33, 1], [R44_N0, R33, R34, 1], [R44_N0, R41, R42, 1], [R44_N0, R43, R44, 1], [R44_N0, R42, R43, 1], [R44_N0, R24, R34, 0], [R44_N0, R23, R24, 0], [R44_N0, R22, R23, 0], [R44_N0, R21, R22, 0], [R44_N0, R34, R44, 1], [R44_N0, R24, R34, 1], [R44_N0, R23, R33, 1], [R44_N0, R22, R23, 1], [R44_N0, R21, R22, 1], 'False']
+	Synthesized input nonMinCostAD [[R44_N0, R34, 3], [R44_N0, R21, 3], [R44_N0, R23, 3], [R44_N0, R24, 3], [R44_N0, R22, 3], [R44_N0, R34, 2], [R44_N0, R23, 2], [R44_N0, R22, 2], [R44_N0, R24, 2], [R44_N0, R21, 2], 'False']
+	Synthesized output Fwd [[R44_N0, R14, R24, 1], [R44_N0, R12, R13, 1], [R44_N0, R13, R23, 1], [R44_N0, R11, R21, 1], [R44_N0, R34, R44, 0], [R44_N0, R31, R32, 1], [R44_N0, R32, R33, 1], [R44_N0, R33, R34, 1], [R44_N0, R41, R42, 1], [R44_N0, R43, R44, 1], [R44_N0, R42, R43, 1], [R44_N0, R24, R34, 0], [R44_N0, R23, R24, 0], [R44_N0, R22, R23, 0], [R44_N0, R21, R22, 0]]
+Synthesis time: 50

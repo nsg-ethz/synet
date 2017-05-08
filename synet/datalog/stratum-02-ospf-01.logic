@@ -1,0 +1,35 @@
+// ----------------------------- TYPES ----------------------------- //
+
+// Generic Vertex type
+Vertex(n) -> string(n).
+
+//EDB: SetOSPFEdgeCost, Node, Network, EdgePhy
+SetOSPFEdgeCost(src, dst, cost) -> Vertex(src), Vertex(dst), int(cost).
+Node(n) -> Vertex(n).
+Network(n) -> Vertex(n).
+EdgePhy(node1, node2) -> Vertex(node1), Vertex(node2).
+ConnectedNodes(snode, siface, diface, dnode) ->
+    Vertex(snode), Vertex(siface), Vertex(diface), Vertex(dnode).
+
+//IDB: LinkOSPF, OSPFRoute
+OSPFRoute(net, src, next, cost) -> Vertex(net), Vertex(src), Vertex(next), int(cost).
+
+// ----------------------------- OSPF 1/2 ----------------------------- //
+
+OSPFRoute(network, src, next, cost) <-
+    ConnectedNodes(src, siface, diface, next),
+    SetOSPFEdgeCost(siface, diface, cost),
+    EdgePhy(next, network),
+    Network(network).
+
+OSPFRoute(network, src, next, cost) <-
+    !EdgePhy(src, network), 
+    Network(network),
+    ConnectedNodes(src, siface, diface, next),
+    SetOSPFEdgeCost(siface, diface, cost1),
+    OSPFRoute(network, next, next2, cost2),
+    cost=cost1 + cost2,
+    cost < 100,
+    src != next2.
+
+// ------------------------------ THE END ------------------------------//

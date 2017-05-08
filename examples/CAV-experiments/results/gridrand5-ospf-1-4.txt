@@ -1,0 +1,503 @@
+IN BOX ospf01
+IN BOX ospf02-0
+IN BOX ospf02-1
+IN BOX fwd01-0
+IN BOX fwd01-1
+Couldn't import dot_parser, loading of dot files will not be possible.
+Loading user provided input for box: ospf01 []
+Checking initial inputs for box ospf01
+Loading user provided outputs for box: ospf01 []
+Loading user provided input for box: ospf02-0 []
+Checking initial inputs for box ospf02-0
+Loading user provided outputs for box: ospf02-0 []
+Loading user provided input for box: ospf02-1 []
+Checking initial inputs for box ospf02-1
+Loading user provided outputs for box: ospf02-1 []
+Loading user provided input for box: fwd01-0 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R14, 0, 1) == True, SetAdminDist(R14, 2, 2) == True, SetAdminDist(R14, 1, 3) == True, SetAdminDist(R15, 0, 1) == True, SetAdminDist(R15, 2, 2) == True, SetAdminDist(R15, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R24, 0, 1) == True, SetAdminDist(R24, 2, 2) == True, SetAdminDist(R24, 1, 3) == True, SetAdminDist(R25, 0, 1) == True, SetAdminDist(R25, 2, 2) == True, SetAdminDist(R25, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, SetAdminDist(R34, 0, 1) == True, SetAdminDist(R34, 2, 2) == True, SetAdminDist(R34, 1, 3) == True, SetAdminDist(R35, 0, 1) == True, SetAdminDist(R35, 2, 2) == True, SetAdminDist(R35, 1, 3) == True, SetAdminDist(R41, 0, 1) == True, SetAdminDist(R41, 2, 2) == True, SetAdminDist(R41, 1, 3) == True, SetAdminDist(R42, 0, 1) == True, SetAdminDist(R42, 2, 2) == True, SetAdminDist(R42, 1, 3) == True, SetAdminDist(R43, 0, 1) == True, SetAdminDist(R43, 2, 2) == True, SetAdminDist(R43, 1, 3) == True, SetAdminDist(R44, 0, 1) == True, SetAdminDist(R44, 2, 2) == True, SetAdminDist(R44, 1, 3) == True, SetAdminDist(R45, 0, 1) == True, SetAdminDist(R45, 2, 2) == True, SetAdminDist(R45, 1, 3) == True, SetAdminDist(R51, 0, 1) == True, SetAdminDist(R51, 2, 2) == True, SetAdminDist(R51, 1, 3) == True, SetAdminDist(R52, 0, 1) == True, SetAdminDist(R52, 2, 2) == True, SetAdminDist(R52, 1, 3) == True, SetAdminDist(R53, 0, 1) == True, SetAdminDist(R53, 2, 2) == True, SetAdminDist(R53, 1, 3) == True, SetAdminDist(R54, 0, 1) == True, SetAdminDist(R54, 2, 2) == True, SetAdminDist(R54, 1, 3) == True, SetAdminDist(R55, 0, 1) == True, SetAdminDist(R55, 2, 2) == True, SetAdminDist(R55, 1, 3) == True]
+Checking initial inputs for box fwd01-0
+Loading user provided outputs for box: fwd01-0 []
+HEY
+Loading user provided input for box: fwd01-1 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R14, 0, 1) == True, SetAdminDist(R14, 2, 2) == True, SetAdminDist(R14, 1, 3) == True, SetAdminDist(R15, 0, 1) == True, SetAdminDist(R15, 2, 2) == True, SetAdminDist(R15, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R24, 0, 1) == True, SetAdminDist(R24, 2, 2) == True, SetAdminDist(R24, 1, 3) == True, SetAdminDist(R25, 0, 1) == True, SetAdminDist(R25, 2, 2) == True, SetAdminDist(R25, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, SetAdminDist(R34, 0, 1) == True, SetAdminDist(R34, 2, 2) == True, SetAdminDist(R34, 1, 3) == True, SetAdminDist(R35, 0, 1) == True, SetAdminDist(R35, 2, 2) == True, SetAdminDist(R35, 1, 3) == True, SetAdminDist(R41, 0, 1) == True, SetAdminDist(R41, 2, 2) == True, SetAdminDist(R41, 1, 3) == True, SetAdminDist(R42, 0, 1) == True, SetAdminDist(R42, 2, 2) == True, SetAdminDist(R42, 1, 3) == True, SetAdminDist(R43, 0, 1) == True, SetAdminDist(R43, 2, 2) == True, SetAdminDist(R43, 1, 3) == True, SetAdminDist(R44, 0, 1) == True, SetAdminDist(R44, 2, 2) == True, SetAdminDist(R44, 1, 3) == True, SetAdminDist(R45, 0, 1) == True, SetAdminDist(R45, 2, 2) == True, SetAdminDist(R45, 1, 3) == True, SetAdminDist(R51, 0, 1) == True, SetAdminDist(R51, 2, 2) == True, SetAdminDist(R51, 1, 3) == True, SetAdminDist(R52, 0, 1) == True, SetAdminDist(R52, 2, 2) == True, SetAdminDist(R52, 1, 3) == True, SetAdminDist(R53, 0, 1) == True, SetAdminDist(R53, 2, 2) == True, SetAdminDist(R53, 1, 3) == True, SetAdminDist(R54, 0, 1) == True, SetAdminDist(R54, 2, 2) == True, SetAdminDist(R54, 1, 3) == True, SetAdminDist(R55, 0, 1) == True, SetAdminDist(R55, 2, 2) == True, SetAdminDist(R55, 1, 3) == True]
+Checking initial inputs for box fwd01-1
+Loading user provided outputs for box: fwd01-1 [Fwd(R51_N0, R35, R45, 1) == True, Fwd(R51_N0, R32, R42, 0) == True, Fwd(R51_N0, R33, R43, 1) == True, Fwd(R51_N0, R15, R25, 1) == True, Fwd(R51_N0, R12, R22, 1) == True, Fwd(R51_N0, R13, R23, 1) == True, Fwd(R51_N0, R11, R21, 1) == True, Fwd(R51_N0, R14, R13, 1) == True, Fwd(R51_N0, R34, R33, 1) == True, Fwd(R51_N0, R31, R32, 0) == True, Fwd(R51_N0, R45, R44, 1) == True, Fwd(R51_N0, R44, R43, 1) == True, Fwd(R51_N0, R41, R42, 1) == True, Fwd(R51_N0, R43, R42, 1) == True, Fwd(R51_N0, R42, R52, 0) == True, Fwd(R51_N0, R52, R51, 0) == True, Fwd(R51_N0, R53, R52, 1) == True, Fwd(R51_N0, R54, R53, 1) == True, Fwd(R51_N0, R55, R54, 1) == True, Fwd(R51_N0, R25, R24, 1) == True, Fwd(R51_N0, R24, R34, 1) == True, Fwd(R51_N0, R23, R33, 1) == True, Fwd(R51_N0, R22, R32, 1) == True, Fwd(R51_N0, R21, R31, 0) == True]
+
+Beginning Synthesis...
+##############################
+Synthesizing for box 4 fwd01-1
+Feeding desired outputs for fwd01-1...
+Checking SAT for box fwd01-1 ...
+SAT, reading inputs...
+	Synthesized input SetAdminDist [[R11, 0, 1, True], [R11, 2, 2, True], [R11, 1, 3, True], [R12, 0, 1, True], [R12, 2, 2, True], [R12, 1, 3, True], [R13, 0, 1, True], [R13, 2, 2, True], [R13, 1, 3, True], [R14, 0, 1, True], [R14, 2, 2, True], [R14, 1, 3, True], [R15, 0, 1, True], [R15, 2, 2, True], [R15, 1, 3, True], [R21, 0, 1, True], [R21, 2, 2, True], [R21, 1, 3, True], [R22, 0, 1, True], [R22, 2, 2, True], [R22, 1, 3, True], [R23, 0, 1, True], [R23, 2, 2, True], [R23, 1, 3, True], [R24, 0, 1, True], [R24, 2, 2, True], [R24, 1, 3, True], [R25, 0, 1, True], [R25, 2, 2, True], [R25, 1, 3, True], [R31, 0, 1, True], [R31, 2, 2, True], [R31, 1, 3, True], [R32, 0, 1, True], [R32, 2, 2, True], [R32, 1, 3, True], [R33, 0, 1, True], [R33, 2, 2, True], [R33, 1, 3, True], [R34, 0, 1, True], [R34, 2, 2, True], [R34, 1, 3, True], [R35, 0, 1, True], [R35, 2, 2, True], [R35, 1, 3, True], [R41, 0, 1, True], [R41, 2, 2, True], [R41, 1, 3, True], [R42, 0, 1, True], [R42, 2, 2, True], [R42, 1, 3, True], [R43, 0, 1, True], [R43, 2, 2, True], [R43, 1, 3, True], [R44, 0, 1, True], [R44, 2, 2, True], [R44, 1, 3, True], [R45, 0, 1, True], [R45, 2, 2, True], [R45, 1, 3, True], [R51, 0, 1, True], [R51, 2, 2, True], [R51, 1, 3, True], [R52, 0, 1, True], [R52, 2, 2, True], [R52, 1, 3, True], [R53, 0, 1, True], [R53, 2, 2, True], [R53, 1, 3, True], [R54, 0, 1, True], [R54, 2, 2, True], [R54, 1, 3, True], [R55, 0, 1, True], [R55, 2, 2, True], [R55, 1, 3, True], 'False']
+	Synthesized input Route [[R51_N0, R35, R45, 1, True], [R51_N0, R32, R42, 0, True], [R51_N0, R33, R43, 1, True], [R51_N0, R15, R25, 1, True], [R51_N0, R12, R22, 1, True], [R51_N0, R13, R23, 1, True], [R51_N0, R11, R21, 1, True], [R51_N0, R14, R13, 1, True], [R51_N0, R34, R33, 1, True], [R51_N0, R31, R32, 0, True], [R51_N0, R45, R44, 1, True], [R51_N0, R44, R43, 1, True], [R51_N0, R41, R42, 1, True], [R51_N0, R43, R42, 1, True], [R51_N0, R42, R52, 0, True], [R51_N0, R52, R51, 0, True], [R51_N0, R53, R52, 1, True], [R51_N0, R54, R53, 1, True], [R51_N0, R55, R54, 1, True], [R51_N0, R25, R24, 1, True], [R51_N0, R24, R34, 1, True], [R51_N0, R23, R33, 1, True], [R51_N0, R22, R32, 1, True], [R51_N0, R21, R31, 0, True], [R51_N0, R52, R51, 1, True], [R51_N0, R31, R21, 1, True], [R51_N0, R32, R33, 1, True], [R51_N0, R42, R52, 1, True], [R51_N0, R21, R22, 1, True], 'False']
+	Synthesized input nonMinCostAD [[R51_N0, R32, 3, True], [R51_N0, R52, 3, True], [R51_N0, R42, 3, True], [R51_N0, R21, 3, True], [R51_N0, R32, 2, True], [R51_N0, R31, 3, True], [R51_N0, R52, 2, True], [R51_N0, R42, 2, True], [R51_N0, R21, 2, True], [R51_N0, R31, 2, True], 'False']
+##############################
+Synthesizing for box 3 fwd01-0
+Feeding desired outputs for fwd01-0...
+	Feeding desired output fwd01-0 [Route(R51_N0, R35, R45, 1) == True, Route(R51_N0, R32, R42, 0) == True, Route(R51_N0, R33, R43, 1) == True, Route(R51_N0, R15, R25, 1) == True, Route(R51_N0, R12, R22, 1) == True, Route(R51_N0, R13, R23, 1) == True, Route(R51_N0, R11, R21, 1) == True, Route(R51_N0, R14, R13, 1) == True, Route(R51_N0, R34, R33, 1) == True, Route(R51_N0, R31, R32, 0) == True, Route(R51_N0, R45, R44, 1) == True, Route(R51_N0, R44, R43, 1) == True, Route(R51_N0, R41, R42, 1) == True, Route(R51_N0, R43, R42, 1) == True, Route(R51_N0, R42, R52, 0) == True, Route(R51_N0, R52, R51, 0) == True, Route(R51_N0, R53, R52, 1) == True, Route(R51_N0, R54, R53, 1) == True, Route(R51_N0, R55, R54, 1) == True, Route(R51_N0, R25, R24, 1) == True, Route(R51_N0, R24, R34, 1) == True, Route(R51_N0, R23, R33, 1) == True, Route(R51_N0, R22, R32, 1) == True, Route(R51_N0, R21, R31, 0) == True, Route(R51_N0, R52, R51, 1) == True, Route(R51_N0, R31, R21, 1) == True, Route(R51_N0, R32, R33, 1) == True, Route(R51_N0, R42, R52, 1) == True, Route(R51_N0, R21, R22, 1) == True, ForAll([t0, t1, t2, t3],
+       Implies(Not(Or(And(t0 == R51_N0,
+                          t1 == R35,
+                          t2 == R45,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R32,
+                          t2 == R42,
+                          t3 == 0),
+                      And(t0 == R51_N0,
+                          t1 == R33,
+                          t2 == R43,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R15,
+                          t2 == R25,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R12,
+                          t2 == R22,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R13,
+                          t2 == R23,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R11,
+                          t2 == R21,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R14,
+                          t2 == R13,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R34,
+                          t2 == R33,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R31,
+                          t2 == R32,
+                          t3 == 0),
+                      And(t0 == R51_N0,
+                          t1 == R45,
+                          t2 == R44,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R44,
+                          t2 == R43,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R41,
+                          t2 == R42,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R43,
+                          t2 == R42,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R42,
+                          t2 == R52,
+                          t3 == 0),
+                      And(t0 == R51_N0,
+                          t1 == R52,
+                          t2 == R51,
+                          t3 == 0),
+                      And(t0 == R51_N0,
+                          t1 == R53,
+                          t2 == R52,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R54,
+                          t2 == R53,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R55,
+                          t2 == R54,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R25,
+                          t2 == R24,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R24,
+                          t2 == R34,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R23,
+                          t2 == R33,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R22,
+                          t2 == R32,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R21,
+                          t2 == R31,
+                          t3 == 0),
+                      And(t0 == R51_N0,
+                          t1 == R52,
+                          t2 == R51,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R31,
+                          t2 == R21,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R32,
+                          t2 == R33,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R42,
+                          t2 == R52,
+                          t3 == 1),
+                      And(t0 == R51_N0,
+                          t1 == R21,
+                          t2 == R22,
+                          t3 == 1))),
+               Route(t0, t1, t2, t3) == False))]
+	Feeding desired output fwd01-0 [nonMinCostAD(R51_N0, R32, 3) == True, nonMinCostAD(R51_N0, R52, 3) == True, nonMinCostAD(R51_N0, R42, 3) == True, nonMinCostAD(R51_N0, R21, 3) == True, nonMinCostAD(R51_N0, R32, 2) == True, nonMinCostAD(R51_N0, R31, 3) == True, nonMinCostAD(R51_N0, R52, 2) == True, nonMinCostAD(R51_N0, R42, 2) == True, nonMinCostAD(R51_N0, R21, 2) == True, nonMinCostAD(R51_N0, R31, 2) == True, ForAll([t0, t1, t2],
+       Implies(Not(Or(And(t0 == R51_N0, t1 == R32, t2 == 3),
+                      And(t0 == R51_N0, t1 == R52, t2 == 3),
+                      And(t0 == R51_N0, t1 == R42, t2 == 3),
+                      And(t0 == R51_N0, t1 == R21, t2 == 3),
+                      And(t0 == R51_N0, t1 == R32, t2 == 2),
+                      And(t0 == R51_N0, t1 == R31, t2 == 3),
+                      And(t0 == R51_N0, t1 == R52, t2 == 2),
+                      And(t0 == R51_N0, t1 == R42, t2 == 2),
+                      And(t0 == R51_N0, t1 == R21, t2 == 2),
+                      And(t0 == R51_N0, t1 == R31, t2 == 2))),
+               nonMinCostAD(t0, t1, t2) == False))]
+	Feeding shortcut INPUT fwd01-0 [SetAdminDist(R11, 0, 1) == True, SetAdminDist(R11, 2, 2) == True, SetAdminDist(R11, 1, 3) == True, SetAdminDist(R12, 0, 1) == True, SetAdminDist(R12, 2, 2) == True, SetAdminDist(R12, 1, 3) == True, SetAdminDist(R13, 0, 1) == True, SetAdminDist(R13, 2, 2) == True, SetAdminDist(R13, 1, 3) == True, SetAdminDist(R14, 0, 1) == True, SetAdminDist(R14, 2, 2) == True, SetAdminDist(R14, 1, 3) == True, SetAdminDist(R15, 0, 1) == True, SetAdminDist(R15, 2, 2) == True, SetAdminDist(R15, 1, 3) == True, SetAdminDist(R21, 0, 1) == True, SetAdminDist(R21, 2, 2) == True, SetAdminDist(R21, 1, 3) == True, SetAdminDist(R22, 0, 1) == True, SetAdminDist(R22, 2, 2) == True, SetAdminDist(R22, 1, 3) == True, SetAdminDist(R23, 0, 1) == True, SetAdminDist(R23, 2, 2) == True, SetAdminDist(R23, 1, 3) == True, SetAdminDist(R24, 0, 1) == True, SetAdminDist(R24, 2, 2) == True, SetAdminDist(R24, 1, 3) == True, SetAdminDist(R25, 0, 1) == True, SetAdminDist(R25, 2, 2) == True, SetAdminDist(R25, 1, 3) == True, SetAdminDist(R31, 0, 1) == True, SetAdminDist(R31, 2, 2) == True, SetAdminDist(R31, 1, 3) == True, SetAdminDist(R32, 0, 1) == True, SetAdminDist(R32, 2, 2) == True, SetAdminDist(R32, 1, 3) == True, SetAdminDist(R33, 0, 1) == True, SetAdminDist(R33, 2, 2) == True, SetAdminDist(R33, 1, 3) == True, SetAdminDist(R34, 0, 1) == True, SetAdminDist(R34, 2, 2) == True, SetAdminDist(R34, 1, 3) == True, SetAdminDist(R35, 0, 1) == True, SetAdminDist(R35, 2, 2) == True, SetAdminDist(R35, 1, 3) == True, SetAdminDist(R41, 0, 1) == True, SetAdminDist(R41, 2, 2) == True, SetAdminDist(R41, 1, 3) == True, SetAdminDist(R42, 0, 1) == True, SetAdminDist(R42, 2, 2) == True, SetAdminDist(R42, 1, 3) == True, SetAdminDist(R43, 0, 1) == True, SetAdminDist(R43, 2, 2) == True, SetAdminDist(R43, 1, 3) == True, SetAdminDist(R44, 0, 1) == True, SetAdminDist(R44, 2, 2) == True, SetAdminDist(R44, 1, 3) == True, SetAdminDist(R45, 0, 1) == True, SetAdminDist(R45, 2, 2) == True, SetAdminDist(R45, 1, 3) == True, SetAdminDist(R51, 0, 1) == True, SetAdminDist(R51, 2, 2) == True, SetAdminDist(R51, 1, 3) == True, SetAdminDist(R52, 0, 1) == True, SetAdminDist(R52, 2, 2) == True, SetAdminDist(R52, 1, 3) == True, SetAdminDist(R53, 0, 1) == True, SetAdminDist(R53, 2, 2) == True, SetAdminDist(R53, 1, 3) == True, SetAdminDist(R54, 0, 1) == True, SetAdminDist(R54, 2, 2) == True, SetAdminDist(R54, 1, 3) == True, SetAdminDist(R55, 0, 1) == True, SetAdminDist(R55, 2, 2) == True, SetAdminDist(R55, 1, 3) == True, ForAll([t0, t1, t2],
+       Implies(Not(Or(And(t0 == R11, t1 == 0, t2 == 1),
+                      And(t0 == R11, t1 == 2, t2 == 2),
+                      And(t0 == R11, t1 == 1, t2 == 3),
+                      And(t0 == R12, t1 == 0, t2 == 1),
+                      And(t0 == R12, t1 == 2, t2 == 2),
+                      And(t0 == R12, t1 == 1, t2 == 3),
+                      And(t0 == R13, t1 == 0, t2 == 1),
+                      And(t0 == R13, t1 == 2, t2 == 2),
+                      And(t0 == R13, t1 == 1, t2 == 3),
+                      And(t0 == R14, t1 == 0, t2 == 1),
+                      And(t0 == R14, t1 == 2, t2 == 2),
+                      And(t0 == R14, t1 == 1, t2 == 3),
+                      And(t0 == R15, t1 == 0, t2 == 1),
+                      And(t0 == R15, t1 == 2, t2 == 2),
+                      And(t0 == R15, t1 == 1, t2 == 3),
+                      And(t0 == R21, t1 == 0, t2 == 1),
+                      And(t0 == R21, t1 == 2, t2 == 2),
+                      And(t0 == R21, t1 == 1, t2 == 3),
+                      And(t0 == R22, t1 == 0, t2 == 1),
+                      And(t0 == R22, t1 == 2, t2 == 2),
+                      And(t0 == R22, t1 == 1, t2 == 3),
+                      And(t0 == R23, t1 == 0, t2 == 1),
+                      And(t0 == R23, t1 == 2, t2 == 2),
+                      And(t0 == R23, t1 == 1, t2 == 3),
+                      And(t0 == R24, t1 == 0, t2 == 1),
+                      And(t0 == R24, t1 == 2, t2 == 2),
+                      And(t0 == R24, t1 == 1, t2 == 3),
+                      And(t0 == R25, t1 == 0, t2 == 1),
+                      And(t0 == R25, t1 == 2, t2 == 2),
+                      And(t0 == R25, t1 == 1, t2 == 3),
+                      And(t0 == R31, t1 == 0, t2 == 1),
+                      And(t0 == R31, t1 == 2, t2 == 2),
+                      And(t0 == R31, t1 == 1, t2 == 3),
+                      And(t0 == R32, t1 == 0, t2 == 1),
+                      And(t0 == R32, t1 == 2, t2 == 2),
+                      And(t0 == R32, t1 == 1, t2 == 3),
+                      And(t0 == R33, t1 == 0, t2 == 1),
+                      And(t0 == R33, t1 == 2, t2 == 2),
+                      And(t0 == R33, t1 == 1, t2 == 3),
+                      And(t0 == R34, t1 == 0, t2 == 1),
+                      And(t0 == R34, t1 == 2, t2 == 2),
+                      And(t0 == R34, t1 == 1, t2 == 3),
+                      And(t0 == R35, t1 == 0, t2 == 1),
+                      And(t0 == R35, t1 == 2, t2 == 2),
+                      And(t0 == R35, t1 == 1, t2 == 3),
+                      And(t0 == R41, t1 == 0, t2 == 1),
+                      And(t0 == R41, t1 == 2, t2 == 2),
+                      And(t0 == R41, t1 == 1, t2 == 3),
+                      And(t0 == R42, t1 == 0, t2 == 1),
+                      And(t0 == R42, t1 == 2, t2 == 2),
+                      And(t0 == R42, t1 == 1, t2 == 3),
+                      And(t0 == R43, t1 == 0, t2 == 1),
+                      And(t0 == R43, t1 == 2, t2 == 2),
+                      And(t0 == R43, t1 == 1, t2 == 3),
+                      And(t0 == R44, t1 == 0, t2 == 1),
+                      And(t0 == R44, t1 == 2, t2 == 2),
+                      And(t0 == R44, t1 == 1, t2 == 3),
+                      And(t0 == R45, t1 == 0, t2 == 1),
+                      And(t0 == R45, t1 == 2, t2 == 2),
+                      And(t0 == R45, t1 == 1, t2 == 3),
+                      And(t0 == R51, t1 == 0, t2 == 1),
+                      And(t0 == R51, t1 == 2, t2 == 2),
+                      And(t0 == R51, t1 == 1, t2 == 3),
+                      And(t0 == R52, t1 == 0, t2 == 1),
+                      And(t0 == R52, t1 == 2, t2 == 2),
+                      And(t0 == R52, t1 == 1, t2 == 3),
+                      And(t0 == R53, t1 == 0, t2 == 1),
+                      And(t0 == R53, t1 == 2, t2 == 2),
+                      And(t0 == R53, t1 == 1, t2 == 3),
+                      And(t0 == R54, t1 == 0, t2 == 1),
+                      And(t0 == R54, t1 == 2, t2 == 2),
+                      And(t0 == R54, t1 == 1, t2 == 3),
+                      And(t0 == R55, t1 == 0, t2 == 1),
+                      And(t0 == R55, t1 == 2, t2 == 2),
+                      And(t0 == R55, t1 == 1, t2 == 3))),
+               SetAdminDist(t0, t1, t2) == False))]
+Checking SAT for box fwd01-0 ...
+SAT, reading inputs...
+	Synthesized input MinIGPBGPRoute ['False']
+	Synthesized input SetAdminDist [[R11, 0, 1, True], [R11, 2, 2, True], [R11, 1, 3, True], [R12, 0, 1, True], [R12, 2, 2, True], [R12, 1, 3, True], [R13, 0, 1, True], [R13, 2, 2, True], [R13, 1, 3, True], [R14, 0, 1, True], [R14, 2, 2, True], [R14, 1, 3, True], [R15, 0, 1, True], [R15, 2, 2, True], [R15, 1, 3, True], [R21, 0, 1, True], [R21, 2, 2, True], [R21, 1, 3, True], [R22, 0, 1, True], [R22, 2, 2, True], [R22, 1, 3, True], [R23, 0, 1, True], [R23, 2, 2, True], [R23, 1, 3, True], [R24, 0, 1, True], [R24, 2, 2, True], [R24, 1, 3, True], [R25, 0, 1, True], [R25, 2, 2, True], [R25, 1, 3, True], [R31, 0, 1, True], [R31, 2, 2, True], [R31, 1, 3, True], [R32, 0, 1, True], [R32, 2, 2, True], [R32, 1, 3, True], [R33, 0, 1, True], [R33, 2, 2, True], [R33, 1, 3, True], [R34, 0, 1, True], [R34, 2, 2, True], [R34, 1, 3, True], [R35, 0, 1, True], [R35, 2, 2, True], [R35, 1, 3, True], [R41, 0, 1, True], [R41, 2, 2, True], [R41, 1, 3, True], [R42, 0, 1, True], [R42, 2, 2, True], [R42, 1, 3, True], [R43, 0, 1, True], [R43, 2, 2, True], [R43, 1, 3, True], [R44, 0, 1, True], [R44, 2, 2, True], [R44, 1, 3, True], [R45, 0, 1, True], [R45, 2, 2, True], [R45, 1, 3, True], [R51, 0, 1, True], [R51, 2, 2, True], [R51, 1, 3, True], [R52, 0, 1, True], [R52, 2, 2, True], [R52, 1, 3, True], [R53, 0, 1, True], [R53, 2, 2, True], [R53, 1, 3, True], [R54, 0, 1, True], [R54, 2, 2, True], [R54, 1, 3, True], [R55, 0, 1, True], [R55, 2, 2, True], [R55, 1, 3, True], 'False']
+	Synthesized input SetStaticRoute [[R51_N0, R32, R42, True], [R51_N0, R31, R32, True], [R51_N0, R42, R52, True], [R51_N0, R52, R51, True], [R51_N0, R21, R31, True], 'False']
+	Synthesized input BestOSPFRoute [[R51_N0, R35, R45, 9, True], [R51_N0, R33, R43, 9, True], [R51_N0, R15, R25, 14, True], [R51_N0, R12, R22, 15, True], [R51_N0, R13, R23, 16, True], [R51_N0, R11, R21, 15, True], [R51_N0, R14, R13, 17, True], [R51_N0, R34, R33, 10, True], [R51_N0, R45, R44, 8, True], [R51_N0, R44, R43, 7, True], [R51_N0, R41, R42, 17, True], [R51_N0, R43, R42, 6, True], [R51_N0, R53, R52, 8, True], [R51_N0, R54, R53, 9, True], [R51_N0, R55, R54, 11, True], [R51_N0, R25, R24, 12, True], [R51_N0, R24, R34, 11, True], [R51_N0, R23, R33, 14, True], [R51_N0, R22, R32, 13, True], [R51_N0, R52, R51, 3, True], [R51_N0, R31, R21, 16, True], [R51_N0, R32, R33, 12, True], [R51_N0, R42, R52, 4, True], [R51_N0, R21, R22, 14, True], 'False']
+##############################
+Synthesizing for box 2 ospf02-1
+Feeding desired outputs for ospf02-1...
+	Feeding desired output ospf02-1 [BestOSPFRoute(R51_N0, R35, R45, 9) == True, BestOSPFRoute(R51_N0, R33, R43, 9) == True, BestOSPFRoute(R51_N0, R15, R25, 14) == True, BestOSPFRoute(R51_N0, R12, R22, 15) == True, BestOSPFRoute(R51_N0, R13, R23, 16) == True, BestOSPFRoute(R51_N0, R11, R21, 15) == True, BestOSPFRoute(R51_N0, R14, R13, 17) == True, BestOSPFRoute(R51_N0, R34, R33, 10) == True, BestOSPFRoute(R51_N0, R45, R44, 8) == True, BestOSPFRoute(R51_N0, R44, R43, 7) == True, BestOSPFRoute(R51_N0, R41, R42, 17) == True, BestOSPFRoute(R51_N0, R43, R42, 6) == True, BestOSPFRoute(R51_N0, R53, R52, 8) == True, BestOSPFRoute(R51_N0, R54, R53, 9) == True, BestOSPFRoute(R51_N0, R55, R54, 11) == True, BestOSPFRoute(R51_N0, R25, R24, 12) == True, BestOSPFRoute(R51_N0, R24, R34, 11) == True, BestOSPFRoute(R51_N0, R23, R33, 14) == True, BestOSPFRoute(R51_N0, R22, R32, 13) == True, BestOSPFRoute(R51_N0, R52, R51, 3) == True, BestOSPFRoute(R51_N0, R31, R21, 16) == True, BestOSPFRoute(R51_N0, R32, R33, 12) == True, BestOSPFRoute(R51_N0, R42, R52, 4) == True, BestOSPFRoute(R51_N0, R21, R22, 14) == True, ForAll([t0, t1, t2, t3],
+       Implies(Not(Or(And(t0 == R51_N0,
+                          t1 == R35,
+                          t2 == R45,
+                          t3 == 9),
+                      And(t0 == R51_N0,
+                          t1 == R33,
+                          t2 == R43,
+                          t3 == 9),
+                      And(t0 == R51_N0,
+                          t1 == R15,
+                          t2 == R25,
+                          t3 == 14),
+                      And(t0 == R51_N0,
+                          t1 == R12,
+                          t2 == R22,
+                          t3 == 15),
+                      And(t0 == R51_N0,
+                          t1 == R13,
+                          t2 == R23,
+                          t3 == 16),
+                      And(t0 == R51_N0,
+                          t1 == R11,
+                          t2 == R21,
+                          t3 == 15),
+                      And(t0 == R51_N0,
+                          t1 == R14,
+                          t2 == R13,
+                          t3 == 17),
+                      And(t0 == R51_N0,
+                          t1 == R34,
+                          t2 == R33,
+                          t3 == 10),
+                      And(t0 == R51_N0,
+                          t1 == R45,
+                          t2 == R44,
+                          t3 == 8),
+                      And(t0 == R51_N0,
+                          t1 == R44,
+                          t2 == R43,
+                          t3 == 7),
+                      And(t0 == R51_N0,
+                          t1 == R41,
+                          t2 == R42,
+                          t3 == 17),
+                      And(t0 == R51_N0,
+                          t1 == R43,
+                          t2 == R42,
+                          t3 == 6),
+                      And(t0 == R51_N0,
+                          t1 == R53,
+                          t2 == R52,
+                          t3 == 8),
+                      And(t0 == R51_N0,
+                          t1 == R54,
+                          t2 == R53,
+                          t3 == 9),
+                      And(t0 == R51_N0,
+                          t1 == R55,
+                          t2 == R54,
+                          t3 == 11),
+                      And(t0 == R51_N0,
+                          t1 == R25,
+                          t2 == R24,
+                          t3 == 12),
+                      And(t0 == R51_N0,
+                          t1 == R24,
+                          t2 == R34,
+                          t3 == 11),
+                      And(t0 == R51_N0,
+                          t1 == R23,
+                          t2 == R33,
+                          t3 == 14),
+                      And(t0 == R51_N0,
+                          t1 == R22,
+                          t2 == R32,
+                          t3 == 13),
+                      And(t0 == R51_N0,
+                          t1 == R52,
+                          t2 == R51,
+                          t3 == 3),
+                      And(t0 == R51_N0,
+                          t1 == R31,
+                          t2 == R21,
+                          t3 == 16),
+                      And(t0 == R51_N0,
+                          t1 == R32,
+                          t2 == R33,
+                          t3 == 12),
+                      And(t0 == R51_N0,
+                          t1 == R42,
+                          t2 == R52,
+                          t3 == 4),
+                      And(t0 == R51_N0,
+                          t1 == R21,
+                          t2 == R22,
+                          t3 == 14))),
+               BestOSPFRoute(t0, t1, t2, t3) == False))]
+Checking SAT for box ospf02-1 ...
+SAT, reading inputs...
+	Synthesized input nonMinOSPFRouteCost ['False']
+	Synthesized input OSPFRoute [[R51_N0, R35, R45, 9, True], [R51_N0, R33, R43, 9, True], [R51_N0, R15, R25, 14, True], [R51_N0, R12, R22, 15, True], [R51_N0, R13, R23, 16, True], [R51_N0, R11, R21, 15, True], [R51_N0, R14, R13, 17, True], [R51_N0, R34, R33, 10, True], [R51_N0, R45, R44, 8, True], [R51_N0, R44, R43, 7, True], [R51_N0, R41, R42, 17, True], [R51_N0, R43, R42, 6, True], [R51_N0, R53, R52, 8, True], [R51_N0, R54, R53, 9, True], [R51_N0, R55, R54, 11, True], [R51_N0, R25, R24, 12, True], [R51_N0, R24, R34, 11, True], [R51_N0, R23, R33, 14, True], [R51_N0, R22, R32, 13, True], [R51_N0, R52, R51, 3, True], [R51_N0, R31, R21, 16, True], [R51_N0, R32, R33, 12, True], [R51_N0, R42, R52, 4, True], [R51_N0, R21, R22, 14, True], 'False']
+##############################
+Synthesizing for box 1 ospf02-0
+Feeding desired outputs for ospf02-0...
+	Feeding desired output ospf02-0 [ForAll([t0, t1, t2],
+       nonMinOSPFRouteCost(t0, t1, t2) == False)]
+	Feeding shortcut INPUT ospf02-0 [OSPFRoute(R51_N0, R35, R45, 9) == True, OSPFRoute(R51_N0, R33, R43, 9) == True, OSPFRoute(R51_N0, R15, R25, 14) == True, OSPFRoute(R51_N0, R12, R22, 15) == True, OSPFRoute(R51_N0, R13, R23, 16) == True, OSPFRoute(R51_N0, R11, R21, 15) == True, OSPFRoute(R51_N0, R14, R13, 17) == True, OSPFRoute(R51_N0, R34, R33, 10) == True, OSPFRoute(R51_N0, R45, R44, 8) == True, OSPFRoute(R51_N0, R44, R43, 7) == True, OSPFRoute(R51_N0, R41, R42, 17) == True, OSPFRoute(R51_N0, R43, R42, 6) == True, OSPFRoute(R51_N0, R53, R52, 8) == True, OSPFRoute(R51_N0, R54, R53, 9) == True, OSPFRoute(R51_N0, R55, R54, 11) == True, OSPFRoute(R51_N0, R25, R24, 12) == True, OSPFRoute(R51_N0, R24, R34, 11) == True, OSPFRoute(R51_N0, R23, R33, 14) == True, OSPFRoute(R51_N0, R22, R32, 13) == True, OSPFRoute(R51_N0, R52, R51, 3) == True, OSPFRoute(R51_N0, R31, R21, 16) == True, OSPFRoute(R51_N0, R32, R33, 12) == True, OSPFRoute(R51_N0, R42, R52, 4) == True, OSPFRoute(R51_N0, R21, R22, 14) == True]
+Checking SAT for box ospf02-0 ...
+SAT, reading inputs...
+	Synthesized input OSPFRoute [[R51_N0, R35, R45, 9, True], [R51_N0, R33, R43, 9, True], [R51_N0, R15, R25, 14, True], [R51_N0, R12, R22, 15, True], [R51_N0, R13, R23, 16, True], [R51_N0, R11, R21, 15, True], [R51_N0, R14, R13, 17, True], [R51_N0, R34, R33, 10, True], [R51_N0, R45, R44, 8, True], [R51_N0, R44, R43, 7, True], [R51_N0, R41, R42, 17, True], [R51_N0, R43, R42, 6, True], [R51_N0, R53, R52, 8, True], [R51_N0, R54, R53, 9, True], [R51_N0, R55, R54, 11, True], [R51_N0, R25, R24, 12, True], [R51_N0, R24, R34, 11, True], [R51_N0, R23, R33, 14, True], [R51_N0, R22, R32, 13, True], [R51_N0, R52, R51, 3, True], [R51_N0, R31, R21, 16, True], [R51_N0, R32, R33, 12, True], [R51_N0, R42, R52, 4, True], [R51_N0, R21, R22, 14, True], 'False']
+partially evaluate the OSPF Datalog rules
+OSPFRoute(network, src, next, cost) <- !EdgePhy(src, network), Network(network), ConnectedNodes(src, siface, diface, next), SetOSPFEdgeCost(siface, diface, cost1), OSPFRoute(network, next, next2, cost2), cost = cost1 + cost2, cost < 100, src != next2
+OSPFRoute_R51_N0_R33_R43(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I33_3", nxt="I43_4", cost = cost1 + 6.
+OSPFRoute_R51_N0_R33_R43(cost) -> int(cost).
+OSPFRoute_R51_N0_R14_R13(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I14_2", nxt="I13_1", cost = cost1 + 16.
+OSPFRoute_R51_N0_R14_R13(cost) -> int(cost).
+OSPFRoute_R51_N0_R15_R25(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I15_3", nxt="I25_4", cost = cost1 + 12.
+OSPFRoute_R51_N0_R15_R25(cost) -> int(cost).
+OSPFRoute_R51_N0_R12_R22(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I12_3", nxt="I22_4", cost = cost1 + 13.
+OSPFRoute_R51_N0_R12_R22(cost) -> int(cost).
+OSPFRoute_R51_N0_R13_R23(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I13_3", nxt="I23_4", cost = cost1 + 14.
+OSPFRoute_R51_N0_R13_R23(cost) -> int(cost).
+OSPFRoute_R51_N0_R11_R21(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I11_3", nxt="I21_4", cost = cost1 + 14.
+OSPFRoute_R51_N0_R11_R21(cost) -> int(cost).
+OSPFRoute_R51_N0_R52_R51(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="I52_2", nxt="I51_1", cost = 3.
+OSPFRoute_R51_N0_R52_R51(cost) -> int(cost).
+OSPFRoute_R51_N0_R53_R52(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I53_2", nxt="I52_1", cost = cost1 + 3.
+OSPFRoute_R51_N0_R53_R52(cost) -> int(cost).
+OSPFRoute_R51_N0_R31_R21(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I31_4", nxt="I21_3", cost = cost1 + 14.
+OSPFRoute_R51_N0_R31_R21(cost) -> int(cost).
+OSPFRoute_R51_N0_R32_R33(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I32_1", nxt="I33_2", cost = cost1 + 9.
+OSPFRoute_R51_N0_R32_R33(cost) -> int(cost).
+OSPFRoute_R51_N0_R55_R54(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I55_2", nxt="I54_1", cost = cost1 + 9.
+OSPFRoute_R51_N0_R55_R54(cost) -> int(cost).
+OSPFRoute_R51_N0_R34_R33(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I34_2", nxt="I33_1", cost = cost1 + 9.
+OSPFRoute_R51_N0_R34_R33(cost) -> int(cost).
+OSPFRoute_R51_N0_R35_R45(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I35_3", nxt="I45_4", cost = cost1 + 8.
+OSPFRoute_R51_N0_R35_R45(cost) -> int(cost).
+OSPFRoute_R51_N0_R45_R44(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I45_2", nxt="I44_1", cost = cost1 + 7.
+OSPFRoute_R51_N0_R45_R44(cost) -> int(cost).
+OSPFRoute_R51_N0_R44_R43(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I44_2", nxt="I43_1", cost = cost1 + 6.
+OSPFRoute_R51_N0_R44_R43(cost) -> int(cost).
+OSPFRoute_R51_N0_R41_R42(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I41_1", nxt="I42_2", cost = cost1 + 4.
+OSPFRoute_R51_N0_R41_R42(cost) -> int(cost).
+OSPFRoute_R51_N0_R54_R53(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I54_2", nxt="I53_1", cost = cost1 + 8.
+OSPFRoute_R51_N0_R54_R53(cost) -> int(cost).
+OSPFRoute_R51_N0_R43_R42(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I43_2", nxt="I42_1", cost = cost1 + 4.
+OSPFRoute_R51_N0_R43_R42(cost) -> int(cost).
+OSPFRoute_R51_N0_R42_R52(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I42_3", nxt="I52_4", cost = cost1 + 3.
+OSPFRoute_R51_N0_R42_R52(cost) -> int(cost).
+OSPFRoute_R51_N0_R25_R24(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I25_2", nxt="I24_1", cost = cost1 + 11.
+OSPFRoute_R51_N0_R25_R24(cost) -> int(cost).
+OSPFRoute_R51_N0_R24_R34(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I24_3", nxt="I34_4", cost = cost1 + 10.
+OSPFRoute_R51_N0_R24_R34(cost) -> int(cost).
+OSPFRoute_R51_N0_R23_R33(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I23_3", nxt="I33_4", cost = cost1 + 9.
+OSPFRoute_R51_N0_R23_R33(cost) -> int(cost).
+OSPFRoute_R51_N0_R22_R32(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I22_3", nxt="I32_4", cost = cost1 + 12.
+OSPFRoute_R51_N0_R22_R32(cost) -> int(cost).
+OSPFRoute_R51_N0_R21_R22(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="I21_1", nxt="I22_2", cost = cost1 + 13.
+OSPFRoute_R51_N0_R21_R22(cost) -> int(cost).
+OSPFRoute_R51_N0_R35_R45(9) == True
+ForAll(cost, OSPFRoute_R51_N0_R35_R45(cost) == (cost == 9))
+OSPFRoute_R51_N0_R33_R43(9) == True
+ForAll(cost, OSPFRoute_R51_N0_R33_R43(cost) == (cost == 9))
+OSPFRoute_R51_N0_R15_R25(14) == True
+ForAll(cost, OSPFRoute_R51_N0_R15_R25(cost) == (cost == 14))
+OSPFRoute_R51_N0_R12_R22(15) == True
+ForAll(cost, OSPFRoute_R51_N0_R12_R22(cost) == (cost == 15))
+OSPFRoute_R51_N0_R13_R23(16) == True
+ForAll(cost, OSPFRoute_R51_N0_R13_R23(cost) == (cost == 16))
+OSPFRoute_R51_N0_R11_R21(15) == True
+ForAll(cost, OSPFRoute_R51_N0_R11_R21(cost) == (cost == 15))
+OSPFRoute_R51_N0_R14_R13(17) == True
+ForAll(cost, OSPFRoute_R51_N0_R14_R13(cost) == (cost == 17))
+OSPFRoute_R51_N0_R34_R33(10) == True
+ForAll(cost, OSPFRoute_R51_N0_R34_R33(cost) == (cost == 10))
+OSPFRoute_R51_N0_R45_R44(8) == True
+ForAll(cost, OSPFRoute_R51_N0_R45_R44(cost) == (cost == 8))
+OSPFRoute_R51_N0_R44_R43(7) == True
+ForAll(cost, OSPFRoute_R51_N0_R44_R43(cost) == (cost == 7))
+OSPFRoute_R51_N0_R41_R42(17) == True
+ForAll(cost, OSPFRoute_R51_N0_R41_R42(cost) == (cost == 17))
+OSPFRoute_R51_N0_R43_R42(6) == True
+ForAll(cost, OSPFRoute_R51_N0_R43_R42(cost) == (cost == 6))
+OSPFRoute_R51_N0_R53_R52(8) == True
+ForAll(cost, OSPFRoute_R51_N0_R53_R52(cost) == (cost == 8))
+OSPFRoute_R51_N0_R54_R53(9) == True
+ForAll(cost, OSPFRoute_R51_N0_R54_R53(cost) == (cost == 9))
+OSPFRoute_R51_N0_R55_R54(11) == True
+ForAll(cost, OSPFRoute_R51_N0_R55_R54(cost) == (cost == 11))
+OSPFRoute_R51_N0_R25_R24(12) == True
+ForAll(cost, OSPFRoute_R51_N0_R25_R24(cost) == (cost == 12))
+OSPFRoute_R51_N0_R24_R34(11) == True
+ForAll(cost, OSPFRoute_R51_N0_R24_R34(cost) == (cost == 11))
+OSPFRoute_R51_N0_R23_R33(14) == True
+ForAll(cost, OSPFRoute_R51_N0_R23_R33(cost) == (cost == 14))
+OSPFRoute_R51_N0_R22_R32(13) == True
+ForAll(cost, OSPFRoute_R51_N0_R22_R32(cost) == (cost == 13))
+OSPFRoute_R51_N0_R52_R51(3) == True
+ForAll(cost, OSPFRoute_R51_N0_R52_R51(cost) == (cost == 3))
+OSPFRoute_R51_N0_R31_R21(16) == True
+ForAll(cost, OSPFRoute_R51_N0_R31_R21(cost) == (cost == 16))
+OSPFRoute_R51_N0_R32_R33(12) == True
+ForAll(cost, OSPFRoute_R51_N0_R32_R33(cost) == (cost == 12))
+OSPFRoute_R51_N0_R42_R52(4) == True
+ForAll(cost, OSPFRoute_R51_N0_R42_R52(cost) == (cost == 4))
+OSPFRoute_R51_N0_R21_R22(14) == True
+ForAll(cost, OSPFRoute_R51_N0_R21_R22(cost) == (cost == 14))
+##############################
+Synthesizing for box 0 ospf01
+Feeding desired outputs for ospf01...
+	Feeding desired output ospf01 [OSPFRoute_1(R51_N0, R35, R45, 9) == True, OSPFRoute_1(R51_N0, R33, R43, 9) == True, OSPFRoute_1(R51_N0, R15, R25, 14) == True, OSPFRoute_1(R51_N0, R12, R22, 15) == True, OSPFRoute_1(R51_N0, R13, R23, 16) == True, OSPFRoute_1(R51_N0, R11, R21, 15) == True, OSPFRoute_1(R51_N0, R14, R13, 17) == True, OSPFRoute_1(R51_N0, R34, R33, 10) == True, OSPFRoute_1(R51_N0, R45, R44, 8) == True, OSPFRoute_1(R51_N0, R44, R43, 7) == True, OSPFRoute_1(R51_N0, R41, R42, 17) == True, OSPFRoute_1(R51_N0, R43, R42, 6) == True, OSPFRoute_1(R51_N0, R53, R52, 8) == True, OSPFRoute_1(R51_N0, R54, R53, 9) == True, OSPFRoute_1(R51_N0, R55, R54, 11) == True, OSPFRoute_1(R51_N0, R25, R24, 12) == True, OSPFRoute_1(R51_N0, R24, R34, 11) == True, OSPFRoute_1(R51_N0, R23, R33, 14) == True, OSPFRoute_1(R51_N0, R22, R32, 13) == True, OSPFRoute_1(R51_N0, R52, R51, 3) == True, OSPFRoute_1(R51_N0, R31, R21, 16) == True, OSPFRoute_1(R51_N0, R32, R33, 12) == True, OSPFRoute_1(R51_N0, R42, R52, 4) == True, OSPFRoute_1(R51_N0, R21, R22, 14) == True]
+	Feeding desired output ospf01 [OSPFRoute_1(R51_N0, R35, R45, 9) == True, OSPFRoute_1(R51_N0, R33, R43, 9) == True, OSPFRoute_1(R51_N0, R15, R25, 14) == True, OSPFRoute_1(R51_N0, R12, R22, 15) == True, OSPFRoute_1(R51_N0, R13, R23, 16) == True, OSPFRoute_1(R51_N0, R11, R21, 15) == True, OSPFRoute_1(R51_N0, R14, R13, 17) == True, OSPFRoute_1(R51_N0, R34, R33, 10) == True, OSPFRoute_1(R51_N0, R45, R44, 8) == True, OSPFRoute_1(R51_N0, R44, R43, 7) == True, OSPFRoute_1(R51_N0, R41, R42, 17) == True, OSPFRoute_1(R51_N0, R43, R42, 6) == True, OSPFRoute_1(R51_N0, R53, R52, 8) == True, OSPFRoute_1(R51_N0, R54, R53, 9) == True, OSPFRoute_1(R51_N0, R55, R54, 11) == True, OSPFRoute_1(R51_N0, R25, R24, 12) == True, OSPFRoute_1(R51_N0, R24, R34, 11) == True, OSPFRoute_1(R51_N0, R23, R33, 14) == True, OSPFRoute_1(R51_N0, R22, R32, 13) == True, OSPFRoute_1(R51_N0, R52, R51, 3) == True, OSPFRoute_1(R51_N0, R31, R21, 16) == True, OSPFRoute_1(R51_N0, R32, R33, 12) == True, OSPFRoute_1(R51_N0, R42, R52, 4) == True, OSPFRoute_1(R51_N0, R21, R22, 14) == True]
+Checking SAT for box ospf01 ...
+SAT, reading inputs...
+	Synthesized input ConnectedNodes [[R55, I55_2, I54_1, R54, True], [R55, I55_4, I45_3, R45, True], [R45, I45_3, I55_4, R55, True], [R54, I54_1, I55_2, R55, True], [R45, I45_4, I35_3, R35, True], [R45, I45_2, I44_1, R44, True], [R51, I51_1, I52_2, R52, True], [R51, I51_4, I41_3, R41, True], [R54, I54_2, I53_1, R53, True], [R14, I14_1, I15_2, R15, True], [R14, I14_2, I13_1, R13, True], [R14, I14_3, I24_4, R24, True], [R54, I54_4, I44_3, R44, True], [R34, I34_1, I35_2, R35, True], [R13, I13_1, I14_2, R14, True], [R13, I13_2, I12_1, R12, True], [R13, I13_3, I23_4, R23, True], [R22, I22_2, I21_1, R21, True], [R22, I22_4, I12_3, R12, True], [R22, I22_1, I23_2, R23, True], [R22, I22_3, I32_4, R32, True], [R31, I31_4, I21_3, R21, True], [R31, I31_3, I41_4, R41, True], [R31, I31_1, I32_2, R32, True], [R21, I21_4, I11_3, R11, True], [R21, I21_3, I31_4, R31, True], [R21, I21_1, I22_2, R22, True], [R15, I15_3, I25_4, R25, True], [R15, I15_2, I14_1, R14, True], [R42, I42_3, I52_4, R52, True], [R34, I34_3, I44_4, R44, True], [R33, I33_2, I32_1, R32, True], [R23, I23_2, I22_1, R22, True], [R23, I23_1, I24_2, R24, True], [R33, I33_3, I43_4, R43, True], [R33, I33_1, I34_2, R34, True], [R33, I33_4, I23_3, R23, True], [R43, I43_1, I44_2, R44, True], [R12, I12_3, I22_4, R22, True], [R12, I12_1, I13_2, R13, True], [R42, I42_1, I43_2, R43, True], [R32, I32_1, I33_2, R33, True], [R52, I52_4, I42_3, R42, True], [R42, I42_2, I41_1, R41, True], [R23, I23_4, I13_3, R13, True], [R23, I23_3, I33_4, R33, True], [R42, I42_4, I32_3, R32, True], [R52, I52_2, I51_1, R51, True], [R52, I52_1, I53_2, R53, True], [R12, I12_2, I11_1, R11, True], [R24, I24_1, I25_2, R25, True], [R25, I25_3, I35_4, R35, True], [R44, I44_2, I43_1, R43, True], [R44, I44_1, I45_2, R45, True], [R44, I44_4, I34_3, R34, True], [R44, I44_3, I54_4, R54, True], [R34, I34_2, I33_1, R33, True], [R24, I24_3, I34_4, R34, True], [R43, I43_2, I42_1, R42, True], [R43, I43_4, I33_3, R33, True], [R11, I11_1, I12_2, R12, True], [R25, I25_2, I24_1, R24, True], [R25, I25_4, I15_3, R15, True], [R35, I35_4, I25_3, R25, True], [R35, I35_2, I34_1, R34, True], [R53, I53_2, I52_1, R52, True], [R53, I53_1, I54_2, R54, True], [R53, I53_4, I43_3, R43, True], [R41, I41_1, I42_2, R42, True], [R32, I32_4, I22_3, R22, True], [R32, I32_2, I31_1, R31, True], [R32, I32_3, I42_4, R42, True], [R35, I35_3, I45_4, R45, True], [R34, I34_4, I24_3, R24, True], [R24, I24_2, I23_1, R23, True], [R24, I24_4, I14_3, R14, True], [R41, I41_4, I31_3, R31, True], [R41, I41_3, I51_4, R51, True], [R43, I43_3, I53_4, R53, True], [R11, I11_3, I21_4, R21, True], 'False']
+	Synthesized input EdgePhy [[I25_2, I24_1, True], [I25_2, R25, True], [I25_3, I35_4, True], [I25_3, R25, True], [I25_1, R25, True], [I25_4, I15_3, True], [I25_4, R25, True], [R51_N0, R51, True], [I22_1, I23_2, True], [I22_1, R22, True], [R35, I35_4, True], [R35, I35_1, True], [R35, I35_3, True], [R35, I35_2, True], [I22_3, I32_4, True], [I22_3, R22, True], [I22_2, I21_1, True], [I22_2, R22, True], [R31, I31_1, True], [R31, I31_3, True], [R31, I31_2, True], [R31, I31_4, True], [R32, I32_1, True], [R32, I32_4, True], [R32, I32_2, True], [R32, I32_3, True], [R33, I33_2, True], [R33, I33_4, True], [R33, I33_3, True], [R33, I33_1, True], [I34_4, I24_3, True], [I34_4, R34, True], [I34_1, R34, True], [I34_1, I35_2, True], [I34_2, R34, True], [I34_2, I33_1, True], [I34_3, R34, True], [I34_3, I44_4, True], [I15_4, R15, True], [I15_3, I25_4, True], [I15_3, R15, True], [I15_2, I14_1, True], [I15_2, R15, True], [I15_1, R15, True], [I13_4, R13, True], [I13_1, I14_2, True], [I13_1, R13, True], [I13_3, R13, True], [I13_3, I23_4, True], [I13_2, R13, True], [I13_2, I12_1, True], [I11_3, R11, True], [I11_3, I21_4, True], [I11_2, R11, True], [I11_1, R11, True], [I11_1, I12_2, True], [I51_4, R51, True], [I51_4, I41_3, True], [I52_1, I53_2, True], [I52_1, R52, True], [I11_4, R11, True], [I52_2, I51_1, True], [I52_2, R52, True], [I14_4, R14, True], [I14_2, I13_1, True], [I14_2, R14, True], [I14_3, R14, True], [I14_3, I24_4, True], [I14_1, I15_2, True], [I14_1, R14, True], [I24_3, I34_4, True], [I24_3, R24, True], [I24_2, I23_1, True], [I24_2, R24, True], [I24_1, I25_2, True], [I24_1, R24, True], [R15, I15_4, True], [R15, I15_3, True], [R15, I15_2, True], [R15, I15_1, True], [R12, I12_4, True], [R12, I12_1, True], [R12, I12_2, True], [R12, I12_3, True], [R13, I13_4, True], [R13, I13_1, True], [R13, I13_3, True], [R13, I13_2, True], [R11, I11_3, True], [R11, I11_2, True], [R11, I11_1, True], [R11, I11_4, True], [I12_4, R12, True], [I12_1, I13_2, True], [I12_1, R12, True], [I12_2, I11_1, True], [I12_2, R12, True], [I12_3, R12, True], [I12_3, I22_4, True], [I33_2, R33, True], [I33_2, I32_1, True], [I54_2, I53_1, True], [I54_2, R54, True], [I54_3, R54, True], [I54_1, R54, True], [I54_1, I55_2, True], [I54_4, I44_3, True], [I54_4, R54, True], [I42_3, I52_4, True], [I42_3, R42, True], [I42_2, I41_1, True], [I42_2, R42, True], [I42_1, R42, True], [I42_1, I43_2, True], [I52_3, R52, True], [I52_4, I42_3, True], [I52_4, R52, True], [I42_4, R42, True], [I42_4, I32_3, True], [I41_1, I42_2, True], [I41_1, R41, True], [I55_3, R55, True], [R34, I34_4, True], [R34, I34_1, True], [R34, I34_2, True], [R34, I34_3, True], [I55_1, R55, True], [I55_4, R55, True], [I55_4, I45_3, True], [I32_1, R32, True], [I32_1, I33_2, True], [I44_1, R44, True], [I44_1, I45_2, True], [I44_3, I54_4, True], [I44_3, R44, True], [I44_2, R44, True], [I44_2, I43_1, True], [I44_4, I34_3, True], [I44_4, R44, True], [I22_4, I12_3, True], [I22_4, R22, True], [R45, I45_1, True], [R45, I45_2, True], [R45, I45_3, True], [R45, I45_4, True], [R44, I44_1, True], [R44, I44_3, True], [R44, I44_2, True], [R44, I44_4, True], [R41, I41_1, True], [R41, I41_4, True], [R41, I41_2, True], [R41, I41_3, True], [R43, I43_2, True], [R43, I43_3, True], [R43, I43_1, True], [R43, I43_4, True], [R42, I42_3, True], [R42, I42_2, True], [R42, I42_1, True], [R42, I42_4, True], [I31_1, R31, True], [I31_1, I32_2, True], [I31_3, R31, True], [I31_3, I41_4, True], [I31_2, R31, True], [I31_4, R31, True], [I31_4, I21_3, True], [I51_1, I52_2, True], [I51_1, R51, True], [I43_2, I42_1, True], [I43_2, R43, True], [I43_3, R43, True], [I43_3, I53_4, True], [I43_1, I44_2, True], [I43_1, R43, True], [I43_4, R43, True], [I43_4, I33_3, True], [I23_1, I24_2, True], [I23_1, R23, True], [I23_2, I22_1, True], [I23_2, R23, True], [I23_3, I33_4, True], [I23_3, R23, True], [I23_4, I13_3, True], [I23_4, R23, True], [I53_1, I54_2, True], [I53_1, R53, True], [I53_3, R53, True], [I53_2, I52_1, True], [I53_2, R53, True], [I53_4, I43_3, True], [I53_4, R53, True], [I21_4, I11_3, True], [I21_4, R21, True], [I21_2, R21, True], [I21_3, I31_4, True], [I21_3, R21, True], [I21_1, I22_2, True], [I21_1, R21, True], [R52, I52_1, True], [R52, I52_2, True], [R52, I52_3, True], [R52, I52_4, True], [R53, I53_1, True], [R53, I53_3, True], [R53, I53_2, True], [R53, I53_4, True], [R51, R51_N0, True], [R51, I51_4, True], [R51, I51_1, True], [R51, I51_3, True], [R51, I51_2, True], [I51_3, R51, True], [I51_2, R51, True], [R54, I54_2, True], [R54, I54_3, True], [R54, I54_1, True], [R54, I54_4, True], [R55, I55_3, True], [R55, I55_1, True], [R55, I55_4, True], [R55, I55_2, True], [I33_4, R33, True], [I33_4, I23_3, True], [I33_3, R33, True], [I33_3, I43_4, True], [R14, I14_4, True], [R14, I14_2, True], [R14, I14_3, True], [R14, I14_1, True], [I33_1, R33, True], [I33_1, I34_2, True], [I45_1, R45, True], [I45_2, I44_1, True], [I45_2, R45, True], [I45_3, I55_4, True], [I45_3, R45, True], [I45_4, R45, True], [I45_4, I35_3, True], [I35_4, I25_3, True], [I35_4, R35, True], [I35_1, R35, True], [I35_3, R35, True], [I35_3, I45_4, True], [I35_2, R35, True], [I35_2, I34_1, True], [I55_2, I54_1, True], [I55_2, R55, True], [I24_4, I14_3, True], [I24_4, R24, True], [I41_4, R41, True], [I41_4, I31_3, True], [I32_4, I22_3, True], [I32_4, R32, True], [I32_2, R32, True], [I32_2, I31_1, True], [I32_3, R32, True], [I32_3, I42_4, True], [I41_2, R41, True], [I41_3, I51_4, True], [I41_3, R41, True], [R25, I25_2, True], [R25, I25_3, True], [R25, I25_1, True], [R25, I25_4, True], [R24, I24_3, True], [R24, I24_2, True], [R24, I24_1, True], [R24, I24_4, True], [R23, I23_1, True], [R23, I23_2, True], [R23, I23_3, True], [R23, I23_4, True], [R22, I22_1, True], [R22, I22_3, True], [R22, I22_2, True], [R22, I22_4, True], [R21, I21_4, True], [R21, I21_2, True], [R21, I21_3, True], [R21, I21_1, True], 'False']
+	Synthesized input Network [[R51_N0, True], 'False']
+	Synthesized input SetOSPFEdgeCost [[I41_1, I42_2, 13, True], [I23_3, I33_4, 5, True], [I33_3, I43_4, 3, True], [I52_2, I51_1, 3, True], [I22_3, I32_4, 1, True], [I45_2, I44_1, 1, True], [I14_2, I13_1, 1, True], [I42_3, I52_4, 1, True], [I54_2, I53_1, 1, True], [I13_3, I23_4, 2, True], [I21_1, I22_2, 1, True], [I12_3, I22_4, 2, True], [I31_4, I21_3, 2, True], [I55_2, I54_1, 2, True], [I35_3, I45_4, 1, True], [I34_2, I33_1, 1, True], [I32_1, I33_2, 3, True], [I24_3, I34_4, 1, True], [I25_2, I24_1, 1, True], [I44_2, I43_1, 1, True], [I11_3, I21_4, 1, True], [I53_2, I52_1, 5, True], [I43_2, I42_1, 2, True], [I15_3, I25_4, 2, True], 'False']
+Done!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Final results...
+For box ospf01
+	Synthesized input ConnectedNodes [[R55, I55_2, I54_1, R54], [R55, I55_4, I45_3, R45], [R45, I45_3, I55_4, R55], [R54, I54_1, I55_2, R55], [R45, I45_4, I35_3, R35], [R45, I45_2, I44_1, R44], [R51, I51_1, I52_2, R52], [R51, I51_4, I41_3, R41], [R54, I54_2, I53_1, R53], [R14, I14_1, I15_2, R15], [R14, I14_2, I13_1, R13], [R14, I14_3, I24_4, R24], [R54, I54_4, I44_3, R44], [R34, I34_1, I35_2, R35], [R13, I13_1, I14_2, R14], [R13, I13_2, I12_1, R12], [R13, I13_3, I23_4, R23], [R22, I22_2, I21_1, R21], [R22, I22_4, I12_3, R12], [R22, I22_1, I23_2, R23], [R22, I22_3, I32_4, R32], [R31, I31_4, I21_3, R21], [R31, I31_3, I41_4, R41], [R31, I31_1, I32_2, R32], [R21, I21_4, I11_3, R11], [R21, I21_3, I31_4, R31], [R21, I21_1, I22_2, R22], [R15, I15_3, I25_4, R25], [R15, I15_2, I14_1, R14], [R42, I42_3, I52_4, R52], [R34, I34_3, I44_4, R44], [R33, I33_2, I32_1, R32], [R23, I23_2, I22_1, R22], [R23, I23_1, I24_2, R24], [R33, I33_3, I43_4, R43], [R33, I33_1, I34_2, R34], [R33, I33_4, I23_3, R23], [R43, I43_1, I44_2, R44], [R12, I12_3, I22_4, R22], [R12, I12_1, I13_2, R13], [R42, I42_1, I43_2, R43], [R32, I32_1, I33_2, R33], [R52, I52_4, I42_3, R42], [R42, I42_2, I41_1, R41], [R23, I23_4, I13_3, R13], [R23, I23_3, I33_4, R33], [R42, I42_4, I32_3, R32], [R52, I52_2, I51_1, R51], [R52, I52_1, I53_2, R53], [R12, I12_2, I11_1, R11], [R24, I24_1, I25_2, R25], [R25, I25_3, I35_4, R35], [R44, I44_2, I43_1, R43], [R44, I44_1, I45_2, R45], [R44, I44_4, I34_3, R34], [R44, I44_3, I54_4, R54], [R34, I34_2, I33_1, R33], [R24, I24_3, I34_4, R34], [R43, I43_2, I42_1, R42], [R43, I43_4, I33_3, R33], [R11, I11_1, I12_2, R12], [R25, I25_2, I24_1, R24], [R25, I25_4, I15_3, R15], [R35, I35_4, I25_3, R25], [R35, I35_2, I34_1, R34], [R53, I53_2, I52_1, R52], [R53, I53_1, I54_2, R54], [R53, I53_4, I43_3, R43], [R41, I41_1, I42_2, R42], [R32, I32_4, I22_3, R22], [R32, I32_2, I31_1, R31], [R32, I32_3, I42_4, R42], [R35, I35_3, I45_4, R45], [R34, I34_4, I24_3, R24], [R24, I24_2, I23_1, R23], [R24, I24_4, I14_3, R14], [R41, I41_4, I31_3, R31], [R41, I41_3, I51_4, R51], [R43, I43_3, I53_4, R53], [R11, I11_3, I21_4, R21], 'False']
+	Synthesized input EdgePhy [[I25_2, I24_1], [I25_2, R25], [I25_3, I35_4], [I25_3, R25], [I25_1, R25], [I25_4, I15_3], [I25_4, R25], [R51_N0, R51], [I22_1, I23_2], [I22_1, R22], [R35, I35_4], [R35, I35_1], [R35, I35_3], [R35, I35_2], [I22_3, I32_4], [I22_3, R22], [I22_2, I21_1], [I22_2, R22], [R31, I31_1], [R31, I31_3], [R31, I31_2], [R31, I31_4], [R32, I32_1], [R32, I32_4], [R32, I32_2], [R32, I32_3], [R33, I33_2], [R33, I33_4], [R33, I33_3], [R33, I33_1], [I34_4, I24_3], [I34_4, R34], [I34_1, R34], [I34_1, I35_2], [I34_2, R34], [I34_2, I33_1], [I34_3, R34], [I34_3, I44_4], [I15_4, R15], [I15_3, I25_4], [I15_3, R15], [I15_2, I14_1], [I15_2, R15], [I15_1, R15], [I13_4, R13], [I13_1, I14_2], [I13_1, R13], [I13_3, R13], [I13_3, I23_4], [I13_2, R13], [I13_2, I12_1], [I11_3, R11], [I11_3, I21_4], [I11_2, R11], [I11_1, R11], [I11_1, I12_2], [I51_4, R51], [I51_4, I41_3], [I52_1, I53_2], [I52_1, R52], [I11_4, R11], [I52_2, I51_1], [I52_2, R52], [I14_4, R14], [I14_2, I13_1], [I14_2, R14], [I14_3, R14], [I14_3, I24_4], [I14_1, I15_2], [I14_1, R14], [I24_3, I34_4], [I24_3, R24], [I24_2, I23_1], [I24_2, R24], [I24_1, I25_2], [I24_1, R24], [R15, I15_4], [R15, I15_3], [R15, I15_2], [R15, I15_1], [R12, I12_4], [R12, I12_1], [R12, I12_2], [R12, I12_3], [R13, I13_4], [R13, I13_1], [R13, I13_3], [R13, I13_2], [R11, I11_3], [R11, I11_2], [R11, I11_1], [R11, I11_4], [I12_4, R12], [I12_1, I13_2], [I12_1, R12], [I12_2, I11_1], [I12_2, R12], [I12_3, R12], [I12_3, I22_4], [I33_2, R33], [I33_2, I32_1], [I54_2, I53_1], [I54_2, R54], [I54_3, R54], [I54_1, R54], [I54_1, I55_2], [I54_4, I44_3], [I54_4, R54], [I42_3, I52_4], [I42_3, R42], [I42_2, I41_1], [I42_2, R42], [I42_1, R42], [I42_1, I43_2], [I52_3, R52], [I52_4, I42_3], [I52_4, R52], [I42_4, R42], [I42_4, I32_3], [I41_1, I42_2], [I41_1, R41], [I55_3, R55], [R34, I34_4], [R34, I34_1], [R34, I34_2], [R34, I34_3], [I55_1, R55], [I55_4, R55], [I55_4, I45_3], [I32_1, R32], [I32_1, I33_2], [I44_1, R44], [I44_1, I45_2], [I44_3, I54_4], [I44_3, R44], [I44_2, R44], [I44_2, I43_1], [I44_4, I34_3], [I44_4, R44], [I22_4, I12_3], [I22_4, R22], [R45, I45_1], [R45, I45_2], [R45, I45_3], [R45, I45_4], [R44, I44_1], [R44, I44_3], [R44, I44_2], [R44, I44_4], [R41, I41_1], [R41, I41_4], [R41, I41_2], [R41, I41_3], [R43, I43_2], [R43, I43_3], [R43, I43_1], [R43, I43_4], [R42, I42_3], [R42, I42_2], [R42, I42_1], [R42, I42_4], [I31_1, R31], [I31_1, I32_2], [I31_3, R31], [I31_3, I41_4], [I31_2, R31], [I31_4, R31], [I31_4, I21_3], [I51_1, I52_2], [I51_1, R51], [I43_2, I42_1], [I43_2, R43], [I43_3, R43], [I43_3, I53_4], [I43_1, I44_2], [I43_1, R43], [I43_4, R43], [I43_4, I33_3], [I23_1, I24_2], [I23_1, R23], [I23_2, I22_1], [I23_2, R23], [I23_3, I33_4], [I23_3, R23], [I23_4, I13_3], [I23_4, R23], [I53_1, I54_2], [I53_1, R53], [I53_3, R53], [I53_2, I52_1], [I53_2, R53], [I53_4, I43_3], [I53_4, R53], [I21_4, I11_3], [I21_4, R21], [I21_2, R21], [I21_3, I31_4], [I21_3, R21], [I21_1, I22_2], [I21_1, R21], [R52, I52_1], [R52, I52_2], [R52, I52_3], [R52, I52_4], [R53, I53_1], [R53, I53_3], [R53, I53_2], [R53, I53_4], [R51, R51_N0], [R51, I51_4], [R51, I51_1], [R51, I51_3], [R51, I51_2], [I51_3, R51], [I51_2, R51], [R54, I54_2], [R54, I54_3], [R54, I54_1], [R54, I54_4], [R55, I55_3], [R55, I55_1], [R55, I55_4], [R55, I55_2], [I33_4, R33], [I33_4, I23_3], [I33_3, R33], [I33_3, I43_4], [R14, I14_4], [R14, I14_2], [R14, I14_3], [R14, I14_1], [I33_1, R33], [I33_1, I34_2], [I45_1, R45], [I45_2, I44_1], [I45_2, R45], [I45_3, I55_4], [I45_3, R45], [I45_4, R45], [I45_4, I35_3], [I35_4, I25_3], [I35_4, R35], [I35_1, R35], [I35_3, R35], [I35_3, I45_4], [I35_2, R35], [I35_2, I34_1], [I55_2, I54_1], [I55_2, R55], [I24_4, I14_3], [I24_4, R24], [I41_4, R41], [I41_4, I31_3], [I32_4, I22_3], [I32_4, R32], [I32_2, R32], [I32_2, I31_1], [I32_3, R32], [I32_3, I42_4], [I41_2, R41], [I41_3, I51_4], [I41_3, R41], [R25, I25_2], [R25, I25_3], [R25, I25_1], [R25, I25_4], [R24, I24_3], [R24, I24_2], [R24, I24_1], [R24, I24_4], [R23, I23_1], [R23, I23_2], [R23, I23_3], [R23, I23_4], [R22, I22_1], [R22, I22_3], [R22, I22_2], [R22, I22_4], [R21, I21_4], [R21, I21_2], [R21, I21_3], [R21, I21_1], 'False']
+	Synthesized input Network [[R51_N0], 'False']
+	Synthesized input SetOSPFEdgeCost [[I41_1, I42_2, 13], [I23_3, I33_4, 5], [I33_3, I43_4, 3], [I52_2, I51_1, 3], [I22_3, I32_4, 1], [I45_2, I44_1, 1], [I14_2, I13_1, 1], [I42_3, I52_4, 1], [I54_2, I53_1, 1], [I13_3, I23_4, 2], [I21_1, I22_2, 1], [I12_3, I22_4, 2], [I31_4, I21_3, 2], [I55_2, I54_1, 2], [I35_3, I45_4, 1], [I34_2, I33_1, 1], [I32_1, I33_2, 3], [I24_3, I34_4, 1], [I25_2, I24_1, 1], [I44_2, I43_1, 1], [I11_3, I21_4, 1], [I53_2, I52_1, 5], [I43_2, I42_1, 2], [I15_3, I25_4, 2], 'False']
+	Synthesized output OSPFRoute_1 [[R51_N0, R35, R45, 9], [R51_N0, R33, R43, 9], [R51_N0, R15, R25, 14], [R51_N0, R12, R22, 15], [R51_N0, R13, R23, 16], [R51_N0, R11, R21, 15], [R51_N0, R14, R13, 17], [R51_N0, R34, R33, 10], [R51_N0, R45, R44, 8], [R51_N0, R44, R43, 7], [R51_N0, R41, R42, 17], [R51_N0, R43, R42, 6], [R51_N0, R53, R52, 8], [R51_N0, R54, R53, 9], [R51_N0, R55, R54, 11], [R51_N0, R25, R24, 12], [R51_N0, R24, R34, 11], [R51_N0, R23, R33, 14], [R51_N0, R22, R32, 13], [R51_N0, R52, R51, 3], [R51_N0, R31, R21, 16], [R51_N0, R32, R33, 12], [R51_N0, R42, R52, 4], [R51_N0, R21, R22, 14]]
+	Synthesized output OSPFRoute []
+For box ospf02-0
+	Synthesized input OSPFRoute [[R51_N0, R35, R45, 9], [R51_N0, R33, R43, 9], [R51_N0, R15, R25, 14], [R51_N0, R12, R22, 15], [R51_N0, R13, R23, 16], [R51_N0, R11, R21, 15], [R51_N0, R14, R13, 17], [R51_N0, R34, R33, 10], [R51_N0, R45, R44, 8], [R51_N0, R44, R43, 7], [R51_N0, R41, R42, 17], [R51_N0, R43, R42, 6], [R51_N0, R53, R52, 8], [R51_N0, R54, R53, 9], [R51_N0, R55, R54, 11], [R51_N0, R25, R24, 12], [R51_N0, R24, R34, 11], [R51_N0, R23, R33, 14], [R51_N0, R22, R32, 13], [R51_N0, R52, R51, 3], [R51_N0, R31, R21, 16], [R51_N0, R32, R33, 12], [R51_N0, R42, R52, 4], [R51_N0, R21, R22, 14], 'False']
+	Synthesized output nonMinOSPFRouteCost []
+For box ospf02-1
+	Synthesized input nonMinOSPFRouteCost ['False']
+	Synthesized input OSPFRoute [[R51_N0, R35, R45, 9], [R51_N0, R33, R43, 9], [R51_N0, R15, R25, 14], [R51_N0, R12, R22, 15], [R51_N0, R13, R23, 16], [R51_N0, R11, R21, 15], [R51_N0, R14, R13, 17], [R51_N0, R34, R33, 10], [R51_N0, R45, R44, 8], [R51_N0, R44, R43, 7], [R51_N0, R41, R42, 17], [R51_N0, R43, R42, 6], [R51_N0, R53, R52, 8], [R51_N0, R54, R53, 9], [R51_N0, R55, R54, 11], [R51_N0, R25, R24, 12], [R51_N0, R24, R34, 11], [R51_N0, R23, R33, 14], [R51_N0, R22, R32, 13], [R51_N0, R52, R51, 3], [R51_N0, R31, R21, 16], [R51_N0, R32, R33, 12], [R51_N0, R42, R52, 4], [R51_N0, R21, R22, 14], 'False']
+	Synthesized output minOSPFRouteCost [[R51_N0, R35, 9], [R51_N0, R33, 9], [R51_N0, R15, 14], [R51_N0, R12, 15], [R51_N0, R13, 16], [R51_N0, R11, 15], [R51_N0, R14, 17], [R51_N0, R34, 10], [R51_N0, R45, 8], [R51_N0, R44, 7], [R51_N0, R41, 17], [R51_N0, R43, 6], [R51_N0, R53, 8], [R51_N0, R54, 9], [R51_N0, R55, 11], [R51_N0, R25, 12], [R51_N0, R24, 11], [R51_N0, R23, 14], [R51_N0, R22, 13], [R51_N0, R52, 3], [R51_N0, R31, 16], [R51_N0, R32, 12], [R51_N0, R42, 4], [R51_N0, R21, 14]]
+	Synthesized output BestOSPFRoute [[R51_N0, R35, R45, 9], [R51_N0, R33, R43, 9], [R51_N0, R15, R25, 14], [R51_N0, R12, R22, 15], [R51_N0, R13, R23, 16], [R51_N0, R11, R21, 15], [R51_N0, R14, R13, 17], [R51_N0, R34, R33, 10], [R51_N0, R45, R44, 8], [R51_N0, R44, R43, 7], [R51_N0, R41, R42, 17], [R51_N0, R43, R42, 6], [R51_N0, R53, R52, 8], [R51_N0, R54, R53, 9], [R51_N0, R55, R54, 11], [R51_N0, R25, R24, 12], [R51_N0, R24, R34, 11], [R51_N0, R23, R33, 14], [R51_N0, R22, R32, 13], [R51_N0, R52, R51, 3], [R51_N0, R31, R21, 16], [R51_N0, R32, R33, 12], [R51_N0, R42, R52, 4], [R51_N0, R21, R22, 14]]
+For box fwd01-0
+	Synthesized input MinIGPBGPRoute ['False']
+	Synthesized input SetAdminDist [[R11, 0, 1], [R11, 2, 2], [R11, 1, 3], [R12, 0, 1], [R12, 2, 2], [R12, 1, 3], [R13, 0, 1], [R13, 2, 2], [R13, 1, 3], [R14, 0, 1], [R14, 2, 2], [R14, 1, 3], [R15, 0, 1], [R15, 2, 2], [R15, 1, 3], [R21, 0, 1], [R21, 2, 2], [R21, 1, 3], [R22, 0, 1], [R22, 2, 2], [R22, 1, 3], [R23, 0, 1], [R23, 2, 2], [R23, 1, 3], [R24, 0, 1], [R24, 2, 2], [R24, 1, 3], [R25, 0, 1], [R25, 2, 2], [R25, 1, 3], [R31, 0, 1], [R31, 2, 2], [R31, 1, 3], [R32, 0, 1], [R32, 2, 2], [R32, 1, 3], [R33, 0, 1], [R33, 2, 2], [R33, 1, 3], [R34, 0, 1], [R34, 2, 2], [R34, 1, 3], [R35, 0, 1], [R35, 2, 2], [R35, 1, 3], [R41, 0, 1], [R41, 2, 2], [R41, 1, 3], [R42, 0, 1], [R42, 2, 2], [R42, 1, 3], [R43, 0, 1], [R43, 2, 2], [R43, 1, 3], [R44, 0, 1], [R44, 2, 2], [R44, 1, 3], [R45, 0, 1], [R45, 2, 2], [R45, 1, 3], [R51, 0, 1], [R51, 2, 2], [R51, 1, 3], [R52, 0, 1], [R52, 2, 2], [R52, 1, 3], [R53, 0, 1], [R53, 2, 2], [R53, 1, 3], [R54, 0, 1], [R54, 2, 2], [R54, 1, 3], [R55, 0, 1], [R55, 2, 2], [R55, 1, 3], 'False']
+	Synthesized input SetStaticRoute [[R51_N0, R32, R42], [R51_N0, R31, R32], [R51_N0, R42, R52], [R51_N0, R52, R51], [R51_N0, R21, R31], 'False']
+	Synthesized input BestOSPFRoute [[R51_N0, R35, R45, 9], [R51_N0, R33, R43, 9], [R51_N0, R15, R25, 14], [R51_N0, R12, R22, 15], [R51_N0, R13, R23, 16], [R51_N0, R11, R21, 15], [R51_N0, R14, R13, 17], [R51_N0, R34, R33, 10], [R51_N0, R45, R44, 8], [R51_N0, R44, R43, 7], [R51_N0, R41, R42, 17], [R51_N0, R43, R42, 6], [R51_N0, R53, R52, 8], [R51_N0, R54, R53, 9], [R51_N0, R55, R54, 11], [R51_N0, R25, R24, 12], [R51_N0, R24, R34, 11], [R51_N0, R23, R33, 14], [R51_N0, R22, R32, 13], [R51_N0, R52, R51, 3], [R51_N0, R31, R21, 16], [R51_N0, R32, R33, 12], [R51_N0, R42, R52, 4], [R51_N0, R21, R22, 14], 'False']
+	Synthesized output Route [[R51_N0, R35, R45, 1], [R51_N0, R32, R42, 0], [R51_N0, R33, R43, 1], [R51_N0, R15, R25, 1], [R51_N0, R12, R22, 1], [R51_N0, R13, R23, 1], [R51_N0, R11, R21, 1], [R51_N0, R14, R13, 1], [R51_N0, R34, R33, 1], [R51_N0, R31, R32, 0], [R51_N0, R45, R44, 1], [R51_N0, R44, R43, 1], [R51_N0, R41, R42, 1], [R51_N0, R43, R42, 1], [R51_N0, R42, R52, 0], [R51_N0, R52, R51, 0], [R51_N0, R53, R52, 1], [R51_N0, R54, R53, 1], [R51_N0, R55, R54, 1], [R51_N0, R25, R24, 1], [R51_N0, R24, R34, 1], [R51_N0, R23, R33, 1], [R51_N0, R22, R32, 1], [R51_N0, R21, R31, 0], [R51_N0, R52, R51, 1], [R51_N0, R31, R21, 1], [R51_N0, R32, R33, 1], [R51_N0, R42, R52, 1], [R51_N0, R21, R22, 1]]
+	Synthesized output nonMinCostAD [[R51_N0, R32, 3], [R51_N0, R52, 3], [R51_N0, R42, 3], [R51_N0, R21, 3], [R51_N0, R32, 2], [R51_N0, R31, 3], [R51_N0, R52, 2], [R51_N0, R42, 2], [R51_N0, R21, 2], [R51_N0, R31, 2]]
+	Synthesized output BestBGPRoute []
+For box fwd01-1
+	Synthesized input SetAdminDist [[R11, 0, 1], [R11, 2, 2], [R11, 1, 3], [R12, 0, 1], [R12, 2, 2], [R12, 1, 3], [R13, 0, 1], [R13, 2, 2], [R13, 1, 3], [R14, 0, 1], [R14, 2, 2], [R14, 1, 3], [R15, 0, 1], [R15, 2, 2], [R15, 1, 3], [R21, 0, 1], [R21, 2, 2], [R21, 1, 3], [R22, 0, 1], [R22, 2, 2], [R22, 1, 3], [R23, 0, 1], [R23, 2, 2], [R23, 1, 3], [R24, 0, 1], [R24, 2, 2], [R24, 1, 3], [R25, 0, 1], [R25, 2, 2], [R25, 1, 3], [R31, 0, 1], [R31, 2, 2], [R31, 1, 3], [R32, 0, 1], [R32, 2, 2], [R32, 1, 3], [R33, 0, 1], [R33, 2, 2], [R33, 1, 3], [R34, 0, 1], [R34, 2, 2], [R34, 1, 3], [R35, 0, 1], [R35, 2, 2], [R35, 1, 3], [R41, 0, 1], [R41, 2, 2], [R41, 1, 3], [R42, 0, 1], [R42, 2, 2], [R42, 1, 3], [R43, 0, 1], [R43, 2, 2], [R43, 1, 3], [R44, 0, 1], [R44, 2, 2], [R44, 1, 3], [R45, 0, 1], [R45, 2, 2], [R45, 1, 3], [R51, 0, 1], [R51, 2, 2], [R51, 1, 3], [R52, 0, 1], [R52, 2, 2], [R52, 1, 3], [R53, 0, 1], [R53, 2, 2], [R53, 1, 3], [R54, 0, 1], [R54, 2, 2], [R54, 1, 3], [R55, 0, 1], [R55, 2, 2], [R55, 1, 3], 'False']
+	Synthesized input Route [[R51_N0, R35, R45, 1], [R51_N0, R32, R42, 0], [R51_N0, R33, R43, 1], [R51_N0, R15, R25, 1], [R51_N0, R12, R22, 1], [R51_N0, R13, R23, 1], [R51_N0, R11, R21, 1], [R51_N0, R14, R13, 1], [R51_N0, R34, R33, 1], [R51_N0, R31, R32, 0], [R51_N0, R45, R44, 1], [R51_N0, R44, R43, 1], [R51_N0, R41, R42, 1], [R51_N0, R43, R42, 1], [R51_N0, R42, R52, 0], [R51_N0, R52, R51, 0], [R51_N0, R53, R52, 1], [R51_N0, R54, R53, 1], [R51_N0, R55, R54, 1], [R51_N0, R25, R24, 1], [R51_N0, R24, R34, 1], [R51_N0, R23, R33, 1], [R51_N0, R22, R32, 1], [R51_N0, R21, R31, 0], [R51_N0, R52, R51, 1], [R51_N0, R31, R21, 1], [R51_N0, R32, R33, 1], [R51_N0, R42, R52, 1], [R51_N0, R21, R22, 1], 'False']
+	Synthesized input nonMinCostAD [[R51_N0, R32, 3], [R51_N0, R52, 3], [R51_N0, R42, 3], [R51_N0, R21, 3], [R51_N0, R32, 2], [R51_N0, R31, 3], [R51_N0, R52, 2], [R51_N0, R42, 2], [R51_N0, R21, 2], [R51_N0, R31, 2], 'False']
+	Synthesized output Fwd [[R51_N0, R35, R45, 1], [R51_N0, R32, R42, 0], [R51_N0, R33, R43, 1], [R51_N0, R15, R25, 1], [R51_N0, R12, R22, 1], [R51_N0, R13, R23, 1], [R51_N0, R11, R21, 1], [R51_N0, R14, R13, 1], [R51_N0, R34, R33, 1], [R51_N0, R31, R32, 0], [R51_N0, R45, R44, 1], [R51_N0, R44, R43, 1], [R51_N0, R41, R42, 1], [R51_N0, R43, R42, 1], [R51_N0, R42, R52, 0], [R51_N0, R52, R51, 0], [R51_N0, R53, R52, 1], [R51_N0, R54, R53, 1], [R51_N0, R55, R54, 1], [R51_N0, R25, R24, 1], [R51_N0, R24, R34, 1], [R51_N0, R23, R33, 1], [R51_N0, R22, R32, 1], [R51_N0, R21, R31, 0]]
+Synthesis time: 183

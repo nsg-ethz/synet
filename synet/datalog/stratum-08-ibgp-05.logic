@@ -1,0 +1,28 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+Vertex(n) -> string(n).
+
+// EDB: ConnectedBGPAnnouncement, MaxBGPLocalPrefBFPRoute
+ConnectedBGPAnnouncement(node, next_hop, prefix) -> Vertex(node), Vertex(next_hop), Vertex(prefix).
+
+MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// IDB: ConnectedBGPRoute
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref)  ->
+    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    int(ASPathLength), int(pref).
+
+// ------------------------------ IBGP 5/9 ------------------------------//
+
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    ConnectedBGPAnnouncement(node, next_hop, prefix),
+    MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) <-
+    !ConnectedBGPAnnouncement(node, _, prefix),
+    MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref).
+
+// ------------------------------ THE END ------------------------------//

@@ -1,0 +1,17 @@
++Fwd("R11_N0", "R12", "R11", "ospf").
++Fwd("R11_N0", "R13", "R12", "ospf").
++Fwd("R11_N0", "R31", "R21", "ospf").
++Fwd("R11_N0", "R32", "R31", "ospf").
++Fwd("R11_N0", "R33", "R32", "ospf").
++Fwd("R11_N0", "R23", "R22", "ospf").
++Fwd("R11_N0", "R22", "R21", "ospf").
++Fwd("R11_N0", "R21", "R11", "ospf").
+
++Fwd("GOOGLE", "R12", "R11", "bgp").
++Fwd("GOOGLE", "R13", "R12", "bgp").
++Fwd("GOOGLE", "R31", "R21", "bgp").
++Fwd("GOOGLE", "R32", "R31", "bgp").
++Fwd("GOOGLE", "R33", "R32", "bgp").
++Fwd("GOOGLE", "R23", "R22", "bgp").
++Fwd("GOOGLE", "R22", "R21", "bgp").
++Fwd("GOOGLE", "R21", "R11", "bgp").

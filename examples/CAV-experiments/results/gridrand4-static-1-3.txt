@@ -1,0 +1,21 @@
+IN BOX fwd01-1-static
+Couldn't import dot_parser, loading of dot files will not be possible.
+HEY
+Loading user provided input for box: fwd01-1-static []
+Checking initial inputs for box fwd01-1-static
+Loading user provided outputs for box: fwd01-1-static [Fwd(R44_N0, R14, R24, 0) == True, Fwd(R44_N0, R12, R13, 0) == True, Fwd(R44_N0, R13, R23, 0) == True, Fwd(R44_N0, R11, R21, 0) == True, Fwd(R44_N0, R34, R44, 0) == True, Fwd(R44_N0, R31, R32, 0) == True, Fwd(R44_N0, R32, R33, 0) == True, Fwd(R44_N0, R33, R34, 0) == True, Fwd(R44_N0, R41, R42, 0) == True, Fwd(R44_N0, R43, R44, 0) == True, Fwd(R44_N0, R42, R43, 0) == True, Fwd(R44_N0, R24, R34, 0) == True, Fwd(R44_N0, R23, R24, 0) == True, Fwd(R44_N0, R22, R23, 0) == True, Fwd(R44_N0, R21, R22, 0) == True]
+
+Beginning Synthesis...
+##############################
+Synthesizing for box 0 fwd01-1-static
+Feeding desired outputs for fwd01-1-static...
+Checking SAT for box fwd01-1-static ...
+SAT, reading inputs...
+	Synthesized input SetStaticRoute [[R44_N0, R14, R24, True], [R44_N0, R12, R13, True], [R44_N0, R13, R23, True], [R44_N0, R11, R21, True], [R44_N0, R34, R44, True], [R44_N0, R31, R32, True], [R44_N0, R32, R33, True], [R44_N0, R33, R34, True], [R44_N0, R41, R42, True], [R44_N0, R43, R44, True], [R44_N0, R42, R43, True], [R44_N0, R24, R34, True], [R44_N0, R23, R24, True], [R44_N0, R22, R23, True], [R44_N0, R21, R22, True], 'False']
+Done!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Final results...
+For box fwd01-1-static
+	Synthesized input SetStaticRoute [[R44_N0, R14, R24], [R44_N0, R12, R13], [R44_N0, R13, R23], [R44_N0, R11, R21], [R44_N0, R34, R44], [R44_N0, R31, R32], [R44_N0, R32, R33], [R44_N0, R33, R34], [R44_N0, R41, R42], [R44_N0, R43, R44], [R44_N0, R42, R43], [R44_N0, R24, R34], [R44_N0, R23, R24], [R44_N0, R22, R23], [R44_N0, R21, R22], 'False']
+	Synthesized output Fwd [[R44_N0, R14, R24, 0], [R44_N0, R12, R13, 0], [R44_N0, R13, R23, 0], [R44_N0, R11, R21, 0], [R44_N0, R34, R44, 0], [R44_N0, R31, R32, 0], [R44_N0, R32, R33, 0], [R44_N0, R33, R34, 0], [R44_N0, R41, R42, 0], [R44_N0, R43, R44, 0], [R44_N0, R42, R43, 0], [R44_N0, R24, R34, 0], [R44_N0, R23, R24, 0], [R44_N0, R22, R23, 0], [R44_N0, R21, R22, 0]]
+Synthesis time: 7

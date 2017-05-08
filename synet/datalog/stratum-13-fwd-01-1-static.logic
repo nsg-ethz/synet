@@ -1,0 +1,19 @@
+
+// ----------------------------- TYPES ----------------------------- //
+
+// Generic Vertex type
+Vertex(n) -> string(n).
+
+// EDB: SetStaticRoute
+SetStaticRoute(net, node, nxt) -> Vertex(net), Vertex(node), Vertex(nxt).
+
+// IDB: Fwd
+Fwd(net, node, nxt, protocol) -> Vertex(net), Vertex(node), Vertex(nxt), string(protocol).
+
+// ------------------------------ FWD 1/3 ------------------------------//
+
+Fwd(net, node, nxt, protocol) <-
+    SetStaticRoute(net, node, nxt),
+    protocol="static".
+
+// ------------------------------ THE END ------------------------------//

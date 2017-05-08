@@ -1,0 +1,109 @@
++SetNode("ATL").
++SetNode("CHIC").
++SetNode("DC").
++SetNode("HOUS").
++SetNode("KANS").
++SetNode("LAX").
++SetNode("NYC").
++SetNode("SALT").
++SetNode("SEAT").
+
++SetInterface("ATL", "ATL_I_1").
++SetInterface("ATL", "ATL_I_2").
++SetInterface("ATL", "ATL_I_3").
++SetInterface("CHIC", "CHIC_I_1").
++SetInterface("CHIC", "CHIC_I_2").
++SetInterface("CHIC", "CHIC_I_3").
++SetInterface("CHIC", "CHIC_I_4").
++SetInterface("CHIC", "CHIC_I_5").
++SetInterface("DC", "DC_I_1").
++SetInterface("DC", "DC_I_2").
++SetInterface("DC", "DC_I_3").
++SetInterface("HOUS", "HOUS_I_1").
++SetInterface("HOUS", "HOUS_I_2").
++SetInterface("HOUS", "HOUS_I_3").
++SetInterface("KANS", "KANS_I_1").
++SetInterface("KANS", "KANS_I_2").
++SetInterface("KANS", "KANS_I_3").
++SetInterface("LAX", "LAX_I_1").
++SetInterface("LAX", "LAX_I_2").
++SetInterface("LAX", "LAX_I_3").
++SetInterface("NYC", "NYC_I_1").
++SetInterface("NYC", "NYC_I_2").
++SetInterface("SALT", "SALT_I_1").
++SetInterface("SALT", "SALT_I_2").
++SetInterface("SALT", "SALT_I_3").
++SetInterface("SEAT", "SEAT_I_1").
++SetInterface("SEAT", "SEAT_I_2").
++SetInterface("SEAT", "SEAT_I_3").
+
++SetLink("ATL_I_1", "CHIC_I_3").
++SetLink("ATL_I_2", "HOUS_I_3").
++SetLink("ATL_I_3", "DC_I_2").
++SetLink("CHIC_I_1", "SEAT_I_3").
++SetLink("CHIC_I_2", "KANS_I_2").
++SetLink("CHIC_I_3", "ATL_I_1").
++SetLink("CHIC_I_4", "DC_I_1").
++SetLink("CHIC_I_5", "NYC_I_1").
++SetLink("DC_I_1", "CHIC_I_4").
++SetLink("DC_I_2", "ATL_I_3").
++SetLink("DC_I_3", "NYC_I_2").
++SetLink("HOUS_I_1", "LAX_I_3").
++SetLink("HOUS_I_2", "KANS_I_3").
++SetLink("HOUS_I_3", "ATL_I_2").
++SetLink("KANS_I_1", "SALT_I_3").
++SetLink("KANS_I_2", "CHIC_I_2").
++SetLink("KANS_I_3", "HOUS_I_2").
++SetLink("LAX_I_1", "SEAT_I_1").
++SetLink("LAX_I_2", "SALT_I_2").
++SetLink("LAX_I_3", "HOUS_I_1").
++SetLink("NYC_I_1", "CHIC_I_5").
++SetLink("NYC_I_2", "DC_I_3").
++SetLink("SALT_I_1", "SEAT_I_2").
++SetLink("SALT_I_2", "LAX_I_2").
++SetLink("SALT_I_3", "KANS_I_1").
++SetLink("SEAT_I_1", "LAX_I_1").
++SetLink("SEAT_I_2", "SALT_I_1").
++SetLink("SEAT_I_3", "CHIC_I_1").
+
++SetAdminDist("ATL","static",1).
++SetAdminDist("ATL","bgp",2).
++SetAdminDist("ATL","ospf",3).
++SetAdminDist("CHIC","static",1).
++SetAdminDist("CHIC","bgp",2).
++SetAdminDist("CHIC","ospf",3).
++SetAdminDist("DC","static",1).
++SetAdminDist("DC","bgp",2).
++SetAdminDist("DC","ospf",3).
++SetAdminDist("HOUS","static",1).
++SetAdminDist("HOUS","bgp",2).
++SetAdminDist("HOUS","ospf",3).
++SetAdminDist("KANS","static",1).
++SetAdminDist("KANS","bgp",2).
++SetAdminDist("KANS","ospf",3).
++SetAdminDist("LAX","static",1).
++SetAdminDist("LAX","bgp",2).
++SetAdminDist("LAX","ospf",3).
++SetAdminDist("NYC","static",1).
++SetAdminDist("NYC","bgp",2).
++SetAdminDist("NYC","ospf",3).
++SetAdminDist("SALT","static",1).
++SetAdminDist("SALT","bgp",2).
++SetAdminDist("SALT","ospf",3).
++SetAdminDist("SEAT","static",1).
++SetAdminDist("SEAT","bgp",2).
++SetAdminDist("SEAT","ospf",3).
+
+//+SetNetwork("CHIC", "CHIC_N6").
++SetNetwork("DC", "DC_N3").
++SetNetwork("DC", "DC_N7").
++SetNetwork("LAX", "LAX_N4").
++SetNetwork("NYC", "NYC_N5").
++SetNetwork("SALT", "SALT_N0").
++SetNetwork("SEAT", "SEAT_N1").
++SetNetwork("SEAT", "SEAT_N2").
++SetNetwork("SEAT", "SEAT_N8").
++SetNetwork("SEAT", "SEAT_N9").
+
++SetBGPAnnouncement("SEAT","SEAT_N9", "GOOGLE", "1;2;3", 3).
++SetBGPAnnouncement("LAX","LAX_N4", "GOOGLE", "1;2;3", 3).
