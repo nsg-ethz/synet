@@ -199,7 +199,7 @@ class GNS3TopologyGen(object):
 
         for src, dst in self.g.edges():
             gg.add_edge(src, dst)
-        nx.write_dot(gg, '%s/g.dot' % self.outdir)
+        #nx.write_dot(gg, '%s/g.dot' % self.outdir)
 
     def is_peer(self, node):
         return self.g.node[node][VERTEX_TYPE] == PEER_TYPE
