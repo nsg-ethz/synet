@@ -1070,38 +1070,38 @@ class Synthesizer(object):
         Node = inputs.get('Node', None)
         Interface = inputs.get('Interface', None)
         Network = inputs.get('Network', None)
-        EdgePhy = inputs.get('EdgePhy', None) or outputs.get('EdgePhy', None)
+        EdgePhy = inputs.get('EdgePhy', outputs.get('EdgePhy', None))
         SetNetwork = inputs.get('SetNetwork', None)
         SetInterface = inputs.get('SetInterface', None)
-        SetLink = inputs.get('SetLink', None) or outputs.get('SetLink', None)
-        LinkOSPF = inputs.get('LinkOSPF', None) or outputs.get('LinkOSPF', None)
-        SetOSPFEdgeCost = inputs.get('SetOSPFEdgeCost', None) or outputs.get('SetOSPFEdgeCost', None)
+        SetLink = inputs.get('SetLink', outputs.get('SetLink', None))
+        LinkOSPF = inputs.get('LinkOSPF', outputs.get('LinkOSPF', None))
+        SetOSPFEdgeCost = inputs.get('SetOSPFEdgeCost', outputs.get('SetOSPFEdgeCost', None))
         StaticRouteCost = inputs.get('StaticRouteCost', None)
-        IGPRouteCost = inputs.get('IGPRouteCost', None) or outputs.get('IGPRouteCost', None)
-        ConnectedBGPRoute = inputs.get('ConnectedBGPRoute', None)  or outputs.get('ConnectedBGPRoute', None)
-        BestOSPFRoute = inputs.get('BestOSPFRoute', None) or outputs.get('BestOSPFRoute', None)
-        OSPFRoute = inputs.get('OSPFRoute', None) or outputs.get('OSPFRoute', None)
-        nonMinOSPFRouteCost = inputs.get('nonMinOSPFRouteCost', None) or outputs.get('nonMinOSPFRouteCost', None)
-        Route = inputs.get('Route', None) or outputs.get('Route', None)
+        IGPRouteCost = inputs.get('IGPRouteCost', outputs.get('IGPRouteCost', None))
+        ConnectedBGPRoute = inputs.get('ConnectedBGPRoute', outputs.get('ConnectedBGPRoute', None))
+        BestOSPFRoute = inputs.get('BestOSPFRoute', outputs.get('BestOSPFRoute', None))
+        OSPFRoute = inputs.get('OSPFRoute', outputs.get('OSPFRoute', None))
+        nonMinOSPFRouteCost = inputs.get('nonMinOSPFRouteCost', outputs.get('nonMinOSPFRouteCost', None))
+        Route = inputs.get('Route', outputs.get('Route', None))
         SetStaticRouteCost = inputs.get('SetStaticRouteCost', None)
-        SetStaticRoute = inputs.get('SetStaticRoute', None) or outputs.get('SetStaticRoute', None)
-        MinIGPBGPRoute = inputs.get('MinIGPBGPRoute', None) or outputs.get('MinIGPBGPRoute', None)
-        nonMaxBGPLocalPref = inputs.get('nonMaxBGPLocalPref', None) or outputs.get('nonMaxBGPLocalPref', None)
-        BGPLocalPref = inputs.get('BGPLocalPref', None) or outputs.get('BGPLocalPref', None)
-        BGPRoute = inputs.get('BGPRoute', None) or outputs.get('BGPRoute', None)
-        MaxBGPLocalPrefBGPRoute = inputs.get('MaxBGPLocalPrefBGPRoute', None) or outputs.get('MaxBGPLocalPrefBGPRoute', None)
-        SetBGPLocalPref = inputs.get('SetBGPLocalPref', None) or outputs.get('SetBGPLocalPref', None)
-        IncomingFwdInterface = inputs.get('IncomingFwdInterface', None) or outputs.get('IncomingFwdInterface', None)
-        OutgoingFwdInterface = inputs.get('OutgoingFwdInterface', None) or outputs.get('OutgoingFwdInterface', None)
-        ConnectedNodes = inputs.get('ConnectedNodes', None) or outputs.get('ConnectedNodes', None)
-        Fwd = inputs.get('Fwd', None) or outputs.get('Fwd', None)
-        nonMinCostAD = inputs.get('nonMinCostAD', None) or outputs.get('nonMinCostAD', None)
-        SetAdminDist = inputs.get('SetAdminDist', None) or outputs.get('SetAdminDist', None)
-        minOSPFRouteCost = inputs.get('minOSPFRouteCost', None) or outputs.get('minOSPFRouteCost', None)
-        nonMinIGPCost = inputs.get('nonMinIGPCost', None) or outputs.get('nonMinIGPCost', None)
-        ConnectedBGPAnnouncement = inputs.get('ConnectedBGPAnnouncement', None) or outputs.get('ConnectedBGPAnnouncement', None)
-        MinAsPathBGPRoute = inputs.get('MinAsPathBGPRoute', None) or outputs.get('MinAsPathBGPRoute', None)
-        BGPAnnouncement = inputs.get('BGPAnnouncement', None) or outputs.get('BGPAnnouncement', None)
+        SetStaticRoute = inputs.get('SetStaticRoute', outputs.get('SetStaticRoute', None))
+        MinIGPBGPRoute = inputs.get('MinIGPBGPRoute', outputs.get('MinIGPBGPRoute', None))
+        nonMaxBGPLocalPref = inputs.get('nonMaxBGPLocalPref', outputs.get('nonMaxBGPLocalPref', None))
+        BGPLocalPref = inputs.get('BGPLocalPref', outputs.get('BGPLocalPref', None))
+        BGPRoute = inputs.get('BGPRoute', outputs.get('BGPRoute', None))
+        MaxBGPLocalPrefBGPRoute = inputs.get('MaxBGPLocalPrefBGPRoute', outputs.get('MaxBGPLocalPrefBGPRoute', None))
+        SetBGPLocalPref = inputs.get('SetBGPLocalPref', outputs.get('SetBGPLocalPref', None))
+        IncomingFwdInterface = inputs.get('IncomingFwdInterface', outputs.get('IncomingFwdInterface', None))
+        OutgoingFwdInterface = inputs.get('OutgoingFwdInterface', outputs.get('OutgoingFwdInterface', None))
+        ConnectedNodes = inputs.get('ConnectedNodes', outputs.get('ConnectedNodes', None))
+        Fwd = inputs.get('Fwd', outputs.get('Fwd', None))
+        nonMinCostAD = inputs.get('nonMinCostAD', outputs.get('nonMinCostAD', None))
+        SetAdminDist = inputs.get('SetAdminDist', outputs.get('SetAdminDist', None))
+        minOSPFRouteCost = inputs.get('minOSPFRouteCost', outputs.get('minOSPFRouteCost', None))
+        nonMinIGPCost = inputs.get('nonMinIGPCost', outputs.get('nonMinIGPCost', None))
+        ConnectedBGPAnnouncement = inputs.get('ConnectedBGPAnnouncement', outputs.get('ConnectedBGPAnnouncement', None))
+        MinAsPathBGPRoute = inputs.get('MinAsPathBGPRoute', outputs.get('MinAsPathBGPRoute', None))
+        BGPAnnouncement = inputs.get('BGPAnnouncement', outputs.get('BGPAnnouncement', None))
 
         v1, v2, v3, v4, v5, v6 = z3.Consts('v1 v2 v3 v4 v5 v6', self.vertex)
         t1, t2, t3, t4 = z3.Consts('t1 t2 t3 t4', z3.IntSort())
@@ -1469,7 +1469,7 @@ class Synthesizer(object):
               )
             constraints.append(c)
 
-        if BestOSPFRoute is not None and nonMinOSPFRouteCost:
+        if BestOSPFRoute is not None and nonMinOSPFRouteCost is not None:
             # Best route must be the min set
             c = z3.ForAll(
                 [v1, v2, v3, t1],
@@ -2374,7 +2374,12 @@ class Synthesizer(object):
                 drouter = [i for i in self.network_graph.neighbors(dst) if is_router(self.network_graph, i)][0]
                 g.add_edge(srouter, drouter, edge_type=INTERNAL_EDGE)
                 if gen_ospf:
-                    g[srouter][drouter]['ospf_cost'] = self.ospf_costs.get((src, dst), 65530)
+                    cost = self.ospf_costs.get((src, dst), None)
+                    if cost is None:
+                        cost = 65530
+                    else:
+                        cost = cost.as_long()
+                    g[srouter][drouter]['ospf_cost'] = cost
 
         peering_nets = list(set(peering_nets))
         addrmap = {'GOOGLE': u'8.8.0.0/16'}
@@ -2391,6 +2396,7 @@ class Synthesizer(object):
                         workingdir='.',
                         outdir=outdir,
                         gen_ospf=gen_ospf, gen_bgp=gen_bgp)
+
 
 def main():
     parser = argparse.ArgumentParser(description='Synthesize network config.')
