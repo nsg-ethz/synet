@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 import argparse
+import time
 
-
-from synet.synthesizer import Synthesizer
+#from synet.synthesizer import Synthesizer
+from synet.synthesis3 import Synthesizer
 
 
 def main():
@@ -19,7 +20,7 @@ def main():
     with open(args.fixed_outputs) as f:
         fixed_outputs = f.read()
     if args.mode == 'bgp':
-        BOXES_ORDER = ['ibgp01', 'ibgp02', 'ibgp03', 'ibgp04', 'ibgp05', 'ibgp06', 'ibgp07', 'ibgp08', 'ibgp09',
+        BOXES_ORDER = ['ibgp03', 'ibgp04', 'ibgp05', 'ibgp06', 'ibgp07', 'ibgp08', 'ibgp09',
                        'ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']
     elif args.mode == 'ospf':
         BOXES_ORDER = ['ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']
@@ -29,11 +30,14 @@ def main():
     else:
         raise NameError('Unknown synthesis mode')
 
+    start = time.time()
     syn = Synthesizer(BOXES_ORDER, initial_inputs, fixed_outputs,
                       unrolling_limit=args.unrolling_limit)
 
     syn.synthesize()
-    outdir = args.initial_inputs.split('/')[-1].split('.')[0] + '-configs'
+    end = time.time()
+    print "XXXXX Synthesis time for %s is %s" % (args.initial_inputs.split('/')[-1].split('.')[0], end - start)
+    outdir = "configs/%s" % (args.initial_inputs.split('/')[-1].split('.')[0] + '-configs')
     print "Generating configs to ", outdir
     syn.gen_configs(outdir)
 
