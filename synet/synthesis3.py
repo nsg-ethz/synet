@@ -6,7 +6,6 @@ import z3
 import networkx as nx
 import itertools
 from collections import Iterable
-import os
 
 #from translation.translator_nonrecursive import Translator
 #from translation.translator_nonrecursive import get_string_const_val
@@ -20,67 +19,8 @@ import tempfile
 from common import *
 
 
-
 __author__ = "Ahmed El-Hassany"
 __email__ = "eahmed@ethz.ch"
-
-
-# Get base dir to find the datalog models
-BASEDIR = os.path.abspath(os.path.join(os.path.abspath(__file__), os.pardir))
-
-
-
-# Define the boxes to load
-BOXES = {}
-BOXES['phy01'] = dict(file='%s/datalog/stratum-01-physical.logic' % BASEDIR)
-BOXES['ospf01'] = dict(file='%s/datalog/stratum-02-ospf-01.logic' % BASEDIR)
-BOXES['ospf02'] = dict(file='%s/datalog/stratum-03-ospf-02.logic' % BASEDIR)
-BOXES['ospf02-0'] = dict(file='%s/datalog/stratum-03-ospf-02-0.logic' % BASEDIR)
-BOXES['ospf02-1'] = dict(file='%s/datalog/stratum-03-ospf-02-1.logic' % BASEDIR)
-BOXES['OSPF_FIXED'] = dict(file='%s/datalog/ospf-fixed.logic' % BASEDIR)
-BOXES['ibgp01'] = dict(file='%s/datalog/stratum-04-ibgp-01.logic' % BASEDIR)
-BOXES['ibgp02'] = dict(file='%s/datalog/stratum-05-ibgp-02.logic' % BASEDIR)
-BOXES['ibgp03'] = dict(file='%s/datalog/stratum-06-ibgp-03.logic' % BASEDIR)
-BOXES['ibgp04'] = dict(file='%s/datalog/stratum-07-ibgp-04.logic' % BASEDIR)
-BOXES['ibgp05'] = dict(file='%s/datalog/stratum-08-ibgp-05.logic' % BASEDIR)
-BOXES['ibgp06'] = dict(file='%s/datalog/stratum-09-ibgp-06.logic' % BASEDIR)
-BOXES['ibgp07'] = dict(file='%s/datalog/stratum-10-ibgp-07.logic' % BASEDIR)
-BOXES['ibgp08'] = dict(file='%s/datalog/stratum-11-ibgp-08.logic' % BASEDIR)
-BOXES['ibgp09'] = dict(file='%s/datalog/stratum-12-ibgp-09.logic' % BASEDIR)
-BOXES['fwd01'] = dict(file='%s/datalog/stratum-13-fwd-01.logic' % BASEDIR)
-BOXES['fwd01-0'] = dict(file='%s/datalog/stratum-13-fwd-01-0.logic' % BASEDIR)
-BOXES['fwd01-1'] = dict(file='%s/datalog/stratum-13-fwd-01-1.logic' % BASEDIR)
-BOXES['fwd01-0-static'] = dict(file='%s/datalog/stratum-13-fwd-01-0-static.logic' % BASEDIR)
-BOXES['fwd01-1-static'] = dict(file='%s/datalog/stratum-13-fwd-01-1-static.logic' % BASEDIR)
-
-# Define the forward order for the box
-boxes_order_all = [
-    'phy01',
-    'ospf01',
-    'ospf02-0',
-    'ospf02-1',
-    'ibgp01',
-    'ibgp02',
-    'ibgp03',
-    'ibgp04',
-    'ibgp05',
-    'ibgp06',
-    'ibgp07',
-    'ibgp08',
-    'ibgp09',
-    'fwd01-0',
-    'fwd01-1',
-    'fwd02',
-    'fwd03',
-]
-
-boxes_order_simple = [
-    'phy01',
-    'ospf01',
-    'fwd03',
-]
-
-BOXES_ORDER = ['ibgp01', 'ibgp02', 'ibgp03', 'ibgp04', 'ibgp05', 'ibgp06', 'ibgp07', 'ibgp08', 'ibgp09','ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']
 
 
 # Define function signatures
@@ -183,21 +123,21 @@ def get_original_version(name):
     return MAP_TO_ORIGINAL[name]
 
 
-def fill_box_info(box_name, unrolling_limit):
+def fill_box_info(boxes, box_name, unrolling_limit):
     print "IN BOX", box_name
-    box = Translator(BOXES[box_name]['file'], unrolling_limit)
-    BOXES[box_name]['box'] = box
-    BOXES[box_name]['constraints'] = box.to_z3()
-    BOXES[box_name]['solver'] = z3.Solver()
-    BOXES[box_name]['solver'].set(unsat_core=True)
-    BOXES[box_name]['inputs'] = {}
-    BOXES[box_name]['outputs'] = {}
-    BOXES[box_name]['fixed_inputs'] = []
-    BOXES[box_name]['fixed_outputs'] = []
-    BOXES[box_name]['input_constraints'] = []
+    box = Translator(boxes[box_name]['file'], unrolling_limit)
+    boxes[box_name]['box'] = box
+    boxes[box_name]['constraints'] = box.to_z3()
+    boxes[box_name]['solver'] = z3.Solver()
+    boxes[box_name]['solver'].set(unsat_core=True)
+    boxes[box_name]['inputs'] = {}
+    boxes[box_name]['outputs'] = {}
+    boxes[box_name]['fixed_inputs'] = []
+    boxes[box_name]['fixed_outputs'] = []
+    boxes[box_name]['input_constraints'] = []
     for name in box.program.get_edb_predicate_names():
         func = box.predicates[name]
-        BOXES[box_name]['inputs'][name] = func
+        boxes[box_name]['inputs'][name] = func
         assert name in FUNCS_SIG, name
         assert len(FUNCS_SIG[name]) == func.arity(), func
         if name not in UNROLLED:
@@ -205,23 +145,25 @@ def fill_box_info(box_name, unrolling_limit):
         MAP_TO_ORIGINAL[name] = name
     for name in box.program.get_idb_predicate_names():
         func = box.predicates[name]
-        BOXES[box_name]['outputs'][str(func)] = func
+        boxes[box_name]['outputs'][str(func)] = func
         assert str(func) in FUNCS_SIG, str(func)
         assert len(FUNCS_SIG[str(func)]) == func.arity(), "%s, %s, %s" % (str(func), [func.domain(i) for i in range(func.arity())],  FUNCS_SIG[str(func)])
         MAP_TO_ORIGINAL[name] = name
         for i in range(1, box.unroll_limit + 1):
             func = box.get_predicate(name, i)
-            BOXES[box_name]['outputs'][str(func)] = func
+            boxes[box_name]['outputs'][str(func)] = func
             assert str(name) in FUNCS_SIG, name
             assert len(FUNCS_SIG[name]) == func.arity(), str(func)
             FUNCS_SIG[str(func)] = FUNCS_SIG[name]
             MAP_TO_ORIGINAL[str(func)] = name
             if i == box.unroll_limit:
                 UNROLLED[name] = str(func)
+    return boxes
 
 
 class Synthesizer(object):
-    def __init__(self, boxes_names, inputs, fixed_outputs, unrolling_limit=5):
+    def __init__(self, boxes, boxes_names, inputs, fixed_outputs, unrolling_limit=5):
+        self.boxes = boxes
         self.boxes_names = boxes_names
         self.init_inputs = []
         self.node_interface = []
@@ -238,8 +180,8 @@ class Synthesizer(object):
         self.ospf_costs = {}
         self.static_routes = {}
 
-        for box_name in self.boxes_names:
-            fill_box_info(box_name, unrolling_limit)
+        for box_name in self.boxes:
+            fill_box_info(self.boxes, box_name, unrolling_limit)
 
         self.read_init_inputs()
         self.read_fixed_outputs(fixed_outputs)
@@ -254,8 +196,8 @@ class Synthesizer(object):
             self.dep_g.add_node(box_name)
         for src in self.boxes_names:
             for dst in self.boxes_names:
-                src_set = set(BOXES[src]['outputs'].keys())
-                dst_set = set(BOXES[dst]['inputs'].keys())
+                src_set = set(self.boxes[src]['outputs'].keys())
+                dst_set = set(self.boxes[dst]['inputs'].keys())
                 if src_set.intersection(dst_set):
                     self.dep_g.add_edge(src, dst)
         #nx_pydot.write_dot(self.dep_g, '/tmp/ddep.ddot')
@@ -265,30 +207,30 @@ class Synthesizer(object):
         Fill input, output constraints and load them to the solver of
         each box.
         """
-        for box_name in self.boxes_names:
+        for box_name in self.boxes:
             self.fill_boxes_input_constraints(box_name)
             # Load input constraints
-            BOXES[box_name]['solver'].append(BOXES[box_name]['box'].to_z3())
-            for c in BOXES[box_name]['input_constraints']:
+            self.boxes[box_name]['solver'].append(self.boxes[box_name]['box'].to_z3())
+            for c in self.boxes[box_name]['input_constraints']:
                 if c is None: continue
                 #print "Added constrains", box_name, c
-                BOXES[box_name]['solver'].append(c)
+                self.boxes[box_name]['solver'].append(c)
             # Load fixed input by the user
 
-            print "Loading user provided input for box:", box_name, BOXES[box_name]['fixed_inputs']
-            BOXES[box_name]['solver'].append(BOXES[box_name]['fixed_inputs'])
+            print "Loading user provided input for box:", box_name, self.boxes[box_name]['fixed_inputs']
+            self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_inputs'])
             print "Checking initial inputs for box", box_name
-            #assert BOXES[box_name]['solver'].check() == z3.sat, \
-            #    "%s: %s" % (box_name, BOXES[box_name]['box'].to_z3())
-            print "Loading user provided outputs for box:", box_name, BOXES[box_name]['fixed_outputs']
-            for i in BOXES[box_name]['inputs']:
+            #assert self.boxes[box_name]['solver'].check() == z3.sat, \
+            #    "%s: %s" % (box_name, self.boxes[box_name]['box'].to_z3())
+            print "Loading user provided outputs for box:", box_name, self.boxes[box_name]['fixed_outputs']
+            for i in self.boxes[box_name]['inputs']:
                 if i in self.fixed_inputs:
                     #print "TO APPEND", box_name, self.fixed_inputs[i]
-                    BOXES[box_name]['solver'].append(self.fixed_inputs[i])
-            BOXES[box_name]['solver'].append(BOXES[box_name]['fixed_outputs'])
+                    self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
+            self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
             #if box_name == 'fwd03':
-            #    fwd = BOXES[box_name]['inputs']['Fwd']
-            #    BOXES[box_name]['solver'].append(fwd(get_string_const_val('N1')))
+            #    fwd = self.boxes[box_name]['inputs']['Fwd']
+            #    self.boxes[box_name]['solver'].append(fwd(get_string_const_val('N1')))
         print ''
 
     def evaluate_function(self, func, model):
@@ -426,8 +368,8 @@ class Synthesizer(object):
 
     def print_box_results(self, box_name):
         print "For box", box_name
-        model = BOXES[box_name]['solver'].model()
-        for name, func in BOXES[box_name]['inputs'].iteritems():
+        model = self.boxes[box_name]['solver'].model()
+        for name, func in self.boxes[box_name]['inputs'].iteritems():
             vals = self._get_function_vals(func, model)
             filterd_val = [val[:-1] if z3.is_expr(val[-1]) else val for val in
                            vals]
@@ -445,7 +387,7 @@ class Synthesizer(object):
                     if src not in self.static_routes:
                         self.static_routes[src] = []
                     self.static_routes[src].append((net, src, dst))
-        for name, func in BOXES[box_name]['outputs'].iteritems():
+        for name, func in self.boxes[box_name]['outputs'].iteritems():
             vals = self._get_function_vals(func, model)
             filterd_val = [val[:-1] for val in vals if z3.is_true(val[-1])]
             print "\tSynthesized output", name, filterd_val
@@ -523,7 +465,7 @@ class Synthesizer(object):
                     else:
                         ff.append(OSPFSyn.BestOSPFRoute(*[str(v) for v in val[:-1]]))
                 ospf_syn = OSPFSyn(ff, self.network_graph)
-                BOXES[box_name]['ospf_fixed'] = ospf_syn
+                self.boxes[box_name]['ospf_fixed'] = ospf_syn
                 assert ospf_syn.solve()
                 costs = []
                 for out in ospf_syn.get_output_configs():
@@ -543,12 +485,12 @@ class Synthesizer(object):
             if box_name == 'ospf01':
               solver = z3.Solver()
               print 'partially evaluate the OSPF Datalog rules'
-              translator = Translator(BOXES[box_name]['file'], 1)
+              translator = Translator(self.boxes[box_name]['file'], 1)
               ospf_costs = {}
               DEBUG_OSPF = False
               if DEBUG_OSPF:                
                 ospf_routes = []
-                for ospf_route in BOXES[box_name]['fixed_outputs']:
+                for ospf_route in self.boxes[box_name]['fixed_outputs']:
                   ospf_route = ospf_route.arg(0)
                   net = ospf_route.arg(0)
                   src = ospf_route.arg(1)
@@ -610,8 +552,8 @@ class Synthesizer(object):
               ospf_reduced.flush()
               newTranslator = Translator(ospf_reduced.name, self.unrolling_limit)
               newTranslator.STRING_TO_VERTEX = self.name_to_vertex
-              BOXES[box_name]['solver'] = z3.Solver()            
-              BOXES[box_name]['solver'].append(newTranslator.to_z3())
+              self.boxes[box_name]['solver'] = z3.Solver()
+              self.boxes[box_name]['solver'].append(newTranslator.to_z3())
                           
               for fix_output in yes_func_vals['OSPFRoute']:                
                 if str(fix_output) == 'False':
@@ -622,24 +564,23 @@ class Synthesizer(object):
                 cost = fix_output[3]
                 c = newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](cost) == True
                 print c
-                BOXES[box_name]['solver'].append(c)
+                self.boxes[box_name]['solver'].append(c)
                 t = z3.Const('cost', z3.IntSort())
                 c = z3.ForAll([t], newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](t) == (t == cost))
                 print c
-                BOXES[box_name]['solver'].append(c)
+                self.boxes[box_name]['solver'].append(c)
               
-              for c in BOXES[box_name]['input_constraints']:
+              for c in self.boxes[box_name]['input_constraints']:
                   if c is None: continue
-                  c
-                  BOXES[box_name]['solver'].append(c)
-              BOXES[box_name]['solver'].append(BOXES[box_name]['fixed_inputs'])
-              for i in BOXES[box_name]['inputs']:
+                  self.boxes[box_name]['solver'].append(c)
+              self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_inputs'])
+              for i in self.boxes[box_name]['inputs']:
                   if i in self.fixed_inputs:
                       #print "TO APPEND", box_name, self.fixed_inputs[i]
-                      BOXES[box_name]['solver'].append(self.fixed_inputs[i])
-              BOXES[box_name]['solver'].append(BOXES[box_name]['fixed_outputs'])
+                      self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
+              self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
               
-            solver = BOXES[box_name]['solver']
+            solver = self.boxes[box_name]['solver']
             solver.push()
             print "#" * 30
             print "Synthesizing for box", box_index, box_name
@@ -650,20 +591,20 @@ class Synthesizer(object):
                 orig_name = get_original_version('BestOSPFRoute')
                 vals = yes_func_vals[orig_name]
                 c = self.get_ospf_constraints(
-                    BOXES[box_name]['outputs']['OSPFRoute_%d' % self.unrolling_limit],
-                    BOXES[box_name]['outputs']['OSPFRoute'], vals)
+                    self.boxes[box_name]['outputs']['OSPFRoute_%d' % self.unrolling_limit],
+                    self.boxes[box_name]['outputs']['OSPFRoute'], vals)
                 solver.append(c)
             '''
             if box_name in ['opt2']:
                 orig_name = get_original_version('BestOSPFRoute')
                 vals = yes_func_vals[orig_name]
-                c = self.get_dj_constraints(BOXES[box_name]['outputs']['DJ'],
+                c = self.get_dj_constraints(self.boxes[box_name]['outputs']['DJ'],
                                               vals)
                 solver.append(c)
-            for func_name, func in BOXES[box_name]['outputs'].iteritems():
+            for func_name, func in self.boxes[box_name]['outputs'].iteritems():
                 # Pre compute IGPRouteCost of OSPF
-                if func_name == 'MinIGPBGPRoute' and 'BestOSPFRoute' in yes_func_vals and 'IGPRouteCost' in BOXES[box_name]['inputs']:
-                    IGPRouteCost = BOXES[box_name]['inputs']['IGPRouteCost']
+                if func_name == 'MinIGPBGPRoute' and 'BestOSPFRoute' in yes_func_vals and 'IGPRouteCost' in self.boxes[box_name]['inputs']:
+                    IGPRouteCost = self.boxes[box_name]['inputs']['IGPRouteCost']
                     valid_igp = []
                     for bestOSPF in yes_func_vals['BestOSPFRoute']:
                         if str(bestOSPF[-1]) == 'True':
@@ -698,7 +639,7 @@ class Synthesizer(object):
                     fed_output = self._process_vals(
                         func,
                         yes_func_vals[orig_name],
-                        BOXES[box_name]['outputs'],
+                        self.boxes[box_name]['outputs'],
                         return_else=return_else)
                     print "\tFeeding desired output", box_name, fed_output
                     #print fed_output
@@ -707,7 +648,7 @@ class Synthesizer(object):
                 #print "\tFeeding NOT desired input", box_name, t
                 pass
             # Short cut inputs
-            for func_name, func in BOXES[box_name]['inputs'].iteritems():
+            for func_name, func in self.boxes[box_name]['inputs'].iteritems():
                 orig_name = get_original_version(func_name)
                 return_else = True
                 if orig_name in ['BGPLocalPref', 'OSPFRoute', 'nonMinOSPFRouteCost', 'nonMaxBGPLocalPref']:
@@ -716,7 +657,7 @@ class Synthesizer(object):
                     fed_output = self._process_vals(
                         func,
                         yes_func_vals[orig_name],
-                        BOXES[box_name]['inputs'],
+                        self.boxes[box_name]['inputs'],
                         return_else=return_else)
                     print "\tFeeding shortcut INPUT", box_name, fed_output
                     solver.append(fed_output)
@@ -730,7 +671,7 @@ class Synthesizer(object):
                 box_tries_count[box_name] = 1
                 print 'SAT, reading inputs...'
                 model = solver.model()
-                for name, func in BOXES[box_name]['inputs'].iteritems():
+                for name, func in self.boxes[box_name]['inputs'].iteritems():
                     if name == 'BGPRoute': continue
                     vals = self._get_function_vals(func, model)
                     if len(vals) == 0:
@@ -746,7 +687,7 @@ class Synthesizer(object):
                 #return
             else:
                 #print "FAILED!!!"
-                #print BOXES[box_name]['box'].to_z3()
+                #print self.boxes[box_name]['box'].to_z3()
                 #print solver.to_smt2()
                 #if box_index < len(self.boxes_names) - 1:
                 #    self.print_box_results(self.boxes_names[box_index + 1])
@@ -762,7 +703,7 @@ class Synthesizer(object):
                 print "!" * 20
                 print "UNSAT going back to", box_index, box_name
                 no_vals = []
-                for func_name, func in BOXES[box_name]['inputs'].iteritems():
+                for func_name, func in self.boxes[box_name]['inputs'].iteritems():
                     orig_name = get_original_version(func_name)
                     if orig_name not in yes_func_vals:
                         continue
@@ -771,20 +712,20 @@ class Synthesizer(object):
                         vals = ['False']
                     else:
                         vals.append('False')
-                    vals = self._process_vals(func, vals, BOXES[box_name]['inputs'], return_else=True)
+                    vals = self._process_vals(func, vals, self.boxes[box_name]['inputs'], return_else=True)
                     no_vals.extend(vals)
                     del yes_func_vals[func_name]
                 if box_name not in no_box_vals:
                     no_box_vals[box_name] = []
                 no_box_vals[box_name].append(z3.Not(z3.And(*no_vals)))
         #for box_name in self.boxes_names:
-        #    print BOXES[box_name]['solver'].model()
+        #    print self.boxes[box_name]['solver'].model()
         print "$"*40
         print "Final results..."
         for box_name in self.boxes_names:
             if box_name == 'OSPF_FIXED':
                 print "For box", box_name
-                syn = BOXES['OSPF_FIXED']['ospf_fixed']
+                syn = self.boxes['OSPF_FIXED']['ospf_fixed']
                 for out in syn.get_output_configs():
                     print "\t", out
             else:
@@ -1062,8 +1003,8 @@ class Synthesizer(object):
     def fill_boxes_input_constraints(self, box_name):
         #if box_name == 'ospf01':
         #  return
-        inputs = BOXES[box_name]['inputs']
-        outputs = BOXES[box_name]['outputs']
+        inputs = self.boxes[box_name]['inputs']
+        outputs = self.boxes[box_name]['outputs']
         is_node, is_network, is_interface, is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
 
@@ -2075,11 +2016,11 @@ class Synthesizer(object):
         if box_name == 'ibgp08':
             #constraints = []
             pass
-        for name, func in BOXES[box_name]['inputs'].iteritems():
+        for name, func in self.boxes[box_name]['inputs'].iteritems():
             func_const = self.generate_function_constraints(func)
             #if name in ['MinAsPathBGPRoute']: continue
             constraints.append(func_const)
-        for name, func in BOXES[box_name]['outputs'].iteritems():
+        for name, func in self.boxes[box_name]['outputs'].iteritems():
             func_const = self.generate_function_constraints(func)
             #print "OUTPUT", name, func_const
             #if name in ['OutgoingFwdInterface',
@@ -2090,7 +2031,7 @@ class Synthesizer(object):
             constraints.extend(self.fill_directly_connected_nodes())
         if connected_networks_used:
             constraints.extend(self.fill_connected_networks_f())
-        BOXES[box_name]['input_constraints'] = constraints
+        self.boxes[box_name]['input_constraints'] = constraints
 
     def read_init_inputs(self):
         """Add initial inputs as constraints to the solvers"""
@@ -2100,10 +2041,10 @@ class Synthesizer(object):
             for op, name, args in self.init_inputs:
                 func_true_vals = []
                 parsed_args = []
-                if name not in BOXES[box_name]['inputs']:
+                if name not in self.boxes[box_name]['inputs']:
                     skipped.append(name)
                     continue
-                func = BOXES[box_name]['inputs'][name]
+                func = self.boxes[box_name]['inputs'][name]
                 assert func.arity() == len(args), "%s %s" % (func, args)
                 for i, arg in enumerate(args):
                     domain = str(func.domain(i))
@@ -2126,12 +2067,12 @@ class Synthesizer(object):
                     func_true_vals.append(parsed_args + [z3.BoolVal(True)])
                 else:
                     f = (func(parsed_args) == False)
-                BOXES[box_name]['fixed_inputs'].append(f)
+                self.boxes[box_name]['fixed_inputs'].append(f)
                 #print "PROCESESS " * 50
                 process = self._process_vals(func, func_true_vals + ['False'],
-                                   BOXES[box_name]['inputs'])
+                                   self.boxes[box_name]['inputs'])
                 #print process
-                #BOXES[box_name]['fixed_inputs'].extend(process)
+                #self.boxes[box_name]['fixed_inputs'].extend(process)
                 self.fixed_inputs[name].append(f)
 
         # Make sure we read everything
@@ -2145,10 +2086,10 @@ class Synthesizer(object):
         for box_name in self.boxes_names:
             for op, name, args in parsed_outputs:
                 parsed_args = []
-                if name not in BOXES[box_name]['outputs']:
+                if name not in self.boxes[box_name]['outputs']:
                     skipped.append(name)
                     continue
-                func = BOXES[box_name]['outputs'][name]
+                func = self.boxes[box_name]['outputs'][name]
                 assert func.arity() == len(args), "%s %s" % (func, args)
                 for i, arg in enumerate(args):
                     domain = str(func.domain(i))
@@ -2173,7 +2114,7 @@ class Synthesizer(object):
                                                   args[3]))
                 else:
                     f = (func(parsed_args) == False)
-                BOXES[box_name]['fixed_outputs'].append(f)
+                self.boxes[box_name]['fixed_outputs'].append(f)
                 self.fixed_inputs[name].append(f)
         # Make sure we read everything
         #assert not set([name for name, args in parsed_outputs]) - set(skipped)
@@ -2396,34 +2337,3 @@ class Synthesizer(object):
                         workingdir='.',
                         outdir=outdir,
                         gen_ospf=gen_ospf, gen_bgp=gen_bgp)
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Synthesize network config.')
-    parser.add_argument("-i", required=True, dest="initial_inputs", help="Initial inputs file")
-    parser.add_argument("-r", required=True, dest="fixed_outputs", help="Requirements file")
-    parser.add_argument("-m", required=False, dest="mode", default='bgp', help="OSPF/BGP/Static mode")
-    parser.add_argument("-u", dest="unrolling_limit", default=5, type=int,
-                        help="Unrolling limit")
-    args = parser.parse_args()
-    with open(args.initial_inputs) as f:
-        initial_inputs = f.read()
-    with open(args.fixed_outputs) as f:
-        fixed_outputs = f.read()
-    if args.mode == 'bgp':
-      BOXES_ORDER = ['ibgp03', 'ibgp04', 'ibgp05', 'ibgp06', 'ibgp07', 'ibgp08', 'ibgp09','ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']
-    elif args.mode == 'ospf':
-      BOXES_ORDER = ['ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']      
-    elif args.mode == 'static':
-      BOXES_ORDER = ['fwd01-0-static', 'fwd01-1-static']
-      BOXES_ORDER = ['fwd01-1-static']
-    else:
-      raise NameError('Unknown synthesis mode')
-    
-    syn = Synthesizer(BOXES_ORDER, initial_inputs, fixed_outputs,
-                      unrolling_limit=args.unrolling_limit)
-    
-    syn.synthesize()
-
-if __name__ == '__main__':
-    main()
