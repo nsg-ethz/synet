@@ -4,9 +4,6 @@ Common functions for synthesis
 
 
 import z3
-import networkx as nx
-from abc import ABCMeta
-from abc import abstractmethod
 from enum import Enum
 from collections import namedtuple
 from networkx.drawing import nx_pydot
