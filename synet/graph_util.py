@@ -3,9 +3,14 @@
 Various functions to help manipulate the network graph
 """
 
+import string
+import networkx as nx
+import random
+
 from collections import namedtuple
 
 from common import VERTEX_TYPE, PEER_TYPE, EDGE_TYPE, ANNOUNCEMENT_EDGE
+from common import NODE_TYPE, INTERNAL_EDGE
 
 
 
@@ -367,3 +372,176 @@ def get_bgp_neighbor_export(g, node, neighbor):
         attrs['Export'] = []
     return attrs['Export']
 
+
+def read_topology_zoo(filename):
+    assert filename.endswith('.graphml'), 'wrong file type "%s"' % filename
+    graphml = nx.read_graphml(filename)
+    g = nx.DiGraph()
+    lbl_map = {}
+    for node in graphml.nodes():
+        label = str(graphml.node[node]['label'])
+        # remove whitespaces
+        label = label.replace(' ', 'TT')
+        if label == 'None':
+            label = 'NodeID%s' % node
+        if g.has_node(label):
+            label = '%sID%s' % (label, node)
+        assert not g.has_node(label), 'Duplicate node %s with label %s' % (node, label)
+        lbl_map[node] = label
+        g.add_node(label, **{VERTEX_TYPE: NODE_TYPE})
+    for src, dst in graphml.edges():
+        g.add_edge(lbl_map[src], lbl_map[dst], edge_type=INTERNAL_EDGE)
+        g.add_edge(lbl_map[dst], lbl_map[src], edge_type=INTERNAL_EDGE)
+    return g
+
+
+def sanatize_name(node):
+    notvalid = string.punctuation.replace('_', '')
+    for char in notvalid:
+        node = node.replace(char, '_')
+    return node
+
+
+def topozoo_to_datalog(graph, fix_adst=True):
+    assert isinstance(graph, nx.DiGraph)
+
+    ret = ''
+
+
+    def get_iface(node, neighbor):
+        node = sanatize_name(node)
+        neighbor = sanatize_name(neighbor)
+        return "%s_I_%s" % (node, neighbor)
+
+    for node in graph.nodes():
+        name = sanatize_name(node)
+        ret += '+SetNode("%s").\n' % name
+        if fix_adst:
+            ret += '+SetAdminDist("%s", "static", 1).\n' % name
+            ret += '+SetAdminDist("%s", "bgp", 2).\n' % name
+            ret += '+SetAdminDist("%s", "ospf", 3).\n' % name
+        for neighbor in graph.neighbors(node):
+            ret += '+SetInterface("%s", "%s").\n' % (name, get_iface(name, neighbor))
+        ret += '\n'
+
+    visited = []
+    for src, dst in graph.edges():
+        if (src, dst) in visited:
+            continue
+        if (dst, src) in visited:
+            continue
+        visited.append((src, dst))
+        siface = get_iface(src, dst)
+        diface = get_iface(dst, src)
+        ret += '+SetLink("%s", "%s").\n' % (siface, diface)
+    ret += '\n'
+    return ret
+
+
+
+def gen_static_reqs(graph, traffic_classes):
+    assert isinstance(graph, nx.DiGraph)
+    assert traffic_classes > 0
+    # For ospf, it doesn't make sense to have
+    # traffic classes more than the number of routers
+    # since it's not based on prefix as BGP
+    assert traffic_classes <= len(graph.nodes())
+    spec = '\n'
+    reqs = '\n'
+
+    rand = random.Random()
+    sampled = rand.sample(graph.nodes(), traffic_classes)
+    for src, dst in graph.edges():
+        graph[src][dst]['cost'] = rand.randint(1, 100)
+
+    for node in sampled:
+        name = sanatize_name(node)
+        netname = "N_%s" % name
+        spec += '+SetNetwork("%s", "%s").\n' % (name, netname)
+        visited = []
+        for src in graph.nodes():
+            if src == node:
+                continue
+            sp = nx.shortest_path(graph, src, node, 'cost')
+            for p1, p2 in zip(sp[0::1], sp[1::1]):
+                if (p1, p2) in visited:
+                    continue
+                visited.append((p1, p2))
+                p1_name = sanatize_name(p1)
+                p2_name = sanatize_name(p2)
+                reqs += '+Fwd("%s", "%s", "%s", "static").\n' % (netname, p1_name, p2_name)
+        reqs += '\n'
+    return spec, reqs
+
+
+def gen_ospf_reqs(graph, traffic_classes):
+    assert isinstance(graph, nx.DiGraph)
+    assert traffic_classes > 0
+    # For ospf, it doesn't make sense to have
+    # traffic classes more than the number of routers
+    # since it's not based on prefix as BGP
+    assert traffic_classes <= len(graph.nodes())
+    spec = '\n'
+    reqs = '\n'
+
+    rand = random.Random()
+    sampled = rand.sample(graph.nodes(), traffic_classes)
+    for src, dst in graph.edges():
+        graph[src][dst]['cost'] = rand.randint(1, 100)
+
+    for node in sampled:
+        name = sanatize_name(node)
+        netname = "N_%s" % name
+        spec += '+SetNetwork("%s", "%s").\n' % (name, netname)
+        visited = []
+        for src in graph.nodes():
+            if src == node:
+                continue
+            sp = nx.shortest_path(graph, src, node, 'cost')
+            for p1, p2 in zip(sp[0::1], sp[1::1]):
+                if (p1, p2) in visited:
+                    continue
+                visited.append((p1, p2))
+                p1_name = sanatize_name(p1)
+                p2_name = sanatize_name(p2)
+                reqs += '+Fwd("%s", "%s", "%s", "ospf").\n' % (netname, p1_name, p2_name)
+        reqs += '\n'
+    return spec, reqs
+
+
+def gen_bgp_reqs(graph, traffic_classes):
+    assert isinstance(graph, nx.DiGraph)
+    assert traffic_classes > 0
+    # For ospf, it doesn't make sense to have
+    # traffic classes more than the number of routers
+    # since it's not based on prefix as BGP
+    assert traffic_classes <= len(graph.nodes())
+    spec = '\n'
+    reqs = '\n'
+
+    rand = random.Random()
+    sampled = rand.sample(graph.nodes(), traffic_classes)
+    for src, dst in graph.edges():
+        graph[src][dst]['cost'] = rand.randint(1, 100)
+
+    for node in sampled:
+        name = sanatize_name(node)
+        netname = "N_%s" % name
+        bgp_name = 'NBGP_%s' % name
+        spec += '+SetNetwork("%s", "%s").\n' % (name, netname)
+        spec += '+SetBGPAnnouncement("%s", "%s", "%s", "1;2;3", 3).\n' % (name, netname, bgp_name)
+        visited = []
+        for src in graph.nodes():
+            if src == node:
+                continue
+            sp = nx.shortest_path(graph, src, node, 'cost')
+            for p1, p2 in zip(sp[0::1], sp[1::1]):
+                if (p1, p2) in visited:
+                    continue
+                visited.append((p1, p2))
+                p1_name = sanatize_name(p1)
+                p2_name = sanatize_name(p2)
+                reqs += '+Fwd("%s", "%s", "%s", "ospf").\n' % (netname, p1_name, p2_name)
+                reqs += '+Fwd("%s", "%s", "%s", "bgp").\n' % (bgp_name, p1_name, p2_name)
+        reqs += '\n'
+    return spec, reqs
