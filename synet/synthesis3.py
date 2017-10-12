@@ -2153,7 +2153,7 @@ class Synthesizer(object):
                                          action='set local-preference 200')
 
                         announcements.append(SetAnnouncement(ext, net, node, origins_asnums[ext]))
-                        peering_nets.append(net)
+                        peering_nets.append(ext)
                         # g, node, neighbor, access, match, action, lineno = None)
         if gen_bgp:
             for nodeA in self.network_graph.nodes_iter():
@@ -2182,6 +2182,7 @@ class Synthesizer(object):
                     g[srouter][drouter]['ospf_cost'] = cost
 
         peering_nets = list(set(peering_nets))
+        print "PEERINT NETS", peering_nets
         addrmap = {'GOOGLE': u'8.8.0.0/16'}
         for i, net in enumerate(peering_nets):
             if g.has_node(net): g.remove_node(net)
