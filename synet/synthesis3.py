@@ -78,24 +78,18 @@ class Synthesizer(object):
             self.boxes[box_name]['solver'].append(self.boxes[box_name]['box'].to_z3())
             for c in self.boxes[box_name]['input_constraints']:
                 if c is None: continue
-                #print "Added constrains", box_name, c
                 self.boxes[box_name]['solver'].append(c)
             # Load fixed input by the user
-
-            print "Loading user provided input for box:", box_name, self.boxes[box_name]['fixed_inputs']
+            print "Loading user provided input for box:", box_name  # , self.boxes[box_name]['fixed_inputs']
             self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_inputs'])
             print "Checking initial inputs for box", box_name
             #assert self.boxes[box_name]['solver'].check() == z3.sat, \
             #    "%s: %s" % (box_name, self.boxes[box_name]['box'].to_z3())
-            print "Loading user provided outputs for box:", box_name, self.boxes[box_name]['fixed_outputs']
+            print "Loading user provided outputs for box:", box_name  # , self.boxes[box_name]['fixed_outputs']
             for i in self.boxes[box_name]['inputs']:
                 if i in self.fixed_inputs:
-                    #print "TO APPEND", box_name, self.fixed_inputs[i]
                     self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
             self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
-            #if box_name == 'fwd03':
-            #    fwd = self.boxes[box_name]['inputs']['Fwd']
-            #    self.boxes[box_name]['solver'].append(fwd(get_string_const_val('N1')))
         print ''
 
     def evaluate_function(self, func, model):
