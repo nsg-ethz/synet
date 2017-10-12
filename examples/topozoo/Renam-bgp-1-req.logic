@@ -1,0 +1,10 @@
+
++Fwd("N_RoEduNet", "TTTTTTTTTTTTTTCahul", "Chisinau", "ospf").
++Fwd("NBGP_RoEduNet", "TTTTTTTTTTTTTTCahul", "Chisinau", "bgp").
++Fwd("N_RoEduNet", "Chisinau", "RoEduNet", "ospf").
++Fwd("NBGP_RoEduNet", "Chisinau", "RoEduNet", "bgp").
++Fwd("N_RoEduNet", "Balti", "Chisinau", "ospf").
++Fwd("NBGP_RoEduNet", "Balti", "Chisinau", "bgp").
++Fwd("N_RoEduNet", "StarNetTTISP", "Chisinau", "ospf").
++Fwd("NBGP_RoEduNet", "StarNetTTISP", "Chisinau", "bgp").
+

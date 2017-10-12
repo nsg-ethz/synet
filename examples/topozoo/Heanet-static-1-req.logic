@@ -1,0 +1,8 @@
+
++Fwd("N_Cork", "CityWest", "Cork", "static").
++Fwd("N_Cork", "DCUTT_DublinTTCityTTUniversity", "CityWest", "static").
++Fwd("N_Cork", "Galway", "Kilcarbery", "static").
++Fwd("N_Cork", "Kilcarbery", "Limerick", "static").
++Fwd("N_Cork", "Limerick", "Cork", "static").
++Fwd("N_Cork", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "static").
+

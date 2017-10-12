@@ -1,0 +1,116 @@
++SetNode("Tartu").
++SetAdminDist("Tartu", "static", 1).
++SetAdminDist("Tartu", "bgp", 2).
++SetAdminDist("Tartu", "ospf", 3).
++SetInterface("Tartu", "Tartu_I_Jogeva").
++SetInterface("Tartu", "Tartu_I_Voru").
+
++SetNode("Rakvere").
++SetAdminDist("Rakvere", "static", 1).
++SetAdminDist("Rakvere", "bgp", 2).
++SetAdminDist("Rakvere", "ospf", 3).
++SetInterface("Rakvere", "Rakvere_I_Tallinn").
+
++SetNode("Narva").
++SetAdminDist("Narva", "static", 1).
++SetAdminDist("Narva", "bgp", 2).
++SetAdminDist("Narva", "ospf", 3).
++SetInterface("Narva", "Narva_I_Tallinn").
+
++SetNode("Voru").
++SetAdminDist("Voru", "static", 1).
++SetAdminDist("Voru", "bgp", 2).
++SetAdminDist("Voru", "ospf", 3).
++SetInterface("Voru", "Voru_I_Tartu").
+
++SetNode("Jogeva").
++SetAdminDist("Jogeva", "static", 1).
++SetAdminDist("Jogeva", "bgp", 2).
++SetAdminDist("Jogeva", "ospf", 3).
++SetInterface("Jogeva", "Jogeva_I_Tartu").
++SetInterface("Jogeva", "Jogeva_I_Paide").
+
++SetNode("Viljandi").
++SetAdminDist("Viljandi", "static", 1).
++SetAdminDist("Viljandi", "bgp", 2).
++SetAdminDist("Viljandi", "ospf", 3).
++SetInterface("Viljandi", "Viljandi_I_Tallinn").
++SetInterface("Viljandi", "Viljandi_I_Paide").
+
++SetNode("Kuressaare").
++SetAdminDist("Kuressaare", "static", 1).
++SetAdminDist("Kuressaare", "bgp", 2).
++SetAdminDist("Kuressaare", "ospf", 3).
++SetInterface("Kuressaare", "Kuressaare_I_Tallinn").
+
++SetNode("Tallinn").
++SetAdminDist("Tallinn", "static", 1).
++SetAdminDist("Tallinn", "bgp", 2).
++SetAdminDist("Tallinn", "ospf", 3).
++SetInterface("Tallinn", "Tallinn_I_Rakvere").
++SetInterface("Tallinn", "Tallinn_I_Narva").
++SetInterface("Tallinn", "Tallinn_I_Viljandi").
++SetInterface("Tallinn", "Tallinn_I_Kuressaare").
++SetInterface("Tallinn", "Tallinn_I_Parnu").
++SetInterface("Tallinn", "Tallinn_I_Haapsald").
++SetInterface("Tallinn", "Tallinn_I_GEANT2").
++SetInterface("Tallinn", "Tallinn_I_Paide").
+
++SetNode("Turi").
++SetAdminDist("Turi", "static", 1).
++SetAdminDist("Turi", "bgp", 2).
++SetAdminDist("Turi", "ospf", 3).
++SetInterface("Turi", "Turi_I_Paide").
+
++SetNode("Parnu").
++SetAdminDist("Parnu", "static", 1).
++SetAdminDist("Parnu", "bgp", 2).
++SetAdminDist("Parnu", "ospf", 3).
++SetInterface("Parnu", "Parnu_I_Tallinn").
+
++SetNode("Haapsald").
++SetAdminDist("Haapsald", "static", 1).
++SetAdminDist("Haapsald", "bgp", 2).
++SetAdminDist("Haapsald", "ospf", 3).
++SetInterface("Haapsald", "Haapsald_I_Tallinn").
+
++SetNode("GEANT2").
++SetAdminDist("GEANT2", "static", 1).
++SetAdminDist("GEANT2", "bgp", 2).
++SetAdminDist("GEANT2", "ospf", 3).
++SetInterface("GEANT2", "GEANT2_I_Tallinn").
+
++SetNode("Paide").
++SetAdminDist("Paide", "static", 1).
++SetAdminDist("Paide", "bgp", 2).
++SetAdminDist("Paide", "ospf", 3).
++SetInterface("Paide", "Paide_I_Jogeva").
++SetInterface("Paide", "Paide_I_Viljandi").
++SetInterface("Paide", "Paide_I_Tallinn").
++SetInterface("Paide", "Paide_I_Turi").
+
++SetLink("Tartu_I_Jogeva", "Jogeva_I_Tartu").
++SetLink("Tartu_I_Voru", "Voru_I_Tartu").
++SetLink("Rakvere_I_Tallinn", "Tallinn_I_Rakvere").
++SetLink("Narva_I_Tallinn", "Tallinn_I_Narva").
++SetLink("Jogeva_I_Paide", "Paide_I_Jogeva").
++SetLink("Viljandi_I_Tallinn", "Tallinn_I_Viljandi").
++SetLink("Viljandi_I_Paide", "Paide_I_Viljandi").
++SetLink("Kuressaare_I_Tallinn", "Tallinn_I_Kuressaare").
++SetLink("Tallinn_I_Parnu", "Parnu_I_Tallinn").
++SetLink("Tallinn_I_Haapsald", "Haapsald_I_Tallinn").
++SetLink("Tallinn_I_GEANT2", "GEANT2_I_Tallinn").
++SetLink("Tallinn_I_Paide", "Paide_I_Tallinn").
++SetLink("Turi_I_Paide", "Paide_I_Turi").
+
+
++SetNetwork("Tallinn", "N_Tallinn").
++SetNetwork("Narva", "N_Narva").
++SetNetwork("GEANT2", "N_GEANT2").
++SetNetwork("Viljandi", "N_Viljandi").
++SetNetwork("Tartu", "N_Tartu").
++SetNetwork("Turi", "N_Turi").
++SetNetwork("Paide", "N_Paide").
++SetNetwork("Rakvere", "N_Rakvere").
++SetNetwork("Haapsald", "N_Haapsald").
++SetNetwork("Parnu", "N_Parnu").

@@ -1,0 +1,622 @@
++SetNode("NodeID13").
++SetAdminDist("NodeID13", "static", 1).
++SetAdminDist("NodeID13", "bgp", 2).
++SetAdminDist("NodeID13", "ospf", 3).
++SetInterface("NodeID13", "NodeID13_I_NodeID29").
++SetInterface("NodeID13", "NodeID13_I_NodeID14").
++SetInterface("NodeID13", "NodeID13_I_NodeID31").
+
++SetNode("NodeID41").
++SetAdminDist("NodeID41", "static", 1).
++SetAdminDist("NodeID41", "bgp", 2).
++SetAdminDist("NodeID41", "ospf", 3).
++SetInterface("NodeID41", "NodeID41_I_Jamaica").
++SetInterface("NodeID41", "NodeID41_I_NodeID38").
+
++SetNode("USA").
++SetAdminDist("USA", "static", 1).
++SetAdminDist("USA", "bgp", 2).
++SetAdminDist("USA", "ospf", 3).
++SetInterface("USA", "USA_I_NodeID33").
++SetInterface("USA", "USA_I_NodeID38").
+
++SetNode("NodeID22").
++SetAdminDist("NodeID22", "static", 1).
++SetAdminDist("NodeID22", "bgp", 2).
++SetAdminDist("NodeID22", "ospf", 3).
++SetInterface("NodeID22", "NodeID22_I_StTTCroix").
++SetInterface("NodeID22", "NodeID22_I_NodeID24").
++SetInterface("NodeID22", "NodeID22_I_Barbados").
++SetInterface("NodeID22", "NodeID22_I_Martinique").
+
++SetNode("NodeID58").
++SetAdminDist("NodeID58", "static", 1).
++SetAdminDist("NodeID58", "bgp", 2).
++SetAdminDist("NodeID58", "ospf", 3).
++SetInterface("NodeID58", "NodeID58_I_NodeID59").
++SetInterface("NodeID58", "NodeID58_I_NodeID17").
+
++SetNode("Panama").
++SetAdminDist("Panama", "static", 1).
++SetAdminDist("Panama", "bgp", 2).
++SetAdminDist("Panama", "ospf", 3).
++SetInterface("Panama", "Panama_I_NodeID34").
++SetInterface("Panama", "Panama_I_CostaTTRica").
++SetInterface("Panama", "Panama_I_NodeID27").
+
++SetNode("Guyana").
++SetAdminDist("Guyana", "static", 1).
++SetAdminDist("Guyana", "bgp", 2).
++SetAdminDist("Guyana", "ospf", 3).
++SetInterface("Guyana", "Guyana_I_NodeID35").
+
++SetNode("NodeID59").
++SetAdminDist("NodeID59", "static", 1).
++SetAdminDist("NodeID59", "bgp", 2).
++SetAdminDist("NodeID59", "ospf", 3).
++SetInterface("NodeID59", "NodeID59_I_Bahamas").
++SetInterface("NodeID59", "NodeID59_I_NodeID58").
++SetInterface("NodeID59", "NodeID59_I_NodeID44").
++SetInterface("NodeID59", "NodeID59_I_NodeID32").
+
++SetNode("Bahamas").
++SetAdminDist("Bahamas", "static", 1).
++SetAdminDist("Bahamas", "bgp", 2).
++SetAdminDist("Bahamas", "ospf", 3).
++SetInterface("Bahamas", "Bahamas_I_NodeID45").
++SetInterface("Bahamas", "Bahamas_I_NodeID59").
+
++SetNode("DominicanTTRepublic").
++SetAdminDist("DominicanTTRepublic", "static", 1).
++SetAdminDist("DominicanTTRepublic", "bgp", 2).
++SetAdminDist("DominicanTTRepublic", "ospf", 3).
++SetInterface("DominicanTTRepublic", "DominicanTTRepublic_I_NodeID56").
++SetInterface("DominicanTTRepublic", "DominicanTTRepublic_I_TurksTTandTTCaicos").
++SetInterface("DominicanTTRepublic", "DominicanTTRepublic_I_NodeID39").
+
++SetNode("StTTCroix").
++SetAdminDist("StTTCroix", "static", 1).
++SetAdminDist("StTTCroix", "bgp", 2).
++SetAdminDist("StTTCroix", "ospf", 3).
++SetInterface("StTTCroix", "StTTCroix_I_NodeID22").
++SetInterface("StTTCroix", "StTTCroix_I_NodeID50").
++SetInterface("StTTCroix", "StTTCroix_I_NodeID8").
+
++SetNode("Suriname").
++SetAdminDist("Suriname", "static", 1).
++SetAdminDist("Suriname", "bgp", 2).
++SetAdminDist("Suriname", "ospf", 3).
++SetInterface("Suriname", "Suriname_I_NodeID35").
+
++SetNode("PuertoTTRico").
++SetAdminDist("PuertoTTRico", "static", 1).
++SetAdminDist("PuertoTTRico", "bgp", 2).
++SetAdminDist("PuertoTTRico", "ospf", 3).
++SetInterface("PuertoTTRico", "PuertoTTRico_I_StTTMartin").
++SetInterface("PuertoTTRico", "PuertoTTRico_I_NodeID56").
++SetInterface("PuertoTTRico", "PuertoTTRico_I_NodeID50").
++SetInterface("PuertoTTRico", "PuertoTTRico_I_Curacao").
+
++SetNode("NodeID31").
++SetAdminDist("NodeID31", "static", 1).
++SetAdminDist("NodeID31", "bgp", 2).
++SetAdminDist("NodeID31", "ospf", 3).
++SetInterface("NodeID31", "NodeID31_I_NodeID13").
++SetInterface("NodeID31", "NodeID31_I_NodeID44").
++SetInterface("NodeID31", "NodeID31_I_NodeID49").
++SetInterface("NodeID31", "NodeID31_I_NodeID26").
+
++SetNode("CostaTTRica").
++SetAdminDist("CostaTTRica", "static", 1).
++SetAdminDist("CostaTTRica", "bgp", 2).
++SetAdminDist("CostaTTRica", "ospf", 3).
++SetInterface("CostaTTRica", "CostaTTRica_I_Panama").
++SetInterface("CostaTTRica", "CostaTTRica_I_Nicaragua").
++SetInterface("CostaTTRica", "CostaTTRica_I_NodeID9").
+
++SetNode("Ecuador").
++SetAdminDist("Ecuador", "static", 1).
++SetAdminDist("Ecuador", "bgp", 2).
++SetAdminDist("Ecuador", "ospf", 3).
++SetInterface("Ecuador", "Ecuador_I_NodeID37").
+
++SetNode("Curacao").
++SetAdminDist("Curacao", "static", 1).
++SetAdminDist("Curacao", "bgp", 2).
++SetAdminDist("Curacao", "ospf", 3).
++SetInterface("Curacao", "Curacao_I_StTTVincent").
++SetInterface("Curacao", "Curacao_I_Bonaire").
++SetInterface("Curacao", "Curacao_I_Venezuela").
++SetInterface("Curacao", "Curacao_I_PuertoTTRico").
+
++SetNode("StTTVincent").
++SetAdminDist("StTTVincent", "static", 1).
++SetAdminDist("StTTVincent", "bgp", 2).
++SetAdminDist("StTTVincent", "ospf", 3).
++SetInterface("StTTVincent", "StTTVincent_I_TrinidadTTandTTTobago").
++SetInterface("StTTVincent", "StTTVincent_I_Curacao").
+
++SetNode("NodeID56").
++SetAdminDist("NodeID56", "static", 1).
++SetAdminDist("NodeID56", "bgp", 2).
++SetAdminDist("NodeID56", "ospf", 3).
++SetInterface("NodeID56", "NodeID56_I_DominicanTTRepublic").
++SetInterface("NodeID56", "NodeID56_I_PuertoTTRico").
+
++SetNode("Columbia").
++SetAdminDist("Columbia", "static", 1).
++SetAdminDist("Columbia", "bgp", 2).
++SetAdminDist("Columbia", "ospf", 3).
++SetInterface("Columbia", "Columbia_I_NodeID38").
++SetInterface("Columbia", "Columbia_I_NodeID1").
+
++SetNode("NodeID38").
++SetAdminDist("NodeID38", "static", 1).
++SetAdminDist("NodeID38", "bgp", 2).
++SetAdminDist("NodeID38", "ospf", 3).
++SetInterface("NodeID38", "NodeID38_I_Columbia").
++SetInterface("NodeID38", "NodeID38_I_NodeID41").
++SetInterface("NodeID38", "NodeID38_I_USA").
+
++SetNode("NodeID39").
++SetAdminDist("NodeID39", "static", 1).
++SetAdminDist("NodeID39", "bgp", 2).
++SetAdminDist("NodeID39", "ospf", 3).
++SetInterface("NodeID39", "NodeID39_I_Jamaica").
++SetInterface("NodeID39", "NodeID39_I_DominicanTTRepublic").
+
++SetNode("Venezuela").
++SetAdminDist("Venezuela", "static", 1).
++SetAdminDist("Venezuela", "bgp", 2).
++SetAdminDist("Venezuela", "ospf", 3).
++SetInterface("Venezuela", "Venezuela_I_NodeID7").
++SetInterface("Venezuela", "Venezuela_I_Curacao").
+
++SetNode("NodeID34").
++SetAdminDist("NodeID34", "static", 1).
++SetAdminDist("NodeID34", "bgp", 2).
++SetAdminDist("NodeID34", "ospf", 3).
++SetInterface("NodeID34", "NodeID34_I_Panama").
++SetInterface("NodeID34", "NodeID34_I_NodeID1").
+
++SetNode("NodeID35").
++SetAdminDist("NodeID35", "static", 1).
++SetAdminDist("NodeID35", "bgp", 2).
++SetAdminDist("NodeID35", "ospf", 3).
++SetInterface("NodeID35", "NodeID35_I_TrinidadTTandTTTobago").
++SetInterface("NodeID35", "NodeID35_I_Suriname").
++SetInterface("NodeID35", "NodeID35_I_Guyana").
+
++SetNode("NodeID32").
++SetAdminDist("NodeID32", "static", 1).
++SetAdminDist("NodeID32", "bgp", 2).
++SetAdminDist("NodeID32", "ospf", 3).
++SetInterface("NodeID32", "NodeID32_I_NodeID44").
++SetInterface("NodeID32", "NodeID32_I_NodeID59").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_Mexico").
++SetInterface("NodeID15", "NodeID15_I_NodeID26").
+
++SetNode("NodeID17").
++SetAdminDist("NodeID17", "static", 1).
++SetAdminDist("NodeID17", "bgp", 2).
++SetAdminDist("NodeID17", "ospf", 3).
++SetInterface("NodeID17", "NodeID17_I_NodeID58").
++SetInterface("NodeID17", "NodeID17_I_TurksTTandTTCaicos").
+
++SetNode("NodeID7").
++SetAdminDist("NodeID7", "static", 1).
++SetAdminDist("NodeID7", "bgp", 2).
++SetAdminDist("NodeID7", "ospf", 3).
++SetInterface("NodeID7", "NodeID7_I_Venezuela").
++SetInterface("NodeID7", "NodeID7_I_NodeID1").
+
++SetNode("Guatemala").
++SetAdminDist("Guatemala", "static", 1).
++SetAdminDist("Guatemala", "bgp", 2).
++SetAdminDist("Guatemala", "ospf", 3).
++SetInterface("Guatemala", "Guatemala_I_NodeID28").
++SetInterface("Guatemala", "Guatemala_I_NodeID63").
+
++SetNode("NodeID0").
++SetAdminDist("NodeID0", "static", 1).
++SetAdminDist("NodeID0", "bgp", 2).
++SetAdminDist("NodeID0", "ospf", 3).
++SetInterface("NodeID0", "NodeID0_I_NodeID27").
++SetInterface("NodeID0", "NodeID0_I_NodeID1").
+
++SetNode("Martinique").
++SetAdminDist("Martinique", "static", 1).
++SetAdminDist("Martinique", "bgp", 2).
++SetAdminDist("Martinique", "ospf", 3).
++SetInterface("Martinique", "Martinique_I_NodeID22").
++SetInterface("Martinique", "Martinique_I_Dominica").
+
++SetNode("Belize").
++SetAdminDist("Belize", "static", 1).
++SetAdminDist("Belize", "bgp", 2).
++SetAdminDist("Belize", "ospf", 3).
++SetInterface("Belize", "Belize_I_NodeID28").
++SetInterface("Belize", "Belize_I_Mexico").
+
++SetNode("Dominica").
++SetAdminDist("Dominica", "static", 1).
++SetAdminDist("Dominica", "bgp", 2).
++SetAdminDist("Dominica", "ospf", 3).
++SetInterface("Dominica", "Dominica_I_Guadeloupe").
++SetInterface("Dominica", "Dominica_I_StTTKittsTT_TTNevis").
++SetInterface("Dominica", "Dominica_I_Martinique").
+
++SetNode("NodeID9").
++SetAdminDist("NodeID9", "static", 1).
++SetAdminDist("NodeID9", "bgp", 2).
++SetAdminDist("NodeID9", "ospf", 3).
++SetInterface("NodeID9", "NodeID9_I_NodeID46").
++SetInterface("NodeID9", "NodeID9_I_CostaTTRica").
++SetInterface("NodeID9", "NodeID9_I_NodeID27").
+
++SetNode("NodeID50").
++SetAdminDist("NodeID50", "static", 1).
++SetAdminDist("NodeID50", "bgp", 2).
++SetAdminDist("NodeID50", "ospf", 3).
++SetInterface("NodeID50", "NodeID50_I_StTTCroix").
++SetInterface("NodeID50", "NodeID50_I_PuertoTTRico").
++SetInterface("NodeID50", "NodeID50_I_NodeID8").
+
++SetNode("NodeID46").
++SetAdminDist("NodeID46", "static", 1).
++SetAdminDist("NodeID46", "bgp", 2).
++SetAdminDist("NodeID46", "ospf", 3).
++SetInterface("NodeID46", "NodeID46_I_NodeID29").
++SetInterface("NodeID46", "NodeID46_I_CaymanTTIslands").
++SetInterface("NodeID46", "NodeID46_I_NodeID9").
+
++SetNode("CaymanTTIslands").
++SetAdminDist("CaymanTTIslands", "static", 1).
++SetAdminDist("CaymanTTIslands", "bgp", 2).
++SetAdminDist("CaymanTTIslands", "ospf", 3).
++SetInterface("CaymanTTIslands", "CaymanTTIslands_I_NodeID46").
+
++SetNode("NodeID1").
++SetAdminDist("NodeID1", "static", 1).
++SetAdminDist("NodeID1", "bgp", 2).
++SetAdminDist("NodeID1", "ospf", 3).
++SetInterface("NodeID1", "NodeID1_I_NodeID37").
++SetInterface("NodeID1", "NodeID1_I_NodeID34").
++SetInterface("NodeID1", "NodeID1_I_Columbia").
++SetInterface("NodeID1", "NodeID1_I_NodeID0").
++SetInterface("NodeID1", "NodeID1_I_NodeID7").
+
++SetNode("NodeID45").
++SetAdminDist("NodeID45", "static", 1).
++SetAdminDist("NodeID45", "bgp", 2).
++SetAdminDist("NodeID45", "ospf", 3).
++SetInterface("NodeID45", "NodeID45_I_Bahamas").
++SetInterface("NodeID45", "NodeID45_I_NodeID44").
++SetInterface("NodeID45", "NodeID45_I_NodeID33").
++SetInterface("NodeID45", "NodeID45_I_NodeID49").
+
++SetNode("TrinidadTTandTTTobago").
++SetAdminDist("TrinidadTTandTTTobago", "static", 1).
++SetAdminDist("TrinidadTTandTTTobago", "bgp", 2).
++SetAdminDist("TrinidadTTandTTTobago", "ospf", 3).
++SetInterface("TrinidadTTandTTTobago", "TrinidadTTandTTTobago_I_Grenada").
++SetInterface("TrinidadTTandTTTobago", "TrinidadTTandTTTobago_I_NodeID35").
++SetInterface("TrinidadTTandTTTobago", "TrinidadTTandTTTobago_I_StTTVincent").
+
++SetNode("Bonaire").
++SetAdminDist("Bonaire", "static", 1).
++SetAdminDist("Bonaire", "bgp", 2).
++SetAdminDist("Bonaire", "ospf", 3).
++SetInterface("Bonaire", "Bonaire_I_Curacao").
+
++SetNode("NodeID69").
++SetAdminDist("NodeID69", "static", 1).
++SetAdminDist("NodeID69", "bgp", 2).
++SetAdminDist("NodeID69", "ospf", 3).
++SetInterface("NodeID69", "NodeID69_I_Nicaragua").
++SetInterface("NodeID69", "NodeID69_I_NodeID60").
+
++SetNode("Antigua").
++SetAdminDist("Antigua", "static", 1).
++SetAdminDist("Antigua", "bgp", 2).
++SetAdminDist("Antigua", "ospf", 3).
++SetInterface("Antigua", "Antigua_I_Guadeloupe").
++SetInterface("Antigua", "Antigua_I_StTTKittsTT_TTNevis").
+
++SetNode("Jamaica").
++SetAdminDist("Jamaica", "static", 1).
++SetAdminDist("Jamaica", "bgp", 2).
++SetAdminDist("Jamaica", "ospf", 3).
++SetInterface("Jamaica", "Jamaica_I_NodeID41").
++SetInterface("Jamaica", "Jamaica_I_NodeID39").
+
++SetNode("Grenada").
++SetAdminDist("Grenada", "static", 1).
++SetAdminDist("Grenada", "bgp", 2).
++SetAdminDist("Grenada", "ospf", 3).
++SetInterface("Grenada", "Grenada_I_TrinidadTTandTTTobago").
++SetInterface("Grenada", "Grenada_I_NodeID24").
+
++SetNode("NodeID67").
++SetAdminDist("NodeID67", "static", 1).
++SetAdminDist("NodeID67", "bgp", 2).
++SetAdminDist("NodeID67", "ospf", 3).
++SetInterface("NodeID67", "NodeID67_I_NodeID29").
++SetInterface("NodeID67", "NodeID67_I_NodeID28").
++SetInterface("NodeID67", "NodeID67_I_Honduras").
+
++SetNode("Guadeloupe").
++SetAdminDist("Guadeloupe", "static", 1).
++SetAdminDist("Guadeloupe", "bgp", 2).
++SetAdminDist("Guadeloupe", "ospf", 3).
++SetInterface("Guadeloupe", "Guadeloupe_I_Antigua").
++SetInterface("Guadeloupe", "Guadeloupe_I_Dominica").
+
++SetNode("NodeID33").
++SetAdminDist("NodeID33", "static", 1).
++SetAdminDist("NodeID33", "bgp", 2).
++SetAdminDist("NodeID33", "ospf", 3).
++SetInterface("NodeID33", "NodeID33_I_NodeID45").
++SetInterface("NodeID33", "NodeID33_I_USA").
++SetInterface("NodeID33", "NodeID33_I_NodeID49").
+
++SetNode("NodeID60").
++SetAdminDist("NodeID60", "static", 1).
++SetAdminDist("NodeID60", "bgp", 2).
++SetAdminDist("NodeID60", "ospf", 3).
++SetInterface("NodeID60", "NodeID60_I_NodeID69").
++SetInterface("NodeID60", "NodeID60_I_Honduras").
+
++SetNode("NodeID63").
++SetAdminDist("NodeID63", "static", 1).
++SetAdminDist("NodeID63", "bgp", 2).
++SetAdminDist("NodeID63", "ospf", 3).
++SetInterface("NodeID63", "NodeID63_I_ElTTSalvador").
++SetInterface("NodeID63", "NodeID63_I_Guatemala").
++SetInterface("NodeID63", "NodeID63_I_NodeID62").
+
++SetNode("NodeID62").
++SetAdminDist("NodeID62", "static", 1).
++SetAdminDist("NodeID62", "bgp", 2).
++SetAdminDist("NodeID62", "ospf", 3).
++SetInterface("NodeID62", "NodeID62_I_NodeID63").
+
++SetNode("ElTTSalvador").
++SetAdminDist("ElTTSalvador", "static", 1).
++SetAdminDist("ElTTSalvador", "bgp", 2).
++SetAdminDist("ElTTSalvador", "ospf", 3).
++SetInterface("ElTTSalvador", "ElTTSalvador_I_NodeID63").
+
++SetNode("StTTMartin").
++SetAdminDist("StTTMartin", "static", 1).
++SetAdminDist("StTTMartin", "bgp", 2).
++SetAdminDist("StTTMartin", "ospf", 3).
++SetInterface("StTTMartin", "StTTMartin_I_PuertoTTRico").
++SetInterface("StTTMartin", "StTTMartin_I_NodeID8").
++SetInterface("StTTMartin", "StTTMartin_I_StTTKittsTT_TTNevis").
+
++SetNode("NodeID44").
++SetAdminDist("NodeID44", "static", 1).
++SetAdminDist("NodeID44", "bgp", 2).
++SetAdminDist("NodeID44", "ospf", 3).
++SetInterface("NodeID44", "NodeID44_I_NodeID45").
++SetInterface("NodeID44", "NodeID44_I_NodeID32").
++SetInterface("NodeID44", "NodeID44_I_NodeID59").
++SetInterface("NodeID44", "NodeID44_I_NodeID31").
+
++SetNode("Honduras").
++SetAdminDist("Honduras", "static", 1).
++SetAdminDist("Honduras", "bgp", 2).
++SetAdminDist("Honduras", "ospf", 3).
++SetInterface("Honduras", "Honduras_I_NodeID67").
++SetInterface("Honduras", "Honduras_I_NodeID60").
+
++SetNode("NodeID24").
++SetAdminDist("NodeID24", "static", 1).
++SetAdminDist("NodeID24", "bgp", 2).
++SetAdminDist("NodeID24", "ospf", 3).
++SetInterface("NodeID24", "NodeID24_I_Grenada").
++SetInterface("NodeID24", "NodeID24_I_NodeID22").
+
++SetNode("NodeID27").
++SetAdminDist("NodeID27", "static", 1).
++SetAdminDist("NodeID27", "bgp", 2).
++SetAdminDist("NodeID27", "ospf", 3).
++SetInterface("NodeID27", "NodeID27_I_Panama").
++SetInterface("NodeID27", "NodeID27_I_NodeID0").
++SetInterface("NodeID27", "NodeID27_I_NodeID9").
+
++SetNode("NodeID26").
++SetAdminDist("NodeID26", "static", 1).
++SetAdminDist("NodeID26", "bgp", 2).
++SetAdminDist("NodeID26", "ospf", 3).
++SetInterface("NodeID26", "NodeID26_I_NodeID15").
++SetInterface("NodeID26", "NodeID26_I_NodeID31").
+
++SetNode("NodeID29").
++SetAdminDist("NodeID29", "static", 1).
++SetAdminDist("NodeID29", "bgp", 2).
++SetAdminDist("NodeID29", "ospf", 3).
++SetInterface("NodeID29", "NodeID29_I_NodeID46").
++SetInterface("NodeID29", "NodeID29_I_NodeID67").
++SetInterface("NodeID29", "NodeID29_I_NodeID13").
+
++SetNode("NodeID28").
++SetAdminDist("NodeID28", "static", 1).
++SetAdminDist("NodeID28", "bgp", 2).
++SetAdminDist("NodeID28", "ospf", 3).
++SetInterface("NodeID28", "NodeID28_I_Guatemala").
++SetInterface("NodeID28", "NodeID28_I_Belize").
++SetInterface("NodeID28", "NodeID28_I_NodeID67").
+
++SetNode("Mexico").
++SetAdminDist("Mexico", "static", 1).
++SetAdminDist("Mexico", "bgp", 2).
++SetAdminDist("Mexico", "ospf", 3).
++SetInterface("Mexico", "Mexico_I_Belize").
++SetInterface("Mexico", "Mexico_I_NodeID15").
+
++SetNode("NodeID49").
++SetAdminDist("NodeID49", "static", 1).
++SetAdminDist("NodeID49", "bgp", 2).
++SetAdminDist("NodeID49", "ospf", 3).
++SetInterface("NodeID49", "NodeID49_I_NodeID45").
++SetInterface("NodeID49", "NodeID49_I_NodeID33").
++SetInterface("NodeID49", "NodeID49_I_NodeID31").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_NodeID13").
+
++SetNode("TurksTTandTTCaicos").
++SetAdminDist("TurksTTandTTCaicos", "static", 1).
++SetAdminDist("TurksTTandTTCaicos", "bgp", 2).
++SetAdminDist("TurksTTandTTCaicos", "ospf", 3).
++SetInterface("TurksTTandTTCaicos", "TurksTTandTTCaicos_I_DominicanTTRepublic").
++SetInterface("TurksTTandTTCaicos", "TurksTTandTTCaicos_I_NodeID17").
+
++SetNode("NodeID8").
++SetAdminDist("NodeID8", "static", 1).
++SetAdminDist("NodeID8", "bgp", 2).
++SetAdminDist("NodeID8", "ospf", 3).
++SetInterface("NodeID8", "NodeID8_I_StTTMartin").
++SetInterface("NodeID8", "NodeID8_I_StTTCroix").
++SetInterface("NodeID8", "NodeID8_I_NodeID50").
+
++SetNode("NodeID37").
++SetAdminDist("NodeID37", "static", 1).
++SetAdminDist("NodeID37", "bgp", 2).
++SetAdminDist("NodeID37", "ospf", 3).
++SetInterface("NodeID37", "NodeID37_I_Ecuador").
++SetInterface("NodeID37", "NodeID37_I_NodeID1").
+
++SetNode("Nicaragua").
++SetAdminDist("Nicaragua", "static", 1).
++SetAdminDist("Nicaragua", "bgp", 2).
++SetAdminDist("Nicaragua", "ospf", 3).
++SetInterface("Nicaragua", "Nicaragua_I_CostaTTRica").
++SetInterface("Nicaragua", "Nicaragua_I_NodeID69").
+
++SetNode("StTTKittsTT_TTNevis").
++SetAdminDist("StTTKittsTT_TTNevis", "static", 1).
++SetAdminDist("StTTKittsTT_TTNevis", "bgp", 2).
++SetAdminDist("StTTKittsTT_TTNevis", "ospf", 3).
++SetInterface("StTTKittsTT_TTNevis", "StTTKittsTT_TTNevis_I_StTTMartin").
++SetInterface("StTTKittsTT_TTNevis", "StTTKittsTT_TTNevis_I_Antigua").
++SetInterface("StTTKittsTT_TTNevis", "StTTKittsTT_TTNevis_I_Dominica").
+
++SetNode("Barbados").
++SetAdminDist("Barbados", "static", 1).
++SetAdminDist("Barbados", "bgp", 2).
++SetAdminDist("Barbados", "ospf", 3).
++SetInterface("Barbados", "Barbados_I_NodeID22").
+
++SetLink("NodeID13_I_NodeID29", "NodeID29_I_NodeID13").
++SetLink("NodeID13_I_NodeID14", "NodeID14_I_NodeID13").
++SetLink("NodeID13_I_NodeID31", "NodeID31_I_NodeID13").
++SetLink("NodeID41_I_Jamaica", "Jamaica_I_NodeID41").
++SetLink("NodeID41_I_NodeID38", "NodeID38_I_NodeID41").
++SetLink("USA_I_NodeID33", "NodeID33_I_USA").
++SetLink("USA_I_NodeID38", "NodeID38_I_USA").
++SetLink("NodeID22_I_StTTCroix", "StTTCroix_I_NodeID22").
++SetLink("NodeID22_I_NodeID24", "NodeID24_I_NodeID22").
++SetLink("NodeID22_I_Barbados", "Barbados_I_NodeID22").
++SetLink("NodeID22_I_Martinique", "Martinique_I_NodeID22").
++SetLink("NodeID58_I_NodeID59", "NodeID59_I_NodeID58").
++SetLink("NodeID58_I_NodeID17", "NodeID17_I_NodeID58").
++SetLink("Panama_I_NodeID34", "NodeID34_I_Panama").
++SetLink("Panama_I_CostaTTRica", "CostaTTRica_I_Panama").
++SetLink("Panama_I_NodeID27", "NodeID27_I_Panama").
++SetLink("Guyana_I_NodeID35", "NodeID35_I_Guyana").
++SetLink("NodeID59_I_Bahamas", "Bahamas_I_NodeID59").
++SetLink("NodeID59_I_NodeID44", "NodeID44_I_NodeID59").
++SetLink("NodeID59_I_NodeID32", "NodeID32_I_NodeID59").
++SetLink("Bahamas_I_NodeID45", "NodeID45_I_Bahamas").
++SetLink("DominicanTTRepublic_I_NodeID56", "NodeID56_I_DominicanTTRepublic").
++SetLink("DominicanTTRepublic_I_TurksTTandTTCaicos", "TurksTTandTTCaicos_I_DominicanTTRepublic").
++SetLink("DominicanTTRepublic_I_NodeID39", "NodeID39_I_DominicanTTRepublic").
++SetLink("StTTCroix_I_NodeID50", "NodeID50_I_StTTCroix").
++SetLink("StTTCroix_I_NodeID8", "NodeID8_I_StTTCroix").
++SetLink("Suriname_I_NodeID35", "NodeID35_I_Suriname").
++SetLink("PuertoTTRico_I_StTTMartin", "StTTMartin_I_PuertoTTRico").
++SetLink("PuertoTTRico_I_NodeID56", "NodeID56_I_PuertoTTRico").
++SetLink("PuertoTTRico_I_NodeID50", "NodeID50_I_PuertoTTRico").
++SetLink("PuertoTTRico_I_Curacao", "Curacao_I_PuertoTTRico").
++SetLink("NodeID31_I_NodeID44", "NodeID44_I_NodeID31").
++SetLink("NodeID31_I_NodeID49", "NodeID49_I_NodeID31").
++SetLink("NodeID31_I_NodeID26", "NodeID26_I_NodeID31").
++SetLink("CostaTTRica_I_Nicaragua", "Nicaragua_I_CostaTTRica").
++SetLink("CostaTTRica_I_NodeID9", "NodeID9_I_CostaTTRica").
++SetLink("Ecuador_I_NodeID37", "NodeID37_I_Ecuador").
++SetLink("Curacao_I_StTTVincent", "StTTVincent_I_Curacao").
++SetLink("Curacao_I_Bonaire", "Bonaire_I_Curacao").
++SetLink("Curacao_I_Venezuela", "Venezuela_I_Curacao").
++SetLink("StTTVincent_I_TrinidadTTandTTTobago", "TrinidadTTandTTTobago_I_StTTVincent").
++SetLink("Columbia_I_NodeID38", "NodeID38_I_Columbia").
++SetLink("Columbia_I_NodeID1", "NodeID1_I_Columbia").
++SetLink("NodeID39_I_Jamaica", "Jamaica_I_NodeID39").
++SetLink("Venezuela_I_NodeID7", "NodeID7_I_Venezuela").
++SetLink("NodeID34_I_NodeID1", "NodeID1_I_NodeID34").
++SetLink("NodeID35_I_TrinidadTTandTTTobago", "TrinidadTTandTTTobago_I_NodeID35").
++SetLink("NodeID32_I_NodeID44", "NodeID44_I_NodeID32").
++SetLink("NodeID15_I_Mexico", "Mexico_I_NodeID15").
++SetLink("NodeID15_I_NodeID26", "NodeID26_I_NodeID15").
++SetLink("NodeID17_I_TurksTTandTTCaicos", "TurksTTandTTCaicos_I_NodeID17").
++SetLink("NodeID7_I_NodeID1", "NodeID1_I_NodeID7").
++SetLink("Guatemala_I_NodeID28", "NodeID28_I_Guatemala").
++SetLink("Guatemala_I_NodeID63", "NodeID63_I_Guatemala").
++SetLink("NodeID0_I_NodeID27", "NodeID27_I_NodeID0").
++SetLink("NodeID0_I_NodeID1", "NodeID1_I_NodeID0").
++SetLink("Martinique_I_Dominica", "Dominica_I_Martinique").
++SetLink("Belize_I_NodeID28", "NodeID28_I_Belize").
++SetLink("Belize_I_Mexico", "Mexico_I_Belize").
++SetLink("Dominica_I_Guadeloupe", "Guadeloupe_I_Dominica").
++SetLink("Dominica_I_StTTKittsTT_TTNevis", "StTTKittsTT_TTNevis_I_Dominica").
++SetLink("NodeID9_I_NodeID46", "NodeID46_I_NodeID9").
++SetLink("NodeID9_I_NodeID27", "NodeID27_I_NodeID9").
++SetLink("NodeID50_I_NodeID8", "NodeID8_I_NodeID50").
++SetLink("NodeID46_I_NodeID29", "NodeID29_I_NodeID46").
++SetLink("NodeID46_I_CaymanTTIslands", "CaymanTTIslands_I_NodeID46").
++SetLink("NodeID1_I_NodeID37", "NodeID37_I_NodeID1").
++SetLink("NodeID45_I_NodeID44", "NodeID44_I_NodeID45").
++SetLink("NodeID45_I_NodeID33", "NodeID33_I_NodeID45").
++SetLink("NodeID45_I_NodeID49", "NodeID49_I_NodeID45").
++SetLink("TrinidadTTandTTTobago_I_Grenada", "Grenada_I_TrinidadTTandTTTobago").
++SetLink("NodeID69_I_Nicaragua", "Nicaragua_I_NodeID69").
++SetLink("NodeID69_I_NodeID60", "NodeID60_I_NodeID69").
++SetLink("Antigua_I_Guadeloupe", "Guadeloupe_I_Antigua").
++SetLink("Antigua_I_StTTKittsTT_TTNevis", "StTTKittsTT_TTNevis_I_Antigua").
++SetLink("Grenada_I_NodeID24", "NodeID24_I_Grenada").
++SetLink("NodeID67_I_NodeID29", "NodeID29_I_NodeID67").
++SetLink("NodeID67_I_NodeID28", "NodeID28_I_NodeID67").
++SetLink("NodeID67_I_Honduras", "Honduras_I_NodeID67").
++SetLink("NodeID33_I_NodeID49", "NodeID49_I_NodeID33").
++SetLink("NodeID60_I_Honduras", "Honduras_I_NodeID60").
++SetLink("NodeID63_I_ElTTSalvador", "ElTTSalvador_I_NodeID63").
++SetLink("NodeID63_I_NodeID62", "NodeID62_I_NodeID63").
++SetLink("StTTMartin_I_NodeID8", "NodeID8_I_StTTMartin").
++SetLink("StTTMartin_I_StTTKittsTT_TTNevis", "StTTKittsTT_TTNevis_I_StTTMartin").
+
+
++SetNetwork("Barbados", "N_Barbados").
++SetNetwork("NodeID44", "N_NodeID44").
++SetNetwork("NodeID1", "N_NodeID1").
++SetNetwork("NodeID49", "N_NodeID49").
++SetNetwork("Martinique", "N_Martinique").
++SetNetwork("StTTMartin", "N_StTTMartin").
++SetNetwork("NodeID50", "N_NodeID50").
++SetNetwork("Curacao", "N_Curacao").
++SetNetwork("NodeID8", "N_NodeID8").
++SetNetwork("Columbia", "N_Columbia").
++SetNetwork("NodeID31", "N_NodeID31").
++SetNetwork("NodeID22", "N_NodeID22").
++SetNetwork("Ecuador", "N_Ecuador").
++SetNetwork("Nicaragua", "N_Nicaragua").
++SetNetwork("StTTVincent", "N_StTTVincent").

@@ -1,0 +1,35 @@
++SetNode("SRI").
++SetAdminDist("SRI", "static", 1).
++SetAdminDist("SRI", "bgp", 2).
++SetAdminDist("SRI", "ospf", 3).
++SetInterface("SRI", "SRI_I_USCB").
++SetInterface("SRI", "SRI_I_UTAH").
++SetInterface("SRI", "SRI_I_UCLA").
+
++SetNode("USCB").
++SetAdminDist("USCB", "static", 1).
++SetAdminDist("USCB", "bgp", 2).
++SetAdminDist("USCB", "ospf", 3).
++SetInterface("USCB", "USCB_I_SRI").
++SetInterface("USCB", "USCB_I_UCLA").
+
++SetNode("UTAH").
++SetAdminDist("UTAH", "static", 1).
++SetAdminDist("UTAH", "bgp", 2).
++SetAdminDist("UTAH", "ospf", 3).
++SetInterface("UTAH", "UTAH_I_SRI").
+
++SetNode("UCLA").
++SetAdminDist("UCLA", "static", 1).
++SetAdminDist("UCLA", "bgp", 2).
++SetAdminDist("UCLA", "ospf", 3).
++SetInterface("UCLA", "UCLA_I_SRI").
++SetInterface("UCLA", "UCLA_I_USCB").
+
++SetLink("SRI_I_USCB", "USCB_I_SRI").
++SetLink("SRI_I_UTAH", "UTAH_I_SRI").
++SetLink("SRI_I_UCLA", "UCLA_I_SRI").
++SetLink("USCB_I_UCLA", "UCLA_I_USCB").
+
+
++SetNetwork("USCB", "N_USCB").

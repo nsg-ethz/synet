@@ -1,0 +1,623 @@
++SetNode("Aracaju").
++SetAdminDist("Aracaju", "static", 1).
++SetAdminDist("Aracaju", "bgp", 2).
++SetAdminDist("Aracaju", "ospf", 3).
++SetInterface("Aracaju", "Aracaju_I_Maceio").
++SetInterface("Aracaju", "Aracaju_I_Salvador").
+
++SetNode("NodeID32").
++SetAdminDist("NodeID32", "static", 1).
++SetAdminDist("NodeID32", "bgp", 2).
++SetAdminDist("NodeID32", "ospf", 3).
++SetInterface("NodeID32", "NodeID32_I_Vitoria").
++SetInterface("NodeID32", "NodeID32_I_Salvador").
+
++SetNode("Rondonopolis").
++SetAdminDist("Rondonopolis", "static", 1).
++SetAdminDist("Rondonopolis", "bgp", 2).
++SetAdminDist("Rondonopolis", "ospf", 3).
++SetInterface("Rondonopolis", "Rondonopolis_I_19").
++SetInterface("Rondonopolis", "Rondonopolis_I_CampoTTGrande").
++SetInterface("Rondonopolis", "Rondonopolis_I_21").
+
++SetNode("Caracas").
++SetAdminDist("Caracas", "static", 1).
++SetAdminDist("Caracas", "bgp", 2).
++SetAdminDist("Caracas", "ospf", 3).
++SetInterface("Caracas", "Caracas_I_Cucuta").
++SetInterface("Caracas", "Caracas_I_Maiquetia").
++SetInterface("Caracas", "Caracas_I_SantaTTElena").
+
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_Tuckerton").
+
++SetNode("6ID38").
++SetAdminDist("6ID38", "static", 1).
++SetAdminDist("6ID38", "bgp", 2).
++SetAdminDist("6ID38", "ospf", 3).
++SetInterface("6ID38", "6ID38_I_19").
++SetInterface("6ID38", "6ID38_I_18").
++SetInterface("6ID38", "6ID38_I_15").
++SetInterface("6ID38", "6ID38_I_Campinas").
+
++SetNode("Vitoria").
++SetAdminDist("Vitoria", "static", 1).
++SetAdminDist("Vitoria", "bgp", 2).
++SetAdminDist("Vitoria", "ospf", 3).
++SetInterface("Vitoria", "Vitoria_I_NodeID56").
++SetInterface("Vitoria", "Vitoria_I_NodeID32").
++SetInterface("Vitoria", "Vitoria_I_NodeID31").
+
++SetNode("JoaoTTPessoa").
++SetAdminDist("JoaoTTPessoa", "static", 1).
++SetAdminDist("JoaoTTPessoa", "bgp", 2).
++SetAdminDist("JoaoTTPessoa", "ospf", 3).
++SetInterface("JoaoTTPessoa", "JoaoTTPessoa_I_Recife").
++SetInterface("JoaoTTPessoa", "JoaoTTPessoa_I_Natal").
+
++SetNode("Cali").
++SetAdminDist("Cali", "static", 1).
++SetAdminDist("Cali", "bgp", 2).
++SetAdminDist("Cali", "ospf", 3).
++SetInterface("Cali", "Cali_I_Bogota").
++SetInterface("Cali", "Cali_I_Medellin").
+
++SetNode("Fortaleza").
++SetAdminDist("Fortaleza", "static", 1).
++SetAdminDist("Fortaleza", "bgp", 2).
++SetAdminDist("Fortaleza", "ospf", 3).
++SetInterface("Fortaleza", "Fortaleza_I_NodeID33").
++SetInterface("Fortaleza", "Fortaleza_I_RioTTdeTTJaneiro").
++SetInterface("Fortaleza", "Fortaleza_I_Natal").
++SetInterface("Fortaleza", "Fortaleza_I_StTTDavid_s").
++SetInterface("Fortaleza", "Fortaleza_I_2").
++SetInterface("Fortaleza", "Fortaleza_I_Maiquetia").
+
++SetNode("Natal").
++SetAdminDist("Natal", "static", 1).
++SetAdminDist("Natal", "bgp", 2).
++SetAdminDist("Natal", "ospf", 3).
++SetInterface("Natal", "Natal_I_JoaoTTPessoa").
++SetInterface("Natal", "Natal_I_Fortaleza").
+
++SetNode("SaoTTPaulo").
++SetAdminDist("SaoTTPaulo", "static", 1).
++SetAdminDist("SaoTTPaulo", "bgp", 2).
++SetAdminDist("SaoTTPaulo", "ospf", 3).
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_17").
+
++SetNode("Curitiba").
++SetAdminDist("Curitiba", "static", 1).
++SetAdminDist("Curitiba", "bgp", 2).
++SetAdminDist("Curitiba", "ospf", 3).
++SetInterface("Curitiba", "Curitiba_I_10").
++SetInterface("Curitiba", "Curitiba_I_13").
++SetInterface("Curitiba", "Curitiba_I_16").
++SetInterface("Curitiba", "Curitiba_I_Florianopolois").
++SetInterface("Curitiba", "Curitiba_I_7").
++SetInterface("Curitiba", "Curitiba_I_6").
+
++SetNode("Goiania").
++SetAdminDist("Goiania", "static", 1).
++SetAdminDist("Goiania", "bgp", 2).
++SetAdminDist("Goiania", "ospf", 3).
++SetInterface("Goiania", "Goiania_I_11").
++SetInterface("Goiania", "Goiania_I_Palmas").
+
++SetNode("23").
++SetAdminDist("23", "static", 1).
++SetAdminDist("23", "bgp", 2).
++SetAdminDist("23", "ospf", 3).
++SetInterface("23", "23_I_NodeID56").
++SetInterface("23", "23_I_RioTTdeTTJaneiro").
++SetInterface("23", "23_I_NodeID31").
+
++SetNode("NodeID56").
++SetAdminDist("NodeID56", "static", 1).
++SetAdminDist("NodeID56", "bgp", 2).
++SetAdminDist("NodeID56", "ospf", 3).
++SetInterface("NodeID56", "NodeID56_I_Vitoria").
++SetInterface("NodeID56", "NodeID56_I_RioTTdeTTJaneiro").
++SetInterface("NodeID56", "NodeID56_I_23").
+
++SetNode("20").
++SetAdminDist("20", "static", 1).
++SetAdminDist("20", "bgp", 2).
++SetAdminDist("20", "ospf", 3).
++SetInterface("20", "20_I_PortoTTVelho").
++SetInterface("20", "20_I_Cuiaba").
+
++SetNode("21").
++SetAdminDist("21", "static", 1).
++SetAdminDist("21", "bgp", 2).
++SetAdminDist("21", "ospf", 3).
++SetInterface("21", "21_I_Rondonopolis").
++SetInterface("21", "21_I_Cuiaba").
+
++SetNode("Palmas").
++SetAdminDist("Palmas", "static", 1).
++SetAdminDist("Palmas", "bgp", 2).
++SetAdminDist("Palmas", "ospf", 3).
++SetInterface("Palmas", "Palmas_I_Goiania").
++SetInterface("Palmas", "Palmas_I_4").
+
++SetNode("BoaTTVista").
++SetAdminDist("BoaTTVista", "static", 1).
++SetAdminDist("BoaTTVista", "bgp", 2).
++SetAdminDist("BoaTTVista", "ospf", 3).
++SetInterface("BoaTTVista", "BoaTTVista_I_Manaus").
++SetInterface("BoaTTVista", "BoaTTVista_I_SantaTTElena").
+
++SetNode("PortoTTAlegre").
++SetAdminDist("PortoTTAlegre", "static", 1).
++SetAdminDist("PortoTTAlegre", "bgp", 2).
++SetAdminDist("PortoTTAlegre", "ospf", 3).
++SetInterface("PortoTTAlegre", "PortoTTAlegre_I_13").
++SetInterface("PortoTTAlegre", "PortoTTAlegre_I_12").
++SetInterface("PortoTTAlegre", "PortoTTAlegre_I_Florianopolois").
++SetInterface("PortoTTAlegre", "PortoTTAlegre_I_Pelotas").
+
++SetNode("Manaus").
++SetAdminDist("Manaus", "static", 1).
++SetAdminDist("Manaus", "bgp", 2).
++SetAdminDist("Manaus", "ospf", 3).
++SetInterface("Manaus", "Manaus_I_BoaTTVista").
+
++SetNode("CampoTTGrande").
++SetAdminDist("CampoTTGrande", "static", 1).
++SetAdminDist("CampoTTGrande", "bgp", 2).
++SetAdminDist("CampoTTGrande", "ospf", 3).
++SetInterface("CampoTTGrande", "CampoTTGrande_I_9").
++SetInterface("CampoTTGrande", "CampoTTGrande_I_Rondonopolis").
+
++SetNode("NodeID33").
++SetAdminDist("NodeID33", "static", 1).
++SetAdminDist("NodeID33", "bgp", 2).
++SetAdminDist("NodeID33", "ospf", 3).
++SetInterface("NodeID33", "NodeID33_I_1").
++SetInterface("NodeID33", "NodeID33_I_SaoTTLuis").
++SetInterface("NodeID33", "NodeID33_I_Fortaleza").
+
++SetNode("Campinas").
++SetAdminDist("Campinas", "static", 1).
++SetAdminDist("Campinas", "bgp", 2).
++SetAdminDist("Campinas", "ospf", 3).
++SetInterface("Campinas", "Campinas_I_22").
++SetInterface("Campinas", "Campinas_I_Salvador").
++SetInterface("Campinas", "Campinas_I_6ID38").
++SetInterface("Campinas", "Campinas_I_6").
++SetInterface("Campinas", "Campinas_I_18").
++SetInterface("Campinas", "Campinas_I_Brasilia").
++SetInterface("Campinas", "Campinas_I_RioTTdeTTJaneiro").
+
++SetNode("NodeID31").
++SetAdminDist("NodeID31", "static", 1).
++SetAdminDist("NodeID31", "bgp", 2).
++SetAdminDist("NodeID31", "ospf", 3).
++SetInterface("NodeID31", "NodeID31_I_Vitoria").
++SetInterface("NodeID31", "NodeID31_I_Salvador").
++SetInterface("NodeID31", "NodeID31_I_23").
+
++SetNode("1").
++SetAdminDist("1", "static", 1).
++SetAdminDist("1", "bgp", 2).
++SetAdminDist("1", "ospf", 3).
++SetInterface("1", "1_I_Teresina").
++SetInterface("1", "1_I_2").
++SetInterface("1", "1_I_NodeID33").
+
++SetNode("Teresina").
++SetAdminDist("Teresina", "static", 1).
++SetAdminDist("Teresina", "bgp", 2).
++SetAdminDist("Teresina", "ospf", 3).
++SetInterface("Teresina", "Teresina_I_1").
++SetInterface("Teresina", "Teresina_I_Belem").
+
++SetNode("3").
++SetAdminDist("3", "static", 1).
++SetAdminDist("3", "bgp", 2).
++SetAdminDist("3", "ospf", 3).
++SetInterface("3", "3_I_Brasilia").
+
++SetNode("2").
++SetAdminDist("2", "static", 1).
++SetAdminDist("2", "bgp", 2).
++SetAdminDist("2", "ospf", 3).
++SetInterface("2", "2_I_1").
++SetInterface("2", "2_I_Recife").
++SetInterface("2", "2_I_Fortaleza").
++SetInterface("2", "2_I_Salvador").
+
++SetNode("4").
++SetAdminDist("4", "static", 1).
++SetAdminDist("4", "bgp", 2).
++SetAdminDist("4", "ospf", 3).
++SetInterface("4", "4_I_Brasilia").
++SetInterface("4", "4_I_Palmas").
+
++SetNode("7").
++SetAdminDist("7", "static", 1).
++SetAdminDist("7", "bgp", 2).
++SetAdminDist("7", "ospf", 3).
++SetInterface("7", "7_I_Curitiba").
++SetInterface("7", "7_I_8").
+
++SetNode("6").
++SetAdminDist("6", "static", 1).
++SetAdminDist("6", "bgp", 2).
++SetAdminDist("6", "ospf", 3).
++SetInterface("6", "6_I_Curitiba").
++SetInterface("6", "6_I_17").
++SetInterface("6", "6_I_RioTTdeTTJaneiro").
++SetInterface("6", "6_I_Campinas").
+
++SetNode("9").
++SetAdminDist("9", "static", 1).
++SetAdminDist("9", "bgp", 2).
++SetAdminDist("9", "ospf", 3).
++SetInterface("9", "9_I_11").
++SetInterface("9", "9_I_12").
++SetInterface("9", "9_I_CampoTTGrande").
++SetInterface("9", "9_I_14").
+
++SetNode("8").
++SetAdminDist("8", "static", 1).
++SetAdminDist("8", "bgp", 2).
++SetAdminDist("8", "ospf", 3).
++SetInterface("8", "8_I_14").
++SetInterface("8", "8_I_7").
++SetInterface("8", "8_I_16").
+
++SetNode("RioTTdeTTJaneiro").
++SetAdminDist("RioTTdeTTJaneiro", "static", 1).
++SetAdminDist("RioTTdeTTJaneiro", "bgp", 2).
++SetAdminDist("RioTTdeTTJaneiro", "ospf", 3).
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Fortaleza").
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_NodeID56").
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_23").
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Campinas").
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_6").
+
++SetNode("Miami").
++SetAdminDist("Miami", "static", 1).
++SetAdminDist("Miami", "bgp", 2).
++SetAdminDist("Miami", "ospf", 3).
++SetInterface("Miami", "Miami_I_BocaTTRaton").
+
++SetNode("11").
++SetAdminDist("11", "static", 1).
++SetAdminDist("11", "bgp", 2).
++SetAdminDist("11", "ospf", 3).
++SetInterface("11", "11_I_16").
++SetInterface("11", "11_I_19").
++SetInterface("11", "11_I_Brasilia").
++SetInterface("11", "11_I_18").
++SetInterface("11", "11_I_9").
++SetInterface("11", "11_I_Goiania").
+
++SetNode("Medellin").
++SetAdminDist("Medellin", "static", 1).
++SetAdminDist("Medellin", "bgp", 2).
++SetAdminDist("Medellin", "ospf", 3).
++SetInterface("Medellin", "Medellin_I_Cali").
++SetInterface("Medellin", "Medellin_I_Cucuta").
+
++SetNode("Cucuta").
++SetAdminDist("Cucuta", "static", 1).
++SetAdminDist("Cucuta", "bgp", 2).
++SetAdminDist("Cucuta", "ospf", 3).
++SetInterface("Cucuta", "Cucuta_I_Bogota").
++SetInterface("Cucuta", "Cucuta_I_Caracas").
++SetInterface("Cucuta", "Cucuta_I_Medellin").
+
++SetNode("SantaTTElena").
++SetAdminDist("SantaTTElena", "static", 1).
++SetAdminDist("SantaTTElena", "bgp", 2).
++SetAdminDist("SantaTTElena", "ospf", 3).
++SetInterface("SantaTTElena", "SantaTTElena_I_Caracas").
++SetInterface("SantaTTElena", "SantaTTElena_I_BoaTTVista").
+
++SetNode("Salvador").
++SetAdminDist("Salvador", "static", 1).
++SetAdminDist("Salvador", "bgp", 2).
++SetAdminDist("Salvador", "ospf", 3).
++SetInterface("Salvador", "Salvador_I_Aracaju").
++SetInterface("Salvador", "Salvador_I_2").
++SetInterface("Salvador", "Salvador_I_NodeID32").
++SetInterface("Salvador", "Salvador_I_Campinas").
++SetInterface("Salvador", "Salvador_I_NodeID31").
+
++SetNode("Maceio").
++SetAdminDist("Maceio", "static", 1).
++SetAdminDist("Maceio", "bgp", 2).
++SetAdminDist("Maceio", "ospf", 3).
++SetInterface("Maceio", "Maceio_I_Aracaju").
++SetInterface("Maceio", "Maceio_I_Recife").
+
++SetNode("Brasilia").
++SetAdminDist("Brasilia", "static", 1).
++SetAdminDist("Brasilia", "bgp", 2).
++SetAdminDist("Brasilia", "ospf", 3).
++SetInterface("Brasilia", "Brasilia_I_11").
++SetInterface("Brasilia", "Brasilia_I_18").
++SetInterface("Brasilia", "Brasilia_I_3").
++SetInterface("Brasilia", "Brasilia_I_4").
++SetInterface("Brasilia", "Brasilia_I_Campinas").
+
++SetNode("Belem").
++SetAdminDist("Belem", "static", 1).
++SetAdminDist("Belem", "bgp", 2).
++SetAdminDist("Belem", "ospf", 3).
++SetInterface("Belem", "Belem_I_Teresina").
++SetInterface("Belem", "Belem_I_SaoTTLuis").
+
++SetNode("Recife").
++SetAdminDist("Recife", "static", 1).
++SetAdminDist("Recife", "bgp", 2).
++SetAdminDist("Recife", "ospf", 3).
++SetInterface("Recife", "Recife_I_Maceio").
++SetInterface("Recife", "Recife_I_JoaoTTPessoa").
++SetInterface("Recife", "Recife_I_2").
+
++SetNode("Maiquetia").
++SetAdminDist("Maiquetia", "static", 1).
++SetAdminDist("Maiquetia", "bgp", 2).
++SetAdminDist("Maiquetia", "ospf", 3).
++SetInterface("Maiquetia", "Maiquetia_I_Fortaleza").
++SetInterface("Maiquetia", "Maiquetia_I_Caracas").
++SetInterface("Maiquetia", "Maiquetia_I_BocaTTRaton").
+
++SetNode("14").
++SetAdminDist("14", "static", 1).
++SetAdminDist("14", "bgp", 2).
++SetAdminDist("14", "ospf", 3).
++SetInterface("14", "14_I_9").
++SetInterface("14", "14_I_10").
++SetInterface("14", "14_I_8").
+
++SetNode("Tuckerton").
++SetAdminDist("Tuckerton", "static", 1).
++SetAdminDist("Tuckerton", "bgp", 2).
++SetAdminDist("Tuckerton", "ospf", 3).
++SetInterface("Tuckerton", "Tuckerton_I_StTTDavid_s").
++SetInterface("Tuckerton", "Tuckerton_I_BocaTTRaton").
++SetInterface("Tuckerton", "Tuckerton_I_NewTTYork").
+
++SetNode("10").
++SetAdminDist("10", "static", 1).
++SetAdminDist("10", "bgp", 2).
++SetAdminDist("10", "ospf", 3).
++SetInterface("10", "10_I_Curitiba").
++SetInterface("10", "10_I_14").
+
++SetNode("13").
++SetAdminDist("13", "static", 1).
++SetAdminDist("13", "bgp", 2).
++SetAdminDist("13", "ospf", 3).
++SetInterface("13", "13_I_Curitiba").
++SetInterface("13", "13_I_12").
++SetInterface("13", "13_I_Florianopolois").
++SetInterface("13", "13_I_PortoTTAlegre").
+
++SetNode("12").
++SetAdminDist("12", "static", 1).
++SetAdminDist("12", "bgp", 2).
++SetAdminDist("12", "ospf", 3).
++SetInterface("12", "12_I_9").
++SetInterface("12", "12_I_PortoTTAlegre").
++SetInterface("12", "12_I_13").
++SetInterface("12", "12_I_Florianopolois").
+
++SetNode("15").
++SetAdminDist("15", "static", 1).
++SetAdminDist("15", "bgp", 2).
++SetAdminDist("15", "ospf", 3).
++SetInterface("15", "15_I_6ID38").
++SetInterface("15", "15_I_16").
+
++SetNode("22").
++SetAdminDist("22", "static", 1).
++SetAdminDist("22", "bgp", 2).
++SetAdminDist("22", "ospf", 3).
++SetInterface("22", "22_I_18").
++SetInterface("22", "22_I_Campinas").
+
++SetNode("17").
++SetAdminDist("17", "static", 1).
++SetAdminDist("17", "bgp", 2).
++SetAdminDist("17", "ospf", 3).
++SetInterface("17", "17_I_SaoTTPaulo").
++SetInterface("17", "17_I_6").
+
++SetNode("Cuiaba").
++SetAdminDist("Cuiaba", "static", 1).
++SetAdminDist("Cuiaba", "bgp", 2).
++SetAdminDist("Cuiaba", "ospf", 3).
++SetInterface("Cuiaba", "Cuiaba_I_20").
++SetInterface("Cuiaba", "Cuiaba_I_21").
+
++SetNode("Bogota").
++SetAdminDist("Bogota", "static", 1).
++SetAdminDist("Bogota", "bgp", 2).
++SetAdminDist("Bogota", "ospf", 3).
++SetInterface("Bogota", "Bogota_I_Cali").
++SetInterface("Bogota", "Bogota_I_Cucuta").
+
++SetNode("18").
++SetAdminDist("18", "static", 1).
++SetAdminDist("18", "bgp", 2).
++SetAdminDist("18", "ospf", 3).
++SetInterface("18", "18_I_11").
++SetInterface("18", "18_I_6ID38").
++SetInterface("18", "18_I_22").
++SetInterface("18", "18_I_Campinas").
++SetInterface("18", "18_I_Brasilia").
+
++SetNode("16").
++SetAdminDist("16", "static", 1).
++SetAdminDist("16", "bgp", 2).
++SetAdminDist("16", "ospf", 3).
++SetInterface("16", "16_I_11").
++SetInterface("16", "16_I_Curitiba").
++SetInterface("16", "16_I_15").
++SetInterface("16", "16_I_8").
+
++SetNode("RioTTBranco").
++SetAdminDist("RioTTBranco", "static", 1).
++SetAdminDist("RioTTBranco", "bgp", 2).
++SetAdminDist("RioTTBranco", "ospf", 3).
++SetInterface("RioTTBranco", "RioTTBranco_I_PortoTTVelho").
+
++SetNode("PortoTTVelho").
++SetAdminDist("PortoTTVelho", "static", 1).
++SetAdminDist("PortoTTVelho", "bgp", 2).
++SetAdminDist("PortoTTVelho", "ospf", 3).
++SetInterface("PortoTTVelho", "PortoTTVelho_I_20").
++SetInterface("PortoTTVelho", "PortoTTVelho_I_RioTTBranco").
+
++SetNode("19").
++SetAdminDist("19", "static", 1).
++SetAdminDist("19", "bgp", 2).
++SetAdminDist("19", "ospf", 3).
++SetInterface("19", "19_I_11").
++SetInterface("19", "19_I_6ID38").
++SetInterface("19", "19_I_Rondonopolis").
+
++SetNode("SaoTTLuis").
++SetAdminDist("SaoTTLuis", "static", 1).
++SetAdminDist("SaoTTLuis", "bgp", 2).
++SetAdminDist("SaoTTLuis", "ospf", 3).
++SetInterface("SaoTTLuis", "SaoTTLuis_I_NodeID33").
++SetInterface("SaoTTLuis", "SaoTTLuis_I_Belem").
+
++SetNode("Florianopolois").
++SetAdminDist("Florianopolois", "static", 1).
++SetAdminDist("Florianopolois", "bgp", 2).
++SetAdminDist("Florianopolois", "ospf", 3).
++SetInterface("Florianopolois", "Florianopolois_I_Curitiba").
++SetInterface("Florianopolois", "Florianopolois_I_13").
++SetInterface("Florianopolois", "Florianopolois_I_12").
++SetInterface("Florianopolois", "Florianopolois_I_PortoTTAlegre").
+
++SetNode("BocaTTRaton").
++SetAdminDist("BocaTTRaton", "static", 1).
++SetAdminDist("BocaTTRaton", "bgp", 2).
++SetAdminDist("BocaTTRaton", "ospf", 3).
++SetInterface("BocaTTRaton", "BocaTTRaton_I_Tuckerton").
++SetInterface("BocaTTRaton", "BocaTTRaton_I_Miami").
++SetInterface("BocaTTRaton", "BocaTTRaton_I_Maiquetia").
+
++SetNode("StTTDavid_s").
++SetAdminDist("StTTDavid_s", "static", 1).
++SetAdminDist("StTTDavid_s", "bgp", 2).
++SetAdminDist("StTTDavid_s", "ospf", 3).
++SetInterface("StTTDavid_s", "StTTDavid_s_I_Tuckerton").
++SetInterface("StTTDavid_s", "StTTDavid_s_I_Fortaleza").
+
++SetNode("Pelotas").
++SetAdminDist("Pelotas", "static", 1).
++SetAdminDist("Pelotas", "bgp", 2).
++SetAdminDist("Pelotas", "ospf", 3).
++SetInterface("Pelotas", "Pelotas_I_PortoTTAlegre").
+
++SetLink("Aracaju_I_Maceio", "Maceio_I_Aracaju").
++SetLink("Aracaju_I_Salvador", "Salvador_I_Aracaju").
++SetLink("NodeID32_I_Vitoria", "Vitoria_I_NodeID32").
++SetLink("NodeID32_I_Salvador", "Salvador_I_NodeID32").
++SetLink("Rondonopolis_I_19", "19_I_Rondonopolis").
++SetLink("Rondonopolis_I_CampoTTGrande", "CampoTTGrande_I_Rondonopolis").
++SetLink("Rondonopolis_I_21", "21_I_Rondonopolis").
++SetLink("Caracas_I_Cucuta", "Cucuta_I_Caracas").
++SetLink("Caracas_I_Maiquetia", "Maiquetia_I_Caracas").
++SetLink("Caracas_I_SantaTTElena", "SantaTTElena_I_Caracas").
++SetLink("NewTTYork_I_Tuckerton", "Tuckerton_I_NewTTYork").
++SetLink("6ID38_I_19", "19_I_6ID38").
++SetLink("6ID38_I_18", "18_I_6ID38").
++SetLink("6ID38_I_15", "15_I_6ID38").
++SetLink("6ID38_I_Campinas", "Campinas_I_6ID38").
++SetLink("Vitoria_I_NodeID56", "NodeID56_I_Vitoria").
++SetLink("Vitoria_I_NodeID31", "NodeID31_I_Vitoria").
++SetLink("JoaoTTPessoa_I_Recife", "Recife_I_JoaoTTPessoa").
++SetLink("JoaoTTPessoa_I_Natal", "Natal_I_JoaoTTPessoa").
++SetLink("Cali_I_Bogota", "Bogota_I_Cali").
++SetLink("Cali_I_Medellin", "Medellin_I_Cali").
++SetLink("Fortaleza_I_NodeID33", "NodeID33_I_Fortaleza").
++SetLink("Fortaleza_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Fortaleza").
++SetLink("Fortaleza_I_Natal", "Natal_I_Fortaleza").
++SetLink("Fortaleza_I_StTTDavid_s", "StTTDavid_s_I_Fortaleza").
++SetLink("Fortaleza_I_2", "2_I_Fortaleza").
++SetLink("Fortaleza_I_Maiquetia", "Maiquetia_I_Fortaleza").
++SetLink("SaoTTPaulo_I_17", "17_I_SaoTTPaulo").
++SetLink("Curitiba_I_10", "10_I_Curitiba").
++SetLink("Curitiba_I_13", "13_I_Curitiba").
++SetLink("Curitiba_I_16", "16_I_Curitiba").
++SetLink("Curitiba_I_Florianopolois", "Florianopolois_I_Curitiba").
++SetLink("Curitiba_I_7", "7_I_Curitiba").
++SetLink("Curitiba_I_6", "6_I_Curitiba").
++SetLink("Goiania_I_11", "11_I_Goiania").
++SetLink("Goiania_I_Palmas", "Palmas_I_Goiania").
++SetLink("23_I_NodeID56", "NodeID56_I_23").
++SetLink("23_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_23").
++SetLink("23_I_NodeID31", "NodeID31_I_23").
++SetLink("NodeID56_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_NodeID56").
++SetLink("20_I_PortoTTVelho", "PortoTTVelho_I_20").
++SetLink("20_I_Cuiaba", "Cuiaba_I_20").
++SetLink("21_I_Cuiaba", "Cuiaba_I_21").
++SetLink("Palmas_I_4", "4_I_Palmas").
++SetLink("BoaTTVista_I_Manaus", "Manaus_I_BoaTTVista").
++SetLink("BoaTTVista_I_SantaTTElena", "SantaTTElena_I_BoaTTVista").
++SetLink("PortoTTAlegre_I_13", "13_I_PortoTTAlegre").
++SetLink("PortoTTAlegre_I_12", "12_I_PortoTTAlegre").
++SetLink("PortoTTAlegre_I_Florianopolois", "Florianopolois_I_PortoTTAlegre").
++SetLink("PortoTTAlegre_I_Pelotas", "Pelotas_I_PortoTTAlegre").
++SetLink("CampoTTGrande_I_9", "9_I_CampoTTGrande").
++SetLink("NodeID33_I_1", "1_I_NodeID33").
++SetLink("NodeID33_I_SaoTTLuis", "SaoTTLuis_I_NodeID33").
++SetLink("Campinas_I_22", "22_I_Campinas").
++SetLink("Campinas_I_Salvador", "Salvador_I_Campinas").
++SetLink("Campinas_I_6", "6_I_Campinas").
++SetLink("Campinas_I_18", "18_I_Campinas").
++SetLink("Campinas_I_Brasilia", "Brasilia_I_Campinas").
++SetLink("Campinas_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Campinas").
++SetLink("NodeID31_I_Salvador", "Salvador_I_NodeID31").
++SetLink("1_I_Teresina", "Teresina_I_1").
++SetLink("1_I_2", "2_I_1").
++SetLink("Teresina_I_Belem", "Belem_I_Teresina").
++SetLink("3_I_Brasilia", "Brasilia_I_3").
++SetLink("2_I_Recife", "Recife_I_2").
++SetLink("2_I_Salvador", "Salvador_I_2").
++SetLink("4_I_Brasilia", "Brasilia_I_4").
++SetLink("7_I_8", "8_I_7").
++SetLink("6_I_17", "17_I_6").
++SetLink("6_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_6").
++SetLink("9_I_11", "11_I_9").
++SetLink("9_I_12", "12_I_9").
++SetLink("9_I_14", "14_I_9").
++SetLink("8_I_14", "14_I_8").
++SetLink("8_I_16", "16_I_8").
++SetLink("Miami_I_BocaTTRaton", "BocaTTRaton_I_Miami").
++SetLink("11_I_16", "16_I_11").
++SetLink("11_I_19", "19_I_11").
++SetLink("11_I_Brasilia", "Brasilia_I_11").
++SetLink("11_I_18", "18_I_11").
++SetLink("Medellin_I_Cucuta", "Cucuta_I_Medellin").
++SetLink("Cucuta_I_Bogota", "Bogota_I_Cucuta").
++SetLink("Maceio_I_Recife", "Recife_I_Maceio").
++SetLink("Brasilia_I_18", "18_I_Brasilia").
++SetLink("Belem_I_SaoTTLuis", "SaoTTLuis_I_Belem").
++SetLink("Maiquetia_I_BocaTTRaton", "BocaTTRaton_I_Maiquetia").
++SetLink("14_I_10", "10_I_14").
++SetLink("Tuckerton_I_StTTDavid_s", "StTTDavid_s_I_Tuckerton").
++SetLink("Tuckerton_I_BocaTTRaton", "BocaTTRaton_I_Tuckerton").
++SetLink("13_I_12", "12_I_13").
++SetLink("13_I_Florianopolois", "Florianopolois_I_13").
++SetLink("12_I_Florianopolois", "Florianopolois_I_12").
++SetLink("15_I_16", "16_I_15").
++SetLink("22_I_18", "18_I_22").
++SetLink("RioTTBranco_I_PortoTTVelho", "PortoTTVelho_I_RioTTBranco").
+
+
++SetNetwork("NodeID31", "N_NodeID31").

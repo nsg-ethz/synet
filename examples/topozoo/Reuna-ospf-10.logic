@@ -1,0 +1,305 @@
++SetNode("Arica").
++SetAdminDist("Arica", "static", 1).
++SetAdminDist("Arica", "bgp", 2).
++SetAdminDist("Arica", "ospf", 3).
++SetInterface("Arica", "Arica_I_Iquique").
++SetInterface("Arica", "Arica_I_UTA").
+
++SetNode("UTEM").
++SetAdminDist("UTEM", "static", 1).
++SetAdminDist("UTEM", "bgp", 2).
++SetAdminDist("UTEM", "ospf", 3).
++SetInterface("UTEM", "UTEM_I_NodeID16").
+
++SetNode("Antofagasta").
++SetAdminDist("Antofagasta", "static", 1).
++SetAdminDist("Antofagasta", "bgp", 2).
++SetAdminDist("Antofagasta", "ospf", 3).
++SetInterface("Antofagasta", "Antofagasta_I_Iquique").
++SetInterface("Antofagasta", "Antofagasta_I_UCN").
++SetInterface("Antofagasta", "Antofagasta_I_Copiapo").
+
++SetNode("Iquique").
++SetAdminDist("Iquique", "static", 1).
++SetAdminDist("Iquique", "bgp", 2).
++SetAdminDist("Iquique", "ospf", 3).
++SetInterface("Iquique", "Iquique_I_UNAP").
++SetInterface("Iquique", "Iquique_I_Arica").
++SetInterface("Iquique", "Iquique_I_Antofagasta").
+
++SetNode("Temuco").
++SetAdminDist("Temuco", "static", 1).
++SetAdminDist("Temuco", "bgp", 2).
++SetAdminDist("Temuco", "ospf", 3).
++SetInterface("Temuco", "Temuco_I_Valdivia").
++SetInterface("Temuco", "Temuco_I_Concepcion").
++SetInterface("Temuco", "Temuco_I_NodeID13").
+
++SetNode("Osorno").
++SetAdminDist("Osorno", "static", 1).
++SetAdminDist("Osorno", "bgp", 2).
++SetAdminDist("Osorno", "ospf", 3).
++SetInterface("Osorno", "Osorno_I_Valdivia").
++SetInterface("Osorno", "Osorno_I_ULAGOS").
+
++SetNode("Concepcion").
++SetAdminDist("Concepcion", "static", 1).
++SetAdminDist("Concepcion", "bgp", 2).
++SetAdminDist("Concepcion", "ospf", 3).
++SetInterface("Concepcion", "Concepcion_I_Santiago").
++SetInterface("Concepcion", "Concepcion_I_Temuco").
++SetInterface("Concepcion", "Concepcion_I_NodeID14").
+
++SetNode("RC_Nacional").
++SetAdminDist("RC_Nacional", "static", 1).
++SetAdminDist("RC_Nacional", "bgp", 2).
++SetAdminDist("RC_Nacional", "ospf", 3).
++SetInterface("RC_Nacional", "RC_Nacional_I_Santiago").
++SetInterface("RC_Nacional", "RC_Nacional_I_PITsTTNacionales").
+
++SetNode("UDEC").
++SetAdminDist("UDEC", "static", 1).
++SetAdminDist("UDEC", "bgp", 2).
++SetAdminDist("UDEC", "ospf", 3).
++SetInterface("UDEC", "UDEC_I_NodeID14").
+
++SetNode("LaTTSerena").
++SetAdminDist("LaTTSerena", "static", 1).
++SetAdminDist("LaTTSerena", "bgp", 2).
++SetAdminDist("LaTTSerena", "ospf", 3).
++SetInterface("LaTTSerena", "LaTTSerena_I_Santiago").
++SetInterface("LaTTSerena", "LaTTSerena_I_Copiapo").
++SetInterface("LaTTSerena", "LaTTSerena_I_NodeID15").
+
++SetNode("Santiago").
++SetAdminDist("Santiago", "static", 1).
++SetAdminDist("Santiago", "bgp", 2).
++SetAdminDist("Santiago", "ospf", 3).
++SetInterface("Santiago", "Santiago_I_Concepcion").
++SetInterface("Santiago", "Santiago_I_RC_12").
++SetInterface("Santiago", "Santiago_I_RC_Nacional").
++SetInterface("Santiago", "Santiago_I_NodeID16").
++SetInterface("Santiago", "Santiago_I_LaTTSerena").
+
++SetNode("UCT").
++SetAdminDist("UCT", "static", 1).
++SetAdminDist("UCT", "bgp", 2).
++SetAdminDist("UCT", "ospf", 3).
++SetInterface("UCT", "UCT_I_NodeID13").
+
++SetNode("PITsTTNacionales").
++SetAdminDist("PITsTTNacionales", "static", 1).
++SetAdminDist("PITsTTNacionales", "bgp", 2).
++SetAdminDist("PITsTTNacionales", "ospf", 3).
++SetInterface("PITsTTNacionales", "PITsTTNacionales_I_RC_Nacional").
+
++SetNode("UACH").
++SetAdminDist("UACH", "static", 1).
++SetAdminDist("UACH", "bgp", 2).
++SetAdminDist("UACH", "ospf", 3).
++SetInterface("UACH", "UACH_I_Valdivia").
+
++SetNode("RedCLARA").
++SetAdminDist("RedCLARA", "static", 1).
++SetAdminDist("RedCLARA", "bgp", 2).
++SetAdminDist("RedCLARA", "ospf", 3).
++SetInterface("RedCLARA", "RedCLARA_I_RC_12").
+
++SetNode("NodeID13").
++SetAdminDist("NodeID13", "static", 1).
++SetAdminDist("NodeID13", "bgp", 2).
++SetAdminDist("NodeID13", "ospf", 3).
++SetInterface("NodeID13", "NodeID13_I_UFRO").
++SetInterface("NodeID13", "NodeID13_I_Temuco").
++SetInterface("NodeID13", "NodeID13_I_UCT").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_Concepcion").
++SetInterface("NodeID14", "NodeID14_I_UDEC").
++SetInterface("NodeID14", "NodeID14_I_UBB").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_ULS").
++SetInterface("NodeID15", "NodeID15_I_AURA").
++SetInterface("NodeID15", "NodeID15_I_LaTTSerena").
+
++SetNode("NodeID16").
++SetAdminDist("NodeID16", "static", 1).
++SetAdminDist("NodeID16", "bgp", 2).
++SetAdminDist("NodeID16", "ospf", 3).
++SetInterface("NodeID16", "NodeID16_I_Santiago").
++SetInterface("NodeID16", "NodeID16_I_UTEM").
++SetInterface("NodeID16", "NodeID16_I_USACH").
++SetInterface("NodeID16", "NodeID16_I_UCHILE").
++SetInterface("NodeID16", "NodeID16_I_REUNA").
++SetInterface("NodeID16", "NodeID16_I_UMCE").
+
++SetNode("ULAGOS").
++SetAdminDist("ULAGOS", "static", 1).
++SetAdminDist("ULAGOS", "bgp", 2).
++SetAdminDist("ULAGOS", "ospf", 3).
++SetInterface("ULAGOS", "ULAGOS_I_Osorno").
++SetInterface("ULAGOS", "ULAGOS_I_ULAGOTTPuertoTTMontt").
+
++SetNode("Copiapo").
++SetAdminDist("Copiapo", "static", 1).
++SetAdminDist("Copiapo", "bgp", 2).
++SetAdminDist("Copiapo", "ospf", 3).
++SetInterface("Copiapo", "Copiapo_I_UDA").
++SetInterface("Copiapo", "Copiapo_I_Antofagasta").
++SetInterface("Copiapo", "Copiapo_I_LaTTSerena").
+
++SetNode("AURA").
++SetAdminDist("AURA", "static", 1).
++SetAdminDist("AURA", "bgp", 2).
++SetAdminDist("AURA", "ospf", 3).
++SetInterface("AURA", "AURA_I_NodeID15").
+
++SetNode("UCN").
++SetAdminDist("UCN", "static", 1).
++SetAdminDist("UCN", "bgp", 2).
++SetAdminDist("UCN", "ospf", 3).
++SetInterface("UCN", "UCN_I_Antofagasta").
+
++SetNode("UMCE").
++SetAdminDist("UMCE", "static", 1).
++SetAdminDist("UMCE", "bgp", 2).
++SetAdminDist("UMCE", "ospf", 3).
++SetInterface("UMCE", "UMCE_I_NodeID16").
+
++SetNode("UFRO").
++SetAdminDist("UFRO", "static", 1).
++SetAdminDist("UFRO", "bgp", 2).
++SetAdminDist("UFRO", "ospf", 3).
++SetInterface("UFRO", "UFRO_I_NodeID13").
+
++SetNode("RC_12").
++SetAdminDist("RC_12", "static", 1).
++SetAdminDist("RC_12", "bgp", 2).
++SetAdminDist("RC_12", "ospf", 3).
++SetInterface("RC_12", "RC_12_I_Santiago").
++SetInterface("RC_12", "RC_12_I_RedCLARA").
+
++SetNode("UTA").
++SetAdminDist("UTA", "static", 1).
++SetAdminDist("UTA", "bgp", 2).
++SetAdminDist("UTA", "ospf", 3).
++SetInterface("UTA", "UTA_I_Arica").
+
++SetNode("ULS").
++SetAdminDist("ULS", "static", 1).
++SetAdminDist("ULS", "bgp", 2).
++SetAdminDist("ULS", "ospf", 3).
++SetInterface("ULS", "ULS_I_NodeID15").
+
++SetNode("UNAP").
++SetAdminDist("UNAP", "static", 1).
++SetAdminDist("UNAP", "bgp", 2).
++SetAdminDist("UNAP", "ospf", 3).
++SetInterface("UNAP", "UNAP_I_Iquique").
+
++SetNode("Valdivia").
++SetAdminDist("Valdivia", "static", 1).
++SetAdminDist("Valdivia", "bgp", 2).
++SetAdminDist("Valdivia", "ospf", 3).
++SetInterface("Valdivia", "Valdivia_I_Osorno").
++SetInterface("Valdivia", "Valdivia_I_Temuco").
++SetInterface("Valdivia", "Valdivia_I_UACH").
+
++SetNode("USACH").
++SetAdminDist("USACH", "static", 1).
++SetAdminDist("USACH", "bgp", 2).
++SetAdminDist("USACH", "ospf", 3).
++SetInterface("USACH", "USACH_I_NodeID16").
+
++SetNode("UCHILE").
++SetAdminDist("UCHILE", "static", 1).
++SetAdminDist("UCHILE", "bgp", 2).
++SetAdminDist("UCHILE", "ospf", 3).
++SetInterface("UCHILE", "UCHILE_I_NodeID16").
+
++SetNode("UDA").
++SetAdminDist("UDA", "static", 1).
++SetAdminDist("UDA", "bgp", 2).
++SetAdminDist("UDA", "ospf", 3).
++SetInterface("UDA", "UDA_I_Copiapo").
+
++SetNode("UNAPTTSedeTTSantiago").
++SetAdminDist("UNAPTTSedeTTSantiago", "static", 1).
++SetAdminDist("UNAPTTSedeTTSantiago", "bgp", 2).
++SetAdminDist("UNAPTTSedeTTSantiago", "ospf", 3).
++SetInterface("UNAPTTSedeTTSantiago", "UNAPTTSedeTTSantiago_I_REUNA").
+
++SetNode("UBB").
++SetAdminDist("UBB", "static", 1).
++SetAdminDist("UBB", "bgp", 2).
++SetAdminDist("UBB", "ospf", 3).
++SetInterface("UBB", "UBB_I_NodeID14").
+
++SetNode("REUNA").
++SetAdminDist("REUNA", "static", 1).
++SetAdminDist("REUNA", "bgp", 2).
++SetAdminDist("REUNA", "ospf", 3).
++SetInterface("REUNA", "REUNA_I_UNAPTTSedeTTSantiago").
++SetInterface("REUNA", "REUNA_I_NodeID16").
+
++SetNode("ULAGOTTPuertoTTMontt").
++SetAdminDist("ULAGOTTPuertoTTMontt", "static", 1).
++SetAdminDist("ULAGOTTPuertoTTMontt", "bgp", 2).
++SetAdminDist("ULAGOTTPuertoTTMontt", "ospf", 3).
++SetInterface("ULAGOTTPuertoTTMontt", "ULAGOTTPuertoTTMontt_I_ULAGOS").
+
++SetLink("Arica_I_Iquique", "Iquique_I_Arica").
++SetLink("Arica_I_UTA", "UTA_I_Arica").
++SetLink("UTEM_I_NodeID16", "NodeID16_I_UTEM").
++SetLink("Antofagasta_I_Iquique", "Iquique_I_Antofagasta").
++SetLink("Antofagasta_I_UCN", "UCN_I_Antofagasta").
++SetLink("Antofagasta_I_Copiapo", "Copiapo_I_Antofagasta").
++SetLink("Iquique_I_UNAP", "UNAP_I_Iquique").
++SetLink("Temuco_I_Valdivia", "Valdivia_I_Temuco").
++SetLink("Temuco_I_Concepcion", "Concepcion_I_Temuco").
++SetLink("Temuco_I_NodeID13", "NodeID13_I_Temuco").
++SetLink("Osorno_I_Valdivia", "Valdivia_I_Osorno").
++SetLink("Osorno_I_ULAGOS", "ULAGOS_I_Osorno").
++SetLink("Concepcion_I_Santiago", "Santiago_I_Concepcion").
++SetLink("Concepcion_I_NodeID14", "NodeID14_I_Concepcion").
++SetLink("RC_Nacional_I_Santiago", "Santiago_I_RC_Nacional").
++SetLink("RC_Nacional_I_PITsTTNacionales", "PITsTTNacionales_I_RC_Nacional").
++SetLink("UDEC_I_NodeID14", "NodeID14_I_UDEC").
++SetLink("LaTTSerena_I_Santiago", "Santiago_I_LaTTSerena").
++SetLink("LaTTSerena_I_Copiapo", "Copiapo_I_LaTTSerena").
++SetLink("LaTTSerena_I_NodeID15", "NodeID15_I_LaTTSerena").
++SetLink("Santiago_I_RC_12", "RC_12_I_Santiago").
++SetLink("Santiago_I_NodeID16", "NodeID16_I_Santiago").
++SetLink("UCT_I_NodeID13", "NodeID13_I_UCT").
++SetLink("UACH_I_Valdivia", "Valdivia_I_UACH").
++SetLink("RedCLARA_I_RC_12", "RC_12_I_RedCLARA").
++SetLink("NodeID13_I_UFRO", "UFRO_I_NodeID13").
++SetLink("NodeID14_I_UBB", "UBB_I_NodeID14").
++SetLink("NodeID15_I_ULS", "ULS_I_NodeID15").
++SetLink("NodeID15_I_AURA", "AURA_I_NodeID15").
++SetLink("NodeID16_I_USACH", "USACH_I_NodeID16").
++SetLink("NodeID16_I_UCHILE", "UCHILE_I_NodeID16").
++SetLink("NodeID16_I_REUNA", "REUNA_I_NodeID16").
++SetLink("NodeID16_I_UMCE", "UMCE_I_NodeID16").
++SetLink("ULAGOS_I_ULAGOTTPuertoTTMontt", "ULAGOTTPuertoTTMontt_I_ULAGOS").
++SetLink("Copiapo_I_UDA", "UDA_I_Copiapo").
++SetLink("UNAPTTSedeTTSantiago_I_REUNA", "REUNA_I_UNAPTTSedeTTSantiago").
+
+
++SetNetwork("Arica", "N_Arica").
++SetNetwork("UDEC", "N_UDEC").
++SetNetwork("RC_12", "N_RC_12").
++SetNetwork("Concepcion", "N_Concepcion").
++SetNetwork("NodeID15", "N_NodeID15").
++SetNetwork("ULS", "N_ULS").
++SetNetwork("REUNA", "N_REUNA").
++SetNetwork("NodeID16", "N_NodeID16").
++SetNetwork("NodeID13", "N_NodeID13").
++SetNetwork("UFRO", "N_UFRO").

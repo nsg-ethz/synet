@@ -1,0 +1,51 @@
+
++Fwd("N_TU", "ASTI", "KEIO", "ospf").
++Fwd("N_TU", "KEIO", "AIT", "ospf").
++Fwd("N_TU", "AIT", "TU", "ospf").
++Fwd("N_TU", "USM", "KEIO", "ospf").
++Fwd("N_TU", "ITB", "KEIO", "ospf").
++Fwd("N_TU", "TP", "KEIO", "ospf").
++Fwd("N_TU", "IOIT", "KEIO", "ospf").
++Fwd("N_TU", "NAIST", "KEIO", "ospf").
++Fwd("N_TU", "UNIBRAW", "ITB", "ospf").
+
++Fwd("N_TP", "ASTI", "KEIO", "ospf").
++Fwd("N_TP", "KEIO", "TP", "ospf").
++Fwd("N_TP", "AIT", "KEIO", "ospf").
++Fwd("N_TP", "USM", "KEIO", "ospf").
++Fwd("N_TP", "TU", "AIT", "ospf").
++Fwd("N_TP", "ITB", "KEIO", "ospf").
++Fwd("N_TP", "IOIT", "KEIO", "ospf").
++Fwd("N_TP", "NAIST", "KEIO", "ospf").
++Fwd("N_TP", "UNIBRAW", "ITB", "ospf").
+
++Fwd("N_USM", "ASTI", "KEIO", "ospf").
++Fwd("N_USM", "KEIO", "USM", "ospf").
++Fwd("N_USM", "AIT", "KEIO", "ospf").
++Fwd("N_USM", "TU", "AIT", "ospf").
++Fwd("N_USM", "ITB", "KEIO", "ospf").
++Fwd("N_USM", "TP", "KEIO", "ospf").
++Fwd("N_USM", "IOIT", "KEIO", "ospf").
++Fwd("N_USM", "NAIST", "KEIO", "ospf").
++Fwd("N_USM", "UNIBRAW", "ITB", "ospf").
+
++Fwd("N_NAIST", "ASTI", "KEIO", "ospf").
++Fwd("N_NAIST", "KEIO", "NAIST", "ospf").
++Fwd("N_NAIST", "AIT", "KEIO", "ospf").
++Fwd("N_NAIST", "USM", "KEIO", "ospf").
++Fwd("N_NAIST", "TU", "AIT", "ospf").
++Fwd("N_NAIST", "ITB", "KEIO", "ospf").
++Fwd("N_NAIST", "TP", "KEIO", "ospf").
++Fwd("N_NAIST", "IOIT", "KEIO", "ospf").
++Fwd("N_NAIST", "UNIBRAW", "ITB", "ospf").
+
++Fwd("N_IOIT", "ASTI", "KEIO", "ospf").
++Fwd("N_IOIT", "KEIO", "IOIT", "ospf").
++Fwd("N_IOIT", "AIT", "KEIO", "ospf").
++Fwd("N_IOIT", "USM", "KEIO", "ospf").
++Fwd("N_IOIT", "TU", "AIT", "ospf").
++Fwd("N_IOIT", "ITB", "KEIO", "ospf").
++Fwd("N_IOIT", "TP", "KEIO", "ospf").
++Fwd("N_IOIT", "NAIST", "KEIO", "ospf").
++Fwd("N_IOIT", "UNIBRAW", "ITB", "ospf").
+

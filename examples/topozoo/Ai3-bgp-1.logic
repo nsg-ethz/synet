@@ -1,0 +1,81 @@
++SetNode("ASTI").
++SetAdminDist("ASTI", "static", 1).
++SetAdminDist("ASTI", "bgp", 2).
++SetAdminDist("ASTI", "ospf", 3).
++SetInterface("ASTI", "ASTI_I_KEIO").
+
++SetNode("KEIO").
++SetAdminDist("KEIO", "static", 1).
++SetAdminDist("KEIO", "bgp", 2).
++SetAdminDist("KEIO", "ospf", 3).
++SetInterface("KEIO", "KEIO_I_ASTI").
++SetInterface("KEIO", "KEIO_I_AIT").
++SetInterface("KEIO", "KEIO_I_USM").
++SetInterface("KEIO", "KEIO_I_ITB").
++SetInterface("KEIO", "KEIO_I_TP").
++SetInterface("KEIO", "KEIO_I_IOIT").
++SetInterface("KEIO", "KEIO_I_NAIST").
+
++SetNode("AIT").
++SetAdminDist("AIT", "static", 1).
++SetAdminDist("AIT", "bgp", 2).
++SetAdminDist("AIT", "ospf", 3).
++SetInterface("AIT", "AIT_I_TU").
++SetInterface("AIT", "AIT_I_KEIO").
+
++SetNode("USM").
++SetAdminDist("USM", "static", 1).
++SetAdminDist("USM", "bgp", 2).
++SetAdminDist("USM", "ospf", 3).
++SetInterface("USM", "USM_I_KEIO").
+
++SetNode("TU").
++SetAdminDist("TU", "static", 1).
++SetAdminDist("TU", "bgp", 2).
++SetAdminDist("TU", "ospf", 3).
++SetInterface("TU", "TU_I_AIT").
+
++SetNode("ITB").
++SetAdminDist("ITB", "static", 1).
++SetAdminDist("ITB", "bgp", 2).
++SetAdminDist("ITB", "ospf", 3).
++SetInterface("ITB", "ITB_I_UNIBRAW").
++SetInterface("ITB", "ITB_I_KEIO").
+
++SetNode("TP").
++SetAdminDist("TP", "static", 1).
++SetAdminDist("TP", "bgp", 2).
++SetAdminDist("TP", "ospf", 3).
++SetInterface("TP", "TP_I_KEIO").
+
++SetNode("IOIT").
++SetAdminDist("IOIT", "static", 1).
++SetAdminDist("IOIT", "bgp", 2).
++SetAdminDist("IOIT", "ospf", 3).
++SetInterface("IOIT", "IOIT_I_KEIO").
+
++SetNode("NAIST").
++SetAdminDist("NAIST", "static", 1).
++SetAdminDist("NAIST", "bgp", 2).
++SetAdminDist("NAIST", "ospf", 3).
++SetInterface("NAIST", "NAIST_I_KEIO").
+
++SetNode("UNIBRAW").
++SetAdminDist("UNIBRAW", "static", 1).
++SetAdminDist("UNIBRAW", "bgp", 2).
++SetAdminDist("UNIBRAW", "ospf", 3).
++SetInterface("UNIBRAW", "UNIBRAW_I_ITB").
+
++SetLink("ASTI_I_KEIO", "KEIO_I_ASTI").
++SetLink("KEIO_I_AIT", "AIT_I_KEIO").
++SetLink("KEIO_I_USM", "USM_I_KEIO").
++SetLink("KEIO_I_ITB", "ITB_I_KEIO").
++SetLink("KEIO_I_TP", "TP_I_KEIO").
++SetLink("KEIO_I_IOIT", "IOIT_I_KEIO").
++SetLink("KEIO_I_NAIST", "NAIST_I_KEIO").
++SetLink("AIT_I_TU", "TU_I_AIT").
++SetLink("ITB_I_UNIBRAW", "UNIBRAW_I_ITB").
+
+
++SetNetwork("TP", "N_TP").
++SetBGPAnnouncement("TP", "N_TP", "NBGP_TP", "1;2;3", 3).

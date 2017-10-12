@@ -1,0 +1,24 @@
+
++Fwd("N_Vienna1", "St_TTPolten", "Vienna1", "static").
++Fwd("N_Vienna1", "Innsbruck2", "Vienna1", "static").
++Fwd("N_Vienna1", "Innsbruck1", "Innsbruck2", "static").
++Fwd("N_Vienna1", "Linz2", "Linz1", "static").
++Fwd("N_Vienna1", "Linz1", "Vienna2", "static").
++Fwd("N_Vienna1", "Vienna2", "Graz1", "static").
++Fwd("N_Vienna1", "Graz1", "Graz2", "static").
++Fwd("N_Vienna1", "Graz2", "Vienna1", "static").
++Fwd("N_Vienna1", "NodeID10", "Vienna1", "static").
++Fwd("N_Vienna1", "Leoben", "Graz1", "static").
++Fwd("N_Vienna1", "SANET", "NodeID10", "static").
++Fwd("N_Vienna1", "Klagenfurt1", "Vienna1", "static").
++Fwd("N_Vienna1", "Klagenfurt2", "Klagenfurt1", "static").
++Fwd("N_Vienna1", "GEANT", "NodeID10", "static").
++Fwd("N_Vienna1", "Eisenstadt", "Vienna1", "static").
++Fwd("N_Vienna1", "Krems", "Vienna2", "static").
++Fwd("N_Vienna1", "CESNET", "NodeID10", "static").
++Fwd("N_Vienna1", "Dornbirn", "Innsbruck1", "static").
++Fwd("N_Vienna1", "Level3", "NodeID10", "static").
++Fwd("N_Vienna1", "Salzburg1", "Vienna1", "static").
++Fwd("N_Vienna1", "VIX", "NodeID10", "static").
++Fwd("N_Vienna1", "Salzburg2", "Salzburg1", "static").
+

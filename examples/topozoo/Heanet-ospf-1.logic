@@ -1,0 +1,71 @@
++SetNode("CityWest").
++SetAdminDist("CityWest", "static", 1).
++SetAdminDist("CityWest", "bgp", 2).
++SetAdminDist("CityWest", "ospf", 3).
++SetInterface("CityWest", "CityWest_I_DCUTT_DublinTTCityTTUniversity").
++SetInterface("CityWest", "CityWest_I_Galway").
++SetInterface("CityWest", "CityWest_I_Limerick").
++SetInterface("CityWest", "CityWest_I_TDCTT_TrinityTTCollegeTTDublin_").
++SetInterface("CityWest", "CityWest_I_Cork").
++SetInterface("CityWest", "CityWest_I_Kilcarbery").
+
++SetNode("DCUTT_DublinTTCityTTUniversity").
++SetAdminDist("DCUTT_DublinTTCityTTUniversity", "static", 1).
++SetAdminDist("DCUTT_DublinTTCityTTUniversity", "bgp", 2).
++SetAdminDist("DCUTT_DublinTTCityTTUniversity", "ospf", 3).
++SetInterface("DCUTT_DublinTTCityTTUniversity", "DCUTT_DublinTTCityTTUniversity_I_CityWest").
++SetInterface("DCUTT_DublinTTCityTTUniversity", "DCUTT_DublinTTCityTTUniversity_I_Kilcarbery").
+
++SetNode("Galway").
++SetAdminDist("Galway", "static", 1).
++SetAdminDist("Galway", "bgp", 2).
++SetAdminDist("Galway", "ospf", 3).
++SetInterface("Galway", "Galway_I_CityWest").
++SetInterface("Galway", "Galway_I_Kilcarbery").
+
++SetNode("Limerick").
++SetAdminDist("Limerick", "static", 1).
++SetAdminDist("Limerick", "bgp", 2).
++SetAdminDist("Limerick", "ospf", 3).
++SetInterface("Limerick", "Limerick_I_CityWest").
++SetInterface("Limerick", "Limerick_I_Kilcarbery").
++SetInterface("Limerick", "Limerick_I_Cork").
+
++SetNode("TDCTT_TrinityTTCollegeTTDublin_").
++SetAdminDist("TDCTT_TrinityTTCollegeTTDublin_", "static", 1).
++SetAdminDist("TDCTT_TrinityTTCollegeTTDublin_", "bgp", 2).
++SetAdminDist("TDCTT_TrinityTTCollegeTTDublin_", "ospf", 3).
++SetInterface("TDCTT_TrinityTTCollegeTTDublin_", "TDCTT_TrinityTTCollegeTTDublin__I_CityWest").
++SetInterface("TDCTT_TrinityTTCollegeTTDublin_", "TDCTT_TrinityTTCollegeTTDublin__I_Kilcarbery").
+
++SetNode("Cork").
++SetAdminDist("Cork", "static", 1).
++SetAdminDist("Cork", "bgp", 2).
++SetAdminDist("Cork", "ospf", 3).
++SetInterface("Cork", "Cork_I_CityWest").
++SetInterface("Cork", "Cork_I_Limerick").
+
++SetNode("Kilcarbery").
++SetAdminDist("Kilcarbery", "static", 1).
++SetAdminDist("Kilcarbery", "bgp", 2).
++SetAdminDist("Kilcarbery", "ospf", 3).
++SetInterface("Kilcarbery", "Kilcarbery_I_CityWest").
++SetInterface("Kilcarbery", "Kilcarbery_I_DCUTT_DublinTTCityTTUniversity").
++SetInterface("Kilcarbery", "Kilcarbery_I_Limerick").
++SetInterface("Kilcarbery", "Kilcarbery_I_Galway").
++SetInterface("Kilcarbery", "Kilcarbery_I_TDCTT_TrinityTTCollegeTTDublin_").
+
++SetLink("CityWest_I_DCUTT_DublinTTCityTTUniversity", "DCUTT_DublinTTCityTTUniversity_I_CityWest").
++SetLink("CityWest_I_Galway", "Galway_I_CityWest").
++SetLink("CityWest_I_Limerick", "Limerick_I_CityWest").
++SetLink("CityWest_I_TDCTT_TrinityTTCollegeTTDublin_", "TDCTT_TrinityTTCollegeTTDublin__I_CityWest").
++SetLink("CityWest_I_Cork", "Cork_I_CityWest").
++SetLink("CityWest_I_Kilcarbery", "Kilcarbery_I_CityWest").
++SetLink("DCUTT_DublinTTCityTTUniversity_I_Kilcarbery", "Kilcarbery_I_DCUTT_DublinTTCityTTUniversity").
++SetLink("Galway_I_Kilcarbery", "Kilcarbery_I_Galway").
++SetLink("Limerick_I_Kilcarbery", "Kilcarbery_I_Limerick").
++SetLink("Limerick_I_Cork", "Cork_I_Limerick").
++SetLink("TDCTT_TrinityTTCollegeTTDublin__I_Kilcarbery", "Kilcarbery_I_TDCTT_TrinityTTCollegeTTDublin_").
+
+
++SetNetwork("Galway", "N_Galway").

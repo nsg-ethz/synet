@@ -1,0 +1,8 @@
+
++Fwd("N_Pittsburgh", "Phoenix", "SantaTTClara", "ospf").
++Fwd("N_Pittsburgh", "SantaTTClara", "Pittsburgh", "ospf").
++Fwd("N_Pittsburgh", "Tucson", "Phoenix", "ospf").
++Fwd("N_Pittsburgh", "Washington_TTDC", "Baltimore", "ospf").
++Fwd("N_Pittsburgh", "Baltimore", "Pittsburgh", "ospf").
++Fwd("N_Pittsburgh", "Seattle", "SantaTTClara", "ospf").
+

@@ -1,0 +1,20 @@
+
++Fwd("N_Perth1", "AliceTTSprings", "Darwin", "static").
++Fwd("N_Perth1", "Darwin", "Adelaide1", "static").
++Fwd("N_Perth1", "Adelaide1", "Perth1", "static").
++Fwd("N_Perth1", "Brisbane2", "Sydney2", "static").
++Fwd("N_Perth1", "Sydney2", "Melbourne2", "static").
++Fwd("N_Perth1", "Melbourne2", "Melbourne1", "static").
++Fwd("N_Perth1", "Melbourne1", "Adelaide1", "static").
++Fwd("N_Perth1", "Sydney1", "Sydney2", "static").
++Fwd("N_Perth1", "Perth2", "Perth1", "static").
++Fwd("N_Perth1", "Armidale", "Sydney2", "static").
++Fwd("N_Perth1", "Cairns", "Townsville", "static").
++Fwd("N_Perth1", "Townsville", "Rockhampton", "static").
++Fwd("N_Perth1", "Rockhampton", "Brisbane1", "static").
++Fwd("N_Perth1", "Brisbane1", "Sydney1", "static").
++Fwd("N_Perth1", "Hobart", "Melbourne1", "static").
++Fwd("N_Perth1", "Canberra2", "Sydney1", "static").
++Fwd("N_Perth1", "Canberra1", "Melbourne1", "static").
++Fwd("N_Perth1", "Adelaide2", "Perth2", "static").
+

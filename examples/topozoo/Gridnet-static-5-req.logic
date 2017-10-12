@@ -1,0 +1,46 @@
+
++Fwd("N_Newark", "Houston", "LosTTAngeles", "static").
++Fwd("N_Newark", "LosTTAngeles", "NewTTYork", "static").
++Fwd("N_Newark", "NewTTYork", "Newark", "static").
++Fwd("N_Newark", "SanTTFrancisco", "Newark", "static").
++Fwd("N_Newark", "Dallas", "SanTTFrancisco", "static").
++Fwd("N_Newark", "Miami", "Atlanta", "static").
++Fwd("N_Newark", "Atlanta", "Newark", "static").
++Fwd("N_Newark", "Washington_TTDC", "Newark", "static").
+
++Fwd("N_Houston", "SanTTFrancisco", "Newark", "static").
++Fwd("N_Houston", "Newark", "Washington_TTDC", "static").
++Fwd("N_Houston", "Washington_TTDC", "Dallas", "static").
++Fwd("N_Houston", "Dallas", "Houston", "static").
++Fwd("N_Houston", "NewTTYork", "Houston", "static").
++Fwd("N_Houston", "Miami", "Houston", "static").
++Fwd("N_Houston", "Atlanta", "Miami", "static").
++Fwd("N_Houston", "LosTTAngeles", "Houston", "static").
+
++Fwd("N_LosTTAngeles", "Houston", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "NewTTYork", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Dallas", "Houston", "static").
++Fwd("N_LosTTAngeles", "Miami", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Newark", "Washington_TTDC", "static").
++Fwd("N_LosTTAngeles", "Washington_TTDC", "Dallas", "static").
++Fwd("N_LosTTAngeles", "Atlanta", "Miami", "static").
+
++Fwd("N_Dallas", "Houston", "Dallas", "static").
++Fwd("N_Dallas", "SanTTFrancisco", "Newark", "static").
++Fwd("N_Dallas", "Newark", "Washington_TTDC", "static").
++Fwd("N_Dallas", "Washington_TTDC", "Dallas", "static").
++Fwd("N_Dallas", "NewTTYork", "Newark", "static").
++Fwd("N_Dallas", "Miami", "Atlanta", "static").
++Fwd("N_Dallas", "Atlanta", "Washington_TTDC", "static").
++Fwd("N_Dallas", "LosTTAngeles", "NewTTYork", "static").
+
++Fwd("N_SanTTFrancisco", "Houston", "LosTTAngeles", "static").
++Fwd("N_SanTTFrancisco", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "NewTTYork", "Newark", "static").
++Fwd("N_SanTTFrancisco", "Newark", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "Dallas", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "Miami", "Atlanta", "static").
++Fwd("N_SanTTFrancisco", "Atlanta", "Washington_TTDC", "static").
++Fwd("N_SanTTFrancisco", "Washington_TTDC", "SanTTFrancisco", "static").
+

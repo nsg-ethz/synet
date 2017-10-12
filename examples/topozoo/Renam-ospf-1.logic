@@ -1,0 +1,40 @@
++SetNode("TTTTTTTTTTTTTTCahul").
++SetAdminDist("TTTTTTTTTTTTTTCahul", "static", 1).
++SetAdminDist("TTTTTTTTTTTTTTCahul", "bgp", 2).
++SetAdminDist("TTTTTTTTTTTTTTCahul", "ospf", 3).
++SetInterface("TTTTTTTTTTTTTTCahul", "TTTTTTTTTTTTTTCahul_I_Chisinau").
+
++SetNode("Balti").
++SetAdminDist("Balti", "static", 1).
++SetAdminDist("Balti", "bgp", 2).
++SetAdminDist("Balti", "ospf", 3).
++SetInterface("Balti", "Balti_I_Chisinau").
+
++SetNode("Chisinau").
++SetAdminDist("Chisinau", "static", 1).
++SetAdminDist("Chisinau", "bgp", 2).
++SetAdminDist("Chisinau", "ospf", 3).
++SetInterface("Chisinau", "Chisinau_I_TTTTTTTTTTTTTTCahul").
++SetInterface("Chisinau", "Chisinau_I_Balti").
++SetInterface("Chisinau", "Chisinau_I_StarNetTTISP").
++SetInterface("Chisinau", "Chisinau_I_RoEduNet").
+
++SetNode("StarNetTTISP").
++SetAdminDist("StarNetTTISP", "static", 1).
++SetAdminDist("StarNetTTISP", "bgp", 2).
++SetAdminDist("StarNetTTISP", "ospf", 3).
++SetInterface("StarNetTTISP", "StarNetTTISP_I_Chisinau").
+
++SetNode("RoEduNet").
++SetAdminDist("RoEduNet", "static", 1).
++SetAdminDist("RoEduNet", "bgp", 2).
++SetAdminDist("RoEduNet", "ospf", 3).
++SetInterface("RoEduNet", "RoEduNet_I_Chisinau").
+
++SetLink("TTTTTTTTTTTTTTCahul_I_Chisinau", "Chisinau_I_TTTTTTTTTTTTTTCahul").
++SetLink("Balti_I_Chisinau", "Chisinau_I_Balti").
++SetLink("Chisinau_I_StarNetTTISP", "StarNetTTISP_I_Chisinau").
++SetLink("Chisinau_I_RoEduNet", "RoEduNet_I_Chisinau").
+
+
++SetNetwork("StarNetTTISP", "N_StarNetTTISP").

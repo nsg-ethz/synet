@@ -1,0 +1,19 @@
+
++Fwd("N_SDC", "CASE", "Lincoln", "static").
++Fwd("N_SDC", "Lincoln", "MIT", "static").
++Fwd("N_SDC", "MIT", "ILLINOIS", "static").
++Fwd("N_SDC", "ILLINOIS", "UTAH", "static").
++Fwd("N_SDC", "UTAH", "SDC", "static").
++Fwd("N_SDC", "RAND", "SDC", "static").
++Fwd("N_SDC", "BBNID9", "RAND", "static").
++Fwd("N_SDC", "HARVARD", "BBNID9", "static").
++Fwd("N_SDC", "Stanford", "AMES", "static").
++Fwd("N_SDC", "AMES", "SRI", "static").
++Fwd("N_SDC", "SRI", "UTAH", "static").
++Fwd("N_SDC", "UCLA", "RAND", "static").
++Fwd("N_SDC", "CARNEGIE", "CASE", "static").
++Fwd("N_SDC", "BURROUGHS", "HARVARD", "static").
++Fwd("N_SDC", "UCSB", "SRI", "static").
++Fwd("N_SDC", "MITRE", "BURROUGHS", "static").
++Fwd("N_SDC", "BBN", "BBNID9", "static").
+

@@ -1,0 +1,46 @@
+
++Fwd("N_Oslo", "NETNOD", "Stockholm", "static").
++Fwd("N_Oslo", "Stockholm", "Oslo", "static").
++Fwd("N_Oslo", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Oslo", "Copenhagen", "Oslo", "static").
++Fwd("N_Oslo", "GEANT", "Stockholm", "static").
++Fwd("N_Oslo", "Helsinki", "Stockholm", "static").
++Fwd("N_Oslo", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_Oslo", "GeneralTTInternet", "Stockholm", "static").
+
++Fwd("N_GeneralTTInternet", "NETNOD", "Stockholm", "static").
++Fwd("N_GeneralTTInternet", "Stockholm", "GeneralTTInternet", "static").
++Fwd("N_GeneralTTInternet", "Reykjavik", "Copenhagen", "static").
++Fwd("N_GeneralTTInternet", "Copenhagen", "Stockholm", "static").
++Fwd("N_GeneralTTInternet", "GEANT", "Stockholm", "static").
++Fwd("N_GeneralTTInternet", "Helsinki", "Stockholm", "static").
++Fwd("N_GeneralTTInternet", "Oslo", "Stockholm", "static").
++Fwd("N_GeneralTTInternet", "StTTPetersburg", "Stockholm", "static").
+
++Fwd("N_GEANT", "NETNOD", "Stockholm", "static").
++Fwd("N_GEANT", "Stockholm", "GEANT", "static").
++Fwd("N_GEANT", "Reykjavik", "Copenhagen", "static").
++Fwd("N_GEANT", "Copenhagen", "Stockholm", "static").
++Fwd("N_GEANT", "Helsinki", "Stockholm", "static").
++Fwd("N_GEANT", "Oslo", "Stockholm", "static").
++Fwd("N_GEANT", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_GEANT", "GeneralTTInternet", "Stockholm", "static").
+
++Fwd("N_Helsinki", "NETNOD", "Stockholm", "static").
++Fwd("N_Helsinki", "Stockholm", "Helsinki", "static").
++Fwd("N_Helsinki", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Helsinki", "Copenhagen", "Stockholm", "static").
++Fwd("N_Helsinki", "GEANT", "Stockholm", "static").
++Fwd("N_Helsinki", "Oslo", "Stockholm", "static").
++Fwd("N_Helsinki", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_Helsinki", "GeneralTTInternet", "Stockholm", "static").
+
++Fwd("N_NETNOD", "Reykjavik", "Copenhagen", "static").
++Fwd("N_NETNOD", "Copenhagen", "Stockholm", "static").
++Fwd("N_NETNOD", "Stockholm", "NETNOD", "static").
++Fwd("N_NETNOD", "GEANT", "Stockholm", "static").
++Fwd("N_NETNOD", "Helsinki", "Stockholm", "static").
++Fwd("N_NETNOD", "Oslo", "Stockholm", "static").
++Fwd("N_NETNOD", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_NETNOD", "GeneralTTInternet", "Stockholm", "static").
+

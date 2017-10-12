@@ -1,0 +1,36 @@
+
++Fwd("N_Pretoria", "PortTTElizabeth", "EastTTLondon", "static").
++Fwd("N_Pretoria", "EastTTLondon", "Durban", "static").
++Fwd("N_Pretoria", "Durban", "Pretoria", "static").
++Fwd("N_Pretoria", "Bloemfontein", "Johannesburg", "static").
++Fwd("N_Pretoria", "Johannesburg", "Pretoria", "static").
++Fwd("N_Pretoria", "CapeTTTown", "PortTTElizabeth", "static").
+
++Fwd("N_Bloemfontein", "PortTTElizabeth", "CapeTTTown", "static").
++Fwd("N_Bloemfontein", "CapeTTTown", "Bloemfontein", "static").
++Fwd("N_Bloemfontein", "EastTTLondon", "Durban", "static").
++Fwd("N_Bloemfontein", "Durban", "Pretoria", "static").
++Fwd("N_Bloemfontein", "Pretoria", "Johannesburg", "static").
++Fwd("N_Bloemfontein", "Johannesburg", "Bloemfontein", "static").
+
++Fwd("N_Durban", "PortTTElizabeth", "EastTTLondon", "static").
++Fwd("N_Durban", "EastTTLondon", "Durban", "static").
++Fwd("N_Durban", "Bloemfontein", "CapeTTTown", "static").
++Fwd("N_Durban", "CapeTTTown", "PortTTElizabeth", "static").
++Fwd("N_Durban", "Johannesburg", "Pretoria", "static").
++Fwd("N_Durban", "Pretoria", "Durban", "static").
+
++Fwd("N_Johannesburg", "PortTTElizabeth", "EastTTLondon", "static").
++Fwd("N_Johannesburg", "EastTTLondon", "Durban", "static").
++Fwd("N_Johannesburg", "Durban", "Pretoria", "static").
++Fwd("N_Johannesburg", "Pretoria", "Johannesburg", "static").
++Fwd("N_Johannesburg", "Bloemfontein", "Johannesburg", "static").
++Fwd("N_Johannesburg", "CapeTTTown", "Bloemfontein", "static").
+
++Fwd("N_PortTTElizabeth", "EastTTLondon", "PortTTElizabeth", "static").
++Fwd("N_PortTTElizabeth", "Durban", "Pretoria", "static").
++Fwd("N_PortTTElizabeth", "Pretoria", "Johannesburg", "static").
++Fwd("N_PortTTElizabeth", "Johannesburg", "Bloemfontein", "static").
++Fwd("N_PortTTElizabeth", "Bloemfontein", "CapeTTTown", "static").
++Fwd("N_PortTTElizabeth", "CapeTTTown", "PortTTElizabeth", "static").
+

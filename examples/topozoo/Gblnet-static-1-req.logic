@@ -1,0 +1,9 @@
+
++Fwd("N_Paris", "NewTTYork", "Amsterdam", "static").
++Fwd("N_Paris", "Amsterdam", "Paris", "static").
++Fwd("N_Paris", "Moscow", "StTTPetersburg", "static").
++Fwd("N_Paris", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_Paris", "Stockholm", "Amsterdam", "static").
++Fwd("N_Paris", "London", "Amsterdam", "static").
++Fwd("N_Paris", "Frankfurt", "Amsterdam", "static").
+

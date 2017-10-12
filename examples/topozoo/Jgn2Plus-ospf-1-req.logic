@@ -1,0 +1,19 @@
+
++Fwd("N_Tohoku", "Singapore", "Tokyo", "ospf").
++Fwd("N_Tohoku", "Tokyo", "Tohoku", "ospf").
++Fwd("N_Tohoku", "Hongkong", "Tokyo", "ospf").
++Fwd("N_Tohoku", "LosTTAngeles", "NodeID15", "ospf").
++Fwd("N_Tohoku", "NodeID15", "Tokyo", "ospf").
++Fwd("N_Tohoku", "Hokuriku", "Tokyo", "ospf").
++Fwd("N_Tohoku", "Tokai", "Tokyo", "ospf").
++Fwd("N_Tohoku", "Chicago", "NodeID15", "ospf").
++Fwd("N_Tohoku", "Okinawa", "Kyushu", "ospf").
++Fwd("N_Tohoku", "Kyushu", "Chugoku", "ospf").
++Fwd("N_Tohoku", "Chugoku", "Kinki", "ospf").
++Fwd("N_Tohoku", "Kinki", "Tokai", "ospf").
++Fwd("N_Tohoku", "Bangkok", "Tokyo", "ospf").
++Fwd("N_Tohoku", "Shikoku", "Kinki", "ospf").
++Fwd("N_Tohoku", "Busan", "Kyushu", "ospf").
++Fwd("N_Tohoku", "Shinetsu", "Tokyo", "ospf").
++Fwd("N_Tohoku", "Hokkaido", "Tohoku", "ospf").
+

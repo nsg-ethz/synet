@@ -1,0 +1,77 @@
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_Washington_TTDC").
++SetInterface("NewTTYork", "NewTTYork_I_Baltimore").
++SetInterface("NewTTYork", "NewTTYork_I_Chicago").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Atlanta").
++SetInterface("Chicago", "Chicago_I_NewTTYork").
+
++SetNode("PaloTTAlto").
++SetAdminDist("PaloTTAlto", "static", 1).
++SetAdminDist("PaloTTAlto", "bgp", 2).
++SetAdminDist("PaloTTAlto", "ospf", 3).
++SetInterface("PaloTTAlto", "PaloTTAlto_I_Atlanta").
++SetInterface("PaloTTAlto", "PaloTTAlto_I_Washington_TTDC").
+
++SetNode("Miami").
++SetAdminDist("Miami", "static", 1).
++SetAdminDist("Miami", "bgp", 2).
++SetAdminDist("Miami", "ospf", 3).
++SetInterface("Miami", "Miami_I_Atlanta").
++SetInterface("Miami", "Miami_I_Washington_TTDC").
+
++SetNode("Washington_TTDC").
++SetAdminDist("Washington_TTDC", "static", 1).
++SetAdminDist("Washington_TTDC", "bgp", 2).
++SetAdminDist("Washington_TTDC", "ospf", 3).
++SetInterface("Washington_TTDC", "Washington_TTDC_I_PaloTTAlto").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Miami").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Atlanta").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_NewTTYork").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Baltimore").
+
++SetNode("Atlanta").
++SetAdminDist("Atlanta", "static", 1).
++SetAdminDist("Atlanta", "bgp", 2).
++SetAdminDist("Atlanta", "ospf", 3).
++SetInterface("Atlanta", "Atlanta_I_PaloTTAlto").
++SetInterface("Atlanta", "Atlanta_I_Miami").
++SetInterface("Atlanta", "Atlanta_I_Washington_TTDC").
++SetInterface("Atlanta", "Atlanta_I_Chicago").
+
++SetNode("Baltimore").
++SetAdminDist("Baltimore", "static", 1).
++SetAdminDist("Baltimore", "bgp", 2).
++SetAdminDist("Baltimore", "ospf", 3).
++SetInterface("Baltimore", "Baltimore_I_Washington_TTDC").
++SetInterface("Baltimore", "Baltimore_I_NewTTYork").
+
++SetLink("NewTTYork_I_Washington_TTDC", "Washington_TTDC_I_NewTTYork").
++SetLink("NewTTYork_I_Baltimore", "Baltimore_I_NewTTYork").
++SetLink("NewTTYork_I_Chicago", "Chicago_I_NewTTYork").
++SetLink("Chicago_I_Atlanta", "Atlanta_I_Chicago").
++SetLink("PaloTTAlto_I_Atlanta", "Atlanta_I_PaloTTAlto").
++SetLink("PaloTTAlto_I_Washington_TTDC", "Washington_TTDC_I_PaloTTAlto").
++SetLink("Miami_I_Atlanta", "Atlanta_I_Miami").
++SetLink("Miami_I_Washington_TTDC", "Washington_TTDC_I_Miami").
++SetLink("Washington_TTDC_I_Atlanta", "Atlanta_I_Washington_TTDC").
++SetLink("Washington_TTDC_I_Baltimore", "Baltimore_I_Washington_TTDC").
+
+
++SetNetwork("Miami", "N_Miami").
++SetBGPAnnouncement("Miami", "N_Miami", "NBGP_Miami", "1;2;3", 3).
++SetNetwork("PaloTTAlto", "N_PaloTTAlto").
++SetBGPAnnouncement("PaloTTAlto", "N_PaloTTAlto", "NBGP_PaloTTAlto", "1;2;3", 3).
++SetNetwork("Washington_TTDC", "N_Washington_TTDC").
++SetBGPAnnouncement("Washington_TTDC", "N_Washington_TTDC", "NBGP_Washington_TTDC", "1;2;3", 3).
++SetNetwork("Baltimore", "N_Baltimore").
++SetBGPAnnouncement("Baltimore", "N_Baltimore", "NBGP_Baltimore", "1;2;3", 3).
++SetNetwork("NewTTYork", "N_NewTTYork").
++SetBGPAnnouncement("NewTTYork", "N_NewTTYork", "NBGP_NewTTYork", "1;2;3", 3).

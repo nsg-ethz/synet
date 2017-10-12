@@ -1,0 +1,19 @@
+
++Fwd("N_Tampa", "Surrency", "Newell", "ospf").
++Fwd("N_Tampa", "Newell", "Jacksonville", "ospf").
++Fwd("N_Tampa", "Jacksonville", "St_TTAugustine", "ospf").
++Fwd("N_Tampa", "St_TTAugustine", "DaytonaTTBeach", "ospf").
++Fwd("N_Tampa", "DaytonaTTBeach", "Orlando", "ospf").
++Fwd("N_Tampa", "Orlando", "LakeTTAlfred", "ospf").
++Fwd("N_Tampa", "LakeTTAlfred", "Tampa", "ospf").
++Fwd("N_Tampa", "WestTTPalmTTBeach", "Ft_TTPierce", "ospf").
++Fwd("N_Tampa", "Ft_TTPierce", "Melbourne", "ospf").
++Fwd("N_Tampa", "Melbourne", "Titusville", "ospf").
++Fwd("N_Tampa", "Titusville", "DaytonaTTBeach", "ospf").
++Fwd("N_Tampa", "Miami", "Ft_TTLauderdale", "ospf").
++Fwd("N_Tampa", "Ft_TTLauderdale", "WestTTPalmTTBeach", "ospf").
++Fwd("N_Tampa", "Gordon", "Tarrytown", "ospf").
++Fwd("N_Tampa", "Tarrytown", "Surrency", "ospf").
++Fwd("N_Tampa", "Atlanta", "Flovilla", "ospf").
++Fwd("N_Tampa", "Flovilla", "Gordon", "ospf").
+

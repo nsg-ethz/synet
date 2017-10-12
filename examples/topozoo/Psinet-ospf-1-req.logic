@@ -1,0 +1,25 @@
+
++Fwd("N_Atlanta", "NewTTYork", "Herndon", "ospf").
++Fwd("N_Atlanta", "Herndon", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Philadelphia", "Newark", "ospf").
++Fwd("N_Atlanta", "Newark", "NewTTYork", "ospf").
++Fwd("N_Atlanta", "Toledo", "Chicago", "ospf").
++Fwd("N_Atlanta", "Chicago", "StTTLouis", "ospf").
++Fwd("N_Atlanta", "StTTLouis", "KansasTTCity", "ospf").
++Fwd("N_Atlanta", "KansasTTCity", "Dallas", "ospf").
++Fwd("N_Atlanta", "Dallas", "Houston", "ospf").
++Fwd("N_Atlanta", "Houston", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Phoenix", "KansasTTCity", "ospf").
++Fwd("N_Atlanta", "FortTTWorth", "Dallas", "ospf").
++Fwd("N_Atlanta", "Dublin", "Chicago", "ospf").
++Fwd("N_Atlanta", "Wilmington", "Philadelphia", "ospf").
++Fwd("N_Atlanta", "Detroit", "Toledo", "ospf").
++Fwd("N_Atlanta", "SantaTTClara", "SanTTFrancisco", "ospf").
++Fwd("N_Atlanta", "SanTTFrancisco", "LosTTAngeles", "ospf").
++Fwd("N_Atlanta", "LosTTAngeles", "Phoenix", "ospf").
++Fwd("N_Atlanta", "Austin", "Houston", "ospf").
++Fwd("N_Atlanta", "Baltimore", "Wilmington", "ospf").
++Fwd("N_Atlanta", "Boston", "NewTTYork", "ospf").
++Fwd("N_Atlanta", "Troy", "NewTTYork", "ospf").
++Fwd("N_Atlanta", "Washington_TTDC", "Baltimore", "ospf").
+

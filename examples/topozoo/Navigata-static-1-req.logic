@@ -1,0 +1,14 @@
+
++Fwd("N_Saskatoon", "Toronto", "Saskatoon", "static").
++Fwd("N_Saskatoon", "Regina", "Toronto", "static").
++Fwd("N_Saskatoon", "LosTTAngeles", "Vancouver", "static").
++Fwd("N_Saskatoon", "Vancouver", "Saskatoon", "static").
++Fwd("N_Saskatoon", "NewTTYork", "Toronto", "static").
++Fwd("N_Saskatoon", "Edmonton", "Calgary", "static").
++Fwd("N_Saskatoon", "Calgary", "Regina", "static").
++Fwd("N_Saskatoon", "Victoria", "Vancouver", "static").
++Fwd("N_Saskatoon", "Winnipeg", "Saskatoon", "static").
++Fwd("N_Saskatoon", "Halifax", "Toronto", "static").
++Fwd("N_Saskatoon", "Seattle", "Vancouver", "static").
++Fwd("N_Saskatoon", "Montreal", "Toronto", "static").
+

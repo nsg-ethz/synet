@@ -1,0 +1,216 @@
++SetNode("HLT").
++SetAdminDist("HLT", "static", 1).
++SetAdminDist("HLT", "bgp", 2).
++SetAdminDist("HLT", "ospf", 3).
++SetInterface("HLT", "HLT_I_ROT").
++SetInterface("HLT", "HLT_I_AKL").
+
++SetNode("MUP").
++SetAdminDist("MUP", "static", 1).
++SetAdminDist("MUP", "bgp", 2).
++SetAdminDist("MUP", "ospf", 3).
++SetInterface("MUP", "MUP_I_AVL").
++SetInterface("MUP", "MUP_I_NAP").
++SetInterface("MUP", "MUP_I_PNR").
+
++SetNode("NAP").
++SetAdminDist("NAP", "static", 1).
++SetAdminDist("NAP", "bgp", 2).
++SetAdminDist("NAP", "ospf", 3).
++SetInterface("NAP", "NAP_I_ROT").
++SetInterface("NAP", "NAP_I_GIS").
++SetInterface("NAP", "NAP_I_MUP").
+
++SetNode("AKL").
++SetAdminDist("AKL", "static", 1).
++SetAdminDist("AKL", "bgp", 2).
++SetAdminDist("AKL", "ospf", 3).
++SetInterface("AKL", "AKL_I_NSH").
++SetInterface("AKL", "AKL_I_PNR").
++SetInterface("AKL", "AKL_I_Syd").
++SetInterface("AKL", "AKL_I_HLT").
++SetInterface("AKL", "AKL_I_LAX").
++SetInterface("AKL", "AKL_I_MTA").
+
++SetNode("WLG").
++SetAdminDist("WLG", "static", 1).
++SetAdminDist("WLG", "bgp", 2).
++SetAdminDist("WLG", "ospf", 3).
++SetInterface("WLG", "WLG_I_AVL").
++SetInterface("WLG", "WLG_I_NLS").
++SetInterface("WLG", "WLG_I_PNR").
++SetInterface("WLG", "WLG_I_DUD").
++SetInterface("WLG", "WLG_I_CHC").
+
++SetNode("NSH").
++SetAdminDist("NSH", "static", 1).
++SetAdminDist("NSH", "bgp", 2).
++SetAdminDist("NSH", "ospf", 3).
++SetInterface("NSH", "NSH_I_WRK").
++SetInterface("NSH", "NSH_I_AKL").
+
++SetNode("TAU").
++SetAdminDist("TAU", "static", 1).
++SetAdminDist("TAU", "bgp", 2).
++SetAdminDist("TAU", "ospf", 3).
++SetInterface("TAU", "TAU_I_ROT").
+
++SetNode("NLS").
++SetAdminDist("NLS", "static", 1).
++SetAdminDist("NLS", "bgp", 2).
++SetAdminDist("NLS", "ospf", 3).
++SetInterface("NLS", "NLS_I_CHC").
++SetInterface("NLS", "NLS_I_WLG").
+
++SetNode("Syd").
++SetAdminDist("Syd", "static", 1).
++SetAdminDist("Syd", "bgp", 2).
++SetAdminDist("Syd", "ospf", 3).
++SetInterface("Syd", "Syd_I_AKL").
+
++SetNode("POR").
++SetAdminDist("POR", "static", 1).
++SetAdminDist("POR", "bgp", 2).
++SetAdminDist("POR", "ospf", 3).
++SetInterface("POR", "POR_I_AVL").
+
++SetNode("WAG").
++SetAdminDist("WAG", "static", 1).
++SetAdminDist("WAG", "bgp", 2).
++SetAdminDist("WAG", "ospf", 3).
++SetInterface("WAG", "WAG_I_PNR").
+
++SetNode("ROT").
++SetAdminDist("ROT", "static", 1).
++SetAdminDist("ROT", "bgp", 2).
++SetAdminDist("ROT", "ospf", 3).
++SetInterface("ROT", "ROT_I_TAU").
++SetInterface("ROT", "ROT_I_NAP").
++SetInterface("ROT", "ROT_I_HLT").
+
++SetNode("CHC").
++SetAdminDist("CHC", "static", 1).
++SetAdminDist("CHC", "bgp", 2).
++SetAdminDist("CHC", "ospf", 3).
++SetInterface("CHC", "CHC_I_LCN").
++SetInterface("CHC", "CHC_I_TPO").
++SetInterface("CHC", "CHC_I_NLS").
++SetInterface("CHC", "CHC_I_WLG").
+
++SetNode("GIS").
++SetAdminDist("GIS", "static", 1).
++SetAdminDist("GIS", "bgp", 2).
++SetAdminDist("GIS", "ospf", 3).
++SetInterface("GIS", "GIS_I_NAP").
+
++SetNode("TPO").
++SetAdminDist("TPO", "static", 1).
++SetAdminDist("TPO", "bgp", 2).
++SetAdminDist("TPO", "ospf", 3).
++SetInterface("TPO", "TPO_I_CHC").
+
++SetNode("DUD").
++SetAdminDist("DUD", "static", 1).
++SetAdminDist("DUD", "bgp", 2).
++SetAdminDist("DUD", "ospf", 3).
++SetInterface("DUD", "DUD_I_LCN").
++SetInterface("DUD", "DUD_I_IVM").
++SetInterface("DUD", "DUD_I_INV").
++SetInterface("DUD", "DUD_I_WLG").
+
++SetNode("WRK").
++SetAdminDist("WRK", "static", 1).
++SetAdminDist("WRK", "bgp", 2).
++SetAdminDist("WRK", "ospf", 3).
++SetInterface("WRK", "WRK_I_NSH").
+
++SetNode("MTA").
++SetAdminDist("MTA", "static", 1).
++SetAdminDist("MTA", "bgp", 2).
++SetAdminDist("MTA", "ospf", 3).
++SetInterface("MTA", "MTA_I_AKL").
+
++SetNode("NPL").
++SetAdminDist("NPL", "static", 1).
++SetAdminDist("NPL", "bgp", 2).
++SetAdminDist("NPL", "ospf", 3).
++SetInterface("NPL", "NPL_I_PNR").
+
++SetNode("IVM").
++SetAdminDist("IVM", "static", 1).
++SetAdminDist("IVM", "bgp", 2).
++SetAdminDist("IVM", "ospf", 3).
++SetInterface("IVM", "IVM_I_DUD").
+
++SetNode("INV").
++SetAdminDist("INV", "static", 1).
++SetAdminDist("INV", "bgp", 2).
++SetAdminDist("INV", "ospf", 3).
++SetInterface("INV", "INV_I_DUD").
+
++SetNode("PNR").
++SetAdminDist("PNR", "static", 1).
++SetAdminDist("PNR", "bgp", 2).
++SetAdminDist("PNR", "ospf", 3).
++SetInterface("PNR", "PNR_I_WAG").
++SetInterface("PNR", "PNR_I_NPL").
++SetInterface("PNR", "PNR_I_WLG").
++SetInterface("PNR", "PNR_I_MUP").
++SetInterface("PNR", "PNR_I_AKL").
+
++SetNode("AVL").
++SetAdminDist("AVL", "static", 1).
++SetAdminDist("AVL", "bgp", 2).
++SetAdminDist("AVL", "ospf", 3).
++SetInterface("AVL", "AVL_I_POR").
++SetInterface("AVL", "AVL_I_MUP").
++SetInterface("AVL", "AVL_I_WLG").
+
++SetNode("LAX").
++SetAdminDist("LAX", "static", 1).
++SetAdminDist("LAX", "bgp", 2).
++SetAdminDist("LAX", "ospf", 3).
++SetInterface("LAX", "LAX_I_AKL").
+
++SetNode("LCN").
++SetAdminDist("LCN", "static", 1).
++SetAdminDist("LCN", "bgp", 2).
++SetAdminDist("LCN", "ospf", 3).
++SetInterface("LCN", "LCN_I_CHC").
++SetInterface("LCN", "LCN_I_DUD").
+
++SetLink("HLT_I_ROT", "ROT_I_HLT").
++SetLink("HLT_I_AKL", "AKL_I_HLT").
++SetLink("MUP_I_AVL", "AVL_I_MUP").
++SetLink("MUP_I_NAP", "NAP_I_MUP").
++SetLink("MUP_I_PNR", "PNR_I_MUP").
++SetLink("NAP_I_ROT", "ROT_I_NAP").
++SetLink("NAP_I_GIS", "GIS_I_NAP").
++SetLink("AKL_I_NSH", "NSH_I_AKL").
++SetLink("AKL_I_PNR", "PNR_I_AKL").
++SetLink("AKL_I_Syd", "Syd_I_AKL").
++SetLink("AKL_I_LAX", "LAX_I_AKL").
++SetLink("AKL_I_MTA", "MTA_I_AKL").
++SetLink("WLG_I_AVL", "AVL_I_WLG").
++SetLink("WLG_I_NLS", "NLS_I_WLG").
++SetLink("WLG_I_PNR", "PNR_I_WLG").
++SetLink("WLG_I_DUD", "DUD_I_WLG").
++SetLink("WLG_I_CHC", "CHC_I_WLG").
++SetLink("NSH_I_WRK", "WRK_I_NSH").
++SetLink("TAU_I_ROT", "ROT_I_TAU").
++SetLink("NLS_I_CHC", "CHC_I_NLS").
++SetLink("POR_I_AVL", "AVL_I_POR").
++SetLink("WAG_I_PNR", "PNR_I_WAG").
++SetLink("CHC_I_LCN", "LCN_I_CHC").
++SetLink("CHC_I_TPO", "TPO_I_CHC").
++SetLink("DUD_I_LCN", "LCN_I_DUD").
++SetLink("DUD_I_IVM", "IVM_I_DUD").
++SetLink("DUD_I_INV", "INV_I_DUD").
++SetLink("NPL_I_PNR", "PNR_I_NPL").
+
+
++SetNetwork("LAX", "N_LAX").
++SetNetwork("NLS", "N_NLS").
++SetNetwork("MUP", "N_MUP").
++SetNetwork("WLG", "N_WLG").
++SetNetwork("Syd", "N_Syd").

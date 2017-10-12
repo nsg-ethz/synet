@@ -1,0 +1,66 @@
+
++Fwd("N_Quebec", "Toronto", "Montreal", "ospf").
++Fwd("N_Quebec", "Montreal", "Quebec", "ospf").
++Fwd("N_Quebec", "Albany", "Montreal", "ospf").
++Fwd("N_Quebec", "Edmundston", "Quebec", "ospf").
++Fwd("N_Quebec", "NewTTYork", "Albany", "ospf").
++Fwd("N_Quebec", "Boston", "NewTTYork", "ospf").
++Fwd("N_Quebec", "NodeID1", "NodeID4", "ospf").
++Fwd("N_Quebec", "NodeID4", "Halifax", "ospf").
++Fwd("N_Quebec", "Halifax", "Moncton", "ospf").
++Fwd("N_Quebec", "Moncton", "Edmundston", "ospf").
++Fwd("N_Quebec", "NodeID2", "Halifax", "ospf").
++Fwd("N_Quebec", "Buffalo", "Albany", "ospf").
+
++Fwd("N_Moncton", "Toronto", "Montreal", "ospf").
++Fwd("N_Moncton", "Montreal", "Quebec", "ospf").
++Fwd("N_Moncton", "Quebec", "Edmundston", "ospf").
++Fwd("N_Moncton", "Edmundston", "Moncton", "ospf").
++Fwd("N_Moncton", "Albany", "Montreal", "ospf").
++Fwd("N_Moncton", "NewTTYork", "Boston", "ospf").
++Fwd("N_Moncton", "Boston", "NodeID4", "ospf").
++Fwd("N_Moncton", "NodeID4", "Halifax", "ospf").
++Fwd("N_Moncton", "Halifax", "Moncton", "ospf").
++Fwd("N_Moncton", "NodeID1", "NodeID4", "ospf").
++Fwd("N_Moncton", "NodeID2", "Halifax", "ospf").
++Fwd("N_Moncton", "Buffalo", "Albany", "ospf").
+
++Fwd("N_Buffalo", "Toronto", "Buffalo", "ospf").
++Fwd("N_Buffalo", "Albany", "Buffalo", "ospf").
++Fwd("N_Buffalo", "Edmundston", "Quebec", "ospf").
++Fwd("N_Buffalo", "Quebec", "Montreal", "ospf").
++Fwd("N_Buffalo", "Montreal", "Toronto", "ospf").
++Fwd("N_Buffalo", "NewTTYork", "Albany", "ospf").
++Fwd("N_Buffalo", "Boston", "NewTTYork", "ospf").
++Fwd("N_Buffalo", "NodeID1", "NodeID4", "ospf").
++Fwd("N_Buffalo", "NodeID4", "Boston", "ospf").
++Fwd("N_Buffalo", "NodeID2", "Halifax", "ospf").
++Fwd("N_Buffalo", "Halifax", "NodeID4", "ospf").
++Fwd("N_Buffalo", "Moncton", "Edmundston", "ospf").
+
++Fwd("N_NodeID1", "Toronto", "Buffalo", "ospf").
++Fwd("N_NodeID1", "Buffalo", "Albany", "ospf").
++Fwd("N_NodeID1", "Albany", "NewTTYork", "ospf").
++Fwd("N_NodeID1", "NewTTYork", "Boston", "ospf").
++Fwd("N_NodeID1", "Boston", "NodeID4", "ospf").
++Fwd("N_NodeID1", "NodeID4", "NodeID1", "ospf").
++Fwd("N_NodeID1", "Edmundston", "Moncton", "ospf").
++Fwd("N_NodeID1", "Moncton", "Halifax", "ospf").
++Fwd("N_NodeID1", "Halifax", "NodeID4", "ospf").
++Fwd("N_NodeID1", "NodeID2", "Halifax", "ospf").
++Fwd("N_NodeID1", "Quebec", "Montreal", "ospf").
++Fwd("N_NodeID1", "Montreal", "Albany", "ospf").
+
++Fwd("N_Montreal", "Toronto", "Montreal", "ospf").
++Fwd("N_Montreal", "Albany", "Montreal", "ospf").
++Fwd("N_Montreal", "Edmundston", "Quebec", "ospf").
++Fwd("N_Montreal", "Quebec", "Montreal", "ospf").
++Fwd("N_Montreal", "NewTTYork", "Albany", "ospf").
++Fwd("N_Montreal", "Boston", "NewTTYork", "ospf").
++Fwd("N_Montreal", "NodeID1", "NodeID4", "ospf").
++Fwd("N_Montreal", "NodeID4", "Boston", "ospf").
++Fwd("N_Montreal", "NodeID2", "Halifax", "ospf").
++Fwd("N_Montreal", "Halifax", "NodeID4", "ospf").
++Fwd("N_Montreal", "Moncton", "Edmundston", "ospf").
++Fwd("N_Montreal", "Buffalo", "Albany", "ospf").
+

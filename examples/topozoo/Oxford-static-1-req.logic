@@ -1,0 +1,21 @@
+
++Fwd("N_Boston", "Bethel", "Turner", "static").
++Fwd("N_Boston", "Turner", "Augusta", "static").
++Fwd("N_Boston", "Augusta", "Lewiston", "static").
++Fwd("N_Boston", "Lewiston", "Portland", "static").
++Fwd("N_Boston", "Portland", "Portsmouth", "static").
++Fwd("N_Boston", "Portsmouth", "Manchester", "static").
++Fwd("N_Boston", "Manchester", "Boston", "static").
++Fwd("N_Boston", "Standish", "Portland", "static").
++Fwd("N_Boston", "Keene", "Springfield", "static").
++Fwd("N_Boston", "Springfield", "Worcester", "static").
++Fwd("N_Boston", "Worcester", "Framingham", "static").
++Fwd("N_Boston", "Framingham", "Boston", "static").
++Fwd("N_Boston", "Sanford", "Portsmouth", "static").
++Fwd("N_Boston", "AugustaID19", "Lewiston", "static").
++Fwd("N_Boston", "Biddeford", "Sanford", "static").
++Fwd("N_Boston", "Buckfield", "Standish", "static").
++Fwd("N_Boston", "Bangor", "Lewiston", "static").
++Fwd("N_Boston", "Norway", "Standish", "static").
++Fwd("N_Boston", "Dover", "Portland", "static").
+

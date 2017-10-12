@@ -1,0 +1,10 @@
+
++Fwd("N_Stockholm", "NETNOD", "Stockholm", "static").
++Fwd("N_Stockholm", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Stockholm", "Copenhagen", "Stockholm", "static").
++Fwd("N_Stockholm", "GEANT", "Stockholm", "static").
++Fwd("N_Stockholm", "Helsinki", "Stockholm", "static").
++Fwd("N_Stockholm", "Oslo", "Stockholm", "static").
++Fwd("N_Stockholm", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_Stockholm", "GeneralTTInternet", "Stockholm", "static").
+

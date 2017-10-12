@@ -1,0 +1,31 @@
+
++Fwd("N_Kragujevac", "Krusevac", "Nis", "static").
++Fwd("N_Kragujevac", "Nis", "Kragujevac", "static").
++Fwd("N_Kragujevac", "Belgrade", "Kragujevac", "static").
++Fwd("N_Kragujevac", "Podgorica", "Krusevac", "static").
++Fwd("N_Kragujevac", "NoviTTSad", "Belgrade", "static").
+
++Fwd("N_Belgrade", "Krusevac", "Nis", "static").
++Fwd("N_Belgrade", "Nis", "Kragujevac", "static").
++Fwd("N_Belgrade", "Kragujevac", "Belgrade", "static").
++Fwd("N_Belgrade", "Podgorica", "NoviTTSad", "static").
++Fwd("N_Belgrade", "NoviTTSad", "Belgrade", "static").
+
++Fwd("N_Nis", "Krusevac", "Nis", "static").
++Fwd("N_Nis", "Belgrade", "Kragujevac", "static").
++Fwd("N_Nis", "Kragujevac", "Nis", "static").
++Fwd("N_Nis", "Podgorica", "Krusevac", "static").
++Fwd("N_Nis", "NoviTTSad", "Podgorica", "static").
+
++Fwd("N_NoviTTSad", "Krusevac", "Nis", "static").
++Fwd("N_NoviTTSad", "Nis", "Kragujevac", "static").
++Fwd("N_NoviTTSad", "Kragujevac", "Belgrade", "static").
++Fwd("N_NoviTTSad", "Belgrade", "NoviTTSad", "static").
++Fwd("N_NoviTTSad", "Podgorica", "NoviTTSad", "static").
+
++Fwd("N_Podgorica", "Krusevac", "Podgorica", "static").
++Fwd("N_Podgorica", "Belgrade", "NoviTTSad", "static").
++Fwd("N_Podgorica", "NoviTTSad", "Podgorica", "static").
++Fwd("N_Podgorica", "Nis", "Kragujevac", "static").
++Fwd("N_Podgorica", "Kragujevac", "Belgrade", "static").
+

@@ -1,0 +1,636 @@
++SetNode("NTNUTTHovedbygget").
++SetAdminDist("NTNUTTHovedbygget", "static", 1).
++SetAdminDist("NTNUTTHovedbygget", "bgp", 2).
++SetAdminDist("NTNUTTHovedbygget", "ospf", 3).
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_HiATTAlesund").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_UiOTTStTTOlavsplassTT5").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_UNINETTTTTeknobyen").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_HiNeTTSandnesjoen").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_UiBTTHoyteklogibygget").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_NTNUTTRealfagbygget").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_HiNTTNarvik").
++SetInterface("NTNUTTHovedbygget", "NTNUTTHovedbygget_I_HiNTTTSteinkjer").
+
++SetNode("SA_SHTTKautokeino").
++SetAdminDist("SA_SHTTKautokeino", "static", 1).
++SetAdminDist("SA_SHTTKautokeino", "bgp", 2).
++SetAdminDist("SA_SHTTKautokeino", "ospf", 3).
++SetInterface("SA_SHTTKautokeino", "SA_SHTTKautokeino_I_UiToTTKarasjok").
++SetInterface("SA_SHTTKautokeino", "SA_SHTTKautokeino_I_HiFTTAlta").
+
++SetNode("HBOTTBodo").
++SetAdminDist("HBOTTBodo", "static", 1).
++SetAdminDist("HBOTTBodo", "bgp", 2).
++SetAdminDist("HBOTTBodo", "ospf", 3).
++SetInterface("HBOTTBodo", "HBOTTBodo_I_HiNTTNarvik").
++SetInterface("HBOTTBodo", "HBOTTBodo_I_HiHTTHarstad").
++SetInterface("HBOTTBodo", "HBOTTBodo_I_NBTTMoTTiTTRana").
++SetInterface("HBOTTBodo", "HBOTTBodo_I_HiNeTTSandnesjoen").
+
++SetNode("HingTTStjordal").
++SetAdminDist("HingTTStjordal", "static", 1).
++SetAdminDist("HingTTStjordal", "bgp", 2).
++SetAdminDist("HingTTStjordal", "ospf", 3).
++SetInterface("HingTTStjordal", "HingTTStjordal_I_HiNTTTLevanger").
++SetInterface("HingTTStjordal", "HingTTStjordal_I_NTNUTTRealfagbygget").
+
++SetNode("UiOTTStTTOlavsplassTT5").
++SetAdminDist("UiOTTStTTOlavsplassTT5", "static", 1).
++SetAdminDist("UiOTTStTTOlavsplassTT5", "bgp", 2).
++SetAdminDist("UiOTTStTTOlavsplassTT5", "ospf", 3).
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_NTNUTTHovedbygget").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_HiBUTTDrammen").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_UiO").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_HiGTTGjovik").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_UiBTTHoyteklogibygget").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_UiATTKristiansand").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_NORDUnetTTKobenhavn").
++SetInterface("UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_UiOID0").
+
++SetNode("HiFTTAlta").
++SetAdminDist("HiFTTAlta", "static", 1).
++SetAdminDist("HiFTTAlta", "bgp", 2).
++SetAdminDist("HiFTTAlta", "ospf", 3).
++SetInterface("HiFTTAlta", "HiFTTAlta_I_SA_SHTTKautokeino").
++SetInterface("HiFTTAlta", "HiFTTAlta_I_HiFTTHammerfest").
++SetInterface("HiFTTAlta", "HiFTTAlta_I_UiTo").
+
++SetNode("HiAKTTKjeller").
++SetAdminDist("HiAKTTKjeller", "static", 1).
++SetAdminDist("HiAKTTKjeller", "bgp", 2).
++SetAdminDist("HiAKTTKjeller", "ospf", 3).
++SetInterface("HiAKTTKjeller", "HiAKTTKjeller_I_UNIKTTKjeller").
++SetInterface("HiAKTTKjeller", "HiAKTTKjeller_I_HiBuTTHonefoss").
+
++SetNode("NORDUnetTTStockholm").
++SetAdminDist("NORDUnetTTStockholm", "static", 1).
++SetAdminDist("NORDUnetTTStockholm", "bgp", 2).
++SetAdminDist("NORDUnetTTStockholm", "ospf", 3).
++SetInterface("NORDUnetTTStockholm", "NORDUnetTTStockholm_I_Stockholm").
+
++SetNode("UiSTTStavanger").
++SetAdminDist("UiSTTStavanger", "static", 1).
++SetAdminDist("UiSTTStavanger", "bgp", 2).
++SetAdminDist("UiSTTStavanger", "ospf", 3).
++SetInterface("UiSTTStavanger", "UiSTTStavanger_I_VetHSTTSandnes").
++SetInterface("UiSTTStavanger", "UiSTTStavanger_I_UiATTKristiansand").
++SetInterface("UiSTTStavanger", "UiSTTStavanger_I_HSHTTHaugesund").
++SetInterface("UiSTTStavanger", "UiSTTStavanger_I_UiBTTBT").
+
++SetNode("HSMTTMolde").
++SetAdminDist("HSMTTMolde", "static", 1).
++SetAdminDist("HSMTTMolde", "bgp", 2).
++SetAdminDist("HSMTTMolde", "ospf", 3).
++SetInterface("HSMTTMolde", "HSMTTMolde_I_HiATTAlesund").
++SetInterface("HSMTTMolde", "HSMTTMolde_I_HSMTTKristiansun").
+
++SetNode("UiOID0").
++SetAdminDist("UiOID0", "static", 1).
++SetAdminDist("UiOID0", "bgp", 2).
++SetAdminDist("UiOID0", "ospf", 3).
++SetInterface("UiOID0", "UiOID0_I_HHTTKongsvinger").
++SetInterface("UiOID0", "UiOID0_I_UiOTTStTTOlavsplassTT5").
++SetInterface("UiOID0", "UiOID0_I_UiO").
++SetInterface("UiOID0", "UiOID0_I_UiBTTBT").
++SetInterface("UiOID0", "UiOID0_I_UMBTTAs").
++SetInterface("UiOID0", "UiOID0_I_HiTTTBo").
+
++SetNode("UiATTGrimstad").
++SetAdminDist("UiATTGrimstad", "static", 1).
++SetAdminDist("UiATTGrimstad", "bgp", 2).
++SetAdminDist("UiATTGrimstad", "ospf", 3).
++SetInterface("UiATTGrimstad", "UiATTGrimstad_I_HiTTTPorsgrunn").
++SetInterface("UiATTGrimstad", "UiATTGrimstad_I_UiATTKristiansand").
+
++SetNode("HiNTTTSteinkjer").
++SetAdminDist("HiNTTTSteinkjer", "static", 1).
++SetAdminDist("HiNTTTSteinkjer", "bgp", 2).
++SetAdminDist("HiNTTTSteinkjer", "ospf", 3).
++SetInterface("HiNTTTSteinkjer", "HiNTTTSteinkjer_I_NTNUTTHovedbygget").
++SetInterface("HiNTTTSteinkjer", "HiNTTTSteinkjer_I_HiNTTTNamsos").
++SetInterface("HiNTTTSteinkjer", "HiNTTTSteinkjer_I_HiNTTTLevanger").
+
++SetNode("HiNTTNarvik").
++SetAdminDist("HiNTTNarvik", "static", 1).
++SetAdminDist("HiNTTNarvik", "bgp", 2).
++SetAdminDist("HiNTTNarvik", "ospf", 3).
++SetInterface("HiNTTNarvik", "HiNTTNarvik_I_NTNUTTHovedbygget").
++SetInterface("HiNTTNarvik", "HiNTTNarvik_I_UiToID15").
++SetInterface("HiNTTNarvik", "HiNTTNarvik_I_HiHTTHarstad").
++SetInterface("HiNTTNarvik", "HiNTTNarvik_I_HBOTTBodo").
++SetInterface("HiNTTNarvik", "HiNTTNarvik_I_Stockholm").
+
++SetNode("HHTTKongsvinger").
++SetAdminDist("HHTTKongsvinger", "static", 1).
++SetAdminDist("HHTTKongsvinger", "bgp", 2).
++SetAdminDist("HHTTKongsvinger", "ospf", 3).
++SetInterface("HHTTKongsvinger", "HHTTKongsvinger_I_UiOID0").
++SetInterface("HHTTKongsvinger", "HHTTKongsvinger_I_HHTTElverum").
+
++SetNode("HBOTTMoTTiTTRana").
++SetAdminDist("HBOTTMoTTiTTRana", "static", 1).
++SetAdminDist("HBOTTMoTTiTTRana", "bgp", 2).
++SetAdminDist("HBOTTMoTTiTTRana", "ospf", 3).
++SetInterface("HBOTTMoTTiTTRana", "HBOTTMoTTiTTRana_I_NBTTMoTTiTTRana").
+
++SetNode("HHTTTynset").
++SetAdminDist("HHTTTynset", "static", 1).
++SetAdminDist("HHTTTynset", "bgp", 2).
++SetAdminDist("HHTTTynset", "ospf", 3).
++SetInterface("HHTTTynset", "HHTTTynset_I_HHTTEvenstad").
++SetInterface("HHTTTynset", "HHTTTynset_I_UNINETTTTTeknobyen").
+
++SetNode("HiNTTTLevanger").
++SetAdminDist("HiNTTTLevanger", "static", 1).
++SetAdminDist("HiNTTTLevanger", "bgp", 2).
++SetAdminDist("HiNTTTLevanger", "ospf", 3).
++SetInterface("HiNTTTLevanger", "HiNTTTLevanger_I_HingTTStjordal").
++SetInterface("HiNTTTLevanger", "HiNTTTLevanger_I_HiNTTTSteinkjer").
+
++SetNode("HiTTTNotodden").
++SetAdminDist("HiTTTNotodden", "static", 1).
++SetAdminDist("HiTTTNotodden", "bgp", 2).
++SetAdminDist("HiTTTNotodden", "ospf", 3).
++SetInterface("HiTTTNotodden", "HiTTTNotodden_I_HiTTTBo").
+
++SetNode("UNINETTTTTeknobyen").
++SetAdminDist("UNINETTTTTeknobyen", "static", 1).
++SetAdminDist("UNINETTTTTeknobyen", "bgp", 2).
++SetAdminDist("UNINETTTTTeknobyen", "ospf", 3).
++SetInterface("UNINETTTTTeknobyen", "UNINETTTTTeknobyen_I_NTNUTTHovedbygget").
++SetInterface("UNINETTTTTeknobyen", "UNINETTTTTeknobyen_I_HHTTTynset").
++SetInterface("UNINETTTTTeknobyen", "UNINETTTTTeknobyen_I_NTNUTTRealfagbygget").
++SetInterface("UNINETTTTTeknobyen", "UNINETTTTTeknobyen_I_HSMTTKristiansun").
+
++SetNode("HiGTTGjovik").
++SetAdminDist("HiGTTGjovik", "static", 1).
++SetAdminDist("HiGTTGjovik", "bgp", 2).
++SetAdminDist("HiGTTGjovik", "ospf", 3).
++SetInterface("HiGTTGjovik", "HiGTTGjovik_I_HiLTTLillehammer").
++SetInterface("HiGTTGjovik", "HiGTTGjovik_I_UiOTTStTTOlavsplassTT5").
+
++SetNode("HVETTLarvik").
++SetAdminDist("HVETTLarvik", "static", 1).
++SetAdminDist("HVETTLarvik", "bgp", 2).
++SetAdminDist("HVETTLarvik", "ospf", 3).
++SetInterface("HVETTLarvik", "HVETTLarvik_I_HVETTBorre").
+
++SetNode("UNISTTSvalbard").
++SetAdminDist("UNISTTSvalbard", "static", 1).
++SetAdminDist("UNISTTSvalbard", "bgp", 2).
++SetAdminDist("UNISTTSvalbard", "ospf", 3).
++SetInterface("UNISTTSvalbard", "UNISTTSvalbard_I_HiHTTHarstad").
++SetInterface("UNISTTSvalbard", "UNISTTSvalbard_I_NyAlesund").
+
++SetNode("UNIKTTKjeller").
++SetAdminDist("UNIKTTKjeller", "static", 1).
++SetAdminDist("UNIKTTKjeller", "bgp", 2).
++SetAdminDist("UNIKTTKjeller", "ospf", 3).
++SetInterface("UNIKTTKjeller", "UNIKTTKjeller_I_UiO").
++SetInterface("UNIKTTKjeller", "UNIKTTKjeller_I_HiAKTTKjeller").
+
++SetNode("HiLTTLillehammer").
++SetAdminDist("HiLTTLillehammer", "static", 1).
++SetAdminDist("HiLTTLillehammer", "bgp", 2).
++SetAdminDist("HiLTTLillehammer", "ospf", 3).
++SetInterface("HiLTTLillehammer", "HiLTTLillehammer_I_HHTTHamar").
++SetInterface("HiLTTLillehammer", "HiLTTLillehammer_I_HiGTTGjovik").
+
++SetNode("UMBTTAs").
++SetAdminDist("UMBTTAs", "static", 1).
++SetAdminDist("UMBTTAs", "bgp", 2).
++SetAdminDist("UMBTTAs", "ospf", 3).
++SetInterface("UMBTTAs", "UMBTTAs_I_UiOID0").
++SetInterface("UMBTTAs", "UMBTTAs_I_HiOTTFredrikstad").
+
++SetNode("UiBTTBT").
++SetAdminDist("UiBTTBT", "static", 1).
++SetAdminDist("UiBTTBT", "bgp", 2).
++SetAdminDist("UiBTTBT", "ospf", 3).
++SetInterface("UiBTTBT", "UiBTTBT_I_UiOID0").
++SetInterface("UiBTTBT", "UiBTTBT_I_UiBTTHoyteklogibygget").
++SetInterface("UiBTTBT", "UiBTTBT_I_UiSTTStavanger").
+
++SetNode("HiHTTHarstad").
++SetAdminDist("HiHTTHarstad", "static", 1).
++SetAdminDist("HiHTTHarstad", "bgp", 2).
++SetAdminDist("HiHTTHarstad", "ospf", 3).
++SetInterface("HiHTTHarstad", "HiHTTHarstad_I_UiTo").
++SetInterface("HiHTTHarstad", "HiHTTHarstad_I_UNISTTSvalbard").
++SetInterface("HiHTTHarstad", "HiHTTHarstad_I_HBOTTBodo").
++SetInterface("HiHTTHarstad", "HiHTTHarstad_I_HiNTTNarvik").
+
++SetNode("HiBUTTDrammen").
++SetAdminDist("HiBUTTDrammen", "static", 1).
++SetAdminDist("HiBUTTDrammen", "bgp", 2).
++SetAdminDist("HiBUTTDrammen", "ospf", 3).
++SetInterface("HiBUTTDrammen", "HiBUTTDrammen_I_UiOTTStTTOlavsplassTT5").
++SetInterface("HiBUTTDrammen", "HiBUTTDrammen_I_HiBUTTKongsberg").
++SetInterface("HiBUTTDrammen", "HiBUTTDrammen_I_HiTTTBo").
++SetInterface("HiBUTTDrammen", "HiBUTTDrammen_I_HVETTBorre").
+
++SetNode("HiFTTVadso").
++SetAdminDist("HiFTTVadso", "static", 1).
++SetAdminDist("HiFTTVadso", "bgp", 2).
++SetAdminDist("HiFTTVadso", "ospf", 3).
++SetInterface("HiFTTVadso", "HiFTTVadso_I_HiFTTKirkenes").
++SetInterface("HiFTTVadso", "HiFTTVadso_I_HiFTTHammerfest").
+
++SetNode("HHTTEvenstad").
++SetAdminDist("HHTTEvenstad", "static", 1).
++SetAdminDist("HHTTEvenstad", "bgp", 2).
++SetAdminDist("HHTTEvenstad", "ospf", 3).
++SetInterface("HHTTEvenstad", "HHTTEvenstad_I_HHTTTynset").
++SetInterface("HHTTEvenstad", "HHTTEvenstad_I_HHTTRena").
+
++SetNode("HHTTRena").
++SetAdminDist("HHTTRena", "static", 1).
++SetAdminDist("HHTTRena", "bgp", 2).
++SetAdminDist("HHTTRena", "ospf", 3).
++SetInterface("HHTTRena", "HHTTRena_I_HHTTEvenstad").
++SetInterface("HHTTRena", "HHTTRena_I_HHTTElverum").
+
++SetNode("HSHTTStord").
++SetAdminDist("HSHTTStord", "static", 1).
++SetAdminDist("HSHTTStord", "bgp", 2).
++SetAdminDist("HSHTTStord", "ospf", 3).
++SetInterface("HSHTTStord", "HSHTTStord_I_UiBTTHoyteklogibygget").
++SetInterface("HSHTTStord", "HSHTTStord_I_HSHTTHaugesund").
+
++SetNode("VetHSTTSandnes").
++SetAdminDist("VetHSTTSandnes", "static", 1).
++SetAdminDist("VetHSTTSandnes", "bgp", 2).
++SetAdminDist("VetHSTTSandnes", "ospf", 3).
++SetInterface("VetHSTTSandnes", "VetHSTTSandnes_I_UiSTTStavanger").
+
++SetNode("HiOTTFredrikstad").
++SetAdminDist("HiOTTFredrikstad", "static", 1).
++SetAdminDist("HiOTTFredrikstad", "bgp", 2).
++SetAdminDist("HiOTTFredrikstad", "ospf", 3).
++SetInterface("HiOTTFredrikstad", "HiOTTFredrikstad_I_UMBTTAs").
++SetInterface("HiOTTFredrikstad", "HiOTTFredrikstad_I_HiOTTHalden").
++SetInterface("HiOTTFredrikstad", "HiOTTFredrikstad_I_HVETTBorre").
+
++SetNode("HiOTTHalden").
++SetAdminDist("HiOTTHalden", "static", 1).
++SetAdminDist("HiOTTHalden", "bgp", 2).
++SetAdminDist("HiOTTHalden", "ospf", 3).
++SetInterface("HiOTTHalden", "HiOTTHalden_I_HiOTTFredrikstad").
++SetInterface("HiOTTHalden", "HiOTTHalden_I_UiO").
+
++SetNode("UiToID15").
++SetAdminDist("UiToID15", "static", 1).
++SetAdminDist("UiToID15", "bgp", 2).
++SetAdminDist("UiToID15", "ospf", 3).
++SetInterface("UiToID15", "UiToID15_I_UiTo").
++SetInterface("UiToID15", "UiToID15_I_HiNTTNarvik").
++SetInterface("UiToID15", "UiToID15_I_HiFTTHammerfest").
+
++SetNode("HSHTTHaugesund").
++SetAdminDist("HSHTTHaugesund", "static", 1).
++SetAdminDist("HSHTTHaugesund", "bgp", 2).
++SetAdminDist("HSHTTHaugesund", "ospf", 3).
++SetInterface("HSHTTHaugesund", "HSHTTHaugesund_I_UiSTTStavanger").
++SetInterface("HSHTTHaugesund", "HSHTTHaugesund_I_HSHTTStord").
+
++SetNode("UiO").
++SetAdminDist("UiO", "static", 1).
++SetAdminDist("UiO", "bgp", 2).
++SetAdminDist("UiO", "ospf", 3).
++SetInterface("UiO", "UiO_I_UiOTTStTTOlavsplassTT5").
++SetInterface("UiO", "UiO_I_HiOTTHalden").
++SetInterface("UiO", "UiO_I_NTNUTTRealfagbygget").
++SetInterface("UiO", "UiO_I_Stockholm").
++SetInterface("UiO", "UiO_I_NORDUnetTTStockholmID58").
++SetInterface("UiO", "UiO_I_UiOID0").
++SetInterface("UiO", "UiO_I_UNIKTTKjeller").
+
++SetNode("HHTTElverum").
++SetAdminDist("HHTTElverum", "static", 1).
++SetAdminDist("HHTTElverum", "bgp", 2).
++SetAdminDist("HHTTElverum", "ospf", 3).
++SetInterface("HHTTElverum", "HHTTElverum_I_HHTTKongsvinger").
++SetInterface("HHTTElverum", "HHTTElverum_I_HHTTRena").
++SetInterface("HHTTElverum", "HHTTElverum_I_HHTTHamar").
+
++SetNode("HiTTTBo").
++SetAdminDist("HiTTTBo", "static", 1).
++SetAdminDist("HiTTTBo", "bgp", 2).
++SetAdminDist("HiTTTBo", "ospf", 3).
++SetInterface("HiTTTBo", "HiTTTBo_I_HiBUTTDrammen").
++SetInterface("HiTTTBo", "HiTTTBo_I_UiOID0").
++SetInterface("HiTTTBo", "HiTTTBo_I_HiTTTNotodden").
++SetInterface("HiTTTBo", "HiTTTBo_I_HitTTRauland").
++SetInterface("HiTTTBo", "HiTTTBo_I_HiTTTPorsgrunn").
+
++SetNode("NORDUnetTTStockholmID58").
++SetAdminDist("NORDUnetTTStockholmID58", "static", 1).
++SetAdminDist("NORDUnetTTStockholmID58", "bgp", 2).
++SetAdminDist("NORDUnetTTStockholmID58", "ospf", 3).
++SetInterface("NORDUnetTTStockholmID58", "NORDUnetTTStockholmID58_I_UiO").
+
++SetNode("HiNTTTNamsos").
++SetAdminDist("HiNTTTNamsos", "static", 1).
++SetAdminDist("HiNTTTNamsos", "bgp", 2).
++SetAdminDist("HiNTTTNamsos", "ospf", 3).
++SetInterface("HiNTTTNamsos", "HiNTTTNamsos_I_NBTTMoTTiTTRana").
++SetInterface("HiNTTTNamsos", "HiNTTTNamsos_I_HiNTTTSteinkjer").
+
++SetNode("HSFTTSongdal").
++SetAdminDist("HSFTTSongdal", "static", 1).
++SetAdminDist("HSFTTSongdal", "bgp", 2).
++SetAdminDist("HSFTTSongdal", "ospf", 3).
++SetInterface("HSFTTSongdal", "HSFTTSongdal_I_HSFTTForde").
++SetInterface("HSFTTSongdal", "HSFTTSongdal_I_UiBTTHoyteklogibygget").
+
++SetNode("UiBTTHoyteklogibygget").
++SetAdminDist("UiBTTHoyteklogibygget", "static", 1).
++SetAdminDist("UiBTTHoyteklogibygget", "bgp", 2).
++SetAdminDist("UiBTTHoyteklogibygget", "ospf", 3).
++SetInterface("UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_NTNUTTHovedbygget").
++SetInterface("UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_HiATTAlesund").
++SetInterface("UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_HSHTTStord").
++SetInterface("UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_UiOTTStTTOlavsplassTT5").
++SetInterface("UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_HSFTTSongdal").
++SetInterface("UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_UiBTTBT").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_NORDUnetTTStockholm").
++SetInterface("Stockholm", "Stockholm_I_HiNTTNarvik").
++SetInterface("Stockholm", "Stockholm_I_UiO").
+
++SetNode("HiFTTHammerfest").
++SetAdminDist("HiFTTHammerfest", "static", 1).
++SetAdminDist("HiFTTHammerfest", "bgp", 2).
++SetAdminDist("HiFTTHammerfest", "ospf", 3).
++SetInterface("HiFTTHammerfest", "HiFTTHammerfest_I_HiFTTAlta").
++SetInterface("HiFTTHammerfest", "HiFTTHammerfest_I_UiToID15").
++SetInterface("HiFTTHammerfest", "HiFTTHammerfest_I_HiFTTVadso").
+
++SetNode("UiATTKristiansand").
++SetAdminDist("UiATTKristiansand", "static", 1).
++SetAdminDist("UiATTKristiansand", "bgp", 2).
++SetAdminDist("UiATTKristiansand", "ospf", 3).
++SetInterface("UiATTKristiansand", "UiATTKristiansand_I_UiOTTStTTOlavsplassTT5").
++SetInterface("UiATTKristiansand", "UiATTKristiansand_I_UiSTTStavanger").
++SetInterface("UiATTKristiansand", "UiATTKristiansand_I_UiATTGrimstad").
+
++SetNode("HiNeTTMoTTiTTRana").
++SetAdminDist("HiNeTTMoTTiTTRana", "static", 1).
++SetAdminDist("HiNeTTMoTTiTTRana", "bgp", 2).
++SetAdminDist("HiNeTTMoTTiTTRana", "ospf", 3).
++SetInterface("HiNeTTMoTTiTTRana", "HiNeTTMoTTiTTRana_I_NBTTMoTTiTTRana").
+
++SetNode("HiNeTTNesna").
++SetAdminDist("HiNeTTNesna", "static", 1).
++SetAdminDist("HiNeTTNesna", "bgp", 2).
++SetAdminDist("HiNeTTNesna", "ospf", 3).
++SetInterface("HiNeTTNesna", "HiNeTTNesna_I_NBTTMoTTiTTRana").
++SetInterface("HiNeTTNesna", "HiNeTTNesna_I_HiNeTTSandnesjoen").
+
++SetNode("NBTTMoTTiTTRana").
++SetAdminDist("NBTTMoTTiTTRana", "static", 1).
++SetAdminDist("NBTTMoTTiTTRana", "bgp", 2).
++SetAdminDist("NBTTMoTTiTTRana", "ospf", 3).
++SetInterface("NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HBOTTMoTTiTTRana").
++SetInterface("NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HiNTTTNamsos").
++SetInterface("NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_NTNUTTRealfagbygget").
++SetInterface("NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HBOTTBodo").
++SetInterface("NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HiNeTTMoTTiTTRana").
++SetInterface("NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HiNeTTNesna").
+
++SetNode("UiToTTKarasjok").
++SetAdminDist("UiToTTKarasjok", "static", 1).
++SetAdminDist("UiToTTKarasjok", "bgp", 2).
++SetAdminDist("UiToTTKarasjok", "ospf", 3).
++SetInterface("UiToTTKarasjok", "UiToTTKarasjok_I_HiFTTKirkenes").
++SetInterface("UiToTTKarasjok", "UiToTTKarasjok_I_SA_SHTTKautokeino").
+
++SetNode("HSFTTSandane").
++SetAdminDist("HSFTTSandane", "static", 1).
++SetAdminDist("HSFTTSandane", "bgp", 2).
++SetAdminDist("HSFTTSandane", "ospf", 3).
++SetInterface("HSFTTSandane", "HSFTTSandane_I_HSFTTForde").
+
++SetNode("HSFTTForde").
++SetAdminDist("HSFTTForde", "static", 1).
++SetAdminDist("HSFTTForde", "bgp", 2).
++SetAdminDist("HSFTTForde", "ospf", 3).
++SetInterface("HSFTTForde", "HSFTTForde_I_HSFTTSandane").
++SetInterface("HSFTTForde", "HSFTTForde_I_HSFTTSongdal").
++SetInterface("HSFTTForde", "HSFTTForde_I_HVOTTVolda").
+
++SetNode("HiATTAlesund").
++SetAdminDist("HiATTAlesund", "static", 1).
++SetAdminDist("HiATTAlesund", "bgp", 2).
++SetAdminDist("HiATTAlesund", "ospf", 3).
++SetInterface("HiATTAlesund", "HiATTAlesund_I_NTNUTTHovedbygget").
++SetInterface("HiATTAlesund", "HiATTAlesund_I_HSMTTMolde").
++SetInterface("HiATTAlesund", "HiATTAlesund_I_UiBTTHoyteklogibygget").
++SetInterface("HiATTAlesund", "HiATTAlesund_I_HVOTTVolda").
+
++SetNode("NyAlesund").
++SetAdminDist("NyAlesund", "static", 1).
++SetAdminDist("NyAlesund", "bgp", 2).
++SetAdminDist("NyAlesund", "ospf", 3).
++SetInterface("NyAlesund", "NyAlesund_I_UNISTTSvalbard").
+
++SetNode("HiBuTTHonefoss").
++SetAdminDist("HiBuTTHonefoss", "static", 1).
++SetAdminDist("HiBuTTHonefoss", "bgp", 2).
++SetAdminDist("HiBuTTHonefoss", "ospf", 3).
++SetInterface("HiBuTTHonefoss", "HiBuTTHonefoss_I_HiBUTTKongsberg").
++SetInterface("HiBuTTHonefoss", "HiBuTTHonefoss_I_HiAKTTKjeller").
+
++SetNode("UiTo").
++SetAdminDist("UiTo", "static", 1).
++SetAdminDist("UiTo", "bgp", 2).
++SetAdminDist("UiTo", "ospf", 3).
++SetInterface("UiTo", "UiTo_I_NTNUTTRealfagbygget").
++SetInterface("UiTo", "UiTo_I_HiFTTAlta").
++SetInterface("UiTo", "UiTo_I_UiToID15").
++SetInterface("UiTo", "UiTo_I_HiHTTHarstad").
+
++SetNode("HVOTTVolda").
++SetAdminDist("HVOTTVolda", "static", 1).
++SetAdminDist("HVOTTVolda", "bgp", 2).
++SetAdminDist("HVOTTVolda", "ospf", 3).
++SetInterface("HVOTTVolda", "HVOTTVolda_I_HSFTTForde").
++SetInterface("HVOTTVolda", "HVOTTVolda_I_HiATTAlesund").
+
++SetNode("HiNeTTSandnesjoen").
++SetAdminDist("HiNeTTSandnesjoen", "static", 1).
++SetAdminDist("HiNeTTSandnesjoen", "bgp", 2).
++SetAdminDist("HiNeTTSandnesjoen", "ospf", 3).
++SetInterface("HiNeTTSandnesjoen", "HiNeTTSandnesjoen_I_NTNUTTHovedbygget").
++SetInterface("HiNeTTSandnesjoen", "HiNeTTSandnesjoen_I_HiNeTTNesna").
++SetInterface("HiNeTTSandnesjoen", "HiNeTTSandnesjoen_I_HBOTTBodo").
+
++SetNode("NTNUTTRealfagbygget").
++SetAdminDist("NTNUTTRealfagbygget", "static", 1).
++SetAdminDist("NTNUTTRealfagbygget", "bgp", 2).
++SetAdminDist("NTNUTTRealfagbygget", "ospf", 3).
++SetInterface("NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_NTNUTTHovedbygget").
++SetInterface("NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_HingTTStjordal").
++SetInterface("NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_UiTo").
++SetInterface("NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_UNINETTTTTeknobyen").
++SetInterface("NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_UiO").
++SetInterface("NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_NBTTMoTTiTTRana").
+
++SetNode("HVETTBorre").
++SetAdminDist("HVETTBorre", "static", 1).
++SetAdminDist("HVETTBorre", "bgp", 2).
++SetAdminDist("HVETTBorre", "ospf", 3).
++SetInterface("HVETTBorre", "HVETTBorre_I_HiBUTTDrammen").
++SetInterface("HVETTBorre", "HVETTBorre_I_HVETTLarvik").
++SetInterface("HVETTBorre", "HVETTBorre_I_HiOTTFredrikstad").
+
++SetNode("HiFTTKirkenes").
++SetAdminDist("HiFTTKirkenes", "static", 1).
++SetAdminDist("HiFTTKirkenes", "bgp", 2).
++SetAdminDist("HiFTTKirkenes", "ospf", 3).
++SetInterface("HiFTTKirkenes", "HiFTTKirkenes_I_UiToTTKarasjok").
++SetInterface("HiFTTKirkenes", "HiFTTKirkenes_I_HiFTTVadso").
+
++SetNode("HiBUTTKongsberg").
++SetAdminDist("HiBUTTKongsberg", "static", 1).
++SetAdminDist("HiBUTTKongsberg", "bgp", 2).
++SetAdminDist("HiBUTTKongsberg", "ospf", 3).
++SetInterface("HiBUTTKongsberg", "HiBUTTKongsberg_I_HiBUTTDrammen").
++SetInterface("HiBUTTKongsberg", "HiBUTTKongsberg_I_HiBuTTHonefoss").
+
++SetNode("NORDUnetTTKobenhavn").
++SetAdminDist("NORDUnetTTKobenhavn", "static", 1).
++SetAdminDist("NORDUnetTTKobenhavn", "bgp", 2).
++SetAdminDist("NORDUnetTTKobenhavn", "ospf", 3).
++SetInterface("NORDUnetTTKobenhavn", "NORDUnetTTKobenhavn_I_UiOTTStTTOlavsplassTT5").
+
++SetNode("HHTTHamar").
++SetAdminDist("HHTTHamar", "static", 1).
++SetAdminDist("HHTTHamar", "bgp", 2).
++SetAdminDist("HHTTHamar", "ospf", 3).
++SetInterface("HHTTHamar", "HHTTHamar_I_HiLTTLillehammer").
++SetInterface("HHTTHamar", "HHTTHamar_I_HHTTElverum").
+
++SetNode("HiTTTPorsgrunn").
++SetAdminDist("HiTTTPorsgrunn", "static", 1).
++SetAdminDist("HiTTTPorsgrunn", "bgp", 2).
++SetAdminDist("HiTTTPorsgrunn", "ospf", 3).
++SetInterface("HiTTTPorsgrunn", "HiTTTPorsgrunn_I_HiTTTBo").
++SetInterface("HiTTTPorsgrunn", "HiTTTPorsgrunn_I_UiATTGrimstad").
+
++SetNode("HitTTRauland").
++SetAdminDist("HitTTRauland", "static", 1).
++SetAdminDist("HitTTRauland", "bgp", 2).
++SetAdminDist("HitTTRauland", "ospf", 3).
++SetInterface("HitTTRauland", "HitTTRauland_I_HiTTTBo").
+
++SetNode("HSMTTKristiansun").
++SetAdminDist("HSMTTKristiansun", "static", 1).
++SetAdminDist("HSMTTKristiansun", "bgp", 2).
++SetAdminDist("HSMTTKristiansun", "ospf", 3).
++SetInterface("HSMTTKristiansun", "HSMTTKristiansun_I_HSMTTMolde").
++SetInterface("HSMTTKristiansun", "HSMTTKristiansun_I_UNINETTTTTeknobyen").
+
++SetLink("NTNUTTHovedbygget_I_HiATTAlesund", "HiATTAlesund_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_UiOTTStTTOlavsplassTT5", "UiOTTStTTOlavsplassTT5_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_UNINETTTTTeknobyen", "UNINETTTTTeknobyen_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_HiNeTTSandnesjoen", "HiNeTTSandnesjoen_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_HiNTTNarvik", "HiNTTNarvik_I_NTNUTTHovedbygget").
++SetLink("NTNUTTHovedbygget_I_HiNTTTSteinkjer", "HiNTTTSteinkjer_I_NTNUTTHovedbygget").
++SetLink("SA_SHTTKautokeino_I_UiToTTKarasjok", "UiToTTKarasjok_I_SA_SHTTKautokeino").
++SetLink("SA_SHTTKautokeino_I_HiFTTAlta", "HiFTTAlta_I_SA_SHTTKautokeino").
++SetLink("HBOTTBodo_I_HiNTTNarvik", "HiNTTNarvik_I_HBOTTBodo").
++SetLink("HBOTTBodo_I_HiHTTHarstad", "HiHTTHarstad_I_HBOTTBodo").
++SetLink("HBOTTBodo_I_NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HBOTTBodo").
++SetLink("HBOTTBodo_I_HiNeTTSandnesjoen", "HiNeTTSandnesjoen_I_HBOTTBodo").
++SetLink("HingTTStjordal_I_HiNTTTLevanger", "HiNTTTLevanger_I_HingTTStjordal").
++SetLink("HingTTStjordal_I_NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_HingTTStjordal").
++SetLink("UiOTTStTTOlavsplassTT5_I_HiBUTTDrammen", "HiBUTTDrammen_I_UiOTTStTTOlavsplassTT5").
++SetLink("UiOTTStTTOlavsplassTT5_I_UiO", "UiO_I_UiOTTStTTOlavsplassTT5").
++SetLink("UiOTTStTTOlavsplassTT5_I_HiGTTGjovik", "HiGTTGjovik_I_UiOTTStTTOlavsplassTT5").
++SetLink("UiOTTStTTOlavsplassTT5_I_UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_UiOTTStTTOlavsplassTT5").
++SetLink("UiOTTStTTOlavsplassTT5_I_UiATTKristiansand", "UiATTKristiansand_I_UiOTTStTTOlavsplassTT5").
++SetLink("UiOTTStTTOlavsplassTT5_I_NORDUnetTTKobenhavn", "NORDUnetTTKobenhavn_I_UiOTTStTTOlavsplassTT5").
++SetLink("UiOTTStTTOlavsplassTT5_I_UiOID0", "UiOID0_I_UiOTTStTTOlavsplassTT5").
++SetLink("HiFTTAlta_I_HiFTTHammerfest", "HiFTTHammerfest_I_HiFTTAlta").
++SetLink("HiFTTAlta_I_UiTo", "UiTo_I_HiFTTAlta").
++SetLink("HiAKTTKjeller_I_UNIKTTKjeller", "UNIKTTKjeller_I_HiAKTTKjeller").
++SetLink("HiAKTTKjeller_I_HiBuTTHonefoss", "HiBuTTHonefoss_I_HiAKTTKjeller").
++SetLink("NORDUnetTTStockholm_I_Stockholm", "Stockholm_I_NORDUnetTTStockholm").
++SetLink("UiSTTStavanger_I_VetHSTTSandnes", "VetHSTTSandnes_I_UiSTTStavanger").
++SetLink("UiSTTStavanger_I_UiATTKristiansand", "UiATTKristiansand_I_UiSTTStavanger").
++SetLink("UiSTTStavanger_I_HSHTTHaugesund", "HSHTTHaugesund_I_UiSTTStavanger").
++SetLink("UiSTTStavanger_I_UiBTTBT", "UiBTTBT_I_UiSTTStavanger").
++SetLink("HSMTTMolde_I_HiATTAlesund", "HiATTAlesund_I_HSMTTMolde").
++SetLink("HSMTTMolde_I_HSMTTKristiansun", "HSMTTKristiansun_I_HSMTTMolde").
++SetLink("UiOID0_I_HHTTKongsvinger", "HHTTKongsvinger_I_UiOID0").
++SetLink("UiOID0_I_UiO", "UiO_I_UiOID0").
++SetLink("UiOID0_I_UiBTTBT", "UiBTTBT_I_UiOID0").
++SetLink("UiOID0_I_UMBTTAs", "UMBTTAs_I_UiOID0").
++SetLink("UiOID0_I_HiTTTBo", "HiTTTBo_I_UiOID0").
++SetLink("UiATTGrimstad_I_HiTTTPorsgrunn", "HiTTTPorsgrunn_I_UiATTGrimstad").
++SetLink("UiATTGrimstad_I_UiATTKristiansand", "UiATTKristiansand_I_UiATTGrimstad").
++SetLink("HiNTTTSteinkjer_I_HiNTTTNamsos", "HiNTTTNamsos_I_HiNTTTSteinkjer").
++SetLink("HiNTTTSteinkjer_I_HiNTTTLevanger", "HiNTTTLevanger_I_HiNTTTSteinkjer").
++SetLink("HiNTTNarvik_I_UiToID15", "UiToID15_I_HiNTTNarvik").
++SetLink("HiNTTNarvik_I_HiHTTHarstad", "HiHTTHarstad_I_HiNTTNarvik").
++SetLink("HiNTTNarvik_I_Stockholm", "Stockholm_I_HiNTTNarvik").
++SetLink("HHTTKongsvinger_I_HHTTElverum", "HHTTElverum_I_HHTTKongsvinger").
++SetLink("HBOTTMoTTiTTRana_I_NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HBOTTMoTTiTTRana").
++SetLink("HHTTTynset_I_HHTTEvenstad", "HHTTEvenstad_I_HHTTTynset").
++SetLink("HHTTTynset_I_UNINETTTTTeknobyen", "UNINETTTTTeknobyen_I_HHTTTynset").
++SetLink("HiTTTNotodden_I_HiTTTBo", "HiTTTBo_I_HiTTTNotodden").
++SetLink("UNINETTTTTeknobyen_I_NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_UNINETTTTTeknobyen").
++SetLink("UNINETTTTTeknobyen_I_HSMTTKristiansun", "HSMTTKristiansun_I_UNINETTTTTeknobyen").
++SetLink("HiGTTGjovik_I_HiLTTLillehammer", "HiLTTLillehammer_I_HiGTTGjovik").
++SetLink("HVETTLarvik_I_HVETTBorre", "HVETTBorre_I_HVETTLarvik").
++SetLink("UNISTTSvalbard_I_HiHTTHarstad", "HiHTTHarstad_I_UNISTTSvalbard").
++SetLink("UNISTTSvalbard_I_NyAlesund", "NyAlesund_I_UNISTTSvalbard").
++SetLink("UNIKTTKjeller_I_UiO", "UiO_I_UNIKTTKjeller").
++SetLink("HiLTTLillehammer_I_HHTTHamar", "HHTTHamar_I_HiLTTLillehammer").
++SetLink("UMBTTAs_I_HiOTTFredrikstad", "HiOTTFredrikstad_I_UMBTTAs").
++SetLink("UiBTTBT_I_UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_UiBTTBT").
++SetLink("HiHTTHarstad_I_UiTo", "UiTo_I_HiHTTHarstad").
++SetLink("HiBUTTDrammen_I_HiBUTTKongsberg", "HiBUTTKongsberg_I_HiBUTTDrammen").
++SetLink("HiBUTTDrammen_I_HiTTTBo", "HiTTTBo_I_HiBUTTDrammen").
++SetLink("HiBUTTDrammen_I_HVETTBorre", "HVETTBorre_I_HiBUTTDrammen").
++SetLink("HiFTTVadso_I_HiFTTKirkenes", "HiFTTKirkenes_I_HiFTTVadso").
++SetLink("HiFTTVadso_I_HiFTTHammerfest", "HiFTTHammerfest_I_HiFTTVadso").
++SetLink("HHTTEvenstad_I_HHTTRena", "HHTTRena_I_HHTTEvenstad").
++SetLink("HHTTRena_I_HHTTElverum", "HHTTElverum_I_HHTTRena").
++SetLink("HSHTTStord_I_UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_HSHTTStord").
++SetLink("HSHTTStord_I_HSHTTHaugesund", "HSHTTHaugesund_I_HSHTTStord").
++SetLink("HiOTTFredrikstad_I_HiOTTHalden", "HiOTTHalden_I_HiOTTFredrikstad").
++SetLink("HiOTTFredrikstad_I_HVETTBorre", "HVETTBorre_I_HiOTTFredrikstad").
++SetLink("HiOTTHalden_I_UiO", "UiO_I_HiOTTHalden").
++SetLink("UiToID15_I_UiTo", "UiTo_I_UiToID15").
++SetLink("UiToID15_I_HiFTTHammerfest", "HiFTTHammerfest_I_UiToID15").
++SetLink("UiO_I_NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_UiO").
++SetLink("UiO_I_Stockholm", "Stockholm_I_UiO").
++SetLink("UiO_I_NORDUnetTTStockholmID58", "NORDUnetTTStockholmID58_I_UiO").
++SetLink("HHTTElverum_I_HHTTHamar", "HHTTHamar_I_HHTTElverum").
++SetLink("HiTTTBo_I_HitTTRauland", "HitTTRauland_I_HiTTTBo").
++SetLink("HiTTTBo_I_HiTTTPorsgrunn", "HiTTTPorsgrunn_I_HiTTTBo").
++SetLink("HiNTTTNamsos_I_NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HiNTTTNamsos").
++SetLink("HSFTTSongdal_I_HSFTTForde", "HSFTTForde_I_HSFTTSongdal").
++SetLink("HSFTTSongdal_I_UiBTTHoyteklogibygget", "UiBTTHoyteklogibygget_I_HSFTTSongdal").
++SetLink("UiBTTHoyteklogibygget_I_HiATTAlesund", "HiATTAlesund_I_UiBTTHoyteklogibygget").
++SetLink("HiNeTTMoTTiTTRana_I_NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HiNeTTMoTTiTTRana").
++SetLink("HiNeTTNesna_I_NBTTMoTTiTTRana", "NBTTMoTTiTTRana_I_HiNeTTNesna").
++SetLink("HiNeTTNesna_I_HiNeTTSandnesjoen", "HiNeTTSandnesjoen_I_HiNeTTNesna").
++SetLink("NBTTMoTTiTTRana_I_NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_NBTTMoTTiTTRana").
++SetLink("UiToTTKarasjok_I_HiFTTKirkenes", "HiFTTKirkenes_I_UiToTTKarasjok").
++SetLink("HSFTTSandane_I_HSFTTForde", "HSFTTForde_I_HSFTTSandane").
++SetLink("HSFTTForde_I_HVOTTVolda", "HVOTTVolda_I_HSFTTForde").
++SetLink("HiATTAlesund_I_HVOTTVolda", "HVOTTVolda_I_HiATTAlesund").
++SetLink("HiBuTTHonefoss_I_HiBUTTKongsberg", "HiBUTTKongsberg_I_HiBuTTHonefoss").
++SetLink("UiTo_I_NTNUTTRealfagbygget", "NTNUTTRealfagbygget_I_UiTo").
+
+
++SetNetwork("UiToID15", "N_UiToID15").

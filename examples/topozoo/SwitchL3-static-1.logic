@@ -1,0 +1,402 @@
++SetNode("Neuchatel").
++SetAdminDist("Neuchatel", "static", 1).
++SetAdminDist("Neuchatel", "bgp", 2).
++SetAdminDist("Neuchatel", "ospf", 3).
++SetInterface("Neuchatel", "Neuchatel_I_ZurichTT_University_").
++SetInterface("Neuchatel", "Neuchatel_I_Grenchen").
++SetInterface("Neuchatel", "Neuchatel_I_Yverdon").
++SetInterface("Neuchatel", "Neuchatel_I_LausanneTT_EPFL_").
++SetInterface("Neuchatel", "Neuchatel_I_Delemont").
+
++SetNode("SwissIX").
++SetAdminDist("SwissIX", "static", 1).
++SetAdminDist("SwissIX", "bgp", 2).
++SetAdminDist("SwissIX", "ospf", 3).
++SetInterface("SwissIX", "SwissIX_I_Basel").
+
++SetNode("GBLX").
++SetAdminDist("GBLX", "static", 1).
++SetAdminDist("GBLX", "bgp", 2).
++SetAdminDist("GBLX", "ospf", 3).
++SetInterface("GBLX", "GBLX_I_CERNID34").
+
++SetNode("Basel").
++SetAdminDist("Basel", "static", 1).
++SetAdminDist("Basel", "bgp", 2).
++SetAdminDist("Basel", "ospf", 3).
++SetInterface("Basel", "Basel_I_Bern").
++SetInterface("Basel", "Basel_I_SwissIX").
++SetInterface("Basel", "Basel_I_ZurichTT_ETH_").
++SetInterface("Basel", "Basel_I_Brugg").
++SetInterface("Basel", "Basel_I_VilligenTTPSI").
++SetInterface("Basel", "Basel_I_Delemont").
+
++SetNode("BuchsTTSG").
++SetAdminDist("BuchsTTSG", "static", 1).
++SetAdminDist("BuchsTTSG", "bgp", 2).
++SetAdminDist("BuchsTTSG", "ospf", 3).
++SetInterface("BuchsTTSG", "BuchsTTSG_I_Davos").
++SetInterface("BuchsTTSG", "BuchsTTSG_I_St_TTGallen").
++SetInterface("BuchsTTSG", "BuchsTTSG_I_Chur").
++SetInterface("BuchsTTSG", "BuchsTTSG_I_Liechtenstein").
+
++SetNode("TIX").
++SetAdminDist("TIX", "static", 1).
++SetAdminDist("TIX", "bgp", 2).
++SetAdminDist("TIX", "ospf", 3).
++SetInterface("TIX", "TIX_I_IXEuropeTTZurich").
+
++SetNode("Birmensdorf").
++SetAdminDist("Birmensdorf", "static", 1).
++SetAdminDist("Birmensdorf", "bgp", 2).
++SetAdminDist("Birmensdorf", "ospf", 3).
++SetInterface("Birmensdorf", "Birmensdorf_I_Rueschlikon").
++SetInterface("Birmensdorf", "Birmensdorf_I_ZurichTT_ETH_").
+
++SetNode("Delemont").
++SetAdminDist("Delemont", "static", 1).
++SetAdminDist("Delemont", "bgp", 2).
++SetAdminDist("Delemont", "ospf", 3).
++SetInterface("Delemont", "Delemont_I_Basel").
++SetInterface("Delemont", "Delemont_I_Neuchatel").
+
++SetNode("Kreuzlingen").
++SetAdminDist("Kreuzlingen", "static", 1).
++SetAdminDist("Kreuzlingen", "bgp", 2).
++SetAdminDist("Kreuzlingen", "ospf", 3).
++SetInterface("Kreuzlingen", "Kreuzlingen_I_ZurichTT_University_").
++SetInterface("Kreuzlingen", "Kreuzlingen_I_St_TTGallen").
++SetInterface("Kreuzlingen", "Kreuzlingen_I_BelWue").
+
++SetNode("IXEuropeTTZurich").
++SetAdminDist("IXEuropeTTZurich", "static", 1).
++SetAdminDist("IXEuropeTTZurich", "bgp", 2).
++SetAdminDist("IXEuropeTTZurich", "ospf", 3).
++SetInterface("IXEuropeTTZurich", "IXEuropeTTZurich_I_SwissIXID14").
++SetInterface("IXEuropeTTZurich", "IXEuropeTTZurich_I_TIX").
++SetInterface("IXEuropeTTZurich", "IXEuropeTTZurich_I_TELIA").
++SetInterface("IXEuropeTTZurich", "IXEuropeTTZurich_I_Rueschlikon").
++SetInterface("IXEuropeTTZurich", "IXEuropeTTZurich_I_ZurichTT_ETH_").
++SetInterface("IXEuropeTTZurich", "IXEuropeTTZurich_I_Swisscom").
+
++SetNode("Grenchen").
++SetAdminDist("Grenchen", "static", 1).
++SetAdminDist("Grenchen", "bgp", 2).
++SetAdminDist("Grenchen", "ospf", 3).
++SetInterface("Grenchen", "Grenchen_I_ZurichTT_University_").
++SetInterface("Grenchen", "Grenchen_I_Neuchatel").
+
++SetNode("Fribourg").
++SetAdminDist("Fribourg", "static", 1).
++SetAdminDist("Fribourg", "bgp", 2).
++SetAdminDist("Fribourg", "ospf", 3).
++SetInterface("Fribourg", "Fribourg_I_LausanneTT_University_").
++SetInterface("Fribourg", "Fribourg_I_Bern").
+
++SetNode("LausanneTT_EPFL_").
++SetAdminDist("LausanneTT_EPFL_", "static", 1).
++SetAdminDist("LausanneTT_EPFL_", "bgp", 2).
++SetAdminDist("LausanneTT_EPFL_", "ospf", 3).
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_Martigny").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_Neuchatel").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_Geneva").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_LausanneTT_University_").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_Yverdon").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_ZurichTT_University_").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_CERNID34").
++SetInterface("LausanneTT_EPFL_", "LausanneTT_EPFL__I_Manno").
+
++SetNode("Geneva").
++SetAdminDist("Geneva", "static", 1).
++SetAdminDist("Geneva", "bgp", 2).
++SetAdminDist("Geneva", "ospf", 3).
++SetInterface("Geneva", "Geneva_I_CERNID34").
++SetInterface("Geneva", "Geneva_I_LausanneTT_EPFL_").
+
++SetNode("CIXP").
++SetAdminDist("CIXP", "static", 1).
++SetAdminDist("CIXP", "bgp", 2).
++SetAdminDist("CIXP", "ospf", 3).
++SetInterface("CIXP", "CIXP_I_CERNID34").
+
++SetNode("CERNID34").
++SetAdminDist("CERNID34", "static", 1).
++SetAdminDist("CERNID34", "bgp", 2).
++SetAdminDist("CERNID34", "ospf", 3).
++SetInterface("CERNID34", "CERNID34_I_LausanneTT_EPFL_").
++SetInterface("CERNID34", "CERNID34_I_Geneva").
++SetInterface("CERNID34", "CERNID34_I_GBLX").
++SetInterface("CERNID34", "CERNID34_I_CERN").
++SetInterface("CERNID34", "CERNID34_I_SwisscomID11").
++SetInterface("CERNID34", "CERNID34_I_AMS_IX").
++SetInterface("CERNID34", "CERNID34_I_ZurichTT_University_").
++SetInterface("CERNID34", "CERNID34_I_LausanneTT_University_").
++SetInterface("CERNID34", "CERNID34_I_CIXP").
++SetInterface("CERNID34", "CERNID34_I_GEANT2").
+
++SetNode("TELIA").
++SetAdminDist("TELIA", "static", 1).
++SetAdminDist("TELIA", "bgp", 2).
++SetAdminDist("TELIA", "ospf", 3).
++SetInterface("TELIA", "TELIA_I_IXEuropeTTZurich").
+
++SetNode("Chur").
++SetAdminDist("Chur", "static", 1).
++SetAdminDist("Chur", "bgp", 2).
++SetAdminDist("Chur", "ospf", 3).
++SetInterface("Chur", "Chur_I_Davos").
++SetInterface("Chur", "Chur_I_Rapperswil").
++SetInterface("Chur", "Chur_I_BuchsTTSG").
+
++SetNode("Brugg").
++SetAdminDist("Brugg", "static", 1).
++SetAdminDist("Brugg", "bgp", 2).
++SetAdminDist("Brugg", "ospf", 3).
++SetInterface("Brugg", "Brugg_I_ZurichTT_University_").
++SetInterface("Brugg", "Brugg_I_Basel").
+
++SetNode("St_TTGallen").
++SetAdminDist("St_TTGallen", "static", 1).
++SetAdminDist("St_TTGallen", "bgp", 2).
++SetAdminDist("St_TTGallen", "ospf", 3).
++SetInterface("St_TTGallen", "St_TTGallen_I_Winterthur").
++SetInterface("St_TTGallen", "St_TTGallen_I_Liechtenstein").
++SetInterface("St_TTGallen", "St_TTGallen_I_BuchsTTSG").
++SetInterface("St_TTGallen", "St_TTGallen_I_Kreuzlingen").
+
++SetNode("GEANT2").
++SetAdminDist("GEANT2", "static", 1).
++SetAdminDist("GEANT2", "bgp", 2).
++SetAdminDist("GEANT2", "ospf", 3).
++SetInterface("GEANT2", "GEANT2_I_CERNID34").
+
++SetNode("Winterthur").
++SetAdminDist("Winterthur", "static", 1).
++SetAdminDist("Winterthur", "bgp", 2).
++SetAdminDist("Winterthur", "ospf", 3).
++SetInterface("Winterthur", "Winterthur_I_St_TTGallen").
++SetInterface("Winterthur", "Winterthur_I_ZurichTT_ETH_").
+
++SetNode("Davos").
++SetAdminDist("Davos", "static", 1).
++SetAdminDist("Davos", "bgp", 2).
++SetAdminDist("Davos", "ospf", 3).
++SetInterface("Davos", "Davos_I_Chur").
++SetInterface("Davos", "Davos_I_BuchsTTSG").
+
++SetNode("Martigny").
++SetAdminDist("Martigny", "static", 1).
++SetAdminDist("Martigny", "bgp", 2).
++SetAdminDist("Martigny", "ospf", 3).
++SetInterface("Martigny", "Martigny_I_Brig").
++SetInterface("Martigny", "Martigny_I_LausanneTT_EPFL_").
+
++SetNode("LausanneTT_University_").
++SetAdminDist("LausanneTT_University_", "static", 1).
++SetAdminDist("LausanneTT_University_", "bgp", 2).
++SetAdminDist("LausanneTT_University_", "ospf", 3).
++SetInterface("LausanneTT_University_", "LausanneTT_University__I_ZurichTT_ETH_").
++SetInterface("LausanneTT_University_", "LausanneTT_University__I_CERNID34").
++SetInterface("LausanneTT_University_", "LausanneTT_University__I_Bern").
++SetInterface("LausanneTT_University_", "LausanneTT_University__I_Fribourg").
++SetInterface("LausanneTT_University_", "LausanneTT_University__I_LausanneTT_EPFL_").
+
++SetNode("Rapperswil").
++SetAdminDist("Rapperswil", "static", 1).
++SetAdminDist("Rapperswil", "bgp", 2).
++SetAdminDist("Rapperswil", "ospf", 3).
++SetInterface("Rapperswil", "Rapperswil_I_Manno").
++SetInterface("Rapperswil", "Rapperswil_I_Liechtenstein").
++SetInterface("Rapperswil", "Rapperswil_I_Chur").
++SetInterface("Rapperswil", "Rapperswil_I_ZurichTT_ETH_").
+
++SetNode("AMS_IX").
++SetAdminDist("AMS_IX", "static", 1).
++SetAdminDist("AMS_IX", "bgp", 2).
++SetAdminDist("AMS_IX", "ospf", 3).
++SetInterface("AMS_IX", "AMS_IX_I_CERNID34").
+
++SetNode("ZurichTT_University_").
++SetAdminDist("ZurichTT_University_", "static", 1).
++SetAdminDist("ZurichTT_University_", "bgp", 2).
++SetAdminDist("ZurichTT_University_", "ospf", 3).
++SetInterface("ZurichTT_University_", "ZurichTT_University__I_Grenchen").
++SetInterface("ZurichTT_University_", "ZurichTT_University__I_Neuchatel").
++SetInterface("ZurichTT_University_", "ZurichTT_University__I_LausanneTT_EPFL_").
++SetInterface("ZurichTT_University_", "ZurichTT_University__I_CERNID34").
++SetInterface("ZurichTT_University_", "ZurichTT_University__I_Brugg").
++SetInterface("ZurichTT_University_", "ZurichTT_University__I_Kreuzlingen").
+
++SetNode("Liechtenstein").
++SetAdminDist("Liechtenstein", "static", 1).
++SetAdminDist("Liechtenstein", "bgp", 2).
++SetAdminDist("Liechtenstein", "ospf", 3).
++SetInterface("Liechtenstein", "Liechtenstein_I_St_TTGallen").
++SetInterface("Liechtenstein", "Liechtenstein_I_Rapperswil").
++SetInterface("Liechtenstein", "Liechtenstein_I_BuchsTTSG").
+
++SetNode("ZurichTT_ETH_").
++SetAdminDist("ZurichTT_ETH_", "static", 1).
++SetAdminDist("ZurichTT_ETH_", "bgp", 2).
++SetAdminDist("ZurichTT_ETH_", "ospf", 3).
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_IXEuropeTTZurich").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_Winterthur").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_Manno").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_LausanneTT_University_").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_Basel").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_Rapperswil").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_Horw").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_VilligenTTPSI").
++SetInterface("ZurichTT_ETH_", "ZurichTT_ETH__I_Birmensdorf").
+
++SetNode("SwissIXID14").
++SetAdminDist("SwissIXID14", "static", 1).
++SetAdminDist("SwissIXID14", "bgp", 2).
++SetAdminDist("SwissIXID14", "ospf", 3).
++SetInterface("SwissIXID14", "SwissIXID14_I_IXEuropeTTZurich").
+
++SetNode("Bern").
++SetAdminDist("Bern", "static", 1).
++SetAdminDist("Bern", "bgp", 2).
++SetAdminDist("Bern", "ospf", 3).
++SetInterface("Bern", "Bern_I_LausanneTT_University_").
++SetInterface("Bern", "Bern_I_Fribourg").
++SetInterface("Bern", "Bern_I_Basel").
++SetInterface("Bern", "Bern_I_Manno").
+
++SetNode("Manno").
++SetAdminDist("Manno", "static", 1).
++SetAdminDist("Manno", "bgp", 2).
++SetAdminDist("Manno", "ospf", 3).
++SetInterface("Manno", "Manno_I_LausanneTT_EPFL_").
++SetInterface("Manno", "Manno_I_Rapperswil").
++SetInterface("Manno", "Manno_I_ZurichTT_ETH_").
++SetInterface("Manno", "Manno_I_Horw").
++SetInterface("Manno", "Manno_I_Bern").
++SetInterface("Manno", "Manno_I_Brig").
+
++SetNode("CERN").
++SetAdminDist("CERN", "static", 1).
++SetAdminDist("CERN", "bgp", 2).
++SetAdminDist("CERN", "ospf", 3).
++SetInterface("CERN", "CERN_I_CERNID34").
+
++SetNode("Swisscom").
++SetAdminDist("Swisscom", "static", 1).
++SetAdminDist("Swisscom", "bgp", 2).
++SetAdminDist("Swisscom", "ospf", 3).
++SetInterface("Swisscom", "Swisscom_I_IXEuropeTTZurich").
+
++SetNode("Yverdon").
++SetAdminDist("Yverdon", "static", 1).
++SetAdminDist("Yverdon", "bgp", 2).
++SetAdminDist("Yverdon", "ospf", 3).
++SetInterface("Yverdon", "Yverdon_I_Neuchatel").
++SetInterface("Yverdon", "Yverdon_I_LausanneTT_EPFL_").
+
++SetNode("Rueschlikon").
++SetAdminDist("Rueschlikon", "static", 1).
++SetAdminDist("Rueschlikon", "bgp", 2).
++SetAdminDist("Rueschlikon", "ospf", 3).
++SetInterface("Rueschlikon", "Rueschlikon_I_IXEuropeTTZurich").
++SetInterface("Rueschlikon", "Rueschlikon_I_Birmensdorf").
+
++SetNode("Horw").
++SetAdminDist("Horw", "static", 1).
++SetAdminDist("Horw", "bgp", 2).
++SetAdminDist("Horw", "ospf", 3).
++SetInterface("Horw", "Horw_I_Manno").
++SetInterface("Horw", "Horw_I_ZurichTT_ETH_").
+
++SetNode("BelWue").
++SetAdminDist("BelWue", "static", 1).
++SetAdminDist("BelWue", "bgp", 2).
++SetAdminDist("BelWue", "ospf", 3).
++SetInterface("BelWue", "BelWue_I_Kreuzlingen").
+
++SetNode("VilligenTTPSI").
++SetAdminDist("VilligenTTPSI", "static", 1).
++SetAdminDist("VilligenTTPSI", "bgp", 2).
++SetAdminDist("VilligenTTPSI", "ospf", 3).
++SetInterface("VilligenTTPSI", "VilligenTTPSI_I_ZurichTT_ETH_").
++SetInterface("VilligenTTPSI", "VilligenTTPSI_I_Basel").
+
++SetNode("Brig").
++SetAdminDist("Brig", "static", 1).
++SetAdminDist("Brig", "bgp", 2).
++SetAdminDist("Brig", "ospf", 3).
++SetInterface("Brig", "Brig_I_Martigny").
++SetInterface("Brig", "Brig_I_Manno").
+
++SetNode("SwisscomID11").
++SetAdminDist("SwisscomID11", "static", 1).
++SetAdminDist("SwisscomID11", "bgp", 2).
++SetAdminDist("SwisscomID11", "ospf", 3).
++SetInterface("SwisscomID11", "SwisscomID11_I_CERNID34").
+
++SetLink("Neuchatel_I_ZurichTT_University_", "ZurichTT_University__I_Neuchatel").
++SetLink("Neuchatel_I_Grenchen", "Grenchen_I_Neuchatel").
++SetLink("Neuchatel_I_Yverdon", "Yverdon_I_Neuchatel").
++SetLink("Neuchatel_I_LausanneTT_EPFL_", "LausanneTT_EPFL__I_Neuchatel").
++SetLink("Neuchatel_I_Delemont", "Delemont_I_Neuchatel").
++SetLink("SwissIX_I_Basel", "Basel_I_SwissIX").
++SetLink("GBLX_I_CERNID34", "CERNID34_I_GBLX").
++SetLink("Basel_I_Bern", "Bern_I_Basel").
++SetLink("Basel_I_ZurichTT_ETH_", "ZurichTT_ETH__I_Basel").
++SetLink("Basel_I_Brugg", "Brugg_I_Basel").
++SetLink("Basel_I_VilligenTTPSI", "VilligenTTPSI_I_Basel").
++SetLink("Basel_I_Delemont", "Delemont_I_Basel").
++SetLink("BuchsTTSG_I_Davos", "Davos_I_BuchsTTSG").
++SetLink("BuchsTTSG_I_St_TTGallen", "St_TTGallen_I_BuchsTTSG").
++SetLink("BuchsTTSG_I_Chur", "Chur_I_BuchsTTSG").
++SetLink("BuchsTTSG_I_Liechtenstein", "Liechtenstein_I_BuchsTTSG").
++SetLink("TIX_I_IXEuropeTTZurich", "IXEuropeTTZurich_I_TIX").
++SetLink("Birmensdorf_I_Rueschlikon", "Rueschlikon_I_Birmensdorf").
++SetLink("Birmensdorf_I_ZurichTT_ETH_", "ZurichTT_ETH__I_Birmensdorf").
++SetLink("Kreuzlingen_I_ZurichTT_University_", "ZurichTT_University__I_Kreuzlingen").
++SetLink("Kreuzlingen_I_St_TTGallen", "St_TTGallen_I_Kreuzlingen").
++SetLink("Kreuzlingen_I_BelWue", "BelWue_I_Kreuzlingen").
++SetLink("IXEuropeTTZurich_I_SwissIXID14", "SwissIXID14_I_IXEuropeTTZurich").
++SetLink("IXEuropeTTZurich_I_TELIA", "TELIA_I_IXEuropeTTZurich").
++SetLink("IXEuropeTTZurich_I_Rueschlikon", "Rueschlikon_I_IXEuropeTTZurich").
++SetLink("IXEuropeTTZurich_I_ZurichTT_ETH_", "ZurichTT_ETH__I_IXEuropeTTZurich").
++SetLink("IXEuropeTTZurich_I_Swisscom", "Swisscom_I_IXEuropeTTZurich").
++SetLink("Grenchen_I_ZurichTT_University_", "ZurichTT_University__I_Grenchen").
++SetLink("Fribourg_I_LausanneTT_University_", "LausanneTT_University__I_Fribourg").
++SetLink("Fribourg_I_Bern", "Bern_I_Fribourg").
++SetLink("LausanneTT_EPFL__I_Martigny", "Martigny_I_LausanneTT_EPFL_").
++SetLink("LausanneTT_EPFL__I_Geneva", "Geneva_I_LausanneTT_EPFL_").
++SetLink("LausanneTT_EPFL__I_LausanneTT_University_", "LausanneTT_University__I_LausanneTT_EPFL_").
++SetLink("LausanneTT_EPFL__I_Yverdon", "Yverdon_I_LausanneTT_EPFL_").
++SetLink("LausanneTT_EPFL__I_ZurichTT_University_", "ZurichTT_University__I_LausanneTT_EPFL_").
++SetLink("LausanneTT_EPFL__I_CERNID34", "CERNID34_I_LausanneTT_EPFL_").
++SetLink("LausanneTT_EPFL__I_Manno", "Manno_I_LausanneTT_EPFL_").
++SetLink("Geneva_I_CERNID34", "CERNID34_I_Geneva").
++SetLink("CIXP_I_CERNID34", "CERNID34_I_CIXP").
++SetLink("CERNID34_I_CERN", "CERN_I_CERNID34").
++SetLink("CERNID34_I_SwisscomID11", "SwisscomID11_I_CERNID34").
++SetLink("CERNID34_I_AMS_IX", "AMS_IX_I_CERNID34").
++SetLink("CERNID34_I_ZurichTT_University_", "ZurichTT_University__I_CERNID34").
++SetLink("CERNID34_I_LausanneTT_University_", "LausanneTT_University__I_CERNID34").
++SetLink("CERNID34_I_GEANT2", "GEANT2_I_CERNID34").
++SetLink("Chur_I_Davos", "Davos_I_Chur").
++SetLink("Chur_I_Rapperswil", "Rapperswil_I_Chur").
++SetLink("Brugg_I_ZurichTT_University_", "ZurichTT_University__I_Brugg").
++SetLink("St_TTGallen_I_Winterthur", "Winterthur_I_St_TTGallen").
++SetLink("St_TTGallen_I_Liechtenstein", "Liechtenstein_I_St_TTGallen").
++SetLink("Winterthur_I_ZurichTT_ETH_", "ZurichTT_ETH__I_Winterthur").
++SetLink("Martigny_I_Brig", "Brig_I_Martigny").
++SetLink("LausanneTT_University__I_ZurichTT_ETH_", "ZurichTT_ETH__I_LausanneTT_University_").
++SetLink("LausanneTT_University__I_Bern", "Bern_I_LausanneTT_University_").
++SetLink("Rapperswil_I_Manno", "Manno_I_Rapperswil").
++SetLink("Rapperswil_I_Liechtenstein", "Liechtenstein_I_Rapperswil").
++SetLink("Rapperswil_I_ZurichTT_ETH_", "ZurichTT_ETH__I_Rapperswil").
++SetLink("ZurichTT_ETH__I_Manno", "Manno_I_ZurichTT_ETH_").
++SetLink("ZurichTT_ETH__I_Horw", "Horw_I_ZurichTT_ETH_").
++SetLink("ZurichTT_ETH__I_VilligenTTPSI", "VilligenTTPSI_I_ZurichTT_ETH_").
++SetLink("Bern_I_Manno", "Manno_I_Bern").
++SetLink("Manno_I_Horw", "Horw_I_Manno").
++SetLink("Manno_I_Brig", "Brig_I_Manno").
+
+
++SetNetwork("Rueschlikon", "N_Rueschlikon").

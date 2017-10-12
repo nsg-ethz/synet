@@ -1,0 +1,573 @@
++SetNode("GeneralTTChem").
++SetAdminDist("GeneralTTChem", "static", 1).
++SetAdminDist("GeneralTTChem", "bgp", 2).
++SetAdminDist("GeneralTTChem", "ospf", 3).
++SetInterface("GeneralTTChem", "GeneralTTChem_I__ID10").
+
++SetNode("YerevanTTMedicalTTUniversity").
++SetAdminDist("YerevanTTMedicalTTUniversity", "static", 1).
++SetAdminDist("YerevanTTMedicalTTUniversity", "bgp", 2).
++SetAdminDist("YerevanTTMedicalTTUniversity", "ospf", 3).
++SetInterface("YerevanTTMedicalTTUniversity", "YerevanTTMedicalTTUniversity_I_ARENA").
+
++SetNode("AgriculturalTTAcademy").
++SetAdminDist("AgriculturalTTAcademy", "static", 1).
++SetAdminDist("AgriculturalTTAcademy", "bgp", 2).
++SetAdminDist("AgriculturalTTAcademy", "ospf", 3).
++SetInterface("AgriculturalTTAcademy", "AgriculturalTTAcademy_I_ARENA").
++SetInterface("AgriculturalTTAcademy", "AgriculturalTTAcademy_I_EcologicalTTCenter").
+
++SetNode("NationalTTAcademy").
++SetAdminDist("NationalTTAcademy", "static", 1).
++SetAdminDist("NationalTTAcademy", "bgp", 2).
++SetAdminDist("NationalTTAcademy", "ospf", 3).
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_ARENA").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_NationalTTStats_TTscience").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_NodeID36").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_NSSPA").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Museum").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_YeveranTTPhysicsTTInst_").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Inst_TTMath_").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Library").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Inst_TTMechanics").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_YerevanTTUniversity").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Inst_TTPhysiology").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Geological").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_StateTTEngineeringTTUniversity").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Inst_TTInformatics").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_ASHMS").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_AmericanTTUni_").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_Gallery").
++SetInterface("NationalTTAcademy", "NationalTTAcademy_I_SCS").
+
++SetNode("Museum").
++SetAdminDist("Museum", "static", 1).
++SetAdminDist("Museum", "bgp", 2).
++SetAdminDist("Museum", "ospf", 3).
++SetInterface("Museum", "Museum_I_NationalTTAcademy").
++SetInterface("Museum", "Museum_I_TVTTstation").
+
++SetNode("Inst_TTofTTMolecularTTBiology").
++SetAdminDist("Inst_TTofTTMolecularTTBiology", "static", 1).
++SetAdminDist("Inst_TTofTTMolecularTTBiology", "bgp", 2).
++SetAdminDist("Inst_TTofTTMolecularTTBiology", "ospf", 3).
++SetInterface("Inst_TTofTTMolecularTTBiology", "Inst_TTofTTMolecularTTBiology_I_Inst_TTInformatics").
++SetInterface("Inst_TTofTTMolecularTTBiology", "Inst_TTofTTMolecularTTBiology_I_Isnt_TTChemicalTTPhysics").
++SetInterface("Inst_TTofTTMolecularTTBiology", "Inst_TTofTTMolecularTTBiology_I_InstituteTTofTTZoology").
+
++SetNode("ArmESFo").
++SetAdminDist("ArmESFo", "static", 1).
++SetAdminDist("ArmESFo", "bgp", 2).
++SetAdminDist("ArmESFo", "ospf", 3).
++SetInterface("ArmESFo", "ArmESFo_I_YeveranTTPhysicsTTInst_").
+
++SetNode("Inst_TTMath_").
++SetAdminDist("Inst_TTMath_", "static", 1).
++SetAdminDist("Inst_TTMath_", "bgp", 2).
++SetAdminDist("Inst_TTMath_", "ospf", 3).
++SetInterface("Inst_TTMath_", "Inst_TTMath__I_NationalTTAcademy").
+
++SetNode("Geological").
++SetAdminDist("Geological", "static", 1).
++SetAdminDist("Geological", "bgp", 2).
++SetAdminDist("Geological", "ospf", 3).
++SetInterface("Geological", "Geological_I_NationalTTAcademy").
+
++SetNode("Inst_TTMicrobiology").
++SetAdminDist("Inst_TTMicrobiology", "static", 1).
++SetAdminDist("Inst_TTMicrobiology", "bgp", 2).
++SetAdminDist("Inst_TTMicrobiology", "ospf", 3).
++SetInterface("Inst_TTMicrobiology", "Inst_TTMicrobiology_I_AstrophysicalTTObs_").
++SetInterface("Inst_TTMicrobiology", "Inst_TTMicrobiology_I_Inst_TTInformatics").
+
++SetNode("Inst_TTGeophysics").
++SetAdminDist("Inst_TTGeophysics", "static", 1).
++SetAdminDist("Inst_TTGeophysics", "bgp", 2).
++SetAdminDist("Inst_TTGeophysics", "ospf", 3).
++SetInterface("Inst_TTGeophysics", "Inst_TTGeophysics_I_Inst_TTInformatics").
+
++SetNode("YerevanTTUniversity").
++SetAdminDist("YerevanTTUniversity", "static", 1).
++SetAdminDist("YerevanTTUniversity", "bgp", 2).
++SetAdminDist("YerevanTTUniversity", "ospf", 3).
++SetInterface("YerevanTTUniversity", "YerevanTTUniversity_I_ARENA").
++SetInterface("YerevanTTUniversity", "YerevanTTUniversity_I_NationalTTAcademy").
+
++SetNode("Oriental").
++SetAdminDist("Oriental", "static", 1).
++SetAdminDist("Oriental", "bgp", 2).
++SetAdminDist("Oriental", "ospf", 3).
++SetInterface("Oriental", "Oriental_I_NodeID36").
+
++SetNode("SCS").
++SetAdminDist("SCS", "static", 1).
++SetAdminDist("SCS", "bgp", 2).
++SetAdminDist("SCS", "ospf", 3).
++SetInterface("SCS", "SCS_I_NationalTTAcademy").
++SetInterface("SCS", "SCS_I_Inst_TTPhysiology").
+
++SetNode("education").
++SetAdminDist("education", "static", 1).
++SetAdminDist("education", "bgp", 2).
++SetAdminDist("education", "ospf", 3).
++SetInterface("education", "education_I_NodeID36").
+
++SetNode("_ID27").
++SetAdminDist("_ID27", "static", 1).
++SetAdminDist("_ID27", "bgp", 2).
++SetAdminDist("_ID27", "ospf", 3).
++SetInterface("_ID27", "_ID27_I_TVTTstation").
++SetInterface("_ID27", "_ID27_I__ID31").
+
++SetNode("Inst_TTofTTHealth").
++SetAdminDist("Inst_TTofTTHealth", "static", 1).
++SetAdminDist("Inst_TTofTTHealth", "bgp", 2).
++SetAdminDist("Inst_TTofTTHealth", "ospf", 3).
++SetInterface("Inst_TTofTTHealth", "Inst_TTofTTHealth_I__ID0").
+
++SetNode("Economy").
++SetAdminDist("Economy", "static", 1).
++SetAdminDist("Economy", "bgp", 2).
++SetAdminDist("Economy", "ospf", 3).
++SetInterface("Economy", "Economy_I__ID31").
+
++SetNode("IntituteTTofTTBotany").
++SetAdminDist("IntituteTTofTTBotany", "static", 1).
++SetAdminDist("IntituteTTofTTBotany", "bgp", 2).
++SetAdminDist("IntituteTTofTTBotany", "ospf", 3).
++SetInterface("IntituteTTofTTBotany", "IntituteTTofTTBotany_I_EcologicalTTCenter").
++SetInterface("IntituteTTofTTBotany", "IntituteTTofTTBotany_I_InstituteTTofTTZoology").
+
++SetNode("Literature").
++SetAdminDist("Literature", "static", 1).
++SetAdminDist("Literature", "bgp", 2).
++SetAdminDist("Literature", "ospf", 3).
++SetInterface("Literature", "Literature_I__ID31").
+
++SetNode("NodeID36").
++SetAdminDist("NodeID36", "static", 1).
++SetAdminDist("NodeID36", "bgp", 2).
++SetAdminDist("NodeID36", "ospf", 3).
++SetInterface("NodeID36", "NodeID36_I_ISTC").
++SetInterface("NodeID36", "NodeID36_I_Art").
++SetInterface("NodeID36", "NodeID36_I_NationalTTAcademy").
++SetInterface("NodeID36", "NodeID36_I_Hist").
++SetInterface("NodeID36", "NodeID36_I_Oriental").
++SetInterface("NodeID36", "NodeID36_I_EngineerTTacademy").
++SetInterface("NodeID36", "NodeID36_I_education").
++SetInterface("NodeID36", "NodeID36_I_Geophys_TTObser_").
++SetInterface("NodeID36", "NodeID36_I_Hydroecol").
++SetInterface("NodeID36", "NodeID36_I_ICT").
+
++SetNode("Inst_TTRadiophysics").
++SetAdminDist("Inst_TTRadiophysics", "static", 1).
++SetAdminDist("Inst_TTRadiophysics", "bgp", 2).
++SetAdminDist("Inst_TTRadiophysics", "ospf", 3).
++SetInterface("Inst_TTRadiophysics", "Inst_TTRadiophysics_I_AstrophysicalTTObs_").
++SetInterface("Inst_TTRadiophysics", "Inst_TTRadiophysics_I__").
++SetInterface("Inst_TTRadiophysics", "Inst_TTRadiophysics_I_Inst_TTInformatics").
+
++SetNode("NSSPA").
++SetAdminDist("NSSPA", "static", 1).
++SetAdminDist("NSSPA", "bgp", 2).
++SetAdminDist("NSSPA", "ospf", 3).
++SetInterface("NSSPA", "NSSPA_I_NationalTTAcademy").
+
++SetNode("research").
++SetAdminDist("research", "static", 1).
++SetAdminDist("research", "bgp", 2).
++SetAdminDist("research", "ospf", 3).
++SetInterface("research", "research_I__").
+
++SetNode("EcologicalTTCenter").
++SetAdminDist("EcologicalTTCenter", "static", 1).
++SetAdminDist("EcologicalTTCenter", "bgp", 2).
++SetAdminDist("EcologicalTTCenter", "ospf", 3).
++SetInterface("EcologicalTTCenter", "EcologicalTTCenter_I_IntituteTTofTTBotany").
++SetInterface("EcologicalTTCenter", "EcologicalTTCenter_I_AgriculturalTTAcademy").
+
++SetNode("OrganicTTChem").
++SetAdminDist("OrganicTTChem", "static", 1).
++SetAdminDist("OrganicTTChem", "bgp", 2).
++SetAdminDist("OrganicTTChem", "ospf", 3).
++SetInterface("OrganicTTChem", "OrganicTTChem_I_MolecularTTStructure").
+
++SetNode("StateTTEngineeringTTUniversity").
++SetAdminDist("StateTTEngineeringTTUniversity", "static", 1).
++SetAdminDist("StateTTEngineeringTTUniversity", "bgp", 2).
++SetAdminDist("StateTTEngineeringTTUniversity", "ospf", 3).
++SetInterface("StateTTEngineeringTTUniversity", "StateTTEngineeringTTUniversity_I_ARENA").
++SetInterface("StateTTEngineeringTTUniversity", "StateTTEngineeringTTUniversity_I_NationalTTAcademy").
+
++SetNode("Inst_TTInformatics").
++SetAdminDist("Inst_TTInformatics", "static", 1).
++SetAdminDist("Inst_TTInformatics", "bgp", 2).
++SetAdminDist("Inst_TTInformatics", "ospf", 3).
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTGeophysics").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_AstrophysicalTTObs_").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_NationalTTAcademy").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTRadioTTMeas_").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTofTTMolecularTTBiology").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_TVTTstation").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Isnt_TTChemicalTTPhysics").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTMicrobiology").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_MolecularTTStructure").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTBiochem").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTRadiophysics").
++SetInterface("Inst_TTInformatics", "Inst_TTInformatics_I__ID10").
+
++SetNode("ASHMS").
++SetAdminDist("ASHMS", "static", 1).
++SetAdminDist("ASHMS", "bgp", 2).
++SetAdminDist("ASHMS", "ospf", 3).
++SetInterface("ASHMS", "ASHMS_I_NationalTTAcademy").
+
++SetNode("ICT").
++SetAdminDist("ICT", "static", 1).
++SetAdminDist("ICT", "bgp", 2).
++SetAdminDist("ICT", "ospf", 3).
++SetInterface("ICT", "ICT_I_NodeID36").
+
++SetNode("_ID0").
++SetAdminDist("_ID0", "static", 1).
++SetAdminDist("_ID0", "bgp", 2).
++SetAdminDist("_ID0", "ospf", 3).
++SetInterface("_ID0", "_ID0_I_Inst_TTRadioTTMeas_").
++SetInterface("_ID0", "_ID0_I_Inst_TTofTTHealth").
++SetInterface("_ID0", "_ID0_I_DrugTTAgency").
+
++SetNode("Gallery").
++SetAdminDist("Gallery", "static", 1).
++SetAdminDist("Gallery", "bgp", 2).
++SetAdminDist("Gallery", "ospf", 3).
++SetInterface("Gallery", "Gallery_I_NationalTTAcademy").
++SetInterface("Gallery", "Gallery_I_TVTTstation").
+
++SetNode("_").
++SetAdminDist("_", "static", 1).
++SetAdminDist("_", "bgp", 2).
++SetAdminDist("_", "ospf", 3).
++SetInterface("_", "__I_engineeringTTcenter").
++SetInterface("_", "__I_Inst_TTRadiophysics").
++SetInterface("_", "__I_research").
+
++SetNode("LinguisticTTInst").
++SetAdminDist("LinguisticTTInst", "static", 1).
++SetAdminDist("LinguisticTTInst", "bgp", 2).
++SetAdminDist("LinguisticTTInst", "ospf", 3).
++SetInterface("LinguisticTTInst", "LinguisticTTInst_I__ID31").
+
++SetNode("ARENA").
++SetAdminDist("ARENA", "static", 1).
++SetAdminDist("ARENA", "bgp", 2).
++SetAdminDist("ARENA", "ospf", 3).
++SetInterface("ARENA", "ARENA_I_AgriculturalTTAcademy").
++SetInterface("ARENA", "ARENA_I_NationalTTAcademy").
++SetInterface("ARENA", "ARENA_I_YerevanTTUniversity").
++SetInterface("ARENA", "ARENA_I_YerevanTTMedicalTTUniversity").
++SetInterface("ARENA", "ARENA_I_StateTTEngineeringTTUniversity").
+
++SetNode("Encycloped_").
++SetAdminDist("Encycloped_", "static", 1).
++SetAdminDist("Encycloped_", "bgp", 2).
++SetAdminDist("Encycloped_", "ospf", 3).
++SetInterface("Encycloped_", "Encycloped__I__ID31").
+
++SetNode("_ID31").
++SetAdminDist("_ID31", "static", 1).
++SetAdminDist("_ID31", "bgp", 2).
++SetAdminDist("_ID31", "ospf", 3).
++SetInterface("_ID31", "_ID31_I_LinguisticTTInst").
++SetInterface("_ID31", "_ID31_I_Economy").
++SetInterface("_ID31", "_ID31_I_Literature").
++SetInterface("_ID31", "_ID31_I__ID27").
++SetInterface("_ID31", "_ID31_I_Encycloped_").
+
++SetNode("AmericanTTUni_").
++SetAdminDist("AmericanTTUni_", "static", 1).
++SetAdminDist("AmericanTTUni_", "bgp", 2).
++SetAdminDist("AmericanTTUni_", "ospf", 3).
++SetInterface("AmericanTTUni_", "AmericanTTUni__I_NationalTTAcademy").
+
++SetNode("Isnt_TTChemicalTTPhysics").
++SetAdminDist("Isnt_TTChemicalTTPhysics", "static", 1).
++SetAdminDist("Isnt_TTChemicalTTPhysics", "bgp", 2).
++SetAdminDist("Isnt_TTChemicalTTPhysics", "ospf", 3).
++SetInterface("Isnt_TTChemicalTTPhysics", "Isnt_TTChemicalTTPhysics_I_Inst_TTofTTMolecularTTBiology").
++SetInterface("Isnt_TTChemicalTTPhysics", "Isnt_TTChemicalTTPhysics_I_Inst_TTBiochem").
++SetInterface("Isnt_TTChemicalTTPhysics", "Isnt_TTChemicalTTPhysics_I_Inst_TTInformatics").
+
++SetNode("YeveranTTPhysicsTTInst_").
++SetAdminDist("YeveranTTPhysicsTTInst_", "static", 1).
++SetAdminDist("YeveranTTPhysicsTTInst_", "bgp", 2).
++SetAdminDist("YeveranTTPhysicsTTInst_", "ospf", 3).
++SetInterface("YeveranTTPhysicsTTInst_", "YeveranTTPhysicsTTInst__I_ArmESFo").
++SetInterface("YeveranTTPhysicsTTInst_", "YeveranTTPhysicsTTInst__I_Inst_TTPhysiology").
++SetInterface("YeveranTTPhysicsTTInst_", "YeveranTTPhysicsTTInst__I_NationalTTAcademy").
+
++SetNode("LibTTNet").
++SetAdminDist("LibTTNet", "static", 1).
++SetAdminDist("LibTTNet", "bgp", 2).
++SetAdminDist("LibTTNet", "ospf", 3).
++SetInterface("LibTTNet", "LibTTNet_I_Library").
+
++SetNode("TVTTstation").
++SetAdminDist("TVTTstation", "static", 1).
++SetAdminDist("TVTTstation", "bgp", 2).
++SetAdminDist("TVTTstation", "ospf", 3).
++SetInterface("TVTTstation", "TVTTstation_I_Inst_TTPhylosophy").
++SetInterface("TVTTstation", "TVTTstation_I_NationalTTStats_TTscience").
++SetInterface("TVTTstation", "TVTTstation_I_Museum").
++SetInterface("TVTTstation", "TVTTstation_I_EEMCTTMNP").
++SetInterface("TVTTstation", "TVTTstation_I_Inst_TTInformatics").
++SetInterface("TVTTstation", "TVTTstation_I__ID27").
++SetInterface("TVTTstation", "TVTTstation_I_Gallery").
+
++SetNode("AstrophysicalTTObs_").
++SetAdminDist("AstrophysicalTTObs_", "static", 1).
++SetAdminDist("AstrophysicalTTObs_", "bgp", 2).
++SetAdminDist("AstrophysicalTTObs_", "ospf", 3).
++SetInterface("AstrophysicalTTObs_", "AstrophysicalTTObs__I_Inst_TTMicrobiology").
++SetInterface("AstrophysicalTTObs_", "AstrophysicalTTObs__I_Inst_TTRadiophysics").
++SetInterface("AstrophysicalTTObs_", "AstrophysicalTTObs__I_Inst_TTInformatics").
+
++SetNode("OrganicTTchem").
++SetAdminDist("OrganicTTchem", "static", 1).
++SetAdminDist("OrganicTTchem", "bgp", 2).
++SetAdminDist("OrganicTTchem", "ospf", 3).
++SetInterface("OrganicTTchem", "OrganicTTchem_I__ID10").
+
++SetNode("Inst_TTPhysiology").
++SetAdminDist("Inst_TTPhysiology", "static", 1).
++SetAdminDist("Inst_TTPhysiology", "bgp", 2).
++SetAdminDist("Inst_TTPhysiology", "ospf", 3).
++SetInterface("Inst_TTPhysiology", "Inst_TTPhysiology_I_NationalTTAcademy").
++SetInterface("Inst_TTPhysiology", "Inst_TTPhysiology_I_YeveranTTPhysicsTTInst_").
++SetInterface("Inst_TTPhysiology", "Inst_TTPhysiology_I_SCS").
+
++SetNode("Inst_TTBiochem").
++SetAdminDist("Inst_TTBiochem", "static", 1).
++SetAdminDist("Inst_TTBiochem", "bgp", 2).
++SetAdminDist("Inst_TTBiochem", "ospf", 3).
++SetInterface("Inst_TTBiochem", "Inst_TTBiochem_I_Inst_TTInformatics").
++SetInterface("Inst_TTBiochem", "Inst_TTBiochem_I_Isnt_TTChemicalTTPhysics").
+
++SetNode("engineeringTTcenter").
++SetAdminDist("engineeringTTcenter", "static", 1).
++SetAdminDist("engineeringTTcenter", "bgp", 2).
++SetAdminDist("engineeringTTcenter", "ospf", 3).
++SetInterface("engineeringTTcenter", "engineeringTTcenter_I__").
+
++SetNode("_ID10").
++SetAdminDist("_ID10", "static", 1).
++SetAdminDist("_ID10", "bgp", 2).
++SetAdminDist("_ID10", "ospf", 3).
++SetInterface("_ID10", "_ID10_I_GeneralTTChem").
++SetInterface("_ID10", "_ID10_I_OrganicTTchem").
++SetInterface("_ID10", "_ID10_I_Inst_TTInformatics").
+
++SetNode("DrugTTAgency").
++SetAdminDist("DrugTTAgency", "static", 1).
++SetAdminDist("DrugTTAgency", "bgp", 2).
++SetAdminDist("DrugTTAgency", "ospf", 3).
++SetInterface("DrugTTAgency", "DrugTTAgency_I__ID0").
+
++SetNode("Hist").
++SetAdminDist("Hist", "static", 1).
++SetAdminDist("Hist", "bgp", 2).
++SetAdminDist("Hist", "ospf", 3).
++SetInterface("Hist", "Hist_I_NodeID36").
+
++SetNode("NationalTTStats_TTscience").
++SetAdminDist("NationalTTStats_TTscience", "static", 1).
++SetAdminDist("NationalTTStats_TTscience", "bgp", 2).
++SetAdminDist("NationalTTStats_TTscience", "ospf", 3).
++SetInterface("NationalTTStats_TTscience", "NationalTTStats_TTscience_I_NationalTTAcademy").
++SetInterface("NationalTTStats_TTscience", "NationalTTStats_TTscience_I_TVTTstation").
++SetInterface("NationalTTStats_TTscience", "NationalTTStats_TTscience_I_Min_TTofTTEducation").
+
++SetNode("ISTC").
++SetAdminDist("ISTC", "static", 1).
++SetAdminDist("ISTC", "bgp", 2).
++SetAdminDist("ISTC", "ospf", 3).
++SetInterface("ISTC", "ISTC_I_NodeID36").
+
++SetNode("Art").
++SetAdminDist("Art", "static", 1).
++SetAdminDist("Art", "bgp", 2).
++SetAdminDist("Art", "ospf", 3).
++SetInterface("Art", "Art_I_NodeID36").
+
++SetNode("Geophys_TTObser_").
++SetAdminDist("Geophys_TTObser_", "static", 1).
++SetAdminDist("Geophys_TTObser_", "bgp", 2).
++SetAdminDist("Geophys_TTObser_", "ospf", 3).
++SetInterface("Geophys_TTObser_", "Geophys_TTObser__I_NodeID36").
+
++SetNode("Inst_TTRadioTTMeas_").
++SetAdminDist("Inst_TTRadioTTMeas_", "static", 1).
++SetAdminDist("Inst_TTRadioTTMeas_", "bgp", 2).
++SetAdminDist("Inst_TTRadioTTMeas_", "ospf", 3).
++SetInterface("Inst_TTRadioTTMeas_", "Inst_TTRadioTTMeas__I_InstituteTTofTTAppliedTTPhysics").
++SetInterface("Inst_TTRadioTTMeas_", "Inst_TTRadioTTMeas__I__ID0").
++SetInterface("Inst_TTRadioTTMeas_", "Inst_TTRadioTTMeas__I_Inst_TTInformatics").
+
++SetNode("InstituteTTofTTAppliedTTPhysics").
++SetAdminDist("InstituteTTofTTAppliedTTPhysics", "static", 1).
++SetAdminDist("InstituteTTofTTAppliedTTPhysics", "bgp", 2).
++SetAdminDist("InstituteTTofTTAppliedTTPhysics", "ospf", 3).
++SetInterface("InstituteTTofTTAppliedTTPhysics", "InstituteTTofTTAppliedTTPhysics_I_Inst_TTRadioTTMeas_").
++SetInterface("InstituteTTofTTAppliedTTPhysics", "InstituteTTofTTAppliedTTPhysics_I_InstituteTTofTTZoology").
+
++SetNode("EEMCTTMNP").
++SetAdminDist("EEMCTTMNP", "static", 1).
++SetAdminDist("EEMCTTMNP", "bgp", 2).
++SetAdminDist("EEMCTTMNP", "ospf", 3).
++SetInterface("EEMCTTMNP", "EEMCTTMNP_I_TVTTstation").
+
++SetNode("Library").
++SetAdminDist("Library", "static", 1).
++SetAdminDist("Library", "bgp", 2).
++SetAdminDist("Library", "ospf", 3).
++SetInterface("Library", "Library_I_NationalTTAcademy").
++SetInterface("Library", "Library_I_LibTTNet").
+
++SetNode("MolecularTTStructure").
++SetAdminDist("MolecularTTStructure", "static", 1).
++SetAdminDist("MolecularTTStructure", "bgp", 2).
++SetAdminDist("MolecularTTStructure", "ospf", 3).
++SetInterface("MolecularTTStructure", "MolecularTTStructure_I_OrganicTTChem").
++SetInterface("MolecularTTStructure", "MolecularTTStructure_I_Inst_TTInformatics").
+
++SetNode("Inst_TTMechanics").
++SetAdminDist("Inst_TTMechanics", "static", 1).
++SetAdminDist("Inst_TTMechanics", "bgp", 2).
++SetAdminDist("Inst_TTMechanics", "ospf", 3).
++SetInterface("Inst_TTMechanics", "Inst_TTMechanics_I_NationalTTAcademy").
+
++SetNode("EngineerTTacademy").
++SetAdminDist("EngineerTTacademy", "static", 1).
++SetAdminDist("EngineerTTacademy", "bgp", 2).
++SetAdminDist("EngineerTTacademy", "ospf", 3).
++SetInterface("EngineerTTacademy", "EngineerTTacademy_I_NodeID36").
+
++SetNode("Min_TTofTTEducation").
++SetAdminDist("Min_TTofTTEducation", "static", 1).
++SetAdminDist("Min_TTofTTEducation", "bgp", 2).
++SetAdminDist("Min_TTofTTEducation", "ospf", 3).
++SetInterface("Min_TTofTTEducation", "Min_TTofTTEducation_I_NationalTTStats_TTscience").
+
++SetNode("Hydroecol").
++SetAdminDist("Hydroecol", "static", 1).
++SetAdminDist("Hydroecol", "bgp", 2).
++SetAdminDist("Hydroecol", "ospf", 3).
++SetInterface("Hydroecol", "Hydroecol_I_NodeID36").
+
++SetNode("Inst_TTPhylosophy").
++SetAdminDist("Inst_TTPhylosophy", "static", 1).
++SetAdminDist("Inst_TTPhylosophy", "bgp", 2).
++SetAdminDist("Inst_TTPhylosophy", "ospf", 3).
++SetInterface("Inst_TTPhylosophy", "Inst_TTPhylosophy_I_TVTTstation").
+
++SetNode("InstituteTTofTTZoology").
++SetAdminDist("InstituteTTofTTZoology", "static", 1).
++SetAdminDist("InstituteTTofTTZoology", "bgp", 2).
++SetAdminDist("InstituteTTofTTZoology", "ospf", 3).
++SetInterface("InstituteTTofTTZoology", "InstituteTTofTTZoology_I_InstituteTTofTTAppliedTTPhysics").
++SetInterface("InstituteTTofTTZoology", "InstituteTTofTTZoology_I_IntituteTTofTTBotany").
++SetInterface("InstituteTTofTTZoology", "InstituteTTofTTZoology_I_Inst_TTofTTMolecularTTBiology").
+
++SetLink("GeneralTTChem_I__ID10", "_ID10_I_GeneralTTChem").
++SetLink("YerevanTTMedicalTTUniversity_I_ARENA", "ARENA_I_YerevanTTMedicalTTUniversity").
++SetLink("AgriculturalTTAcademy_I_ARENA", "ARENA_I_AgriculturalTTAcademy").
++SetLink("AgriculturalTTAcademy_I_EcologicalTTCenter", "EcologicalTTCenter_I_AgriculturalTTAcademy").
++SetLink("NationalTTAcademy_I_ARENA", "ARENA_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_NationalTTStats_TTscience", "NationalTTStats_TTscience_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_NodeID36", "NodeID36_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_NSSPA", "NSSPA_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Museum", "Museum_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_YeveranTTPhysicsTTInst_", "YeveranTTPhysicsTTInst__I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Inst_TTMath_", "Inst_TTMath__I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Library", "Library_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Inst_TTMechanics", "Inst_TTMechanics_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_YerevanTTUniversity", "YerevanTTUniversity_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Inst_TTPhysiology", "Inst_TTPhysiology_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Geological", "Geological_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_StateTTEngineeringTTUniversity", "StateTTEngineeringTTUniversity_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Inst_TTInformatics", "Inst_TTInformatics_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_ASHMS", "ASHMS_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_AmericanTTUni_", "AmericanTTUni__I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_Gallery", "Gallery_I_NationalTTAcademy").
++SetLink("NationalTTAcademy_I_SCS", "SCS_I_NationalTTAcademy").
++SetLink("Museum_I_TVTTstation", "TVTTstation_I_Museum").
++SetLink("Inst_TTofTTMolecularTTBiology_I_Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTofTTMolecularTTBiology").
++SetLink("Inst_TTofTTMolecularTTBiology_I_Isnt_TTChemicalTTPhysics", "Isnt_TTChemicalTTPhysics_I_Inst_TTofTTMolecularTTBiology").
++SetLink("Inst_TTofTTMolecularTTBiology_I_InstituteTTofTTZoology", "InstituteTTofTTZoology_I_Inst_TTofTTMolecularTTBiology").
++SetLink("ArmESFo_I_YeveranTTPhysicsTTInst_", "YeveranTTPhysicsTTInst__I_ArmESFo").
++SetLink("Inst_TTMicrobiology_I_AstrophysicalTTObs_", "AstrophysicalTTObs__I_Inst_TTMicrobiology").
++SetLink("Inst_TTMicrobiology_I_Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTMicrobiology").
++SetLink("Inst_TTGeophysics_I_Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTGeophysics").
++SetLink("YerevanTTUniversity_I_ARENA", "ARENA_I_YerevanTTUniversity").
++SetLink("Oriental_I_NodeID36", "NodeID36_I_Oriental").
++SetLink("SCS_I_Inst_TTPhysiology", "Inst_TTPhysiology_I_SCS").
++SetLink("education_I_NodeID36", "NodeID36_I_education").
++SetLink("_ID27_I_TVTTstation", "TVTTstation_I__ID27").
++SetLink("_ID27_I__ID31", "_ID31_I__ID27").
++SetLink("Inst_TTofTTHealth_I__ID0", "_ID0_I_Inst_TTofTTHealth").
++SetLink("Economy_I__ID31", "_ID31_I_Economy").
++SetLink("IntituteTTofTTBotany_I_EcologicalTTCenter", "EcologicalTTCenter_I_IntituteTTofTTBotany").
++SetLink("IntituteTTofTTBotany_I_InstituteTTofTTZoology", "InstituteTTofTTZoology_I_IntituteTTofTTBotany").
++SetLink("Literature_I__ID31", "_ID31_I_Literature").
++SetLink("NodeID36_I_ISTC", "ISTC_I_NodeID36").
++SetLink("NodeID36_I_Art", "Art_I_NodeID36").
++SetLink("NodeID36_I_Hist", "Hist_I_NodeID36").
++SetLink("NodeID36_I_EngineerTTacademy", "EngineerTTacademy_I_NodeID36").
++SetLink("NodeID36_I_Geophys_TTObser_", "Geophys_TTObser__I_NodeID36").
++SetLink("NodeID36_I_Hydroecol", "Hydroecol_I_NodeID36").
++SetLink("NodeID36_I_ICT", "ICT_I_NodeID36").
++SetLink("Inst_TTRadiophysics_I_AstrophysicalTTObs_", "AstrophysicalTTObs__I_Inst_TTRadiophysics").
++SetLink("Inst_TTRadiophysics_I__", "__I_Inst_TTRadiophysics").
++SetLink("Inst_TTRadiophysics_I_Inst_TTInformatics", "Inst_TTInformatics_I_Inst_TTRadiophysics").
++SetLink("research_I__", "__I_research").
++SetLink("OrganicTTChem_I_MolecularTTStructure", "MolecularTTStructure_I_OrganicTTChem").
++SetLink("StateTTEngineeringTTUniversity_I_ARENA", "ARENA_I_StateTTEngineeringTTUniversity").
++SetLink("Inst_TTInformatics_I_AstrophysicalTTObs_", "AstrophysicalTTObs__I_Inst_TTInformatics").
++SetLink("Inst_TTInformatics_I_Inst_TTRadioTTMeas_", "Inst_TTRadioTTMeas__I_Inst_TTInformatics").
++SetLink("Inst_TTInformatics_I_TVTTstation", "TVTTstation_I_Inst_TTInformatics").
++SetLink("Inst_TTInformatics_I_Isnt_TTChemicalTTPhysics", "Isnt_TTChemicalTTPhysics_I_Inst_TTInformatics").
++SetLink("Inst_TTInformatics_I_MolecularTTStructure", "MolecularTTStructure_I_Inst_TTInformatics").
++SetLink("Inst_TTInformatics_I_Inst_TTBiochem", "Inst_TTBiochem_I_Inst_TTInformatics").
++SetLink("Inst_TTInformatics_I__ID10", "_ID10_I_Inst_TTInformatics").
++SetLink("_ID0_I_Inst_TTRadioTTMeas_", "Inst_TTRadioTTMeas__I__ID0").
++SetLink("_ID0_I_DrugTTAgency", "DrugTTAgency_I__ID0").
++SetLink("Gallery_I_TVTTstation", "TVTTstation_I_Gallery").
++SetLink("__I_engineeringTTcenter", "engineeringTTcenter_I__").
++SetLink("LinguisticTTInst_I__ID31", "_ID31_I_LinguisticTTInst").
++SetLink("Encycloped__I__ID31", "_ID31_I_Encycloped_").
++SetLink("Isnt_TTChemicalTTPhysics_I_Inst_TTBiochem", "Inst_TTBiochem_I_Isnt_TTChemicalTTPhysics").
++SetLink("YeveranTTPhysicsTTInst__I_Inst_TTPhysiology", "Inst_TTPhysiology_I_YeveranTTPhysicsTTInst_").
++SetLink("LibTTNet_I_Library", "Library_I_LibTTNet").
++SetLink("TVTTstation_I_Inst_TTPhylosophy", "Inst_TTPhylosophy_I_TVTTstation").
++SetLink("TVTTstation_I_NationalTTStats_TTscience", "NationalTTStats_TTscience_I_TVTTstation").
++SetLink("TVTTstation_I_EEMCTTMNP", "EEMCTTMNP_I_TVTTstation").
++SetLink("OrganicTTchem_I__ID10", "_ID10_I_OrganicTTchem").
++SetLink("NationalTTStats_TTscience_I_Min_TTofTTEducation", "Min_TTofTTEducation_I_NationalTTStats_TTscience").
++SetLink("Inst_TTRadioTTMeas__I_InstituteTTofTTAppliedTTPhysics", "InstituteTTofTTAppliedTTPhysics_I_Inst_TTRadioTTMeas_").
++SetLink("InstituteTTofTTAppliedTTPhysics_I_InstituteTTofTTZoology", "InstituteTTofTTZoology_I_InstituteTTofTTAppliedTTPhysics").
+
+
++SetNetwork("StateTTEngineeringTTUniversity", "N_StateTTEngineeringTTUniversity").
++SetNetwork("Inst_TTRadiophysics", "N_Inst_TTRadiophysics").
++SetNetwork("education", "N_education").
++SetNetwork("NodeID36", "N_NodeID36").
++SetNetwork("ARENA", "N_ARENA").
++SetNetwork("EEMCTTMNP", "N_EEMCTTMNP").
++SetNetwork("Inst_TTInformatics", "N_Inst_TTInformatics").
++SetNetwork("ISTC", "N_ISTC").
++SetNetwork("ASHMS", "N_ASHMS").
++SetNetwork("NationalTTAcademy", "N_NationalTTAcademy").
++SetNetwork("Inst_TTMechanics", "N_Inst_TTMechanics").
++SetNetwork("Inst_TTofTTMolecularTTBiology", "N_Inst_TTofTTMolecularTTBiology").
++SetNetwork("_ID31", "N__ID31").
++SetNetwork("InstituteTTofTTZoology", "N_InstituteTTofTTZoology").
++SetNetwork("Inst_TTRadioTTMeas_", "N_Inst_TTRadioTTMeas_").

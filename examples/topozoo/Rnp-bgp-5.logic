@@ -1,0 +1,269 @@
++SetNode("Aracaju").
++SetAdminDist("Aracaju", "static", 1).
++SetAdminDist("Aracaju", "bgp", 2).
++SetAdminDist("Aracaju", "ospf", 3).
++SetInterface("Aracaju", "Aracaju_I_Maceio").
++SetInterface("Aracaju", "Aracaju_I_Salvador").
+
++SetNode("PortoTTVelho").
++SetAdminDist("PortoTTVelho", "static", 1).
++SetAdminDist("PortoTTVelho", "bgp", 2).
++SetAdminDist("PortoTTVelho", "ospf", 3).
++SetInterface("PortoTTVelho", "PortoTTVelho_I_RioTTBranco").
++SetInterface("PortoTTVelho", "PortoTTVelho_I_Cuiaba").
+
++SetNode("BeloTTHorizonte").
++SetAdminDist("BeloTTHorizonte", "static", 1).
++SetAdminDist("BeloTTHorizonte", "bgp", 2).
++SetAdminDist("BeloTTHorizonte", "ospf", 3).
++SetInterface("BeloTTHorizonte", "BeloTTHorizonte_I_Brasilia").
++SetInterface("BeloTTHorizonte", "BeloTTHorizonte_I_Fortaleza").
++SetInterface("BeloTTHorizonte", "BeloTTHorizonte_I_SaoTTPaulo").
++SetInterface("BeloTTHorizonte", "BeloTTHorizonte_I_Salvador").
+
++SetNode("Vitoria").
++SetAdminDist("Vitoria", "static", 1).
++SetAdminDist("Vitoria", "bgp", 2).
++SetAdminDist("Vitoria", "ospf", 3).
++SetInterface("Vitoria", "Vitoria_I_RioTTdeTTJaneiro").
++SetInterface("Vitoria", "Vitoria_I_Salvador").
+
++SetNode("Fortaleza").
++SetAdminDist("Fortaleza", "static", 1).
++SetAdminDist("Fortaleza", "bgp", 2).
++SetAdminDist("Fortaleza", "ospf", 3).
++SetInterface("Fortaleza", "Fortaleza_I_Natal").
++SetInterface("Fortaleza", "Fortaleza_I_SaoTTLuis").
++SetInterface("Fortaleza", "Fortaleza_I_BeloTTHorizonte").
+
++SetNode("Curitiba").
++SetAdminDist("Curitiba", "static", 1).
++SetAdminDist("Curitiba", "bgp", 2).
++SetAdminDist("Curitiba", "ospf", 3).
++SetInterface("Curitiba", "Curitiba_I_PortoTTAlegro").
++SetInterface("Curitiba", "Curitiba_I_CampoTTGrande").
++SetInterface("Curitiba", "Curitiba_I_SaoTTPaulo").
+
++SetNode("Goiania").
++SetAdminDist("Goiania", "static", 1).
++SetAdminDist("Goiania", "bgp", 2).
++SetAdminDist("Goiania", "ospf", 3).
++SetInterface("Goiania", "Goiania_I_Palmas").
++SetInterface("Goiania", "Goiania_I_Cuiaba").
+
++SetNode("PortoTTAlegro").
++SetAdminDist("PortoTTAlegro", "static", 1).
++SetAdminDist("PortoTTAlegro", "bgp", 2).
++SetAdminDist("PortoTTAlegro", "ospf", 3).
++SetInterface("PortoTTAlegro", "PortoTTAlegro_I_Curitiba").
++SetInterface("PortoTTAlegro", "PortoTTAlegro_I_Florianopolis").
+
++SetNode("SaoTTPaulo").
++SetAdminDist("SaoTTPaulo", "static", 1).
++SetAdminDist("SaoTTPaulo", "bgp", 2).
++SetAdminDist("SaoTTPaulo", "ospf", 3).
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_Florianopolis").
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_BeloTTHorizonte").
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_AmericasTTLight").
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_InetnetTTComercial").
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_RedCLARA").
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_Curitiba").
++SetInterface("SaoTTPaulo", "SaoTTPaulo_I_RioTTdeTTJaneiro").
+
++SetNode("BoaTTVista").
++SetAdminDist("BoaTTVista", "static", 1).
++SetAdminDist("BoaTTVista", "bgp", 2).
++SetAdminDist("BoaTTVista", "ospf", 3).
++SetInterface("BoaTTVista", "BoaTTVista_I_Brasilia").
+
++SetNode("RedCLARA").
++SetAdminDist("RedCLARA", "static", 1).
++SetAdminDist("RedCLARA", "bgp", 2).
++SetAdminDist("RedCLARA", "ospf", 3).
++SetInterface("RedCLARA", "RedCLARA_I_SaoTTPaulo").
+
++SetNode("Manaus").
++SetAdminDist("Manaus", "static", 1).
++SetAdminDist("Manaus", "bgp", 2).
++SetAdminDist("Manaus", "ospf", 3).
++SetInterface("Manaus", "Manaus_I_Brasilia").
+
++SetNode("CampoTTGrande").
++SetAdminDist("CampoTTGrande", "static", 1).
++SetAdminDist("CampoTTGrande", "bgp", 2).
++SetAdminDist("CampoTTGrande", "ospf", 3).
++SetInterface("CampoTTGrande", "CampoTTGrande_I_Curitiba").
++SetInterface("CampoTTGrande", "CampoTTGrande_I_Cuiaba").
+
++SetNode("InetnetTTComercial").
++SetAdminDist("InetnetTTComercial", "static", 1).
++SetAdminDist("InetnetTTComercial", "bgp", 2).
++SetAdminDist("InetnetTTComercial", "ospf", 3).
++SetInterface("InetnetTTComercial", "InetnetTTComercial_I_SaoTTPaulo").
+
++SetNode("Teresina").
++SetAdminDist("Teresina", "static", 1).
++SetAdminDist("Teresina", "bgp", 2).
++SetAdminDist("Teresina", "ospf", 3).
++SetInterface("Teresina", "Teresina_I_Revife").
++SetInterface("Teresina", "Teresina_I_Belem").
+
++SetNode("Natal").
++SetAdminDist("Natal", "static", 1).
++SetAdminDist("Natal", "bgp", 2).
++SetAdminDist("Natal", "ospf", 3).
++SetInterface("Natal", "Natal_I_Fortaleza").
++SetInterface("Natal", "Natal_I_JoboTTPassoa").
+
++SetNode("RioTTdeTTJaneiro").
++SetAdminDist("RioTTdeTTJaneiro", "static", 1).
++SetAdminDist("RioTTdeTTJaneiro", "bgp", 2).
++SetAdminDist("RioTTdeTTJaneiro", "ospf", 3).
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Brasilia").
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Vitoria").
++SetInterface("RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_SaoTTPaulo").
+
++SetNode("JoboTTPassoa").
++SetAdminDist("JoboTTPassoa", "static", 1).
++SetAdminDist("JoboTTPassoa", "bgp", 2).
++SetAdminDist("JoboTTPassoa", "ospf", 3).
++SetInterface("JoboTTPassoa", "JoboTTPassoa_I_Natal").
++SetInterface("JoboTTPassoa", "JoboTTPassoa_I_CampinaTTGrande").
+
++SetNode("Salvador").
++SetAdminDist("Salvador", "static", 1).
++SetAdminDist("Salvador", "bgp", 2).
++SetAdminDist("Salvador", "ospf", 3).
++SetInterface("Salvador", "Salvador_I_Aracaju").
++SetInterface("Salvador", "Salvador_I_Vitoria").
++SetInterface("Salvador", "Salvador_I_BeloTTHorizonte").
+
++SetNode("Maceio").
++SetAdminDist("Maceio", "static", 1).
++SetAdminDist("Maceio", "bgp", 2).
++SetAdminDist("Maceio", "ospf", 3).
++SetInterface("Maceio", "Maceio_I_Aracaju").
+
++SetNode("Brasilia").
++SetAdminDist("Brasilia", "static", 1).
++SetAdminDist("Brasilia", "bgp", 2).
++SetAdminDist("Brasilia", "ospf", 3).
++SetInterface("Brasilia", "Brasilia_I_RioTTdeTTJaneiro").
++SetInterface("Brasilia", "Brasilia_I_Manaus").
++SetInterface("Brasilia", "Brasilia_I_BeloTTHorizonte").
++SetInterface("Brasilia", "Brasilia_I_Macapa").
++SetInterface("Brasilia", "Brasilia_I_BoaTTVista").
+
++SetNode("AmericasTTLight").
++SetAdminDist("AmericasTTLight", "static", 1).
++SetAdminDist("AmericasTTLight", "bgp", 2).
++SetAdminDist("AmericasTTLight", "ospf", 3).
++SetInterface("AmericasTTLight", "AmericasTTLight_I_SaoTTPaulo").
+
++SetNode("Macapa").
++SetAdminDist("Macapa", "static", 1).
++SetAdminDist("Macapa", "bgp", 2).
++SetAdminDist("Macapa", "ospf", 3).
++SetInterface("Macapa", "Macapa_I_Brasilia").
+
++SetNode("Belem").
++SetAdminDist("Belem", "static", 1).
++SetAdminDist("Belem", "bgp", 2).
++SetAdminDist("Belem", "ospf", 3).
++SetInterface("Belem", "Belem_I_Teresina").
++SetInterface("Belem", "Belem_I_SaoTTLuis").
+
++SetNode("Revife").
++SetAdminDist("Revife", "static", 1).
++SetAdminDist("Revife", "bgp", 2).
++SetAdminDist("Revife", "ospf", 3).
++SetInterface("Revife", "Revife_I_Teresina").
++SetInterface("Revife", "Revife_I_CampinaTTGrande").
+
++SetNode("Palmas").
++SetAdminDist("Palmas", "static", 1).
++SetAdminDist("Palmas", "bgp", 2).
++SetAdminDist("Palmas", "ospf", 3).
++SetInterface("Palmas", "Palmas_I_Goiania").
+
++SetNode("Florianopolis").
++SetAdminDist("Florianopolis", "static", 1).
++SetAdminDist("Florianopolis", "bgp", 2).
++SetAdminDist("Florianopolis", "ospf", 3).
++SetInterface("Florianopolis", "Florianopolis_I_PortoTTAlegro").
++SetInterface("Florianopolis", "Florianopolis_I_SaoTTPaulo").
+
++SetNode("Cuiaba").
++SetAdminDist("Cuiaba", "static", 1).
++SetAdminDist("Cuiaba", "bgp", 2).
++SetAdminDist("Cuiaba", "ospf", 3).
++SetInterface("Cuiaba", "Cuiaba_I_Goiania").
++SetInterface("Cuiaba", "Cuiaba_I_CampoTTGrande").
++SetInterface("Cuiaba", "Cuiaba_I_PortoTTVelho").
+
++SetNode("CampinaTTGrande").
++SetAdminDist("CampinaTTGrande", "static", 1).
++SetAdminDist("CampinaTTGrande", "bgp", 2).
++SetAdminDist("CampinaTTGrande", "ospf", 3).
++SetInterface("CampinaTTGrande", "CampinaTTGrande_I_JoboTTPassoa").
++SetInterface("CampinaTTGrande", "CampinaTTGrande_I_Revife").
+
++SetNode("RioTTBranco").
++SetAdminDist("RioTTBranco", "static", 1).
++SetAdminDist("RioTTBranco", "bgp", 2).
++SetAdminDist("RioTTBranco", "ospf", 3).
++SetInterface("RioTTBranco", "RioTTBranco_I_PortoTTVelho").
+
++SetNode("SaoTTLuis").
++SetAdminDist("SaoTTLuis", "static", 1).
++SetAdminDist("SaoTTLuis", "bgp", 2).
++SetAdminDist("SaoTTLuis", "ospf", 3).
++SetInterface("SaoTTLuis", "SaoTTLuis_I_Fortaleza").
++SetInterface("SaoTTLuis", "SaoTTLuis_I_Belem").
+
++SetLink("Aracaju_I_Maceio", "Maceio_I_Aracaju").
++SetLink("Aracaju_I_Salvador", "Salvador_I_Aracaju").
++SetLink("PortoTTVelho_I_RioTTBranco", "RioTTBranco_I_PortoTTVelho").
++SetLink("PortoTTVelho_I_Cuiaba", "Cuiaba_I_PortoTTVelho").
++SetLink("BeloTTHorizonte_I_Brasilia", "Brasilia_I_BeloTTHorizonte").
++SetLink("BeloTTHorizonte_I_Fortaleza", "Fortaleza_I_BeloTTHorizonte").
++SetLink("BeloTTHorizonte_I_SaoTTPaulo", "SaoTTPaulo_I_BeloTTHorizonte").
++SetLink("BeloTTHorizonte_I_Salvador", "Salvador_I_BeloTTHorizonte").
++SetLink("Vitoria_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_Vitoria").
++SetLink("Vitoria_I_Salvador", "Salvador_I_Vitoria").
++SetLink("Fortaleza_I_Natal", "Natal_I_Fortaleza").
++SetLink("Fortaleza_I_SaoTTLuis", "SaoTTLuis_I_Fortaleza").
++SetLink("Curitiba_I_PortoTTAlegro", "PortoTTAlegro_I_Curitiba").
++SetLink("Curitiba_I_CampoTTGrande", "CampoTTGrande_I_Curitiba").
++SetLink("Curitiba_I_SaoTTPaulo", "SaoTTPaulo_I_Curitiba").
++SetLink("Goiania_I_Palmas", "Palmas_I_Goiania").
++SetLink("Goiania_I_Cuiaba", "Cuiaba_I_Goiania").
++SetLink("PortoTTAlegro_I_Florianopolis", "Florianopolis_I_PortoTTAlegro").
++SetLink("SaoTTPaulo_I_Florianopolis", "Florianopolis_I_SaoTTPaulo").
++SetLink("SaoTTPaulo_I_AmericasTTLight", "AmericasTTLight_I_SaoTTPaulo").
++SetLink("SaoTTPaulo_I_InetnetTTComercial", "InetnetTTComercial_I_SaoTTPaulo").
++SetLink("SaoTTPaulo_I_RedCLARA", "RedCLARA_I_SaoTTPaulo").
++SetLink("SaoTTPaulo_I_RioTTdeTTJaneiro", "RioTTdeTTJaneiro_I_SaoTTPaulo").
++SetLink("BoaTTVista_I_Brasilia", "Brasilia_I_BoaTTVista").
++SetLink("Manaus_I_Brasilia", "Brasilia_I_Manaus").
++SetLink("CampoTTGrande_I_Cuiaba", "Cuiaba_I_CampoTTGrande").
++SetLink("Teresina_I_Revife", "Revife_I_Teresina").
++SetLink("Teresina_I_Belem", "Belem_I_Teresina").
++SetLink("Natal_I_JoboTTPassoa", "JoboTTPassoa_I_Natal").
++SetLink("RioTTdeTTJaneiro_I_Brasilia", "Brasilia_I_RioTTdeTTJaneiro").
++SetLink("JoboTTPassoa_I_CampinaTTGrande", "CampinaTTGrande_I_JoboTTPassoa").
++SetLink("Brasilia_I_Macapa", "Macapa_I_Brasilia").
++SetLink("Belem_I_SaoTTLuis", "SaoTTLuis_I_Belem").
++SetLink("Revife_I_CampinaTTGrande", "CampinaTTGrande_I_Revife").
+
+
++SetNetwork("PortoTTAlegro", "N_PortoTTAlegro").
++SetBGPAnnouncement("PortoTTAlegro", "N_PortoTTAlegro", "NBGP_PortoTTAlegro", "1;2;3", 3).
++SetNetwork("BoaTTVista", "N_BoaTTVista").
++SetBGPAnnouncement("BoaTTVista", "N_BoaTTVista", "NBGP_BoaTTVista", "1;2;3", 3).
++SetNetwork("Brasilia", "N_Brasilia").
++SetBGPAnnouncement("Brasilia", "N_Brasilia", "NBGP_Brasilia", "1;2;3", 3).
++SetNetwork("Teresina", "N_Teresina").
++SetBGPAnnouncement("Teresina", "N_Teresina", "NBGP_Teresina", "1;2;3", 3).
++SetNetwork("RioTTdeTTJaneiro", "N_RioTTdeTTJaneiro").
++SetBGPAnnouncement("RioTTdeTTJaneiro", "N_RioTTdeTTJaneiro", "NBGP_RioTTdeTTJaneiro", "1;2;3", 3).

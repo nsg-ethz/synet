@@ -1,0 +1,174 @@
++SetNode("Dubbo").
++SetAdminDist("Dubbo", "static", 1).
++SetAdminDist("Dubbo", "bgp", 2).
++SetAdminDist("Dubbo", "ospf", 3).
++SetInterface("Dubbo", "Dubbo_I_Moree").
++SetInterface("Dubbo", "Dubbo_I_Parkes").
+
++SetNode("Parkes").
++SetAdminDist("Parkes", "static", 1).
++SetAdminDist("Parkes", "bgp", 2).
++SetAdminDist("Parkes", "ospf", 3).
++SetInterface("Parkes", "Parkes_I_Dubbo").
++SetInterface("Parkes", "Parkes_I_NodeID2").
+
++SetNode("Geelong").
++SetAdminDist("Geelong", "static", 1).
++SetAdminDist("Geelong", "bgp", 2).
++SetAdminDist("Geelong", "ospf", 3).
++SetInterface("Geelong", "Geelong_I_Melbourne").
++SetInterface("Geelong", "Geelong_I_Adelaide").
+
++SetNode("Coff_sTTHarbour").
++SetAdminDist("Coff_sTTHarbour", "static", 1).
++SetAdminDist("Coff_sTTHarbour", "bgp", 2).
++SetAdminDist("Coff_sTTHarbour", "ospf", 3).
++SetInterface("Coff_sTTHarbour", "Coff_sTTHarbour_I_Brisbane").
++SetInterface("Coff_sTTHarbour", "Coff_sTTHarbour_I_Newcastle").
+
++SetNode("Canberra").
++SetAdminDist("Canberra", "static", 1).
++SetAdminDist("Canberra", "bgp", 2).
++SetAdminDist("Canberra", "ospf", 3).
++SetInterface("Canberra", "Canberra_I_Albury").
++SetInterface("Canberra", "Canberra_I_NodeID2").
++SetInterface("Canberra", "Canberra_I_Sydney").
+
++SetNode("Albury").
++SetAdminDist("Albury", "static", 1).
++SetAdminDist("Albury", "bgp", 2).
++SetAdminDist("Albury", "ospf", 3).
++SetInterface("Albury", "Albury_I_Melbourne").
++SetInterface("Albury", "Albury_I_Canberra").
+
++SetNode("Brisbane").
++SetAdminDist("Brisbane", "static", 1).
++SetAdminDist("Brisbane", "bgp", 2).
++SetAdminDist("Brisbane", "ospf", 3).
++SetInterface("Brisbane", "Brisbane_I_Moree").
++SetInterface("Brisbane", "Brisbane_I_Coff_sTTHarbour").
+
++SetNode("PortTTAugusta").
++SetAdminDist("PortTTAugusta", "static", 1).
++SetAdminDist("PortTTAugusta", "bgp", 2).
++SetAdminDist("PortTTAugusta", "ospf", 3).
++SetInterface("PortTTAugusta", "PortTTAugusta_I_Kalgoorlie").
++SetInterface("PortTTAugusta", "PortTTAugusta_I_Adelaide").
+
++SetNode("Kalgoorlie").
++SetAdminDist("Kalgoorlie", "static", 1).
++SetAdminDist("Kalgoorlie", "bgp", 2).
++SetAdminDist("Kalgoorlie", "ospf", 3).
++SetInterface("Kalgoorlie", "Kalgoorlie_I_Perth").
++SetInterface("Kalgoorlie", "Kalgoorlie_I_PortTTAugusta").
+
++SetNode("Melbourne").
++SetAdminDist("Melbourne", "static", 1).
++SetAdminDist("Melbourne", "bgp", 2).
++SetAdminDist("Melbourne", "ospf", 3).
++SetInterface("Melbourne", "Melbourne_I_Albury").
++SetInterface("Melbourne", "Melbourne_I_Shepparton").
++SetInterface("Melbourne", "Melbourne_I_Geelong").
+
++SetNode("Moree").
++SetAdminDist("Moree", "static", 1).
++SetAdminDist("Moree", "bgp", 2).
++SetAdminDist("Moree", "ospf", 3).
++SetInterface("Moree", "Moree_I_Brisbane").
++SetInterface("Moree", "Moree_I_Dubbo").
+
++SetNode("NodeID2").
++SetAdminDist("NodeID2", "static", 1).
++SetAdminDist("NodeID2", "bgp", 2).
++SetAdminDist("NodeID2", "ospf", 3).
++SetInterface("NodeID2", "NodeID2_I_Parkes").
++SetInterface("NodeID2", "NodeID2_I_Shepparton").
++SetInterface("NodeID2", "NodeID2_I_Canberra").
+
++SetNode("Sydney").
++SetAdminDist("Sydney", "static", 1).
++SetAdminDist("Sydney", "bgp", 2).
++SetAdminDist("Sydney", "ospf", 3).
++SetInterface("Sydney", "Sydney_I_Canberra").
++SetInterface("Sydney", "Sydney_I_Newcastle").
+
++SetNode("Newcastle").
++SetAdminDist("Newcastle", "static", 1).
++SetAdminDist("Newcastle", "bgp", 2).
++SetAdminDist("Newcastle", "ospf", 3).
++SetInterface("Newcastle", "Newcastle_I_Coff_sTTHarbour").
++SetInterface("Newcastle", "Newcastle_I_Sydney").
+
++SetNode("Perth").
++SetAdminDist("Perth", "static", 1).
++SetAdminDist("Perth", "bgp", 2).
++SetAdminDist("Perth", "ospf", 3).
++SetInterface("Perth", "Perth_I_Kalgoorlie").
++SetInterface("Perth", "Perth_I_Adelaide").
+
++SetNode("Shepparton").
++SetAdminDist("Shepparton", "static", 1).
++SetAdminDist("Shepparton", "bgp", 2).
++SetAdminDist("Shepparton", "ospf", 3).
++SetInterface("Shepparton", "Shepparton_I_Melbourne").
++SetInterface("Shepparton", "Shepparton_I_NodeID2").
+
++SetNode("Adelaide").
++SetAdminDist("Adelaide", "static", 1).
++SetAdminDist("Adelaide", "bgp", 2).
++SetAdminDist("Adelaide", "ospf", 3).
++SetInterface("Adelaide", "Adelaide_I_Geelong").
++SetInterface("Adelaide", "Adelaide_I_Perth").
++SetInterface("Adelaide", "Adelaide_I_PortTTAugusta").
+
++SetLink("Dubbo_I_Moree", "Moree_I_Dubbo").
++SetLink("Dubbo_I_Parkes", "Parkes_I_Dubbo").
++SetLink("Parkes_I_NodeID2", "NodeID2_I_Parkes").
++SetLink("Geelong_I_Melbourne", "Melbourne_I_Geelong").
++SetLink("Geelong_I_Adelaide", "Adelaide_I_Geelong").
++SetLink("Coff_sTTHarbour_I_Brisbane", "Brisbane_I_Coff_sTTHarbour").
++SetLink("Coff_sTTHarbour_I_Newcastle", "Newcastle_I_Coff_sTTHarbour").
++SetLink("Canberra_I_Albury", "Albury_I_Canberra").
++SetLink("Canberra_I_NodeID2", "NodeID2_I_Canberra").
++SetLink("Canberra_I_Sydney", "Sydney_I_Canberra").
++SetLink("Albury_I_Melbourne", "Melbourne_I_Albury").
++SetLink("Brisbane_I_Moree", "Moree_I_Brisbane").
++SetLink("PortTTAugusta_I_Kalgoorlie", "Kalgoorlie_I_PortTTAugusta").
++SetLink("PortTTAugusta_I_Adelaide", "Adelaide_I_PortTTAugusta").
++SetLink("Kalgoorlie_I_Perth", "Perth_I_Kalgoorlie").
++SetLink("Melbourne_I_Shepparton", "Shepparton_I_Melbourne").
++SetLink("NodeID2_I_Shepparton", "Shepparton_I_NodeID2").
++SetLink("Sydney_I_Newcastle", "Newcastle_I_Sydney").
++SetLink("Perth_I_Adelaide", "Adelaide_I_Perth").
+
+
++SetNetwork("Parkes", "N_Parkes").
++SetBGPAnnouncement("Parkes", "N_Parkes", "NBGP_Parkes", "1;2;3", 3).
++SetNetwork("Newcastle", "N_Newcastle").
++SetBGPAnnouncement("Newcastle", "N_Newcastle", "NBGP_Newcastle", "1;2;3", 3).
++SetNetwork("Adelaide", "N_Adelaide").
++SetBGPAnnouncement("Adelaide", "N_Adelaide", "NBGP_Adelaide", "1;2;3", 3).
++SetNetwork("Coff_sTTHarbour", "N_Coff_sTTHarbour").
++SetBGPAnnouncement("Coff_sTTHarbour", "N_Coff_sTTHarbour", "NBGP_Coff_sTTHarbour", "1;2;3", 3).
++SetNetwork("PortTTAugusta", "N_PortTTAugusta").
++SetBGPAnnouncement("PortTTAugusta", "N_PortTTAugusta", "NBGP_PortTTAugusta", "1;2;3", 3).
++SetNetwork("Moree", "N_Moree").
++SetBGPAnnouncement("Moree", "N_Moree", "NBGP_Moree", "1;2;3", 3).
++SetNetwork("Sydney", "N_Sydney").
++SetBGPAnnouncement("Sydney", "N_Sydney", "NBGP_Sydney", "1;2;3", 3).
++SetNetwork("Geelong", "N_Geelong").
++SetBGPAnnouncement("Geelong", "N_Geelong", "NBGP_Geelong", "1;2;3", 3).
++SetNetwork("Perth", "N_Perth").
++SetBGPAnnouncement("Perth", "N_Perth", "NBGP_Perth", "1;2;3", 3).
++SetNetwork("Dubbo", "N_Dubbo").
++SetBGPAnnouncement("Dubbo", "N_Dubbo", "NBGP_Dubbo", "1;2;3", 3).
++SetNetwork("NodeID2", "N_NodeID2").
++SetBGPAnnouncement("NodeID2", "N_NodeID2", "NBGP_NodeID2", "1;2;3", 3).
++SetNetwork("Brisbane", "N_Brisbane").
++SetBGPAnnouncement("Brisbane", "N_Brisbane", "NBGP_Brisbane", "1;2;3", 3).
++SetNetwork("Albury", "N_Albury").
++SetBGPAnnouncement("Albury", "N_Albury", "NBGP_Albury", "1;2;3", 3).
++SetNetwork("Kalgoorlie", "N_Kalgoorlie").
++SetBGPAnnouncement("Kalgoorlie", "N_Kalgoorlie", "NBGP_Kalgoorlie", "1;2;3", 3).
++SetNetwork("Melbourne", "N_Melbourne").
++SetBGPAnnouncement("Melbourne", "N_Melbourne", "NBGP_Melbourne", "1;2;3", 3).

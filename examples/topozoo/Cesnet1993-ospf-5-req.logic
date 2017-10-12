@@ -1,0 +1,51 @@
+
++Fwd("N_Plzen", "Ostrava", "Brno", "ospf").
++Fwd("N_Plzen", "Brno", "Praha", "ospf").
++Fwd("N_Plzen", "Praha", "Plzen", "ospf").
++Fwd("N_Plzen", "Ebone", "Praha", "ospf").
++Fwd("N_Plzen", "Pardubice", "Praha", "ospf").
++Fwd("N_Plzen", "Liberec", "Praha", "ospf").
++Fwd("N_Plzen", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_Plzen", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("N_Plzen", "Olomouc", "Brno", "ospf").
+
++Fwd("N_CeskeTTBudejovice", "Ostrava", "Brno", "ospf").
++Fwd("N_CeskeTTBudejovice", "Brno", "Praha", "ospf").
++Fwd("N_CeskeTTBudejovice", "Praha", "CeskeTTBudejovice", "ospf").
++Fwd("N_CeskeTTBudejovice", "Ebone", "Praha", "ospf").
++Fwd("N_CeskeTTBudejovice", "Pardubice", "Praha", "ospf").
++Fwd("N_CeskeTTBudejovice", "Plzen", "Praha", "ospf").
++Fwd("N_CeskeTTBudejovice", "Liberec", "Praha", "ospf").
++Fwd("N_CeskeTTBudejovice", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_CeskeTTBudejovice", "Olomouc", "Brno", "ospf").
+
++Fwd("N_Ebone", "Ostrava", "Brno", "ospf").
++Fwd("N_Ebone", "Brno", "Praha", "ospf").
++Fwd("N_Ebone", "Praha", "Ebone", "ospf").
++Fwd("N_Ebone", "Pardubice", "Praha", "ospf").
++Fwd("N_Ebone", "Plzen", "Praha", "ospf").
++Fwd("N_Ebone", "Liberec", "Praha", "ospf").
++Fwd("N_Ebone", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_Ebone", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("N_Ebone", "Olomouc", "Brno", "ospf").
+
++Fwd("N_Liberec", "Ostrava", "Brno", "ospf").
++Fwd("N_Liberec", "Brno", "Praha", "ospf").
++Fwd("N_Liberec", "Praha", "Liberec", "ospf").
++Fwd("N_Liberec", "Ebone", "Praha", "ospf").
++Fwd("N_Liberec", "Pardubice", "Praha", "ospf").
++Fwd("N_Liberec", "Plzen", "Praha", "ospf").
++Fwd("N_Liberec", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_Liberec", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("N_Liberec", "Olomouc", "Brno", "ospf").
+
++Fwd("N_Praha", "Ostrava", "Brno", "ospf").
++Fwd("N_Praha", "Brno", "Praha", "ospf").
++Fwd("N_Praha", "Ebone", "Praha", "ospf").
++Fwd("N_Praha", "Pardubice", "Praha", "ospf").
++Fwd("N_Praha", "Plzen", "Praha", "ospf").
++Fwd("N_Praha", "Liberec", "Praha", "ospf").
++Fwd("N_Praha", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_Praha", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("N_Praha", "Olomouc", "Brno", "ospf").
+

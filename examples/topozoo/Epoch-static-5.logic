@@ -1,0 +1,58 @@
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_PaloTTAlto").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Atlanta").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Denver").
++SetInterface("Chicago", "Chicago_I_Vienna").
+
++SetNode("PaloTTAlto").
++SetAdminDist("PaloTTAlto", "static", 1).
++SetAdminDist("PaloTTAlto", "bgp", 2).
++SetAdminDist("PaloTTAlto", "ospf", 3).
++SetInterface("PaloTTAlto", "PaloTTAlto_I_LosTTAngeles").
++SetInterface("PaloTTAlto", "PaloTTAlto_I_Denver").
++SetInterface("PaloTTAlto", "PaloTTAlto_I_Vienna").
+
++SetNode("Denver").
++SetAdminDist("Denver", "static", 1).
++SetAdminDist("Denver", "bgp", 2).
++SetAdminDist("Denver", "ospf", 3).
++SetInterface("Denver", "Denver_I_PaloTTAlto").
++SetInterface("Denver", "Denver_I_Chicago").
+
++SetNode("Atlanta").
++SetAdminDist("Atlanta", "static", 1).
++SetAdminDist("Atlanta", "bgp", 2).
++SetAdminDist("Atlanta", "ospf", 3).
++SetInterface("Atlanta", "Atlanta_I_LosTTAngeles").
++SetInterface("Atlanta", "Atlanta_I_Vienna").
+
++SetNode("Vienna").
++SetAdminDist("Vienna", "static", 1).
++SetAdminDist("Vienna", "bgp", 2).
++SetAdminDist("Vienna", "ospf", 3).
++SetInterface("Vienna", "Vienna_I_PaloTTAlto").
++SetInterface("Vienna", "Vienna_I_Atlanta").
++SetInterface("Vienna", "Vienna_I_Chicago").
+
++SetLink("LosTTAngeles_I_PaloTTAlto", "PaloTTAlto_I_LosTTAngeles").
++SetLink("LosTTAngeles_I_Atlanta", "Atlanta_I_LosTTAngeles").
++SetLink("Chicago_I_Denver", "Denver_I_Chicago").
++SetLink("Chicago_I_Vienna", "Vienna_I_Chicago").
++SetLink("PaloTTAlto_I_Denver", "Denver_I_PaloTTAlto").
++SetLink("PaloTTAlto_I_Vienna", "Vienna_I_PaloTTAlto").
++SetLink("Atlanta_I_Vienna", "Vienna_I_Atlanta").
+
+
++SetNetwork("Denver", "N_Denver").
++SetNetwork("Vienna", "N_Vienna").
++SetNetwork("Atlanta", "N_Atlanta").
++SetNetwork("PaloTTAlto", "N_PaloTTAlto").
++SetNetwork("LosTTAngeles", "N_LosTTAngeles").

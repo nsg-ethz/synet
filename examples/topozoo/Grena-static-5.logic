@@ -1,0 +1,132 @@
++SetNode("CiscoTT3640TTKhashuri").
++SetAdminDist("CiscoTT3640TTKhashuri", "static", 1).
++SetAdminDist("CiscoTT3640TTKhashuri", "bgp", 2).
++SetAdminDist("CiscoTT3640TTKhashuri", "ospf", 3).
++SetInterface("CiscoTT3640TTKhashuri", "CiscoTT3640TTKhashuri_I_CiscoTT3640TTKutaisiTTC07").
++SetInterface("CiscoTT3640TTKhashuri", "CiscoTT3640TTKhashuri_I_CiscoTT3640TTGori").
+
++SetNode("TbilisiTTGRENATTNetwork").
++SetAdminDist("TbilisiTTGRENATTNetwork", "static", 1).
++SetAdminDist("TbilisiTTGRENATTNetwork", "bgp", 2).
++SetAdminDist("TbilisiTTGRENATTNetwork", "ospf", 3).
++SetInterface("TbilisiTTGRENATTNetwork", "TbilisiTTGRENATTNetwork_I_RustaviTTCO15").
++SetInterface("TbilisiTTGRENATTNetwork", "TbilisiTTGRENATTNetwork_I_CiscoTT3640TTGori").
++SetInterface("TbilisiTTGRENATTNetwork", "TbilisiTTGRENATTNetwork_I_CiscoTT3640TTTelavi").
+
++SetNode("CiscoTT3640TTSamtredia").
++SetAdminDist("CiscoTT3640TTSamtredia", "static", 1).
++SetAdminDist("CiscoTT3640TTSamtredia", "bgp", 2).
++SetAdminDist("CiscoTT3640TTSamtredia", "ospf", 3).
++SetInterface("CiscoTT3640TTSamtredia", "CiscoTT3640TTSamtredia_I_CiscoTT3640TTKutaisiTTC07").
++SetInterface("CiscoTT3640TTSamtredia", "CiscoTT3640TTSamtredia_I_CiscoTT3640TTPoti").
+
++SetNode("CiscoTT3640TTPoti").
++SetAdminDist("CiscoTT3640TTPoti", "static", 1).
++SetAdminDist("CiscoTT3640TTPoti", "bgp", 2).
++SetAdminDist("CiscoTT3640TTPoti", "ospf", 3).
++SetInterface("CiscoTT3640TTPoti", "CiscoTT3640TTPoti_I_CiscoTT3640TTZugididi").
++SetInterface("CiscoTT3640TTPoti", "CiscoTT3640TTPoti_I_CiscoTT2621TTBatumi").
++SetInterface("CiscoTT3640TTPoti", "CiscoTT3640TTPoti_I_CiscoTT3640TTSamtredia").
+
++SetNode("CiscoTT3640TTGori").
++SetAdminDist("CiscoTT3640TTGori", "static", 1).
++SetAdminDist("CiscoTT3640TTGori", "bgp", 2).
++SetAdminDist("CiscoTT3640TTGori", "ospf", 3).
++SetInterface("CiscoTT3640TTGori", "CiscoTT3640TTGori_I_CiscoTT3640TTKhashuri").
++SetInterface("CiscoTT3640TTGori", "CiscoTT3640TTGori_I_TbilisiTTGRENATTNetwork").
+
++SetNode("CiscoTT2621TTBatumi").
++SetAdminDist("CiscoTT2621TTBatumi", "static", 1).
++SetAdminDist("CiscoTT2621TTBatumi", "bgp", 2).
++SetAdminDist("CiscoTT2621TTBatumi", "ospf", 3).
++SetInterface("CiscoTT2621TTBatumi", "CiscoTT2621TTBatumi_I_CiscoTT3640TTPoti").
+
++SetNode("CorecessTTDX6524").
++SetAdminDist("CorecessTTDX6524", "static", 1).
++SetAdminDist("CorecessTTDX6524", "bgp", 2).
++SetAdminDist("CorecessTTDX6524", "ospf", 3).
++SetInterface("CorecessTTDX6524", "CorecessTTDX6524_I_RustaviTTCO15").
+
++SetNode("RustaviTTCO14").
++SetAdminDist("RustaviTTCO14", "static", 1).
++SetAdminDist("RustaviTTCO14", "bgp", 2).
++SetAdminDist("RustaviTTCO14", "ospf", 3).
++SetInterface("RustaviTTCO14", "RustaviTTCO14_I_RustaviTTCO15").
++SetInterface("RustaviTTCO14", "RustaviTTCO14_I_CorecessTTDX6524ID9").
+
++SetNode("RustaviTTCO15").
++SetAdminDist("RustaviTTCO15", "static", 1).
++SetAdminDist("RustaviTTCO15", "bgp", 2).
++SetAdminDist("RustaviTTCO15", "ospf", 3).
++SetInterface("RustaviTTCO15", "RustaviTTCO15_I_RustaviTTCO14").
++SetInterface("RustaviTTCO15", "RustaviTTCO15_I_TbilisiTTGRENATTNetwork").
++SetInterface("RustaviTTCO15", "RustaviTTCO15_I_CorecessTTDX6524").
+
++SetNode("CiscoTT2511TTKutaisi").
++SetAdminDist("CiscoTT2511TTKutaisi", "static", 1).
++SetAdminDist("CiscoTT2511TTKutaisi", "bgp", 2).
++SetAdminDist("CiscoTT2511TTKutaisi", "ospf", 3).
++SetInterface("CiscoTT2511TTKutaisi", "CiscoTT2511TTKutaisi_I_CiscoTT3640TTKutaisiTTC04").
+
++SetNode("CorecessTTDX6524ID7").
++SetAdminDist("CorecessTTDX6524ID7", "static", 1).
++SetAdminDist("CorecessTTDX6524ID7", "bgp", 2).
++SetAdminDist("CorecessTTDX6524ID7", "ospf", 3).
++SetInterface("CorecessTTDX6524ID7", "CorecessTTDX6524ID7_I_CiscoTT3640TTKutaisiTTC04").
+
++SetNode("CiscoTT3640TTTelavi").
++SetAdminDist("CiscoTT3640TTTelavi", "static", 1).
++SetAdminDist("CiscoTT3640TTTelavi", "bgp", 2).
++SetAdminDist("CiscoTT3640TTTelavi", "ospf", 3).
++SetInterface("CiscoTT3640TTTelavi", "CiscoTT3640TTTelavi_I_TbilisiTTGRENATTNetwork").
+
++SetNode("CiscoTT3640TTZugididi").
++SetAdminDist("CiscoTT3640TTZugididi", "static", 1).
++SetAdminDist("CiscoTT3640TTZugididi", "bgp", 2).
++SetAdminDist("CiscoTT3640TTZugididi", "ospf", 3).
++SetInterface("CiscoTT3640TTZugididi", "CiscoTT3640TTZugididi_I_CiscoTT3640TTPoti").
+
++SetNode("CiscoTT3640TTKutaisiTTC07").
++SetAdminDist("CiscoTT3640TTKutaisiTTC07", "static", 1).
++SetAdminDist("CiscoTT3640TTKutaisiTTC07", "bgp", 2).
++SetAdminDist("CiscoTT3640TTKutaisiTTC07", "ospf", 3).
++SetInterface("CiscoTT3640TTKutaisiTTC07", "CiscoTT3640TTKutaisiTTC07_I_CiscoTT3640TTKhashuri").
++SetInterface("CiscoTT3640TTKutaisiTTC07", "CiscoTT3640TTKutaisiTTC07_I_CiscoTT3640TTKutaisiTTC04").
++SetInterface("CiscoTT3640TTKutaisiTTC07", "CiscoTT3640TTKutaisiTTC07_I_CiscoTT3640TTSamtredia").
+
++SetNode("CiscoTT3640TTKutaisiTTC04").
++SetAdminDist("CiscoTT3640TTKutaisiTTC04", "static", 1).
++SetAdminDist("CiscoTT3640TTKutaisiTTC04", "bgp", 2).
++SetAdminDist("CiscoTT3640TTKutaisiTTC04", "ospf", 3).
++SetInterface("CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC04_I_CiscoTT3640TTKutaisiTTC07").
++SetInterface("CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC04_I_CiscoTT2511TTKutaisi").
++SetInterface("CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC04_I_CorecessTTDX6524ID7").
+
++SetNode("CorecessTTDX6524ID9").
++SetAdminDist("CorecessTTDX6524ID9", "static", 1).
++SetAdminDist("CorecessTTDX6524ID9", "bgp", 2).
++SetAdminDist("CorecessTTDX6524ID9", "ospf", 3).
++SetInterface("CorecessTTDX6524ID9", "CorecessTTDX6524ID9_I_RustaviTTCO14").
+
++SetLink("CiscoTT3640TTKhashuri_I_CiscoTT3640TTKutaisiTTC07", "CiscoTT3640TTKutaisiTTC07_I_CiscoTT3640TTKhashuri").
++SetLink("CiscoTT3640TTKhashuri_I_CiscoTT3640TTGori", "CiscoTT3640TTGori_I_CiscoTT3640TTKhashuri").
++SetLink("TbilisiTTGRENATTNetwork_I_RustaviTTCO15", "RustaviTTCO15_I_TbilisiTTGRENATTNetwork").
++SetLink("TbilisiTTGRENATTNetwork_I_CiscoTT3640TTGori", "CiscoTT3640TTGori_I_TbilisiTTGRENATTNetwork").
++SetLink("TbilisiTTGRENATTNetwork_I_CiscoTT3640TTTelavi", "CiscoTT3640TTTelavi_I_TbilisiTTGRENATTNetwork").
++SetLink("CiscoTT3640TTSamtredia_I_CiscoTT3640TTKutaisiTTC07", "CiscoTT3640TTKutaisiTTC07_I_CiscoTT3640TTSamtredia").
++SetLink("CiscoTT3640TTSamtredia_I_CiscoTT3640TTPoti", "CiscoTT3640TTPoti_I_CiscoTT3640TTSamtredia").
++SetLink("CiscoTT3640TTPoti_I_CiscoTT3640TTZugididi", "CiscoTT3640TTZugididi_I_CiscoTT3640TTPoti").
++SetLink("CiscoTT3640TTPoti_I_CiscoTT2621TTBatumi", "CiscoTT2621TTBatumi_I_CiscoTT3640TTPoti").
++SetLink("CorecessTTDX6524_I_RustaviTTCO15", "RustaviTTCO15_I_CorecessTTDX6524").
++SetLink("RustaviTTCO14_I_RustaviTTCO15", "RustaviTTCO15_I_RustaviTTCO14").
++SetLink("RustaviTTCO14_I_CorecessTTDX6524ID9", "CorecessTTDX6524ID9_I_RustaviTTCO14").
++SetLink("CiscoTT2511TTKutaisi_I_CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC04_I_CiscoTT2511TTKutaisi").
++SetLink("CorecessTTDX6524ID7_I_CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC04_I_CorecessTTDX6524ID7").
++SetLink("CiscoTT3640TTKutaisiTTC07_I_CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC04_I_CiscoTT3640TTKutaisiTTC07").
+
+
++SetNetwork("CorecessTTDX6524ID7", "N_CorecessTTDX6524ID7").
++SetNetwork("CiscoTT3640TTKutaisiTTC04", "N_CiscoTT3640TTKutaisiTTC04").
++SetNetwork("CiscoTT2511TTKutaisi", "N_CiscoTT2511TTKutaisi").
++SetNetwork("CiscoTT3640TTSamtredia", "N_CiscoTT3640TTSamtredia").
++SetNetwork("CorecessTTDX6524", "N_CorecessTTDX6524").

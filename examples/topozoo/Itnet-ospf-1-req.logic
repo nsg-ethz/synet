@@ -1,0 +1,12 @@
+
++Fwd("N_Athlone", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Athlone", "ospf").
++Fwd("N_Athlone", "Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("N_Athlone", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
+

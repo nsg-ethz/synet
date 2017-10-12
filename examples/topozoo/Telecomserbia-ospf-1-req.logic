@@ -1,0 +1,7 @@
+
++Fwd("N_Belgrade", "Krusevac", "Nis", "ospf").
++Fwd("N_Belgrade", "Nis", "Kragujevac", "ospf").
++Fwd("N_Belgrade", "Kragujevac", "Belgrade", "ospf").
++Fwd("N_Belgrade", "Podgorica", "NoviTTSad", "ospf").
++Fwd("N_Belgrade", "NoviTTSad", "Belgrade", "ospf").
+

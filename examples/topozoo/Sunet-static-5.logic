@@ -1,0 +1,233 @@
++SetNode("Halmstad").
++SetAdminDist("Halmstad", "static", 1).
++SetAdminDist("Halmstad", "bgp", 2).
++SetAdminDist("Halmstad", "ospf", 3).
++SetInterface("Halmstad", "Halmstad_I_Lund").
++SetInterface("Halmstad", "Halmstad_I_Goteborg").
+
++SetNode("Uppsala").
++SetAdminDist("Uppsala", "static", 1).
++SetAdminDist("Uppsala", "bgp", 2).
++SetAdminDist("Uppsala", "ospf", 3).
++SetInterface("Uppsala", "Uppsala_I_Stockholm").
++SetInterface("Uppsala", "Uppsala_I_Gavle").
+
++SetNode("Kiruna").
++SetAdminDist("Kiruna", "static", 1).
++SetAdminDist("Kiruna", "bgp", 2).
++SetAdminDist("Kiruna", "ospf", 3).
++SetInterface("Kiruna", "Kiruna_I_Lulea").
+
++SetNode("Lulea").
++SetAdminDist("Lulea", "static", 1).
++SetAdminDist("Lulea", "bgp", 2).
++SetAdminDist("Lulea", "ospf", 3).
++SetInterface("Lulea", "Lulea_I_NodeID20").
++SetInterface("Lulea", "Lulea_I_Kiruna").
++SetInterface("Lulea", "Lulea_I_Umea").
+
++SetNode("Goteborg").
++SetAdminDist("Goteborg", "static", 1).
++SetAdminDist("Goteborg", "bgp", 2).
++SetAdminDist("Goteborg", "ospf", 3).
++SetInterface("Goteborg", "Goteborg_I_Boras").
++SetInterface("Goteborg", "Goteborg_I_Trollhattan").
++SetInterface("Goteborg", "Goteborg_I_Halmstad").
+
++SetNode("Boras").
++SetAdminDist("Boras", "static", 1).
++SetAdminDist("Boras", "bgp", 2).
++SetAdminDist("Boras", "ospf", 3).
++SetInterface("Boras", "Boras_I_Skovde").
++SetInterface("Boras", "Boras_I_Goteborg").
+
++SetNode("Umea").
++SetAdminDist("Umea", "static", 1).
++SetAdminDist("Umea", "bgp", 2).
++SetAdminDist("Umea", "ospf", 3).
++SetInterface("Umea", "Umea_I_NodeID20").
++SetInterface("Umea", "Umea_I_Sundsvall").
++SetInterface("Umea", "Umea_I_Lulea").
+
++SetNode("Borlange").
++SetAdminDist("Borlange", "static", 1).
++SetAdminDist("Borlange", "bgp", 2).
++SetAdminDist("Borlange", "ospf", 3).
++SetInterface("Borlange", "Borlange_I_Orebro").
++SetInterface("Borlange", "Borlange_I_Gavle").
+
++SetNode("Malmo").
++SetAdminDist("Malmo", "static", 1).
++SetAdminDist("Malmo", "bgp", 2).
++SetAdminDist("Malmo", "ospf", 3).
++SetInterface("Malmo", "Malmo_I_Kristianstad").
++SetInterface("Malmo", "Malmo_I_Lund").
+
++SetNode("Kristianstad").
++SetAdminDist("Kristianstad", "static", 1).
++SetAdminDist("Kristianstad", "bgp", 2).
++SetAdminDist("Kristianstad", "ospf", 3).
++SetInterface("Kristianstad", "Kristianstad_I_Ronneby").
++SetInterface("Kristianstad", "Kristianstad_I_Malmo").
+
++SetNode("Kalmar").
++SetAdminDist("Kalmar", "static", 1).
++SetAdminDist("Kalmar", "bgp", 2).
++SetAdminDist("Kalmar", "ospf", 3).
++SetInterface("Kalmar", "Kalmar_I_Vaxjo").
++SetInterface("Kalmar", "Kalmar_I_Ronneby").
+
++SetNode("Vaxjo").
++SetAdminDist("Vaxjo", "static", 1).
++SetAdminDist("Vaxjo", "bgp", 2).
++SetAdminDist("Vaxjo", "ospf", 3).
++SetInterface("Vaxjo", "Vaxjo_I_Kalmar").
++SetInterface("Vaxjo", "Vaxjo_I_Jonkoping").
++SetInterface("Vaxjo", "Vaxjo_I_Lund").
+
++SetNode("Vasten").
++SetAdminDist("Vasten", "static", 1).
++SetAdminDist("Vasten", "bgp", 2).
++SetAdminDist("Vasten", "ospf", 3).
++SetInterface("Vasten", "Vasten_I_Orebro").
++SetInterface("Vasten", "Vasten_I_Stockholm").
+
++SetNode("Trollhattan").
++SetAdminDist("Trollhattan", "static", 1).
++SetAdminDist("Trollhattan", "bgp", 2).
++SetAdminDist("Trollhattan", "ospf", 3).
++SetInterface("Trollhattan", "Trollhattan_I_Skovde").
++SetInterface("Trollhattan", "Trollhattan_I_Karlstad").
++SetInterface("Trollhattan", "Trollhattan_I_Goteborg").
+
++SetNode("Ronneby").
++SetAdminDist("Ronneby", "static", 1).
++SetAdminDist("Ronneby", "bgp", 2).
++SetAdminDist("Ronneby", "ospf", 3).
++SetInterface("Ronneby", "Ronneby_I_Kristianstad").
++SetInterface("Ronneby", "Ronneby_I_Kalmar").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_Visby").
++SetInterface("Stockholm", "Stockholm_I_Vasten").
++SetInterface("Stockholm", "Stockholm_I_Linkoping").
++SetInterface("Stockholm", "Stockholm_I_Uppsala").
+
++SetNode("Gavle").
++SetAdminDist("Gavle", "static", 1).
++SetAdminDist("Gavle", "bgp", 2).
++SetAdminDist("Gavle", "ospf", 3).
++SetInterface("Gavle", "Gavle_I_Sundsvall").
++SetInterface("Gavle", "Gavle_I_Borlange").
++SetInterface("Gavle", "Gavle_I_Uppsala").
+
++SetNode("Skovde").
++SetAdminDist("Skovde", "static", 1).
++SetAdminDist("Skovde", "bgp", 2).
++SetAdminDist("Skovde", "ospf", 3).
++SetInterface("Skovde", "Skovde_I_Boras").
++SetInterface("Skovde", "Skovde_I_Trollhattan").
++SetInterface("Skovde", "Skovde_I_Orebro").
+
++SetNode("Sundsvall").
++SetAdminDist("Sundsvall", "static", 1).
++SetAdminDist("Sundsvall", "bgp", 2).
++SetAdminDist("Sundsvall", "ospf", 3).
++SetInterface("Sundsvall", "Sundsvall_I_NodeID20").
++SetInterface("Sundsvall", "Sundsvall_I_Umea").
++SetInterface("Sundsvall", "Sundsvall_I_Gavle").
+
++SetNode("Jonkoping").
++SetAdminDist("Jonkoping", "static", 1).
++SetAdminDist("Jonkoping", "bgp", 2).
++SetAdminDist("Jonkoping", "ospf", 3).
++SetInterface("Jonkoping", "Jonkoping_I_Vaxjo").
++SetInterface("Jonkoping", "Jonkoping_I_Linkoping").
+
++SetNode("Visby").
++SetAdminDist("Visby", "static", 1).
++SetAdminDist("Visby", "bgp", 2).
++SetAdminDist("Visby", "ospf", 3).
++SetInterface("Visby", "Visby_I_Stockholm").
+
++SetNode("NodeID20").
++SetAdminDist("NodeID20", "static", 1).
++SetAdminDist("NodeID20", "bgp", 2).
++SetAdminDist("NodeID20", "ospf", 3).
++SetInterface("NodeID20", "NodeID20_I_Umea").
++SetInterface("NodeID20", "NodeID20_I_Sundsvall").
++SetInterface("NodeID20", "NodeID20_I_Lulea").
+
++SetNode("Linkoping").
++SetAdminDist("Linkoping", "static", 1).
++SetAdminDist("Linkoping", "bgp", 2).
++SetAdminDist("Linkoping", "ospf", 3).
++SetInterface("Linkoping", "Linkoping_I_Stockholm").
++SetInterface("Linkoping", "Linkoping_I_Jonkoping").
+
++SetNode("Orebro").
++SetAdminDist("Orebro", "static", 1).
++SetAdminDist("Orebro", "bgp", 2).
++SetAdminDist("Orebro", "ospf", 3).
++SetInterface("Orebro", "Orebro_I_Vasten").
++SetInterface("Orebro", "Orebro_I_Skovde").
++SetInterface("Orebro", "Orebro_I_Karlstad").
++SetInterface("Orebro", "Orebro_I_Borlange").
+
++SetNode("Karlstad").
++SetAdminDist("Karlstad", "static", 1).
++SetAdminDist("Karlstad", "bgp", 2).
++SetAdminDist("Karlstad", "ospf", 3).
++SetInterface("Karlstad", "Karlstad_I_Trollhattan").
++SetInterface("Karlstad", "Karlstad_I_Orebro").
+
++SetNode("Lund").
++SetAdminDist("Lund", "static", 1).
++SetAdminDist("Lund", "bgp", 2).
++SetAdminDist("Lund", "ospf", 3).
++SetInterface("Lund", "Lund_I_Vaxjo").
++SetInterface("Lund", "Lund_I_Halmstad").
++SetInterface("Lund", "Lund_I_Malmo").
+
++SetLink("Halmstad_I_Lund", "Lund_I_Halmstad").
++SetLink("Halmstad_I_Goteborg", "Goteborg_I_Halmstad").
++SetLink("Uppsala_I_Stockholm", "Stockholm_I_Uppsala").
++SetLink("Uppsala_I_Gavle", "Gavle_I_Uppsala").
++SetLink("Kiruna_I_Lulea", "Lulea_I_Kiruna").
++SetLink("Lulea_I_NodeID20", "NodeID20_I_Lulea").
++SetLink("Lulea_I_Umea", "Umea_I_Lulea").
++SetLink("Goteborg_I_Boras", "Boras_I_Goteborg").
++SetLink("Goteborg_I_Trollhattan", "Trollhattan_I_Goteborg").
++SetLink("Boras_I_Skovde", "Skovde_I_Boras").
++SetLink("Umea_I_NodeID20", "NodeID20_I_Umea").
++SetLink("Umea_I_Sundsvall", "Sundsvall_I_Umea").
++SetLink("Borlange_I_Orebro", "Orebro_I_Borlange").
++SetLink("Borlange_I_Gavle", "Gavle_I_Borlange").
++SetLink("Malmo_I_Kristianstad", "Kristianstad_I_Malmo").
++SetLink("Malmo_I_Lund", "Lund_I_Malmo").
++SetLink("Kristianstad_I_Ronneby", "Ronneby_I_Kristianstad").
++SetLink("Kalmar_I_Vaxjo", "Vaxjo_I_Kalmar").
++SetLink("Kalmar_I_Ronneby", "Ronneby_I_Kalmar").
++SetLink("Vaxjo_I_Jonkoping", "Jonkoping_I_Vaxjo").
++SetLink("Vaxjo_I_Lund", "Lund_I_Vaxjo").
++SetLink("Vasten_I_Orebro", "Orebro_I_Vasten").
++SetLink("Vasten_I_Stockholm", "Stockholm_I_Vasten").
++SetLink("Trollhattan_I_Skovde", "Skovde_I_Trollhattan").
++SetLink("Trollhattan_I_Karlstad", "Karlstad_I_Trollhattan").
++SetLink("Stockholm_I_Visby", "Visby_I_Stockholm").
++SetLink("Stockholm_I_Linkoping", "Linkoping_I_Stockholm").
++SetLink("Gavle_I_Sundsvall", "Sundsvall_I_Gavle").
++SetLink("Skovde_I_Orebro", "Orebro_I_Skovde").
++SetLink("Sundsvall_I_NodeID20", "NodeID20_I_Sundsvall").
++SetLink("Jonkoping_I_Linkoping", "Linkoping_I_Jonkoping").
++SetLink("Orebro_I_Karlstad", "Karlstad_I_Orebro").
+
+
++SetNetwork("Kristianstad", "N_Kristianstad").
++SetNetwork("Halmstad", "N_Halmstad").
++SetNetwork("Kiruna", "N_Kiruna").
++SetNetwork("Orebro", "N_Orebro").
++SetNetwork("Sundsvall", "N_Sundsvall").

@@ -1,0 +1,191 @@
++SetNode("CastillaTTLaTTMancha").
++SetAdminDist("CastillaTTLaTTMancha", "static", 1).
++SetAdminDist("CastillaTTLaTTMancha", "bgp", 2).
++SetAdminDist("CastillaTTLaTTMancha", "ospf", 3).
++SetInterface("CastillaTTLaTTMancha", "CastillaTTLaTTMancha_I_Andalucia").
++SetInterface("CastillaTTLaTTMancha", "CastillaTTLaTTMancha_I_Nacional").
+
++SetNode("PaisTTVasco").
++SetAdminDist("PaisTTVasco", "static", 1).
++SetAdminDist("PaisTTVasco", "bgp", 2).
++SetAdminDist("PaisTTVasco", "ospf", 3).
++SetInterface("PaisTTVasco", "PaisTTVasco_I_Cantabria").
++SetInterface("PaisTTVasco", "PaisTTVasco_I_Galacia").
++SetInterface("PaisTTVasco", "PaisTTVasco_I_Navarra").
++SetInterface("PaisTTVasco", "PaisTTVasco_I_Nacional").
+
++SetNode("Murcia").
++SetAdminDist("Murcia", "static", 1).
++SetAdminDist("Murcia", "bgp", 2).
++SetAdminDist("Murcia", "ospf", 3).
++SetInterface("Murcia", "Murcia_I_Valencia").
++SetInterface("Murcia", "Murcia_I_Andalucia").
+
++SetNode("CanariasTT_tenerife_").
++SetAdminDist("CanariasTT_tenerife_", "static", 1).
++SetAdminDist("CanariasTT_tenerife_", "bgp", 2).
++SetAdminDist("CanariasTT_tenerife_", "ospf", 3).
++SetInterface("CanariasTT_tenerife_", "CanariasTT_tenerife__I_CanariasTT_lasTTpalmas_").
++SetInterface("CanariasTT_tenerife_", "CanariasTT_tenerife__I_Nacional").
+
++SetNode("Madrid").
++SetAdminDist("Madrid", "static", 1).
++SetAdminDist("Madrid", "bgp", 2).
++SetAdminDist("Madrid", "ospf", 3).
++SetInterface("Madrid", "Madrid_I_Nacional").
+
++SetNode("Andalucia").
++SetAdminDist("Andalucia", "static", 1).
++SetAdminDist("Andalucia", "bgp", 2).
++SetAdminDist("Andalucia", "ospf", 3).
++SetInterface("Andalucia", "Andalucia_I_CastillaTTLaTTMancha").
++SetInterface("Andalucia", "Andalucia_I_Murcia").
++SetInterface("Andalucia", "Andalucia_I_Nacional").
++SetInterface("Andalucia", "Andalucia_I_Valencia").
++SetInterface("Andalucia", "Andalucia_I_CanariasTT_lasTTpalmas_").
++SetInterface("Andalucia", "Andalucia_I_Extremadura").
+
++SetNode("Galacia").
++SetAdminDist("Galacia", "static", 1).
++SetAdminDist("Galacia", "bgp", 2).
++SetAdminDist("Galacia", "ospf", 3).
++SetInterface("Galacia", "Galacia_I_PaisTTVasco").
++SetInterface("Galacia", "Galacia_I_CastillaTTYTTLeon").
++SetInterface("Galacia", "Galacia_I_Asturias").
++SetInterface("Galacia", "Galacia_I_Nacional").
+
++SetNode("Asturias").
++SetAdminDist("Asturias", "static", 1).
++SetAdminDist("Asturias", "bgp", 2).
++SetAdminDist("Asturias", "ospf", 3).
++SetInterface("Asturias", "Asturias_I_Cantabria").
++SetInterface("Asturias", "Asturias_I_Galacia").
+
++SetNode("Nacional").
++SetAdminDist("Nacional", "static", 1).
++SetAdminDist("Nacional", "bgp", 2).
++SetAdminDist("Nacional", "ospf", 3).
++SetInterface("Nacional", "Nacional_I_CastillaTTLaTTMancha").
++SetInterface("Nacional", "Nacional_I_CanariasTT_tenerife_").
++SetInterface("Nacional", "Nacional_I_Madrid").
++SetInterface("Nacional", "Nacional_I_Andalucia").
++SetInterface("Nacional", "Nacional_I_Galacia").
++SetInterface("Nacional", "Nacional_I_PaisTTVasco").
++SetInterface("Nacional", "Nacional_I_Cataluna").
++SetInterface("Nacional", "Nacional_I_CastillaTTYTTLeon").
++SetInterface("Nacional", "Nacional_I_Valencia").
++SetInterface("Nacional", "Nacional_I_Aragon").
++SetInterface("Nacional", "Nacional_I_Extremadura").
+
++SetNode("Rioja").
++SetAdminDist("Rioja", "static", 1).
++SetAdminDist("Rioja", "bgp", 2).
++SetAdminDist("Rioja", "ospf", 3).
++SetInterface("Rioja", "Rioja_I_CastillaTTYTTLeon").
++SetInterface("Rioja", "Rioja_I_Aragon").
+
++SetNode("Cataluna").
++SetAdminDist("Cataluna", "static", 1).
++SetAdminDist("Cataluna", "bgp", 2).
++SetAdminDist("Cataluna", "ospf", 3).
++SetInterface("Cataluna", "Cataluna_I_Valencia").
++SetInterface("Cataluna", "Cataluna_I_Baleares").
++SetInterface("Cataluna", "Cataluna_I_Aragon").
++SetInterface("Cataluna", "Cataluna_I_Nacional").
+
++SetNode("CastillaTTYTTLeon").
++SetAdminDist("CastillaTTYTTLeon", "static", 1).
++SetAdminDist("CastillaTTYTTLeon", "bgp", 2).
++SetAdminDist("CastillaTTYTTLeon", "ospf", 3).
++SetInterface("CastillaTTYTTLeon", "CastillaTTYTTLeon_I_Rioja").
++SetInterface("CastillaTTYTTLeon", "CastillaTTYTTLeon_I_Galacia").
++SetInterface("CastillaTTYTTLeon", "CastillaTTYTTLeon_I_Nacional").
+
++SetNode("Cantabria").
++SetAdminDist("Cantabria", "static", 1).
++SetAdminDist("Cantabria", "bgp", 2).
++SetAdminDist("Cantabria", "ospf", 3).
++SetInterface("Cantabria", "Cantabria_I_PaisTTVasco").
++SetInterface("Cantabria", "Cantabria_I_Asturias").
+
++SetNode("Valencia").
++SetAdminDist("Valencia", "static", 1).
++SetAdminDist("Valencia", "bgp", 2).
++SetAdminDist("Valencia", "ospf", 3).
++SetInterface("Valencia", "Valencia_I_Baleares").
++SetInterface("Valencia", "Valencia_I_Cataluna").
++SetInterface("Valencia", "Valencia_I_Andalucia").
++SetInterface("Valencia", "Valencia_I_Murcia").
++SetInterface("Valencia", "Valencia_I_Nacional").
+
++SetNode("CanariasTT_lasTTpalmas_").
++SetAdminDist("CanariasTT_lasTTpalmas_", "static", 1).
++SetAdminDist("CanariasTT_lasTTpalmas_", "bgp", 2).
++SetAdminDist("CanariasTT_lasTTpalmas_", "ospf", 3).
++SetInterface("CanariasTT_lasTTpalmas_", "CanariasTT_lasTTpalmas__I_Andalucia").
++SetInterface("CanariasTT_lasTTpalmas_", "CanariasTT_lasTTpalmas__I_CanariasTT_tenerife_").
+
++SetNode("Baleares").
++SetAdminDist("Baleares", "static", 1).
++SetAdminDist("Baleares", "bgp", 2).
++SetAdminDist("Baleares", "ospf", 3).
++SetInterface("Baleares", "Baleares_I_Valencia").
++SetInterface("Baleares", "Baleares_I_Cataluna").
+
++SetNode("Aragon").
++SetAdminDist("Aragon", "static", 1).
++SetAdminDist("Aragon", "bgp", 2).
++SetAdminDist("Aragon", "ospf", 3).
++SetInterface("Aragon", "Aragon_I_Rioja").
++SetInterface("Aragon", "Aragon_I_Cataluna").
++SetInterface("Aragon", "Aragon_I_Navarra").
++SetInterface("Aragon", "Aragon_I_Nacional").
+
++SetNode("Extremadura").
++SetAdminDist("Extremadura", "static", 1).
++SetAdminDist("Extremadura", "bgp", 2).
++SetAdminDist("Extremadura", "ospf", 3).
++SetInterface("Extremadura", "Extremadura_I_Andalucia").
++SetInterface("Extremadura", "Extremadura_I_Nacional").
+
++SetNode("Navarra").
++SetAdminDist("Navarra", "static", 1).
++SetAdminDist("Navarra", "bgp", 2).
++SetAdminDist("Navarra", "ospf", 3).
++SetInterface("Navarra", "Navarra_I_PaisTTVasco").
++SetInterface("Navarra", "Navarra_I_Aragon").
+
++SetLink("CastillaTTLaTTMancha_I_Andalucia", "Andalucia_I_CastillaTTLaTTMancha").
++SetLink("CastillaTTLaTTMancha_I_Nacional", "Nacional_I_CastillaTTLaTTMancha").
++SetLink("PaisTTVasco_I_Cantabria", "Cantabria_I_PaisTTVasco").
++SetLink("PaisTTVasco_I_Galacia", "Galacia_I_PaisTTVasco").
++SetLink("PaisTTVasco_I_Navarra", "Navarra_I_PaisTTVasco").
++SetLink("PaisTTVasco_I_Nacional", "Nacional_I_PaisTTVasco").
++SetLink("Murcia_I_Valencia", "Valencia_I_Murcia").
++SetLink("Murcia_I_Andalucia", "Andalucia_I_Murcia").
++SetLink("CanariasTT_tenerife__I_CanariasTT_lasTTpalmas_", "CanariasTT_lasTTpalmas__I_CanariasTT_tenerife_").
++SetLink("CanariasTT_tenerife__I_Nacional", "Nacional_I_CanariasTT_tenerife_").
++SetLink("Madrid_I_Nacional", "Nacional_I_Madrid").
++SetLink("Andalucia_I_Nacional", "Nacional_I_Andalucia").
++SetLink("Andalucia_I_Valencia", "Valencia_I_Andalucia").
++SetLink("Andalucia_I_CanariasTT_lasTTpalmas_", "CanariasTT_lasTTpalmas__I_Andalucia").
++SetLink("Andalucia_I_Extremadura", "Extremadura_I_Andalucia").
++SetLink("Galacia_I_CastillaTTYTTLeon", "CastillaTTYTTLeon_I_Galacia").
++SetLink("Galacia_I_Asturias", "Asturias_I_Galacia").
++SetLink("Galacia_I_Nacional", "Nacional_I_Galacia").
++SetLink("Asturias_I_Cantabria", "Cantabria_I_Asturias").
++SetLink("Nacional_I_Cataluna", "Cataluna_I_Nacional").
++SetLink("Nacional_I_CastillaTTYTTLeon", "CastillaTTYTTLeon_I_Nacional").
++SetLink("Nacional_I_Valencia", "Valencia_I_Nacional").
++SetLink("Nacional_I_Aragon", "Aragon_I_Nacional").
++SetLink("Nacional_I_Extremadura", "Extremadura_I_Nacional").
++SetLink("Rioja_I_CastillaTTYTTLeon", "CastillaTTYTTLeon_I_Rioja").
++SetLink("Rioja_I_Aragon", "Aragon_I_Rioja").
++SetLink("Cataluna_I_Valencia", "Valencia_I_Cataluna").
++SetLink("Cataluna_I_Baleares", "Baleares_I_Cataluna").
++SetLink("Cataluna_I_Aragon", "Aragon_I_Cataluna").
++SetLink("Valencia_I_Baleares", "Baleares_I_Valencia").
++SetLink("Aragon_I_Navarra", "Navarra_I_Aragon").
+
+
++SetNetwork("Madrid", "N_Madrid").

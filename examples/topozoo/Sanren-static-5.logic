@@ -1,0 +1,63 @@
++SetNode("PortTTElizabeth").
++SetAdminDist("PortTTElizabeth", "static", 1).
++SetAdminDist("PortTTElizabeth", "bgp", 2).
++SetAdminDist("PortTTElizabeth", "ospf", 3).
++SetInterface("PortTTElizabeth", "PortTTElizabeth_I_EastTTLondon").
++SetInterface("PortTTElizabeth", "PortTTElizabeth_I_CapeTTTown").
+
++SetNode("EastTTLondon").
++SetAdminDist("EastTTLondon", "static", 1).
++SetAdminDist("EastTTLondon", "bgp", 2).
++SetAdminDist("EastTTLondon", "ospf", 3).
++SetInterface("EastTTLondon", "EastTTLondon_I_PortTTElizabeth").
++SetInterface("EastTTLondon", "EastTTLondon_I_Durban").
+
++SetNode("Durban").
++SetAdminDist("Durban", "static", 1).
++SetAdminDist("Durban", "bgp", 2).
++SetAdminDist("Durban", "ospf", 3).
++SetInterface("Durban", "Durban_I_EastTTLondon").
++SetInterface("Durban", "Durban_I_Pretoria").
+
++SetNode("Bloemfontein").
++SetAdminDist("Bloemfontein", "static", 1).
++SetAdminDist("Bloemfontein", "bgp", 2).
++SetAdminDist("Bloemfontein", "ospf", 3).
++SetInterface("Bloemfontein", "Bloemfontein_I_Johannesburg").
++SetInterface("Bloemfontein", "Bloemfontein_I_CapeTTTown").
+
++SetNode("CapeTTTown").
++SetAdminDist("CapeTTTown", "static", 1).
++SetAdminDist("CapeTTTown", "bgp", 2).
++SetAdminDist("CapeTTTown", "ospf", 3).
++SetInterface("CapeTTTown", "CapeTTTown_I_Bloemfontein").
++SetInterface("CapeTTTown", "CapeTTTown_I_PortTTElizabeth").
+
++SetNode("Johannesburg").
++SetAdminDist("Johannesburg", "static", 1).
++SetAdminDist("Johannesburg", "bgp", 2).
++SetAdminDist("Johannesburg", "ospf", 3).
++SetInterface("Johannesburg", "Johannesburg_I_Bloemfontein").
++SetInterface("Johannesburg", "Johannesburg_I_Pretoria").
+
++SetNode("Pretoria").
++SetAdminDist("Pretoria", "static", 1).
++SetAdminDist("Pretoria", "bgp", 2).
++SetAdminDist("Pretoria", "ospf", 3).
++SetInterface("Pretoria", "Pretoria_I_Johannesburg").
++SetInterface("Pretoria", "Pretoria_I_Durban").
+
++SetLink("PortTTElizabeth_I_EastTTLondon", "EastTTLondon_I_PortTTElizabeth").
++SetLink("PortTTElizabeth_I_CapeTTTown", "CapeTTTown_I_PortTTElizabeth").
++SetLink("EastTTLondon_I_Durban", "Durban_I_EastTTLondon").
++SetLink("Durban_I_Pretoria", "Pretoria_I_Durban").
++SetLink("Bloemfontein_I_Johannesburg", "Johannesburg_I_Bloemfontein").
++SetLink("Bloemfontein_I_CapeTTTown", "CapeTTTown_I_Bloemfontein").
++SetLink("Johannesburg_I_Pretoria", "Pretoria_I_Johannesburg").
+
+
++SetNetwork("Pretoria", "N_Pretoria").
++SetNetwork("Bloemfontein", "N_Bloemfontein").
++SetNetwork("Durban", "N_Durban").
++SetNetwork("Johannesburg", "N_Johannesburg").
++SetNetwork("PortTTElizabeth", "N_PortTTElizabeth").

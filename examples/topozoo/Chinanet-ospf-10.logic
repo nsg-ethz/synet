@@ -1,0 +1,420 @@
++SetNode("Zhengzhou").
++SetAdminDist("Zhengzhou", "static", 1).
++SetAdminDist("Zhengzhou", "bgp", 2).
++SetAdminDist("Zhengzhou", "ospf", 3).
++SetInterface("Zhengzhou", "Zhengzhou_I_Beijing").
+
++SetNode("Jinan").
++SetAdminDist("Jinan", "static", 1).
++SetAdminDist("Jinan", "bgp", 2).
++SetAdminDist("Jinan", "ospf", 3).
++SetInterface("Jinan", "Jinan_I_Shanghai").
+
++SetNode("Tianjin").
++SetAdminDist("Tianjin", "static", 1).
++SetAdminDist("Tianjin", "bgp", 2).
++SetAdminDist("Tianjin", "ospf", 3).
++SetInterface("Tianjin", "Tianjin_I_Beijing").
++SetInterface("Tianjin", "Tianjin_I_Guangzhou").
++SetInterface("Tianjin", "Tianjin_I_Shanghai").
++SetInterface("Tianjin", "Tianjin_I_Qingdao").
++SetInterface("Tianjin", "Tianjin_I_Dalian").
+
++SetNode("Shanghai").
++SetAdminDist("Shanghai", "static", 1).
++SetAdminDist("Shanghai", "bgp", 2).
++SetAdminDist("Shanghai", "ospf", 3).
++SetInterface("Shanghai", "Shanghai_I_Beijing").
++SetInterface("Shanghai", "Shanghai_I_Guangzhou").
++SetInterface("Shanghai", "Shanghai_I_Chengdu").
++SetInterface("Shanghai", "Shanghai_I_Tianjin").
++SetInterface("Shanghai", "Shanghai_I_HongTTKong").
++SetInterface("Shanghai", "Shanghai_I_Xi_an").
++SetInterface("Shanghai", "Shanghai_I_Nanjing").
++SetInterface("Shanghai", "Shanghai_I_Wuhan").
++SetInterface("Shanghai", "Shanghai_I_InternationalTTLinkTT2").
++SetInterface("Shanghai", "Shanghai_I_Hangzhou").
++SetInterface("Shanghai", "Shanghai_I_Hefei").
++SetInterface("Shanghai", "Shanghai_I_Suzhou").
++SetInterface("Shanghai", "Shanghai_I_Nandhang").
++SetInterface("Shanghai", "Shanghai_I_Jinan").
+
++SetNode("Lhasa").
++SetAdminDist("Lhasa", "static", 1).
++SetAdminDist("Lhasa", "bgp", 2).
++SetAdminDist("Lhasa", "ospf", 3).
++SetInterface("Lhasa", "Lhasa_I_Shiquanhe").
++SetInterface("Lhasa", "Lhasa_I_Chengdu").
++SetInterface("Lhasa", "Lhasa_I_Beijing").
+
++SetNode("Changchun").
++SetAdminDist("Changchun", "static", 1).
++SetAdminDist("Changchun", "bgp", 2).
++SetAdminDist("Changchun", "ospf", 3).
++SetInterface("Changchun", "Changchun_I_Beijing").
+
++SetNode("InternationalTTLinkTT2").
++SetAdminDist("InternationalTTLinkTT2", "static", 1).
++SetAdminDist("InternationalTTLinkTT2", "bgp", 2).
++SetAdminDist("InternationalTTLinkTT2", "ospf", 3).
++SetInterface("InternationalTTLinkTT2", "InternationalTTLinkTT2_I_Shanghai").
+
++SetNode("InternationalTTLinkTT3").
++SetAdminDist("InternationalTTLinkTT3", "static", 1).
++SetAdminDist("InternationalTTLinkTT3", "bgp", 2).
++SetAdminDist("InternationalTTLinkTT3", "ospf", 3).
++SetInterface("InternationalTTLinkTT3", "InternationalTTLinkTT3_I_Guangzhou").
+
++SetNode("InternationalTTLinkTT1").
++SetAdminDist("InternationalTTLinkTT1", "static", 1).
++SetAdminDist("InternationalTTLinkTT1", "bgp", 2).
++SetAdminDist("InternationalTTLinkTT1", "ospf", 3).
++SetInterface("InternationalTTLinkTT1", "InternationalTTLinkTT1_I_Beijing").
+
++SetNode("InternationalTTLinkTT4").
++SetAdminDist("InternationalTTLinkTT4", "static", 1).
++SetAdminDist("InternationalTTLinkTT4", "bgp", 2).
++SetAdminDist("InternationalTTLinkTT4", "ospf", 3).
++SetInterface("InternationalTTLinkTT4", "InternationalTTLinkTT4_I_HongTTKong").
+
++SetNode("Lanzhou").
++SetAdminDist("Lanzhou", "static", 1).
++SetAdminDist("Lanzhou", "bgp", 2).
++SetAdminDist("Lanzhou", "ospf", 3).
++SetInterface("Lanzhou", "Lanzhou_I_Beijing").
++SetInterface("Lanzhou", "Lanzhou_I_Xi_an").
+
++SetNode("Shenyang").
++SetAdminDist("Shenyang", "static", 1).
++SetAdminDist("Shenyang", "bgp", 2).
++SetAdminDist("Shenyang", "ospf", 3).
++SetInterface("Shenyang", "Shenyang_I_Beijing").
+
++SetNode("Guangzhou").
++SetAdminDist("Guangzhou", "static", 1).
++SetAdminDist("Guangzhou", "bgp", 2).
++SetAdminDist("Guangzhou", "ospf", 3).
++SetInterface("Guangzhou", "Guangzhou_I_Beijing").
++SetInterface("Guangzhou", "Guangzhou_I_HongTTKong").
++SetInterface("Guangzhou", "Guangzhou_I_Xiamen").
++SetInterface("Guangzhou", "Guangzhou_I_Chengdu").
++SetInterface("Guangzhou", "Guangzhou_I_Tianjin").
++SetInterface("Guangzhou", "Guangzhou_I_Nanning").
++SetInterface("Guangzhou", "Guangzhou_I_Haikou").
++SetInterface("Guangzhou", "Guangzhou_I_Xi_an").
++SetInterface("Guangzhou", "Guangzhou_I_Guiyang").
++SetInterface("Guangzhou", "Guangzhou_I_Kunming").
++SetInterface("Guangzhou", "Guangzhou_I_InternationalTTLinkTT3").
++SetInterface("Guangzhou", "Guangzhou_I_Shanghai").
++SetInterface("Guangzhou", "Guangzhou_I_Chongqing").
+
++SetNode("Xi_an").
++SetAdminDist("Xi_an", "static", 1).
++SetAdminDist("Xi_an", "bgp", 2).
++SetAdminDist("Xi_an", "ospf", 3).
++SetInterface("Xi_an", "Xi_an_I_Lanzhou").
++SetInterface("Xi_an", "Xi_an_I_Beijing").
++SetInterface("Xi_an", "Xi_an_I_Shanghai").
++SetInterface("Xi_an", "Xi_an_I_Guangzhou").
++SetInterface("Xi_an", "Xi_an_I_Xining").
++SetInterface("Xi_an", "Xi_an_I_Nanjing").
++SetInterface("Xi_an", "Xi_an_I_Urumqi").
++SetInterface("Xi_an", "Xi_an_I_Wuhan").
++SetInterface("Xi_an", "Xi_an_I_Hohhot").
++SetInterface("Xi_an", "Xi_an_I_Taiyuan").
++SetInterface("Xi_an", "Xi_an_I_Yinchuan").
+
++SetNode("Xining").
++SetAdminDist("Xining", "static", 1).
++SetAdminDist("Xining", "bgp", 2).
++SetAdminDist("Xining", "ospf", 3).
++SetInterface("Xining", "Xining_I_Beijing").
++SetInterface("Xining", "Xining_I_Xi_an").
+
++SetNode("Hefei").
++SetAdminDist("Hefei", "static", 1).
++SetAdminDist("Hefei", "bgp", 2).
++SetAdminDist("Hefei", "ospf", 3).
++SetInterface("Hefei", "Hefei_I_Shanghai").
+
++SetNode("Wuhan").
++SetAdminDist("Wuhan", "static", 1).
++SetAdminDist("Wuhan", "bgp", 2).
++SetAdminDist("Wuhan", "ospf", 3).
++SetInterface("Wuhan", "Wuhan_I_Beijing").
++SetInterface("Wuhan", "Wuhan_I_Haikou").
++SetInterface("Wuhan", "Wuhan_I_Shanghai").
++SetInterface("Wuhan", "Wuhan_I_Xi_an").
++SetInterface("Wuhan", "Wuhan_I_Nanjing").
++SetInterface("Wuhan", "Wuhan_I_Changsha").
+
++SetNode("Kunming").
++SetAdminDist("Kunming", "static", 1).
++SetAdminDist("Kunming", "bgp", 2).
++SetAdminDist("Kunming", "ospf", 3).
++SetInterface("Kunming", "Kunming_I_Guangzhou").
+
++SetNode("Yinchuan").
++SetAdminDist("Yinchuan", "static", 1).
++SetAdminDist("Yinchuan", "bgp", 2).
++SetAdminDist("Yinchuan", "ospf", 3).
++SetInterface("Yinchuan", "Yinchuan_I_Beijing").
++SetInterface("Yinchuan", "Yinchuan_I_Xi_an").
+
++SetNode("Nandhang").
++SetAdminDist("Nandhang", "static", 1).
++SetAdminDist("Nandhang", "bgp", 2).
++SetAdminDist("Nandhang", "ospf", 3).
++SetInterface("Nandhang", "Nandhang_I_Shanghai").
+
++SetNode("Qingdao").
++SetAdminDist("Qingdao", "static", 1).
++SetAdminDist("Qingdao", "bgp", 2).
++SetAdminDist("Qingdao", "ospf", 3).
++SetInterface("Qingdao", "Qingdao_I_Tianjin").
+
++SetNode("Kashi").
++SetAdminDist("Kashi", "static", 1).
++SetAdminDist("Kashi", "bgp", 2).
++SetAdminDist("Kashi", "ospf", 3).
++SetInterface("Kashi", "Kashi_I_Urumqi").
+
++SetNode("Xiamen").
++SetAdminDist("Xiamen", "static", 1).
++SetAdminDist("Xiamen", "bgp", 2).
++SetAdminDist("Xiamen", "ospf", 3).
++SetInterface("Xiamen", "Xiamen_I_Guangzhou").
+
++SetNode("Shilazhuang").
++SetAdminDist("Shilazhuang", "static", 1).
++SetAdminDist("Shilazhuang", "bgp", 2).
++SetAdminDist("Shilazhuang", "ospf", 3).
++SetInterface("Shilazhuang", "Shilazhuang_I_Beijing").
+
++SetNode("Nanning").
++SetAdminDist("Nanning", "static", 1).
++SetAdminDist("Nanning", "bgp", 2).
++SetAdminDist("Nanning", "ospf", 3).
++SetInterface("Nanning", "Nanning_I_Guangzhou").
+
++SetNode("Haikou").
++SetAdminDist("Haikou", "static", 1).
++SetAdminDist("Haikou", "bgp", 2).
++SetAdminDist("Haikou", "ospf", 3).
++SetInterface("Haikou", "Haikou_I_Wuhan").
++SetInterface("Haikou", "Haikou_I_Guangzhou").
+
++SetNode("Changsha").
++SetAdminDist("Changsha", "static", 1).
++SetAdminDist("Changsha", "bgp", 2).
++SetAdminDist("Changsha", "ospf", 3).
++SetInterface("Changsha", "Changsha_I_Wuhan").
+
++SetNode("Guiyang").
++SetAdminDist("Guiyang", "static", 1).
++SetAdminDist("Guiyang", "bgp", 2).
++SetAdminDist("Guiyang", "ospf", 3).
++SetInterface("Guiyang", "Guiyang_I_Guangzhou").
++SetInterface("Guiyang", "Guiyang_I_Chengdu").
+
++SetNode("Hangzhou").
++SetAdminDist("Hangzhou", "static", 1).
++SetAdminDist("Hangzhou", "bgp", 2).
++SetAdminDist("Hangzhou", "ospf", 3).
++SetInterface("Hangzhou", "Hangzhou_I_Shanghai").
+
++SetNode("Fuzhou").
++SetAdminDist("Fuzhou", "static", 1).
++SetAdminDist("Fuzhou", "bgp", 2).
++SetAdminDist("Fuzhou", "ospf", 3).
++SetInterface("Fuzhou", "Fuzhou_I_Nanjing").
+
++SetNode("Taiyuan").
++SetAdminDist("Taiyuan", "static", 1).
++SetAdminDist("Taiyuan", "bgp", 2).
++SetAdminDist("Taiyuan", "ospf", 3).
++SetInterface("Taiyuan", "Taiyuan_I_Beijing").
++SetInterface("Taiyuan", "Taiyuan_I_Xi_an").
+
++SetNode("Suzhou").
++SetAdminDist("Suzhou", "static", 1).
++SetAdminDist("Suzhou", "bgp", 2).
++SetAdminDist("Suzhou", "ospf", 3).
++SetInterface("Suzhou", "Suzhou_I_Shanghai").
++SetInterface("Suzhou", "Suzhou_I_Nanjing").
+
++SetNode("Shiquanhe").
++SetAdminDist("Shiquanhe", "static", 1).
++SetAdminDist("Shiquanhe", "bgp", 2).
++SetAdminDist("Shiquanhe", "ospf", 3).
++SetInterface("Shiquanhe", "Shiquanhe_I_Lhasa").
+
++SetNode("Urumqi").
++SetAdminDist("Urumqi", "static", 1).
++SetAdminDist("Urumqi", "bgp", 2).
++SetAdminDist("Urumqi", "ospf", 3).
++SetInterface("Urumqi", "Urumqi_I_Beijing").
++SetInterface("Urumqi", "Urumqi_I_Xi_an").
++SetInterface("Urumqi", "Urumqi_I_Kashi").
+
++SetNode("Harbin").
++SetAdminDist("Harbin", "static", 1).
++SetAdminDist("Harbin", "bgp", 2).
++SetAdminDist("Harbin", "ospf", 3).
++SetInterface("Harbin", "Harbin_I_Beijing").
+
++SetNode("Beijing").
++SetAdminDist("Beijing", "static", 1).
++SetAdminDist("Beijing", "bgp", 2).
++SetAdminDist("Beijing", "ospf", 3).
++SetInterface("Beijing", "Beijing_I_Lanzhou").
++SetInterface("Beijing", "Beijing_I_Lhasa").
++SetInterface("Beijing", "Beijing_I_Guangzhou").
++SetInterface("Beijing", "Beijing_I_Shilazhuang").
++SetInterface("Beijing", "Beijing_I_Zhengzhou").
++SetInterface("Beijing", "Beijing_I_Tianjin").
++SetInterface("Beijing", "Beijing_I_HongTTKong").
++SetInterface("Beijing", "Beijing_I_Xi_an").
++SetInterface("Beijing", "Beijing_I_Xining").
++SetInterface("Beijing", "Beijing_I_Nanjing").
++SetInterface("Beijing", "Beijing_I_Urumqi").
++SetInterface("Beijing", "Beijing_I_Wuhan").
++SetInterface("Beijing", "Beijing_I_Shenyang").
++SetInterface("Beijing", "Beijing_I_Hohhot").
++SetInterface("Beijing", "Beijing_I_Changchun").
++SetInterface("Beijing", "Beijing_I_Taiyuan").
++SetInterface("Beijing", "Beijing_I_Yinchuan").
++SetInterface("Beijing", "Beijing_I_InternationalTTLinkTT1").
++SetInterface("Beijing", "Beijing_I_Shanghai").
++SetInterface("Beijing", "Beijing_I_Harbin").
+
++SetNode("Dalian").
++SetAdminDist("Dalian", "static", 1).
++SetAdminDist("Dalian", "bgp", 2).
++SetAdminDist("Dalian", "ospf", 3).
++SetInterface("Dalian", "Dalian_I_Tianjin").
+
++SetNode("Chengdu").
++SetAdminDist("Chengdu", "static", 1).
++SetAdminDist("Chengdu", "bgp", 2).
++SetAdminDist("Chengdu", "ospf", 3).
++SetInterface("Chengdu", "Chengdu_I_Shanghai").
++SetInterface("Chengdu", "Chengdu_I_Guangzhou").
++SetInterface("Chengdu", "Chengdu_I_Nanjing").
++SetInterface("Chengdu", "Chengdu_I_Lhasa").
++SetInterface("Chengdu", "Chengdu_I_Guiyang").
++SetInterface("Chengdu", "Chengdu_I_Chongqing").
+
++SetNode("HongTTKong").
++SetAdminDist("HongTTKong", "static", 1).
++SetAdminDist("HongTTKong", "bgp", 2).
++SetAdminDist("HongTTKong", "ospf", 3).
++SetInterface("HongTTKong", "HongTTKong_I_Beijing").
++SetInterface("HongTTKong", "HongTTKong_I_Shanghai").
++SetInterface("HongTTKong", "HongTTKong_I_Guangzhou").
++SetInterface("HongTTKong", "HongTTKong_I_InternationalTTLinkTT4").
+
++SetNode("Nanjing").
++SetAdminDist("Nanjing", "static", 1).
++SetAdminDist("Nanjing", "bgp", 2).
++SetAdminDist("Nanjing", "ospf", 3).
++SetInterface("Nanjing", "Nanjing_I_Beijing").
++SetInterface("Nanjing", "Nanjing_I_Chengdu").
++SetInterface("Nanjing", "Nanjing_I_Shanghai").
++SetInterface("Nanjing", "Nanjing_I_Xi_an").
++SetInterface("Nanjing", "Nanjing_I_Wuhan").
++SetInterface("Nanjing", "Nanjing_I_Fuzhou").
++SetInterface("Nanjing", "Nanjing_I_Suzhou").
+
++SetNode("Hohhot").
++SetAdminDist("Hohhot", "static", 1).
++SetAdminDist("Hohhot", "bgp", 2).
++SetAdminDist("Hohhot", "ospf", 3).
++SetInterface("Hohhot", "Hohhot_I_Beijing").
++SetInterface("Hohhot", "Hohhot_I_Xi_an").
+
++SetNode("Chongqing").
++SetAdminDist("Chongqing", "static", 1).
++SetAdminDist("Chongqing", "bgp", 2).
++SetAdminDist("Chongqing", "ospf", 3).
++SetInterface("Chongqing", "Chongqing_I_Guangzhou").
++SetInterface("Chongqing", "Chongqing_I_Chengdu").
+
++SetLink("Zhengzhou_I_Beijing", "Beijing_I_Zhengzhou").
++SetLink("Jinan_I_Shanghai", "Shanghai_I_Jinan").
++SetLink("Tianjin_I_Beijing", "Beijing_I_Tianjin").
++SetLink("Tianjin_I_Guangzhou", "Guangzhou_I_Tianjin").
++SetLink("Tianjin_I_Shanghai", "Shanghai_I_Tianjin").
++SetLink("Tianjin_I_Qingdao", "Qingdao_I_Tianjin").
++SetLink("Tianjin_I_Dalian", "Dalian_I_Tianjin").
++SetLink("Shanghai_I_Beijing", "Beijing_I_Shanghai").
++SetLink("Shanghai_I_Guangzhou", "Guangzhou_I_Shanghai").
++SetLink("Shanghai_I_Chengdu", "Chengdu_I_Shanghai").
++SetLink("Shanghai_I_HongTTKong", "HongTTKong_I_Shanghai").
++SetLink("Shanghai_I_Xi_an", "Xi_an_I_Shanghai").
++SetLink("Shanghai_I_Nanjing", "Nanjing_I_Shanghai").
++SetLink("Shanghai_I_Wuhan", "Wuhan_I_Shanghai").
++SetLink("Shanghai_I_InternationalTTLinkTT2", "InternationalTTLinkTT2_I_Shanghai").
++SetLink("Shanghai_I_Hangzhou", "Hangzhou_I_Shanghai").
++SetLink("Shanghai_I_Hefei", "Hefei_I_Shanghai").
++SetLink("Shanghai_I_Suzhou", "Suzhou_I_Shanghai").
++SetLink("Shanghai_I_Nandhang", "Nandhang_I_Shanghai").
++SetLink("Lhasa_I_Shiquanhe", "Shiquanhe_I_Lhasa").
++SetLink("Lhasa_I_Chengdu", "Chengdu_I_Lhasa").
++SetLink("Lhasa_I_Beijing", "Beijing_I_Lhasa").
++SetLink("Changchun_I_Beijing", "Beijing_I_Changchun").
++SetLink("InternationalTTLinkTT3_I_Guangzhou", "Guangzhou_I_InternationalTTLinkTT3").
++SetLink("InternationalTTLinkTT1_I_Beijing", "Beijing_I_InternationalTTLinkTT1").
++SetLink("InternationalTTLinkTT4_I_HongTTKong", "HongTTKong_I_InternationalTTLinkTT4").
++SetLink("Lanzhou_I_Beijing", "Beijing_I_Lanzhou").
++SetLink("Lanzhou_I_Xi_an", "Xi_an_I_Lanzhou").
++SetLink("Shenyang_I_Beijing", "Beijing_I_Shenyang").
++SetLink("Guangzhou_I_Beijing", "Beijing_I_Guangzhou").
++SetLink("Guangzhou_I_HongTTKong", "HongTTKong_I_Guangzhou").
++SetLink("Guangzhou_I_Xiamen", "Xiamen_I_Guangzhou").
++SetLink("Guangzhou_I_Chengdu", "Chengdu_I_Guangzhou").
++SetLink("Guangzhou_I_Nanning", "Nanning_I_Guangzhou").
++SetLink("Guangzhou_I_Haikou", "Haikou_I_Guangzhou").
++SetLink("Guangzhou_I_Xi_an", "Xi_an_I_Guangzhou").
++SetLink("Guangzhou_I_Guiyang", "Guiyang_I_Guangzhou").
++SetLink("Guangzhou_I_Kunming", "Kunming_I_Guangzhou").
++SetLink("Guangzhou_I_Chongqing", "Chongqing_I_Guangzhou").
++SetLink("Xi_an_I_Beijing", "Beijing_I_Xi_an").
++SetLink("Xi_an_I_Xining", "Xining_I_Xi_an").
++SetLink("Xi_an_I_Nanjing", "Nanjing_I_Xi_an").
++SetLink("Xi_an_I_Urumqi", "Urumqi_I_Xi_an").
++SetLink("Xi_an_I_Wuhan", "Wuhan_I_Xi_an").
++SetLink("Xi_an_I_Hohhot", "Hohhot_I_Xi_an").
++SetLink("Xi_an_I_Taiyuan", "Taiyuan_I_Xi_an").
++SetLink("Xi_an_I_Yinchuan", "Yinchuan_I_Xi_an").
++SetLink("Xining_I_Beijing", "Beijing_I_Xining").
++SetLink("Wuhan_I_Beijing", "Beijing_I_Wuhan").
++SetLink("Wuhan_I_Haikou", "Haikou_I_Wuhan").
++SetLink("Wuhan_I_Nanjing", "Nanjing_I_Wuhan").
++SetLink("Wuhan_I_Changsha", "Changsha_I_Wuhan").
++SetLink("Yinchuan_I_Beijing", "Beijing_I_Yinchuan").
++SetLink("Kashi_I_Urumqi", "Urumqi_I_Kashi").
++SetLink("Shilazhuang_I_Beijing", "Beijing_I_Shilazhuang").
++SetLink("Guiyang_I_Chengdu", "Chengdu_I_Guiyang").
++SetLink("Fuzhou_I_Nanjing", "Nanjing_I_Fuzhou").
++SetLink("Taiyuan_I_Beijing", "Beijing_I_Taiyuan").
++SetLink("Suzhou_I_Nanjing", "Nanjing_I_Suzhou").
++SetLink("Urumqi_I_Beijing", "Beijing_I_Urumqi").
++SetLink("Harbin_I_Beijing", "Beijing_I_Harbin").
++SetLink("Beijing_I_HongTTKong", "HongTTKong_I_Beijing").
++SetLink("Beijing_I_Nanjing", "Nanjing_I_Beijing").
++SetLink("Beijing_I_Hohhot", "Hohhot_I_Beijing").
++SetLink("Chengdu_I_Nanjing", "Nanjing_I_Chengdu").
++SetLink("Chengdu_I_Chongqing", "Chongqing_I_Chengdu").
+
+
++SetNetwork("Shilazhuang", "N_Shilazhuang").
++SetNetwork("Hangzhou", "N_Hangzhou").
++SetNetwork("Nandhang", "N_Nandhang").
++SetNetwork("Beijing", "N_Beijing").
++SetNetwork("Shanghai", "N_Shanghai").
++SetNetwork("Kashi", "N_Kashi").
++SetNetwork("Guiyang", "N_Guiyang").
++SetNetwork("Chengdu", "N_Chengdu").
++SetNetwork("Nanning", "N_Nanning").
++SetNetwork("InternationalTTLinkTT1", "N_InternationalTTLinkTT1").

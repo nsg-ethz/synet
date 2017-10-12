@@ -1,0 +1,8 @@
+
++Fwd("N_Seattle", "Phoenix", "SantaTTClara", "static").
++Fwd("N_Seattle", "SantaTTClara", "Seattle", "static").
++Fwd("N_Seattle", "Pittsburgh", "SantaTTClara", "static").
++Fwd("N_Seattle", "Tucson", "Phoenix", "static").
++Fwd("N_Seattle", "Washington_TTDC", "Phoenix", "static").
++Fwd("N_Seattle", "Baltimore", "Pittsburgh", "static").
+

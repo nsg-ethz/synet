@@ -1,0 +1,26 @@
+
++Fwd("N_ROT", "HLT", "ROT", "static").
++Fwd("N_ROT", "MUP", "NAP", "static").
++Fwd("N_ROT", "NAP", "ROT", "static").
++Fwd("N_ROT", "AKL", "HLT", "static").
++Fwd("N_ROT", "WLG", "PNR", "static").
++Fwd("N_ROT", "PNR", "MUP", "static").
++Fwd("N_ROT", "NSH", "AKL", "static").
++Fwd("N_ROT", "TAU", "ROT", "static").
++Fwd("N_ROT", "NLS", "WLG", "static").
++Fwd("N_ROT", "Syd", "AKL", "static").
++Fwd("N_ROT", "POR", "AVL", "static").
++Fwd("N_ROT", "AVL", "MUP", "static").
++Fwd("N_ROT", "WAG", "PNR", "static").
++Fwd("N_ROT", "CHC", "WLG", "static").
++Fwd("N_ROT", "GIS", "NAP", "static").
++Fwd("N_ROT", "TPO", "CHC", "static").
++Fwd("N_ROT", "DUD", "WLG", "static").
++Fwd("N_ROT", "WRK", "NSH", "static").
++Fwd("N_ROT", "MTA", "AKL", "static").
++Fwd("N_ROT", "NPL", "PNR", "static").
++Fwd("N_ROT", "IVM", "DUD", "static").
++Fwd("N_ROT", "INV", "DUD", "static").
++Fwd("N_ROT", "LAX", "AKL", "static").
++Fwd("N_ROT", "LCN", "CHC", "static").
+

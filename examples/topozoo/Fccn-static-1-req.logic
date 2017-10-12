@@ -1,0 +1,24 @@
+
++Fwd("N_Tomar", "Covilha", "Porto", "static").
++Fwd("N_Tomar", "Porto", "Aveiro", "static").
++Fwd("N_Tomar", "Aveiro", "Coimbra", "static").
++Fwd("N_Tomar", "Coimbra", "Lisboa", "static").
++Fwd("N_Tomar", "Lisboa", "Tomar", "static").
++Fwd("N_Tomar", "VianaTTdeTTCastelo", "Porto", "static").
++Fwd("N_Tomar", "Braga", "Porto", "static").
++Fwd("N_Tomar", "Viseu", "Lisboa", "static").
++Fwd("N_Tomar", "Faro", "Setubal", "static").
++Fwd("N_Tomar", "Setubal", "Lisboa", "static").
++Fwd("N_Tomar", "Samtarem", "Lisboa", "static").
++Fwd("N_Tomar", "CasteloTTBranco", "Lisboa", "static").
++Fwd("N_Tomar", "Leiria", "Lisboa", "static").
++Fwd("N_Tomar", "Guarda", "Porto", "static").
++Fwd("N_Tomar", "Portalegre", "Lisboa", "static").
++Fwd("N_Tomar", "VillaTTReal", "Porto", "static").
++Fwd("N_Tomar", "Evora", "Lisboa", "static").
++Fwd("N_Tomar", "Beja", "Setubal", "static").
++Fwd("N_Tomar", "PontaTTDelgada", "Lisboa", "static").
++Fwd("N_Tomar", "Barcelos", "Porto", "static").
++Fwd("N_Tomar", "Funchal", "Lisboa", "static").
++Fwd("N_Tomar", "Bragancia", "Porto", "static").
+

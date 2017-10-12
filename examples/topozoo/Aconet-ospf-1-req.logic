@@ -1,0 +1,24 @@
+
++Fwd("N_Leoben", "St_TTPolten", "Vienna1", "ospf").
++Fwd("N_Leoben", "Vienna1", "Graz2", "ospf").
++Fwd("N_Leoben", "Graz2", "Graz1", "ospf").
++Fwd("N_Leoben", "Graz1", "Leoben", "ospf").
++Fwd("N_Leoben", "Innsbruck2", "Dornbirn", "ospf").
++Fwd("N_Leoben", "Dornbirn", "Innsbruck1", "ospf").
++Fwd("N_Leoben", "Innsbruck1", "Vienna2", "ospf").
++Fwd("N_Leoben", "Vienna2", "Graz1", "ospf").
++Fwd("N_Leoben", "Linz2", "Vienna1", "ospf").
++Fwd("N_Leoben", "Linz1", "Vienna2", "ospf").
++Fwd("N_Leoben", "NodeID10", "Vienna2", "ospf").
++Fwd("N_Leoben", "SANET", "NodeID10", "ospf").
++Fwd("N_Leoben", "Klagenfurt1", "Klagenfurt2", "ospf").
++Fwd("N_Leoben", "Klagenfurt2", "Vienna2", "ospf").
++Fwd("N_Leoben", "GEANT", "NodeID10", "ospf").
++Fwd("N_Leoben", "Eisenstadt", "Vienna2", "ospf").
++Fwd("N_Leoben", "Krems", "Vienna2", "ospf").
++Fwd("N_Leoben", "CESNET", "NodeID10", "ospf").
++Fwd("N_Leoben", "Level3", "NodeID10", "ospf").
++Fwd("N_Leoben", "Salzburg1", "Salzburg2", "ospf").
++Fwd("N_Leoben", "Salzburg2", "Vienna2", "ospf").
++Fwd("N_Leoben", "VIX", "NodeID10", "ospf").
+

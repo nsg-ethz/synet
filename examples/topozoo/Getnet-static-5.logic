@@ -1,0 +1,66 @@
++SetNode("Phoenix").
++SetAdminDist("Phoenix", "static", 1).
++SetAdminDist("Phoenix", "bgp", 2).
++SetAdminDist("Phoenix", "ospf", 3).
++SetInterface("Phoenix", "Phoenix_I_SantaTTClara").
++SetInterface("Phoenix", "Phoenix_I_Tucson").
++SetInterface("Phoenix", "Phoenix_I_Washington_TTDC").
+
++SetNode("Pittsburgh").
++SetAdminDist("Pittsburgh", "static", 1).
++SetAdminDist("Pittsburgh", "bgp", 2).
++SetAdminDist("Pittsburgh", "ospf", 3).
++SetInterface("Pittsburgh", "Pittsburgh_I_SantaTTClara").
++SetInterface("Pittsburgh", "Pittsburgh_I_Baltimore").
+
++SetNode("Tucson").
++SetAdminDist("Tucson", "static", 1).
++SetAdminDist("Tucson", "bgp", 2).
++SetAdminDist("Tucson", "ospf", 3).
++SetInterface("Tucson", "Tucson_I_Phoenix").
+
++SetNode("Washington_TTDC").
++SetAdminDist("Washington_TTDC", "static", 1).
++SetAdminDist("Washington_TTDC", "bgp", 2).
++SetAdminDist("Washington_TTDC", "ospf", 3).
++SetInterface("Washington_TTDC", "Washington_TTDC_I_SantaTTClara").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Baltimore").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Phoenix").
+
++SetNode("SantaTTClara").
++SetAdminDist("SantaTTClara", "static", 1).
++SetAdminDist("SantaTTClara", "bgp", 2).
++SetAdminDist("SantaTTClara", "ospf", 3).
++SetInterface("SantaTTClara", "SantaTTClara_I_Pittsburgh").
++SetInterface("SantaTTClara", "SantaTTClara_I_Seattle").
++SetInterface("SantaTTClara", "SantaTTClara_I_Washington_TTDC").
++SetInterface("SantaTTClara", "SantaTTClara_I_Phoenix").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_SantaTTClara").
+
++SetNode("Baltimore").
++SetAdminDist("Baltimore", "static", 1).
++SetAdminDist("Baltimore", "bgp", 2).
++SetAdminDist("Baltimore", "ospf", 3).
++SetInterface("Baltimore", "Baltimore_I_Pittsburgh").
++SetInterface("Baltimore", "Baltimore_I_Washington_TTDC").
+
++SetLink("Phoenix_I_SantaTTClara", "SantaTTClara_I_Phoenix").
++SetLink("Phoenix_I_Tucson", "Tucson_I_Phoenix").
++SetLink("Phoenix_I_Washington_TTDC", "Washington_TTDC_I_Phoenix").
++SetLink("Pittsburgh_I_SantaTTClara", "SantaTTClara_I_Pittsburgh").
++SetLink("Pittsburgh_I_Baltimore", "Baltimore_I_Pittsburgh").
++SetLink("Washington_TTDC_I_SantaTTClara", "SantaTTClara_I_Washington_TTDC").
++SetLink("Washington_TTDC_I_Baltimore", "Baltimore_I_Washington_TTDC").
++SetLink("SantaTTClara_I_Seattle", "Seattle_I_SantaTTClara").
+
+
++SetNetwork("SantaTTClara", "N_SantaTTClara").
++SetNetwork("Washington_TTDC", "N_Washington_TTDC").
++SetNetwork("Tucson", "N_Tucson").
++SetNetwork("Pittsburgh", "N_Pittsburgh").
++SetNetwork("Phoenix", "N_Phoenix").

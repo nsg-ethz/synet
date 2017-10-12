@@ -1,0 +1,25 @@
+
++Fwd("N_Paris", "NewTTYork", "London", "static").
++Fwd("N_Paris", "London", "Frankfurt", "static").
++Fwd("N_Paris", "Frankfurt", "Dusseldorf", "static").
++Fwd("N_Paris", "Dusseldorf", "Amsterdam", "static").
++Fwd("N_Paris", "Amsterdam", "Paris", "static").
++Fwd("N_Paris", "Madley", "London", "static").
++Fwd("N_Paris", "Gothenburg", "Amsterdam", "static").
++Fwd("N_Paris", "Vienna", "Amsterdam", "static").
++Fwd("N_Paris", "Munich", "Dusseldorf", "static").
++Fwd("N_Paris", "Goonhilly", "London", "static").
++Fwd("N_Paris", "Brussels", "London", "static").
++Fwd("N_Paris", "Budapest", "Frankfurt", "static").
++Fwd("N_Paris", "Helsinki", "Stockholm", "static").
++Fwd("N_Paris", "Stockholm", "Amsterdam", "static").
++Fwd("N_Paris", "Dublin", "Amsterdam", "static").
++Fwd("N_Paris", "Barcelona", "Amsterdam", "static").
++Fwd("N_Paris", "LondonID16", "London", "static").
++Fwd("N_Paris", "Zurich", "Frankfurt", "static").
++Fwd("N_Paris", "Madrid", "London", "static").
++Fwd("N_Paris", "Prague", "Frankfurt", "static").
++Fwd("N_Paris", "Washington", "LondonID16", "static").
++Fwd("N_Paris", "Milan", "London", "static").
++Fwd("N_Paris", "Copenhagen", "Stockholm", "static").
+

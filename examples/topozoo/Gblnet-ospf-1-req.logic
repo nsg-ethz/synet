@@ -1,0 +1,9 @@
+
++Fwd("N_Frankfurt", "NewTTYork", "Amsterdam", "ospf").
++Fwd("N_Frankfurt", "Amsterdam", "Frankfurt", "ospf").
++Fwd("N_Frankfurt", "Paris", "Amsterdam", "ospf").
++Fwd("N_Frankfurt", "Moscow", "StTTPetersburg", "ospf").
++Fwd("N_Frankfurt", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Frankfurt", "Stockholm", "Amsterdam", "ospf").
++Fwd("N_Frankfurt", "London", "Amsterdam", "ospf").
+

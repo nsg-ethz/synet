@@ -1,0 +1,65 @@
++SetNode("EUROPE").
++SetAdminDist("EUROPE", "static", 1).
++SetAdminDist("EUROPE", "bgp", 2).
++SetAdminDist("EUROPE", "ospf", 3).
++SetInterface("EUROPE", "EUROPE_I_Stockholm").
+
++SetNode("Reykjavik").
++SetAdminDist("Reykjavik", "static", 1).
++SetAdminDist("Reykjavik", "bgp", 2).
++SetAdminDist("Reykjavik", "ospf", 3).
++SetInterface("Reykjavik", "Reykjavik_I_Copenhagen").
+
++SetNode("USA").
++SetAdminDist("USA", "static", 1).
++SetAdminDist("USA", "bgp", 2).
++SetAdminDist("USA", "ospf", 3).
++SetInterface("USA", "USA_I_Stockholm").
+
++SetNode("Helsinki").
++SetAdminDist("Helsinki", "static", 1).
++SetAdminDist("Helsinki", "bgp", 2).
++SetAdminDist("Helsinki", "ospf", 3).
++SetInterface("Helsinki", "Helsinki_I_Stockholm").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_EUROPE").
++SetInterface("Stockholm", "Stockholm_I_Trondheim").
++SetInterface("Stockholm", "Stockholm_I_Copenhagen").
++SetInterface("Stockholm", "Stockholm_I_USA").
++SetInterface("Stockholm", "Stockholm_I_Helsinki").
+
++SetNode("Trondheim").
++SetAdminDist("Trondheim", "static", 1).
++SetAdminDist("Trondheim", "bgp", 2).
++SetAdminDist("Trondheim", "ospf", 3).
++SetInterface("Trondheim", "Trondheim_I_Stockholm").
+
++SetNode("Copenhagen").
++SetAdminDist("Copenhagen", "static", 1).
++SetAdminDist("Copenhagen", "bgp", 2).
++SetAdminDist("Copenhagen", "ospf", 3).
++SetInterface("Copenhagen", "Copenhagen_I_Reykjavik").
++SetInterface("Copenhagen", "Copenhagen_I_Stockholm").
+
++SetLink("EUROPE_I_Stockholm", "Stockholm_I_EUROPE").
++SetLink("Reykjavik_I_Copenhagen", "Copenhagen_I_Reykjavik").
++SetLink("USA_I_Stockholm", "Stockholm_I_USA").
++SetLink("Helsinki_I_Stockholm", "Stockholm_I_Helsinki").
++SetLink("Stockholm_I_Trondheim", "Trondheim_I_Stockholm").
++SetLink("Stockholm_I_Copenhagen", "Copenhagen_I_Stockholm").
+
+
++SetNetwork("USA", "N_USA").
++SetBGPAnnouncement("USA", "N_USA", "NBGP_USA", "1;2;3", 3).
++SetNetwork("Helsinki", "N_Helsinki").
++SetBGPAnnouncement("Helsinki", "N_Helsinki", "NBGP_Helsinki", "1;2;3", 3).
++SetNetwork("Copenhagen", "N_Copenhagen").
++SetBGPAnnouncement("Copenhagen", "N_Copenhagen", "NBGP_Copenhagen", "1;2;3", 3).
++SetNetwork("Trondheim", "N_Trondheim").
++SetBGPAnnouncement("Trondheim", "N_Trondheim", "NBGP_Trondheim", "1;2;3", 3).
++SetNetwork("EUROPE", "N_EUROPE").
++SetBGPAnnouncement("EUROPE", "N_EUROPE", "NBGP_EUROPE", "1;2;3", 3).

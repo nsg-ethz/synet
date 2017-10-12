@@ -1,0 +1,25 @@
+
++Fwd("N_Sevastopol", "Kiev", "Cherkassy", "static").
++Fwd("N_Sevastopol", "Cherkassy", "Mykolaiv", "static").
++Fwd("N_Sevastopol", "Mykolaiv", "Kherson", "static").
++Fwd("N_Sevastopol", "Kherson", "Simferopol", "static").
++Fwd("N_Sevastopol", "Simferopol", "Sevastopol", "static").
++Fwd("N_Sevastopol", "Lutsk", "Zhitomir", "static").
++Fwd("N_Sevastopol", "Zhitomir", "Kiev", "static").
++Fwd("N_Sevastopol", "Odessa", "Mykolaiv", "static").
++Fwd("N_Sevastopol", "Odessa_IX", "Odessa", "static").
++Fwd("N_Sevastopol", "Kharkiv_IX", "Kharkiv", "static").
++Fwd("N_Sevastopol", "Kharkiv", "Poltava", "static").
++Fwd("N_Sevastopol", "Poltava", "Kiev", "static").
++Fwd("N_Sevastopol", "Vinnitsa", "Kiev", "static").
++Fwd("N_Sevastopol", "Kamianets_Podilsky", "Kiev", "static").
++Fwd("N_Sevastopol", "Lviv", "Kiev", "static").
++Fwd("N_Sevastopol", "Dnipropetrovsk", "Poltava", "static").
++Fwd("N_Sevastopol", "Zaporizhia", "Dnipropetrovsk", "static").
++Fwd("N_Sevastopol", "PoznanTT_GEANTTT_TTInternet_", "Lviv", "static").
++Fwd("N_Sevastopol", "Pereyaslav", "Kiev", "static").
++Fwd("N_Sevastopol", "FrankfurtTT_Internet_", "Kiev", "static").
++Fwd("N_Sevastopol", "Khmelnitsky", "Lviv", "static").
++Fwd("N_Sevastopol", "Donetsk", "Dnipropetrovsk", "static").
++Fwd("N_Sevastopol", "UA_IX", "Kiev", "static").
+

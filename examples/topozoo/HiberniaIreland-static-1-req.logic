@@ -1,0 +1,9 @@
+
++Fwd("N_Waterford", "Galway", "Limerick", "static").
++Fwd("N_Waterford", "Limerick", "Cork", "static").
++Fwd("N_Waterford", "Cork", "Waterford", "static").
++Fwd("N_Waterford", "Portlaioise", "Dublin", "static").
++Fwd("N_Waterford", "Dublin", "Waterford", "static").
++Fwd("N_Waterford", "NodeID6", "Dublin", "static").
++Fwd("N_Waterford", "NodeID7", "Dublin", "static").
+

@@ -1,0 +1,17 @@
+
++Fwd("N_UniversityTTofTTGreenwich", "BeaconTTHill", "UniversityTTofTTGreenwich", "static").
++Fwd("N_UniversityTTofTTGreenwich", "CCCU_C", "Kent", "static").
++Fwd("N_UniversityTTofTTGreenwich", "Kent", "Wye", "static").
++Fwd("N_UniversityTTofTTGreenwich", "Wye", "NTL_Wye", "static").
++Fwd("N_UniversityTTofTTGreenwich", "NTL_Wye", "Cranbrook", "static").
++Fwd("N_UniversityTTofTTGreenwich", "Cranbrook", "BlueTTBellTTHill", "static").
++Fwd("N_UniversityTTofTTGreenwich", "BlueTTBellTTHill", "UniversityTTofTTGreenwich", "static").
++Fwd("N_UniversityTTofTTGreenwich", "KIAD_C", "Kent", "static").
++Fwd("N_UniversityTTofTTGreenwich", "Tonbridge", "BlueTTBellTTHill", "static").
++Fwd("N_UniversityTTofTTGreenwich", "KIAD_M", "BlueTTBellTTHill", "static").
++Fwd("N_UniversityTTofTTGreenwich", "CCCU_T", "Kent", "static").
++Fwd("N_UniversityTTofTTGreenwich", "KIAD_R", "BeaconTTHill", "static").
++Fwd("N_UniversityTTofTTGreenwich", "Horsted", "BlueTTBellTTHill", "static").
++Fwd("N_UniversityTTofTTGreenwich", "CCCU_S", "Tonbridge", "static").
++Fwd("N_UniversityTTofTTGreenwich", "Dunkirk", "BeaconTTHill", "static").
+

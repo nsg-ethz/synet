@@ -1,0 +1,111 @@
+
++Fwd("N_NewTTYork", "Houston", "Atlanta", "static").
++Fwd("N_NewTTYork", "Atlanta", "WashingtonTTDC", "static").
++Fwd("N_NewTTYork", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_NewTTYork", "Indianapolis", "Chicago", "static").
++Fwd("N_NewTTYork", "Chicago", "NewTTYork", "static").
++Fwd("N_NewTTYork", "KansasTTCity", "Houston", "static").
++Fwd("N_NewTTYork", "LosTTAngeles", "Houston", "static").
++Fwd("N_NewTTYork", "Denver", "KansasTTCity", "static").
++Fwd("N_NewTTYork", "Sunnyvale", "LosTTAngeles", "static").
++Fwd("N_NewTTYork", "Seattle", "Sunnyvale", "static").
+
++Fwd("N_Indianapolis", "Houston", "Atlanta", "static").
++Fwd("N_Indianapolis", "Atlanta", "Indianapolis", "static").
++Fwd("N_Indianapolis", "KansasTTCity", "Indianapolis", "static").
++Fwd("N_Indianapolis", "LosTTAngeles", "Houston", "static").
++Fwd("N_Indianapolis", "NewTTYork", "Chicago", "static").
++Fwd("N_Indianapolis", "Chicago", "Indianapolis", "static").
++Fwd("N_Indianapolis", "Denver", "KansasTTCity", "static").
++Fwd("N_Indianapolis", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_Indianapolis", "Sunnyvale", "LosTTAngeles", "static").
++Fwd("N_Indianapolis", "Seattle", "Sunnyvale", "static").
+
++Fwd("N_Denver", "Houston", "KansasTTCity", "static").
++Fwd("N_Denver", "KansasTTCity", "Denver", "static").
++Fwd("N_Denver", "Indianapolis", "KansasTTCity", "static").
++Fwd("N_Denver", "LosTTAngeles", "Houston", "static").
++Fwd("N_Denver", "NewTTYork", "Chicago", "static").
++Fwd("N_Denver", "Chicago", "Indianapolis", "static").
++Fwd("N_Denver", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_Denver", "Sunnyvale", "Denver", "static").
++Fwd("N_Denver", "Atlanta", "Indianapolis", "static").
++Fwd("N_Denver", "Seattle", "Denver", "static").
+
++Fwd("N_Atlanta", "Houston", "Atlanta", "static").
++Fwd("N_Atlanta", "Indianapolis", "Atlanta", "static").
++Fwd("N_Atlanta", "KansasTTCity", "Houston", "static").
++Fwd("N_Atlanta", "LosTTAngeles", "Houston", "static").
++Fwd("N_Atlanta", "NewTTYork", "WashingtonTTDC", "static").
++Fwd("N_Atlanta", "WashingtonTTDC", "Atlanta", "static").
++Fwd("N_Atlanta", "Chicago", "Indianapolis", "static").
++Fwd("N_Atlanta", "Denver", "KansasTTCity", "static").
++Fwd("N_Atlanta", "Sunnyvale", "LosTTAngeles", "static").
++Fwd("N_Atlanta", "Seattle", "Sunnyvale", "static").
+
++Fwd("N_LosTTAngeles", "Houston", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Indianapolis", "KansasTTCity", "static").
++Fwd("N_LosTTAngeles", "KansasTTCity", "Houston", "static").
++Fwd("N_LosTTAngeles", "NewTTYork", "WashingtonTTDC", "static").
++Fwd("N_LosTTAngeles", "WashingtonTTDC", "Atlanta", "static").
++Fwd("N_LosTTAngeles", "Atlanta", "Houston", "static").
++Fwd("N_LosTTAngeles", "Chicago", "Indianapolis", "static").
++Fwd("N_LosTTAngeles", "Denver", "Sunnyvale", "static").
++Fwd("N_LosTTAngeles", "Sunnyvale", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Seattle", "Sunnyvale", "static").
+
++Fwd("N_WashingtonTTDC", "Houston", "Atlanta", "static").
++Fwd("N_WashingtonTTDC", "Atlanta", "WashingtonTTDC", "static").
++Fwd("N_WashingtonTTDC", "Indianapolis", "Chicago", "static").
++Fwd("N_WashingtonTTDC", "Chicago", "NewTTYork", "static").
++Fwd("N_WashingtonTTDC", "NewTTYork", "WashingtonTTDC", "static").
++Fwd("N_WashingtonTTDC", "KansasTTCity", "Houston", "static").
++Fwd("N_WashingtonTTDC", "LosTTAngeles", "Houston", "static").
++Fwd("N_WashingtonTTDC", "Denver", "KansasTTCity", "static").
++Fwd("N_WashingtonTTDC", "Sunnyvale", "LosTTAngeles", "static").
++Fwd("N_WashingtonTTDC", "Seattle", "Sunnyvale", "static").
+
++Fwd("N_Seattle", "Houston", "LosTTAngeles", "static").
++Fwd("N_Seattle", "LosTTAngeles", "Sunnyvale", "static").
++Fwd("N_Seattle", "Sunnyvale", "Seattle", "static").
++Fwd("N_Seattle", "Indianapolis", "KansasTTCity", "static").
++Fwd("N_Seattle", "KansasTTCity", "Denver", "static").
++Fwd("N_Seattle", "Denver", "Seattle", "static").
++Fwd("N_Seattle", "NewTTYork", "Chicago", "static").
++Fwd("N_Seattle", "Chicago", "Indianapolis", "static").
++Fwd("N_Seattle", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_Seattle", "Atlanta", "Indianapolis", "static").
+
++Fwd("N_Chicago", "Houston", "Atlanta", "static").
++Fwd("N_Chicago", "Atlanta", "Indianapolis", "static").
++Fwd("N_Chicago", "Indianapolis", "Chicago", "static").
++Fwd("N_Chicago", "KansasTTCity", "Indianapolis", "static").
++Fwd("N_Chicago", "LosTTAngeles", "Houston", "static").
++Fwd("N_Chicago", "NewTTYork", "Chicago", "static").
++Fwd("N_Chicago", "Denver", "KansasTTCity", "static").
++Fwd("N_Chicago", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_Chicago", "Sunnyvale", "LosTTAngeles", "static").
++Fwd("N_Chicago", "Seattle", "Sunnyvale", "static").
+
++Fwd("N_KansasTTCity", "Houston", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "Indianapolis", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "LosTTAngeles", "Houston", "static").
++Fwd("N_KansasTTCity", "NewTTYork", "Chicago", "static").
++Fwd("N_KansasTTCity", "Chicago", "Indianapolis", "static").
++Fwd("N_KansasTTCity", "Denver", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_KansasTTCity", "Sunnyvale", "Denver", "static").
++Fwd("N_KansasTTCity", "Atlanta", "Indianapolis", "static").
++Fwd("N_KansasTTCity", "Seattle", "Denver", "static").
+
++Fwd("N_Sunnyvale", "Houston", "LosTTAngeles", "static").
++Fwd("N_Sunnyvale", "LosTTAngeles", "Sunnyvale", "static").
++Fwd("N_Sunnyvale", "Indianapolis", "KansasTTCity", "static").
++Fwd("N_Sunnyvale", "KansasTTCity", "Denver", "static").
++Fwd("N_Sunnyvale", "Denver", "Sunnyvale", "static").
++Fwd("N_Sunnyvale", "NewTTYork", "Chicago", "static").
++Fwd("N_Sunnyvale", "Chicago", "Indianapolis", "static").
++Fwd("N_Sunnyvale", "WashingtonTTDC", "NewTTYork", "static").
++Fwd("N_Sunnyvale", "Atlanta", "Indianapolis", "static").
++Fwd("N_Sunnyvale", "Seattle", "Sunnyvale", "static").
+

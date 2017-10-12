@@ -1,0 +1,56 @@
+
++Fwd("N_NewTTYorkTTCity", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("NBGP_NewTTYorkTTCity", "LosTTAngeles", "SanTTFrancisco", "bgp").
++Fwd("N_NewTTYorkTTCity", "SanTTFrancisco", "Chicago", "ospf").
++Fwd("NBGP_NewTTYorkTTCity", "SanTTFrancisco", "Chicago", "bgp").
++Fwd("N_NewTTYorkTTCity", "Chicago", "NewTTYorkTTCity", "ospf").
++Fwd("NBGP_NewTTYorkTTCity", "Chicago", "NewTTYorkTTCity", "bgp").
++Fwd("N_NewTTYorkTTCity", "WashingtonTTDC", "NewTTYorkTTCity", "ospf").
++Fwd("NBGP_NewTTYorkTTCity", "WashingtonTTDC", "NewTTYorkTTCity", "bgp").
++Fwd("N_NewTTYorkTTCity", "Seattle", "SanTTFrancisco", "ospf").
++Fwd("NBGP_NewTTYorkTTCity", "Seattle", "SanTTFrancisco", "bgp").
+
++Fwd("N_Chicago", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("NBGP_Chicago", "LosTTAngeles", "SanTTFrancisco", "bgp").
++Fwd("N_Chicago", "SanTTFrancisco", "Chicago", "ospf").
++Fwd("NBGP_Chicago", "SanTTFrancisco", "Chicago", "bgp").
++Fwd("N_Chicago", "WashingtonTTDC", "Chicago", "ospf").
++Fwd("NBGP_Chicago", "WashingtonTTDC", "Chicago", "bgp").
++Fwd("N_Chicago", "NewTTYorkTTCity", "Chicago", "ospf").
++Fwd("NBGP_Chicago", "NewTTYorkTTCity", "Chicago", "bgp").
++Fwd("N_Chicago", "Seattle", "SanTTFrancisco", "ospf").
++Fwd("NBGP_Chicago", "Seattle", "SanTTFrancisco", "bgp").
+
++Fwd("N_SanTTFrancisco", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("NBGP_SanTTFrancisco", "LosTTAngeles", "SanTTFrancisco", "bgp").
++Fwd("N_SanTTFrancisco", "Chicago", "SanTTFrancisco", "ospf").
++Fwd("NBGP_SanTTFrancisco", "Chicago", "SanTTFrancisco", "bgp").
++Fwd("N_SanTTFrancisco", "WashingtonTTDC", "SanTTFrancisco", "ospf").
++Fwd("NBGP_SanTTFrancisco", "WashingtonTTDC", "SanTTFrancisco", "bgp").
++Fwd("N_SanTTFrancisco", "NewTTYorkTTCity", "Chicago", "ospf").
++Fwd("NBGP_SanTTFrancisco", "NewTTYorkTTCity", "Chicago", "bgp").
++Fwd("N_SanTTFrancisco", "Seattle", "SanTTFrancisco", "ospf").
++Fwd("NBGP_SanTTFrancisco", "Seattle", "SanTTFrancisco", "bgp").
+
++Fwd("N_WashingtonTTDC", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("NBGP_WashingtonTTDC", "LosTTAngeles", "SanTTFrancisco", "bgp").
++Fwd("N_WashingtonTTDC", "SanTTFrancisco", "WashingtonTTDC", "ospf").
++Fwd("NBGP_WashingtonTTDC", "SanTTFrancisco", "WashingtonTTDC", "bgp").
++Fwd("N_WashingtonTTDC", "Chicago", "WashingtonTTDC", "ospf").
++Fwd("NBGP_WashingtonTTDC", "Chicago", "WashingtonTTDC", "bgp").
++Fwd("N_WashingtonTTDC", "NewTTYorkTTCity", "WashingtonTTDC", "ospf").
++Fwd("NBGP_WashingtonTTDC", "NewTTYorkTTCity", "WashingtonTTDC", "bgp").
++Fwd("N_WashingtonTTDC", "Seattle", "SanTTFrancisco", "ospf").
++Fwd("NBGP_WashingtonTTDC", "Seattle", "SanTTFrancisco", "bgp").
+
++Fwd("N_Seattle", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("NBGP_Seattle", "LosTTAngeles", "SanTTFrancisco", "bgp").
++Fwd("N_Seattle", "SanTTFrancisco", "Seattle", "ospf").
++Fwd("NBGP_Seattle", "SanTTFrancisco", "Seattle", "bgp").
++Fwd("N_Seattle", "Chicago", "SanTTFrancisco", "ospf").
++Fwd("NBGP_Seattle", "Chicago", "SanTTFrancisco", "bgp").
++Fwd("N_Seattle", "WashingtonTTDC", "SanTTFrancisco", "ospf").
++Fwd("NBGP_Seattle", "WashingtonTTDC", "SanTTFrancisco", "bgp").
++Fwd("N_Seattle", "NewTTYorkTTCity", "Chicago", "ospf").
++Fwd("NBGP_Seattle", "NewTTYorkTTCity", "Chicago", "bgp").
+

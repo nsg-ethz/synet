@@ -1,0 +1,240 @@
++SetNode("EuropeanTTInst_TTofTTCyprus").
++SetAdminDist("EuropeanTTInst_TTofTTCyprus", "static", 1).
++SetAdminDist("EuropeanTTInst_TTofTTCyprus", "bgp", 2).
++SetAdminDist("EuropeanTTInst_TTofTTCyprus", "ospf", 3).
++SetInterface("EuropeanTTInst_TTofTTCyprus", "EuropeanTTInst_TTofTTCyprus_I_Evagoras").
+
++SetNode("Uni_TTofTTFrederick").
++SetAdminDist("Uni_TTofTTFrederick", "static", 1).
++SetAdminDist("Uni_TTofTTFrederick", "bgp", 2).
++SetAdminDist("Uni_TTofTTFrederick", "ospf", 3).
++SetInterface("Uni_TTofTTFrederick", "Uni_TTofTTFrederick_I_NicosiaTTPoP").
+
++SetNode("NicosiaTTPoP").
++SetAdminDist("NicosiaTTPoP", "static", 1).
++SetAdminDist("NicosiaTTPoP", "bgp", 2).
++SetAdminDist("NicosiaTTPoP", "ospf", 3).
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_KyprosNet").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_Uni_TTofTTFrederick").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_OpenTTUni_TTofTTCyprus").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_Inst_TTofTTNeurology").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_PedagogicalTTInst_").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_EuropeanTTUni_").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_CyIXTTCypressTTISPs").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_CyprusTTInst_").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_PhillipsTTCollege").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_EnglishTTSchool").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_AgricultureTTInst_").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_NursingTTSchool").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_BorderTTRouter").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_Grid_SW").
++SetInterface("NicosiaTTPoP", "NicosiaTTPoP_I_Univ_TTofTTNicosia").
+
++SetNode("OpenTTUni_TTofTTCyprus").
++SetAdminDist("OpenTTUni_TTofTTCyprus", "static", 1).
++SetAdminDist("OpenTTUni_TTofTTCyprus", "bgp", 2).
++SetAdminDist("OpenTTUni_TTofTTCyprus", "ospf", 3).
++SetInterface("OpenTTUni_TTofTTCyprus", "OpenTTUni_TTofTTCyprus_I_NicosiaTTPoP").
+
++SetNode("CyprusTTInst_").
++SetAdminDist("CyprusTTInst_", "static", 1).
++SetAdminDist("CyprusTTInst_", "bgp", 2).
++SetAdminDist("CyprusTTInst_", "ospf", 3).
++SetInterface("CyprusTTInst_", "CyprusTTInst__I_NicosiaTTPoP").
+
++SetNode("Univ_TTofTTCyprus").
++SetAdminDist("Univ_TTofTTCyprus", "static", 1).
++SetAdminDist("Univ_TTofTTCyprus", "bgp", 2).
++SetAdminDist("Univ_TTofTTCyprus", "ospf", 3).
++SetInterface("Univ_TTofTTCyprus", "Univ_TTofTTCyprus_I_BorderTTRouter").
+
++SetNode("GEANTTTAthens").
++SetAdminDist("GEANTTTAthens", "static", 1).
++SetAdminDist("GEANTTTAthens", "bgp", 2).
++SetAdminDist("GEANTTTAthens", "ospf", 3).
++SetInterface("GEANTTTAthens", "GEANTTTAthens_I_BorderTTRouter").
+
++SetNode("LimassolTTPoP").
++SetAdminDist("LimassolTTPoP", "static", 1).
++SetAdminDist("LimassolTTPoP", "bgp", 2).
++SetAdminDist("LimassolTTPoP", "ospf", 3).
++SetInterface("LimassolTTPoP", "LimassolTTPoP_I_BorderTTRouter").
++SetInterface("LimassolTTPoP", "LimassolTTPoP_I_CyprusTTUniv_TTofTTTech_").
++SetInterface("LimassolTTPoP", "LimassolTTPoP_I_Intercollege").
+
++SetNode("NursingTTSchool").
++SetAdminDist("NursingTTSchool", "static", 1).
++SetAdminDist("NursingTTSchool", "bgp", 2).
++SetAdminDist("NursingTTSchool", "ospf", 3).
++SetInterface("NursingTTSchool", "NursingTTSchool_I_NicosiaTTPoP").
+
++SetNode("GEANTTTMilano").
++SetAdminDist("GEANTTTMilano", "static", 1).
++SetAdminDist("GEANTTTMilano", "bgp", 2).
++SetAdminDist("GEANTTTMilano", "ospf", 3).
++SetInterface("GEANTTTMilano", "GEANTTTMilano_I_BorderTTRouter").
+
++SetNode("CyprusTTUniv_TTofTTTech_").
++SetAdminDist("CyprusTTUniv_TTofTTTech_", "static", 1).
++SetAdminDist("CyprusTTUniv_TTofTTTech_", "bgp", 2).
++SetAdminDist("CyprusTTUniv_TTofTTTech_", "ospf", 3).
++SetInterface("CyprusTTUniv_TTofTTTech_", "CyprusTTUniv_TTofTTTech__I_LimassolTTPoP").
+
++SetNode("Users").
++SetAdminDist("Users", "static", 1).
++SetAdminDist("Users", "bgp", 2).
++SetAdminDist("Users", "ospf", 3).
++SetInterface("Users", "Users_I_NodeID7").
+
++SetNode("PedagogicalTTInst_").
++SetAdminDist("PedagogicalTTInst_", "static", 1).
++SetAdminDist("PedagogicalTTInst_", "bgp", 2).
++SetAdminDist("PedagogicalTTInst_", "ospf", 3).
++SetInterface("PedagogicalTTInst_", "PedagogicalTTInst__I_NicosiaTTPoP").
+
++SetNode("EuropeanTTUni_").
++SetAdminDist("EuropeanTTUni_", "static", 1).
++SetAdminDist("EuropeanTTUni_", "bgp", 2).
++SetAdminDist("EuropeanTTUni_", "ospf", 3).
++SetInterface("EuropeanTTUni_", "EuropeanTTUni__I_NicosiaTTPoP").
+
++SetNode("NodeID7").
++SetAdminDist("NodeID7", "static", 1).
++SetAdminDist("NodeID7", "bgp", 2).
++SetAdminDist("NodeID7", "ospf", 3).
++SetInterface("NodeID7", "NodeID7_I_Grid_SW").
++SetInterface("NodeID7", "NodeID7_I_Users").
+
++SetNode("EUMEDTTCONNECT").
++SetAdminDist("EUMEDTTCONNECT", "static", 1).
++SetAdminDist("EUMEDTTCONNECT", "bgp", 2).
++SetAdminDist("EUMEDTTCONNECT", "ospf", 3).
++SetInterface("EUMEDTTCONNECT", "EUMEDTTCONNECT_I_BorderTTRouter").
++SetInterface("EUMEDTTCONNECT", "EUMEDTTCONNECT_I_SyriaTTNREN").
+
++SetNode("Grid").
++SetAdminDist("Grid", "static", 1).
++SetAdminDist("Grid", "bgp", 2).
++SetAdminDist("Grid", "ospf", 3).
++SetInterface("Grid", "Grid_I_Grid_SW").
+
++SetNode("BorderTTRouter").
++SetAdminDist("BorderTTRouter", "static", 1).
++SetAdminDist("BorderTTRouter", "bgp", 2).
++SetAdminDist("BorderTTRouter", "ospf", 3).
++SetInterface("BorderTTRouter", "BorderTTRouter_I_GEANTTTMilano").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_NicosiaTTPoP").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_Evagoras").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_EUMEDTTCONNECT").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_Univ_TTofTTCyprus").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_LimassolTTPoP").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_GEANTTTAthens").
+
++SetNode("Grid_SW").
++SetAdminDist("Grid_SW", "static", 1).
++SetAdminDist("Grid_SW", "bgp", 2).
++SetAdminDist("Grid_SW", "ospf", 3).
++SetInterface("Grid_SW", "Grid_SW_I_NodeID7").
++SetInterface("Grid_SW", "Grid_SW_I_NicosiaTTPoP").
++SetInterface("Grid_SW", "Grid_SW_I_Grid").
+
++SetNode("Univ_TTofTTNicosia").
++SetAdminDist("Univ_TTofTTNicosia", "static", 1).
++SetAdminDist("Univ_TTofTTNicosia", "bgp", 2).
++SetAdminDist("Univ_TTofTTNicosia", "ospf", 3).
++SetInterface("Univ_TTofTTNicosia", "Univ_TTofTTNicosia_I_NicosiaTTPoP").
+
++SetNode("KyprosNet").
++SetAdminDist("KyprosNet", "static", 1).
++SetAdminDist("KyprosNet", "bgp", 2).
++SetAdminDist("KyprosNet", "ospf", 3).
++SetInterface("KyprosNet", "KyprosNet_I_NicosiaTTPoP").
+
++SetNode("Intercollege").
++SetAdminDist("Intercollege", "static", 1).
++SetAdminDist("Intercollege", "bgp", 2).
++SetAdminDist("Intercollege", "ospf", 3).
++SetInterface("Intercollege", "Intercollege_I_LimassolTTPoP").
+
++SetNode("UnitedTTNations").
++SetAdminDist("UnitedTTNations", "static", 1).
++SetAdminDist("UnitedTTNations", "bgp", 2).
++SetAdminDist("UnitedTTNations", "ospf", 3).
++SetInterface("UnitedTTNations", "UnitedTTNations_I_Evagoras").
+
++SetNode("AgricultureTTInst_").
++SetAdminDist("AgricultureTTInst_", "static", 1).
++SetAdminDist("AgricultureTTInst_", "bgp", 2).
++SetAdminDist("AgricultureTTInst_", "ospf", 3).
++SetInterface("AgricultureTTInst_", "AgricultureTTInst__I_NicosiaTTPoP").
+
++SetNode("SyriaTTNREN").
++SetAdminDist("SyriaTTNREN", "static", 1).
++SetAdminDist("SyriaTTNREN", "bgp", 2).
++SetAdminDist("SyriaTTNREN", "ospf", 3).
++SetInterface("SyriaTTNREN", "SyriaTTNREN_I_EUMEDTTCONNECT").
+
++SetNode("Inst_TTofTTNeurology").
++SetAdminDist("Inst_TTofTTNeurology", "static", 1).
++SetAdminDist("Inst_TTofTTNeurology", "bgp", 2).
++SetAdminDist("Inst_TTofTTNeurology", "ospf", 3).
++SetInterface("Inst_TTofTTNeurology", "Inst_TTofTTNeurology_I_NicosiaTTPoP").
+
++SetNode("Evagoras").
++SetAdminDist("Evagoras", "static", 1).
++SetAdminDist("Evagoras", "bgp", 2).
++SetAdminDist("Evagoras", "ospf", 3).
++SetInterface("Evagoras", "Evagoras_I_EuropeanTTInst_TTofTTCyprus").
++SetInterface("Evagoras", "Evagoras_I_BorderTTRouter").
++SetInterface("Evagoras", "Evagoras_I_UnitedTTNations").
+
++SetNode("CyIXTTCypressTTISPs").
++SetAdminDist("CyIXTTCypressTTISPs", "static", 1).
++SetAdminDist("CyIXTTCypressTTISPs", "bgp", 2).
++SetAdminDist("CyIXTTCypressTTISPs", "ospf", 3).
++SetInterface("CyIXTTCypressTTISPs", "CyIXTTCypressTTISPs_I_NicosiaTTPoP").
+
++SetNode("PhillipsTTCollege").
++SetAdminDist("PhillipsTTCollege", "static", 1).
++SetAdminDist("PhillipsTTCollege", "bgp", 2).
++SetAdminDist("PhillipsTTCollege", "ospf", 3).
++SetInterface("PhillipsTTCollege", "PhillipsTTCollege_I_NicosiaTTPoP").
+
++SetNode("EnglishTTSchool").
++SetAdminDist("EnglishTTSchool", "static", 1).
++SetAdminDist("EnglishTTSchool", "bgp", 2).
++SetAdminDist("EnglishTTSchool", "ospf", 3).
++SetInterface("EnglishTTSchool", "EnglishTTSchool_I_NicosiaTTPoP").
+
++SetLink("EuropeanTTInst_TTofTTCyprus_I_Evagoras", "Evagoras_I_EuropeanTTInst_TTofTTCyprus").
++SetLink("Uni_TTofTTFrederick_I_NicosiaTTPoP", "NicosiaTTPoP_I_Uni_TTofTTFrederick").
++SetLink("NicosiaTTPoP_I_KyprosNet", "KyprosNet_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_OpenTTUni_TTofTTCyprus", "OpenTTUni_TTofTTCyprus_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_Inst_TTofTTNeurology", "Inst_TTofTTNeurology_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_PedagogicalTTInst_", "PedagogicalTTInst__I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_EuropeanTTUni_", "EuropeanTTUni__I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_CyIXTTCypressTTISPs", "CyIXTTCypressTTISPs_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_CyprusTTInst_", "CyprusTTInst__I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_PhillipsTTCollege", "PhillipsTTCollege_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_EnglishTTSchool", "EnglishTTSchool_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_AgricultureTTInst_", "AgricultureTTInst__I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_NursingTTSchool", "NursingTTSchool_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_BorderTTRouter", "BorderTTRouter_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_Grid_SW", "Grid_SW_I_NicosiaTTPoP").
++SetLink("NicosiaTTPoP_I_Univ_TTofTTNicosia", "Univ_TTofTTNicosia_I_NicosiaTTPoP").
++SetLink("Univ_TTofTTCyprus_I_BorderTTRouter", "BorderTTRouter_I_Univ_TTofTTCyprus").
++SetLink("GEANTTTAthens_I_BorderTTRouter", "BorderTTRouter_I_GEANTTTAthens").
++SetLink("LimassolTTPoP_I_BorderTTRouter", "BorderTTRouter_I_LimassolTTPoP").
++SetLink("LimassolTTPoP_I_CyprusTTUniv_TTofTTTech_", "CyprusTTUniv_TTofTTTech__I_LimassolTTPoP").
++SetLink("LimassolTTPoP_I_Intercollege", "Intercollege_I_LimassolTTPoP").
++SetLink("GEANTTTMilano_I_BorderTTRouter", "BorderTTRouter_I_GEANTTTMilano").
++SetLink("Users_I_NodeID7", "NodeID7_I_Users").
++SetLink("NodeID7_I_Grid_SW", "Grid_SW_I_NodeID7").
++SetLink("EUMEDTTCONNECT_I_BorderTTRouter", "BorderTTRouter_I_EUMEDTTCONNECT").
++SetLink("EUMEDTTCONNECT_I_SyriaTTNREN", "SyriaTTNREN_I_EUMEDTTCONNECT").
++SetLink("Grid_I_Grid_SW", "Grid_SW_I_Grid").
++SetLink("BorderTTRouter_I_Evagoras", "Evagoras_I_BorderTTRouter").
++SetLink("UnitedTTNations_I_Evagoras", "Evagoras_I_UnitedTTNations").
+
+
++SetNetwork("AgricultureTTInst_", "N_AgricultureTTInst_").

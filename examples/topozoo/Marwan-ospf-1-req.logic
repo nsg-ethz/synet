@@ -1,0 +1,17 @@
+
++Fwd("N_NodeID15", "UniversityTT4", "NodeID15", "ospf").
++Fwd("N_NodeID15", "UniversityTT1", "Tanger", "ospf").
++Fwd("N_NodeID15", "Tanger", "Casa", "ospf").
++Fwd("N_NodeID15", "Casa", "NodeID6", "ospf").
++Fwd("N_NodeID15", "NodeID6", "NodeID15", "ospf").
++Fwd("N_NodeID15", "UniversityTT3", "NodeID6", "ospf").
++Fwd("N_NodeID15", "GEANT", "NodeID13", "ospf").
++Fwd("N_NodeID15", "NodeID13", "NodeID15", "ospf").
++Fwd("N_NodeID15", "UniversityTT2", "Agadir", "ospf").
++Fwd("N_NodeID15", "Agadir", "Rabat", "ospf").
++Fwd("N_NodeID15", "Rabat", "NodeID15", "ospf").
++Fwd("N_NodeID15", "Fes", "Marrkech", "ospf").
++Fwd("N_NodeID15", "Marrkech", "Agadir", "ospf").
++Fwd("N_NodeID15", "Internet", "NodeID13", "ospf").
++Fwd("N_NodeID15", "InstitutionTT1", "NodeID6", "ospf").
+

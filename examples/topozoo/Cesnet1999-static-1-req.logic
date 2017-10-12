@@ -1,0 +1,14 @@
+
++Fwd("N_Ostrava", "TEN_155", "Praha", "static").
++Fwd("N_Ostrava", "Praha", "Brno", "static").
++Fwd("N_Ostrava", "Brno", "Ostrava", "static").
++Fwd("N_Ostrava", "Plzen", "Praha", "static").
++Fwd("N_Ostrava", "Pardubice", "Praha", "static").
++Fwd("N_Ostrava", "Zlin", "Brno", "static").
++Fwd("N_Ostrava", "Liberec", "Praha", "static").
++Fwd("N_Ostrava", "UstiTTnadTTLabem", "Praha", "static").
++Fwd("N_Ostrava", "NIX", "Praha", "static").
++Fwd("N_Ostrava", "HradecTTKralove", "Praha", "static").
++Fwd("N_Ostrava", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Ostrava", "Olomouc", "Brno", "static").
+

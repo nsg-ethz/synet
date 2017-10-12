@@ -1,0 +1,335 @@
++SetNode("CHCG").
++SetAdminDist("CHCG", "static", 1).
++SetAdminDist("CHCG", "bgp", 2).
++SetAdminDist("CHCG", "ospf", 3).
++SetInterface("CHCG", "CHCG_I_KSCY").
++SetInterface("CHCG", "CHCG_I_SNFN").
++SetInterface("CHCG", "CHCG_I_DNVR").
++SetInterface("CHCG", "CHCG_I_PHLA").
++SetInterface("CHCG", "CHCG_I_CLEV").
++SetInterface("CHCG", "CHCG_I_STTL").
++SetInterface("CHCG", "CHCG_I_NY54").
++SetInterface("CHCG", "CHCG_I_STLS").
++SetInterface("CHCG", "CHCG_I_SLKC").
+
++SetNode("CLEV").
++SetAdminDist("CLEV", "static", 1).
++SetAdminDist("CLEV", "bgp", 2).
++SetAdminDist("CLEV", "ospf", 3).
++SetInterface("CLEV", "CLEV_I_PHLA").
++SetInterface("CLEV", "CLEV_I_CHCG").
++SetInterface("CLEV", "CLEV_I_STLS").
++SetInterface("CLEV", "CLEV_I_NSVL").
+
++SetNode("ATLN").
++SetAdminDist("ATLN", "static", 1).
++SetAdminDist("ATLN", "bgp", 2).
++SetAdminDist("ATLN", "ospf", 3).
++SetInterface("ATLN", "ATLN_I_ORLD").
++SetInterface("ATLN", "ATLN_I_WASH").
++SetInterface("ATLN", "ATLN_I_DLLS").
++SetInterface("ATLN", "ATLN_I_STLS").
++SetInterface("ATLN", "ATLN_I_RLGH").
++SetInterface("ATLN", "ATLN_I_NSVL").
+
++SetNode("HSTN").
++SetAdminDist("HSTN", "static", 1).
++SetAdminDist("HSTN", "bgp", 2).
++SetAdminDist("HSTN", "ospf", 3).
++SetInterface("HSTN", "HSTN_I_DLLS").
++SetInterface("HSTN", "HSTN_I_SNAN").
++SetInterface("HSTN", "HSTN_I_NWOR").
++SetInterface("HSTN", "HSTN_I_ORLD").
+
++SetNode("SNDG").
++SetAdminDist("SNDG", "static", 1).
++SetAdminDist("SNDG", "bgp", 2).
++SetAdminDist("SNDG", "ospf", 3).
++SetInterface("SNDG", "SNDG_I_LA03").
++SetInterface("SNDG", "SNDG_I_PHNX").
+
++SetNode("KSCY").
++SetAdminDist("KSCY", "static", 1).
++SetAdminDist("KSCY", "bgp", 2).
++SetAdminDist("KSCY", "ospf", 3).
++SetInterface("KSCY", "KSCY_I_DLLS").
++SetInterface("KSCY", "KSCY_I_SNFN").
++SetInterface("KSCY", "KSCY_I_CHCG").
++SetInterface("KSCY", "KSCY_I_DNVR").
++SetInterface("KSCY", "KSCY_I_STLS").
+
++SetNode("SNFN").
++SetAdminDist("SNFN", "static", 1).
++SetAdminDist("SNFN", "bgp", 2).
++SetAdminDist("SNFN", "ospf", 3).
++SetInterface("SNFN", "SNFN_I_PTLD").
++SetInterface("SNFN", "SNFN_I_KSCY").
++SetInterface("SNFN", "SNFN_I_CHCG").
++SetInterface("SNFN", "SNFN_I_DNVR").
++SetInterface("SNFN", "SNFN_I_LA03").
++SetInterface("SNFN", "SNFN_I_STTL").
++SetInterface("SNFN", "SNFN_I_DLLS").
++SetInterface("SNFN", "SNFN_I_SLKC").
++SetInterface("SNFN", "SNFN_I_SCRM").
+
++SetNode("DNVR").
++SetAdminDist("DNVR", "static", 1).
++SetAdminDist("DNVR", "bgp", 2).
++SetAdminDist("DNVR", "ospf", 3).
++SetInterface("DNVR", "DNVR_I_DLLS").
++SetInterface("DNVR", "DNVR_I_KSCY").
++SetInterface("DNVR", "DNVR_I_SLKC").
++SetInterface("DNVR", "DNVR_I_CHCG").
++SetInterface("DNVR", "DNVR_I_SNFN").
+
++SetNode("LA03").
++SetAdminDist("LA03", "static", 1).
++SetAdminDist("LA03", "bgp", 2).
++SetAdminDist("LA03", "ospf", 3).
++SetInterface("LA03", "LA03_I_SNDG").
++SetInterface("LA03", "LA03_I_SNFN").
++SetInterface("LA03", "LA03_I_PHNX").
++SetInterface("LA03", "LA03_I_DLLS").
++SetInterface("LA03", "LA03_I_STLS").
++SetInterface("LA03", "LA03_I_SLKC").
+
++SetNode("DLLS").
++SetAdminDist("DLLS", "static", 1).
++SetAdminDist("DLLS", "bgp", 2).
++SetAdminDist("DLLS", "ospf", 3).
++SetInterface("DLLS", "DLLS_I_KSCY").
++SetInterface("DLLS", "DLLS_I_SNFN").
++SetInterface("DLLS", "DLLS_I_DNVR").
++SetInterface("DLLS", "DLLS_I_SNAN").
++SetInterface("DLLS", "DLLS_I_LA03").
++SetInterface("DLLS", "DLLS_I_ATLN").
++SetInterface("DLLS", "DLLS_I_HSTN").
++SetInterface("DLLS", "DLLS_I_STLS").
++SetInterface("DLLS", "DLLS_I_NWOR").
++SetInterface("DLLS", "DLLS_I_NSVL").
+
++SetNode("RLGH").
++SetAdminDist("RLGH", "static", 1).
++SetAdminDist("RLGH", "bgp", 2).
++SetAdminDist("RLGH", "ospf", 3).
++SetInterface("RLGH", "RLGH_I_ATLN").
++SetInterface("RLGH", "RLGH_I_WASH").
+
++SetNode("SLKC").
++SetAdminDist("SLKC", "static", 1).
++SetAdminDist("SLKC", "bgp", 2).
++SetAdminDist("SLKC", "ospf", 3).
++SetInterface("SLKC", "SLKC_I_SNFN").
++SetInterface("SLKC", "SLKC_I_LA03").
++SetInterface("SLKC", "SLKC_I_CHCG").
++SetInterface("SLKC", "SLKC_I_SCRM").
++SetInterface("SLKC", "SLKC_I_DNVR").
+
++SetNode("NSVL").
++SetAdminDist("NSVL", "static", 1).
++SetAdminDist("NSVL", "bgp", 2).
++SetAdminDist("NSVL", "ospf", 3).
++SetInterface("NSVL", "NSVL_I_ATLN").
++SetInterface("NSVL", "NSVL_I_DLLS").
++SetInterface("NSVL", "NSVL_I_CLEV").
++SetInterface("NSVL", "NSVL_I_STLS").
+
++SetNode("PTLD").
++SetAdminDist("PTLD", "static", 1).
++SetAdminDist("PTLD", "bgp", 2).
++SetAdminDist("PTLD", "ospf", 3).
++SetInterface("PTLD", "PTLD_I_STTL").
++SetInterface("PTLD", "PTLD_I_SNFN").
+
++SetNode("ORLD").
++SetAdminDist("ORLD", "static", 1).
++SetAdminDist("ORLD", "bgp", 2).
++SetAdminDist("ORLD", "ospf", 3).
++SetInterface("ORLD", "ORLD_I_ATLN").
++SetInterface("ORLD", "ORLD_I_HSTN").
++SetInterface("ORLD", "ORLD_I_NWOR").
+
++SetNode("SNAN").
++SetAdminDist("SNAN", "static", 1).
++SetAdminDist("SNAN", "bgp", 2).
++SetAdminDist("SNAN", "ospf", 3).
++SetInterface("SNAN", "SNAN_I_DLLS").
++SetInterface("SNAN", "SNAN_I_HSTN").
++SetInterface("SNAN", "SNAN_I_PHNX").
+
++SetNode("WASH").
++SetAdminDist("WASH", "static", 1).
++SetAdminDist("WASH", "bgp", 2).
++SetAdminDist("WASH", "ospf", 3).
++SetInterface("WASH", "WASH_I_ATLN").
++SetInterface("WASH", "WASH_I_PHLA").
++SetInterface("WASH", "WASH_I_NY54").
++SetInterface("WASH", "WASH_I_RLGH").
+
++SetNode("PHLA").
++SetAdminDist("PHLA", "static", 1).
++SetAdminDist("PHLA", "bgp", 2).
++SetAdminDist("PHLA", "ospf", 3).
++SetInterface("PHLA", "PHLA_I_NY54").
++SetInterface("PHLA", "PHLA_I_CHCG").
++SetInterface("PHLA", "PHLA_I_CMBR").
++SetInterface("PHLA", "PHLA_I_CLEV").
++SetInterface("PHLA", "PHLA_I_WASH").
+
++SetNode("PHNX").
++SetAdminDist("PHNX", "static", 1).
++SetAdminDist("PHNX", "bgp", 2).
++SetAdminDist("PHNX", "ospf", 3).
++SetInterface("PHNX", "PHNX_I_SNDG").
++SetInterface("PHNX", "PHNX_I_LA03").
++SetInterface("PHNX", "PHNX_I_SNAN").
+
++SetNode("STTL").
++SetAdminDist("STTL", "static", 1).
++SetAdminDist("STTL", "bgp", 2).
++SetAdminDist("STTL", "ospf", 3).
++SetInterface("STTL", "STTL_I_PTLD").
++SetInterface("STTL", "STTL_I_CHCG").
++SetInterface("STTL", "STTL_I_SNFN").
+
++SetNode("NY54").
++SetAdminDist("NY54", "static", 1).
++SetAdminDist("NY54", "bgp", 2).
++SetAdminDist("NY54", "ospf", 3).
++SetInterface("NY54", "NY54_I_WASH").
++SetInterface("NY54", "NY54_I_CHCG").
++SetInterface("NY54", "NY54_I_CMBR").
++SetInterface("NY54", "NY54_I_PHLA").
+
++SetNode("STLS").
++SetAdminDist("STLS", "static", 1).
++SetAdminDist("STLS", "bgp", 2).
++SetAdminDist("STLS", "ospf", 3).
++SetInterface("STLS", "STLS_I_KSCY").
++SetInterface("STLS", "STLS_I_CHCG").
++SetInterface("STLS", "STLS_I_LA03").
++SetInterface("STLS", "STLS_I_CLEV").
++SetInterface("STLS", "STLS_I_ATLN").
++SetInterface("STLS", "STLS_I_DLLS").
++SetInterface("STLS", "STLS_I_NSVL").
+
++SetNode("CMBR").
++SetAdminDist("CMBR", "static", 1).
++SetAdminDist("CMBR", "bgp", 2).
++SetAdminDist("CMBR", "ospf", 3).
++SetInterface("CMBR", "CMBR_I_PHLA").
++SetInterface("CMBR", "CMBR_I_NY54").
+
++SetNode("SCRM").
++SetAdminDist("SCRM", "static", 1).
++SetAdminDist("SCRM", "bgp", 2).
++SetAdminDist("SCRM", "ospf", 3).
++SetInterface("SCRM", "SCRM_I_SLKC").
++SetInterface("SCRM", "SCRM_I_SNFN").
+
++SetNode("NWOR").
++SetAdminDist("NWOR", "static", 1).
++SetAdminDist("NWOR", "bgp", 2).
++SetAdminDist("NWOR", "ospf", 3).
++SetInterface("NWOR", "NWOR_I_DLLS").
++SetInterface("NWOR", "NWOR_I_HSTN").
++SetInterface("NWOR", "NWOR_I_ORLD").
+
++SetLink("CHCG_I_KSCY", "KSCY_I_CHCG").
++SetLink("CHCG_I_SNFN", "SNFN_I_CHCG").
++SetLink("CHCG_I_DNVR", "DNVR_I_CHCG").
++SetLink("CHCG_I_PHLA", "PHLA_I_CHCG").
++SetLink("CHCG_I_CLEV", "CLEV_I_CHCG").
++SetLink("CHCG_I_STTL", "STTL_I_CHCG").
++SetLink("CHCG_I_NY54", "NY54_I_CHCG").
++SetLink("CHCG_I_STLS", "STLS_I_CHCG").
++SetLink("CHCG_I_SLKC", "SLKC_I_CHCG").
++SetLink("CLEV_I_PHLA", "PHLA_I_CLEV").
++SetLink("CLEV_I_STLS", "STLS_I_CLEV").
++SetLink("CLEV_I_NSVL", "NSVL_I_CLEV").
++SetLink("ATLN_I_ORLD", "ORLD_I_ATLN").
++SetLink("ATLN_I_WASH", "WASH_I_ATLN").
++SetLink("ATLN_I_DLLS", "DLLS_I_ATLN").
++SetLink("ATLN_I_STLS", "STLS_I_ATLN").
++SetLink("ATLN_I_RLGH", "RLGH_I_ATLN").
++SetLink("ATLN_I_NSVL", "NSVL_I_ATLN").
++SetLink("HSTN_I_DLLS", "DLLS_I_HSTN").
++SetLink("HSTN_I_SNAN", "SNAN_I_HSTN").
++SetLink("HSTN_I_NWOR", "NWOR_I_HSTN").
++SetLink("HSTN_I_ORLD", "ORLD_I_HSTN").
++SetLink("SNDG_I_LA03", "LA03_I_SNDG").
++SetLink("SNDG_I_PHNX", "PHNX_I_SNDG").
++SetLink("KSCY_I_DLLS", "DLLS_I_KSCY").
++SetLink("KSCY_I_SNFN", "SNFN_I_KSCY").
++SetLink("KSCY_I_DNVR", "DNVR_I_KSCY").
++SetLink("KSCY_I_STLS", "STLS_I_KSCY").
++SetLink("SNFN_I_PTLD", "PTLD_I_SNFN").
++SetLink("SNFN_I_DNVR", "DNVR_I_SNFN").
++SetLink("SNFN_I_LA03", "LA03_I_SNFN").
++SetLink("SNFN_I_STTL", "STTL_I_SNFN").
++SetLink("SNFN_I_DLLS", "DLLS_I_SNFN").
++SetLink("SNFN_I_SLKC", "SLKC_I_SNFN").
++SetLink("SNFN_I_SCRM", "SCRM_I_SNFN").
++SetLink("DNVR_I_DLLS", "DLLS_I_DNVR").
++SetLink("DNVR_I_SLKC", "SLKC_I_DNVR").
++SetLink("LA03_I_PHNX", "PHNX_I_LA03").
++SetLink("LA03_I_DLLS", "DLLS_I_LA03").
++SetLink("LA03_I_STLS", "STLS_I_LA03").
++SetLink("LA03_I_SLKC", "SLKC_I_LA03").
++SetLink("DLLS_I_SNAN", "SNAN_I_DLLS").
++SetLink("DLLS_I_STLS", "STLS_I_DLLS").
++SetLink("DLLS_I_NWOR", "NWOR_I_DLLS").
++SetLink("DLLS_I_NSVL", "NSVL_I_DLLS").
++SetLink("RLGH_I_WASH", "WASH_I_RLGH").
++SetLink("SLKC_I_SCRM", "SCRM_I_SLKC").
++SetLink("NSVL_I_STLS", "STLS_I_NSVL").
++SetLink("PTLD_I_STTL", "STTL_I_PTLD").
++SetLink("ORLD_I_NWOR", "NWOR_I_ORLD").
++SetLink("SNAN_I_PHNX", "PHNX_I_SNAN").
++SetLink("WASH_I_PHLA", "PHLA_I_WASH").
++SetLink("WASH_I_NY54", "NY54_I_WASH").
++SetLink("PHLA_I_NY54", "NY54_I_PHLA").
++SetLink("PHLA_I_CMBR", "CMBR_I_PHLA").
++SetLink("NY54_I_CMBR", "CMBR_I_NY54").
+
+
++SetNetwork("ATLN", "N_ATLN").
++SetBGPAnnouncement("ATLN", "N_ATLN", "NBGP_ATLN", "1;2;3", 3).
++SetNetwork("NWOR", "N_NWOR").
++SetBGPAnnouncement("NWOR", "N_NWOR", "NBGP_NWOR", "1;2;3", 3).
++SetNetwork("STTL", "N_STTL").
++SetBGPAnnouncement("STTL", "N_STTL", "NBGP_STTL", "1;2;3", 3).
++SetNetwork("SCRM", "N_SCRM").
++SetBGPAnnouncement("SCRM", "N_SCRM", "NBGP_SCRM", "1;2;3", 3).
++SetNetwork("PTLD", "N_PTLD").
++SetBGPAnnouncement("PTLD", "N_PTLD", "NBGP_PTLD", "1;2;3", 3).
++SetNetwork("DNVR", "N_DNVR").
++SetBGPAnnouncement("DNVR", "N_DNVR", "NBGP_DNVR", "1;2;3", 3).
++SetNetwork("KSCY", "N_KSCY").
++SetBGPAnnouncement("KSCY", "N_KSCY", "NBGP_KSCY", "1;2;3", 3).
++SetNetwork("LA03", "N_LA03").
++SetBGPAnnouncement("LA03", "N_LA03", "NBGP_LA03", "1;2;3", 3).
++SetNetwork("STLS", "N_STLS").
++SetBGPAnnouncement("STLS", "N_STLS", "NBGP_STLS", "1;2;3", 3).
++SetNetwork("DLLS", "N_DLLS").
++SetBGPAnnouncement("DLLS", "N_DLLS", "NBGP_DLLS", "1;2;3", 3).
++SetNetwork("HSTN", "N_HSTN").
++SetBGPAnnouncement("HSTN", "N_HSTN", "NBGP_HSTN", "1;2;3", 3).
++SetNetwork("PHNX", "N_PHNX").
++SetBGPAnnouncement("PHNX", "N_PHNX", "NBGP_PHNX", "1;2;3", 3).
++SetNetwork("SNFN", "N_SNFN").
++SetBGPAnnouncement("SNFN", "N_SNFN", "NBGP_SNFN", "1;2;3", 3).
++SetNetwork("NY54", "N_NY54").
++SetBGPAnnouncement("NY54", "N_NY54", "NBGP_NY54", "1;2;3", 3).
++SetNetwork("ORLD", "N_ORLD").
++SetBGPAnnouncement("ORLD", "N_ORLD", "NBGP_ORLD", "1;2;3", 3).
++SetNetwork("RLGH", "N_RLGH").
++SetBGPAnnouncement("RLGH", "N_RLGH", "NBGP_RLGH", "1;2;3", 3).
++SetNetwork("CHCG", "N_CHCG").
++SetBGPAnnouncement("CHCG", "N_CHCG", "NBGP_CHCG", "1;2;3", 3).
++SetNetwork("NSVL", "N_NSVL").
++SetBGPAnnouncement("NSVL", "N_NSVL", "NBGP_NSVL", "1;2;3", 3).
++SetNetwork("CLEV", "N_CLEV").
++SetBGPAnnouncement("CLEV", "N_CLEV", "NBGP_CLEV", "1;2;3", 3).
++SetNetwork("SLKC", "N_SLKC").
++SetBGPAnnouncement("SLKC", "N_SLKC", "NBGP_SLKC", "1;2;3", 3).

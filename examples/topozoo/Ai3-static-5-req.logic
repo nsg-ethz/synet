@@ -1,0 +1,51 @@
+
++Fwd("N_TU", "ASTI", "KEIO", "static").
++Fwd("N_TU", "KEIO", "AIT", "static").
++Fwd("N_TU", "AIT", "TU", "static").
++Fwd("N_TU", "USM", "KEIO", "static").
++Fwd("N_TU", "ITB", "KEIO", "static").
++Fwd("N_TU", "TP", "KEIO", "static").
++Fwd("N_TU", "IOIT", "KEIO", "static").
++Fwd("N_TU", "NAIST", "KEIO", "static").
++Fwd("N_TU", "UNIBRAW", "ITB", "static").
+
++Fwd("N_IOIT", "ASTI", "KEIO", "static").
++Fwd("N_IOIT", "KEIO", "IOIT", "static").
++Fwd("N_IOIT", "AIT", "KEIO", "static").
++Fwd("N_IOIT", "USM", "KEIO", "static").
++Fwd("N_IOIT", "TU", "AIT", "static").
++Fwd("N_IOIT", "ITB", "KEIO", "static").
++Fwd("N_IOIT", "TP", "KEIO", "static").
++Fwd("N_IOIT", "NAIST", "KEIO", "static").
++Fwd("N_IOIT", "UNIBRAW", "ITB", "static").
+
++Fwd("N_TP", "ASTI", "KEIO", "static").
++Fwd("N_TP", "KEIO", "TP", "static").
++Fwd("N_TP", "AIT", "KEIO", "static").
++Fwd("N_TP", "USM", "KEIO", "static").
++Fwd("N_TP", "TU", "AIT", "static").
++Fwd("N_TP", "ITB", "KEIO", "static").
++Fwd("N_TP", "IOIT", "KEIO", "static").
++Fwd("N_TP", "NAIST", "KEIO", "static").
++Fwd("N_TP", "UNIBRAW", "ITB", "static").
+
++Fwd("N_UNIBRAW", "ASTI", "KEIO", "static").
++Fwd("N_UNIBRAW", "KEIO", "ITB", "static").
++Fwd("N_UNIBRAW", "ITB", "UNIBRAW", "static").
++Fwd("N_UNIBRAW", "AIT", "KEIO", "static").
++Fwd("N_UNIBRAW", "USM", "KEIO", "static").
++Fwd("N_UNIBRAW", "TU", "AIT", "static").
++Fwd("N_UNIBRAW", "TP", "KEIO", "static").
++Fwd("N_UNIBRAW", "IOIT", "KEIO", "static").
++Fwd("N_UNIBRAW", "NAIST", "KEIO", "static").
+
++Fwd("N_NAIST", "ASTI", "KEIO", "static").
++Fwd("N_NAIST", "KEIO", "NAIST", "static").
++Fwd("N_NAIST", "AIT", "KEIO", "static").
++Fwd("N_NAIST", "USM", "KEIO", "static").
++Fwd("N_NAIST", "TU", "AIT", "static").
++Fwd("N_NAIST", "ITB", "KEIO", "static").
++Fwd("N_NAIST", "TP", "KEIO", "static").
++Fwd("N_NAIST", "IOIT", "KEIO", "static").
++Fwd("N_NAIST", "UNIBRAW", "ITB", "static").
+

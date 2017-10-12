@@ -1,0 +1,8 @@
+
++Fwd("N_EUROPE", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_EUROPE", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_EUROPE", "Stockholm", "EUROPE", "ospf").
++Fwd("N_EUROPE", "USA", "Stockholm", "ospf").
++Fwd("N_EUROPE", "Helsinki", "Stockholm", "ospf").
++Fwd("N_EUROPE", "Trondheim", "Stockholm", "ospf").
+

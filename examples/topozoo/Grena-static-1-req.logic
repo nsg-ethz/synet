@@ -1,0 +1,17 @@
+
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTKhashuri", "CiscoTT3640TTGori", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTGori", "TbilisiTTGRENATTNetwork", "static").
++Fwd("N_RustaviTTCO15", "TbilisiTTGRENATTNetwork", "RustaviTTCO15", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTSamtredia", "CiscoTT3640TTKutaisiTTC07", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTKutaisiTTC07", "CiscoTT3640TTKhashuri", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTPoti", "CiscoTT3640TTSamtredia", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT2621TTBatumi", "CiscoTT3640TTPoti", "static").
++Fwd("N_RustaviTTCO15", "CorecessTTDX6524", "RustaviTTCO15", "static").
++Fwd("N_RustaviTTCO15", "RustaviTTCO14", "RustaviTTCO15", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT2511TTKutaisi", "CiscoTT3640TTKutaisiTTC04", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTKutaisiTTC04", "CiscoTT3640TTKutaisiTTC07", "static").
++Fwd("N_RustaviTTCO15", "CorecessTTDX6524ID7", "CiscoTT3640TTKutaisiTTC04", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTTelavi", "TbilisiTTGRENATTNetwork", "static").
++Fwd("N_RustaviTTCO15", "CiscoTT3640TTZugididi", "CiscoTT3640TTPoti", "static").
++Fwd("N_RustaviTTCO15", "CorecessTTDX6524ID9", "RustaviTTCO14", "static").
+

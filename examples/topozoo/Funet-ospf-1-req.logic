@@ -1,0 +1,27 @@
+
++Fwd("N_Ristijavi", "Turku", "Rauma", "ospf").
++Fwd("N_Ristijavi", "Rauma", "Pori", "ospf").
++Fwd("N_Ristijavi", "Pori", "Seinajoki", "ospf").
++Fwd("N_Ristijavi", "Seinajoki", "Vaasa", "ospf").
++Fwd("N_Ristijavi", "Vaasa", "Kokkola", "ospf").
++Fwd("N_Ristijavi", "Kokkola", "Oulu", "ospf").
++Fwd("N_Ristijavi", "Oulu", "Ristijavi", "ospf").
++Fwd("N_Ristijavi", "Rovaniemi", "Ristijavi", "ospf").
++Fwd("N_Ristijavi", "Espoo", "Helsinki", "ospf").
++Fwd("N_Ristijavi", "Helsinki", "Lahti", "ospf").
++Fwd("N_Ristijavi", "Lahti", "Kouvola", "ospf").
++Fwd("N_Ristijavi", "Kouvola", "Lappeenranta", "ospf").
++Fwd("N_Ristijavi", "Lappeenranta", "Joensuu", "ospf").
++Fwd("N_Ristijavi", "Joensuu", "Koupio", "ospf").
++Fwd("N_Ristijavi", "Koupio", "Ristijavi", "ospf").
++Fwd("N_Ristijavi", "Tampere", "Jyvaskyla", "ospf").
++Fwd("N_Ristijavi", "Jyvaskyla", "Mikkeli", "ospf").
++Fwd("N_Ristijavi", "Mikkeli", "Koupio", "ospf").
++Fwd("N_Ristijavi", "Hameenlinna", "Espoo", "ospf").
++Fwd("N_Ristijavi", "Salo", "Espoo", "ospf").
++Fwd("N_Ristijavi", "Kotka", "Kouvola", "ospf").
++Fwd("N_Ristijavi", "NORDU", "Espoo", "ospf").
++Fwd("N_Ristijavi", "Haukipudas", "Oulu", "ospf").
++Fwd("N_Ristijavi", "NORDUID14", "Espoo", "ospf").
++Fwd("N_Ristijavi", "Sodankyla", "Rovaniemi", "ospf").
+

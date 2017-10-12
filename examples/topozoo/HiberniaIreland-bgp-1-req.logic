@@ -1,0 +1,16 @@
+
++Fwd("N_Galway", "Portlaioise", "Limerick", "ospf").
++Fwd("NBGP_Galway", "Portlaioise", "Limerick", "bgp").
++Fwd("N_Galway", "Limerick", "Galway", "ospf").
++Fwd("NBGP_Galway", "Limerick", "Galway", "bgp").
++Fwd("N_Galway", "Dublin", "Portlaioise", "ospf").
++Fwd("NBGP_Galway", "Dublin", "Portlaioise", "bgp").
++Fwd("N_Galway", "Cork", "Limerick", "ospf").
++Fwd("NBGP_Galway", "Cork", "Limerick", "bgp").
++Fwd("N_Galway", "NodeID6", "Dublin", "ospf").
++Fwd("NBGP_Galway", "NodeID6", "Dublin", "bgp").
++Fwd("N_Galway", "NodeID7", "Dublin", "ospf").
++Fwd("NBGP_Galway", "NodeID7", "Dublin", "bgp").
++Fwd("N_Galway", "Waterford", "Cork", "ospf").
++Fwd("NBGP_Galway", "Waterford", "Cork", "bgp").
+

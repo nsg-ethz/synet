@@ -1,0 +1,19 @@
+
++Fwd("N_Ashburn", "Toronto", "Chicago", "ospf").
++Fwd("N_Ashburn", "Chicago", "Atlanta", "ospf").
++Fwd("N_Ashburn", "Atlanta", "Ashburn", "ospf").
++Fwd("N_Ashburn", "Brussels", "Amsterdam", "ospf").
++Fwd("N_Ashburn", "Amsterdam", "Ashburn", "ospf").
++Fwd("N_Ashburn", "LosTTAngeles", "Phoenix", "ospf").
++Fwd("N_Ashburn", "Phoenix", "Atlanta", "ospf").
++Fwd("N_Ashburn", "Dallas", "Ashburn", "ospf").
++Fwd("N_Ashburn", "Paris", "Brussels", "ospf").
++Fwd("N_Ashburn", "NewTTYork", "Chicago", "ospf").
++Fwd("N_Ashburn", "Miami", "Dallas", "ospf").
++Fwd("N_Ashburn", "London", "NewTTYork", "ospf").
++Fwd("N_Ashburn", "SanTTJose_SanTTFrancisco", "Ashburn", "ospf").
++Fwd("N_Ashburn", "SaoTTPaulo", "RioTTDeTTJaneiro", "ospf").
++Fwd("N_Ashburn", "RioTTDeTTJaneiro", "Miami", "ospf").
++Fwd("N_Ashburn", "Seattle", "Chicago", "ospf").
++Fwd("N_Ashburn", "Frankfurt", "Amsterdam", "ospf").
+

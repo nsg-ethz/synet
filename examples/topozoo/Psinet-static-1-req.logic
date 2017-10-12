@@ -1,0 +1,25 @@
+
++Fwd("N_Baltimore", "NewTTYork", "Newark", "static").
++Fwd("N_Baltimore", "Newark", "Philadelphia", "static").
++Fwd("N_Baltimore", "Philadelphia", "Wilmington", "static").
++Fwd("N_Baltimore", "Wilmington", "Baltimore", "static").
++Fwd("N_Baltimore", "Herndon", "NewTTYork", "static").
++Fwd("N_Baltimore", "Toledo", "Dublin", "static").
++Fwd("N_Baltimore", "Dublin", "Washington_TTDC", "static").
++Fwd("N_Baltimore", "Washington_TTDC", "Baltimore", "static").
++Fwd("N_Baltimore", "Phoenix", "KansasTTCity", "static").
++Fwd("N_Baltimore", "KansasTTCity", "StTTLouis", "static").
++Fwd("N_Baltimore", "StTTLouis", "Chicago", "static").
++Fwd("N_Baltimore", "Chicago", "Dublin", "static").
++Fwd("N_Baltimore", "Dallas", "KansasTTCity", "static").
++Fwd("N_Baltimore", "FortTTWorth", "Dallas", "static").
++Fwd("N_Baltimore", "Atlanta", "Herndon", "static").
++Fwd("N_Baltimore", "Detroit", "Toledo", "static").
++Fwd("N_Baltimore", "SantaTTClara", "SanTTFrancisco", "static").
++Fwd("N_Baltimore", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_Baltimore", "LosTTAngeles", "Phoenix", "static").
++Fwd("N_Baltimore", "Austin", "Houston", "static").
++Fwd("N_Baltimore", "Houston", "Dallas", "static").
++Fwd("N_Baltimore", "Boston", "NewTTYork", "static").
++Fwd("N_Baltimore", "Troy", "NewTTYork", "static").
+

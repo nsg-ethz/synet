@@ -1,0 +1,8 @@
+
++Fwd("N_Galway", "CityWest", "Galway", "ospf").
++Fwd("N_Galway", "DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "ospf").
++Fwd("N_Galway", "Kilcarbery", "Galway", "ospf").
++Fwd("N_Galway", "Limerick", "Kilcarbery", "ospf").
++Fwd("N_Galway", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "ospf").
++Fwd("N_Galway", "Cork", "CityWest", "ospf").
+

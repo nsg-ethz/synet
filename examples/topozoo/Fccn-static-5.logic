@@ -1,0 +1,197 @@
++SetNode("Covilha").
++SetAdminDist("Covilha", "static", 1).
++SetAdminDist("Covilha", "bgp", 2).
++SetAdminDist("Covilha", "ospf", 3).
++SetInterface("Covilha", "Covilha_I_Porto").
+
++SetNode("VianaTTdeTTCastelo").
++SetAdminDist("VianaTTdeTTCastelo", "static", 1).
++SetAdminDist("VianaTTdeTTCastelo", "bgp", 2).
++SetAdminDist("VianaTTdeTTCastelo", "ospf", 3).
++SetInterface("VianaTTdeTTCastelo", "VianaTTdeTTCastelo_I_Porto").
+
++SetNode("Braga").
++SetAdminDist("Braga", "static", 1).
++SetAdminDist("Braga", "bgp", 2).
++SetAdminDist("Braga", "ospf", 3).
++SetInterface("Braga", "Braga_I_Porto").
+
++SetNode("Tomar").
++SetAdminDist("Tomar", "static", 1).
++SetAdminDist("Tomar", "bgp", 2).
++SetAdminDist("Tomar", "ospf", 3).
++SetInterface("Tomar", "Tomar_I_Lisboa").
+
++SetNode("Viseu").
++SetAdminDist("Viseu", "static", 1).
++SetAdminDist("Viseu", "bgp", 2).
++SetAdminDist("Viseu", "ospf", 3).
++SetInterface("Viseu", "Viseu_I_Lisboa").
+
++SetNode("Faro").
++SetAdminDist("Faro", "static", 1).
++SetAdminDist("Faro", "bgp", 2).
++SetAdminDist("Faro", "ospf", 3).
++SetInterface("Faro", "Faro_I_Setubal").
+
++SetNode("Samtarem").
++SetAdminDist("Samtarem", "static", 1).
++SetAdminDist("Samtarem", "bgp", 2).
++SetAdminDist("Samtarem", "ospf", 3).
++SetInterface("Samtarem", "Samtarem_I_Lisboa").
++SetInterface("Samtarem", "Samtarem_I_Coimbra").
+
++SetNode("Coimbra").
++SetAdminDist("Coimbra", "static", 1).
++SetAdminDist("Coimbra", "bgp", 2).
++SetAdminDist("Coimbra", "ospf", 3).
++SetInterface("Coimbra", "Coimbra_I_Leiria").
++SetInterface("Coimbra", "Coimbra_I_Porto").
++SetInterface("Coimbra", "Coimbra_I_Aveiro").
++SetInterface("Coimbra", "Coimbra_I_Lisboa").
++SetInterface("Coimbra", "Coimbra_I_Samtarem").
+
++SetNode("CasteloTTBranco").
++SetAdminDist("CasteloTTBranco", "static", 1).
++SetAdminDist("CasteloTTBranco", "bgp", 2).
++SetAdminDist("CasteloTTBranco", "ospf", 3).
++SetInterface("CasteloTTBranco", "CasteloTTBranco_I_Lisboa").
+
++SetNode("Leiria").
++SetAdminDist("Leiria", "static", 1).
++SetAdminDist("Leiria", "bgp", 2).
++SetAdminDist("Leiria", "ospf", 3).
++SetInterface("Leiria", "Leiria_I_Lisboa").
++SetInterface("Leiria", "Leiria_I_Coimbra").
+
++SetNode("Porto").
++SetAdminDist("Porto", "static", 1).
++SetAdminDist("Porto", "bgp", 2).
++SetAdminDist("Porto", "ospf", 3).
++SetInterface("Porto", "Porto_I_Guarda").
++SetInterface("Porto", "Porto_I_Covilha").
++SetInterface("Porto", "Porto_I_VianaTTdeTTCastelo").
++SetInterface("Porto", "Porto_I_Bragancia").
++SetInterface("Porto", "Porto_I_Braga").
++SetInterface("Porto", "Porto_I_Coimbra").
++SetInterface("Porto", "Porto_I_VillaTTReal").
++SetInterface("Porto", "Porto_I_Barcelos").
++SetInterface("Porto", "Porto_I_Aveiro").
+
++SetNode("Guarda").
++SetAdminDist("Guarda", "static", 1).
++SetAdminDist("Guarda", "bgp", 2).
++SetAdminDist("Guarda", "ospf", 3).
++SetInterface("Guarda", "Guarda_I_Porto").
+
++SetNode("Setubal").
++SetAdminDist("Setubal", "static", 1).
++SetAdminDist("Setubal", "bgp", 2).
++SetAdminDist("Setubal", "ospf", 3).
++SetInterface("Setubal", "Setubal_I_Lisboa").
++SetInterface("Setubal", "Setubal_I_Faro").
++SetInterface("Setubal", "Setubal_I_Beja").
+
++SetNode("Portalegre").
++SetAdminDist("Portalegre", "static", 1).
++SetAdminDist("Portalegre", "bgp", 2).
++SetAdminDist("Portalegre", "ospf", 3).
++SetInterface("Portalegre", "Portalegre_I_Lisboa").
+
++SetNode("VillaTTReal").
++SetAdminDist("VillaTTReal", "static", 1).
++SetAdminDist("VillaTTReal", "bgp", 2).
++SetAdminDist("VillaTTReal", "ospf", 3).
++SetInterface("VillaTTReal", "VillaTTReal_I_Porto").
+
++SetNode("Aveiro").
++SetAdminDist("Aveiro", "static", 1).
++SetAdminDist("Aveiro", "bgp", 2).
++SetAdminDist("Aveiro", "ospf", 3).
++SetInterface("Aveiro", "Aveiro_I_Porto").
++SetInterface("Aveiro", "Aveiro_I_Coimbra").
+
++SetNode("Evora").
++SetAdminDist("Evora", "static", 1).
++SetAdminDist("Evora", "bgp", 2).
++SetAdminDist("Evora", "ospf", 3).
++SetInterface("Evora", "Evora_I_Lisboa").
+
++SetNode("Beja").
++SetAdminDist("Beja", "static", 1).
++SetAdminDist("Beja", "bgp", 2).
++SetAdminDist("Beja", "ospf", 3).
++SetInterface("Beja", "Beja_I_Setubal").
+
++SetNode("PontaTTDelgada").
++SetAdminDist("PontaTTDelgada", "static", 1).
++SetAdminDist("PontaTTDelgada", "bgp", 2).
++SetAdminDist("PontaTTDelgada", "ospf", 3).
++SetInterface("PontaTTDelgada", "PontaTTDelgada_I_Lisboa").
+
++SetNode("Barcelos").
++SetAdminDist("Barcelos", "static", 1).
++SetAdminDist("Barcelos", "bgp", 2).
++SetAdminDist("Barcelos", "ospf", 3).
++SetInterface("Barcelos", "Barcelos_I_Porto").
+
++SetNode("Lisboa").
++SetAdminDist("Lisboa", "static", 1).
++SetAdminDist("Lisboa", "bgp", 2).
++SetAdminDist("Lisboa", "ospf", 3).
++SetInterface("Lisboa", "Lisboa_I_Leiria").
++SetInterface("Lisboa", "Lisboa_I_Tomar").
++SetInterface("Lisboa", "Lisboa_I_Viseu").
++SetInterface("Lisboa", "Lisboa_I_Setubal").
++SetInterface("Lisboa", "Lisboa_I_CasteloTTBranco").
++SetInterface("Lisboa", "Lisboa_I_Samtarem").
++SetInterface("Lisboa", "Lisboa_I_PontaTTDelgada").
++SetInterface("Lisboa", "Lisboa_I_Coimbra").
++SetInterface("Lisboa", "Lisboa_I_Portalegre").
++SetInterface("Lisboa", "Lisboa_I_Funchal").
++SetInterface("Lisboa", "Lisboa_I_Evora").
+
++SetNode("Funchal").
++SetAdminDist("Funchal", "static", 1).
++SetAdminDist("Funchal", "bgp", 2).
++SetAdminDist("Funchal", "ospf", 3).
++SetInterface("Funchal", "Funchal_I_Lisboa").
+
++SetNode("Bragancia").
++SetAdminDist("Bragancia", "static", 1).
++SetAdminDist("Bragancia", "bgp", 2).
++SetAdminDist("Bragancia", "ospf", 3).
++SetInterface("Bragancia", "Bragancia_I_Porto").
+
++SetLink("Covilha_I_Porto", "Porto_I_Covilha").
++SetLink("VianaTTdeTTCastelo_I_Porto", "Porto_I_VianaTTdeTTCastelo").
++SetLink("Braga_I_Porto", "Porto_I_Braga").
++SetLink("Tomar_I_Lisboa", "Lisboa_I_Tomar").
++SetLink("Viseu_I_Lisboa", "Lisboa_I_Viseu").
++SetLink("Faro_I_Setubal", "Setubal_I_Faro").
++SetLink("Samtarem_I_Lisboa", "Lisboa_I_Samtarem").
++SetLink("Samtarem_I_Coimbra", "Coimbra_I_Samtarem").
++SetLink("Coimbra_I_Leiria", "Leiria_I_Coimbra").
++SetLink("Coimbra_I_Porto", "Porto_I_Coimbra").
++SetLink("Coimbra_I_Aveiro", "Aveiro_I_Coimbra").
++SetLink("Coimbra_I_Lisboa", "Lisboa_I_Coimbra").
++SetLink("CasteloTTBranco_I_Lisboa", "Lisboa_I_CasteloTTBranco").
++SetLink("Leiria_I_Lisboa", "Lisboa_I_Leiria").
++SetLink("Porto_I_Guarda", "Guarda_I_Porto").
++SetLink("Porto_I_Bragancia", "Bragancia_I_Porto").
++SetLink("Porto_I_VillaTTReal", "VillaTTReal_I_Porto").
++SetLink("Porto_I_Barcelos", "Barcelos_I_Porto").
++SetLink("Porto_I_Aveiro", "Aveiro_I_Porto").
++SetLink("Setubal_I_Lisboa", "Lisboa_I_Setubal").
++SetLink("Setubal_I_Beja", "Beja_I_Setubal").
++SetLink("Portalegre_I_Lisboa", "Lisboa_I_Portalegre").
++SetLink("Evora_I_Lisboa", "Lisboa_I_Evora").
++SetLink("PontaTTDelgada_I_Lisboa", "Lisboa_I_PontaTTDelgada").
++SetLink("Lisboa_I_Funchal", "Funchal_I_Lisboa").
+
+
++SetNetwork("VillaTTReal", "N_VillaTTReal").
++SetNetwork("CasteloTTBranco", "N_CasteloTTBranco").
++SetNetwork("Setubal", "N_Setubal").
++SetNetwork("Leiria", "N_Leiria").
++SetNetwork("Bragancia", "N_Bragancia").

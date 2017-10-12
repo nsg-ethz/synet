@@ -1,0 +1,22 @@
+
++Fwd("N_Oradea", "Timisoara", "Arad", "static").
++Fwd("N_Oradea", "Arad", "Oradea", "static").
++Fwd("N_Oradea", "Cluj", "Oradea", "static").
++Fwd("N_Oradea", "Deva", "Timisoara", "static").
++Fwd("N_Oradea", "PiatraTTNeamt", "Focsani", "static").
++Fwd("N_Oradea", "Focsani", "Bucarest", "static").
++Fwd("N_Oradea", "Bucarest", "Oradea", "static").
++Fwd("N_Oradea", "Craiova", "Bucarest", "static").
++Fwd("N_Oradea", "Constanta", "Bucarest", "static").
++Fwd("N_Oradea", "TarguTTMures", "Bucarest", "static").
++Fwd("N_Oradea", "Bors", "Oradea", "static").
++Fwd("N_Oradea", "Sibiu", "Oradea", "static").
++Fwd("N_Oradea", "Targoviste", "Bucarest", "static").
++Fwd("N_Oradea", "Budapest", "Arad", "static").
++Fwd("N_Oradea", "Plaiesti", "Bucarest", "static").
++Fwd("N_Oradea", "Brasov", "Cluj", "static").
++Fwd("N_Oradea", "Bacau", "Oradea", "static").
++Fwd("N_Oradea", "Iasi", "Oradea", "static").
++Fwd("N_Oradea", "BudapestID8", "Bors", "static").
++Fwd("N_Oradea", "Galati", "Bucarest", "static").
+

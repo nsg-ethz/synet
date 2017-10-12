@@ -1,0 +1,27 @@
+
++Fwd("N_CCCU_C", "SouthTTKentTTCollegeTT_TTAshford", "IC_Wye", "ospf").
++Fwd("N_CCCU_C", "IC_Wye", "EIS_Maidstone", "ospf").
++Fwd("N_CCCU_C", "EIS_Maidstone", "KentTTCommunityTTNetworkTT_Schools_TTetc_", "ospf").
++Fwd("N_CCCU_C", "KentTTCommunityTTNetworkTT_Schools_TTetc_", "UoK_C", "ospf").
++Fwd("N_CCCU_C", "UoK_C", "CCCU_C", "ospf").
++Fwd("N_CCCU_C", "MidTTKentTTCollege", "UniversityTTofTTGreenwich", "ospf").
++Fwd("N_CCCU_C", "UniversityTTofTTGreenwich", "UoK_C", "ospf").
++Fwd("N_CCCU_C", "HadlowTTCollegeTTMottingham", "UoG_AH", "ospf").
++Fwd("N_CCCU_C", "UoG_AH", "UniversityTTofTTGreenwich", "ospf").
++Fwd("N_CCCU_C", "HadlowTTCollege", "CCCU_S", "ospf").
++Fwd("N_CCCU_C", "CCCU_S", "EIS_Maidstone", "ospf").
++Fwd("N_CCCU_C", "KentTTACL", "UniversityTTofTTGreenwich", "ospf").
++Fwd("N_CCCU_C", "CanterburyTTCollege", "UoK_C", "ospf").
++Fwd("N_CCCU_C", "MedwayTTACL", "UniversityTTofTTGreenwich", "ospf").
++Fwd("N_CCCU_C", "IFSTTSchoolTTofTTFinance", "UoK_C", "ospf").
++Fwd("N_CCCU_C", "UCCA_C", "UoK_C", "ospf").
++Fwd("N_CCCU_C", "KIAD_O", "EIS_Maidstone", "ospf").
++Fwd("N_CCCU_C", "HilderstoneTTCollege", "CCCU_T", "ospf").
++Fwd("N_CCCU_C", "CCCU_T", "UoK_C", "ospf").
++Fwd("N_CCCU_C", "KIAD_R", "UniversityTTofTTGreenwich", "ospf").
++Fwd("N_CCCU_C", "DortonTTCollege", "UniversityTTofTTGreenwich", "ospf").
++Fwd("N_CCCU_C", "ThanetTTCollege", "CCCU_T", "ospf").
++Fwd("N_CCCU_C", "NWTTKentTTCollegeTT_TTDartford", "UoG_AH", "ospf").
++Fwd("N_CCCU_C", "UniversityTTCollegeTTFolkestone", "IC_Wye", "ospf").
++Fwd("N_CCCU_C", "WestTTKentTTCollege", "CCCU_S", "ospf").
+

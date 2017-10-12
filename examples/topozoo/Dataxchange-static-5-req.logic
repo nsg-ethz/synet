@@ -1,0 +1,31 @@
+
++Fwd("N_LosTTAngeles", "McLean", "Washington_TTDC", "static").
++Fwd("N_LosTTAngeles", "Washington_TTDC", "SanTTFrancisco", "static").
++Fwd("N_LosTTAngeles", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Chicago", "SanTTFrancisco", "static").
++Fwd("N_LosTTAngeles", "Atlanta", "SanTTFrancisco", "static").
+
++Fwd("N_Washington_TTDC", "McLean", "Washington_TTDC", "static").
++Fwd("N_Washington_TTDC", "LosTTAngeles", "Chicago", "static").
++Fwd("N_Washington_TTDC", "Chicago", "Washington_TTDC", "static").
++Fwd("N_Washington_TTDC", "SanTTFrancisco", "Washington_TTDC", "static").
++Fwd("N_Washington_TTDC", "Atlanta", "SanTTFrancisco", "static").
+
++Fwd("N_SanTTFrancisco", "McLean", "Washington_TTDC", "static").
++Fwd("N_SanTTFrancisco", "Washington_TTDC", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "LosTTAngeles", "Atlanta", "static").
++Fwd("N_SanTTFrancisco", "Atlanta", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "Chicago", "SanTTFrancisco", "static").
+
++Fwd("N_McLean", "LosTTAngeles", "Chicago", "static").
++Fwd("N_McLean", "Chicago", "Washington_TTDC", "static").
++Fwd("N_McLean", "Washington_TTDC", "McLean", "static").
++Fwd("N_McLean", "SanTTFrancisco", "Washington_TTDC", "static").
++Fwd("N_McLean", "Atlanta", "SanTTFrancisco", "static").
+
++Fwd("N_Atlanta", "McLean", "Washington_TTDC", "static").
++Fwd("N_Atlanta", "Washington_TTDC", "Atlanta", "static").
++Fwd("N_Atlanta", "LosTTAngeles", "Atlanta", "static").
++Fwd("N_Atlanta", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_Atlanta", "Chicago", "Washington_TTDC", "static").
+

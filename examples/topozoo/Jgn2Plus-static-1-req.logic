@@ -1,0 +1,19 @@
+
++Fwd("N_Tohoku", "Singapore", "Tokyo", "static").
++Fwd("N_Tohoku", "Tokyo", "Tohoku", "static").
++Fwd("N_Tohoku", "Hongkong", "Tokyo", "static").
++Fwd("N_Tohoku", "LosTTAngeles", "NodeID15", "static").
++Fwd("N_Tohoku", "NodeID15", "Tokyo", "static").
++Fwd("N_Tohoku", "Hokuriku", "Tokyo", "static").
++Fwd("N_Tohoku", "Tokai", "Tokyo", "static").
++Fwd("N_Tohoku", "Chicago", "NodeID15", "static").
++Fwd("N_Tohoku", "Okinawa", "Kyushu", "static").
++Fwd("N_Tohoku", "Kyushu", "Chugoku", "static").
++Fwd("N_Tohoku", "Chugoku", "Kinki", "static").
++Fwd("N_Tohoku", "Kinki", "Tokai", "static").
++Fwd("N_Tohoku", "Bangkok", "Tokyo", "static").
++Fwd("N_Tohoku", "Shikoku", "Kinki", "static").
++Fwd("N_Tohoku", "Busan", "Kyushu", "static").
++Fwd("N_Tohoku", "Shinetsu", "Tokyo", "static").
++Fwd("N_Tohoku", "Hokkaido", "Tohoku", "static").
+

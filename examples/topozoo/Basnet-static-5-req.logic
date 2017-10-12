@@ -1,0 +1,36 @@
+
++Fwd("N_Minsk", "Vitebsk", "Minsk", "static").
++Fwd("N_Minsk", "Gomel", "Minsk", "static").
++Fwd("N_Minsk", "Mogilev", "Minsk", "static").
++Fwd("N_Minsk", "Brest", "Minsk", "static").
++Fwd("N_Minsk", "PionierTTGEANTTT2", "Minsk", "static").
++Fwd("N_Minsk", "Grodno", "Minsk", "static").
+
++Fwd("N_Gomel", "Vitebsk", "Minsk", "static").
++Fwd("N_Gomel", "Minsk", "Gomel", "static").
++Fwd("N_Gomel", "Mogilev", "Minsk", "static").
++Fwd("N_Gomel", "Brest", "Minsk", "static").
++Fwd("N_Gomel", "PionierTTGEANTTT2", "Minsk", "static").
++Fwd("N_Gomel", "Grodno", "Minsk", "static").
+
++Fwd("N_PionierTTGEANTTT2", "Vitebsk", "Minsk", "static").
++Fwd("N_PionierTTGEANTTT2", "Minsk", "PionierTTGEANTTT2", "static").
++Fwd("N_PionierTTGEANTTT2", "Gomel", "Minsk", "static").
++Fwd("N_PionierTTGEANTTT2", "Mogilev", "Minsk", "static").
++Fwd("N_PionierTTGEANTTT2", "Brest", "Minsk", "static").
++Fwd("N_PionierTTGEANTTT2", "Grodno", "Minsk", "static").
+
++Fwd("N_Brest", "Vitebsk", "Minsk", "static").
++Fwd("N_Brest", "Minsk", "Brest", "static").
++Fwd("N_Brest", "Gomel", "Minsk", "static").
++Fwd("N_Brest", "Mogilev", "Minsk", "static").
++Fwd("N_Brest", "PionierTTGEANTTT2", "Minsk", "static").
++Fwd("N_Brest", "Grodno", "Minsk", "static").
+
++Fwd("N_Vitebsk", "Gomel", "Minsk", "static").
++Fwd("N_Vitebsk", "Minsk", "Vitebsk", "static").
++Fwd("N_Vitebsk", "Mogilev", "Minsk", "static").
++Fwd("N_Vitebsk", "Brest", "Minsk", "static").
++Fwd("N_Vitebsk", "PionierTTGEANTTT2", "Minsk", "static").
++Fwd("N_Vitebsk", "Grodno", "Minsk", "static").
+

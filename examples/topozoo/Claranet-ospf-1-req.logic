@@ -1,0 +1,16 @@
+
++Fwd("N_Eindhoven", "Porto", "Lisbon", "ospf").
++Fwd("N_Eindhoven", "Lisbon", "London", "ospf").
++Fwd("N_Eindhoven", "London", "Amsterdam", "ospf").
++Fwd("N_Eindhoven", "Amsterdam", "Eindhoven", "ospf").
++Fwd("N_Eindhoven", "NewTTYork", "London", "ospf").
++Fwd("N_Eindhoven", "Manchester", "London", "ospf").
++Fwd("N_Eindhoven", "Paris", "London", "ospf").
++Fwd("N_Eindhoven", "Madrid", "Lisbon", "ospf").
++Fwd("N_Eindhoven", "Faro", "Lisbon", "ospf").
++Fwd("N_Eindhoven", "Munich", "Berlin", "ospf").
++Fwd("N_Eindhoven", "Berlin", "Frankfurt", "ospf").
++Fwd("N_Eindhoven", "Frankfurt", "Amsterdam", "ospf").
++Fwd("N_Eindhoven", "Barcelona", "Paris", "ospf").
++Fwd("N_Eindhoven", "Rennes", "Paris", "ospf").
+

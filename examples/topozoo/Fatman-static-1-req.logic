@@ -1,0 +1,18 @@
+
++Fwd("N_JanetTTandTTInternetID6", "CarnegieTTCollege", "Kirkcaldy", "static").
++Fwd("N_JanetTTandTTInternetID6", "Kirkcaldy", "NodeID5", "static").
++Fwd("N_JanetTTandTTInternetID6", "NodeID5", "RNEP1", "static").
++Fwd("N_JanetTTandTTInternetID6", "RNEP1", "Leeds", "static").
++Fwd("N_JanetTTandTTInternetID6", "Leeds", "JanetTTandTTInternetID6", "static").
++Fwd("N_JanetTTandTTInternetID6", "UniversityTTofTTAbertayTTDundee", "RNEP1", "static").
++Fwd("N_JanetTTandTTInternetID6", "UniversityTTofTTStTTAndrews", "RNEP2", "static").
++Fwd("N_JanetTTandTTInternetID6", "RNEP2", "NodeID5", "static").
++Fwd("N_JanetTTandTTInternetID6", "UoDTTFifeTTCampus", "Kirkcaldy", "static").
++Fwd("N_JanetTTandTTInternetID6", "AdamTTSmithTTCollege", "Kirkcaldy", "static").
++Fwd("N_JanetTTandTTInternetID6", "ElmwoodTTCollege", "RNEP1", "static").
++Fwd("N_JanetTTandTTInternetID6", "UniversityTTofTTDundee", "RNEP1", "static").
++Fwd("N_JanetTTandTTInternetID6", "AngusTTCollege", "RNEP1", "static").
++Fwd("N_JanetTTandTTInternetID6", "JanetTTandTTInternet", "Glasgow", "static").
++Fwd("N_JanetTTandTTInternetID6", "Glasgow", "Leeds", "static").
++Fwd("N_JanetTTandTTInternetID6", "DundeeTTCollege", "RNEP1", "static").
+

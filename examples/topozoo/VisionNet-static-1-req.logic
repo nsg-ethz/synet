@@ -1,0 +1,25 @@
+
++Fwd("N_Helena", "Fairfield", "Lincoln", "static").
++Fwd("N_Helena", "Lincoln", "Helena", "static").
++Fwd("N_Helena", "Kalispell", "Noxon", "static").
++Fwd("N_Helena", "Noxon", "Missoula", "static").
++Fwd("N_Helena", "Missoula", "Lincoln", "static").
++Fwd("N_Helena", "Havre", "FortTTBenton", "static").
++Fwd("N_Helena", "FortTTBenton", "GreatTTFalls", "static").
++Fwd("N_Helena", "GreatTTFalls", "Fairfield", "static").
++Fwd("N_Helena", "Glasgow", "Havre", "static").
++Fwd("N_Helena", "MilesTTCity", "Forsyth", "static").
++Fwd("N_Helena", "Forsyth", "Billings", "static").
++Fwd("N_Helena", "Billings", "BigTTTimber", "static").
++Fwd("N_Helena", "BigTTTimber", "Moore", "static").
++Fwd("N_Helena", "Moore", "FortTTBenton", "static").
++Fwd("N_Helena", "NTTCutbank", "Havre", "static").
++Fwd("N_Helena", "Sheridan", "Forsyth", "static").
++Fwd("N_Helena", "Bozeman", "Helena", "static").
++Fwd("N_Helena", "Dillion", "Helena", "static").
++Fwd("N_Helena", "DCNTTNetwork", "Bainville", "static").
++Fwd("N_Helena", "Bainville", "Culbertson", "static").
++Fwd("N_Helena", "Culbertson", "Glasgow", "static").
++Fwd("N_Helena", "Glendive", "MilesTTCity", "static").
++Fwd("N_Helena", "Seattle", "Noxon", "static").
+

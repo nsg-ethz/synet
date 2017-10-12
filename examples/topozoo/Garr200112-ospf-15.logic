@@ -1,0 +1,215 @@
++SetNode("BA").
++SetAdminDist("BA", "static", 1).
++SetAdminDist("BA", "bgp", 2).
++SetAdminDist("BA", "ospf", 3).
++SetInterface("BA", "BA_I_NAID15").
+
++SetNode("USA").
++SetAdminDist("USA", "static", 1).
++SetAdminDist("USA", "bgp", 2).
++SetAdminDist("USA", "ospf", 3).
++SetInterface("USA", "USA_I_MI").
+
++SetNode("BO").
++SetAdminDist("BO", "static", 1).
++SetAdminDist("BO", "bgp", 2).
++SetAdminDist("BO", "ospf", 3).
++SetInterface("BO", "BO_I_BOID13").
++SetInterface("BO", "BO_I_MI").
++SetInterface("BO", "BO_I_FI").
++SetInterface("BO", "BO_I_RM").
++SetInterface("BO", "BO_I_PI").
++SetInterface("BO", "BO_I_NAID15").
+
++SetNode("FI").
++SetAdminDist("FI", "static", 1).
++SetAdminDist("FI", "bgp", 2).
++SetAdminDist("FI", "ospf", 3).
++SetInterface("FI", "FI_I_BO").
+
++SetNode("NAID15").
++SetAdminDist("NAID15", "static", 1).
++SetAdminDist("NAID15", "bgp", 2).
++SetAdminDist("NAID15", "ospf", 3).
++SetInterface("NAID15", "NAID15_I_BA").
++SetInterface("NAID15", "NAID15_I_NA").
++SetInterface("NAID15", "NAID15_I_BO").
++SetInterface("NAID15", "NAID15_I_MI").
++SetInterface("NAID15", "NAID15_I_PA").
++SetInterface("NAID15", "NAID15_I_CS").
++SetInterface("NAID15", "NAID15_I_RM").
++SetInterface("NAID15", "NAID15_I_CT").
+
++SetNode("RMID11").
++SetAdminDist("RMID11", "static", 1).
++SetAdminDist("RMID11", "bgp", 2).
++SetAdminDist("RMID11", "ospf", 3).
++SetInterface("RMID11", "RMID11_I_RM").
+
++SetNode("NA").
++SetAdminDist("NA", "static", 1).
++SetAdminDist("NA", "bgp", 2).
++SetAdminDist("NA", "ospf", 3).
++SetInterface("NA", "NA_I_NAID15").
+
++SetNode("TS").
++SetAdminDist("TS", "static", 1).
++SetAdminDist("TS", "bgp", 2).
++SetAdminDist("TS", "ospf", 3).
++SetInterface("TS", "TS_I_MI").
+
++SetNode("TO").
++SetAdminDist("TO", "static", 1).
++SetAdminDist("TO", "bgp", 2).
++SetAdminDist("TO", "ospf", 3).
++SetInterface("TO", "TO_I_MI").
+
++SetNode("PA").
++SetAdminDist("PA", "static", 1).
++SetAdminDist("PA", "bgp", 2).
++SetAdminDist("PA", "ospf", 3).
++SetInterface("PA", "PA_I_NAID15").
+
++SetNode("MIID10").
++SetAdminDist("MIID10", "static", 1).
++SetAdminDist("MIID10", "bgp", 2).
++SetAdminDist("MIID10", "ospf", 3).
++SetInterface("MIID10", "MIID10_I_MI").
+
++SetNode("PG").
++SetAdminDist("PG", "static", 1).
++SetAdminDist("PG", "bgp", 2).
++SetAdminDist("PG", "ospf", 3).
++SetInterface("PG", "PG_I_RM").
+
++SetNode("PD").
++SetAdminDist("PD", "static", 1).
++SetAdminDist("PD", "bgp", 2).
++SetAdminDist("PD", "ospf", 3).
++SetInterface("PD", "PD_I_MI").
+
++SetNode("RM").
++SetAdminDist("RM", "static", 1).
++SetAdminDist("RM", "bgp", 2).
++SetAdminDist("RM", "ospf", 3).
++SetInterface("RM", "RM_I_FRA").
++SetInterface("RM", "RM_I_RMID11").
++SetInterface("RM", "RM_I_CA").
++SetInterface("RM", "RM_I_BO").
++SetInterface("RM", "RM_I_MI").
++SetInterface("RM", "RM_I_AQ").
++SetInterface("RM", "RM_I_PG").
++SetInterface("RM", "RM_I_NAID15").
+
++SetNode("PI").
++SetAdminDist("PI", "static", 1).
++SetAdminDist("PI", "bgp", 2).
++SetAdminDist("PI", "ospf", 3).
++SetInterface("PI", "PI_I_BO").
+
++SetNode("BOID13").
++SetAdminDist("BOID13", "static", 1).
++SetAdminDist("BOID13", "bgp", 2).
++SetAdminDist("BOID13", "ospf", 3).
++SetInterface("BOID13", "BOID13_I_BO").
+
++SetNode("FRA").
++SetAdminDist("FRA", "static", 1).
++SetAdminDist("FRA", "bgp", 2).
++SetAdminDist("FRA", "ospf", 3).
++SetInterface("FRA", "FRA_I_RM").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_MI").
+
++SetNode("CA").
++SetAdminDist("CA", "static", 1).
++SetAdminDist("CA", "bgp", 2).
++SetAdminDist("CA", "ospf", 3).
++SetInterface("CA", "CA_I_RM").
+
++SetNode("AQ").
++SetAdminDist("AQ", "static", 1).
++SetAdminDist("AQ", "bgp", 2).
++SetAdminDist("AQ", "ospf", 3).
++SetInterface("AQ", "AQ_I_RM").
+
++SetNode("GE").
++SetAdminDist("GE", "static", 1).
++SetAdminDist("GE", "bgp", 2).
++SetAdminDist("GE", "ospf", 3).
++SetInterface("GE", "GE_I_MI").
+
++SetNode("CS").
++SetAdminDist("CS", "static", 1).
++SetAdminDist("CS", "bgp", 2).
++SetAdminDist("CS", "ospf", 3).
++SetInterface("CS", "CS_I_NAID15").
+
++SetNode("CT").
++SetAdminDist("CT", "static", 1).
++SetAdminDist("CT", "bgp", 2).
++SetAdminDist("CT", "ospf", 3).
++SetInterface("CT", "CT_I_NAID15").
+
++SetNode("MI").
++SetAdminDist("MI", "static", 1).
++SetAdminDist("MI", "bgp", 2).
++SetAdminDist("MI", "ospf", 3).
++SetInterface("MI", "MI_I_USA").
++SetInterface("MI", "MI_I_GEANT").
++SetInterface("MI", "MI_I_BO").
++SetInterface("MI", "MI_I_TS").
++SetInterface("MI", "MI_I_TO").
++SetInterface("MI", "MI_I_GE").
++SetInterface("MI", "MI_I_MIID10").
++SetInterface("MI", "MI_I_PD").
++SetInterface("MI", "MI_I_RM").
++SetInterface("MI", "MI_I_NAID15").
+
++SetLink("BA_I_NAID15", "NAID15_I_BA").
++SetLink("USA_I_MI", "MI_I_USA").
++SetLink("BO_I_BOID13", "BOID13_I_BO").
++SetLink("BO_I_MI", "MI_I_BO").
++SetLink("BO_I_FI", "FI_I_BO").
++SetLink("BO_I_RM", "RM_I_BO").
++SetLink("BO_I_PI", "PI_I_BO").
++SetLink("BO_I_NAID15", "NAID15_I_BO").
++SetLink("NAID15_I_NA", "NA_I_NAID15").
++SetLink("NAID15_I_MI", "MI_I_NAID15").
++SetLink("NAID15_I_PA", "PA_I_NAID15").
++SetLink("NAID15_I_CS", "CS_I_NAID15").
++SetLink("NAID15_I_RM", "RM_I_NAID15").
++SetLink("NAID15_I_CT", "CT_I_NAID15").
++SetLink("RMID11_I_RM", "RM_I_RMID11").
++SetLink("TS_I_MI", "MI_I_TS").
++SetLink("TO_I_MI", "MI_I_TO").
++SetLink("MIID10_I_MI", "MI_I_MIID10").
++SetLink("PG_I_RM", "RM_I_PG").
++SetLink("PD_I_MI", "MI_I_PD").
++SetLink("RM_I_FRA", "FRA_I_RM").
++SetLink("RM_I_CA", "CA_I_RM").
++SetLink("RM_I_MI", "MI_I_RM").
++SetLink("RM_I_AQ", "AQ_I_RM").
++SetLink("GEANT_I_MI", "MI_I_GEANT").
++SetLink("GE_I_MI", "MI_I_GE").
+
+
++SetNetwork("TO", "N_TO").
++SetNetwork("FI", "N_FI").
++SetNetwork("RMID11", "N_RMID11").
++SetNetwork("PG", "N_PG").
++SetNetwork("PA", "N_PA").
++SetNetwork("MIID10", "N_MIID10").
++SetNetwork("CS", "N_CS").
++SetNetwork("BOID13", "N_BOID13").
++SetNetwork("PI", "N_PI").
++SetNetwork("PD", "N_PD").
++SetNetwork("GEANT", "N_GEANT").
++SetNetwork("NAID15", "N_NAID15").
++SetNetwork("NA", "N_NA").
++SetNetwork("USA", "N_USA").
++SetNetwork("GE", "N_GE").

@@ -1,0 +1,8 @@
+
++Fwd("N_UTAH", "SRI", "UTAH", "ospf").
++Fwd("NBGP_UTAH", "SRI", "UTAH", "bgp").
++Fwd("N_UTAH", "USCB", "UCLA", "ospf").
++Fwd("NBGP_UTAH", "USCB", "UCLA", "bgp").
++Fwd("N_UTAH", "UCLA", "SRI", "ospf").
++Fwd("NBGP_UTAH", "UCLA", "SRI", "bgp").
+

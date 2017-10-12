@@ -1,0 +1,14 @@
+
++Fwd("N_NodeID1", "Toronto", "Buffalo", "ospf").
++Fwd("N_NodeID1", "Buffalo", "Albany", "ospf").
++Fwd("N_NodeID1", "Albany", "NewTTYork", "ospf").
++Fwd("N_NodeID1", "NewTTYork", "Boston", "ospf").
++Fwd("N_NodeID1", "Boston", "NodeID4", "ospf").
++Fwd("N_NodeID1", "NodeID4", "NodeID1", "ospf").
++Fwd("N_NodeID1", "Edmundston", "Moncton", "ospf").
++Fwd("N_NodeID1", "Moncton", "Halifax", "ospf").
++Fwd("N_NodeID1", "Halifax", "NodeID4", "ospf").
++Fwd("N_NodeID1", "NodeID2", "Halifax", "ospf").
++Fwd("N_NodeID1", "Quebec", "Edmundston", "ospf").
++Fwd("N_NodeID1", "Montreal", "Albany", "ospf").
+

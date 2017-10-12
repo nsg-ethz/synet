@@ -1,0 +1,16 @@
+
++Fwd("N_Birmingham", "Manchester", "Birmingham", "static").
++Fwd("N_Birmingham", "Liverpool", "Manchester", "static").
++Fwd("N_Birmingham", "Peterborough", "Cambridge", "static").
++Fwd("N_Birmingham", "Cambridge", "London", "static").
++Fwd("N_Birmingham", "London", "Reading", "static").
++Fwd("N_Birmingham", "Reading", "Bristol", "static").
++Fwd("N_Birmingham", "Bristol", "Birmingham", "static").
++Fwd("N_Birmingham", "Leicester", "Peterborough", "static").
++Fwd("N_Birmingham", "Sheffield", "Leeds", "static").
++Fwd("N_Birmingham", "Leeds", "Bracewell", "static").
++Fwd("N_Birmingham", "Bracewell", "Southport", "static").
++Fwd("N_Birmingham", "Southport", "Liverpool", "static").
++Fwd("N_Birmingham", "NodeID2", "Reading", "static").
++Fwd("N_Birmingham", "NodeID3", "London", "static").
+

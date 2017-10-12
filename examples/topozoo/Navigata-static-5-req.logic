@@ -1,0 +1,66 @@
+
++Fwd("N_Calgary", "Toronto", "Regina", "static").
++Fwd("N_Calgary", "Regina", "Vancouver", "static").
++Fwd("N_Calgary", "Vancouver", "Calgary", "static").
++Fwd("N_Calgary", "LosTTAngeles", "Vancouver", "static").
++Fwd("N_Calgary", "NewTTYork", "Toronto", "static").
++Fwd("N_Calgary", "Edmonton", "Calgary", "static").
++Fwd("N_Calgary", "Saskatoon", "Calgary", "static").
++Fwd("N_Calgary", "Victoria", "Vancouver", "static").
++Fwd("N_Calgary", "Winnipeg", "Saskatoon", "static").
++Fwd("N_Calgary", "Halifax", "Toronto", "static").
++Fwd("N_Calgary", "Seattle", "Vancouver", "static").
++Fwd("N_Calgary", "Montreal", "Toronto", "static").
+
++Fwd("N_Winnipeg", "Toronto", "Regina", "static").
++Fwd("N_Winnipeg", "Regina", "Winnipeg", "static").
++Fwd("N_Winnipeg", "LosTTAngeles", "Vancouver", "static").
++Fwd("N_Winnipeg", "Vancouver", "Calgary", "static").
++Fwd("N_Winnipeg", "Calgary", "Regina", "static").
++Fwd("N_Winnipeg", "NewTTYork", "Toronto", "static").
++Fwd("N_Winnipeg", "Edmonton", "Calgary", "static").
++Fwd("N_Winnipeg", "Saskatoon", "Winnipeg", "static").
++Fwd("N_Winnipeg", "Victoria", "Vancouver", "static").
++Fwd("N_Winnipeg", "Halifax", "Toronto", "static").
++Fwd("N_Winnipeg", "Seattle", "Vancouver", "static").
++Fwd("N_Winnipeg", "Montreal", "Toronto", "static").
+
++Fwd("N_Toronto", "Regina", "Vancouver", "static").
++Fwd("N_Toronto", "Vancouver", "Saskatoon", "static").
++Fwd("N_Toronto", "Saskatoon", "Toronto", "static").
++Fwd("N_Toronto", "LosTTAngeles", "Vancouver", "static").
++Fwd("N_Toronto", "NewTTYork", "Toronto", "static").
++Fwd("N_Toronto", "Edmonton", "Calgary", "static").
++Fwd("N_Toronto", "Calgary", "Saskatoon", "static").
++Fwd("N_Toronto", "Victoria", "Vancouver", "static").
++Fwd("N_Toronto", "Winnipeg", "Saskatoon", "static").
++Fwd("N_Toronto", "Halifax", "Toronto", "static").
++Fwd("N_Toronto", "Seattle", "Vancouver", "static").
++Fwd("N_Toronto", "Montreal", "Toronto", "static").
+
++Fwd("N_Regina", "Toronto", "Regina", "static").
++Fwd("N_Regina", "LosTTAngeles", "Vancouver", "static").
++Fwd("N_Regina", "Vancouver", "Calgary", "static").
++Fwd("N_Regina", "Calgary", "Regina", "static").
++Fwd("N_Regina", "NewTTYork", "Toronto", "static").
++Fwd("N_Regina", "Edmonton", "Calgary", "static").
++Fwd("N_Regina", "Saskatoon", "Toronto", "static").
++Fwd("N_Regina", "Victoria", "Vancouver", "static").
++Fwd("N_Regina", "Winnipeg", "Regina", "static").
++Fwd("N_Regina", "Halifax", "Toronto", "static").
++Fwd("N_Regina", "Seattle", "Vancouver", "static").
++Fwd("N_Regina", "Montreal", "Toronto", "static").
+
++Fwd("N_Seattle", "Toronto", "Regina", "static").
++Fwd("N_Seattle", "Regina", "Vancouver", "static").
++Fwd("N_Seattle", "Vancouver", "Seattle", "static").
++Fwd("N_Seattle", "LosTTAngeles", "Vancouver", "static").
++Fwd("N_Seattle", "NewTTYork", "Toronto", "static").
++Fwd("N_Seattle", "Edmonton", "Calgary", "static").
++Fwd("N_Seattle", "Calgary", "Vancouver", "static").
++Fwd("N_Seattle", "Saskatoon", "Vancouver", "static").
++Fwd("N_Seattle", "Victoria", "Vancouver", "static").
++Fwd("N_Seattle", "Winnipeg", "Regina", "static").
++Fwd("N_Seattle", "Halifax", "Toronto", "static").
++Fwd("N_Seattle", "Montreal", "Toronto", "static").
+

@@ -1,0 +1,11 @@
+
++Fwd("N_Liberec", "Ostrava", "Brno", "static").
++Fwd("N_Liberec", "Brno", "Praha", "static").
++Fwd("N_Liberec", "Praha", "Liberec", "static").
++Fwd("N_Liberec", "Ebone", "Praha", "static").
++Fwd("N_Liberec", "Pardubice", "Praha", "static").
++Fwd("N_Liberec", "Plzen", "Praha", "static").
++Fwd("N_Liberec", "HradecTTKralove", "Praha", "static").
++Fwd("N_Liberec", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Liberec", "Olomouc", "Brno", "static").
+

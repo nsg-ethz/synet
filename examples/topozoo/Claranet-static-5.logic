@@ -1,0 +1,136 @@
++SetNode("Porto").
++SetAdminDist("Porto", "static", 1).
++SetAdminDist("Porto", "bgp", 2).
++SetAdminDist("Porto", "ospf", 3).
++SetInterface("Porto", "Porto_I_Lisbon").
+
++SetNode("Eindhoven").
++SetAdminDist("Eindhoven", "static", 1).
++SetAdminDist("Eindhoven", "bgp", 2).
++SetAdminDist("Eindhoven", "ospf", 3).
++SetInterface("Eindhoven", "Eindhoven_I_Amsterdam").
+
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_London").
+
++SetNode("Manchester").
++SetAdminDist("Manchester", "static", 1).
++SetAdminDist("Manchester", "bgp", 2).
++SetAdminDist("Manchester", "ospf", 3).
++SetInterface("Manchester", "Manchester_I_London").
+
++SetNode("Paris").
++SetAdminDist("Paris", "static", 1).
++SetAdminDist("Paris", "bgp", 2).
++SetAdminDist("Paris", "ospf", 3).
++SetInterface("Paris", "Paris_I_Rennes").
++SetInterface("Paris", "Paris_I_Frankfurt").
++SetInterface("Paris", "Paris_I_London").
++SetInterface("Paris", "Paris_I_Barcelona").
+
++SetNode("Madrid").
++SetAdminDist("Madrid", "static", 1).
++SetAdminDist("Madrid", "bgp", 2).
++SetAdminDist("Madrid", "ospf", 3).
++SetInterface("Madrid", "Madrid_I_Barcelona").
++SetInterface("Madrid", "Madrid_I_Lisbon").
+
++SetNode("Faro").
++SetAdminDist("Faro", "static", 1).
++SetAdminDist("Faro", "bgp", 2).
++SetAdminDist("Faro", "ospf", 3).
++SetInterface("Faro", "Faro_I_Lisbon").
+
++SetNode("Munich").
++SetAdminDist("Munich", "static", 1).
++SetAdminDist("Munich", "bgp", 2).
++SetAdminDist("Munich", "ospf", 3).
++SetInterface("Munich", "Munich_I_Berlin").
++SetInterface("Munich", "Munich_I_Frankfurt").
+
++SetNode("Berlin").
++SetAdminDist("Berlin", "static", 1).
++SetAdminDist("Berlin", "bgp", 2).
++SetAdminDist("Berlin", "ospf", 3).
++SetInterface("Berlin", "Berlin_I_Frankfurt").
++SetInterface("Berlin", "Berlin_I_Munich").
+
++SetNode("Amsterdam").
++SetAdminDist("Amsterdam", "static", 1).
++SetAdminDist("Amsterdam", "bgp", 2).
++SetAdminDist("Amsterdam", "ospf", 3).
++SetInterface("Amsterdam", "Amsterdam_I_London").
++SetInterface("Amsterdam", "Amsterdam_I_Eindhoven").
++SetInterface("Amsterdam", "Amsterdam_I_Frankfurt").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_NewTTYork").
++SetInterface("London", "London_I_Paris").
++SetInterface("London", "London_I_Manchester").
++SetInterface("London", "London_I_Lisbon").
++SetInterface("London", "London_I_Amsterdam").
++SetInterface("London", "London_I_Frankfurt").
+
++SetNode("Barcelona").
++SetAdminDist("Barcelona", "static", 1).
++SetAdminDist("Barcelona", "bgp", 2).
++SetAdminDist("Barcelona", "ospf", 3).
++SetInterface("Barcelona", "Barcelona_I_Paris").
++SetInterface("Barcelona", "Barcelona_I_Madrid").
+
++SetNode("Lisbon").
++SetAdminDist("Lisbon", "static", 1).
++SetAdminDist("Lisbon", "bgp", 2).
++SetAdminDist("Lisbon", "ospf", 3).
++SetInterface("Lisbon", "Lisbon_I_Madrid").
++SetInterface("Lisbon", "Lisbon_I_Faro").
++SetInterface("Lisbon", "Lisbon_I_London").
++SetInterface("Lisbon", "Lisbon_I_Porto").
+
++SetNode("Rennes").
++SetAdminDist("Rennes", "static", 1).
++SetAdminDist("Rennes", "bgp", 2).
++SetAdminDist("Rennes", "ospf", 3).
++SetInterface("Rennes", "Rennes_I_Paris").
+
++SetNode("Frankfurt").
++SetAdminDist("Frankfurt", "static", 1).
++SetAdminDist("Frankfurt", "bgp", 2).
++SetAdminDist("Frankfurt", "ospf", 3).
++SetInterface("Frankfurt", "Frankfurt_I_Paris").
++SetInterface("Frankfurt", "Frankfurt_I_Amsterdam").
++SetInterface("Frankfurt", "Frankfurt_I_Berlin").
++SetInterface("Frankfurt", "Frankfurt_I_London").
++SetInterface("Frankfurt", "Frankfurt_I_Munich").
+
++SetLink("Porto_I_Lisbon", "Lisbon_I_Porto").
++SetLink("Eindhoven_I_Amsterdam", "Amsterdam_I_Eindhoven").
++SetLink("NewTTYork_I_London", "London_I_NewTTYork").
++SetLink("Manchester_I_London", "London_I_Manchester").
++SetLink("Paris_I_Rennes", "Rennes_I_Paris").
++SetLink("Paris_I_Frankfurt", "Frankfurt_I_Paris").
++SetLink("Paris_I_London", "London_I_Paris").
++SetLink("Paris_I_Barcelona", "Barcelona_I_Paris").
++SetLink("Madrid_I_Barcelona", "Barcelona_I_Madrid").
++SetLink("Madrid_I_Lisbon", "Lisbon_I_Madrid").
++SetLink("Faro_I_Lisbon", "Lisbon_I_Faro").
++SetLink("Munich_I_Berlin", "Berlin_I_Munich").
++SetLink("Munich_I_Frankfurt", "Frankfurt_I_Munich").
++SetLink("Berlin_I_Frankfurt", "Frankfurt_I_Berlin").
++SetLink("Amsterdam_I_London", "London_I_Amsterdam").
++SetLink("Amsterdam_I_Frankfurt", "Frankfurt_I_Amsterdam").
++SetLink("London_I_Lisbon", "Lisbon_I_London").
++SetLink("London_I_Frankfurt", "Frankfurt_I_London").
+
+
++SetNetwork("Faro", "N_Faro").
++SetNetwork("London", "N_London").
++SetNetwork("Porto", "N_Porto").
++SetNetwork("Manchester", "N_Manchester").
++SetNetwork("Lisbon", "N_Lisbon").

@@ -1,0 +1,18 @@
+
++Fwd("N_BBN", "RAND", "BBN", "ospf").
++Fwd("NBGP_BBN", "RAND", "BBN", "bgp").
++Fwd("N_BBN", "HARVARD", "BBN", "ospf").
++Fwd("NBGP_BBN", "HARVARD", "BBN", "bgp").
++Fwd("N_BBN", "SRI", "UCLA", "ospf").
++Fwd("NBGP_BBN", "SRI", "UCLA", "bgp").
++Fwd("N_BBN", "UCLA", "RAND", "ospf").
++Fwd("NBGP_BBN", "UCLA", "RAND", "bgp").
++Fwd("N_BBN", "UTAH", "MIT", "ospf").
++Fwd("NBGP_BBN", "UTAH", "MIT", "bgp").
++Fwd("N_BBN", "MIT", "BBN", "ospf").
++Fwd("NBGP_BBN", "MIT", "BBN", "bgp").
++Fwd("N_BBN", "UCSB", "UCLA", "ospf").
++Fwd("NBGP_BBN", "UCSB", "UCLA", "bgp").
++Fwd("N_BBN", "SDC", "RAND", "ospf").
++Fwd("NBGP_BBN", "SDC", "RAND", "bgp").
+

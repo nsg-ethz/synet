@@ -1,0 +1,12 @@
+
++Fwd("N_Niksic", "Kotor", "Podgorica", "ospf").
++Fwd("NBGP_Niksic", "Kotor", "Podgorica", "bgp").
++Fwd("N_Niksic", "Podgorica", "Niksic", "ospf").
++Fwd("NBGP_Niksic", "Podgorica", "Niksic", "bgp").
++Fwd("N_Niksic", "Njegusi", "Podgorica", "ospf").
++Fwd("NBGP_Niksic", "Njegusi", "Podgorica", "bgp").
++Fwd("N_Niksic", "HercegTTNovi", "Podgorica", "ospf").
++Fwd("NBGP_Niksic", "HercegTTNovi", "Podgorica", "bgp").
++Fwd("N_Niksic", "BijeloTTPolje", "Podgorica", "ospf").
++Fwd("NBGP_Niksic", "BijeloTTPolje", "Podgorica", "bgp").
+

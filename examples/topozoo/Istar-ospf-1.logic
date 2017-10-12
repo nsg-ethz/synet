@@ -1,0 +1,187 @@
++SetNode("internetMCITTT3ID11").
++SetAdminDist("internetMCITTT3ID11", "static", 1).
++SetAdminDist("internetMCITTT3ID11", "bgp", 2).
++SetAdminDist("internetMCITTT3ID11", "ospf", 3).
++SetInterface("internetMCITTT3ID11", "internetMCITTT3ID11_I_Vancouver").
+
++SetNode("Winnipeg").
++SetAdminDist("Winnipeg", "static", 1).
++SetAdminDist("Winnipeg", "bgp", 2).
++SetAdminDist("Winnipeg", "ospf", 3).
++SetInterface("Winnipeg", "Winnipeg_I_Ottawa").
+
++SetNode("Vancouver").
++SetAdminDist("Vancouver", "static", 1).
++SetAdminDist("Vancouver", "bgp", 2).
++SetAdminDist("Vancouver", "ospf", 3).
++SetInterface("Vancouver", "Vancouver_I_Calgary").
++SetInterface("Vancouver", "Vancouver_I_internetMCITTT3ID11").
++SetInterface("Vancouver", "Vancouver_I_ANSTTCO_RETTT1ID16").
++SetInterface("Vancouver", "Vancouver_I_Ottawa").
++SetInterface("Vancouver", "Vancouver_I_Victoria").
+
++SetNode("Sydney").
++SetAdminDist("Sydney", "static", 1).
++SetAdminDist("Sydney", "bgp", 2).
++SetAdminDist("Sydney", "ospf", 3).
++SetInterface("Sydney", "Sydney_I_Halifax").
+
++SetNode("Calgary").
++SetAdminDist("Calgary", "static", 1).
++SetAdminDist("Calgary", "bgp", 2).
++SetAdminDist("Calgary", "ospf", 3).
++SetInterface("Calgary", "Calgary_I_Lethbridge").
++SetInterface("Calgary", "Calgary_I_Edmonton").
++SetInterface("Calgary", "Calgary_I_Vancouver").
+
++SetNode("Sherbrooke").
++SetAdminDist("Sherbrooke", "static", 1).
++SetAdminDist("Sherbrooke", "bgp", 2).
++SetAdminDist("Sherbrooke", "ospf", 3).
++SetInterface("Sherbrooke", "Sherbrooke_I_Montreal").
+
++SetNode("internetMCITTT3").
++SetAdminDist("internetMCITTT3", "static", 1).
++SetAdminDist("internetMCITTT3", "bgp", 2).
++SetAdminDist("internetMCITTT3", "ospf", 3).
++SetInterface("internetMCITTT3", "internetMCITTT3_I_Toronto").
+
++SetNode("Victoria").
++SetAdminDist("Victoria", "static", 1).
++SetAdminDist("Victoria", "bgp", 2).
++SetAdminDist("Victoria", "ospf", 3).
++SetInterface("Victoria", "Victoria_I_Vancouver").
+
++SetNode("Hamilton").
++SetAdminDist("Hamilton", "static", 1).
++SetAdminDist("Hamilton", "bgp", 2).
++SetAdminDist("Hamilton", "ospf", 3).
++SetInterface("Hamilton", "Hamilton_I_Toronto").
+
++SetNode("ANSTTCO_RETTT1ID16").
++SetAdminDist("ANSTTCO_RETTT1ID16", "static", 1).
++SetAdminDist("ANSTTCO_RETTT1ID16", "bgp", 2).
++SetAdminDist("ANSTTCO_RETTT1ID16", "ospf", 3).
++SetInterface("ANSTTCO_RETTT1ID16", "ANSTTCO_RETTT1ID16_I_Vancouver").
+
++SetNode("Lethbridge").
++SetAdminDist("Lethbridge", "static", 1).
++SetAdminDist("Lethbridge", "bgp", 2).
++SetAdminDist("Lethbridge", "ospf", 3).
++SetInterface("Lethbridge", "Lethbridge_I_Calgary").
+
++SetNode("ANSTTCO_RETTT1").
++SetAdminDist("ANSTTCO_RETTT1", "static", 1).
++SetAdminDist("ANSTTCO_RETTT1", "bgp", 2).
++SetAdminDist("ANSTTCO_RETTT1", "ospf", 3).
++SetInterface("ANSTTCO_RETTT1", "ANSTTCO_RETTT1_I_Toronto").
+
++SetNode("SaintTTJohn").
++SetAdminDist("SaintTTJohn", "static", 1).
++SetAdminDist("SaintTTJohn", "bgp", 2).
++SetAdminDist("SaintTTJohn", "ospf", 3).
++SetInterface("SaintTTJohn", "SaintTTJohn_I_Moncton").
+
++SetNode("Toronto").
++SetAdminDist("Toronto", "static", 1).
++SetAdminDist("Toronto", "bgp", 2).
++SetAdminDist("Toronto", "ospf", 3).
++SetInterface("Toronto", "Toronto_I_Hamilton").
++SetInterface("Toronto", "Toronto_I_internetMCITTT3").
++SetInterface("Toronto", "Toronto_I_Ottawa").
++SetInterface("Toronto", "Toronto_I_London").
++SetInterface("Toronto", "Toronto_I_ANSTTCO_RETTT1").
++SetInterface("Toronto", "Toronto_I_Kitchener").
++SetInterface("Toronto", "Toronto_I_Montreal").
+
++SetNode("Moncton").
++SetAdminDist("Moncton", "static", 1).
++SetAdminDist("Moncton", "bgp", 2).
++SetAdminDist("Moncton", "ospf", 3).
++SetInterface("Moncton", "Moncton_I_Halifax").
++SetInterface("Moncton", "Moncton_I_SaintTTJohn").
++SetInterface("Moncton", "Moncton_I_Montreal").
+
++SetNode("Yarmouth").
++SetAdminDist("Yarmouth", "static", 1).
++SetAdminDist("Yarmouth", "bgp", 2).
++SetAdminDist("Yarmouth", "ospf", 3).
++SetInterface("Yarmouth", "Yarmouth_I_Halifax").
+
++SetNode("Ottawa").
++SetAdminDist("Ottawa", "static", 1).
++SetAdminDist("Ottawa", "bgp", 2).
++SetAdminDist("Ottawa", "ospf", 3).
++SetInterface("Ottawa", "Ottawa_I_Toronto").
++SetInterface("Ottawa", "Ottawa_I_Winnipeg").
++SetInterface("Ottawa", "Ottawa_I_Vancouver").
++SetInterface("Ottawa", "Ottawa_I_Montreal").
+
++SetNode("Kitchener").
++SetAdminDist("Kitchener", "static", 1).
++SetAdminDist("Kitchener", "bgp", 2).
++SetAdminDist("Kitchener", "ospf", 3).
++SetInterface("Kitchener", "Kitchener_I_Toronto").
+
++SetNode("Montreal").
++SetAdminDist("Montreal", "static", 1).
++SetAdminDist("Montreal", "bgp", 2).
++SetAdminDist("Montreal", "ospf", 3).
++SetInterface("Montreal", "Montreal_I_Toronto").
++SetInterface("Montreal", "Montreal_I_Sherbrooke").
++SetInterface("Montreal", "Montreal_I_Quebec").
++SetInterface("Montreal", "Montreal_I_Ottawa").
++SetInterface("Montreal", "Montreal_I_Moncton").
+
++SetNode("Edmonton").
++SetAdminDist("Edmonton", "static", 1).
++SetAdminDist("Edmonton", "bgp", 2).
++SetAdminDist("Edmonton", "ospf", 3).
++SetInterface("Edmonton", "Edmonton_I_Calgary").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_Toronto").
+
++SetNode("Quebec").
++SetAdminDist("Quebec", "static", 1).
++SetAdminDist("Quebec", "bgp", 2).
++SetAdminDist("Quebec", "ospf", 3).
++SetInterface("Quebec", "Quebec_I_Montreal").
+
++SetNode("Halifax").
++SetAdminDist("Halifax", "static", 1).
++SetAdminDist("Halifax", "bgp", 2).
++SetAdminDist("Halifax", "ospf", 3).
++SetInterface("Halifax", "Halifax_I_Yarmouth").
++SetInterface("Halifax", "Halifax_I_Sydney").
++SetInterface("Halifax", "Halifax_I_Moncton").
+
++SetLink("internetMCITTT3ID11_I_Vancouver", "Vancouver_I_internetMCITTT3ID11").
++SetLink("Winnipeg_I_Ottawa", "Ottawa_I_Winnipeg").
++SetLink("Vancouver_I_Calgary", "Calgary_I_Vancouver").
++SetLink("Vancouver_I_ANSTTCO_RETTT1ID16", "ANSTTCO_RETTT1ID16_I_Vancouver").
++SetLink("Vancouver_I_Ottawa", "Ottawa_I_Vancouver").
++SetLink("Vancouver_I_Victoria", "Victoria_I_Vancouver").
++SetLink("Sydney_I_Halifax", "Halifax_I_Sydney").
++SetLink("Calgary_I_Lethbridge", "Lethbridge_I_Calgary").
++SetLink("Calgary_I_Edmonton", "Edmonton_I_Calgary").
++SetLink("Sherbrooke_I_Montreal", "Montreal_I_Sherbrooke").
++SetLink("internetMCITTT3_I_Toronto", "Toronto_I_internetMCITTT3").
++SetLink("Hamilton_I_Toronto", "Toronto_I_Hamilton").
++SetLink("ANSTTCO_RETTT1_I_Toronto", "Toronto_I_ANSTTCO_RETTT1").
++SetLink("SaintTTJohn_I_Moncton", "Moncton_I_SaintTTJohn").
++SetLink("Toronto_I_Ottawa", "Ottawa_I_Toronto").
++SetLink("Toronto_I_London", "London_I_Toronto").
++SetLink("Toronto_I_Kitchener", "Kitchener_I_Toronto").
++SetLink("Toronto_I_Montreal", "Montreal_I_Toronto").
++SetLink("Moncton_I_Halifax", "Halifax_I_Moncton").
++SetLink("Moncton_I_Montreal", "Montreal_I_Moncton").
++SetLink("Yarmouth_I_Halifax", "Halifax_I_Yarmouth").
++SetLink("Ottawa_I_Montreal", "Montreal_I_Ottawa").
++SetLink("Montreal_I_Quebec", "Quebec_I_Montreal").
+
+
++SetNetwork("Winnipeg", "N_Winnipeg").

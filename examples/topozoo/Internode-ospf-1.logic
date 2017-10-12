@@ -1,0 +1,564 @@
++SetNode("Starhub").
++SetAdminDist("Starhub", "static", 1).
++SetAdminDist("Starhub", "bgp", 2).
++SetAdminDist("Starhub", "ospf", 3).
++SetInterface("Starhub", "Starhub_I_sin1").
+
++SetNode("AARNetID55").
++SetAdminDist("AARNetID55", "static", 1).
++SetAdminDist("AARNetID55", "bgp", 2).
++SetAdminDist("AARNetID55", "ospf", 3).
++SetInterface("AARNetID55", "AARNetID55_I_adl6").
+
++SetNode("AARNetID53").
++SetAdminDist("AARNetID53", "static", 1).
++SetAdminDist("AARNetID53", "bgp", 2).
++SetAdminDist("AARNetID53", "ospf", 3).
++SetInterface("AARNetID53", "AARNetID53_I_cbr1").
+
++SetNode("SprintID14").
++SetAdminDist("SprintID14", "static", 1).
++SetAdminDist("SprintID14", "bgp", 2).
++SetAdminDist("SprintID14", "ospf", 3).
++SetInterface("SprintID14", "SprintID14_I_sjc2").
+
++SetNode("EquinixID9").
++SetAdminDist("EquinixID9", "static", 1).
++SetAdminDist("EquinixID9", "bgp", 2).
++SetAdminDist("EquinixID9", "ospf", 3).
++SetInterface("EquinixID9", "EquinixID9_I_lax1").
+
++SetNode("GlobalTTCrossing").
++SetAdminDist("GlobalTTCrossing", "static", 1).
++SetAdminDist("GlobalTTCrossing", "bgp", 2).
++SetAdminDist("GlobalTTCrossing", "ospf", 3).
++SetInterface("GlobalTTCrossing", "GlobalTTCrossing_I_lax1").
+
++SetNode("PIPETTNetworksID51").
++SetAdminDist("PIPETTNetworksID51", "static", 1).
++SetAdminDist("PIPETTNetworksID51", "bgp", 2).
++SetAdminDist("PIPETTNetworksID51", "ospf", 3).
++SetInterface("PIPETTNetworksID51", "PIPETTNetworksID51_I_syd7").
+
++SetNode("Any2").
++SetAdminDist("Any2", "static", 1).
++SetAdminDist("Any2", "bgp", 2).
++SetAdminDist("Any2", "ospf", 3).
++SetInterface("Any2", "Any2_I_lax1").
+
++SetNode("NTTID43").
++SetAdminDist("NTTID43", "static", 1).
++SetAdminDist("NTTID43", "bgp", 2).
++SetAdminDist("NTTID43", "ospf", 3).
++SetInterface("NTTID43", "NTTID43_I_sjc2").
+
++SetNode("NTTID26").
++SetAdminDist("NTTID26", "static", 1).
++SetAdminDist("NTTID26", "bgp", 2).
++SetAdminDist("NTTID26", "ospf", 3).
++SetInterface("NTTID26", "NTTID26_I_lax1").
+
++SetNode("sin1").
++SetAdminDist("sin1", "static", 1).
++SetAdminDist("sin1", "bgp", 2).
++SetAdminDist("sin1", "ospf", 3).
++SetInterface("sin1", "sin1_I_lon1").
++SetInterface("sin1", "sin1_I_EquinixID38").
++SetInterface("sin1", "sin1_I_per1").
++SetInterface("sin1", "sin1_I_Starhub").
++SetInterface("sin1", "sin1_I_hkg1").
+
++SetNode("PAIX").
++SetAdminDist("PAIX", "static", 1).
++SetAdminDist("PAIX", "bgp", 2).
++SetAdminDist("PAIX", "ospf", 3).
++SetInterface("PAIX", "PAIX_I_sjc2").
+
++SetNode("UniversityTTofTTAdelaide").
++SetAdminDist("UniversityTTofTTAdelaide", "static", 1).
++SetAdminDist("UniversityTTofTTAdelaide", "bgp", 2).
++SetAdminDist("UniversityTTofTTAdelaide", "ospf", 3).
++SetInterface("UniversityTTofTTAdelaide", "UniversityTTofTTAdelaide_I_adl2").
+
++SetNode("hkg1").
++SetAdminDist("hkg1", "static", 1).
++SetAdminDist("hkg1", "bgp", 2).
++SetAdminDist("hkg1", "ospf", 3).
++SetInterface("hkg1", "hkg1_I_NTTID37").
++SetInterface("hkg1", "hkg1_I_EquinixID39").
++SetInterface("hkg1", "hkg1_I_HKIX").
++SetInterface("hkg1", "hkg1_I_syd6").
++SetInterface("hkg1", "hkg1_I_sin1").
+
++SetNode("AMSTTIX").
++SetAdminDist("AMSTTIX", "static", 1).
++SetAdminDist("AMSTTIX", "bgp", 2).
++SetAdminDist("AMSTTIX", "ospf", 3).
++SetInterface("AMSTTIX", "AMSTTIX_I_lon1").
+
++SetNode("OptusID22").
++SetAdminDist("OptusID22", "static", 1).
++SetAdminDist("OptusID22", "bgp", 2).
++SetAdminDist("OptusID22", "ospf", 3).
++SetInterface("OptusID22", "OptusID22_I_bne1").
+
++SetNode("cbr1").
++SetAdminDist("cbr1", "static", 1).
++SetAdminDist("cbr1", "bgp", 2).
++SetAdminDist("cbr1", "ospf", 3).
++SetInterface("cbr1", "cbr1_I_mel6").
++SetInterface("cbr1", "cbr1_I_syd7").
++SetInterface("cbr1", "cbr1_I_AARNetID53").
++SetInterface("cbr1", "cbr1_I_TransIX").
++SetInterface("cbr1", "cbr1_I_PIPETTNetworks").
+
++SetNode("nrt1").
++SetAdminDist("nrt1", "static", 1).
++SetAdminDist("nrt1", "bgp", 2).
++SetAdminDist("nrt1", "ospf", 3).
++SetInterface("nrt1", "nrt1_I_sjc2").
++SetInterface("nrt1", "nrt1_I_Equinix").
++SetInterface("nrt1", "nrt1_I_NTT").
++SetInterface("nrt1", "nrt1_I_syd6").
++SetInterface("nrt1", "nrt1_I_JPIX").
+
++SetNode("EquinixID34").
++SetAdminDist("EquinixID34", "static", 1).
++SetAdminDist("EquinixID34", "bgp", 2).
++SetAdminDist("EquinixID34", "ospf", 3).
++SetInterface("EquinixID34", "EquinixID34_I_iad1").
+
++SetNode("EquinixID39").
++SetAdminDist("EquinixID39", "static", 1).
++SetAdminDist("EquinixID39", "bgp", 2).
++SetAdminDist("EquinixID39", "ospf", 3).
++SetInterface("EquinixID39", "EquinixID39_I_hkg1").
+
++SetNode("AARNet").
++SetAdminDist("AARNet", "static", 1).
++SetAdminDist("AARNet", "bgp", 2).
++SetAdminDist("AARNet", "ospf", 3).
++SetInterface("AARNet", "AARNet_I_per1").
+
++SetNode("LevelTT3").
++SetAdminDist("LevelTT3", "static", 1).
++SetAdminDist("LevelTT3", "bgp", 2).
++SetAdminDist("LevelTT3", "ospf", 3).
++SetInterface("LevelTT3", "LevelTT3_I_lax1").
+
++SetNode("EquinixID38").
++SetAdminDist("EquinixID38", "static", 1).
++SetAdminDist("EquinixID38", "bgp", 2).
++SetAdminDist("EquinixID38", "ospf", 3).
++SetInterface("EquinixID38", "EquinixID38_I_sin1").
+
++SetNode("GlobalTTCrossingID29").
++SetAdminDist("GlobalTTCrossingID29", "static", 1).
++SetAdminDist("GlobalTTCrossingID29", "bgp", 2).
++SetAdminDist("GlobalTTCrossingID29", "ospf", 3).
++SetInterface("GlobalTTCrossingID29", "GlobalTTCrossingID29_I_sjc2").
+
++SetNode("GoogleID36").
++SetAdminDist("GoogleID36", "static", 1).
++SetAdminDist("GoogleID36", "bgp", 2).
++SetAdminDist("GoogleID36", "ospf", 3).
++SetInterface("GoogleID36", "GoogleID36_I_lax1").
+
++SetNode("AARNetID50").
++SetAdminDist("AARNetID50", "static", 1).
++SetAdminDist("AARNetID50", "bgp", 2).
++SetAdminDist("AARNetID50", "ospf", 3).
++SetInterface("AARNetID50", "AARNetID50_I_mel4").
+
++SetNode("JPIX").
++SetAdminDist("JPIX", "static", 1).
++SetAdminDist("JPIX", "bgp", 2).
++SetAdminDist("JPIX", "ospf", 3).
++SetInterface("JPIX", "JPIX_I_nrt1").
+
++SetNode("bne4").
++SetAdminDist("bne4", "static", 1).
++SetAdminDist("bne4", "bgp", 2).
++SetAdminDist("bne4", "ospf", 3).
++SetInterface("bne4", "bne4_I_bne1").
++SetInterface("bne4", "bne4_I_syd6").
+
++SetNode("EquinixID15").
++SetAdminDist("EquinixID15", "static", 1).
++SetAdminDist("EquinixID15", "bgp", 2).
++SetAdminDist("EquinixID15", "ospf", 3).
++SetInterface("EquinixID15", "EquinixID15_I_sjc2").
+
++SetNode("hba1").
++SetAdminDist("hba1", "static", 1).
++SetAdminDist("hba1", "bgp", 2).
++SetAdminDist("hba1", "ospf", 3).
++SetInterface("hba1", "hba1_I_mel6").
++SetInterface("hba1", "hba1_I_PIPETTNetworksID49").
+
++SetNode("Astraweb").
++SetAdminDist("Astraweb", "static", 1).
++SetAdminDist("Astraweb", "bgp", 2).
++SetAdminDist("Astraweb", "ospf", 3).
++SetInterface("Astraweb", "Astraweb_I_sjc2").
+
++SetNode("LINXTT1").
++SetAdminDist("LINXTT1", "static", 1).
++SetAdminDist("LINXTT1", "bgp", 2).
++SetAdminDist("LINXTT1", "ospf", 3).
++SetInterface("LINXTT1", "LINXTT1_I_lon1").
+
++SetNode("GoogleID13").
++SetAdminDist("GoogleID13", "static", 1).
++SetAdminDist("GoogleID13", "bgp", 2).
++SetAdminDist("GoogleID13", "ospf", 3).
++SetInterface("GoogleID13", "GoogleID13_I_sjc2").
+
++SetNode("PIPETTNetworksID63").
++SetAdminDist("PIPETTNetworksID63", "static", 1).
++SetAdminDist("PIPETTNetworksID63", "bgp", 2).
++SetAdminDist("PIPETTNetworksID63", "ospf", 3).
++SetInterface("PIPETTNetworksID63", "PIPETTNetworksID63_I_adl6").
+
++SetNode("bne1").
++SetAdminDist("bne1", "static", 1).
++SetAdminDist("bne1", "bgp", 2).
++SetAdminDist("bne1", "ospf", 3).
++SetInterface("bne1", "bne1_I_syd7").
++SetInterface("bne1", "bne1_I_OptusID22").
++SetInterface("bne1", "bne1_I_bne4").
++SetInterface("bne1", "bne1_I_PIPETTNetworksID23").
+
++SetNode("PIPETTNetworks").
++SetAdminDist("PIPETTNetworks", "static", 1).
++SetAdminDist("PIPETTNetworks", "bgp", 2).
++SetAdminDist("PIPETTNetworks", "ospf", 3).
++SetInterface("PIPETTNetworks", "PIPETTNetworks_I_cbr1").
+
++SetNode("HKIX").
++SetAdminDist("HKIX", "static", 1).
++SetAdminDist("HKIX", "bgp", 2).
++SetAdminDist("HKIX", "ospf", 3).
++SetInterface("HKIX", "HKIX_I_hkg1").
+
++SetNode("iad1").
++SetAdminDist("iad1", "static", 1).
++SetAdminDist("iad1", "bgp", 2).
++SetAdminDist("iad1", "ospf", 3).
++SetInterface("iad1", "iad1_I_lon1").
++SetInterface("iad1", "iad1_I_lax1").
++SetInterface("iad1", "iad1_I_EquinixID34").
+
++SetNode("PIPETTNetworksID48").
++SetAdminDist("PIPETTNetworksID48", "static", 1).
++SetAdminDist("PIPETTNetworksID48", "bgp", 2).
++SetAdminDist("PIPETTNetworksID48", "ospf", 3).
++SetInterface("PIPETTNetworksID48", "PIPETTNetworksID48_I_mel6").
+
++SetNode("PIPETTNetworksID23").
++SetAdminDist("PIPETTNetworksID23", "static", 1).
++SetAdminDist("PIPETTNetworksID23", "bgp", 2).
++SetAdminDist("PIPETTNetworksID23", "ospf", 3).
++SetInterface("PIPETTNetworksID23", "PIPETTNetworksID23_I_bne1").
+
++SetNode("PIPETTNetworksID49").
++SetAdminDist("PIPETTNetworksID49", "static", 1).
++SetAdminDist("PIPETTNetworksID49", "bgp", 2).
++SetAdminDist("PIPETTNetworksID49", "ospf", 3).
++SetInterface("PIPETTNetworksID49", "PIPETTNetworksID49_I_hba1").
+
++SetNode("OptusID57").
++SetAdminDist("OptusID57", "static", 1).
++SetAdminDist("OptusID57", "bgp", 2).
++SetAdminDist("OptusID57", "ospf", 3).
++SetInterface("OptusID57", "OptusID57_I_adl2").
+
++SetNode("Equinix").
++SetAdminDist("Equinix", "static", 1).
++SetAdminDist("Equinix", "bgp", 2).
++SetAdminDist("Equinix", "ospf", 3).
++SetInterface("Equinix", "Equinix_I_nrt1").
+
++SetNode("WAIX").
++SetAdminDist("WAIX", "static", 1).
++SetAdminDist("WAIX", "bgp", 2).
++SetAdminDist("WAIX", "ospf", 3).
++SetInterface("WAIX", "WAIX_I_per1").
+
++SetNode("sjc2").
++SetAdminDist("sjc2", "static", 1).
++SetAdminDist("sjc2", "bgp", 2).
++SetAdminDist("sjc2", "ospf", 3).
++SetInterface("sjc2", "sjc2_I_GoogleID13").
++SetInterface("sjc2", "sjc2_I_nrt1").
++SetInterface("sjc2", "sjc2_I_SprintID14").
++SetInterface("sjc2", "sjc2_I_NTTID43").
++SetInterface("sjc2", "sjc2_I_Astraweb").
++SetInterface("sjc2", "sjc2_I_lax1").
++SetInterface("sjc2", "sjc2_I_GlobalTTCrossingID29").
++SetInterface("sjc2", "sjc2_I_PAIX").
++SetInterface("sjc2", "sjc2_I_EquinixID15").
++SetInterface("sjc2", "sjc2_I_lon1").
++SetInterface("sjc2", "sjc2_I_syd6").
++SetInterface("sjc2", "sjc2_I_LevelTT3ID30").
+
++SetNode("adl6").
++SetAdminDist("adl6", "static", 1).
++SetAdminDist("adl6", "bgp", 2).
++SetAdminDist("adl6", "ospf", 3).
++SetInterface("adl6", "adl6_I_PIPETTNetworksID63").
++SetInterface("adl6", "adl6_I_AARNetID55").
++SetInterface("adl6", "adl6_I_per1").
++SetInterface("adl6", "adl6_I_adl2").
++SetInterface("adl6", "adl6_I_syd7").
+
++SetNode("OptusID11").
++SetAdminDist("OptusID11", "static", 1).
++SetAdminDist("OptusID11", "bgp", 2).
++SetAdminDist("OptusID11", "ospf", 3).
++SetInterface("OptusID11", "OptusID11_I_mel4").
+
++SetNode("NTTID37").
++SetAdminDist("NTTID37", "static", 1).
++SetAdminDist("NTTID37", "bgp", 2).
++SetAdminDist("NTTID37", "ospf", 3).
++SetInterface("NTTID37", "NTTID37_I_hkg1").
+
++SetNode("adl2").
++SetAdminDist("adl2", "static", 1).
++SetAdminDist("adl2", "bgp", 2).
++SetAdminDist("adl2", "ospf", 3).
++SetInterface("adl2", "adl2_I_UniversityTTofTTAdelaide").
++SetInterface("adl2", "adl2_I_per2").
++SetInterface("adl2", "adl2_I_mel6").
++SetInterface("adl2", "adl2_I_OptusID57").
++SetInterface("adl2", "adl2_I_adl6").
++SetInterface("adl2", "adl2_I_syd6").
+
++SetNode("Optus").
++SetAdminDist("Optus", "static", 1).
++SetAdminDist("Optus", "bgp", 2).
++SetAdminDist("Optus", "ospf", 3).
++SetInterface("Optus", "Optus_I_per1").
+
++SetNode("Google").
++SetAdminDist("Google", "static", 1).
++SetAdminDist("Google", "bgp", 2).
++SetAdminDist("Google", "ospf", 3).
++SetInterface("Google", "Google_I_syd7").
+
++SetNode("TransIX").
++SetAdminDist("TransIX", "static", 1).
++SetAdminDist("TransIX", "bgp", 2).
++SetAdminDist("TransIX", "ospf", 3).
++SetInterface("TransIX", "TransIX_I_cbr1").
+
++SetNode("akl1").
++SetAdminDist("akl1", "static", 1).
++SetAdminDist("akl1", "bgp", 2).
++SetAdminDist("akl1", "ospf", 3).
++SetInterface("akl1", "akl1_I_syd6").
+
++SetNode("mel6").
++SetAdminDist("mel6", "static", 1).
++SetAdminDist("mel6", "bgp", 2).
++SetAdminDist("mel6", "ospf", 3).
++SetInterface("mel6", "mel6_I_PIPETTNetworksID48").
++SetInterface("mel6", "mel6_I_cbr1").
++SetInterface("mel6", "mel6_I_mel4").
++SetInterface("mel6", "mel6_I_hba1").
++SetInterface("mel6", "mel6_I_adl2").
++SetInterface("mel6", "mel6_I_syd6").
+
++SetNode("NTT").
++SetAdminDist("NTT", "static", 1).
++SetAdminDist("NTT", "bgp", 2).
++SetAdminDist("NTT", "ospf", 3).
++SetInterface("NTT", "NTT_I_nrt1").
+
++SetNode("mel4").
++SetAdminDist("mel4", "static", 1).
++SetAdminDist("mel4", "bgp", 2).
++SetAdminDist("mel4", "ospf", 3).
++SetInterface("mel4", "mel4_I_OptusID11").
++SetInterface("mel4", "mel4_I_mel6").
++SetInterface("mel4", "mel4_I_syd7").
++SetInterface("mel4", "mel4_I_AARNetID50").
+
++SetNode("PacNet").
++SetAdminDist("PacNet", "static", 1).
++SetAdminDist("PacNet", "bgp", 2).
++SetAdminDist("PacNet", "ospf", 3).
++SetInterface("PacNet", "PacNet_I_syd7").
+
++SetNode("lax1").
++SetAdminDist("lax1", "static", 1).
++SetAdminDist("lax1", "bgp", 2).
++SetAdminDist("lax1", "ospf", 3).
++SetInterface("lax1", "lax1_I_EquinixID9").
++SetInterface("lax1", "lax1_I_GlobalTTCrossing").
++SetInterface("lax1", "lax1_I_iad1").
++SetInterface("lax1", "lax1_I_Any2").
++SetInterface("lax1", "lax1_I_NTTID26").
++SetInterface("lax1", "lax1_I_GoogleID36").
++SetInterface("lax1", "lax1_I_sjc2").
++SetInterface("lax1", "lax1_I_lon1").
++SetInterface("lax1", "lax1_I_Sprint").
++SetInterface("lax1", "lax1_I_LevelTT3").
++SetInterface("lax1", "lax1_I_syd6").
+
++SetNode("per2").
++SetAdminDist("per2", "static", 1).
++SetAdminDist("per2", "bgp", 2).
++SetAdminDist("per2", "ospf", 3).
++SetInterface("per2", "per2_I_per1").
++SetInterface("per2", "per2_I_adl2").
+
++SetNode("per1").
++SetAdminDist("per1", "static", 1).
++SetAdminDist("per1", "bgp", 2).
++SetAdminDist("per1", "ospf", 3).
++SetInterface("per1", "per1_I_Optus").
++SetInterface("per1", "per1_I_AARNet").
++SetInterface("per1", "per1_I_sin1").
++SetInterface("per1", "per1_I_per2").
++SetInterface("per1", "per1_I_WAIX").
++SetInterface("per1", "per1_I_adl6").
+
++SetNode("LINXTT2").
++SetAdminDist("LINXTT2", "static", 1).
++SetAdminDist("LINXTT2", "bgp", 2).
++SetAdminDist("LINXTT2", "ospf", 3).
++SetInterface("LINXTT2", "LINXTT2_I_lon1").
+
++SetNode("lon1").
++SetAdminDist("lon1", "static", 1).
++SetAdminDist("lon1", "bgp", 2).
++SetAdminDist("lon1", "ospf", 3).
++SetInterface("lon1", "lon1_I_AMSTTIX").
++SetInterface("lon1", "lon1_I_iad1").
++SetInterface("lon1", "lon1_I_sin1").
++SetInterface("lon1", "lon1_I_lax1").
++SetInterface("lon1", "lon1_I_sjc2").
++SetInterface("lon1", "lon1_I_LINXTT2").
++SetInterface("lon1", "lon1_I_LINXTT1").
+
++SetNode("Sprint").
++SetAdminDist("Sprint", "static", 1).
++SetAdminDist("Sprint", "bgp", 2).
++SetAdminDist("Sprint", "ospf", 3).
++SetInterface("Sprint", "Sprint_I_lax1").
+
++SetNode("LevelTT3ID30").
++SetAdminDist("LevelTT3ID30", "static", 1).
++SetAdminDist("LevelTT3ID30", "bgp", 2).
++SetAdminDist("LevelTT3ID30", "ospf", 3).
++SetInterface("LevelTT3ID30", "LevelTT3ID30_I_sjc2").
+
++SetNode("syd6").
++SetAdminDist("syd6", "static", 1).
++SetAdminDist("syd6", "bgp", 2).
++SetAdminDist("syd6", "ospf", 3).
++SetInterface("syd6", "syd6_I_nrt1").
++SetInterface("syd6", "syd6_I_bne4").
++SetInterface("syd6", "syd6_I_akl1").
++SetInterface("syd6", "syd6_I_mel6").
++SetInterface("syd6", "syd6_I_hkg1").
++SetInterface("syd6", "syd6_I_lax1").
++SetInterface("syd6", "syd6_I_sjc2").
++SetInterface("syd6", "syd6_I_adl2").
++SetInterface("syd6", "syd6_I_syd7").
+
++SetNode("syd7").
++SetAdminDist("syd7", "static", 1).
++SetAdminDist("syd7", "bgp", 2).
++SetAdminDist("syd7", "ospf", 3).
++SetInterface("syd7", "syd7_I_bne1").
++SetInterface("syd7", "syd7_I_Google").
++SetInterface("syd7", "syd7_I_PIPETTNetworksID51").
++SetInterface("syd7", "syd7_I_cbr1").
++SetInterface("syd7", "syd7_I_mel4").
++SetInterface("syd7", "syd7_I_PacNet").
++SetInterface("syd7", "syd7_I_adl6").
++SetInterface("syd7", "syd7_I_syd6").
+
++SetLink("Starhub_I_sin1", "sin1_I_Starhub").
++SetLink("AARNetID55_I_adl6", "adl6_I_AARNetID55").
++SetLink("AARNetID53_I_cbr1", "cbr1_I_AARNetID53").
++SetLink("SprintID14_I_sjc2", "sjc2_I_SprintID14").
++SetLink("EquinixID9_I_lax1", "lax1_I_EquinixID9").
++SetLink("GlobalTTCrossing_I_lax1", "lax1_I_GlobalTTCrossing").
++SetLink("PIPETTNetworksID51_I_syd7", "syd7_I_PIPETTNetworksID51").
++SetLink("Any2_I_lax1", "lax1_I_Any2").
++SetLink("NTTID43_I_sjc2", "sjc2_I_NTTID43").
++SetLink("NTTID26_I_lax1", "lax1_I_NTTID26").
++SetLink("sin1_I_lon1", "lon1_I_sin1").
++SetLink("sin1_I_EquinixID38", "EquinixID38_I_sin1").
++SetLink("sin1_I_per1", "per1_I_sin1").
++SetLink("sin1_I_hkg1", "hkg1_I_sin1").
++SetLink("PAIX_I_sjc2", "sjc2_I_PAIX").
++SetLink("UniversityTTofTTAdelaide_I_adl2", "adl2_I_UniversityTTofTTAdelaide").
++SetLink("hkg1_I_NTTID37", "NTTID37_I_hkg1").
++SetLink("hkg1_I_EquinixID39", "EquinixID39_I_hkg1").
++SetLink("hkg1_I_HKIX", "HKIX_I_hkg1").
++SetLink("hkg1_I_syd6", "syd6_I_hkg1").
++SetLink("AMSTTIX_I_lon1", "lon1_I_AMSTTIX").
++SetLink("OptusID22_I_bne1", "bne1_I_OptusID22").
++SetLink("cbr1_I_mel6", "mel6_I_cbr1").
++SetLink("cbr1_I_syd7", "syd7_I_cbr1").
++SetLink("cbr1_I_TransIX", "TransIX_I_cbr1").
++SetLink("cbr1_I_PIPETTNetworks", "PIPETTNetworks_I_cbr1").
++SetLink("nrt1_I_sjc2", "sjc2_I_nrt1").
++SetLink("nrt1_I_Equinix", "Equinix_I_nrt1").
++SetLink("nrt1_I_NTT", "NTT_I_nrt1").
++SetLink("nrt1_I_syd6", "syd6_I_nrt1").
++SetLink("nrt1_I_JPIX", "JPIX_I_nrt1").
++SetLink("EquinixID34_I_iad1", "iad1_I_EquinixID34").
++SetLink("AARNet_I_per1", "per1_I_AARNet").
++SetLink("LevelTT3_I_lax1", "lax1_I_LevelTT3").
++SetLink("GlobalTTCrossingID29_I_sjc2", "sjc2_I_GlobalTTCrossingID29").
++SetLink("GoogleID36_I_lax1", "lax1_I_GoogleID36").
++SetLink("AARNetID50_I_mel4", "mel4_I_AARNetID50").
++SetLink("bne4_I_bne1", "bne1_I_bne4").
++SetLink("bne4_I_syd6", "syd6_I_bne4").
++SetLink("EquinixID15_I_sjc2", "sjc2_I_EquinixID15").
++SetLink("hba1_I_mel6", "mel6_I_hba1").
++SetLink("hba1_I_PIPETTNetworksID49", "PIPETTNetworksID49_I_hba1").
++SetLink("Astraweb_I_sjc2", "sjc2_I_Astraweb").
++SetLink("LINXTT1_I_lon1", "lon1_I_LINXTT1").
++SetLink("GoogleID13_I_sjc2", "sjc2_I_GoogleID13").
++SetLink("PIPETTNetworksID63_I_adl6", "adl6_I_PIPETTNetworksID63").
++SetLink("bne1_I_syd7", "syd7_I_bne1").
++SetLink("bne1_I_PIPETTNetworksID23", "PIPETTNetworksID23_I_bne1").
++SetLink("iad1_I_lon1", "lon1_I_iad1").
++SetLink("iad1_I_lax1", "lax1_I_iad1").
++SetLink("PIPETTNetworksID48_I_mel6", "mel6_I_PIPETTNetworksID48").
++SetLink("OptusID57_I_adl2", "adl2_I_OptusID57").
++SetLink("WAIX_I_per1", "per1_I_WAIX").
++SetLink("sjc2_I_lax1", "lax1_I_sjc2").
++SetLink("sjc2_I_lon1", "lon1_I_sjc2").
++SetLink("sjc2_I_syd6", "syd6_I_sjc2").
++SetLink("sjc2_I_LevelTT3ID30", "LevelTT3ID30_I_sjc2").
++SetLink("adl6_I_per1", "per1_I_adl6").
++SetLink("adl6_I_adl2", "adl2_I_adl6").
++SetLink("adl6_I_syd7", "syd7_I_adl6").
++SetLink("OptusID11_I_mel4", "mel4_I_OptusID11").
++SetLink("adl2_I_per2", "per2_I_adl2").
++SetLink("adl2_I_mel6", "mel6_I_adl2").
++SetLink("adl2_I_syd6", "syd6_I_adl2").
++SetLink("Optus_I_per1", "per1_I_Optus").
++SetLink("Google_I_syd7", "syd7_I_Google").
++SetLink("akl1_I_syd6", "syd6_I_akl1").
++SetLink("mel6_I_mel4", "mel4_I_mel6").
++SetLink("mel6_I_syd6", "syd6_I_mel6").
++SetLink("mel4_I_syd7", "syd7_I_mel4").
++SetLink("PacNet_I_syd7", "syd7_I_PacNet").
++SetLink("lax1_I_lon1", "lon1_I_lax1").
++SetLink("lax1_I_Sprint", "Sprint_I_lax1").
++SetLink("lax1_I_syd6", "syd6_I_lax1").
++SetLink("per2_I_per1", "per1_I_per2").
++SetLink("LINXTT2_I_lon1", "lon1_I_LINXTT2").
++SetLink("syd6_I_syd7", "syd7_I_syd6").
+
+
++SetNetwork("adl2", "N_adl2").

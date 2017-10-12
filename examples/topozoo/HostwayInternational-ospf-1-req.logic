@@ -1,0 +1,17 @@
+
++Fwd("N_Seattle", "Bucharest", "Seoul", "ospf").
++Fwd("N_Seattle", "Seoul", "Sydney", "ospf").
++Fwd("N_Seattle", "Sydney", "NewTTYork", "ospf").
++Fwd("N_Seattle", "NewTTYork", "Atlanta", "ospf").
++Fwd("N_Seattle", "Atlanta", "Chicago", "ospf").
++Fwd("N_Seattle", "Chicago", "Seattle", "ospf").
++Fwd("N_Seattle", "Hannover", "Amsterdam", "ospf").
++Fwd("N_Seattle", "Amsterdam", "London", "ospf").
++Fwd("N_Seattle", "London", "NewTTYork", "ospf").
++Fwd("N_Seattle", "Miami", "Sydney", "ospf").
++Fwd("N_Seattle", "Austin", "Chicago", "ospf").
++Fwd("N_Seattle", "Antwerp", "Frankfurt", "ospf").
++Fwd("N_Seattle", "Frankfurt", "Bucharest", "ospf").
++Fwd("N_Seattle", "Vancouver", "Seattle", "ospf").
++Fwd("N_Seattle", "Tampa", "Miami", "ospf").
+

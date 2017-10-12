@@ -1,0 +1,66 @@
+
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "CityWest", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "CityWest", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Galway", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Galway", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Limerick", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Limerick", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Cork", "Limerick", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Cork", "Limerick", "bgp").
+
++Fwd("N_CityWest", "DCUTT_DublinTTCityTTUniversity", "CityWest", "ospf").
++Fwd("NBGP_CityWest", "DCUTT_DublinTTCityTTUniversity", "CityWest", "bgp").
++Fwd("N_CityWest", "Galway", "CityWest", "ospf").
++Fwd("NBGP_CityWest", "Galway", "CityWest", "bgp").
++Fwd("N_CityWest", "Limerick", "CityWest", "ospf").
++Fwd("NBGP_CityWest", "Limerick", "CityWest", "bgp").
++Fwd("N_CityWest", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "ospf").
++Fwd("NBGP_CityWest", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "bgp").
++Fwd("N_CityWest", "Cork", "Limerick", "ospf").
++Fwd("NBGP_CityWest", "Cork", "Limerick", "bgp").
++Fwd("N_CityWest", "Kilcarbery", "Galway", "ospf").
++Fwd("NBGP_CityWest", "Kilcarbery", "Galway", "bgp").
+
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "TDCTT_TrinityTTCollegeTTDublin_", "ospf").
++Fwd("NBGP_TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "TDCTT_TrinityTTCollegeTTDublin_", "bgp").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "DCUTT_DublinTTCityTTUniversity", "CityWest", "ospf").
++Fwd("NBGP_TDCTT_TrinityTTCollegeTTDublin_", "DCUTT_DublinTTCityTTUniversity", "CityWest", "bgp").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Galway", "CityWest", "ospf").
++Fwd("NBGP_TDCTT_TrinityTTCollegeTTDublin_", "Galway", "CityWest", "bgp").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Limerick", "CityWest", "ospf").
++Fwd("NBGP_TDCTT_TrinityTTCollegeTTDublin_", "Limerick", "CityWest", "bgp").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Cork", "Limerick", "ospf").
++Fwd("NBGP_TDCTT_TrinityTTCollegeTTDublin_", "Cork", "Limerick", "bgp").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "Galway", "ospf").
++Fwd("NBGP_TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "Galway", "bgp").
+
++Fwd("N_Cork", "CityWest", "Cork", "ospf").
++Fwd("NBGP_Cork", "CityWest", "Cork", "bgp").
++Fwd("N_Cork", "DCUTT_DublinTTCityTTUniversity", "CityWest", "ospf").
++Fwd("NBGP_Cork", "DCUTT_DublinTTCityTTUniversity", "CityWest", "bgp").
++Fwd("N_Cork", "Galway", "CityWest", "ospf").
++Fwd("NBGP_Cork", "Galway", "CityWest", "bgp").
++Fwd("N_Cork", "Limerick", "Cork", "ospf").
++Fwd("NBGP_Cork", "Limerick", "Cork", "bgp").
++Fwd("N_Cork", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "ospf").
++Fwd("NBGP_Cork", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "bgp").
++Fwd("N_Cork", "Kilcarbery", "Galway", "ospf").
++Fwd("NBGP_Cork", "Kilcarbery", "Galway", "bgp").
+
++Fwd("N_Kilcarbery", "CityWest", "Kilcarbery", "ospf").
++Fwd("NBGP_Kilcarbery", "CityWest", "Kilcarbery", "bgp").
++Fwd("N_Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "ospf").
++Fwd("NBGP_Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "bgp").
++Fwd("N_Kilcarbery", "Galway", "Kilcarbery", "ospf").
++Fwd("NBGP_Kilcarbery", "Galway", "Kilcarbery", "bgp").
++Fwd("N_Kilcarbery", "Limerick", "Kilcarbery", "ospf").
++Fwd("NBGP_Kilcarbery", "Limerick", "Kilcarbery", "bgp").
++Fwd("N_Kilcarbery", "TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "ospf").
++Fwd("NBGP_Kilcarbery", "TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "bgp").
++Fwd("N_Kilcarbery", "Cork", "Limerick", "ospf").
++Fwd("NBGP_Kilcarbery", "Cork", "Limerick", "bgp").
+

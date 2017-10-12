@@ -1,0 +1,20 @@
+
++Fwd("N_London", "1", "Paris", "ospf").
++Fwd("N_London", "Paris", "London", "ospf").
++Fwd("N_London", "HongTTKong", "London", "ospf").
++Fwd("N_London", "LosTTAngeles", "London", "ospf").
++Fwd("N_London", "NewTTYork", "London", "ospf").
++Fwd("N_London", "Mumbai", "HongTTKong", "ospf").
++Fwd("N_London", "1ID2", "1ID3", "ospf").
++Fwd("N_London", "1ID3", "1ID7", "ospf").
++Fwd("N_London", "1ID7", "Paris", "ospf").
++Fwd("N_London", "Madrid", "1", "ospf").
++Fwd("N_London", "1ID0", "1ID7", "ospf").
++Fwd("N_London", "1ID1", "1ID7", "ospf").
++Fwd("N_London", "Washington", "NewTTYork", "ospf").
++Fwd("N_London", "Milan", "1", "ospf").
++Fwd("N_London", "SanTTJose_", "PaloTTAlto_", "ospf").
++Fwd("N_London", "PaloTTAlto_", "London", "ospf").
++Fwd("N_London", "1ID6", "1ID1", "ospf").
++Fwd("N_London", "Shanghai", "HongTTKong", "ospf").
+

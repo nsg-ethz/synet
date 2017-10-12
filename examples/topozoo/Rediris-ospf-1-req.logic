@@ -1,0 +1,20 @@
+
++Fwd("N_Madrid", "CastillaTTLaTTMancha", "Nacional", "ospf").
++Fwd("N_Madrid", "Nacional", "Madrid", "ospf").
++Fwd("N_Madrid", "PaisTTVasco", "Nacional", "ospf").
++Fwd("N_Madrid", "Murcia", "Andalucia", "ospf").
++Fwd("N_Madrid", "Andalucia", "CastillaTTLaTTMancha", "ospf").
++Fwd("N_Madrid", "CanariasTT_tenerife_", "Nacional", "ospf").
++Fwd("N_Madrid", "Galacia", "Nacional", "ospf").
++Fwd("N_Madrid", "Asturias", "Galacia", "ospf").
++Fwd("N_Madrid", "Rioja", "CastillaTTYTTLeon", "ospf").
++Fwd("N_Madrid", "CastillaTTYTTLeon", "Nacional", "ospf").
++Fwd("N_Madrid", "Cataluna", "Nacional", "ospf").
++Fwd("N_Madrid", "Cantabria", "Asturias", "ospf").
++Fwd("N_Madrid", "Valencia", "Cataluna", "ospf").
++Fwd("N_Madrid", "CanariasTT_lasTTpalmas_", "Andalucia", "ospf").
++Fwd("N_Madrid", "Baleares", "Valencia", "ospf").
++Fwd("N_Madrid", "Aragon", "Nacional", "ospf").
++Fwd("N_Madrid", "Extremadura", "Nacional", "ospf").
++Fwd("N_Madrid", "Navarra", "PaisTTVasco", "ospf").
+

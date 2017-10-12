@@ -1,0 +1,56 @@
+
++Fwd("N_Waterford", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Waterford", "static").
++Fwd("N_Waterford", "Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Waterford", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
+
++Fwd("N_Sligo", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Sligo", "static").
++Fwd("N_Sligo", "Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Sligo", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
+
++Fwd("N_Tralee", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Tralee", "static").
++Fwd("N_Tralee", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Tralee", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
+
++Fwd("N_Carlow", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Carlow", "static").
++Fwd("N_Carlow", "Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Carlow", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
+
++Fwd("N_Athlone", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Athlone", "static").
++Fwd("N_Athlone", "Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Athlone", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
+

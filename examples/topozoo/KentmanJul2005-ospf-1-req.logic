@@ -1,0 +1,17 @@
+
++Fwd("N_Horsted", "BeaconTTHill", "BlueTTBellTTHill", "ospf").
++Fwd("N_Horsted", "BlueTTBellTTHill", "Horsted", "ospf").
++Fwd("N_Horsted", "CCCU_C", "Kent", "ospf").
++Fwd("N_Horsted", "Kent", "Dunkirk", "ospf").
++Fwd("N_Horsted", "Dunkirk", "BeaconTTHill", "ospf").
++Fwd("N_Horsted", "KIAD_C", "Kent", "ospf").
++Fwd("N_Horsted", "Cranbrook", "BlueTTBellTTHill", "ospf").
++Fwd("N_Horsted", "NTL_Wye", "Cranbrook", "ospf").
++Fwd("N_Horsted", "Tonbridge", "BlueTTBellTTHill", "ospf").
++Fwd("N_Horsted", "KIAD_M", "BlueTTBellTTHill", "ospf").
++Fwd("N_Horsted", "Wye", "NTL_Wye", "ospf").
++Fwd("N_Horsted", "CCCU_T", "Kent", "ospf").
++Fwd("N_Horsted", "KIAD_R", "BeaconTTHill", "ospf").
++Fwd("N_Horsted", "CCCU_S", "Tonbridge", "ospf").
++Fwd("N_Horsted", "UniversityTTofTTGreenwich", "BeaconTTHill", "ospf").
+

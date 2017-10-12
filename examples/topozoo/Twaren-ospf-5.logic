@@ -1,0 +1,167 @@
++SetNode("NHLUE").
++SetAdminDist("NHLUE", "static", 1).
++SetAdminDist("NHLUE", "bgp", 2).
++SetAdminDist("NHLUE", "ospf", 3).
++SetInterface("NHLUE", "NHLUE_I_TP").
+
++SetNode("TN").
++SetAdminDist("TN", "static", 1).
++SetAdminDist("TN", "bgp", 2).
++SetAdminDist("TN", "ospf", 3).
++SetInterface("TN", "TN_I_NCKU").
++SetInterface("TN", "TN_I_CCU").
++SetInterface("TN", "TN_I_HC").
++SetInterface("TN", "TN_I_NTTU").
++SetInterface("TN", "TN_I_TC").
++SetInterface("TN", "TN_I_NSYSU").
+
++SetNode("LA").
++SetAdminDist("LA", "static", 1).
++SetAdminDist("LA", "bgp", 2).
++SetAdminDist("LA", "ospf", 3).
++SetInterface("LA", "LA_I_HC").
+
++SetNode("NTHU").
++SetAdminDist("NTHU", "static", 1).
++SetAdminDist("NTHU", "bgp", 2).
++SetAdminDist("NTHU", "ospf", 3).
++SetInterface("NTHU", "NTHU_I_HC").
+
++SetNode("NCHU").
++SetAdminDist("NCHU", "static", 1).
++SetAdminDist("NCHU", "bgp", 2).
++SetAdminDist("NCHU", "ospf", 3).
++SetInterface("NCHU", "NCHU_I_TC").
+
++SetNode("CHI").
++SetAdminDist("CHI", "static", 1).
++SetAdminDist("CHI", "bgp", 2).
++SetAdminDist("CHI", "ospf", 3).
++SetInterface("CHI", "CHI_I_TP").
+
++SetNode("NIU").
++SetAdminDist("NIU", "static", 1).
++SetAdminDist("NIU", "bgp", 2).
++SetAdminDist("NIU", "ospf", 3).
++SetInterface("NIU", "NIU_I_TP").
+
++SetNode("NTU").
++SetAdminDist("NTU", "static", 1).
++SetAdminDist("NTU", "bgp", 2).
++SetAdminDist("NTU", "ospf", 3).
++SetInterface("NTU", "NTU_I_TP").
+
++SetNode("NCU").
++SetAdminDist("NCU", "static", 1).
++SetAdminDist("NCU", "bgp", 2).
++SetAdminDist("NCU", "ospf", 3).
++SetInterface("NCU", "NCU_I_HC").
+
++SetNode("TP").
++SetAdminDist("TP", "static", 1).
++SetAdminDist("TP", "bgp", 2).
++SetAdminDist("TP", "ospf", 3).
++SetInterface("TP", "TP_I_NHLUE").
++SetInterface("TP", "TP_I_CHI").
++SetInterface("TP", "TP_I_NTU").
++SetInterface("TP", "TP_I_NDHU").
++SetInterface("TP", "TP_I_HC").
++SetInterface("TP", "TP_I_TC").
++SetInterface("TP", "TP_I_ASCC").
++SetInterface("TP", "TP_I_NIU").
+
++SetNode("NCKU").
++SetAdminDist("NCKU", "static", 1).
++SetAdminDist("NCKU", "bgp", 2).
++SetAdminDist("NCKU", "ospf", 3).
++SetInterface("NCKU", "NCKU_I_TN").
+
++SetNode("CCU").
++SetAdminDist("CCU", "static", 1).
++SetAdminDist("CCU", "bgp", 2).
++SetAdminDist("CCU", "ospf", 3).
++SetInterface("CCU", "CCU_I_TN").
+
++SetNode("NCNU").
++SetAdminDist("NCNU", "static", 1).
++SetAdminDist("NCNU", "bgp", 2).
++SetAdminDist("NCNU", "ospf", 3).
++SetInterface("NCNU", "NCNU_I_TC").
+
++SetNode("NDHU").
++SetAdminDist("NDHU", "static", 1).
++SetAdminDist("NDHU", "bgp", 2).
++SetAdminDist("NDHU", "ospf", 3).
++SetInterface("NDHU", "NDHU_I_TP").
+
++SetNode("HC").
++SetAdminDist("HC", "static", 1).
++SetAdminDist("HC", "bgp", 2).
++SetAdminDist("HC", "ospf", 3).
++SetInterface("HC", "HC_I_LA").
++SetInterface("HC", "HC_I_NTHU").
++SetInterface("HC", "HC_I_NCU").
++SetInterface("HC", "HC_I_TP").
++SetInterface("HC", "HC_I_TN").
++SetInterface("HC", "HC_I_NCTU").
+
++SetNode("NTTU").
++SetAdminDist("NTTU", "static", 1).
++SetAdminDist("NTTU", "bgp", 2).
++SetAdminDist("NTTU", "ospf", 3).
++SetInterface("NTTU", "NTTU_I_TN").
+
++SetNode("NCTU").
++SetAdminDist("NCTU", "static", 1).
++SetAdminDist("NCTU", "bgp", 2).
++SetAdminDist("NCTU", "ospf", 3).
++SetInterface("NCTU", "NCTU_I_HC").
+
++SetNode("TC").
++SetAdminDist("TC", "static", 1).
++SetAdminDist("TC", "bgp", 2).
++SetAdminDist("TC", "ospf", 3).
++SetInterface("TC", "TC_I_NCHU").
++SetInterface("TC", "TC_I_TN").
++SetInterface("TC", "TC_I_NCNU").
++SetInterface("TC", "TC_I_TP").
+
++SetNode("ASCC").
++SetAdminDist("ASCC", "static", 1).
++SetAdminDist("ASCC", "bgp", 2).
++SetAdminDist("ASCC", "ospf", 3).
++SetInterface("ASCC", "ASCC_I_TP").
+
++SetNode("NSYSU").
++SetAdminDist("NSYSU", "static", 1).
++SetAdminDist("NSYSU", "bgp", 2).
++SetAdminDist("NSYSU", "ospf", 3).
++SetInterface("NSYSU", "NSYSU_I_TN").
+
++SetLink("NHLUE_I_TP", "TP_I_NHLUE").
++SetLink("TN_I_NCKU", "NCKU_I_TN").
++SetLink("TN_I_CCU", "CCU_I_TN").
++SetLink("TN_I_HC", "HC_I_TN").
++SetLink("TN_I_NTTU", "NTTU_I_TN").
++SetLink("TN_I_TC", "TC_I_TN").
++SetLink("TN_I_NSYSU", "NSYSU_I_TN").
++SetLink("LA_I_HC", "HC_I_LA").
++SetLink("NTHU_I_HC", "HC_I_NTHU").
++SetLink("NCHU_I_TC", "TC_I_NCHU").
++SetLink("CHI_I_TP", "TP_I_CHI").
++SetLink("NIU_I_TP", "TP_I_NIU").
++SetLink("NTU_I_TP", "TP_I_NTU").
++SetLink("NCU_I_HC", "HC_I_NCU").
++SetLink("TP_I_NDHU", "NDHU_I_TP").
++SetLink("TP_I_HC", "HC_I_TP").
++SetLink("TP_I_TC", "TC_I_TP").
++SetLink("TP_I_ASCC", "ASCC_I_TP").
++SetLink("NCNU_I_TC", "TC_I_NCNU").
++SetLink("HC_I_NCTU", "NCTU_I_HC").
+
+
++SetNetwork("NSYSU", "N_NSYSU").
++SetNetwork("HC", "N_HC").
++SetNetwork("LA", "N_LA").
++SetNetwork("NCTU", "N_NCTU").
++SetNetwork("CHI", "N_CHI").

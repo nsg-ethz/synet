@@ -1,0 +1,11 @@
+
++Fwd("N_Olomouc", "Ostrava", "Brno", "ospf").
++Fwd("N_Olomouc", "Brno", "Olomouc", "ospf").
++Fwd("N_Olomouc", "Ebone", "Praha", "ospf").
++Fwd("N_Olomouc", "Praha", "Brno", "ospf").
++Fwd("N_Olomouc", "Pardubice", "Praha", "ospf").
++Fwd("N_Olomouc", "Plzen", "Praha", "ospf").
++Fwd("N_Olomouc", "Liberec", "Praha", "ospf").
++Fwd("N_Olomouc", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_Olomouc", "CeskeTTBudejovice", "Praha", "ospf").
+

@@ -1,0 +1,54 @@
++SetNode("Dallas").
++SetAdminDist("Dallas", "static", 1).
++SetAdminDist("Dallas", "bgp", 2).
++SetAdminDist("Dallas", "ospf", 3).
++SetInterface("Dallas", "Dallas_I_Chicago").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Seattle").
++SetInterface("Chicago", "Chicago_I_Vienna").
++SetInterface("Chicago", "Chicago_I_Minneapolis").
++SetInterface("Chicago", "Chicago_I_SanTTJose").
++SetInterface("Chicago", "Chicago_I_Dallas").
+
++SetNode("Minneapolis").
++SetAdminDist("Minneapolis", "static", 1).
++SetAdminDist("Minneapolis", "bgp", 2).
++SetAdminDist("Minneapolis", "ospf", 3).
++SetInterface("Minneapolis", "Minneapolis_I_Chicago").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_SanTTJose").
++SetInterface("Seattle", "Seattle_I_Chicago").
+
++SetNode("SanTTJose").
++SetAdminDist("SanTTJose", "static", 1).
++SetAdminDist("SanTTJose", "bgp", 2).
++SetAdminDist("SanTTJose", "ospf", 3).
++SetInterface("SanTTJose", "SanTTJose_I_Seattle").
++SetInterface("SanTTJose", "SanTTJose_I_Vienna").
++SetInterface("SanTTJose", "SanTTJose_I_Chicago").
+
++SetNode("Vienna").
++SetAdminDist("Vienna", "static", 1).
++SetAdminDist("Vienna", "bgp", 2).
++SetAdminDist("Vienna", "ospf", 3).
++SetInterface("Vienna", "Vienna_I_SanTTJose").
++SetInterface("Vienna", "Vienna_I_Chicago").
+
++SetLink("Dallas_I_Chicago", "Chicago_I_Dallas").
++SetLink("Chicago_I_Seattle", "Seattle_I_Chicago").
++SetLink("Chicago_I_Vienna", "Vienna_I_Chicago").
++SetLink("Chicago_I_Minneapolis", "Minneapolis_I_Chicago").
++SetLink("Chicago_I_SanTTJose", "SanTTJose_I_Chicago").
++SetLink("Seattle_I_SanTTJose", "SanTTJose_I_Seattle").
++SetLink("SanTTJose_I_Vienna", "Vienna_I_SanTTJose").
+
+
++SetNetwork("SanTTJose", "N_SanTTJose").

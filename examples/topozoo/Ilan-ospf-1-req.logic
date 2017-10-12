@@ -1,0 +1,15 @@
+
++Fwd("N_Int_lTTbackupTT", "Technion", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "TelTTAvivTTGigaPoP", "Int_lTTbackupTT", "ospf").
++Fwd("N_Int_lTTbackupTT", "TelTTAvivTTUniversity", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "HaifaTTUniversity", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "BenTTGurionTTUniversity", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "PetachTTTikvaTTGigaPoP", "TelTTAvivTTUniversity", "ospf").
++Fwd("N_Int_lTTbackupTT", "IIX", "PetachTTTikvaTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "WeizmannTTInstitute", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "OpenTTUniversity", "PetachTTTikvaTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "ExternalTTUsers", "PetachTTTikvaTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "HebrewTTUniversity", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "BarTTIlanTTUniversity", "TelTTAvivTTGigaPoP", "ospf").
++Fwd("N_Int_lTTbackupTT", "GEANTTT2TTGermany", "PetachTTTikvaTTGigaPoP", "ospf").
+

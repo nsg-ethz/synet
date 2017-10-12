@@ -1,0 +1,56 @@
+
++Fwd("N_Anaheim", "Boulder", "Cheyenne", "static").
++Fwd("N_Anaheim", "Cheyenne", "Stockton", "static").
++Fwd("N_Anaheim", "Stockton", "Anaheim", "static").
++Fwd("N_Anaheim", "KansasTTCity", "FortTTWorth", "static").
++Fwd("N_Anaheim", "FortTTWorth", "Anaheim", "static").
++Fwd("N_Anaheim", "Chicago", "Stockton", "static").
++Fwd("N_Anaheim", "Washington_TTDC", "FortTTWorth", "static").
++Fwd("N_Anaheim", "Atlanta", "FortTTWorth", "static").
++Fwd("N_Anaheim", "Seattle", "Stockton", "static").
++Fwd("N_Anaheim", "NewTTYorkTT_Pennsauken_", "Stockton", "static").
+
++Fwd("N_Boulder", "KansasTTCity", "Cheyenne", "static").
++Fwd("N_Boulder", "Cheyenne", "Boulder", "static").
++Fwd("N_Boulder", "Stockton", "Cheyenne", "static").
++Fwd("N_Boulder", "Chicago", "Stockton", "static").
++Fwd("N_Boulder", "FortTTWorth", "KansasTTCity", "static").
++Fwd("N_Boulder", "Anaheim", "Stockton", "static").
++Fwd("N_Boulder", "Washington_TTDC", "Stockton", "static").
++Fwd("N_Boulder", "Atlanta", "Washington_TTDC", "static").
++Fwd("N_Boulder", "Seattle", "Stockton", "static").
++Fwd("N_Boulder", "NewTTYorkTT_Pennsauken_", "Stockton", "static").
+
++Fwd("N_Atlanta", "Boulder", "Cheyenne", "static").
++Fwd("N_Atlanta", "Cheyenne", "KansasTTCity", "static").
++Fwd("N_Atlanta", "KansasTTCity", "FortTTWorth", "static").
++Fwd("N_Atlanta", "FortTTWorth", "Atlanta", "static").
++Fwd("N_Atlanta", "Stockton", "Washington_TTDC", "static").
++Fwd("N_Atlanta", "Washington_TTDC", "Atlanta", "static").
++Fwd("N_Atlanta", "Chicago", "KansasTTCity", "static").
++Fwd("N_Atlanta", "Anaheim", "FortTTWorth", "static").
++Fwd("N_Atlanta", "Seattle", "Stockton", "static").
++Fwd("N_Atlanta", "NewTTYorkTT_Pennsauken_", "Washington_TTDC", "static").
+
++Fwd("N_NewTTYorkTT_Pennsauken_", "Boulder", "Cheyenne", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Cheyenne", "Stockton", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Stockton", "NewTTYorkTT_Pennsauken_", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "KansasTTCity", "Washington_TTDC", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Washington_TTDC", "NewTTYorkTT_Pennsauken_", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Chicago", "NewTTYorkTT_Pennsauken_", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "FortTTWorth", "Washington_TTDC", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Anaheim", "Stockton", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Atlanta", "Washington_TTDC", "static").
++Fwd("N_NewTTYorkTT_Pennsauken_", "Seattle", "Stockton", "static").
+
++Fwd("N_KansasTTCity", "Boulder", "Cheyenne", "static").
++Fwd("N_KansasTTCity", "Cheyenne", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "Stockton", "Cheyenne", "static").
++Fwd("N_KansasTTCity", "Chicago", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "FortTTWorth", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "Anaheim", "FortTTWorth", "static").
++Fwd("N_KansasTTCity", "Washington_TTDC", "KansasTTCity", "static").
++Fwd("N_KansasTTCity", "Atlanta", "FortTTWorth", "static").
++Fwd("N_KansasTTCity", "Seattle", "Stockton", "static").
++Fwd("N_KansasTTCity", "NewTTYorkTT_Pennsauken_", "Chicago", "static").
+

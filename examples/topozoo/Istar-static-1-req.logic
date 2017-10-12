@@ -1,0 +1,24 @@
+
++Fwd("N_London", "internetMCITTT3ID11", "Vancouver", "static").
++Fwd("N_London", "Vancouver", "Ottawa", "static").
++Fwd("N_London", "Ottawa", "Toronto", "static").
++Fwd("N_London", "Toronto", "London", "static").
++Fwd("N_London", "Winnipeg", "Ottawa", "static").
++Fwd("N_London", "Sydney", "Halifax", "static").
++Fwd("N_London", "Halifax", "Moncton", "static").
++Fwd("N_London", "Moncton", "Montreal", "static").
++Fwd("N_London", "Montreal", "Ottawa", "static").
++Fwd("N_London", "Calgary", "Vancouver", "static").
++Fwd("N_London", "Sherbrooke", "Montreal", "static").
++Fwd("N_London", "internetMCITTT3", "Toronto", "static").
++Fwd("N_London", "Victoria", "Vancouver", "static").
++Fwd("N_London", "Hamilton", "Toronto", "static").
++Fwd("N_London", "ANSTTCO_RETTT1ID16", "Vancouver", "static").
++Fwd("N_London", "Lethbridge", "Calgary", "static").
++Fwd("N_London", "ANSTTCO_RETTT1", "Toronto", "static").
++Fwd("N_London", "SaintTTJohn", "Moncton", "static").
++Fwd("N_London", "Yarmouth", "Halifax", "static").
++Fwd("N_London", "Kitchener", "Toronto", "static").
++Fwd("N_London", "Edmonton", "Calgary", "static").
++Fwd("N_London", "Quebec", "Montreal", "static").
+

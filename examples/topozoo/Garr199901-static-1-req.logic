@@ -1,0 +1,17 @@
+
++Fwd("N_BA", "Pv", "MI", "static").
++Fwd("N_BA", "MI", "NA", "static").
++Fwd("N_BA", "NA", "BA", "static").
++Fwd("N_BA", "CA", "RM", "static").
++Fwd("N_BA", "RM", "NA", "static").
++Fwd("N_BA", "BO", "NA", "static").
++Fwd("N_BA", "TS", "MI", "static").
++Fwd("N_BA", "AQ", "RM", "static").
++Fwd("N_BA", "TO", "MI", "static").
++Fwd("N_BA", "GE", "MI", "static").
++Fwd("N_BA", "PA", "NA", "static").
++Fwd("N_BA", "PD", "BO", "static").
++Fwd("N_BA", "FI", "BO", "static").
++Fwd("N_BA", "PI", "BO", "static").
++Fwd("N_BA", "CT", "NA", "static").
+

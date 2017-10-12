@@ -1,0 +1,24 @@
+
++Fwd("N_Winnipeg", "internetMCITTT3ID11", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Vancouver", "Ottawa", "ospf").
++Fwd("N_Winnipeg", "Ottawa", "Winnipeg", "ospf").
++Fwd("N_Winnipeg", "Sydney", "Halifax", "ospf").
++Fwd("N_Winnipeg", "Halifax", "Moncton", "ospf").
++Fwd("N_Winnipeg", "Moncton", "Montreal", "ospf").
++Fwd("N_Winnipeg", "Montreal", "Ottawa", "ospf").
++Fwd("N_Winnipeg", "Calgary", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Sherbrooke", "Montreal", "ospf").
++Fwd("N_Winnipeg", "internetMCITTT3", "Toronto", "ospf").
++Fwd("N_Winnipeg", "Toronto", "Ottawa", "ospf").
++Fwd("N_Winnipeg", "Victoria", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Hamilton", "Toronto", "ospf").
++Fwd("N_Winnipeg", "ANSTTCO_RETTT1ID16", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Lethbridge", "Calgary", "ospf").
++Fwd("N_Winnipeg", "ANSTTCO_RETTT1", "Toronto", "ospf").
++Fwd("N_Winnipeg", "SaintTTJohn", "Moncton", "ospf").
++Fwd("N_Winnipeg", "Yarmouth", "Halifax", "ospf").
++Fwd("N_Winnipeg", "Kitchener", "Toronto", "ospf").
++Fwd("N_Winnipeg", "Edmonton", "Calgary", "ospf").
++Fwd("N_Winnipeg", "London", "Toronto", "ospf").
++Fwd("N_Winnipeg", "Quebec", "Montreal", "ospf").
+

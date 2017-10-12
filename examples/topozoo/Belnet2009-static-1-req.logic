@@ -1,0 +1,22 @@
+
++Fwd("N_Arlon", "Hasselt", "Geel", "static").
++Fwd("N_Arlon", "Geel", "Vilvoorde", "static").
++Fwd("N_Arlon", "Vilvoorde", "Mons", "static").
++Fwd("N_Arlon", "Mons", "Charleroi", "static").
++Fwd("N_Arlon", "Charleroi", "Louvain_la_Neuve", "static").
++Fwd("N_Arlon", "Louvain_la_Neuve", "Namur", "static").
++Fwd("N_Arlon", "Namur", "Arlon", "static").
++Fwd("N_Arlon", "LiegeTT2", "Arlon", "static").
++Fwd("N_Arlon", "LiegeTT1TT", "LiegeTT2", "static").
++Fwd("N_Arlon", "BrusselsTTCampus", "Vilvoorde", "static").
++Fwd("N_Arlon", "AntwerpenTT2", "Evere", "static").
++Fwd("N_Arlon", "Evere", "LiegeTT1TT", "static").
++Fwd("N_Arlon", "BrusselsTTScience", "Evere", "static").
++Fwd("N_Arlon", "Antwerpen1", "AntwerpenTT2", "static").
++Fwd("N_Arlon", "Korthijk", "Vilvoorde", "static").
++Fwd("N_Arlon", "Gent2", "Antwerpen1", "static").
++Fwd("N_Arlon", "Leuven1", "Evere", "static").
++Fwd("N_Arlon", "Brugge", "Korthijk", "static").
++Fwd("N_Arlon", "Leuven2", "Leuven1", "static").
++Fwd("N_Arlon", "Gent1", "Brugge", "static").
+

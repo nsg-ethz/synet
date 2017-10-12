@@ -1,0 +1,356 @@
++SetNode("Kretinga").
++SetAdminDist("Kretinga", "static", 1).
++SetAdminDist("Kretinga", "bgp", 2).
++SetAdminDist("Kretinga", "ospf", 3).
++SetInterface("Kretinga", "Kretinga_I_Klaipeda").
+
++SetNode("Utena").
++SetAdminDist("Utena", "static", 1).
++SetAdminDist("Utena", "bgp", 2).
++SetAdminDist("Utena", "ospf", 3).
++SetInterface("Utena", "Utena_I_Vilnius").
+
++SetNode("Anyksciai").
++SetAdminDist("Anyksciai", "static", 1).
++SetAdminDist("Anyksciai", "bgp", 2).
++SetAdminDist("Anyksciai", "ospf", 3).
++SetInterface("Anyksciai", "Anyksciai_I_Panevezys").
+
++SetNode("Skoudas").
++SetAdminDist("Skoudas", "static", 1).
++SetAdminDist("Skoudas", "bgp", 2).
++SetAdminDist("Skoudas", "ospf", 3).
++SetInterface("Skoudas", "Skoudas_I_Vilnius").
+
++SetNode("Kelme").
++SetAdminDist("Kelme", "static", 1).
++SetAdminDist("Kelme", "bgp", 2).
++SetAdminDist("Kelme", "ospf", 3).
++SetInterface("Kelme", "Kelme_I_Siauliai").
+
++SetNode("Panevezys").
++SetAdminDist("Panevezys", "static", 1).
++SetAdminDist("Panevezys", "bgp", 2).
++SetAdminDist("Panevezys", "ospf", 3).
++SetInterface("Panevezys", "Panevezys_I_Visaginas").
++SetInterface("Panevezys", "Panevezys_I_Anyksciai").
++SetInterface("Panevezys", "Panevezys_I_Siauliai").
++SetInterface("Panevezys", "Panevezys_I_Zarasai").
++SetInterface("Panevezys", "Panevezys_I_Birzai").
++SetInterface("Panevezys", "Panevezys_I_Vilnius").
+
++SetNode("ZemaiciuTTNaumiestis").
++SetAdminDist("ZemaiciuTTNaumiestis", "static", 1).
++SetAdminDist("ZemaiciuTTNaumiestis", "bgp", 2).
++SetAdminDist("ZemaiciuTTNaumiestis", "ospf", 3).
++SetInterface("ZemaiciuTTNaumiestis", "ZemaiciuTTNaumiestis_I_Klaipeda").
+
++SetNode("Rokiskis").
++SetAdminDist("Rokiskis", "static", 1).
++SetAdminDist("Rokiskis", "bgp", 2).
++SetAdminDist("Rokiskis", "ospf", 3).
++SetInterface("Rokiskis", "Rokiskis_I_Siauliai").
+
++SetNode("Sakiai").
++SetAdminDist("Sakiai", "static", 1).
++SetAdminDist("Sakiai", "bgp", 2).
++SetAdminDist("Sakiai", "ospf", 3).
++SetInterface("Sakiai", "Sakiai_I_Kaunas").
+
++SetNode("Mazeikiai").
++SetAdminDist("Mazeikiai", "static", 1).
++SetAdminDist("Mazeikiai", "bgp", 2).
++SetAdminDist("Mazeikiai", "ospf", 3).
++SetInterface("Mazeikiai", "Mazeikiai_I_Siauliai").
+
++SetNode("Alytus").
++SetAdminDist("Alytus", "static", 1).
++SetAdminDist("Alytus", "bgp", 2).
++SetAdminDist("Alytus", "ospf", 3).
++SetInterface("Alytus", "Alytus_I_Kaunas").
+
++SetNode("Marijampole").
++SetAdminDist("Marijampole", "static", 1).
++SetAdminDist("Marijampole", "bgp", 2).
++SetAdminDist("Marijampole", "ospf", 3).
++SetInterface("Marijampole", "Marijampole_I_Kaunas").
+
++SetNode("Telsiai").
++SetAdminDist("Telsiai", "static", 1).
++SetAdminDist("Telsiai", "bgp", 2).
++SetAdminDist("Telsiai", "ospf", 3).
++SetInterface("Telsiai", "Telsiai_I_Klaipeda").
+
++SetNode("Sirvintos").
++SetAdminDist("Sirvintos", "static", 1).
++SetAdminDist("Sirvintos", "bgp", 2).
++SetAdminDist("Sirvintos", "ospf", 3).
++SetInterface("Sirvintos", "Sirvintos_I_Vilnius").
+
++SetNode("Vilkaviskis").
++SetAdminDist("Vilkaviskis", "static", 1).
++SetAdminDist("Vilkaviskis", "bgp", 2).
++SetAdminDist("Vilkaviskis", "ospf", 3).
++SetInterface("Vilkaviskis", "Vilkaviskis_I_Kaunas").
+
++SetNode("Plunge").
++SetAdminDist("Plunge", "static", 1).
++SetAdminDist("Plunge", "bgp", 2).
++SetAdminDist("Plunge", "ospf", 3).
++SetInterface("Plunge", "Plunge_I_Siauliai").
+
++SetNode("Siauliai").
++SetAdminDist("Siauliai", "static", 1).
++SetAdminDist("Siauliai", "bgp", 2).
++SetAdminDist("Siauliai", "ospf", 3).
++SetInterface("Siauliai", "Siauliai_I_Klaipeda").
++SetInterface("Siauliai", "Siauliai_I_Plunge").
++SetInterface("Siauliai", "Siauliai_I_Kelme").
++SetInterface("Siauliai", "Siauliai_I_Panevezys").
++SetInterface("Siauliai", "Siauliai_I_Radviliskis").
++SetInterface("Siauliai", "Siauliai_I_Rokiskis").
++SetInterface("Siauliai", "Siauliai_I_Mazeikiai").
++SetInterface("Siauliai", "Siauliai_I_Joniskis").
++SetInterface("Siauliai", "Siauliai_I_N_Akmene").
++SetInterface("Siauliai", "Siauliai_I_Kupiskis").
+
++SetNode("Radviliskis").
++SetAdminDist("Radviliskis", "static", 1).
++SetAdminDist("Radviliskis", "bgp", 2).
++SetAdminDist("Radviliskis", "ospf", 3).
++SetInterface("Radviliskis", "Radviliskis_I_Siauliai").
+
++SetNode("Prienai").
++SetAdminDist("Prienai", "static", 1).
++SetAdminDist("Prienai", "bgp", 2).
++SetAdminDist("Prienai", "ospf", 3).
++SetInterface("Prienai", "Prienai_I_Kaunas").
+
++SetNode("Taurage").
++SetAdminDist("Taurage", "static", 1).
++SetAdminDist("Taurage", "bgp", 2).
++SetAdminDist("Taurage", "ospf", 3).
++SetInterface("Taurage", "Taurage_I_Klaipeda").
+
++SetNode("Jurbarkas").
++SetAdminDist("Jurbarkas", "static", 1).
++SetAdminDist("Jurbarkas", "bgp", 2).
++SetAdminDist("Jurbarkas", "ospf", 3).
++SetInterface("Jurbarkas", "Jurbarkas_I_Kaunas").
+
++SetNode("Druskininkai").
++SetAdminDist("Druskininkai", "static", 1).
++SetAdminDist("Druskininkai", "bgp", 2).
++SetAdminDist("Druskininkai", "ospf", 3).
++SetInterface("Druskininkai", "Druskininkai_I_Vilnius").
+
++SetNode("Salcininkai").
++SetAdminDist("Salcininkai", "static", 1).
++SetAdminDist("Salcininkai", "bgp", 2).
++SetAdminDist("Salcininkai", "ospf", 3).
++SetInterface("Salcininkai", "Salcininkai_I_Kaunas").
+
++SetNode("Kupiskis").
++SetAdminDist("Kupiskis", "static", 1).
++SetAdminDist("Kupiskis", "bgp", 2).
++SetAdminDist("Kupiskis", "ospf", 3).
++SetInterface("Kupiskis", "Kupiskis_I_Siauliai").
+
++SetNode("Klaipeda").
++SetAdminDist("Klaipeda", "static", 1).
++SetAdminDist("Klaipeda", "bgp", 2).
++SetAdminDist("Klaipeda", "ospf", 3).
++SetInterface("Klaipeda", "Klaipeda_I_Kretinga").
++SetInterface("Klaipeda", "Klaipeda_I_Kaunas").
++SetInterface("Klaipeda", "Klaipeda_I_ZemaiciuTTNaumiestis").
++SetInterface("Klaipeda", "Klaipeda_I_Siale").
++SetInterface("Klaipeda", "Klaipeda_I_Taurage").
++SetInterface("Klaipeda", "Klaipeda_I_Siauliai").
++SetInterface("Klaipeda", "Klaipeda_I_Palanga").
++SetInterface("Klaipeda", "Klaipeda_I_Telsiai").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Kaunas").
+
++SetNode("Ukmerge").
++SetAdminDist("Ukmerge", "static", 1).
++SetAdminDist("Ukmerge", "bgp", 2).
++SetAdminDist("Ukmerge", "ospf", 3).
++SetInterface("Ukmerge", "Ukmerge_I_Vilnius").
+
++SetNode("N_Akmene").
++SetAdminDist("N_Akmene", "static", 1).
++SetAdminDist("N_Akmene", "bgp", 2).
++SetAdminDist("N_Akmene", "ospf", 3).
++SetInterface("N_Akmene", "N_Akmene_I_Siauliai").
+
++SetNode("Zarasai").
++SetAdminDist("Zarasai", "static", 1).
++SetAdminDist("Zarasai", "bgp", 2).
++SetAdminDist("Zarasai", "ospf", 3).
++SetInterface("Zarasai", "Zarasai_I_Panevezys").
+
++SetNode("Ignalina").
++SetAdminDist("Ignalina", "static", 1).
++SetAdminDist("Ignalina", "bgp", 2).
++SetAdminDist("Ignalina", "ospf", 3).
++SetInterface("Ignalina", "Ignalina_I_Vilnius").
+
++SetNode("Moletai").
++SetAdminDist("Moletai", "static", 1).
++SetAdminDist("Moletai", "bgp", 2).
++SetAdminDist("Moletai", "ospf", 3).
++SetInterface("Moletai", "Moletai_I_Vilnius").
+
++SetNode("Raseiniai").
++SetAdminDist("Raseiniai", "static", 1).
++SetAdminDist("Raseiniai", "bgp", 2).
++SetAdminDist("Raseiniai", "ospf", 3).
++SetInterface("Raseiniai", "Raseiniai_I_Kaunas").
+
++SetNode("Palanga").
++SetAdminDist("Palanga", "static", 1).
++SetAdminDist("Palanga", "bgp", 2).
++SetAdminDist("Palanga", "ospf", 3).
++SetInterface("Palanga", "Palanga_I_Klaipeda").
+
++SetNode("Visaginas").
++SetAdminDist("Visaginas", "static", 1).
++SetAdminDist("Visaginas", "bgp", 2).
++SetAdminDist("Visaginas", "ospf", 3).
++SetInterface("Visaginas", "Visaginas_I_Panevezys").
+
++SetNode("Kaunas").
++SetAdminDist("Kaunas", "static", 1).
++SetAdminDist("Kaunas", "bgp", 2).
++SetAdminDist("Kaunas", "ospf", 3).
++SetInterface("Kaunas", "Kaunas_I_Klaipeda").
++SetInterface("Kaunas", "Kaunas_I_Marijampole").
++SetInterface("Kaunas", "Kaunas_I_GEANT").
++SetInterface("Kaunas", "Kaunas_I_Vilkaviskis").
++SetInterface("Kaunas", "Kaunas_I_Jurbarkas").
++SetInterface("Kaunas", "Kaunas_I_Prienai").
++SetInterface("Kaunas", "Kaunas_I_Sakiai").
++SetInterface("Kaunas", "Kaunas_I_Alytus").
++SetInterface("Kaunas", "Kaunas_I_Kedainiai").
++SetInterface("Kaunas", "Kaunas_I_Salcininkai").
++SetInterface("Kaunas", "Kaunas_I_Jonava").
++SetInterface("Kaunas", "Kaunas_I_Raseiniai").
++SetInterface("Kaunas", "Kaunas_I_Vilnius").
+
++SetNode("Trakar").
++SetAdminDist("Trakar", "static", 1).
++SetAdminDist("Trakar", "bgp", 2).
++SetAdminDist("Trakar", "ospf", 3).
++SetInterface("Trakar", "Trakar_I_Vilnius").
+
++SetNode("Vilnius").
++SetAdminDist("Vilnius", "static", 1).
++SetAdminDist("Vilnius", "bgp", 2).
++SetAdminDist("Vilnius", "ospf", 3).
++SetInterface("Vilnius", "Vilnius_I_Sirvintos").
++SetInterface("Vilnius", "Vilnius_I_Utena").
++SetInterface("Vilnius", "Vilnius_I_Kaunas").
++SetInterface("Vilnius", "Vilnius_I_Skoudas").
++SetInterface("Vilnius", "Vilnius_I_Ukmerge").
++SetInterface("Vilnius", "Vilnius_I_Panevezys").
++SetInterface("Vilnius", "Vilnius_I_Trakar").
++SetInterface("Vilnius", "Vilnius_I_Druskininkai").
++SetInterface("Vilnius", "Vilnius_I_Ignalina").
++SetInterface("Vilnius", "Vilnius_I_Pasvalys").
++SetInterface("Vilnius", "Vilnius_I_Moletai").
+
++SetNode("Joniskis").
++SetAdminDist("Joniskis", "static", 1).
++SetAdminDist("Joniskis", "bgp", 2).
++SetAdminDist("Joniskis", "ospf", 3).
++SetInterface("Joniskis", "Joniskis_I_Siauliai").
+
++SetNode("Birzai").
++SetAdminDist("Birzai", "static", 1).
++SetAdminDist("Birzai", "bgp", 2).
++SetAdminDist("Birzai", "ospf", 3).
++SetInterface("Birzai", "Birzai_I_Panevezys").
+
++SetNode("Kedainiai").
++SetAdminDist("Kedainiai", "static", 1).
++SetAdminDist("Kedainiai", "bgp", 2).
++SetAdminDist("Kedainiai", "ospf", 3).
++SetInterface("Kedainiai", "Kedainiai_I_Kaunas").
+
++SetNode("Pasvalys").
++SetAdminDist("Pasvalys", "static", 1).
++SetAdminDist("Pasvalys", "bgp", 2).
++SetAdminDist("Pasvalys", "ospf", 3).
++SetInterface("Pasvalys", "Pasvalys_I_Vilnius").
+
++SetNode("Jonava").
++SetAdminDist("Jonava", "static", 1).
++SetAdminDist("Jonava", "bgp", 2).
++SetAdminDist("Jonava", "ospf", 3).
++SetInterface("Jonava", "Jonava_I_Kaunas").
+
++SetNode("Siale").
++SetAdminDist("Siale", "static", 1).
++SetAdminDist("Siale", "bgp", 2).
++SetAdminDist("Siale", "ospf", 3).
++SetInterface("Siale", "Siale_I_Klaipeda").
+
++SetLink("Kretinga_I_Klaipeda", "Klaipeda_I_Kretinga").
++SetLink("Utena_I_Vilnius", "Vilnius_I_Utena").
++SetLink("Anyksciai_I_Panevezys", "Panevezys_I_Anyksciai").
++SetLink("Skoudas_I_Vilnius", "Vilnius_I_Skoudas").
++SetLink("Kelme_I_Siauliai", "Siauliai_I_Kelme").
++SetLink("Panevezys_I_Visaginas", "Visaginas_I_Panevezys").
++SetLink("Panevezys_I_Siauliai", "Siauliai_I_Panevezys").
++SetLink("Panevezys_I_Zarasai", "Zarasai_I_Panevezys").
++SetLink("Panevezys_I_Birzai", "Birzai_I_Panevezys").
++SetLink("Panevezys_I_Vilnius", "Vilnius_I_Panevezys").
++SetLink("ZemaiciuTTNaumiestis_I_Klaipeda", "Klaipeda_I_ZemaiciuTTNaumiestis").
++SetLink("Rokiskis_I_Siauliai", "Siauliai_I_Rokiskis").
++SetLink("Sakiai_I_Kaunas", "Kaunas_I_Sakiai").
++SetLink("Mazeikiai_I_Siauliai", "Siauliai_I_Mazeikiai").
++SetLink("Alytus_I_Kaunas", "Kaunas_I_Alytus").
++SetLink("Marijampole_I_Kaunas", "Kaunas_I_Marijampole").
++SetLink("Telsiai_I_Klaipeda", "Klaipeda_I_Telsiai").
++SetLink("Sirvintos_I_Vilnius", "Vilnius_I_Sirvintos").
++SetLink("Vilkaviskis_I_Kaunas", "Kaunas_I_Vilkaviskis").
++SetLink("Plunge_I_Siauliai", "Siauliai_I_Plunge").
++SetLink("Siauliai_I_Klaipeda", "Klaipeda_I_Siauliai").
++SetLink("Siauliai_I_Radviliskis", "Radviliskis_I_Siauliai").
++SetLink("Siauliai_I_Joniskis", "Joniskis_I_Siauliai").
++SetLink("Siauliai_I_N_Akmene", "N_Akmene_I_Siauliai").
++SetLink("Siauliai_I_Kupiskis", "Kupiskis_I_Siauliai").
++SetLink("Prienai_I_Kaunas", "Kaunas_I_Prienai").
++SetLink("Taurage_I_Klaipeda", "Klaipeda_I_Taurage").
++SetLink("Jurbarkas_I_Kaunas", "Kaunas_I_Jurbarkas").
++SetLink("Druskininkai_I_Vilnius", "Vilnius_I_Druskininkai").
++SetLink("Salcininkai_I_Kaunas", "Kaunas_I_Salcininkai").
++SetLink("Klaipeda_I_Kaunas", "Kaunas_I_Klaipeda").
++SetLink("Klaipeda_I_Siale", "Siale_I_Klaipeda").
++SetLink("Klaipeda_I_Palanga", "Palanga_I_Klaipeda").
++SetLink("GEANT_I_Kaunas", "Kaunas_I_GEANT").
++SetLink("Ukmerge_I_Vilnius", "Vilnius_I_Ukmerge").
++SetLink("Ignalina_I_Vilnius", "Vilnius_I_Ignalina").
++SetLink("Moletai_I_Vilnius", "Vilnius_I_Moletai").
++SetLink("Raseiniai_I_Kaunas", "Kaunas_I_Raseiniai").
++SetLink("Kaunas_I_Kedainiai", "Kedainiai_I_Kaunas").
++SetLink("Kaunas_I_Jonava", "Jonava_I_Kaunas").
++SetLink("Kaunas_I_Vilnius", "Vilnius_I_Kaunas").
++SetLink("Trakar_I_Vilnius", "Vilnius_I_Trakar").
++SetLink("Vilnius_I_Pasvalys", "Pasvalys_I_Vilnius").
+
+
++SetNetwork("Telsiai", "N_Telsiai").
++SetNetwork("Zarasai", "N_Zarasai").
++SetNetwork("Raseiniai", "N_Raseiniai").
++SetNetwork("Mazeikiai", "N_Mazeikiai").
++SetNetwork("Druskininkai", "N_Druskininkai").
++SetNetwork("Ukmerge", "N_Ukmerge").
++SetNetwork("Taurage", "N_Taurage").
++SetNetwork("Klaipeda", "N_Klaipeda").
++SetNetwork("Visaginas", "N_Visaginas").
++SetNetwork("Kelme", "N_Kelme").

@@ -1,0 +1,131 @@
++SetNode("Kaunas").
++SetAdminDist("Kaunas", "static", 1).
++SetAdminDist("Kaunas", "bgp", 2).
++SetAdminDist("Kaunas", "ospf", 3).
++SetInterface("Kaunas", "Kaunas_I_Stockholm").
+
++SetNode("USA").
++SetAdminDist("USA", "static", 1).
++SetAdminDist("USA", "bgp", 2).
++SetAdminDist("USA", "ospf", 3).
++SetInterface("USA", "USA_I_Stockholm").
+
++SetNode("Helsinki").
++SetAdminDist("Helsinki", "static", 1).
++SetAdminDist("Helsinki", "bgp", 2).
++SetAdminDist("Helsinki", "ospf", 3).
++SetInterface("Helsinki", "Helsinki_I_StTTPetersburg").
++SetInterface("Helsinki", "Helsinki_I_Petrozavodsk").
++SetInterface("Helsinki", "Helsinki_I_Tallinn").
++SetInterface("Helsinki", "Helsinki_I_Stockholm").
+
++SetNode("Oslo").
++SetAdminDist("Oslo", "static", 1).
++SetAdminDist("Oslo", "bgp", 2).
++SetAdminDist("Oslo", "ospf", 3).
++SetInterface("Oslo", "Oslo_I_Stockholm").
+
++SetNode("Riga").
++SetAdminDist("Riga", "static", 1).
++SetAdminDist("Riga", "bgp", 2).
++SetAdminDist("Riga", "ospf", 3).
++SetInterface("Riga", "Riga_I_Stockholm").
+
++SetNode("TEN_34").
++SetAdminDist("TEN_34", "static", 1).
++SetAdminDist("TEN_34", "bgp", 2).
++SetAdminDist("TEN_34", "ospf", 3).
++SetInterface("TEN_34", "TEN_34_I_Stockholm").
+
++SetNode("Lviv").
++SetAdminDist("Lviv", "static", 1).
++SetAdminDist("Lviv", "bgp", 2).
++SetAdminDist("Lviv", "ospf", 3).
++SetInterface("Lviv", "Lviv_I_Stockholm").
+
++SetNode("StTTPetersburg").
++SetAdminDist("StTTPetersburg", "static", 1).
++SetAdminDist("StTTPetersburg", "bgp", 2).
++SetAdminDist("StTTPetersburg", "ospf", 3).
++SetInterface("StTTPetersburg", "StTTPetersburg_I_Helsinki").
+
++SetNode("Petrozavodsk").
++SetAdminDist("Petrozavodsk", "static", 1).
++SetAdminDist("Petrozavodsk", "bgp", 2).
++SetAdminDist("Petrozavodsk", "ospf", 3).
++SetInterface("Petrozavodsk", "Petrozavodsk_I_Helsinki").
+
++SetNode("Reykjavik").
++SetAdminDist("Reykjavik", "static", 1).
++SetAdminDist("Reykjavik", "bgp", 2).
++SetAdminDist("Reykjavik", "ospf", 3).
++SetInterface("Reykjavik", "Reykjavik_I_Stockholm").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_Kaunas").
++SetInterface("Stockholm", "Stockholm_I_USA").
++SetInterface("Stockholm", "Stockholm_I_Helsinki").
++SetInterface("Stockholm", "Stockholm_I_Oslo").
++SetInterface("Stockholm", "Stockholm_I_Riga").
++SetInterface("Stockholm", "Stockholm_I_TEN_34").
++SetInterface("Stockholm", "Stockholm_I_Lviv").
++SetInterface("Stockholm", "Stockholm_I_Reykjavik").
++SetInterface("Stockholm", "Stockholm_I_Copenhagen").
++SetInterface("Stockholm", "Stockholm_I_Warsaw").
+
++SetNode("Tallinn").
++SetAdminDist("Tallinn", "static", 1).
++SetAdminDist("Tallinn", "bgp", 2).
++SetAdminDist("Tallinn", "ospf", 3).
++SetInterface("Tallinn", "Tallinn_I_Helsinki").
+
++SetNode("Copenhagen").
++SetAdminDist("Copenhagen", "static", 1).
++SetAdminDist("Copenhagen", "bgp", 2).
++SetAdminDist("Copenhagen", "ospf", 3).
++SetInterface("Copenhagen", "Copenhagen_I_Stockholm").
+
++SetNode("Warsaw").
++SetAdminDist("Warsaw", "static", 1).
++SetAdminDist("Warsaw", "bgp", 2).
++SetAdminDist("Warsaw", "ospf", 3).
++SetInterface("Warsaw", "Warsaw_I_Stockholm").
+
++SetLink("Kaunas_I_Stockholm", "Stockholm_I_Kaunas").
++SetLink("USA_I_Stockholm", "Stockholm_I_USA").
++SetLink("Helsinki_I_StTTPetersburg", "StTTPetersburg_I_Helsinki").
++SetLink("Helsinki_I_Petrozavodsk", "Petrozavodsk_I_Helsinki").
++SetLink("Helsinki_I_Tallinn", "Tallinn_I_Helsinki").
++SetLink("Helsinki_I_Stockholm", "Stockholm_I_Helsinki").
++SetLink("Oslo_I_Stockholm", "Stockholm_I_Oslo").
++SetLink("Riga_I_Stockholm", "Stockholm_I_Riga").
++SetLink("TEN_34_I_Stockholm", "Stockholm_I_TEN_34").
++SetLink("Lviv_I_Stockholm", "Stockholm_I_Lviv").
++SetLink("Reykjavik_I_Stockholm", "Stockholm_I_Reykjavik").
++SetLink("Stockholm_I_Copenhagen", "Copenhagen_I_Stockholm").
++SetLink("Stockholm_I_Warsaw", "Warsaw_I_Stockholm").
+
+
++SetNetwork("Tallinn", "N_Tallinn").
++SetBGPAnnouncement("Tallinn", "N_Tallinn", "NBGP_Tallinn", "1;2;3", 3).
++SetNetwork("StTTPetersburg", "N_StTTPetersburg").
++SetBGPAnnouncement("StTTPetersburg", "N_StTTPetersburg", "NBGP_StTTPetersburg", "1;2;3", 3).
++SetNetwork("Stockholm", "N_Stockholm").
++SetBGPAnnouncement("Stockholm", "N_Stockholm", "NBGP_Stockholm", "1;2;3", 3).
++SetNetwork("Lviv", "N_Lviv").
++SetBGPAnnouncement("Lviv", "N_Lviv", "NBGP_Lviv", "1;2;3", 3).
++SetNetwork("Petrozavodsk", "N_Petrozavodsk").
++SetBGPAnnouncement("Petrozavodsk", "N_Petrozavodsk", "NBGP_Petrozavodsk", "1;2;3", 3).
++SetNetwork("Riga", "N_Riga").
++SetBGPAnnouncement("Riga", "N_Riga", "NBGP_Riga", "1;2;3", 3).
++SetNetwork("Copenhagen", "N_Copenhagen").
++SetBGPAnnouncement("Copenhagen", "N_Copenhagen", "NBGP_Copenhagen", "1;2;3", 3).
++SetNetwork("Helsinki", "N_Helsinki").
++SetBGPAnnouncement("Helsinki", "N_Helsinki", "NBGP_Helsinki", "1;2;3", 3).
++SetNetwork("Warsaw", "N_Warsaw").
++SetBGPAnnouncement("Warsaw", "N_Warsaw", "NBGP_Warsaw", "1;2;3", 3).
++SetNetwork("Kaunas", "N_Kaunas").
++SetBGPAnnouncement("Kaunas", "N_Kaunas", "NBGP_Kaunas", "1;2;3", 3).

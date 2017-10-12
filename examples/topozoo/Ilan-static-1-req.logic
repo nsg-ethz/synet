@@ -1,0 +1,15 @@
+
++Fwd("N_GEANTTT2TTGermany", "Technion", "TelTTAvivTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "TelTTAvivTTGigaPoP", "HaifaTTUniversity", "static").
++Fwd("N_GEANTTT2TTGermany", "HaifaTTUniversity", "PetachTTTikvaTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "PetachTTTikvaTTGigaPoP", "GEANTTT2TTGermany", "static").
++Fwd("N_GEANTTT2TTGermany", "TelTTAvivTTUniversity", "PetachTTTikvaTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "BenTTGurionTTUniversity", "TelTTAvivTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "IIX", "PetachTTTikvaTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "WeizmannTTInstitute", "TelTTAvivTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "OpenTTUniversity", "PetachTTTikvaTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "ExternalTTUsers", "PetachTTTikvaTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "Int_lTTbackupTT", "TelTTAvivTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "HebrewTTUniversity", "TelTTAvivTTGigaPoP", "static").
++Fwd("N_GEANTTT2TTGermany", "BarTTIlanTTUniversity", "PetachTTTikvaTTGigaPoP", "static").
+

@@ -1,0 +1,20 @@
+
++Fwd("N_Sacramento", "Houston", "Dallas", "static").
++Fwd("N_Sacramento", "Dallas", "Rialto", "static").
++Fwd("N_Sacramento", "Rialto", "SanTTFrancisco", "static").
++Fwd("N_Sacramento", "SanTTFrancisco", "Sacramento", "static").
++Fwd("N_Sacramento", "DownersTTGrove", "NorthTTRoyalton", "static").
++Fwd("N_Sacramento", "NorthTTRoyalton", "WestTTOrange", "static").
++Fwd("N_Sacramento", "WestTTOrange", "Denver", "static").
++Fwd("N_Sacramento", "Denver", "SanTTFrancisco", "static").
++Fwd("N_Sacramento", "NewTTYork", "WestTTOrange", "static").
++Fwd("N_Sacramento", "PompanoTTBeach", "Austell", "static").
++Fwd("N_Sacramento", "Austell", "Rialto", "static").
++Fwd("N_Sacramento", "Charlton", "NewTTYork", "static").
++Fwd("N_Sacramento", "WillowTTSprings", "Independence", "static").
++Fwd("N_Sacramento", "Independence", "Denver", "static").
++Fwd("N_Sacramento", "Greensboro", "Austell", "static").
++Fwd("N_Sacramento", "Washington_TTDC", "WestTTOrange", "static").
++Fwd("N_Sacramento", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_Sacramento", "Seattle", "Denver", "static").
+

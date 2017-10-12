@@ -1,0 +1,25 @@
+
++Fwd("N_CT", "BA", "NAID15", "static").
++Fwd("N_CT", "NAID15", "CT", "static").
++Fwd("N_CT", "USA", "MI", "static").
++Fwd("N_CT", "MI", "BO", "static").
++Fwd("N_CT", "BO", "NAID15", "static").
++Fwd("N_CT", "FI", "BO", "static").
++Fwd("N_CT", "RMID11", "RM", "static").
++Fwd("N_CT", "RM", "NAID15", "static").
++Fwd("N_CT", "NA", "NAID15", "static").
++Fwd("N_CT", "TS", "MI", "static").
++Fwd("N_CT", "TO", "MI", "static").
++Fwd("N_CT", "PA", "NAID15", "static").
++Fwd("N_CT", "MIID10", "MI", "static").
++Fwd("N_CT", "PG", "RM", "static").
++Fwd("N_CT", "PD", "MI", "static").
++Fwd("N_CT", "PI", "BO", "static").
++Fwd("N_CT", "BOID13", "BO", "static").
++Fwd("N_CT", "FRA", "RM", "static").
++Fwd("N_CT", "GEANT", "MI", "static").
++Fwd("N_CT", "CA", "RM", "static").
++Fwd("N_CT", "AQ", "RM", "static").
++Fwd("N_CT", "GE", "MI", "static").
++Fwd("N_CT", "CS", "NAID15", "static").
+

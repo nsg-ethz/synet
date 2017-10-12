@@ -1,0 +1,36 @@
+
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "TDCTT_TrinityTTCollegeTTDublin_", "static").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "DCUTT_DublinTTCityTTUniversity", "CityWest", "static").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Galway", "CityWest", "static").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Limerick", "Cork", "static").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Cork", "CityWest", "static").
++Fwd("N_TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "Galway", "static").
+
++Fwd("N_Limerick", "CityWest", "Limerick", "static").
++Fwd("N_Limerick", "DCUTT_DublinTTCityTTUniversity", "CityWest", "static").
++Fwd("N_Limerick", "Galway", "CityWest", "static").
++Fwd("N_Limerick", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "static").
++Fwd("N_Limerick", "Cork", "CityWest", "static").
++Fwd("N_Limerick", "Kilcarbery", "Galway", "static").
+
++Fwd("N_Galway", "CityWest", "Galway", "static").
++Fwd("N_Galway", "DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "static").
++Fwd("N_Galway", "Kilcarbery", "Galway", "static").
++Fwd("N_Galway", "Limerick", "Kilcarbery", "static").
++Fwd("N_Galway", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "static").
++Fwd("N_Galway", "Cork", "CityWest", "static").
+
++Fwd("N_Cork", "CityWest", "Cork", "static").
++Fwd("N_Cork", "DCUTT_DublinTTCityTTUniversity", "CityWest", "static").
++Fwd("N_Cork", "Galway", "CityWest", "static").
++Fwd("N_Cork", "Limerick", "Cork", "static").
++Fwd("N_Cork", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "static").
++Fwd("N_Cork", "Kilcarbery", "Galway", "static").
+
++Fwd("N_Kilcarbery", "CityWest", "Galway", "static").
++Fwd("N_Kilcarbery", "Galway", "Kilcarbery", "static").
++Fwd("N_Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "static").
++Fwd("N_Kilcarbery", "Limerick", "Kilcarbery", "static").
++Fwd("N_Kilcarbery", "TDCTT_TrinityTTCollegeTTDublin_", "CityWest", "static").
++Fwd("N_Kilcarbery", "Cork", "CityWest", "static").
+

@@ -1,0 +1,282 @@
++SetNode("AARNETID18").
++SetAdminDist("AARNETID18", "static", 1).
++SetAdminDist("AARNETID18", "bgp", 2).
++SetAdminDist("AARNETID18", "ospf", 3).
++SetInterface("AARNETID18", "AARNETID18_I_Sydney1").
+
++SetNode("Sydney2").
++SetAdminDist("Sydney2", "static", 1).
++SetAdminDist("Sydney2", "bgp", 2).
++SetAdminDist("Sydney2", "ospf", 3).
++SetInterface("Sydney2", "Sydney2_I_GOOGLE").
++SetInterface("Sydney2", "Sydney2_I_Canberra").
++SetInterface("Sydney2", "Sydney2_I_TELSTRA").
++SetInterface("Sydney2", "Sydney2_I_Brisbane").
++SetInterface("Sydney2", "Sydney2_I_REACH").
++SetInterface("Sydney2", "Sydney2_I_AKAMAIID13").
++SetInterface("Sydney2", "Sydney2_I_VOCUS").
++SetInterface("Sydney2", "Sydney2_I_Melbourne").
++SetInterface("Sydney2", "Sydney2_I_Perth").
++SetInterface("Sydney2", "Sydney2_I_Hobart").
++SetInterface("Sydney2", "Sydney2_I_PIPEID15").
+
++SetNode("Sydney1").
++SetAdminDist("Sydney1", "static", 1).
++SetAdminDist("Sydney1", "bgp", 2).
++SetAdminDist("Sydney1", "ospf", 3).
++SetInterface("Sydney1", "Sydney1_I_AARNETID18").
++SetInterface("Sydney1", "Sydney1_I_TELSTRA").
++SetInterface("Sydney1", "Sydney1_I_Brisbane").
++SetInterface("Sydney1", "Sydney1_I_Melbourne").
++SetInterface("Sydney1", "Sydney1_I_Equinix").
++SetInterface("Sydney1", "Sydney1_I_Perth").
++SetInterface("Sydney1", "Sydney1_I_Adelaide").
+
++SetNode("Transact").
++SetAdminDist("Transact", "static", 1).
++SetAdminDist("Transact", "bgp", 2).
++SetAdminDist("Transact", "ospf", 3).
++SetInterface("Transact", "Transact_I_Canberra").
+
++SetNode("PIPEID9").
++SetAdminDist("PIPEID9", "static", 1).
++SetAdminDist("PIPEID9", "bgp", 2).
++SetAdminDist("PIPEID9", "ospf", 3).
++SetInterface("PIPEID9", "PIPEID9_I_Melbourne").
+
++SetNode("Perth").
++SetAdminDist("Perth", "static", 1).
++SetAdminDist("Perth", "bgp", 2).
++SetAdminDist("Perth", "ospf", 3).
++SetInterface("Perth", "Perth_I_Google").
++SetInterface("Perth", "Perth_I_Sydney2").
++SetInterface("Perth", "Perth_I_Sydney1").
++SetInterface("Perth", "Perth_I_AARNET").
++SetInterface("Perth", "Perth_I_Velocix").
++SetInterface("Perth", "Perth_I_AKAMAI").
++SetInterface("Perth", "Perth_I_WADE").
++SetInterface("Perth", "Perth_I_Adelaide").
+
++SetNode("WADE").
++SetAdminDist("WADE", "static", 1).
++SetAdminDist("WADE", "bgp", 2).
++SetAdminDist("WADE", "ospf", 3).
++SetInterface("WADE", "WADE_I_Perth").
+
++SetNode("Darwin").
++SetAdminDist("Darwin", "static", 1).
++SetAdminDist("Darwin", "bgp", 2).
++SetAdminDist("Darwin", "ospf", 3).
++SetInterface("Darwin", "Darwin_I_Adelaide").
+
++SetNode("PipeID6").
++SetAdminDist("PipeID6", "static", 1).
++SetAdminDist("PipeID6", "bgp", 2).
++SetAdminDist("PipeID6", "ospf", 3).
++SetInterface("PipeID6", "PipeID6_I_Adelaide").
+
++SetNode("AKAMAIID19").
++SetAdminDist("AKAMAIID19", "static", 1).
++SetAdminDist("AKAMAIID19", "bgp", 2).
++SetAdminDist("AKAMAIID19", "ospf", 3).
++SetInterface("AKAMAIID19", "AKAMAIID19_I_Brisbane").
+
++SetNode("AARNET").
++SetAdminDist("AARNET", "static", 1).
++SetAdminDist("AARNET", "bgp", 2).
++SetAdminDist("AARNET", "ospf", 3).
++SetInterface("AARNET", "AARNET_I_Perth").
+
++SetNode("REACH").
++SetAdminDist("REACH", "static", 1).
++SetAdminDist("REACH", "bgp", 2).
++SetAdminDist("REACH", "ospf", 3).
++SetInterface("REACH", "REACH_I_Sydney2").
+
++SetNode("AKAMAIID13").
++SetAdminDist("AKAMAIID13", "static", 1).
++SetAdminDist("AKAMAIID13", "bgp", 2).
++SetAdminDist("AKAMAIID13", "ospf", 3).
++SetInterface("AKAMAIID13", "AKAMAIID13_I_Sydney2").
+
++SetNode("PIPE").
++SetAdminDist("PIPE", "static", 1).
++SetAdminDist("PIPE", "bgp", 2).
++SetAdminDist("PIPE", "ospf", 3).
++SetInterface("PIPE", "PIPE_I_Brisbane").
+
++SetNode("Velocix").
++SetAdminDist("Velocix", "static", 1).
++SetAdminDist("Velocix", "bgp", 2).
++SetAdminDist("Velocix", "ospf", 3).
++SetInterface("Velocix", "Velocix_I_Perth").
+
++SetNode("AKAMAI").
++SetAdminDist("AKAMAI", "static", 1).
++SetAdminDist("AKAMAI", "bgp", 2).
++SetAdminDist("AKAMAI", "ospf", 3).
++SetInterface("AKAMAI", "AKAMAI_I_Perth").
+
++SetNode("Hobart").
++SetAdminDist("Hobart", "static", 1).
++SetAdminDist("Hobart", "bgp", 2).
++SetAdminDist("Hobart", "ospf", 3).
++SetInterface("Hobart", "Hobart_I_Sydney2").
++SetInterface("Hobart", "Hobart_I_PIPEID16").
+
++SetNode("PIPEID15").
++SetAdminDist("PIPEID15", "static", 1).
++SetAdminDist("PIPEID15", "bgp", 2).
++SetAdminDist("PIPEID15", "ospf", 3).
++SetInterface("PIPEID15", "PIPEID15_I_Sydney2").
+
++SetNode("PIPEID16").
++SetAdminDist("PIPEID16", "static", 1).
++SetAdminDist("PIPEID16", "bgp", 2).
++SetAdminDist("PIPEID16", "ospf", 3).
++SetInterface("PIPEID16", "PIPEID16_I_Hobart").
+
++SetNode("GOOGLE").
++SetAdminDist("GOOGLE", "static", 1).
++SetAdminDist("GOOGLE", "bgp", 2).
++SetAdminDist("GOOGLE", "ospf", 3).
++SetInterface("GOOGLE", "GOOGLE_I_Sydney2").
+
++SetNode("Pipe").
++SetAdminDist("Pipe", "static", 1).
++SetAdminDist("Pipe", "bgp", 2).
++SetAdminDist("Pipe", "ospf", 3).
++SetInterface("Pipe", "Pipe_I_Canberra").
+
++SetNode("Equinix").
++SetAdminDist("Equinix", "static", 1).
++SetAdminDist("Equinix", "bgp", 2).
++SetAdminDist("Equinix", "ospf", 3).
++SetInterface("Equinix", "Equinix_I_Sydney1").
+
++SetNode("AKAMAIID8").
++SetAdminDist("AKAMAIID8", "static", 1).
++SetAdminDist("AKAMAIID8", "bgp", 2).
++SetAdminDist("AKAMAIID8", "ospf", 3).
++SetInterface("AKAMAIID8", "AKAMAIID8_I_Melbourne").
+
++SetNode("Melbourne").
++SetAdminDist("Melbourne", "static", 1).
++SetAdminDist("Melbourne", "bgp", 2).
++SetAdminDist("Melbourne", "ospf", 3).
++SetInterface("Melbourne", "Melbourne_I_AKAMAIID8").
++SetInterface("Melbourne", "Melbourne_I_Sydney2").
++SetInterface("Melbourne", "Melbourne_I_Sydney1").
++SetInterface("Melbourne", "Melbourne_I_PIPEID9").
+
++SetNode("Google").
++SetAdminDist("Google", "static", 1).
++SetAdminDist("Google", "bgp", 2).
++SetAdminDist("Google", "ospf", 3).
++SetInterface("Google", "Google_I_Perth").
+
++SetNode("Canberra").
++SetAdminDist("Canberra", "static", 1).
++SetAdminDist("Canberra", "bgp", 2).
++SetAdminDist("Canberra", "ospf", 3).
++SetInterface("Canberra", "Canberra_I_Pipe").
++SetInterface("Canberra", "Canberra_I_Transact").
++SetInterface("Canberra", "Canberra_I_Sydney2").
++SetInterface("Canberra", "Canberra_I_AARNETID5").
++SetInterface("Canberra", "Canberra_I_Adelaide").
+
++SetNode("TELSTRA").
++SetAdminDist("TELSTRA", "static", 1).
++SetAdminDist("TELSTRA", "bgp", 2).
++SetAdminDist("TELSTRA", "ospf", 3).
++SetInterface("TELSTRA", "TELSTRA_I_Sydney2").
++SetInterface("TELSTRA", "TELSTRA_I_Sydney1").
+
++SetNode("Brisbane").
++SetAdminDist("Brisbane", "static", 1).
++SetAdminDist("Brisbane", "bgp", 2).
++SetAdminDist("Brisbane", "ospf", 3).
++SetInterface("Brisbane", "Brisbane_I_PIPE").
++SetInterface("Brisbane", "Brisbane_I_Sydney2").
++SetInterface("Brisbane", "Brisbane_I_Sydney1").
++SetInterface("Brisbane", "Brisbane_I_AKAMAIID19").
+
++SetNode("AARNETID5").
++SetAdminDist("AARNETID5", "static", 1).
++SetAdminDist("AARNETID5", "bgp", 2).
++SetAdminDist("AARNETID5", "ospf", 3).
++SetInterface("AARNETID5", "AARNETID5_I_Canberra").
+
++SetNode("VOCUS").
++SetAdminDist("VOCUS", "static", 1).
++SetAdminDist("VOCUS", "bgp", 2).
++SetAdminDist("VOCUS", "ospf", 3).
++SetInterface("VOCUS", "VOCUS_I_Sydney2").
+
++SetNode("Adelaide").
++SetAdminDist("Adelaide", "static", 1).
++SetAdminDist("Adelaide", "bgp", 2).
++SetAdminDist("Adelaide", "ospf", 3).
++SetInterface("Adelaide", "Adelaide_I_PipeID6").
++SetInterface("Adelaide", "Adelaide_I_Darwin").
++SetInterface("Adelaide", "Adelaide_I_Perth").
++SetInterface("Adelaide", "Adelaide_I_Canberra").
++SetInterface("Adelaide", "Adelaide_I_Sydney1").
+
++SetLink("AARNETID18_I_Sydney1", "Sydney1_I_AARNETID18").
++SetLink("Sydney2_I_GOOGLE", "GOOGLE_I_Sydney2").
++SetLink("Sydney2_I_Canberra", "Canberra_I_Sydney2").
++SetLink("Sydney2_I_TELSTRA", "TELSTRA_I_Sydney2").
++SetLink("Sydney2_I_Brisbane", "Brisbane_I_Sydney2").
++SetLink("Sydney2_I_REACH", "REACH_I_Sydney2").
++SetLink("Sydney2_I_AKAMAIID13", "AKAMAIID13_I_Sydney2").
++SetLink("Sydney2_I_VOCUS", "VOCUS_I_Sydney2").
++SetLink("Sydney2_I_Melbourne", "Melbourne_I_Sydney2").
++SetLink("Sydney2_I_Perth", "Perth_I_Sydney2").
++SetLink("Sydney2_I_Hobart", "Hobart_I_Sydney2").
++SetLink("Sydney2_I_PIPEID15", "PIPEID15_I_Sydney2").
++SetLink("Sydney1_I_TELSTRA", "TELSTRA_I_Sydney1").
++SetLink("Sydney1_I_Brisbane", "Brisbane_I_Sydney1").
++SetLink("Sydney1_I_Melbourne", "Melbourne_I_Sydney1").
++SetLink("Sydney1_I_Equinix", "Equinix_I_Sydney1").
++SetLink("Sydney1_I_Perth", "Perth_I_Sydney1").
++SetLink("Sydney1_I_Adelaide", "Adelaide_I_Sydney1").
++SetLink("Transact_I_Canberra", "Canberra_I_Transact").
++SetLink("PIPEID9_I_Melbourne", "Melbourne_I_PIPEID9").
++SetLink("Perth_I_Google", "Google_I_Perth").
++SetLink("Perth_I_AARNET", "AARNET_I_Perth").
++SetLink("Perth_I_Velocix", "Velocix_I_Perth").
++SetLink("Perth_I_AKAMAI", "AKAMAI_I_Perth").
++SetLink("Perth_I_WADE", "WADE_I_Perth").
++SetLink("Perth_I_Adelaide", "Adelaide_I_Perth").
++SetLink("Darwin_I_Adelaide", "Adelaide_I_Darwin").
++SetLink("PipeID6_I_Adelaide", "Adelaide_I_PipeID6").
++SetLink("AKAMAIID19_I_Brisbane", "Brisbane_I_AKAMAIID19").
++SetLink("PIPE_I_Brisbane", "Brisbane_I_PIPE").
++SetLink("Hobart_I_PIPEID16", "PIPEID16_I_Hobart").
++SetLink("Pipe_I_Canberra", "Canberra_I_Pipe").
++SetLink("AKAMAIID8_I_Melbourne", "Melbourne_I_AKAMAIID8").
++SetLink("Canberra_I_AARNETID5", "AARNETID5_I_Canberra").
++SetLink("Canberra_I_Adelaide", "Adelaide_I_Canberra").
+
+
++SetNetwork("Hobart", "N_Hobart").
++SetBGPAnnouncement("Hobart", "N_Hobart", "NBGP_Hobart", "1;2;3", 3).
++SetNetwork("GOOGLE", "N_GOOGLE").
++SetBGPAnnouncement("GOOGLE", "N_GOOGLE", "NBGP_GOOGLE", "1;2;3", 3).
++SetNetwork("Sydney1", "N_Sydney1").
++SetBGPAnnouncement("Sydney1", "N_Sydney1", "NBGP_Sydney1", "1;2;3", 3).
++SetNetwork("REACH", "N_REACH").
++SetBGPAnnouncement("REACH", "N_REACH", "NBGP_REACH", "1;2;3", 3).
++SetNetwork("Sydney2", "N_Sydney2").
++SetBGPAnnouncement("Sydney2", "N_Sydney2", "NBGP_Sydney2", "1;2;3", 3).
++SetNetwork("PIPE", "N_PIPE").
++SetBGPAnnouncement("PIPE", "N_PIPE", "NBGP_PIPE", "1;2;3", 3).
++SetNetwork("AARNET", "N_AARNET").
++SetBGPAnnouncement("AARNET", "N_AARNET", "NBGP_AARNET", "1;2;3", 3).
++SetNetwork("Adelaide", "N_Adelaide").
++SetBGPAnnouncement("Adelaide", "N_Adelaide", "NBGP_Adelaide", "1;2;3", 3).
++SetNetwork("AKAMAIID19", "N_AKAMAIID19").
++SetBGPAnnouncement("AKAMAIID19", "N_AKAMAIID19", "NBGP_AKAMAIID19", "1;2;3", 3).
++SetNetwork("AARNETID5", "N_AARNETID5").
++SetBGPAnnouncement("AARNETID5", "N_AARNETID5", "NBGP_AARNETID5", "1;2;3", 3).

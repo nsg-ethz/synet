@@ -1,0 +1,36 @@
+
++Fwd("N_SantaTTClara", "Phoenix", "SantaTTClara", "static").
++Fwd("N_SantaTTClara", "Pittsburgh", "SantaTTClara", "static").
++Fwd("N_SantaTTClara", "Tucson", "Phoenix", "static").
++Fwd("N_SantaTTClara", "Washington_TTDC", "SantaTTClara", "static").
++Fwd("N_SantaTTClara", "Seattle", "SantaTTClara", "static").
++Fwd("N_SantaTTClara", "Baltimore", "Pittsburgh", "static").
+
++Fwd("N_Washington_TTDC", "Phoenix", "Washington_TTDC", "static").
++Fwd("N_Washington_TTDC", "Pittsburgh", "SantaTTClara", "static").
++Fwd("N_Washington_TTDC", "SantaTTClara", "Washington_TTDC", "static").
++Fwd("N_Washington_TTDC", "Tucson", "Phoenix", "static").
++Fwd("N_Washington_TTDC", "Seattle", "SantaTTClara", "static").
++Fwd("N_Washington_TTDC", "Baltimore", "Washington_TTDC", "static").
+
++Fwd("N_Tucson", "Phoenix", "Tucson", "static").
++Fwd("N_Tucson", "Pittsburgh", "SantaTTClara", "static").
++Fwd("N_Tucson", "SantaTTClara", "Washington_TTDC", "static").
++Fwd("N_Tucson", "Washington_TTDC", "Phoenix", "static").
++Fwd("N_Tucson", "Seattle", "SantaTTClara", "static").
++Fwd("N_Tucson", "Baltimore", "Washington_TTDC", "static").
+
++Fwd("N_Pittsburgh", "Phoenix", "SantaTTClara", "static").
++Fwd("N_Pittsburgh", "SantaTTClara", "Pittsburgh", "static").
++Fwd("N_Pittsburgh", "Tucson", "Phoenix", "static").
++Fwd("N_Pittsburgh", "Washington_TTDC", "SantaTTClara", "static").
++Fwd("N_Pittsburgh", "Seattle", "SantaTTClara", "static").
++Fwd("N_Pittsburgh", "Baltimore", "Pittsburgh", "static").
+
++Fwd("N_Phoenix", "Pittsburgh", "SantaTTClara", "static").
++Fwd("N_Phoenix", "SantaTTClara", "Washington_TTDC", "static").
++Fwd("N_Phoenix", "Washington_TTDC", "Phoenix", "static").
++Fwd("N_Phoenix", "Tucson", "Phoenix", "static").
++Fwd("N_Phoenix", "Seattle", "SantaTTClara", "static").
++Fwd("N_Phoenix", "Baltimore", "Washington_TTDC", "static").
+

@@ -1,0 +1,17 @@
+
++Fwd("N_Sturlugata", "Keldhaholt", "Grensas", "ospf").
++Fwd("N_Sturlugata", "Grensas", "Skulagata", "ospf").
++Fwd("N_Sturlugata", "Skulagata", "Taeknigarour", "ospf").
++Fwd("N_Sturlugata", "Taeknigarour", "Sturlugata", "ospf").
++Fwd("N_Sturlugata", "Bifrost", "Hvanneyri", "ospf").
++Fwd("N_Sturlugata", "Hvanneyri", "Keldhaholt", "ospf").
++Fwd("N_Sturlugata", "DST_Akureyri", "Fjarski", "ospf").
++Fwd("N_Sturlugata", "Fjarski", "Taeknigarour", "ospf").
++Fwd("N_Sturlugata", "RIX", "Taeknigarour", "ospf").
++Fwd("N_Sturlugata", "NORDUnet", "Sturlugata", "ospf").
++Fwd("N_Sturlugata", "FSA_Akureyri", "DST_Akureyri", "ospf").
++Fwd("N_Sturlugata", "Ofanleiti", "Bustaoavegur", "ospf").
++Fwd("N_Sturlugata", "Bustaoavegur", "Hringbraut", "ospf").
++Fwd("N_Sturlugata", "Hringbraut", "Sturlugata", "ospf").
++Fwd("N_Sturlugata", "Solborg_Akureyri", "DST_Akureyri", "ospf").
+

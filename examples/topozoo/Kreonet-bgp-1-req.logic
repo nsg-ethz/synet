@@ -1,0 +1,26 @@
+
++Fwd("N_Seoul", "Jeju", "Kwangju", "ospf").
++Fwd("NBGP_Seoul", "Jeju", "Kwangju", "bgp").
++Fwd("N_Seoul", "Kwangju", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Kwangju", "Daejeon", "bgp").
++Fwd("N_Seoul", "Daejeon", "Seoul", "ospf").
++Fwd("NBGP_Seoul", "Daejeon", "Seoul", "bgp").
++Fwd("N_Seoul", "Suwon", "Seoul", "ospf").
++Fwd("NBGP_Seoul", "Suwon", "Seoul", "bgp").
++Fwd("N_Seoul", "Incheon", "Seoul", "ospf").
++Fwd("NBGP_Seoul", "Incheon", "Seoul", "bgp").
++Fwd("N_Seoul", "Ochang", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Ochang", "Daejeon", "bgp").
++Fwd("N_Seoul", "Jeonju", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Jeonju", "Daejeon", "bgp").
++Fwd("N_Seoul", "Daegu", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Daegu", "Daejeon", "bgp").
++Fwd("N_Seoul", "Changwon", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Changwon", "Daejeon", "bgp").
++Fwd("N_Seoul", "Busan", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Busan", "Daejeon", "bgp").
++Fwd("N_Seoul", "Cheonan", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Cheonan", "Daejeon", "bgp").
++Fwd("N_Seoul", "Pohang", "Daejeon", "ospf").
++Fwd("NBGP_Seoul", "Pohang", "Daejeon", "bgp").
+

@@ -1,0 +1,66 @@
+
++Fwd("N_BARRnet_TTPaloTTAlto", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "SURANET_TTGeorgiaTTTech_TTAtlanta", "SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "SEQSUINET_TTRiceTTUniversity_TTHouston", "SanTTDiegoTTSupercomputerTTCenter", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "SanTTDiegoTTSupercomputerTTCenter", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "NCAR_TTBoulder", "NorthWestNet_TTSeattle", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "NorthWestNet_TTSeattle", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "CornellTTTheoryTTCenter_TTIthacaTTNY", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "SURANET_TTGeorgiaTTTech_TTAtlanta", "ospf").
++Fwd("N_BARRnet_TTPaloTTAlto", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
+
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "SURANET_TTGeorgiaTTTech_TTAtlanta", "SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "SEQSUINET_TTRiceTTUniversity_TTHouston", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "SanTTDiegoTTSupercomputerTTCenter", "SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCAR_TTBoulder", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "BARRnet_TTPaloTTAlto", "SanTTDiegoTTSupercomputerTTCenter", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "CornellTTTheoryTTCenter_TTIthacaTTNY", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "SURANET_TTGeorgiaTTTech_TTAtlanta", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NorthWestNet_TTSeattle", "NCAR_TTBoulder", "ospf").
+
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "CornellTTTheoryTTCenter_TTIthacaTTNY", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "SURANET_TTGeorgiaTTTech_TTAtlanta", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "CornellTTTheoryTTCenter_TTIthacaTTNY", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "SanTTDiegoTTSupercomputerTTCenter", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "BARRnet_TTPaloTTAlto", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "NCAR_TTBoulder", "NorthWestNet_TTSeattle", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "NorthWestNet_TTSeattle", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "SEQSUINET_TTRiceTTUniversity_TTHouston", "SURANET_TTGeorgiaTTTech_TTAtlanta", "ospf").
++Fwd("N_CornellTTTheoryTTCenter_TTIthacaTTNY", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
+
++Fwd("N_MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "MIDnet_TTLincoln_TTNE", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "SURANET_TTGeorgiaTTTech_TTAtlanta", "SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "SEQSUINET_TTRiceTTUniversity_TTHouston", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "SanTTDiegoTTSupercomputerTTCenter", "SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "NCAR_TTBoulder", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "BARRnet_TTPaloTTAlto", "SanTTDiegoTTSupercomputerTTCenter", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "CornellTTTheoryTTCenter_TTIthacaTTNY", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "SURANET_TTGeorgiaTTTech_TTAtlanta", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_MIDnet_TTLincoln_TTNE", "NorthWestNet_TTSeattle", "NCAR_TTBoulder", "ospf").
+
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCAR_TTBoulder", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "Westnet_TTSaltTTLakeTTCity", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "SURANET_TTGeorgiaTTTech_TTAtlanta", "SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "SEQSUINET_TTRiceTTUniversity_TTHouston", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "SanTTDiegoTTSupercomputerTTCenter", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "BARRnet_TTPaloTTAlto", "NorthWestNet_TTSeattle", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "NorthWestNet_TTSeattle", "NCAR_TTBoulder", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "CornellTTTheoryTTCenter_TTIthacaTTNY", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "SURANET_TTGeorgiaTTTech_TTAtlanta", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("N_Westnet_TTSaltTTLakeTTCity", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
+

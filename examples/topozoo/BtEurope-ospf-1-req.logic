@@ -1,0 +1,25 @@
+
++Fwd("N_London", "NewTTYork", "London", "ospf").
++Fwd("N_London", "Paris", "Amsterdam", "ospf").
++Fwd("N_London", "Amsterdam", "London", "ospf").
++Fwd("N_London", "Madley", "London", "ospf").
++Fwd("N_London", "Gothenburg", "Amsterdam", "ospf").
++Fwd("N_London", "Vienna", "Amsterdam", "ospf").
++Fwd("N_London", "Munich", "Frankfurt", "ospf").
++Fwd("N_London", "Frankfurt", "Amsterdam", "ospf").
++Fwd("N_London", "Goonhilly", "London", "ospf").
++Fwd("N_London", "Brussels", "London", "ospf").
++Fwd("N_London", "Budapest", "London", "ospf").
++Fwd("N_London", "Helsinki", "Stockholm", "ospf").
++Fwd("N_London", "Stockholm", "Amsterdam", "ospf").
++Fwd("N_London", "Dublin", "Amsterdam", "ospf").
++Fwd("N_London", "Dusseldorf", "Frankfurt", "ospf").
++Fwd("N_London", "Barcelona", "Amsterdam", "ospf").
++Fwd("N_London", "LondonID16", "London", "ospf").
++Fwd("N_London", "Zurich", "London", "ospf").
++Fwd("N_London", "Madrid", "London", "ospf").
++Fwd("N_London", "Prague", "Frankfurt", "ospf").
++Fwd("N_London", "Washington", "LondonID16", "ospf").
++Fwd("N_London", "Milan", "Frankfurt", "ospf").
++Fwd("N_London", "Copenhagen", "Stockholm", "ospf").
+

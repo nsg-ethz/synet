@@ -1,0 +1,365 @@
++SetNode("Roanoke").
++SetAdminDist("Roanoke", "static", 1).
++SetAdminDist("Roanoke", "bgp", 2).
++SetAdminDist("Roanoke", "ospf", 3).
++SetInterface("Roanoke", "Roanoke_I_Martinsville").
++SetInterface("Roanoke", "Roanoke_I_Troutville").
++SetInterface("Roanoke", "Roanoke_I_Blacksburg").
++SetInterface("Roanoke", "Roanoke_I_NodeID15").
++SetInterface("Roanoke", "Roanoke_I_Christiansburg").
++SetInterface("Roanoke", "Roanoke_I_Lynchburg").
+
++SetNode("Winchester").
++SetAdminDist("Winchester", "static", 1).
++SetAdminDist("Winchester", "bgp", 2).
++SetAdminDist("Winchester", "ospf", 3).
++SetInterface("Winchester", "Winchester_I_NodeID18").
++SetInterface("Winchester", "Winchester_I_Martinsburg").
++SetInterface("Winchester", "Winchester_I_Leesburg").
+
++SetNode("Herndon").
++SetAdminDist("Herndon", "static", 1).
++SetAdminDist("Herndon", "bgp", 2).
++SetAdminDist("Herndon", "ospf", 3).
++SetInterface("Herndon", "Herndon_I_Ashburn").
++SetInterface("Herndon", "Herndon_I_Warrenton").
+
++SetNode("Troutville").
++SetAdminDist("Troutville", "static", 1).
++SetAdminDist("Troutville", "bgp", 2).
++SetAdminDist("Troutville", "ospf", 3).
++SetInterface("Troutville", "Troutville_I_Roanoke").
++SetInterface("Troutville", "Troutville_I_NodeID15").
++SetInterface("Troutville", "Troutville_I_Staunton").
++SetInterface("Troutville", "Troutville_I_Lexington").
+
++SetNode("Martinsburg").
++SetAdminDist("Martinsburg", "static", 1).
++SetAdminDist("Martinsburg", "bgp", 2).
++SetAdminDist("Martinsburg", "ospf", 3).
++SetInterface("Martinsburg", "Martinsburg_I_NodeID10").
++SetInterface("Martinsburg", "Martinsburg_I_Winchester").
++SetInterface("Martinsburg", "Martinsburg_I_Hagerstown").
+
++SetNode("Charlottesville").
++SetAdminDist("Charlottesville", "static", 1).
++SetAdminDist("Charlottesville", "bgp", 2).
++SetAdminDist("Charlottesville", "ospf", 3).
++SetInterface("Charlottesville", "Charlottesville_I_Lynchburg").
++SetInterface("Charlottesville", "Charlottesville_I_Waynesboro").
+
++SetNode("Danville").
++SetAdminDist("Danville", "static", 1).
++SetAdminDist("Danville", "bgp", 2).
++SetAdminDist("Danville", "ospf", 3).
++SetInterface("Danville", "Danville_I_Martinsville").
++SetInterface("Danville", "Danville_I_Greensboro").
++SetInterface("Danville", "Danville_I_Lynchburg").
+
++SetNode("NodeID18").
++SetAdminDist("NodeID18", "static", 1).
++SetAdminDist("NodeID18", "bgp", 2).
++SetAdminDist("NodeID18", "ospf", 3).
++SetInterface("NodeID18", "NodeID18_I_Edinburg").
++SetInterface("NodeID18", "NodeID18_I_NodeID10").
++SetInterface("NodeID18", "NodeID18_I_FrontTTRoyal").
++SetInterface("NodeID18", "NodeID18_I_Winchester").
+
++SetNode("Harrisonburg").
++SetAdminDist("Harrisonburg", "static", 1).
++SetAdminDist("Harrisonburg", "bgp", 2).
++SetAdminDist("Harrisonburg", "ospf", 3).
++SetInterface("Harrisonburg", "Harrisonburg_I_NodeID17").
++SetInterface("Harrisonburg", "Harrisonburg_I_NodeID16").
++SetInterface("Harrisonburg", "Harrisonburg_I_Waynesboro").
+
++SetNode("Staunton").
++SetAdminDist("Staunton", "static", 1).
++SetAdminDist("Staunton", "bgp", 2).
++SetAdminDist("Staunton", "ospf", 3).
++SetInterface("Staunton", "Staunton_I_Troutville").
++SetInterface("Staunton", "Staunton_I_NodeID16").
+
++SetNode("NodeID10").
++SetAdminDist("NodeID10", "static", 1).
++SetAdminDist("NodeID10", "bgp", 2).
++SetAdminDist("NodeID10", "ospf", 3).
++SetInterface("NodeID10", "NodeID10_I_NodeID18").
++SetInterface("NodeID10", "NodeID10_I_Martinsburg").
++SetInterface("NodeID10", "NodeID10_I_NodeID17").
+
++SetNode("JohnsonTTCity").
++SetAdminDist("JohnsonTTCity", "static", 1).
++SetAdminDist("JohnsonTTCity", "bgp", 2).
++SetAdminDist("JohnsonTTCity", "ospf", 3).
++SetInterface("JohnsonTTCity", "JohnsonTTCity_I_Abingdon").
++SetInterface("JohnsonTTCity", "JohnsonTTCity_I_Kingsport").
++SetInterface("JohnsonTTCity", "JohnsonTTCity_I_Bristol").
+
++SetNode("Chambersburg").
++SetAdminDist("Chambersburg", "static", 1).
++SetAdminDist("Chambersburg", "bgp", 2).
++SetAdminDist("Chambersburg", "ospf", 3).
++SetInterface("Chambersburg", "Chambersburg_I_Hagerstown").
++SetInterface("Chambersburg", "Chambersburg_I_Carlisle").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_Bluefield").
++SetInterface("NodeID14", "NodeID14_I_Abingdon").
++SetInterface("NodeID14", "NodeID14_I_Wytheville").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_Roanoke").
++SetInterface("NodeID15", "NodeID15_I_Charleston").
++SetInterface("NodeID15", "NodeID15_I_Blacksburg").
++SetInterface("NodeID15", "NodeID15_I_Troutville").
+
++SetNode("NodeID16").
++SetAdminDist("NodeID16", "static", 1).
++SetAdminDist("NodeID16", "bgp", 2).
++SetAdminDist("NodeID16", "ospf", 3).
++SetInterface("NodeID16", "NodeID16_I_Harrisonburg").
++SetInterface("NodeID16", "NodeID16_I_Lexington").
++SetInterface("NodeID16", "NodeID16_I_Staunton").
++SetInterface("NodeID16", "NodeID16_I_Waynesboro").
+
++SetNode("NodeID17").
++SetAdminDist("NodeID17", "static", 1).
++SetAdminDist("NodeID17", "bgp", 2).
++SetAdminDist("NodeID17", "ospf", 3).
++SetInterface("NodeID17", "NodeID17_I_Edinburg").
++SetInterface("NodeID17", "NodeID17_I_NodeID10").
++SetInterface("NodeID17", "NodeID17_I_Harrisonburg").
+
++SetNode("Ashburn").
++SetAdminDist("Ashburn", "static", 1).
++SetAdminDist("Ashburn", "bgp", 2).
++SetAdminDist("Ashburn", "ospf", 3).
++SetInterface("Ashburn", "Ashburn_I_Herndon").
++SetInterface("Ashburn", "Ashburn_I_Leesburg").
+
++SetNode("Martinsville").
++SetAdminDist("Martinsville", "static", 1).
++SetAdminDist("Martinsville", "bgp", 2).
++SetAdminDist("Martinsville", "ospf", 3).
++SetInterface("Martinsville", "Martinsville_I_Roanoke").
++SetInterface("Martinsville", "Martinsville_I_Danville").
+
++SetNode("Waynesboro").
++SetAdminDist("Waynesboro", "static", 1).
++SetAdminDist("Waynesboro", "bgp", 2).
++SetAdminDist("Waynesboro", "ospf", 3).
++SetInterface("Waynesboro", "Waynesboro_I_Harrisonburg").
++SetInterface("Waynesboro", "Waynesboro_I_NodeID16").
++SetInterface("Waynesboro", "Waynesboro_I_Charlottesville").
+
++SetNode("FrontTTRoyal").
++SetAdminDist("FrontTTRoyal", "static", 1).
++SetAdminDist("FrontTTRoyal", "bgp", 2).
++SetAdminDist("FrontTTRoyal", "ospf", 3).
++SetInterface("FrontTTRoyal", "FrontTTRoyal_I_NodeID18").
++SetInterface("FrontTTRoyal", "FrontTTRoyal_I_Warrenton").
+
++SetNode("Lynchburg").
++SetAdminDist("Lynchburg", "static", 1).
++SetAdminDist("Lynchburg", "bgp", 2).
++SetAdminDist("Lynchburg", "ospf", 3).
++SetInterface("Lynchburg", "Lynchburg_I_Roanoke").
++SetInterface("Lynchburg", "Lynchburg_I_Charlottesville").
++SetInterface("Lynchburg", "Lynchburg_I_Danville").
+
++SetNode("Wytheville").
++SetAdminDist("Wytheville", "static", 1).
++SetAdminDist("Wytheville", "bgp", 2).
++SetAdminDist("Wytheville", "ospf", 3).
++SetInterface("Wytheville", "Wytheville_I_Abingdon").
++SetInterface("Wytheville", "Wytheville_I_NodeID14").
++SetInterface("Wytheville", "Wytheville_I_Radford").
+
++SetNode("Edinburg").
++SetAdminDist("Edinburg", "static", 1).
++SetAdminDist("Edinburg", "bgp", 2).
++SetAdminDist("Edinburg", "ospf", 3).
++SetInterface("Edinburg", "Edinburg_I_NodeID18").
++SetInterface("Edinburg", "Edinburg_I_NodeID17").
+
++SetNode("Bluefield").
++SetAdminDist("Bluefield", "static", 1).
++SetAdminDist("Bluefield", "bgp", 2).
++SetAdminDist("Bluefield", "ospf", 3).
++SetInterface("Bluefield", "Bluefield_I_NodeID14").
+
++SetNode("Blacksburg").
++SetAdminDist("Blacksburg", "static", 1).
++SetAdminDist("Blacksburg", "bgp", 2).
++SetAdminDist("Blacksburg", "ospf", 3).
++SetInterface("Blacksburg", "Blacksburg_I_Roanoke").
++SetInterface("Blacksburg", "Blacksburg_I_Christiansburg").
++SetInterface("Blacksburg", "Blacksburg_I_NodeID15").
+
++SetNode("Lexington").
++SetAdminDist("Lexington", "static", 1).
++SetAdminDist("Lexington", "bgp", 2).
++SetAdminDist("Lexington", "ospf", 3).
++SetInterface("Lexington", "Lexington_I_Troutville").
++SetInterface("Lexington", "Lexington_I_NodeID16").
+
++SetNode("Hagerstown").
++SetAdminDist("Hagerstown", "static", 1).
++SetAdminDist("Hagerstown", "bgp", 2).
++SetAdminDist("Hagerstown", "ospf", 3).
++SetInterface("Hagerstown", "Hagerstown_I_Chambersburg").
++SetInterface("Hagerstown", "Hagerstown_I_Martinsburg").
+
++SetNode("Radford").
++SetAdminDist("Radford", "static", 1).
++SetAdminDist("Radford", "bgp", 2).
++SetAdminDist("Radford", "ospf", 3).
++SetInterface("Radford", "Radford_I_Wytheville").
++SetInterface("Radford", "Radford_I_Christiansburg").
+
++SetNode("Bristol").
++SetAdminDist("Bristol", "static", 1).
++SetAdminDist("Bristol", "bgp", 2).
++SetAdminDist("Bristol", "ospf", 3).
++SetInterface("Bristol", "Bristol_I_JohnsonTTCity").
++SetInterface("Bristol", "Bristol_I_Abingdon").
++SetInterface("Bristol", "Bristol_I_Kingsport").
+
++SetNode("Charleston").
++SetAdminDist("Charleston", "static", 1).
++SetAdminDist("Charleston", "bgp", 2).
++SetAdminDist("Charleston", "ospf", 3).
++SetInterface("Charleston", "Charleston_I_Huntington").
++SetInterface("Charleston", "Charleston_I_NodeID15").
+
++SetNode("Greensboro").
++SetAdminDist("Greensboro", "static", 1).
++SetAdminDist("Greensboro", "bgp", 2).
++SetAdminDist("Greensboro", "ospf", 3).
++SetInterface("Greensboro", "Greensboro_I_Danville").
+
++SetNode("Abingdon").
++SetAdminDist("Abingdon", "static", 1).
++SetAdminDist("Abingdon", "bgp", 2).
++SetAdminDist("Abingdon", "ospf", 3).
++SetInterface("Abingdon", "Abingdon_I_JohnsonTTCity").
++SetInterface("Abingdon", "Abingdon_I_NodeID14").
++SetInterface("Abingdon", "Abingdon_I_Bristol").
++SetInterface("Abingdon", "Abingdon_I_Wytheville").
+
++SetNode("Kingsport").
++SetAdminDist("Kingsport", "static", 1).
++SetAdminDist("Kingsport", "bgp", 2).
++SetAdminDist("Kingsport", "ospf", 3).
++SetInterface("Kingsport", "Kingsport_I_JohnsonTTCity").
++SetInterface("Kingsport", "Kingsport_I_Bristol").
+
++SetNode("Warrenton").
++SetAdminDist("Warrenton", "static", 1).
++SetAdminDist("Warrenton", "bgp", 2).
++SetAdminDist("Warrenton", "ospf", 3).
++SetInterface("Warrenton", "Warrenton_I_FrontTTRoyal").
++SetInterface("Warrenton", "Warrenton_I_Herndon").
+
++SetNode("Christiansburg").
++SetAdminDist("Christiansburg", "static", 1).
++SetAdminDist("Christiansburg", "bgp", 2).
++SetAdminDist("Christiansburg", "ospf", 3).
++SetInterface("Christiansburg", "Christiansburg_I_Roanoke").
++SetInterface("Christiansburg", "Christiansburg_I_Blacksburg").
++SetInterface("Christiansburg", "Christiansburg_I_Radford").
+
++SetNode("Huntington").
++SetAdminDist("Huntington", "static", 1).
++SetAdminDist("Huntington", "bgp", 2).
++SetAdminDist("Huntington", "ospf", 3).
++SetInterface("Huntington", "Huntington_I_Charleston").
+
++SetNode("Leesburg").
++SetAdminDist("Leesburg", "static", 1).
++SetAdminDist("Leesburg", "bgp", 2).
++SetAdminDist("Leesburg", "ospf", 3).
++SetInterface("Leesburg", "Leesburg_I_Ashburn").
++SetInterface("Leesburg", "Leesburg_I_Winchester").
+
++SetNode("Carlisle").
++SetAdminDist("Carlisle", "static", 1).
++SetAdminDist("Carlisle", "bgp", 2).
++SetAdminDist("Carlisle", "ospf", 3).
++SetInterface("Carlisle", "Carlisle_I_Chambersburg").
+
++SetLink("Roanoke_I_Martinsville", "Martinsville_I_Roanoke").
++SetLink("Roanoke_I_Troutville", "Troutville_I_Roanoke").
++SetLink("Roanoke_I_Blacksburg", "Blacksburg_I_Roanoke").
++SetLink("Roanoke_I_NodeID15", "NodeID15_I_Roanoke").
++SetLink("Roanoke_I_Christiansburg", "Christiansburg_I_Roanoke").
++SetLink("Roanoke_I_Lynchburg", "Lynchburg_I_Roanoke").
++SetLink("Winchester_I_NodeID18", "NodeID18_I_Winchester").
++SetLink("Winchester_I_Martinsburg", "Martinsburg_I_Winchester").
++SetLink("Winchester_I_Leesburg", "Leesburg_I_Winchester").
++SetLink("Herndon_I_Ashburn", "Ashburn_I_Herndon").
++SetLink("Herndon_I_Warrenton", "Warrenton_I_Herndon").
++SetLink("Troutville_I_NodeID15", "NodeID15_I_Troutville").
++SetLink("Troutville_I_Staunton", "Staunton_I_Troutville").
++SetLink("Troutville_I_Lexington", "Lexington_I_Troutville").
++SetLink("Martinsburg_I_NodeID10", "NodeID10_I_Martinsburg").
++SetLink("Martinsburg_I_Hagerstown", "Hagerstown_I_Martinsburg").
++SetLink("Charlottesville_I_Lynchburg", "Lynchburg_I_Charlottesville").
++SetLink("Charlottesville_I_Waynesboro", "Waynesboro_I_Charlottesville").
++SetLink("Danville_I_Martinsville", "Martinsville_I_Danville").
++SetLink("Danville_I_Greensboro", "Greensboro_I_Danville").
++SetLink("Danville_I_Lynchburg", "Lynchburg_I_Danville").
++SetLink("NodeID18_I_Edinburg", "Edinburg_I_NodeID18").
++SetLink("NodeID18_I_NodeID10", "NodeID10_I_NodeID18").
++SetLink("NodeID18_I_FrontTTRoyal", "FrontTTRoyal_I_NodeID18").
++SetLink("Harrisonburg_I_NodeID17", "NodeID17_I_Harrisonburg").
++SetLink("Harrisonburg_I_NodeID16", "NodeID16_I_Harrisonburg").
++SetLink("Harrisonburg_I_Waynesboro", "Waynesboro_I_Harrisonburg").
++SetLink("Staunton_I_NodeID16", "NodeID16_I_Staunton").
++SetLink("NodeID10_I_NodeID17", "NodeID17_I_NodeID10").
++SetLink("JohnsonTTCity_I_Abingdon", "Abingdon_I_JohnsonTTCity").
++SetLink("JohnsonTTCity_I_Kingsport", "Kingsport_I_JohnsonTTCity").
++SetLink("JohnsonTTCity_I_Bristol", "Bristol_I_JohnsonTTCity").
++SetLink("Chambersburg_I_Hagerstown", "Hagerstown_I_Chambersburg").
++SetLink("Chambersburg_I_Carlisle", "Carlisle_I_Chambersburg").
++SetLink("NodeID14_I_Bluefield", "Bluefield_I_NodeID14").
++SetLink("NodeID14_I_Abingdon", "Abingdon_I_NodeID14").
++SetLink("NodeID14_I_Wytheville", "Wytheville_I_NodeID14").
++SetLink("NodeID15_I_Charleston", "Charleston_I_NodeID15").
++SetLink("NodeID15_I_Blacksburg", "Blacksburg_I_NodeID15").
++SetLink("NodeID16_I_Lexington", "Lexington_I_NodeID16").
++SetLink("NodeID16_I_Waynesboro", "Waynesboro_I_NodeID16").
++SetLink("NodeID17_I_Edinburg", "Edinburg_I_NodeID17").
++SetLink("Ashburn_I_Leesburg", "Leesburg_I_Ashburn").
++SetLink("FrontTTRoyal_I_Warrenton", "Warrenton_I_FrontTTRoyal").
++SetLink("Wytheville_I_Abingdon", "Abingdon_I_Wytheville").
++SetLink("Wytheville_I_Radford", "Radford_I_Wytheville").
++SetLink("Blacksburg_I_Christiansburg", "Christiansburg_I_Blacksburg").
++SetLink("Radford_I_Christiansburg", "Christiansburg_I_Radford").
++SetLink("Bristol_I_Abingdon", "Abingdon_I_Bristol").
++SetLink("Bristol_I_Kingsport", "Kingsport_I_Bristol").
++SetLink("Charleston_I_Huntington", "Huntington_I_Charleston").
+
+
++SetNetwork("Leesburg", "N_Leesburg").
++SetNetwork("NodeID16", "N_NodeID16").
++SetNetwork("Martinsville", "N_Martinsville").
++SetNetwork("Christiansburg", "N_Christiansburg").
++SetNetwork("Wytheville", "N_Wytheville").
++SetNetwork("Winchester", "N_Winchester").
++SetNetwork("Troutville", "N_Troutville").
++SetNetwork("Ashburn", "N_Ashburn").
++SetNetwork("Chambersburg", "N_Chambersburg").
++SetNetwork("Charlottesville", "N_Charlottesville").
++SetNetwork("Staunton", "N_Staunton").
++SetNetwork("Martinsburg", "N_Martinsburg").
++SetNetwork("Herndon", "N_Herndon").
++SetNetwork("Greensboro", "N_Greensboro").
++SetNetwork("NodeID10", "N_NodeID10").

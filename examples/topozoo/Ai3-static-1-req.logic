@@ -1,0 +1,11 @@
+
++Fwd("N_KEIO", "ASTI", "KEIO", "static").
++Fwd("N_KEIO", "AIT", "KEIO", "static").
++Fwd("N_KEIO", "USM", "KEIO", "static").
++Fwd("N_KEIO", "TU", "AIT", "static").
++Fwd("N_KEIO", "ITB", "KEIO", "static").
++Fwd("N_KEIO", "TP", "KEIO", "static").
++Fwd("N_KEIO", "IOIT", "KEIO", "static").
++Fwd("N_KEIO", "NAIST", "KEIO", "static").
++Fwd("N_KEIO", "UNIBRAW", "ITB", "static").
+

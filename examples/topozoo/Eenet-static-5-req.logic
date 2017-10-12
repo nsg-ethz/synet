@@ -1,0 +1,66 @@
+
++Fwd("N_GEANT2", "Tartu", "Jogeva", "static").
++Fwd("N_GEANT2", "Jogeva", "Paide", "static").
++Fwd("N_GEANT2", "Paide", "Tallinn", "static").
++Fwd("N_GEANT2", "Tallinn", "GEANT2", "static").
++Fwd("N_GEANT2", "Rakvere", "Tallinn", "static").
++Fwd("N_GEANT2", "Narva", "Tallinn", "static").
++Fwd("N_GEANT2", "Voru", "Tartu", "static").
++Fwd("N_GEANT2", "Viljandi", "Paide", "static").
++Fwd("N_GEANT2", "Kuressaare", "Tallinn", "static").
++Fwd("N_GEANT2", "Turi", "Paide", "static").
++Fwd("N_GEANT2", "Parnu", "Tallinn", "static").
++Fwd("N_GEANT2", "Haapsald", "Tallinn", "static").
+
++Fwd("N_Tallinn", "Tartu", "Jogeva", "static").
++Fwd("N_Tallinn", "Jogeva", "Paide", "static").
++Fwd("N_Tallinn", "Paide", "Tallinn", "static").
++Fwd("N_Tallinn", "Rakvere", "Tallinn", "static").
++Fwd("N_Tallinn", "Narva", "Tallinn", "static").
++Fwd("N_Tallinn", "Voru", "Tartu", "static").
++Fwd("N_Tallinn", "Viljandi", "Paide", "static").
++Fwd("N_Tallinn", "Kuressaare", "Tallinn", "static").
++Fwd("N_Tallinn", "Turi", "Paide", "static").
++Fwd("N_Tallinn", "Parnu", "Tallinn", "static").
++Fwd("N_Tallinn", "Haapsald", "Tallinn", "static").
++Fwd("N_Tallinn", "GEANT2", "Tallinn", "static").
+
++Fwd("N_Narva", "Tartu", "Jogeva", "static").
++Fwd("N_Narva", "Jogeva", "Paide", "static").
++Fwd("N_Narva", "Paide", "Tallinn", "static").
++Fwd("N_Narva", "Tallinn", "Narva", "static").
++Fwd("N_Narva", "Rakvere", "Tallinn", "static").
++Fwd("N_Narva", "Voru", "Tartu", "static").
++Fwd("N_Narva", "Viljandi", "Paide", "static").
++Fwd("N_Narva", "Kuressaare", "Tallinn", "static").
++Fwd("N_Narva", "Turi", "Paide", "static").
++Fwd("N_Narva", "Parnu", "Tallinn", "static").
++Fwd("N_Narva", "Haapsald", "Tallinn", "static").
++Fwd("N_Narva", "GEANT2", "Tallinn", "static").
+
++Fwd("N_Parnu", "Tartu", "Jogeva", "static").
++Fwd("N_Parnu", "Jogeva", "Paide", "static").
++Fwd("N_Parnu", "Paide", "Tallinn", "static").
++Fwd("N_Parnu", "Tallinn", "Parnu", "static").
++Fwd("N_Parnu", "Rakvere", "Tallinn", "static").
++Fwd("N_Parnu", "Narva", "Tallinn", "static").
++Fwd("N_Parnu", "Voru", "Tartu", "static").
++Fwd("N_Parnu", "Viljandi", "Paide", "static").
++Fwd("N_Parnu", "Kuressaare", "Tallinn", "static").
++Fwd("N_Parnu", "Turi", "Paide", "static").
++Fwd("N_Parnu", "Haapsald", "Tallinn", "static").
++Fwd("N_Parnu", "GEANT2", "Tallinn", "static").
+
++Fwd("N_Paide", "Tartu", "Jogeva", "static").
++Fwd("N_Paide", "Jogeva", "Paide", "static").
++Fwd("N_Paide", "Rakvere", "Tallinn", "static").
++Fwd("N_Paide", "Tallinn", "Viljandi", "static").
++Fwd("N_Paide", "Viljandi", "Paide", "static").
++Fwd("N_Paide", "Narva", "Tallinn", "static").
++Fwd("N_Paide", "Voru", "Tartu", "static").
++Fwd("N_Paide", "Kuressaare", "Tallinn", "static").
++Fwd("N_Paide", "Turi", "Paide", "static").
++Fwd("N_Paide", "Parnu", "Tallinn", "static").
++Fwd("N_Paide", "Haapsald", "Tallinn", "static").
++Fwd("N_Paide", "GEANT2", "Tallinn", "static").
+

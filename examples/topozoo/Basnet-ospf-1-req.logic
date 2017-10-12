@@ -1,0 +1,8 @@
+
++Fwd("N_Minsk", "Vitebsk", "Minsk", "ospf").
++Fwd("N_Minsk", "Gomel", "Minsk", "ospf").
++Fwd("N_Minsk", "Mogilev", "Minsk", "ospf").
++Fwd("N_Minsk", "Brest", "Minsk", "ospf").
++Fwd("N_Minsk", "PionierTTGEANTTT2", "Minsk", "ospf").
++Fwd("N_Minsk", "Grodno", "Minsk", "ospf").
+

@@ -1,0 +1,36 @@
+
++Fwd("N_Trondheim", "EUROPE", "Stockholm", "ospf").
++Fwd("N_Trondheim", "Stockholm", "Trondheim", "ospf").
++Fwd("N_Trondheim", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_Trondheim", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_Trondheim", "USA", "Stockholm", "ospf").
++Fwd("N_Trondheim", "Helsinki", "Stockholm", "ospf").
+
++Fwd("N_EUROPE", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_EUROPE", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_EUROPE", "Stockholm", "EUROPE", "ospf").
++Fwd("N_EUROPE", "USA", "Stockholm", "ospf").
++Fwd("N_EUROPE", "Helsinki", "Stockholm", "ospf").
++Fwd("N_EUROPE", "Trondheim", "Stockholm", "ospf").
+
++Fwd("N_Copenhagen", "EUROPE", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "Stockholm", "Copenhagen", "ospf").
++Fwd("N_Copenhagen", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_Copenhagen", "USA", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "Helsinki", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "Trondheim", "Stockholm", "ospf").
+
++Fwd("N_Helsinki", "EUROPE", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Stockholm", "Helsinki", "ospf").
++Fwd("N_Helsinki", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_Helsinki", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_Helsinki", "USA", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Trondheim", "Stockholm", "ospf").
+
++Fwd("N_USA", "EUROPE", "Stockholm", "ospf").
++Fwd("N_USA", "Stockholm", "USA", "ospf").
++Fwd("N_USA", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_USA", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_USA", "Helsinki", "Stockholm", "ospf").
++Fwd("N_USA", "Trondheim", "Stockholm", "ospf").
+

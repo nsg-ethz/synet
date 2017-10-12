@@ -1,0 +1,370 @@
++SetNode("Valcea").
++SetAdminDist("Valcea", "static", 1).
++SetAdminDist("Valcea", "bgp", 2).
++SetAdminDist("Valcea", "ospf", 3).
++SetInterface("Valcea", "Valcea_I_Dolj").
+
++SetNode("Braila").
++SetAdminDist("Braila", "static", 1).
++SetAdminDist("Braila", "bgp", 2).
++SetAdminDist("Braila", "ospf", 3).
++SetInterface("Braila", "Braila_I_Galati").
+
++SetNode("SatuTTMare").
++SetAdminDist("SatuTTMare", "static", 1).
++SetAdminDist("SatuTTMare", "bgp", 2).
++SetAdminDist("SatuTTMare", "ospf", 3).
++SetInterface("SatuTTMare", "SatuTTMare_I_Cluj").
+
++SetNode("Suceava").
++SetAdminDist("Suceava", "static", 1).
++SetAdminDist("Suceava", "bgp", 2).
++SetAdminDist("Suceava", "ospf", 3).
++SetInterface("Suceava", "Suceava_I_Iasi").
+
++SetNode("Mures").
++SetAdminDist("Mures", "static", 1).
++SetAdminDist("Mures", "bgp", 2).
++SetAdminDist("Mures", "ospf", 3).
++SetInterface("Mures", "Mures_I_Cluj").
++SetInterface("Mures", "Mures_I_Harghita").
++SetInterface("Mures", "Mures_I_Sibiu").
++SetInterface("Mures", "Mures_I_Bucaresti").
++SetInterface("Mures", "Mures_I_Covasna").
++SetInterface("Mures", "Mures_I_Iasi").
+
++SetNode("Hunedora").
++SetAdminDist("Hunedora", "static", 1).
++SetAdminDist("Hunedora", "bgp", 2).
++SetAdminDist("Hunedora", "ospf", 3).
++SetInterface("Hunedora", "Hunedora_I_Timis").
+
++SetNode("Vrancea").
++SetAdminDist("Vrancea", "static", 1).
++SetAdminDist("Vrancea", "bgp", 2).
++SetAdminDist("Vrancea", "ospf", 3).
++SetInterface("Vrancea", "Vrancea_I_Galati").
+
++SetNode("Mehedinti").
++SetAdminDist("Mehedinti", "static", 1).
++SetAdminDist("Mehedinti", "bgp", 2).
++SetAdminDist("Mehedinti", "ospf", 3).
++SetInterface("Mehedinti", "Mehedinti_I_Dolj").
+
++SetNode("Vaslui").
++SetAdminDist("Vaslui", "static", 1).
++SetAdminDist("Vaslui", "bgp", 2).
++SetAdminDist("Vaslui", "ospf", 3).
++SetInterface("Vaslui", "Vaslui_I_Iasi").
+
++SetNode("Bacau").
++SetAdminDist("Bacau", "static", 1).
++SetAdminDist("Bacau", "bgp", 2).
++SetAdminDist("Bacau", "ospf", 3).
++SetInterface("Bacau", "Bacau_I_Iasi").
+
++SetNode("Galati").
++SetAdminDist("Galati", "static", 1).
++SetAdminDist("Galati", "bgp", 2).
++SetAdminDist("Galati", "ospf", 3).
++SetInterface("Galati", "Galati_I_Vrancea").
++SetInterface("Galati", "Galati_I_Iasi").
++SetInterface("Galati", "Galati_I_Bucaresti").
++SetInterface("Galati", "Galati_I_Tulcea").
++SetInterface("Galati", "Galati_I_Braila").
+
++SetNode("Arges").
++SetAdminDist("Arges", "static", 1).
++SetAdminDist("Arges", "bgp", 2).
++SetAdminDist("Arges", "ospf", 3).
++SetInterface("Arges", "Arges_I_Bucaresti").
+
++SetNode("Cluj").
++SetAdminDist("Cluj", "static", 1).
++SetAdminDist("Cluj", "bgp", 2).
++SetAdminDist("Cluj", "ospf", 3).
++SetInterface("Cluj", "Cluj_I_Maramures").
++SetInterface("Cluj", "Cluj_I_SatuTTMare").
++SetInterface("Cluj", "Cluj_I_Alba").
++SetInterface("Cluj", "Cluj_I_Timis").
++SetInterface("Cluj", "Cluj_I_Mures").
++SetInterface("Cluj", "Cluj_I_Bucaresti").
++SetInterface("Cluj", "Cluj_I_Salaj").
++SetInterface("Cluj", "Cluj_I_Bistrita_Nasaud").
+
++SetNode("Maramures").
++SetAdminDist("Maramures", "static", 1).
++SetAdminDist("Maramures", "bgp", 2).
++SetAdminDist("Maramures", "ospf", 3).
++SetInterface("Maramures", "Maramures_I_Cluj").
+
++SetNode("Teleorman").
++SetAdminDist("Teleorman", "static", 1).
++SetAdminDist("Teleorman", "bgp", 2).
++SetAdminDist("Teleorman", "ospf", 3).
++SetInterface("Teleorman", "Teleorman_I_Bucaresti").
+
++SetNode("Dambovita").
++SetAdminDist("Dambovita", "static", 1).
++SetAdminDist("Dambovita", "bgp", 2).
++SetAdminDist("Dambovita", "ospf", 3).
++SetInterface("Dambovita", "Dambovita_I_Bucaresti").
+
++SetNode("Calarasi").
++SetAdminDist("Calarasi", "static", 1).
++SetAdminDist("Calarasi", "bgp", 2).
++SetAdminDist("Calarasi", "ospf", 3).
++SetInterface("Calarasi", "Calarasi_I_Bucaresti").
+
++SetNode("Timis").
++SetAdminDist("Timis", "static", 1).
++SetAdminDist("Timis", "bgp", 2).
++SetAdminDist("Timis", "ospf", 3).
++SetInterface("Timis", "Timis_I_Cluj").
++SetInterface("Timis", "Timis_I_Dolj").
++SetInterface("Timis", "Timis_I_Hunedora").
++SetInterface("Timis", "Timis_I_Bucaresti").
++SetInterface("Timis", "Timis_I_Caras_Severin").
++SetInterface("Timis", "Timis_I_Arad").
++SetInterface("Timis", "Timis_I_Bihor").
+
++SetNode("Constanta").
++SetAdminDist("Constanta", "static", 1).
++SetAdminDist("Constanta", "bgp", 2).
++SetAdminDist("Constanta", "ospf", 3).
++SetInterface("Constanta", "Constanta_I_Bucaresti").
+
++SetNode("Sibiu").
++SetAdminDist("Sibiu", "static", 1).
++SetAdminDist("Sibiu", "bgp", 2).
++SetAdminDist("Sibiu", "ospf", 3).
++SetInterface("Sibiu", "Sibiu_I_Mures").
+
++SetNode("Botosani").
++SetAdminDist("Botosani", "static", 1).
++SetAdminDist("Botosani", "bgp", 2).
++SetAdminDist("Botosani", "ospf", 3).
++SetInterface("Botosani", "Botosani_I_Iasi").
+
++SetNode("Covasna").
++SetAdminDist("Covasna", "static", 1).
++SetAdminDist("Covasna", "bgp", 2).
++SetAdminDist("Covasna", "ospf", 3).
++SetInterface("Covasna", "Covasna_I_Mures").
+
++SetNode("Bistrita_Nasaud").
++SetAdminDist("Bistrita_Nasaud", "static", 1).
++SetAdminDist("Bistrita_Nasaud", "bgp", 2).
++SetAdminDist("Bistrita_Nasaud", "ospf", 3).
++SetInterface("Bistrita_Nasaud", "Bistrita_Nasaud_I_Cluj").
+
++SetNode("Ialomita").
++SetAdminDist("Ialomita", "static", 1).
++SetAdminDist("Ialomita", "bgp", 2).
++SetAdminDist("Ialomita", "ospf", 3).
++SetInterface("Ialomita", "Ialomita_I_Bucaresti").
+
++SetNode("Bihor").
++SetAdminDist("Bihor", "static", 1).
++SetAdminDist("Bihor", "bgp", 2).
++SetAdminDist("Bihor", "ospf", 3).
++SetInterface("Bihor", "Bihor_I_Timis").
+
++SetNode("ChisinauTTRENAM").
++SetAdminDist("ChisinauTTRENAM", "static", 1).
++SetAdminDist("ChisinauTTRENAM", "bgp", 2).
++SetAdminDist("ChisinauTTRENAM", "ospf", 3).
++SetInterface("ChisinauTTRENAM", "ChisinauTTRENAM_I_Iasi").
+
++SetNode("Gorj").
++SetAdminDist("Gorj", "static", 1).
++SetAdminDist("Gorj", "bgp", 2).
++SetAdminDist("Gorj", "ospf", 3).
++SetInterface("Gorj", "Gorj_I_Dolj").
+
++SetNode("Prahova").
++SetAdminDist("Prahova", "static", 1).
++SetAdminDist("Prahova", "bgp", 2).
++SetAdminDist("Prahova", "ospf", 3).
++SetInterface("Prahova", "Prahova_I_Bucaresti").
+
++SetNode("Tulcea").
++SetAdminDist("Tulcea", "static", 1).
++SetAdminDist("Tulcea", "bgp", 2).
++SetAdminDist("Tulcea", "ospf", 3).
++SetInterface("Tulcea", "Tulcea_I_Galati").
+
++SetNode("Arad").
++SetAdminDist("Arad", "static", 1).
++SetAdminDist("Arad", "bgp", 2).
++SetAdminDist("Arad", "ospf", 3).
++SetInterface("Arad", "Arad_I_Timis").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Bucaresti").
+
++SetNode("Salaj").
++SetAdminDist("Salaj", "static", 1).
++SetAdminDist("Salaj", "bgp", 2).
++SetAdminDist("Salaj", "ospf", 3).
++SetInterface("Salaj", "Salaj_I_Cluj").
+
++SetNode("Bucaresti").
++SetAdminDist("Bucaresti", "static", 1).
++SetAdminDist("Bucaresti", "bgp", 2).
++SetAdminDist("Bucaresti", "ospf", 3).
++SetInterface("Bucaresti", "Bucaresti_I_Cluj").
++SetInterface("Bucaresti", "Bucaresti_I_Dolj").
++SetInterface("Bucaresti", "Bucaresti_I_Teleorman").
++SetInterface("Bucaresti", "Bucaresti_I_GEANT").
++SetInterface("Bucaresti", "Bucaresti_I_Dambovita").
++SetInterface("Bucaresti", "Bucaresti_I_Calarasi").
++SetInterface("Bucaresti", "Bucaresti_I_Timis").
++SetInterface("Bucaresti", "Bucaresti_I_Constanta").
++SetInterface("Bucaresti", "Bucaresti_I_Mures").
++SetInterface("Bucaresti", "Bucaresti_I_Giurgiu").
++SetInterface("Bucaresti", "Bucaresti_I_Buzau").
++SetInterface("Bucaresti", "Bucaresti_I_Iasi").
++SetInterface("Bucaresti", "Bucaresti_I_Ialomita").
++SetInterface("Bucaresti", "Bucaresti_I_Galati").
++SetInterface("Bucaresti", "Bucaresti_I_Prahova").
++SetInterface("Bucaresti", "Bucaresti_I_Arges").
+
++SetNode("Dolj").
++SetAdminDist("Dolj", "static", 1).
++SetAdminDist("Dolj", "bgp", 2).
++SetAdminDist("Dolj", "ospf", 3).
++SetInterface("Dolj", "Dolj_I_Valcea").
++SetInterface("Dolj", "Dolj_I_Timis").
++SetInterface("Dolj", "Dolj_I_Bucaresti").
++SetInterface("Dolj", "Dolj_I_Mehedinti").
++SetInterface("Dolj", "Dolj_I_Olt").
++SetInterface("Dolj", "Dolj_I_Gorj").
+
++SetNode("Caras_Severin").
++SetAdminDist("Caras_Severin", "static", 1).
++SetAdminDist("Caras_Severin", "bgp", 2).
++SetAdminDist("Caras_Severin", "ospf", 3).
++SetInterface("Caras_Severin", "Caras_Severin_I_Timis").
+
++SetNode("Alba").
++SetAdminDist("Alba", "static", 1).
++SetAdminDist("Alba", "bgp", 2).
++SetAdminDist("Alba", "ospf", 3).
++SetInterface("Alba", "Alba_I_Cluj").
+
++SetNode("Neamt").
++SetAdminDist("Neamt", "static", 1).
++SetAdminDist("Neamt", "bgp", 2).
++SetAdminDist("Neamt", "ospf", 3).
++SetInterface("Neamt", "Neamt_I_Iasi").
+
++SetNode("Giurgiu").
++SetAdminDist("Giurgiu", "static", 1).
++SetAdminDist("Giurgiu", "bgp", 2).
++SetAdminDist("Giurgiu", "ospf", 3).
++SetInterface("Giurgiu", "Giurgiu_I_Bucaresti").
+
++SetNode("Harghita").
++SetAdminDist("Harghita", "static", 1).
++SetAdminDist("Harghita", "bgp", 2).
++SetAdminDist("Harghita", "ospf", 3).
++SetInterface("Harghita", "Harghita_I_Mures").
+
++SetNode("Buzau").
++SetAdminDist("Buzau", "static", 1).
++SetAdminDist("Buzau", "bgp", 2).
++SetAdminDist("Buzau", "ospf", 3).
++SetInterface("Buzau", "Buzau_I_Bucaresti").
+
++SetNode("Olt").
++SetAdminDist("Olt", "static", 1).
++SetAdminDist("Olt", "bgp", 2).
++SetAdminDist("Olt", "ospf", 3).
++SetInterface("Olt", "Olt_I_Dolj").
+
++SetNode("Iasi").
++SetAdminDist("Iasi", "static", 1).
++SetAdminDist("Iasi", "bgp", 2).
++SetAdminDist("Iasi", "ospf", 3).
++SetInterface("Iasi", "Iasi_I_Suceava").
++SetInterface("Iasi", "Iasi_I_Neamt").
++SetInterface("Iasi", "Iasi_I_Mures").
++SetInterface("Iasi", "Iasi_I_Bucaresti").
++SetInterface("Iasi", "Iasi_I_Vaslui").
++SetInterface("Iasi", "Iasi_I_ChisinauTTRENAM").
++SetInterface("Iasi", "Iasi_I_Bacau").
++SetInterface("Iasi", "Iasi_I_Galati").
++SetInterface("Iasi", "Iasi_I_Botosani").
+
++SetLink("Valcea_I_Dolj", "Dolj_I_Valcea").
++SetLink("Braila_I_Galati", "Galati_I_Braila").
++SetLink("SatuTTMare_I_Cluj", "Cluj_I_SatuTTMare").
++SetLink("Suceava_I_Iasi", "Iasi_I_Suceava").
++SetLink("Mures_I_Cluj", "Cluj_I_Mures").
++SetLink("Mures_I_Harghita", "Harghita_I_Mures").
++SetLink("Mures_I_Sibiu", "Sibiu_I_Mures").
++SetLink("Mures_I_Bucaresti", "Bucaresti_I_Mures").
++SetLink("Mures_I_Covasna", "Covasna_I_Mures").
++SetLink("Mures_I_Iasi", "Iasi_I_Mures").
++SetLink("Hunedora_I_Timis", "Timis_I_Hunedora").
++SetLink("Vrancea_I_Galati", "Galati_I_Vrancea").
++SetLink("Mehedinti_I_Dolj", "Dolj_I_Mehedinti").
++SetLink("Vaslui_I_Iasi", "Iasi_I_Vaslui").
++SetLink("Bacau_I_Iasi", "Iasi_I_Bacau").
++SetLink("Galati_I_Iasi", "Iasi_I_Galati").
++SetLink("Galati_I_Bucaresti", "Bucaresti_I_Galati").
++SetLink("Galati_I_Tulcea", "Tulcea_I_Galati").
++SetLink("Arges_I_Bucaresti", "Bucaresti_I_Arges").
++SetLink("Cluj_I_Maramures", "Maramures_I_Cluj").
++SetLink("Cluj_I_Alba", "Alba_I_Cluj").
++SetLink("Cluj_I_Timis", "Timis_I_Cluj").
++SetLink("Cluj_I_Bucaresti", "Bucaresti_I_Cluj").
++SetLink("Cluj_I_Salaj", "Salaj_I_Cluj").
++SetLink("Cluj_I_Bistrita_Nasaud", "Bistrita_Nasaud_I_Cluj").
++SetLink("Teleorman_I_Bucaresti", "Bucaresti_I_Teleorman").
++SetLink("Dambovita_I_Bucaresti", "Bucaresti_I_Dambovita").
++SetLink("Calarasi_I_Bucaresti", "Bucaresti_I_Calarasi").
++SetLink("Timis_I_Dolj", "Dolj_I_Timis").
++SetLink("Timis_I_Bucaresti", "Bucaresti_I_Timis").
++SetLink("Timis_I_Caras_Severin", "Caras_Severin_I_Timis").
++SetLink("Timis_I_Arad", "Arad_I_Timis").
++SetLink("Timis_I_Bihor", "Bihor_I_Timis").
++SetLink("Constanta_I_Bucaresti", "Bucaresti_I_Constanta").
++SetLink("Botosani_I_Iasi", "Iasi_I_Botosani").
++SetLink("Ialomita_I_Bucaresti", "Bucaresti_I_Ialomita").
++SetLink("ChisinauTTRENAM_I_Iasi", "Iasi_I_ChisinauTTRENAM").
++SetLink("Gorj_I_Dolj", "Dolj_I_Gorj").
++SetLink("Prahova_I_Bucaresti", "Bucaresti_I_Prahova").
++SetLink("GEANT_I_Bucaresti", "Bucaresti_I_GEANT").
++SetLink("Bucaresti_I_Dolj", "Dolj_I_Bucaresti").
++SetLink("Bucaresti_I_Giurgiu", "Giurgiu_I_Bucaresti").
++SetLink("Bucaresti_I_Buzau", "Buzau_I_Bucaresti").
++SetLink("Bucaresti_I_Iasi", "Iasi_I_Bucaresti").
++SetLink("Dolj_I_Olt", "Olt_I_Dolj").
++SetLink("Neamt_I_Iasi", "Iasi_I_Neamt").
+
+
++SetNetwork("Calarasi", "N_Calarasi").
++SetBGPAnnouncement("Calarasi", "N_Calarasi", "NBGP_Calarasi", "1;2;3", 3).
++SetNetwork("Tulcea", "N_Tulcea").
++SetBGPAnnouncement("Tulcea", "N_Tulcea", "NBGP_Tulcea", "1;2;3", 3).
++SetNetwork("Neamt", "N_Neamt").
++SetBGPAnnouncement("Neamt", "N_Neamt", "NBGP_Neamt", "1;2;3", 3).
++SetNetwork("Gorj", "N_Gorj").
++SetBGPAnnouncement("Gorj", "N_Gorj", "NBGP_Gorj", "1;2;3", 3).
++SetNetwork("Dolj", "N_Dolj").
++SetBGPAnnouncement("Dolj", "N_Dolj", "NBGP_Dolj", "1;2;3", 3).
++SetNetwork("Iasi", "N_Iasi").
++SetBGPAnnouncement("Iasi", "N_Iasi", "NBGP_Iasi", "1;2;3", 3).
++SetNetwork("Arad", "N_Arad").
++SetBGPAnnouncement("Arad", "N_Arad", "NBGP_Arad", "1;2;3", 3).
++SetNetwork("Ialomita", "N_Ialomita").
++SetBGPAnnouncement("Ialomita", "N_Ialomita", "NBGP_Ialomita", "1;2;3", 3).
++SetNetwork("Botosani", "N_Botosani").
++SetBGPAnnouncement("Botosani", "N_Botosani", "NBGP_Botosani", "1;2;3", 3).
++SetNetwork("Braila", "N_Braila").
++SetBGPAnnouncement("Braila", "N_Braila", "NBGP_Braila", "1;2;3", 3).

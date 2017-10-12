@@ -1,0 +1,21 @@
+
++Fwd("N_Perth", "Chenai", "Singapore", "ospf").
++Fwd("N_Perth", "Singapore", "Perth", "ospf").
++Fwd("N_Perth", "Seoul", "HongTTKong", "ospf").
++Fwd("N_Perth", "HongTTKong", "Perth", "ospf").
++Fwd("N_Perth", "KualaTTLumpur", "Singapore", "ospf").
++Fwd("N_Perth", "Tokyo", "HongTTKong", "ospf").
++Fwd("N_Perth", "Sydney", "Perth", "ospf").
++Fwd("N_Perth", "Jakarta", "HongTTKong", "ospf").
++Fwd("N_Perth", "Auckland", "Sydney", "ospf").
++Fwd("N_Perth", "MumbaiID19", "Singapore", "ospf").
++Fwd("N_Perth", "SanTTJose", "Sydney", "ospf").
++Fwd("N_Perth", "Bangkok", "HongTTKong", "ospf").
++Fwd("N_Perth", "PaloTTAlto", "HongTTKong", "ospf").
++Fwd("N_Perth", "Mumbai", "London", "ospf").
++Fwd("N_Perth", "London", "HongTTKong", "ospf").
++Fwd("N_Perth", "NewTTDelhi", "Mumbai", "ospf").
++Fwd("N_Perth", "Manila", "HongTTKong", "ospf").
++Fwd("N_Perth", "Taipei", "HongTTKong", "ospf").
++Fwd("N_Perth", "LosTTAngeles", "Sydney", "ospf").
+

@@ -1,0 +1,20 @@
+
++Fwd("N_ADSLTT_viaTTTango_", "RESTENA", "BCE", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "BCE", "ADSLTT_viaTTTango_", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Rollingergrund", "CampusTTGeesseknaeppchen", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "CampusTTGeesseknaeppchen", "Luxembourg", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Luxembourg", "RESTENA", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Bettembourg", "RESTENA", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "UNI_iu", "Limpertsberg", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Limpertsberg", "BCE", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "GEANTTTParisTT_FR_", "BCE", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "ADSLTT_viaTTEPT_", "RESTENA", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "France", "Esch_sur_Alzette", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Esch_sur_Alzette", "Bettembourg", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Walferdange", "RESTENA", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "CCRN", "RESTENA", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "InternetTTviaTTBruxellesTT_BE_", "BCE", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "GEANTTTFrankfurtTT_DE_", "BCE", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Diekirch", "RESTENA", "ospf").
++Fwd("N_ADSLTT_viaTTTango_", "Ettelbruck", "BCE", "ospf").
+

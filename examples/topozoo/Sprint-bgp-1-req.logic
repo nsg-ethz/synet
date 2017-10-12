@@ -1,0 +1,22 @@
+
++Fwd("N_Washington_TTDC", "Boulder", "Cheyenne", "ospf").
++Fwd("NBGP_Washington_TTDC", "Boulder", "Cheyenne", "bgp").
++Fwd("N_Washington_TTDC", "Cheyenne", "Stockton", "ospf").
++Fwd("NBGP_Washington_TTDC", "Cheyenne", "Stockton", "bgp").
++Fwd("N_Washington_TTDC", "Stockton", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "Stockton", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "KansasTTCity", "FortTTWorth", "ospf").
++Fwd("NBGP_Washington_TTDC", "KansasTTCity", "FortTTWorth", "bgp").
++Fwd("N_Washington_TTDC", "FortTTWorth", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "FortTTWorth", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "Chicago", "NewTTYorkTT_Pennsauken_", "ospf").
++Fwd("NBGP_Washington_TTDC", "Chicago", "NewTTYorkTT_Pennsauken_", "bgp").
++Fwd("N_Washington_TTDC", "NewTTYorkTT_Pennsauken_", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "NewTTYorkTT_Pennsauken_", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "Anaheim", "FortTTWorth", "ospf").
++Fwd("NBGP_Washington_TTDC", "Anaheim", "FortTTWorth", "bgp").
++Fwd("N_Washington_TTDC", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "Atlanta", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "Seattle", "Chicago", "ospf").
++Fwd("NBGP_Washington_TTDC", "Seattle", "Chicago", "bgp").
+

@@ -1,0 +1,205 @@
++SetNode("SydneyTT1").
++SetAdminDist("SydneyTT1", "static", 1).
++SetAdminDist("SydneyTT1", "bgp", 2).
++SetAdminDist("SydneyTT1", "ospf", 3).
++SetInterface("SydneyTT1", "SydneyTT1_I_Melbourne").
++SetInterface("SydneyTT1", "SydneyTT1_I_Guam").
++SetInterface("SydneyTT1", "SydneyTT1_I_SydneyTT2").
++SetInterface("SydneyTT1", "SydneyTT1_I_Fiji").
+
++SetNode("Singapore_Malaysia").
++SetAdminDist("Singapore_Malaysia", "static", 1).
++SetAdminDist("Singapore_Malaysia", "bgp", 2).
++SetAdminDist("Singapore_Malaysia", "ospf", 3).
++SetInterface("Singapore_Malaysia", "Singapore_Malaysia_I_Thailand").
++SetInterface("Singapore_Malaysia", "Singapore_Malaysia_I_Guam").
++SetInterface("Singapore_Malaysia", "Singapore_Malaysia_I_HongTTKong").
++SetInterface("Singapore_Malaysia", "Singapore_Malaysia_I_Perth").
+
++SetNode("Korea").
++SetAdminDist("Korea", "static", 1).
++SetAdminDist("Korea", "bgp", 2).
++SetAdminDist("Korea", "ospf", 3).
++SetInterface("Korea", "Korea_I_Japan").
++SetInterface("Korea", "Korea_I_Taiwan").
+
++SetNode("AucklandTT2").
++SetAdminDist("AucklandTT2", "static", 1).
++SetAdminDist("AucklandTT2", "bgp", 2).
++SetAdminDist("AucklandTT2", "ospf", 3).
++SetInterface("AucklandTT2", "AucklandTT2_I_SydneyTT2").
++SetInterface("AucklandTT2", "AucklandTT2_I_AucklandTT1").
+
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Sacramento").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_HawaiiTT2").
+
++SetNode("AucklandTT1").
++SetAdminDist("AucklandTT1", "static", 1).
++SetAdminDist("AucklandTT1", "bgp", 2).
++SetAdminDist("AucklandTT1", "ospf", 3).
++SetInterface("AucklandTT1", "AucklandTT1_I_HawaiiTT2").
++SetInterface("AucklandTT1", "AucklandTT1_I_AucklandTT2").
+
++SetNode("Sacramento").
++SetAdminDist("Sacramento", "static", 1).
++SetAdminDist("Sacramento", "bgp", 2).
++SetAdminDist("Sacramento", "ospf", 3).
++SetInterface("Sacramento", "Sacramento_I_Japan").
++SetInterface("Sacramento", "Sacramento_I_LosTTAngeles").
++SetInterface("Sacramento", "Sacramento_I_HawaiiTT1").
+
++SetNode("Guam").
++SetAdminDist("Guam", "static", 1).
++SetAdminDist("Guam", "bgp", 2).
++SetAdminDist("Guam", "ospf", 3).
++SetInterface("Guam", "Guam_I_Singapore_Malaysia").
++SetInterface("Guam", "Guam_I_PhilippinesTT1").
++SetInterface("Guam", "Guam_I_PhilippinesTT2").
++SetInterface("Guam", "Guam_I_SydneyTT1").
++SetInterface("Guam", "Guam_I_HawaiiTT1").
++SetInterface("Guam", "Guam_I_Japan").
+
++SetNode("HongTTKong").
++SetAdminDist("HongTTKong", "static", 1).
++SetAdminDist("HongTTKong", "bgp", 2).
++SetAdminDist("HongTTKong", "ospf", 3).
++SetInterface("HongTTKong", "HongTTKong_I_Japan").
++SetInterface("HongTTKong", "HongTTKong_I_Singapore_Malaysia").
++SetInterface("HongTTKong", "HongTTKong_I_PhilippinesTT1").
++SetInterface("HongTTKong", "HongTTKong_I_Taiwan").
++SetInterface("HongTTKong", "HongTTKong_I_PhilippinesTT2").
+
++SetNode("PhilippinesTT1").
++SetAdminDist("PhilippinesTT1", "static", 1).
++SetAdminDist("PhilippinesTT1", "bgp", 2).
++SetAdminDist("PhilippinesTT1", "ospf", 3).
++SetInterface("PhilippinesTT1", "PhilippinesTT1_I_Taiwan").
++SetInterface("PhilippinesTT1", "PhilippinesTT1_I_HongTTKong").
++SetInterface("PhilippinesTT1", "PhilippinesTT1_I_Guam").
++SetInterface("PhilippinesTT1", "PhilippinesTT1_I_PhilippinesTT2").
+
++SetNode("HawaiiTT1").
++SetAdminDist("HawaiiTT1", "static", 1).
++SetAdminDist("HawaiiTT1", "bgp", 2).
++SetAdminDist("HawaiiTT1", "ospf", 3).
++SetInterface("HawaiiTT1", "HawaiiTT1_I_Japan").
++SetInterface("HawaiiTT1", "HawaiiTT1_I_Guam").
++SetInterface("HawaiiTT1", "HawaiiTT1_I_Fiji").
++SetInterface("HawaiiTT1", "HawaiiTT1_I_HawaiiTT2").
++SetInterface("HawaiiTT1", "HawaiiTT1_I_Sacramento").
+
++SetNode("PhilippinesTT2").
++SetAdminDist("PhilippinesTT2", "static", 1).
++SetAdminDist("PhilippinesTT2", "bgp", 2).
++SetAdminDist("PhilippinesTT2", "ospf", 3).
++SetInterface("PhilippinesTT2", "PhilippinesTT2_I_Guam").
++SetInterface("PhilippinesTT2", "PhilippinesTT2_I_HongTTKong").
++SetInterface("PhilippinesTT2", "PhilippinesTT2_I_PhilippinesTT1").
+
++SetNode("Melbourne").
++SetAdminDist("Melbourne", "static", 1).
++SetAdminDist("Melbourne", "bgp", 2).
++SetAdminDist("Melbourne", "ospf", 3).
++SetInterface("Melbourne", "Melbourne_I_SydneyTT1").
++SetInterface("Melbourne", "Melbourne_I_Perth").
+
++SetNode("SydneyTT2").
++SetAdminDist("SydneyTT2", "static", 1).
++SetAdminDist("SydneyTT2", "bgp", 2).
++SetAdminDist("SydneyTT2", "ospf", 3).
++SetInterface("SydneyTT2", "SydneyTT2_I_SydneyTT1").
++SetInterface("SydneyTT2", "SydneyTT2_I_AucklandTT2").
+
++SetNode("Perth").
++SetAdminDist("Perth", "static", 1).
++SetAdminDist("Perth", "bgp", 2).
++SetAdminDist("Perth", "ospf", 3).
++SetInterface("Perth", "Perth_I_Melbourne").
++SetInterface("Perth", "Perth_I_Singapore_Malaysia").
+
++SetNode("Thailand").
++SetAdminDist("Thailand", "static", 1).
++SetAdminDist("Thailand", "bgp", 2).
++SetAdminDist("Thailand", "ospf", 3).
++SetInterface("Thailand", "Thailand_I_Singapore_Malaysia").
+
++SetNode("Japan").
++SetAdminDist("Japan", "static", 1).
++SetAdminDist("Japan", "bgp", 2).
++SetAdminDist("Japan", "ospf", 3).
++SetInterface("Japan", "Japan_I_HongTTKong").
++SetInterface("Japan", "Japan_I_HawaiiTT1").
++SetInterface("Japan", "Japan_I_Guam").
++SetInterface("Japan", "Japan_I_Korea").
++SetInterface("Japan", "Japan_I_Sacramento").
+
++SetNode("HawaiiTT2").
++SetAdminDist("HawaiiTT2", "static", 1).
++SetAdminDist("HawaiiTT2", "bgp", 2).
++SetAdminDist("HawaiiTT2", "ospf", 3).
++SetInterface("HawaiiTT2", "HawaiiTT2_I_HawaiiTT1").
++SetInterface("HawaiiTT2", "HawaiiTT2_I_LosTTAngeles").
++SetInterface("HawaiiTT2", "HawaiiTT2_I_AucklandTT1").
+
++SetNode("Fiji").
++SetAdminDist("Fiji", "static", 1).
++SetAdminDist("Fiji", "bgp", 2).
++SetAdminDist("Fiji", "ospf", 3).
++SetInterface("Fiji", "Fiji_I_SydneyTT1").
++SetInterface("Fiji", "Fiji_I_HawaiiTT1").
+
++SetNode("Taiwan").
++SetAdminDist("Taiwan", "static", 1).
++SetAdminDist("Taiwan", "bgp", 2).
++SetAdminDist("Taiwan", "ospf", 3).
++SetInterface("Taiwan", "Taiwan_I_Korea").
++SetInterface("Taiwan", "Taiwan_I_PhilippinesTT1").
++SetInterface("Taiwan", "Taiwan_I_HongTTKong").
+
++SetLink("SydneyTT1_I_Melbourne", "Melbourne_I_SydneyTT1").
++SetLink("SydneyTT1_I_Guam", "Guam_I_SydneyTT1").
++SetLink("SydneyTT1_I_SydneyTT2", "SydneyTT2_I_SydneyTT1").
++SetLink("SydneyTT1_I_Fiji", "Fiji_I_SydneyTT1").
++SetLink("Singapore_Malaysia_I_Thailand", "Thailand_I_Singapore_Malaysia").
++SetLink("Singapore_Malaysia_I_Guam", "Guam_I_Singapore_Malaysia").
++SetLink("Singapore_Malaysia_I_HongTTKong", "HongTTKong_I_Singapore_Malaysia").
++SetLink("Singapore_Malaysia_I_Perth", "Perth_I_Singapore_Malaysia").
++SetLink("Korea_I_Japan", "Japan_I_Korea").
++SetLink("Korea_I_Taiwan", "Taiwan_I_Korea").
++SetLink("AucklandTT2_I_SydneyTT2", "SydneyTT2_I_AucklandTT2").
++SetLink("AucklandTT2_I_AucklandTT1", "AucklandTT1_I_AucklandTT2").
++SetLink("LosTTAngeles_I_Sacramento", "Sacramento_I_LosTTAngeles").
++SetLink("LosTTAngeles_I_HawaiiTT2", "HawaiiTT2_I_LosTTAngeles").
++SetLink("AucklandTT1_I_HawaiiTT2", "HawaiiTT2_I_AucklandTT1").
++SetLink("Sacramento_I_Japan", "Japan_I_Sacramento").
++SetLink("Sacramento_I_HawaiiTT1", "HawaiiTT1_I_Sacramento").
++SetLink("Guam_I_PhilippinesTT1", "PhilippinesTT1_I_Guam").
++SetLink("Guam_I_PhilippinesTT2", "PhilippinesTT2_I_Guam").
++SetLink("Guam_I_HawaiiTT1", "HawaiiTT1_I_Guam").
++SetLink("Guam_I_Japan", "Japan_I_Guam").
++SetLink("HongTTKong_I_Japan", "Japan_I_HongTTKong").
++SetLink("HongTTKong_I_PhilippinesTT1", "PhilippinesTT1_I_HongTTKong").
++SetLink("HongTTKong_I_Taiwan", "Taiwan_I_HongTTKong").
++SetLink("HongTTKong_I_PhilippinesTT2", "PhilippinesTT2_I_HongTTKong").
++SetLink("PhilippinesTT1_I_Taiwan", "Taiwan_I_PhilippinesTT1").
++SetLink("PhilippinesTT1_I_PhilippinesTT2", "PhilippinesTT2_I_PhilippinesTT1").
++SetLink("HawaiiTT1_I_Japan", "Japan_I_HawaiiTT1").
++SetLink("HawaiiTT1_I_Fiji", "Fiji_I_HawaiiTT1").
++SetLink("HawaiiTT1_I_HawaiiTT2", "HawaiiTT2_I_HawaiiTT1").
++SetLink("Melbourne_I_Perth", "Perth_I_Melbourne").
+
+
++SetNetwork("Perth", "N_Perth").
++SetNetwork("Taiwan", "N_Taiwan").
++SetNetwork("SydneyTT2", "N_SydneyTT2").
++SetNetwork("LosTTAngeles", "N_LosTTAngeles").
++SetNetwork("PhilippinesTT2", "N_PhilippinesTT2").
++SetNetwork("HawaiiTT2", "N_HawaiiTT2").
++SetNetwork("Melbourne", "N_Melbourne").
++SetNetwork("Sacramento", "N_Sacramento").
++SetNetwork("Japan", "N_Japan").
++SetNetwork("PhilippinesTT1", "N_PhilippinesTT1").

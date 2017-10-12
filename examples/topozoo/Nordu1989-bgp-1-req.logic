@@ -1,0 +1,14 @@
+
++Fwd("N_Copenhagen", "EUROPE", "Stockholm", "ospf").
++Fwd("NBGP_Copenhagen", "EUROPE", "Stockholm", "bgp").
++Fwd("N_Copenhagen", "Stockholm", "Copenhagen", "ospf").
++Fwd("NBGP_Copenhagen", "Stockholm", "Copenhagen", "bgp").
++Fwd("N_Copenhagen", "Reykjavik", "Copenhagen", "ospf").
++Fwd("NBGP_Copenhagen", "Reykjavik", "Copenhagen", "bgp").
++Fwd("N_Copenhagen", "USA", "Stockholm", "ospf").
++Fwd("NBGP_Copenhagen", "USA", "Stockholm", "bgp").
++Fwd("N_Copenhagen", "Helsinki", "Stockholm", "ospf").
++Fwd("NBGP_Copenhagen", "Helsinki", "Stockholm", "bgp").
++Fwd("N_Copenhagen", "Trondheim", "Stockholm", "ospf").
++Fwd("NBGP_Copenhagen", "Trondheim", "Stockholm", "bgp").
+

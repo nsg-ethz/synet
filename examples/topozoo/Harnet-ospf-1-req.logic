@@ -1,0 +1,22 @@
+
++Fwd("N_TechnologyTTPark", "HKBU", "CUHK", "ospf").
++Fwd("N_TechnologyTTPark", "CUHK", "TechnologyTTPark", "ospf").
++Fwd("N_TechnologyTTPark", "ASGCNET", "HKIX", "ospf").
++Fwd("N_TechnologyTTPark", "HKIX", "HKU", "ospf").
++Fwd("N_TechnologyTTPark", "HKU", "HKUST", "ospf").
++Fwd("N_TechnologyTTPark", "HKUST", "CUHK", "ospf").
++Fwd("N_TechnologyTTPark", "GOOGLE", "HKIX", "ospf").
++Fwd("N_TechnologyTTPark", "VocationalTTTrainingTTCouncil", "CUHK", "ospf").
++Fwd("N_TechnologyTTPark", "ASNET", "HKIX", "ospf").
++Fwd("N_TechnologyTTPark", "KREPNET2", "HKIX", "ospf").
++Fwd("N_TechnologyTTPark", "LU", "HKIEd", "ospf").
++Fwd("N_TechnologyTTPark", "HKIEd", "HKUST", "ospf").
++Fwd("N_TechnologyTTPark", "PolyU", "CUHK", "ospf").
++Fwd("N_TechnologyTTPark", "CERNET", "HKUST", "ospf").
++Fwd("N_TechnologyTTPark", "APAN_JP", "HKIX", "ospf").
++Fwd("N_TechnologyTTPark", "OpenTTUni", "HKU", "ospf").
++Fwd("N_TechnologyTTPark", "TEIN3", "CUHK", "ospf").
++Fwd("N_TechnologyTTPark", "International", "HKIEd", "ospf").
++Fwd("N_TechnologyTTPark", "HKEAA", "LU", "ospf").
++Fwd("N_TechnologyTTPark", "CityU", "PolyU", "ospf").
+

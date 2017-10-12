@@ -1,0 +1,36 @@
+
++Fwd("N_Phoenix", "Pittsburgh", "SantaTTClara", "ospf").
++Fwd("N_Phoenix", "SantaTTClara", "Phoenix", "ospf").
++Fwd("N_Phoenix", "Tucson", "Phoenix", "ospf").
++Fwd("N_Phoenix", "Washington_TTDC", "Phoenix", "ospf").
++Fwd("N_Phoenix", "Seattle", "SantaTTClara", "ospf").
++Fwd("N_Phoenix", "Baltimore", "Washington_TTDC", "ospf").
+
++Fwd("N_Baltimore", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("N_Baltimore", "Washington_TTDC", "Baltimore", "ospf").
++Fwd("N_Baltimore", "Pittsburgh", "Baltimore", "ospf").
++Fwd("N_Baltimore", "Tucson", "Phoenix", "ospf").
++Fwd("N_Baltimore", "SantaTTClara", "Pittsburgh", "ospf").
++Fwd("N_Baltimore", "Seattle", "SantaTTClara", "ospf").
+
++Fwd("N_Seattle", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("N_Seattle", "Washington_TTDC", "SantaTTClara", "ospf").
++Fwd("N_Seattle", "SantaTTClara", "Seattle", "ospf").
++Fwd("N_Seattle", "Pittsburgh", "SantaTTClara", "ospf").
++Fwd("N_Seattle", "Tucson", "Phoenix", "ospf").
++Fwd("N_Seattle", "Baltimore", "Washington_TTDC", "ospf").
+
++Fwd("N_Tucson", "Phoenix", "Tucson", "ospf").
++Fwd("N_Tucson", "Pittsburgh", "SantaTTClara", "ospf").
++Fwd("N_Tucson", "SantaTTClara", "Phoenix", "ospf").
++Fwd("N_Tucson", "Washington_TTDC", "Phoenix", "ospf").
++Fwd("N_Tucson", "Seattle", "SantaTTClara", "ospf").
++Fwd("N_Tucson", "Baltimore", "Washington_TTDC", "ospf").
+
++Fwd("N_Pittsburgh", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("N_Pittsburgh", "Washington_TTDC", "SantaTTClara", "ospf").
++Fwd("N_Pittsburgh", "SantaTTClara", "Pittsburgh", "ospf").
++Fwd("N_Pittsburgh", "Tucson", "Phoenix", "ospf").
++Fwd("N_Pittsburgh", "Seattle", "SantaTTClara", "ospf").
++Fwd("N_Pittsburgh", "Baltimore", "Pittsburgh", "ospf").
+

@@ -1,0 +1,9 @@
+
++Fwd("N_Dublin", "Galway", "Limerick", "ospf").
++Fwd("N_Dublin", "Limerick", "Portlaioise", "ospf").
++Fwd("N_Dublin", "Portlaioise", "Dublin", "ospf").
++Fwd("N_Dublin", "Cork", "Limerick", "ospf").
++Fwd("N_Dublin", "NodeID6", "Dublin", "ospf").
++Fwd("N_Dublin", "NodeID7", "Dublin", "ospf").
++Fwd("N_Dublin", "Waterford", "Dublin", "ospf").
+

@@ -1,0 +1,22 @@
+
++Fwd("N_Seattle", "Houston", "KansasTTCity", "ospf").
++Fwd("NBGP_Seattle", "Houston", "KansasTTCity", "bgp").
++Fwd("N_Seattle", "KansasTTCity", "Denver", "ospf").
++Fwd("NBGP_Seattle", "KansasTTCity", "Denver", "bgp").
++Fwd("N_Seattle", "Denver", "Seattle", "ospf").
++Fwd("NBGP_Seattle", "Denver", "Seattle", "bgp").
++Fwd("N_Seattle", "Indianapolis", "KansasTTCity", "ospf").
++Fwd("NBGP_Seattle", "Indianapolis", "KansasTTCity", "bgp").
++Fwd("N_Seattle", "LosTTAngeles", "Sunnyvale", "ospf").
++Fwd("NBGP_Seattle", "LosTTAngeles", "Sunnyvale", "bgp").
++Fwd("N_Seattle", "Sunnyvale", "Denver", "ospf").
++Fwd("NBGP_Seattle", "Sunnyvale", "Denver", "bgp").
++Fwd("N_Seattle", "NewTTYork", "Chicago", "ospf").
++Fwd("NBGP_Seattle", "NewTTYork", "Chicago", "bgp").
++Fwd("N_Seattle", "Chicago", "Indianapolis", "ospf").
++Fwd("NBGP_Seattle", "Chicago", "Indianapolis", "bgp").
++Fwd("N_Seattle", "WashingtonTTDC", "Atlanta", "ospf").
++Fwd("NBGP_Seattle", "WashingtonTTDC", "Atlanta", "bgp").
++Fwd("N_Seattle", "Atlanta", "Houston", "ospf").
++Fwd("NBGP_Seattle", "Atlanta", "Houston", "bgp").
+

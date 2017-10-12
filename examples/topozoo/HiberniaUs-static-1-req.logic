@@ -1,0 +1,23 @@
+
++Fwd("N_Halifax", "Albany", "Boston", "static").
++Fwd("N_Halifax", "Boston", "Halifax", "static").
++Fwd("N_Halifax", "NewTTYork", "Albany", "static").
++Fwd("N_Halifax", "Chicago", "Cleveland", "static").
++Fwd("N_Halifax", "Cleveland", "Buffalo", "static").
++Fwd("N_Halifax", "Buffalo", "Toronto", "static").
++Fwd("N_Halifax", "Toronto", "Montreal", "static").
++Fwd("N_Halifax", "Montreal", "Halifax", "static").
++Fwd("N_Halifax", "Philadelphia", "Newark", "static").
++Fwd("N_Halifax", "Newark", "NewTTYork", "static").
++Fwd("N_Halifax", "Richmond", "McLean", "static").
++Fwd("N_Halifax", "McLean", "Ashburn", "static").
++Fwd("N_Halifax", "Ashburn", "Newark", "static").
++Fwd("N_Halifax", "Pittsburgh", "Cleveland", "static").
++Fwd("N_Halifax", "NodeID11", "Halifax", "static").
++Fwd("N_Halifax", "Atlanta", "Charlotte", "static").
++Fwd("N_Halifax", "Charlotte", "Raleigh", "static").
++Fwd("N_Halifax", "Raleigh", "Richmond", "static").
++Fwd("N_Halifax", "NodeID10", "Halifax", "static").
++Fwd("N_Halifax", "WhiteTTPlains", "Newark", "static").
++Fwd("N_Halifax", "Stamford", "Boston", "static").
+

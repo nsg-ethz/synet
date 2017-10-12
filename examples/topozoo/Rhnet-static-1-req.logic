@@ -1,0 +1,17 @@
+
++Fwd("N_Bifrost", "Keldhaholt", "Hvanneyri", "static").
++Fwd("N_Bifrost", "Hvanneyri", "Bifrost", "static").
++Fwd("N_Bifrost", "DST_Akureyri", "Fjarski", "static").
++Fwd("N_Bifrost", "Fjarski", "Taeknigarour", "static").
++Fwd("N_Bifrost", "Taeknigarour", "Skulagata", "static").
++Fwd("N_Bifrost", "Skulagata", "Grensas", "static").
++Fwd("N_Bifrost", "Grensas", "Keldhaholt", "static").
++Fwd("N_Bifrost", "RIX", "Taeknigarour", "static").
++Fwd("N_Bifrost", "Sturlugata", "Taeknigarour", "static").
++Fwd("N_Bifrost", "NORDUnet", "Taeknigarour", "static").
++Fwd("N_Bifrost", "FSA_Akureyri", "DST_Akureyri", "static").
++Fwd("N_Bifrost", "Ofanleiti", "Keldhaholt", "static").
++Fwd("N_Bifrost", "Solborg_Akureyri", "DST_Akureyri", "static").
++Fwd("N_Bifrost", "Bustaoavegur", "Ofanleiti", "static").
++Fwd("N_Bifrost", "Hringbraut", "Sturlugata", "static").
+

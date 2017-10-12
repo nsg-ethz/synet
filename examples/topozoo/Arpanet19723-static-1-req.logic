@@ -1,0 +1,26 @@
+
++Fwd("N_ETAC", "RAND", "SDC", "static").
++Fwd("N_ETAC", "SDC", "USC", "static").
++Fwd("N_ETAC", "USC", "Tinker", "static").
++Fwd("N_ETAC", "Tinker", "BBNID15", "static").
++Fwd("N_ETAC", "BBNID15", "HARVARD", "static").
++Fwd("N_ETAC", "HARVARD", "NBS", "static").
++Fwd("N_ETAC", "NBS", "ETAC", "static").
++Fwd("N_ETAC", "UTAH", "USC", "static").
++Fwd("N_ETAC", "CARNEGIE", "MITRE", "static").
++Fwd("N_ETAC", "MITRE", "ETAC", "static").
++Fwd("N_ETAC", "AMES", "SRI", "static").
++Fwd("N_ETAC", "SRI", "McClellan", "static").
++Fwd("N_ETAC", "McClellan", "UTAH", "static").
++Fwd("N_ETAC", "MIT", "BBN", "static").
++Fwd("N_ETAC", "BBN", "BBNID15", "static").
++Fwd("N_ETAC", "CASE", "CARNEGIE", "static").
++Fwd("N_ETAC", "AFGWC", "CASE", "static").
++Fwd("N_ETAC", "ILLINOIS", "MIT", "static").
++Fwd("N_ETAC", "Lincoln", "RADC", "static").
++Fwd("N_ETAC", "RADC", "CASE", "static").
++Fwd("N_ETAC", "Stanford", "RAND", "static").
++Fwd("N_ETAC", "AMESID13", "Stanford", "static").
++Fwd("N_ETAC", "UCLA", "RAND", "static").
++Fwd("N_ETAC", "UCSB", "UCLA", "static").
+

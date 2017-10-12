@@ -1,0 +1,7 @@
+
++Fwd("N_Kragujevac", "Krusevac", "Nis", "static").
++Fwd("N_Kragujevac", "Nis", "Kragujevac", "static").
++Fwd("N_Kragujevac", "Belgrade", "Kragujevac", "static").
++Fwd("N_Kragujevac", "Podgorica", "Krusevac", "static").
++Fwd("N_Kragujevac", "NoviTTSad", "Belgrade", "static").
+

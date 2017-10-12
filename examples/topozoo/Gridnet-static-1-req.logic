@@ -1,0 +1,10 @@
+
++Fwd("N_Miami", "Houston", "Miami", "static").
++Fwd("N_Miami", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_Miami", "LosTTAngeles", "Miami", "static").
++Fwd("N_Miami", "NewTTYork", "LosTTAngeles", "static").
++Fwd("N_Miami", "Dallas", "Houston", "static").
++Fwd("N_Miami", "Newark", "Atlanta", "static").
++Fwd("N_Miami", "Atlanta", "Miami", "static").
++Fwd("N_Miami", "Washington_TTDC", "Dallas", "static").
+

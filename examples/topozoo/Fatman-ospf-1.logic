@@ -1,0 +1,151 @@
++SetNode("CarnegieTTCollege").
++SetAdminDist("CarnegieTTCollege", "static", 1).
++SetAdminDist("CarnegieTTCollege", "bgp", 2).
++SetAdminDist("CarnegieTTCollege", "ospf", 3).
++SetInterface("CarnegieTTCollege", "CarnegieTTCollege_I_Kirkcaldy").
+
++SetNode("UniversityTTofTTAbertayTTDundee").
++SetAdminDist("UniversityTTofTTAbertayTTDundee", "static", 1).
++SetAdminDist("UniversityTTofTTAbertayTTDundee", "bgp", 2).
++SetAdminDist("UniversityTTofTTAbertayTTDundee", "ospf", 3).
++SetInterface("UniversityTTofTTAbertayTTDundee", "UniversityTTofTTAbertayTTDundee_I_RNEP1").
++SetInterface("UniversityTTofTTAbertayTTDundee", "UniversityTTofTTAbertayTTDundee_I_RNEP2").
+
++SetNode("UniversityTTofTTStTTAndrews").
++SetAdminDist("UniversityTTofTTStTTAndrews", "static", 1).
++SetAdminDist("UniversityTTofTTStTTAndrews", "bgp", 2).
++SetAdminDist("UniversityTTofTTStTTAndrews", "ospf", 3).
++SetInterface("UniversityTTofTTStTTAndrews", "UniversityTTofTTStTTAndrews_I_RNEP1").
++SetInterface("UniversityTTofTTStTTAndrews", "UniversityTTofTTStTTAndrews_I_RNEP2").
+
++SetNode("JanetTTandTTInternetID6").
++SetAdminDist("JanetTTandTTInternetID6", "static", 1).
++SetAdminDist("JanetTTandTTInternetID6", "bgp", 2).
++SetAdminDist("JanetTTandTTInternetID6", "ospf", 3).
++SetInterface("JanetTTandTTInternetID6", "JanetTTandTTInternetID6_I_Leeds").
+
++SetNode("UoDTTFifeTTCampus").
++SetAdminDist("UoDTTFifeTTCampus", "static", 1).
++SetAdminDist("UoDTTFifeTTCampus", "bgp", 2).
++SetAdminDist("UoDTTFifeTTCampus", "ospf", 3).
++SetInterface("UoDTTFifeTTCampus", "UoDTTFifeTTCampus_I_Kirkcaldy").
+
++SetNode("AdamTTSmithTTCollege").
++SetAdminDist("AdamTTSmithTTCollege", "static", 1).
++SetAdminDist("AdamTTSmithTTCollege", "bgp", 2).
++SetAdminDist("AdamTTSmithTTCollege", "ospf", 3).
++SetInterface("AdamTTSmithTTCollege", "AdamTTSmithTTCollege_I_Kirkcaldy").
+
++SetNode("Kirkcaldy").
++SetAdminDist("Kirkcaldy", "static", 1).
++SetAdminDist("Kirkcaldy", "bgp", 2).
++SetAdminDist("Kirkcaldy", "ospf", 3).
++SetInterface("Kirkcaldy", "Kirkcaldy_I_CarnegieTTCollege").
++SetInterface("Kirkcaldy", "Kirkcaldy_I_AdamTTSmithTTCollege").
++SetInterface("Kirkcaldy", "Kirkcaldy_I_NodeID5").
++SetInterface("Kirkcaldy", "Kirkcaldy_I_UoDTTFifeTTCampus").
+
++SetNode("ElmwoodTTCollege").
++SetAdminDist("ElmwoodTTCollege", "static", 1).
++SetAdminDist("ElmwoodTTCollege", "bgp", 2).
++SetAdminDist("ElmwoodTTCollege", "ospf", 3).
++SetInterface("ElmwoodTTCollege", "ElmwoodTTCollege_I_RNEP1").
+
++SetNode("UniversityTTofTTDundee").
++SetAdminDist("UniversityTTofTTDundee", "static", 1).
++SetAdminDist("UniversityTTofTTDundee", "bgp", 2).
++SetAdminDist("UniversityTTofTTDundee", "ospf", 3).
++SetInterface("UniversityTTofTTDundee", "UniversityTTofTTDundee_I_RNEP1").
++SetInterface("UniversityTTofTTDundee", "UniversityTTofTTDundee_I_RNEP2").
+
++SetNode("RNEP1").
++SetAdminDist("RNEP1", "static", 1).
++SetAdminDist("RNEP1", "bgp", 2).
++SetAdminDist("RNEP1", "ospf", 3).
++SetInterface("RNEP1", "RNEP1_I_UniversityTTofTTAbertayTTDundee").
++SetInterface("RNEP1", "RNEP1_I_UniversityTTofTTStTTAndrews").
++SetInterface("RNEP1", "RNEP1_I_ElmwoodTTCollege").
++SetInterface("RNEP1", "RNEP1_I_UniversityTTofTTDundee").
++SetInterface("RNEP1", "RNEP1_I_AngusTTCollege").
++SetInterface("RNEP1", "RNEP1_I_RNEP2").
++SetInterface("RNEP1", "RNEP1_I_NodeID5").
++SetInterface("RNEP1", "RNEP1_I_Leeds").
++SetInterface("RNEP1", "RNEP1_I_DundeeTTCollege").
+
++SetNode("RNEP2").
++SetAdminDist("RNEP2", "static", 1).
++SetAdminDist("RNEP2", "bgp", 2).
++SetAdminDist("RNEP2", "ospf", 3).
++SetInterface("RNEP2", "RNEP2_I_UniversityTTofTTAbertayTTDundee").
++SetInterface("RNEP2", "RNEP2_I_UniversityTTofTTStTTAndrews").
++SetInterface("RNEP2", "RNEP2_I_UniversityTTofTTDundee").
++SetInterface("RNEP2", "RNEP2_I_RNEP1").
++SetInterface("RNEP2", "RNEP2_I_NodeID5").
++SetInterface("RNEP2", "RNEP2_I_Glasgow").
+
++SetNode("NodeID5").
++SetAdminDist("NodeID5", "static", 1).
++SetAdminDist("NodeID5", "bgp", 2).
++SetAdminDist("NodeID5", "ospf", 3).
++SetInterface("NodeID5", "NodeID5_I_RNEP1").
++SetInterface("NodeID5", "NodeID5_I_RNEP2").
++SetInterface("NodeID5", "NodeID5_I_Kirkcaldy").
+
++SetNode("Leeds").
++SetAdminDist("Leeds", "static", 1).
++SetAdminDist("Leeds", "bgp", 2).
++SetAdminDist("Leeds", "ospf", 3).
++SetInterface("Leeds", "Leeds_I_RNEP1").
++SetInterface("Leeds", "Leeds_I_JanetTTandTTInternetID6").
++SetInterface("Leeds", "Leeds_I_Glasgow").
+
++SetNode("AngusTTCollege").
++SetAdminDist("AngusTTCollege", "static", 1).
++SetAdminDist("AngusTTCollege", "bgp", 2).
++SetAdminDist("AngusTTCollege", "ospf", 3).
++SetInterface("AngusTTCollege", "AngusTTCollege_I_RNEP1").
+
++SetNode("JanetTTandTTInternet").
++SetAdminDist("JanetTTandTTInternet", "static", 1).
++SetAdminDist("JanetTTandTTInternet", "bgp", 2).
++SetAdminDist("JanetTTandTTInternet", "ospf", 3).
++SetInterface("JanetTTandTTInternet", "JanetTTandTTInternet_I_Glasgow").
+
++SetNode("Glasgow").
++SetAdminDist("Glasgow", "static", 1).
++SetAdminDist("Glasgow", "bgp", 2).
++SetAdminDist("Glasgow", "ospf", 3).
++SetInterface("Glasgow", "Glasgow_I_JanetTTandTTInternet").
++SetInterface("Glasgow", "Glasgow_I_RNEP2").
++SetInterface("Glasgow", "Glasgow_I_Leeds").
+
++SetNode("DundeeTTCollege").
++SetAdminDist("DundeeTTCollege", "static", 1).
++SetAdminDist("DundeeTTCollege", "bgp", 2).
++SetAdminDist("DundeeTTCollege", "ospf", 3).
++SetInterface("DundeeTTCollege", "DundeeTTCollege_I_RNEP1").
+
++SetLink("CarnegieTTCollege_I_Kirkcaldy", "Kirkcaldy_I_CarnegieTTCollege").
++SetLink("UniversityTTofTTAbertayTTDundee_I_RNEP1", "RNEP1_I_UniversityTTofTTAbertayTTDundee").
++SetLink("UniversityTTofTTAbertayTTDundee_I_RNEP2", "RNEP2_I_UniversityTTofTTAbertayTTDundee").
++SetLink("UniversityTTofTTStTTAndrews_I_RNEP1", "RNEP1_I_UniversityTTofTTStTTAndrews").
++SetLink("UniversityTTofTTStTTAndrews_I_RNEP2", "RNEP2_I_UniversityTTofTTStTTAndrews").
++SetLink("JanetTTandTTInternetID6_I_Leeds", "Leeds_I_JanetTTandTTInternetID6").
++SetLink("UoDTTFifeTTCampus_I_Kirkcaldy", "Kirkcaldy_I_UoDTTFifeTTCampus").
++SetLink("AdamTTSmithTTCollege_I_Kirkcaldy", "Kirkcaldy_I_AdamTTSmithTTCollege").
++SetLink("Kirkcaldy_I_NodeID5", "NodeID5_I_Kirkcaldy").
++SetLink("ElmwoodTTCollege_I_RNEP1", "RNEP1_I_ElmwoodTTCollege").
++SetLink("UniversityTTofTTDundee_I_RNEP1", "RNEP1_I_UniversityTTofTTDundee").
++SetLink("UniversityTTofTTDundee_I_RNEP2", "RNEP2_I_UniversityTTofTTDundee").
++SetLink("RNEP1_I_AngusTTCollege", "AngusTTCollege_I_RNEP1").
++SetLink("RNEP1_I_RNEP2", "RNEP2_I_RNEP1").
++SetLink("RNEP1_I_NodeID5", "NodeID5_I_RNEP1").
++SetLink("RNEP1_I_Leeds", "Leeds_I_RNEP1").
++SetLink("RNEP1_I_DundeeTTCollege", "DundeeTTCollege_I_RNEP1").
++SetLink("RNEP2_I_NodeID5", "NodeID5_I_RNEP2").
++SetLink("RNEP2_I_Glasgow", "Glasgow_I_RNEP2").
++SetLink("Leeds_I_Glasgow", "Glasgow_I_Leeds").
++SetLink("JanetTTandTTInternet_I_Glasgow", "Glasgow_I_JanetTTandTTInternet").
+
+
++SetNetwork("RNEP1", "N_RNEP1").

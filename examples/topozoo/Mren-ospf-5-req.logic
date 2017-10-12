@@ -1,0 +1,31 @@
+
++Fwd("N_Njegusi", "Niksic", "Podgorica", "ospf").
++Fwd("N_Njegusi", "Podgorica", "Njegusi", "ospf").
++Fwd("N_Njegusi", "Kotor", "Podgorica", "ospf").
++Fwd("N_Njegusi", "HercegTTNovi", "Podgorica", "ospf").
++Fwd("N_Njegusi", "BijeloTTPolje", "Podgorica", "ospf").
+
++Fwd("N_BijeloTTPolje", "Niksic", "Podgorica", "ospf").
++Fwd("N_BijeloTTPolje", "Podgorica", "BijeloTTPolje", "ospf").
++Fwd("N_BijeloTTPolje", "Kotor", "Podgorica", "ospf").
++Fwd("N_BijeloTTPolje", "Njegusi", "Podgorica", "ospf").
++Fwd("N_BijeloTTPolje", "HercegTTNovi", "Podgorica", "ospf").
+
++Fwd("N_Kotor", "Niksic", "Podgorica", "ospf").
++Fwd("N_Kotor", "Podgorica", "Kotor", "ospf").
++Fwd("N_Kotor", "Njegusi", "Podgorica", "ospf").
++Fwd("N_Kotor", "HercegTTNovi", "Podgorica", "ospf").
++Fwd("N_Kotor", "BijeloTTPolje", "Podgorica", "ospf").
+
++Fwd("N_Podgorica", "Niksic", "Podgorica", "ospf").
++Fwd("N_Podgorica", "Kotor", "Podgorica", "ospf").
++Fwd("N_Podgorica", "Njegusi", "Podgorica", "ospf").
++Fwd("N_Podgorica", "HercegTTNovi", "Podgorica", "ospf").
++Fwd("N_Podgorica", "BijeloTTPolje", "Podgorica", "ospf").
+
++Fwd("N_HercegTTNovi", "Niksic", "Podgorica", "ospf").
++Fwd("N_HercegTTNovi", "Podgorica", "HercegTTNovi", "ospf").
++Fwd("N_HercegTTNovi", "Kotor", "Podgorica", "ospf").
++Fwd("N_HercegTTNovi", "Njegusi", "Podgorica", "ospf").
++Fwd("N_HercegTTNovi", "BijeloTTPolje", "Podgorica", "ospf").
+

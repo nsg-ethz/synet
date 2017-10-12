@@ -1,0 +1,8 @@
+
++Fwd("N_Brest", "Vitebsk", "Minsk", "static").
++Fwd("N_Brest", "Minsk", "Brest", "static").
++Fwd("N_Brest", "Gomel", "Minsk", "static").
++Fwd("N_Brest", "Mogilev", "Minsk", "static").
++Fwd("N_Brest", "PionierTTGEANTTT2", "Minsk", "static").
++Fwd("N_Brest", "Grodno", "Minsk", "static").
+

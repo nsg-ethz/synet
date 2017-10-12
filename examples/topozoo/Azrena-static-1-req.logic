@@ -1,0 +1,23 @@
+
++Fwd("N_RENASCENE", "DistributionTTswitch", "NodeID0", "static").
++Fwd("N_RENASCENE", "NodeID0", "WirelessTTserver", "static").
++Fwd("N_RENASCENE", "WirelessTTserver", "RENASCENE", "static").
++Fwd("N_RENASCENE", "Cybenetics", "InformationTTTech_", "static").
++Fwd("N_RENASCENE", "InformationTTTech_", "DistributionTTswitch", "static").
++Fwd("N_RENASCENE", "WirelessTTrouter", "NodeID0", "static").
++Fwd("N_RENASCENE", "VSATTTStation", "NOC", "static").
++Fwd("N_RENASCENE", "NOC", "NodeID0", "static").
++Fwd("N_RENASCENE", "KhazarTTUni", "WirelessTTrouter", "static").
++Fwd("N_RENASCENE", "Geology", "DistributionTTswitch", "static").
++Fwd("N_RENASCENE", "TechnicalTTUni", "WirelessTTserver", "static").
++Fwd("N_RENASCENE", "LocalTTISP", "NOC", "static").
++Fwd("N_RENASCENE", "ForeignTTLanguageTTUni_", "WirelessTTrouter", "static").
++Fwd("N_RENASCENE", "BakuTTUni", "InformationTTTech_", "static").
++Fwd("N_RENASCENE", "SilkTTHighway", "VSATTTStation", "static").
++Fwd("N_RENASCENE", "DialupTTserver", "NodeID0", "static").
++Fwd("N_RENASCENE", "Architecture_BuildingTTUni", "WirelessTTserver", "static").
++Fwd("N_RENASCENE", "EconomicalTTUni", "NOC", "static").
++Fwd("N_RENASCENE", "Physics", "DistributionTTswitch", "static").
++Fwd("N_RENASCENE", "ShamsaTTObs_", "InformationTTTech_", "static").
++Fwd("N_RENASCENE", "ANASTTusers", "DialupTTserver", "static").
+

@@ -1,0 +1,22 @@
+
++Fwd("N_Paris", "Houston", "Dallas", "static").
++Fwd("N_Paris", "Dallas", "Atlanta", "static").
++Fwd("N_Paris", "Atlanta", "Ashburn_Washington", "static").
++Fwd("N_Paris", "Ashburn_Washington", "London", "static").
++Fwd("N_Paris", "London", "Paris", "static").
++Fwd("N_Paris", "Singapore", "LosTTAngeles", "static").
++Fwd("N_Paris", "LosTTAngeles", "Phoenix", "static").
++Fwd("N_Paris", "Phoenix", "Dallas", "static").
++Fwd("N_Paris", "KansasTTCity", "Dallas", "static").
++Fwd("N_Paris", "SanTTFrancisco", "KansasTTCity", "static").
++Fwd("N_Paris", "Chicago", "Ashburn_Washington", "static").
++Fwd("N_Paris", "Miami", "Atlanta", "static").
++Fwd("N_Paris", "NewTTYork", "Paris", "static").
++Fwd("N_Paris", "Milan", "Frankfurt", "static").
++Fwd("N_Paris", "Frankfurt", "Paris", "static").
++Fwd("N_Paris", "LasTTVegas", "LosTTAngeles", "static").
++Fwd("N_Paris", "Amsterdam", "London", "static").
++Fwd("N_Paris", "Seattle", "KansasTTCity", "static").
++Fwd("N_Paris", "SanTTJose", "LosTTAngeles", "static").
++Fwd("N_Paris", "HongTTKong", "Singapore", "static").
+

@@ -1,0 +1,14 @@
+
++Fwd("N_Changwon", "Jeju", "Kwangju", "ospf").
++Fwd("N_Changwon", "Kwangju", "Daejeon", "ospf").
++Fwd("N_Changwon", "Daejeon", "Changwon", "ospf").
++Fwd("N_Changwon", "Seoul", "Daejeon", "ospf").
++Fwd("N_Changwon", "Suwon", "Seoul", "ospf").
++Fwd("N_Changwon", "Incheon", "Seoul", "ospf").
++Fwd("N_Changwon", "Ochang", "Daejeon", "ospf").
++Fwd("N_Changwon", "Jeonju", "Daejeon", "ospf").
++Fwd("N_Changwon", "Daegu", "Daejeon", "ospf").
++Fwd("N_Changwon", "Busan", "Daejeon", "ospf").
++Fwd("N_Changwon", "Cheonan", "Daejeon", "ospf").
++Fwd("N_Changwon", "Pohang", "Daejeon", "ospf").
+

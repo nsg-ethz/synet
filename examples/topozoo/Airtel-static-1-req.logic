@@ -1,0 +1,17 @@
+
++Fwd("N_NewTTYork", "Palermo", "Chennai", "static").
++Fwd("N_NewTTYork", "Chennai", "LosTTAngeles", "static").
++Fwd("N_NewTTYork", "LosTTAngeles", "NewTTYork", "static").
++Fwd("N_NewTTYork", "Singapore", "NewTTYork", "static").
++Fwd("N_NewTTYork", "LINX", "London", "static").
++Fwd("N_NewTTYork", "London", "NewTTYork", "static").
++Fwd("N_NewTTYork", "NYIX", "NewTTYork", "static").
++Fwd("N_NewTTYork", "HongTTKong", "LosTTAngeles", "static").
++Fwd("N_NewTTYork", "HKIX", "HongTTKong", "static").
++Fwd("N_NewTTYork", "LAIX", "LosTTAngeles", "static").
++Fwd("N_NewTTYork", "EQUINOXTTIX", "Singapore", "static").
++Fwd("N_NewTTYork", "Mumbai", "NewTTYork", "static").
++Fwd("N_NewTTYork", "STIX", "Singapore", "static").
++Fwd("N_NewTTYork", "Marseille", "Chennai", "static").
++Fwd("N_NewTTYork", "NiXI", "Mumbai", "static").
+

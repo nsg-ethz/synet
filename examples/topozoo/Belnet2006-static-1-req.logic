@@ -1,0 +1,24 @@
+
++Fwd("N_Namur", "Hasselt", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "BrusselTTIITTB", "BrusselTTITTB", "static").
++Fwd("N_Namur", "BrusselTTITTB", "Namur", "static").
++Fwd("N_Namur", "LINX", "BrusselTTITTA", "static").
++Fwd("N_Namur", "BrusselTTITTA", "BrusselTTITTB", "static").
++Fwd("N_Namur", "Liege", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "Arlon", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "TheTTWorldwideTTInternet", "BrusselTTITTA", "static").
++Fwd("N_Namur", "Korthijk", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "Geel", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "Brugge", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "BrusselTTIITTA", "BNIX", "static").
++Fwd("N_Namur", "BNIX", "BrusselTTITTA", "static").
++Fwd("N_Namur", "Gent", "BrusselTTITTB", "static").
++Fwd("N_Namur", "Mons", "BrusselTTITTB", "static").
++Fwd("N_Namur", "Charleroi", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "Louvain_la_Neuve", "BrusselTTIITTB", "static").
++Fwd("N_Namur", "AMS_IX", "BrusselTTITTA", "static").
++Fwd("N_Namur", "Antwerpen", "BrusselTTITTB", "static").
++Fwd("N_Namur", "Leuven", "BrusselTTITTB", "static").
++Fwd("N_Namur", "SFINX", "BrusselTTITTA", "static").
++Fwd("N_Namur", "Geant2", "BrusselTTITTA", "static").
+

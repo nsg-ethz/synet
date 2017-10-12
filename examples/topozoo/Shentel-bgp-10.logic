@@ -1,0 +1,267 @@
++SetNode("Shepherdstown").
++SetAdminDist("Shepherdstown", "static", 1).
++SetAdminDist("Shepherdstown", "bgp", 2).
++SetAdminDist("Shepherdstown", "ospf", 3).
++SetInterface("Shepherdstown", "Shepherdstown_I_Berryville").
++SetInterface("Shepherdstown", "Shepherdstown_I_Hagerstown").
++SetInterface("Shepherdstown", "Shepherdstown_I_Martinsburg").
+
++SetNode("CovingtonTT_Planned_").
++SetAdminDist("CovingtonTT_Planned_", "static", 1).
++SetAdminDist("CovingtonTT_Planned_", "bgp", 2).
++SetAdminDist("CovingtonTT_Planned_", "ospf", 3).
++SetInterface("CovingtonTT_Planned_", "CovingtonTT_Planned__I_CharlestonTT_Planned_").
++SetInterface("CovingtonTT_Planned_", "CovingtonTT_Planned__I_Harrisonburg").
+
++SetNode("Winchester").
++SetAdminDist("Winchester", "static", 1).
++SetAdminDist("Winchester", "bgp", 2).
++SetAdminDist("Winchester", "ospf", 3).
++SetInterface("Winchester", "Winchester_I_NodeID20").
++SetInterface("Winchester", "Winchester_I_NodeID15").
++SetInterface("Winchester", "Winchester_I_Berryville").
++SetInterface("Winchester", "Winchester_I_Martinsburg").
+
++SetNode("Herndon").
++SetAdminDist("Herndon", "static", 1).
++SetAdminDist("Herndon", "bgp", 2).
++SetAdminDist("Herndon", "ospf", 3).
++SetInterface("Herndon", "Herndon_I_Ashburn").
++SetInterface("Herndon", "Herndon_I_Warrenton").
+
++SetNode("Martinsburg").
++SetAdminDist("Martinsburg", "static", 1).
++SetAdminDist("Martinsburg", "bgp", 2).
++SetAdminDist("Martinsburg", "ospf", 3).
++SetInterface("Martinsburg", "Martinsburg_I_Shepherdstown").
++SetInterface("Martinsburg", "Martinsburg_I_Winchester").
++SetInterface("Martinsburg", "Martinsburg_I_Hagerstown").
+
++SetNode("Petersburg").
++SetAdminDist("Petersburg", "static", 1).
++SetAdminDist("Petersburg", "bgp", 2).
++SetAdminDist("Petersburg", "ospf", 3).
++SetInterface("Petersburg", "Petersburg_I_NodeID14").
+
++SetNode("Berryville").
++SetAdminDist("Berryville", "static", 1).
++SetAdminDist("Berryville", "bgp", 2).
++SetAdminDist("Berryville", "ospf", 3).
++SetInterface("Berryville", "Berryville_I_Shepherdstown").
++SetInterface("Berryville", "Berryville_I_Winchester").
++SetInterface("Berryville", "Berryville_I_Leesburg").
+
++SetNode("Harrisonburg").
++SetAdminDist("Harrisonburg", "static", 1).
++SetAdminDist("Harrisonburg", "bgp", 2).
++SetAdminDist("Harrisonburg", "ospf", 3).
++SetInterface("Harrisonburg", "Harrisonburg_I_NodeID23").
++SetInterface("Harrisonburg", "Harrisonburg_I_NodeID24").
++SetInterface("Harrisonburg", "Harrisonburg_I_CovingtonTT_Planned_").
+
++SetNode("Summersville").
++SetAdminDist("Summersville", "static", 1).
++SetAdminDist("Summersville", "bgp", 2).
++SetAdminDist("Summersville", "ospf", 3).
++SetInterface("Summersville", "Summersville_I_Sutton").
++SetInterface("Summersville", "Summersville_I_CharlestonTT_Planned_").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_Petersburg").
++SetInterface("NodeID14", "NodeID14_I_NodeID20").
++SetInterface("NodeID14", "NodeID14_I_NodeID24").
++SetInterface("NodeID14", "NodeID14_I_Franklin").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_NodeID21").
++SetInterface("NodeID15", "NodeID15_I_NodeID20").
++SetInterface("NodeID15", "NodeID15_I_FrontTTRoyal").
++SetInterface("NodeID15", "NodeID15_I_Winchester").
+
++SetNode("NodeID16").
++SetAdminDist("NodeID16", "static", 1).
++SetAdminDist("NodeID16", "bgp", 2).
++SetAdminDist("NodeID16", "ospf", 3).
++SetInterface("NodeID16", "NodeID16_I_Edinburg").
++SetInterface("NodeID16", "NodeID16_I_NodeID23").
++SetInterface("NodeID16", "NodeID16_I_NodeID22").
+
++SetNode("Ashburn").
++SetAdminDist("Ashburn", "static", 1).
++SetAdminDist("Ashburn", "bgp", 2).
++SetAdminDist("Ashburn", "ospf", 3).
++SetInterface("Ashburn", "Ashburn_I_Herndon").
++SetInterface("Ashburn", "Ashburn_I_Leesburg").
+
++SetNode("Glenville").
++SetAdminDist("Glenville", "static", 1).
++SetAdminDist("Glenville", "bgp", 2).
++SetAdminDist("Glenville", "ospf", 3).
++SetInterface("Glenville", "Glenville_I_Weston").
++SetInterface("Glenville", "Glenville_I_Sutton").
+
++SetNode("FrontTTRoyal").
++SetAdminDist("FrontTTRoyal", "static", 1).
++SetAdminDist("FrontTTRoyal", "bgp", 2).
++SetAdminDist("FrontTTRoyal", "ospf", 3).
++SetInterface("FrontTTRoyal", "FrontTTRoyal_I_Warrenton").
++SetInterface("FrontTTRoyal", "FrontTTRoyal_I_NodeID15").
+
++SetNode("Leesburg").
++SetAdminDist("Leesburg", "static", 1).
++SetAdminDist("Leesburg", "bgp", 2).
++SetAdminDist("Leesburg", "ospf", 3).
++SetInterface("Leesburg", "Leesburg_I_Ashburn").
++SetInterface("Leesburg", "Leesburg_I_Berryville").
+
++SetNode("Sutton").
++SetAdminDist("Sutton", "static", 1).
++SetAdminDist("Sutton", "bgp", 2).
++SetAdminDist("Sutton", "ospf", 3).
++SetInterface("Sutton", "Sutton_I_Glenville").
++SetInterface("Sutton", "Sutton_I_Summersville").
+
++SetNode("Edinburg").
++SetAdminDist("Edinburg", "static", 1).
++SetAdminDist("Edinburg", "bgp", 2).
++SetAdminDist("Edinburg", "ospf", 3).
++SetInterface("Edinburg", "Edinburg_I_NodeID21").
++SetInterface("Edinburg", "Edinburg_I_NodeID16").
+
++SetNode("Hagerstown").
++SetAdminDist("Hagerstown", "static", 1).
++SetAdminDist("Hagerstown", "bgp", 2).
++SetAdminDist("Hagerstown", "ospf", 3).
++SetInterface("Hagerstown", "Hagerstown_I_Shepherdstown").
++SetInterface("Hagerstown", "Hagerstown_I_Martinsburg").
+
++SetNode("Franklin").
++SetAdminDist("Franklin", "static", 1).
++SetAdminDist("Franklin", "bgp", 2).
++SetAdminDist("Franklin", "ospf", 3).
++SetInterface("Franklin", "Franklin_I_NodeID14").
+
++SetNode("CharlestonTT_Planned_").
++SetAdminDist("CharlestonTT_Planned_", "static", 1).
++SetAdminDist("CharlestonTT_Planned_", "bgp", 2).
++SetAdminDist("CharlestonTT_Planned_", "ospf", 3).
++SetInterface("CharlestonTT_Planned_", "CharlestonTT_Planned__I_CovingtonTT_Planned_").
++SetInterface("CharlestonTT_Planned_", "CharlestonTT_Planned__I_Summersville").
+
++SetNode("NodeID21").
++SetAdminDist("NodeID21", "static", 1).
++SetAdminDist("NodeID21", "bgp", 2).
++SetAdminDist("NodeID21", "ospf", 3).
++SetInterface("NodeID21", "NodeID21_I_Edinburg").
++SetInterface("NodeID21", "NodeID21_I_NodeID15").
+
++SetNode("NodeID20").
++SetAdminDist("NodeID20", "static", 1).
++SetAdminDist("NodeID20", "bgp", 2).
++SetAdminDist("NodeID20", "ospf", 3).
++SetInterface("NodeID20", "NodeID20_I_NodeID22").
++SetInterface("NodeID20", "NodeID20_I_NodeID14").
++SetInterface("NodeID20", "NodeID20_I_NodeID15").
++SetInterface("NodeID20", "NodeID20_I_Winchester").
+
++SetNode("NodeID23").
++SetAdminDist("NodeID23", "static", 1).
++SetAdminDist("NodeID23", "bgp", 2).
++SetAdminDist("NodeID23", "ospf", 3).
++SetInterface("NodeID23", "NodeID23_I_Harrisonburg").
++SetInterface("NodeID23", "NodeID23_I_NodeID24").
++SetInterface("NodeID23", "NodeID23_I_NodeID16").
+
++SetNode("NodeID22").
++SetAdminDist("NodeID22", "static", 1).
++SetAdminDist("NodeID22", "bgp", 2).
++SetAdminDist("NodeID22", "ospf", 3).
++SetInterface("NodeID22", "NodeID22_I_NodeID20").
++SetInterface("NodeID22", "NodeID22_I_NodeID24").
++SetInterface("NodeID22", "NodeID22_I_NodeID16").
+
++SetNode("NodeID24").
++SetAdminDist("NodeID24", "static", 1).
++SetAdminDist("NodeID24", "bgp", 2).
++SetAdminDist("NodeID24", "ospf", 3).
++SetInterface("NodeID24", "NodeID24_I_NodeID14").
++SetInterface("NodeID24", "NodeID24_I_NodeID23").
++SetInterface("NodeID24", "NodeID24_I_NodeID22").
++SetInterface("NodeID24", "NodeID24_I_Harrisonburg").
+
++SetNode("Weston").
++SetAdminDist("Weston", "static", 1).
++SetAdminDist("Weston", "bgp", 2).
++SetAdminDist("Weston", "ospf", 3).
++SetInterface("Weston", "Weston_I_Glenville").
+
++SetNode("Warrenton").
++SetAdminDist("Warrenton", "static", 1).
++SetAdminDist("Warrenton", "bgp", 2).
++SetAdminDist("Warrenton", "ospf", 3).
++SetInterface("Warrenton", "Warrenton_I_FrontTTRoyal").
++SetInterface("Warrenton", "Warrenton_I_Herndon").
+
++SetLink("Shepherdstown_I_Berryville", "Berryville_I_Shepherdstown").
++SetLink("Shepherdstown_I_Hagerstown", "Hagerstown_I_Shepherdstown").
++SetLink("Shepherdstown_I_Martinsburg", "Martinsburg_I_Shepherdstown").
++SetLink("CovingtonTT_Planned__I_CharlestonTT_Planned_", "CharlestonTT_Planned__I_CovingtonTT_Planned_").
++SetLink("CovingtonTT_Planned__I_Harrisonburg", "Harrisonburg_I_CovingtonTT_Planned_").
++SetLink("Winchester_I_NodeID20", "NodeID20_I_Winchester").
++SetLink("Winchester_I_NodeID15", "NodeID15_I_Winchester").
++SetLink("Winchester_I_Berryville", "Berryville_I_Winchester").
++SetLink("Winchester_I_Martinsburg", "Martinsburg_I_Winchester").
++SetLink("Herndon_I_Ashburn", "Ashburn_I_Herndon").
++SetLink("Herndon_I_Warrenton", "Warrenton_I_Herndon").
++SetLink("Martinsburg_I_Hagerstown", "Hagerstown_I_Martinsburg").
++SetLink("Petersburg_I_NodeID14", "NodeID14_I_Petersburg").
++SetLink("Berryville_I_Leesburg", "Leesburg_I_Berryville").
++SetLink("Harrisonburg_I_NodeID23", "NodeID23_I_Harrisonburg").
++SetLink("Harrisonburg_I_NodeID24", "NodeID24_I_Harrisonburg").
++SetLink("Summersville_I_Sutton", "Sutton_I_Summersville").
++SetLink("Summersville_I_CharlestonTT_Planned_", "CharlestonTT_Planned__I_Summersville").
++SetLink("NodeID14_I_NodeID20", "NodeID20_I_NodeID14").
++SetLink("NodeID14_I_NodeID24", "NodeID24_I_NodeID14").
++SetLink("NodeID14_I_Franklin", "Franklin_I_NodeID14").
++SetLink("NodeID15_I_NodeID21", "NodeID21_I_NodeID15").
++SetLink("NodeID15_I_NodeID20", "NodeID20_I_NodeID15").
++SetLink("NodeID15_I_FrontTTRoyal", "FrontTTRoyal_I_NodeID15").
++SetLink("NodeID16_I_Edinburg", "Edinburg_I_NodeID16").
++SetLink("NodeID16_I_NodeID23", "NodeID23_I_NodeID16").
++SetLink("NodeID16_I_NodeID22", "NodeID22_I_NodeID16").
++SetLink("Ashburn_I_Leesburg", "Leesburg_I_Ashburn").
++SetLink("Glenville_I_Weston", "Weston_I_Glenville").
++SetLink("Glenville_I_Sutton", "Sutton_I_Glenville").
++SetLink("FrontTTRoyal_I_Warrenton", "Warrenton_I_FrontTTRoyal").
++SetLink("Edinburg_I_NodeID21", "NodeID21_I_Edinburg").
++SetLink("NodeID20_I_NodeID22", "NodeID22_I_NodeID20").
++SetLink("NodeID23_I_NodeID24", "NodeID24_I_NodeID23").
++SetLink("NodeID22_I_NodeID24", "NodeID24_I_NodeID22").
+
+
++SetNetwork("CharlestonTT_Planned_", "N_CharlestonTT_Planned_").
++SetBGPAnnouncement("CharlestonTT_Planned_", "N_CharlestonTT_Planned_", "NBGP_CharlestonTT_Planned_", "1;2;3", 3).
++SetNetwork("Harrisonburg", "N_Harrisonburg").
++SetBGPAnnouncement("Harrisonburg", "N_Harrisonburg", "NBGP_Harrisonburg", "1;2;3", 3).
++SetNetwork("Winchester", "N_Winchester").
++SetBGPAnnouncement("Winchester", "N_Winchester", "NBGP_Winchester", "1;2;3", 3).
++SetNetwork("Leesburg", "N_Leesburg").
++SetBGPAnnouncement("Leesburg", "N_Leesburg", "NBGP_Leesburg", "1;2;3", 3).
++SetNetwork("NodeID20", "N_NodeID20").
++SetBGPAnnouncement("NodeID20", "N_NodeID20", "NBGP_NodeID20", "1;2;3", 3).
++SetNetwork("Edinburg", "N_Edinburg").
++SetBGPAnnouncement("Edinburg", "N_Edinburg", "NBGP_Edinburg", "1;2;3", 3).
++SetNetwork("NodeID15", "N_NodeID15").
++SetBGPAnnouncement("NodeID15", "N_NodeID15", "NBGP_NodeID15", "1;2;3", 3).
++SetNetwork("Herndon", "N_Herndon").
++SetBGPAnnouncement("Herndon", "N_Herndon", "NBGP_Herndon", "1;2;3", 3).
++SetNetwork("Ashburn", "N_Ashburn").
++SetBGPAnnouncement("Ashburn", "N_Ashburn", "NBGP_Ashburn", "1;2;3", 3).
++SetNetwork("FrontTTRoyal", "N_FrontTTRoyal").
++SetBGPAnnouncement("FrontTTRoyal", "N_FrontTTRoyal", "NBGP_FrontTTRoyal", "1;2;3", 3).

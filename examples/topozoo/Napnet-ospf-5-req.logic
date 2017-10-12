@@ -1,0 +1,31 @@
+
++Fwd("N_SanTTJose", "Dallas", "Chicago", "ospf").
++Fwd("N_SanTTJose", "Chicago", "Vienna", "ospf").
++Fwd("N_SanTTJose", "Vienna", "SanTTJose", "ospf").
++Fwd("N_SanTTJose", "Minneapolis", "Chicago", "ospf").
++Fwd("N_SanTTJose", "Seattle", "SanTTJose", "ospf").
+
++Fwd("N_Dallas", "Chicago", "Dallas", "ospf").
++Fwd("N_Dallas", "Minneapolis", "Chicago", "ospf").
++Fwd("N_Dallas", "Seattle", "Chicago", "ospf").
++Fwd("N_Dallas", "SanTTJose", "Chicago", "ospf").
++Fwd("N_Dallas", "Vienna", "Chicago", "ospf").
+
++Fwd("N_Chicago", "Dallas", "Chicago", "ospf").
++Fwd("N_Chicago", "Minneapolis", "Chicago", "ospf").
++Fwd("N_Chicago", "Seattle", "Chicago", "ospf").
++Fwd("N_Chicago", "SanTTJose", "Chicago", "ospf").
++Fwd("N_Chicago", "Vienna", "Chicago", "ospf").
+
++Fwd("N_Minneapolis", "Dallas", "Chicago", "ospf").
++Fwd("N_Minneapolis", "Chicago", "Minneapolis", "ospf").
++Fwd("N_Minneapolis", "Seattle", "Chicago", "ospf").
++Fwd("N_Minneapolis", "SanTTJose", "Chicago", "ospf").
++Fwd("N_Minneapolis", "Vienna", "Chicago", "ospf").
+
++Fwd("N_Seattle", "Dallas", "Chicago", "ospf").
++Fwd("N_Seattle", "Chicago", "Seattle", "ospf").
++Fwd("N_Seattle", "Minneapolis", "Chicago", "ospf").
++Fwd("N_Seattle", "SanTTJose", "Seattle", "ospf").
++Fwd("N_Seattle", "Vienna", "SanTTJose", "ospf").
+

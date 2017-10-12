@@ -1,0 +1,19 @@
+
++Fwd("N_Belfast", "Europe", "Southport", "ospf").
++Fwd("N_Belfast", "Southport", "NodeID12", "ospf").
++Fwd("N_Belfast", "NodeID12", "Coleraine", "ospf").
++Fwd("N_Belfast", "Coleraine", "Ballymena", "ospf").
++Fwd("N_Belfast", "Ballymena", "Belfast", "ospf").
++Fwd("N_Belfast", "Omagh", "Armagh", "ospf").
++Fwd("N_Belfast", "Armagh", "Portadown", "ospf").
++Fwd("N_Belfast", "Portadown", "Belfast", "ospf").
++Fwd("N_Belfast", "Castleblayney", "Monaghan", "ospf").
++Fwd("N_Belfast", "Monaghan", "Armagh", "ospf").
++Fwd("N_Belfast", "Drogheda", "Dublin", "ospf").
++Fwd("N_Belfast", "Dublin", "Southport", "ospf").
++Fwd("N_Belfast", "Londonderry", "Coleraine", "ospf").
++Fwd("N_Belfast", "NorthTTAmerica", "NodeID12", "ospf").
++Fwd("N_Belfast", "Strabane", "Omagh", "ospf").
++Fwd("N_Belfast", "Dundalk", "Castleblayney", "ospf").
++Fwd("N_Belfast", "Letterkenny", "Strabane", "ospf").
+

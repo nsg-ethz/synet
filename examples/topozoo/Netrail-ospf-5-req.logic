@@ -1,0 +1,36 @@
+
++Fwd("N_PaloTTAlto", "NewTTYork", "Washington_TTDC", "ospf").
++Fwd("N_PaloTTAlto", "Washington_TTDC", "PaloTTAlto", "ospf").
++Fwd("N_PaloTTAlto", "Chicago", "Atlanta", "ospf").
++Fwd("N_PaloTTAlto", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("N_PaloTTAlto", "Miami", "Washington_TTDC", "ospf").
++Fwd("N_PaloTTAlto", "Baltimore", "Washington_TTDC", "ospf").
+
++Fwd("N_NewTTYork", "Chicago", "NewTTYork", "ospf").
++Fwd("N_NewTTYork", "PaloTTAlto", "Washington_TTDC", "ospf").
++Fwd("N_NewTTYork", "Washington_TTDC", "NewTTYork", "ospf").
++Fwd("N_NewTTYork", "Miami", "Washington_TTDC", "ospf").
++Fwd("N_NewTTYork", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("N_NewTTYork", "Baltimore", "Washington_TTDC", "ospf").
+
++Fwd("N_Baltimore", "NewTTYork", "Baltimore", "ospf").
++Fwd("N_Baltimore", "Chicago", "Atlanta", "ospf").
++Fwd("N_Baltimore", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("N_Baltimore", "Washington_TTDC", "Baltimore", "ospf").
++Fwd("N_Baltimore", "PaloTTAlto", "Washington_TTDC", "ospf").
++Fwd("N_Baltimore", "Miami", "Washington_TTDC", "ospf").
+
++Fwd("N_Chicago", "NewTTYork", "Chicago", "ospf").
++Fwd("N_Chicago", "PaloTTAlto", "Atlanta", "ospf").
++Fwd("N_Chicago", "Atlanta", "Chicago", "ospf").
++Fwd("N_Chicago", "Miami", "Washington_TTDC", "ospf").
++Fwd("N_Chicago", "Washington_TTDC", "Atlanta", "ospf").
++Fwd("N_Chicago", "Baltimore", "Washington_TTDC", "ospf").
+
++Fwd("N_Atlanta", "NewTTYork", "Washington_TTDC", "ospf").
++Fwd("N_Atlanta", "Washington_TTDC", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Chicago", "Atlanta", "ospf").
++Fwd("N_Atlanta", "PaloTTAlto", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Miami", "Washington_TTDC", "ospf").
++Fwd("N_Atlanta", "Baltimore", "Washington_TTDC", "ospf").
+

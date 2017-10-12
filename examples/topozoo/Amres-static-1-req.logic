@@ -1,0 +1,26 @@
+
++Fwd("N_NoviTTSad", "KosovskaTTMitrovica", "Beograd", "static").
++Fwd("N_NoviTTSad", "Beograd", "NoviTTSad", "static").
++Fwd("N_NoviTTSad", "BosniaTTandTTHerzegovina", "Sabac", "static").
++Fwd("N_NoviTTSad", "Sabac", "Beograd", "static").
++Fwd("N_NoviTTSad", "Valjevo", "Beograd", "static").
++Fwd("N_NoviTTSad", "NoviTTPazar", "Raska", "static").
++Fwd("N_NoviTTSad", "Raska", "Kraljevo", "static").
++Fwd("N_NoviTTSad", "Kraljevo", "Kragujevac", "static").
++Fwd("N_NoviTTSad", "Kragujevac", "VelikaTTPlana", "static").
++Fwd("N_NoviTTSad", "VelikaTTPlana", "Beograd", "static").
++Fwd("N_NoviTTSad", "Zrenjanin", "NoviTTSad", "static").
++Fwd("N_NoviTTSad", "HUNGARNET", "Subotica", "static").
++Fwd("N_NoviTTSad", "Subotica", "NoviTTSad", "static").
++Fwd("N_NoviTTSad", "Nis", "Krustevac", "static").
++Fwd("N_NoviTTSad", "Krustevac", "Kraljevo", "static").
++Fwd("N_NoviTTSad", "Pirot", "Nis", "static").
++Fwd("N_NoviTTSad", "Leskovac", "Nis", "static").
++Fwd("N_NoviTTSad", "Bor", "Nis", "static").
++Fwd("N_NoviTTSad", "Sombor", "NoviTTSad", "static").
++Fwd("N_NoviTTSad", "Uzice", "Valjevo", "static").
++Fwd("N_NoviTTSad", "TelekomTTSerbia", "Beograd", "static").
++Fwd("N_NoviTTSad", "Vranje", "Leskovac", "static").
++Fwd("N_NoviTTSad", "Cacak", "Uzice", "static").
++Fwd("N_NoviTTSad", "Pancevo", "Beograd", "static").
+

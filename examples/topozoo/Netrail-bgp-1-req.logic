@@ -1,0 +1,14 @@
+
++Fwd("N_Washington_TTDC", "NewTTYork", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "NewTTYork", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "Chicago", "NewTTYork", "ospf").
++Fwd("NBGP_Washington_TTDC", "Chicago", "NewTTYork", "bgp").
++Fwd("N_Washington_TTDC", "PaloTTAlto", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "PaloTTAlto", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "Miami", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "Miami", "Washington_TTDC", "bgp").
++Fwd("N_Washington_TTDC", "Atlanta", "Miami", "ospf").
++Fwd("NBGP_Washington_TTDC", "Atlanta", "Miami", "bgp").
++Fwd("N_Washington_TTDC", "Baltimore", "Washington_TTDC", "ospf").
++Fwd("NBGP_Washington_TTDC", "Baltimore", "Washington_TTDC", "bgp").
+

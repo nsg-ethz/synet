@@ -1,0 +1,46 @@
+
++Fwd("N_Minneapolis", "Phoenix", "Atlanta", "ospf").
++Fwd("N_Minneapolis", "Atlanta", "SanTTJose", "ospf").
++Fwd("N_Minneapolis", "SanTTJose", "Minneapolis", "ospf").
++Fwd("N_Minneapolis", "Dallas", "SanTTJose", "ospf").
++Fwd("N_Minneapolis", "Chicago", "SanTTJose", "ospf").
++Fwd("N_Minneapolis", "Whippany", "Minneapolis", "ospf").
++Fwd("N_Minneapolis", "Seattle", "SanTTJose", "ospf").
++Fwd("N_Minneapolis", "Vienna", "SanTTJose", "ospf").
+
++Fwd("N_Atlanta", "Phoenix", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Dallas", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Chicago", "SanTTJose", "ospf").
++Fwd("N_Atlanta", "SanTTJose", "Phoenix", "ospf").
++Fwd("N_Atlanta", "Whippany", "Seattle", "ospf").
++Fwd("N_Atlanta", "Seattle", "Phoenix", "ospf").
++Fwd("N_Atlanta", "Minneapolis", "Phoenix", "ospf").
++Fwd("N_Atlanta", "Vienna", "Phoenix", "ospf").
+
++Fwd("N_Phoenix", "Dallas", "SanTTJose", "ospf").
++Fwd("N_Phoenix", "SanTTJose", "Phoenix", "ospf").
++Fwd("N_Phoenix", "Chicago", "SanTTJose", "ospf").
++Fwd("N_Phoenix", "Whippany", "Seattle", "ospf").
++Fwd("N_Phoenix", "Seattle", "Phoenix", "ospf").
++Fwd("N_Phoenix", "Minneapolis", "Phoenix", "ospf").
++Fwd("N_Phoenix", "Atlanta", "SanTTJose", "ospf").
++Fwd("N_Phoenix", "Vienna", "Phoenix", "ospf").
+
++Fwd("N_Vienna", "Phoenix", "Atlanta", "ospf").
++Fwd("N_Vienna", "Atlanta", "SanTTJose", "ospf").
++Fwd("N_Vienna", "SanTTJose", "Vienna", "ospf").
++Fwd("N_Vienna", "Dallas", "Vienna", "ospf").
++Fwd("N_Vienna", "Chicago", "Vienna", "ospf").
++Fwd("N_Vienna", "Whippany", "Vienna", "ospf").
++Fwd("N_Vienna", "Minneapolis", "Vienna", "ospf").
++Fwd("N_Vienna", "Seattle", "Chicago", "ospf").
+
++Fwd("N_SanTTJose", "Phoenix", "Atlanta", "ospf").
++Fwd("N_SanTTJose", "Atlanta", "SanTTJose", "ospf").
++Fwd("N_SanTTJose", "Dallas", "SanTTJose", "ospf").
++Fwd("N_SanTTJose", "Chicago", "SanTTJose", "ospf").
++Fwd("N_SanTTJose", "Whippany", "Dallas", "ospf").
++Fwd("N_SanTTJose", "Minneapolis", "Vienna", "ospf").
++Fwd("N_SanTTJose", "Vienna", "SanTTJose", "ospf").
++Fwd("N_SanTTJose", "Seattle", "SanTTJose", "ospf").
+

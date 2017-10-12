@@ -1,0 +1,23 @@
+
++Fwd("N_Evere", "Antwerpen2", "Vilvoorde", "static").
++Fwd("N_Evere", "Vilvoorde", "Evere", "static").
++Fwd("N_Evere", "Antwerpen1", "Antwerpen2", "static").
++Fwd("N_Evere", "Hasselt", "Geel", "static").
++Fwd("N_Evere", "Geel", "Vilvoorde", "static").
++Fwd("N_Evere", "Bruzav", "BrusselsTTCampus", "static").
++Fwd("N_Evere", "BrusselsTTCampus", "Evere", "static").
++Fwd("N_Evere", "Arlon", "Liege2", "static").
++Fwd("N_Evere", "Liege2", "Liege1TT", "static").
++Fwd("N_Evere", "Liege1TT", "Vilvoorde", "static").
++Fwd("N_Evere", "Louvain_la_Neuve", "Charleroi", "static").
++Fwd("N_Evere", "Charleroi", "Mons", "static").
++Fwd("N_Evere", "Mons", "Evere", "static").
++Fwd("N_Evere", "Korthijk", "Evere", "static").
++Fwd("N_Evere", "Brugge", "Korthijk", "static").
++Fwd("N_Evere", "Brudie", "Vilvoorde", "static").
++Fwd("N_Evere", "Namur", "Arlon", "static").
++Fwd("N_Evere", "Leuven1", "Evere", "static").
++Fwd("N_Evere", "Leuven2", "Leuven1", "static").
++Fwd("N_Evere", "Gent2", "Antwerpen1", "static").
++Fwd("N_Evere", "Gent1", "Gent2", "static").
+

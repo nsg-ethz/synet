@@ -1,0 +1,249 @@
++SetNode("Blida").
++SetAdminDist("Blida", "static", 1).
++SetAdminDist("Blida", "bgp", 2).
++SetAdminDist("Blida", "ospf", 3).
++SetInterface("Blida", "Blida_I_Alger").
+
++SetNode("Internet").
++SetAdminDist("Internet", "static", 1).
++SetAdminDist("Internet", "bgp", 2).
++SetAdminDist("Internet", "ospf", 3).
++SetInterface("Internet", "Internet_I_Alger").
+
++SetNode("Msila").
++SetAdminDist("Msila", "static", 1).
++SetAdminDist("Msila", "bgp", 2).
++SetAdminDist("Msila", "ospf", 3).
++SetInterface("Msila", "Msila_I_Constantine").
+
++SetNode("Mostaganem").
++SetAdminDist("Mostaganem", "static", 1).
++SetAdminDist("Mostaganem", "bgp", 2).
++SetAdminDist("Mostaganem", "ospf", 3).
++SetInterface("Mostaganem", "Mostaganem_I_Oran").
+
++SetNode("Alger").
++SetAdminDist("Alger", "static", 1).
++SetAdminDist("Alger", "bgp", 2).
++SetAdminDist("Alger", "ospf", 3).
++SetInterface("Alger", "Alger_I_GEANT").
++SetInterface("Alger", "Alger_I_Blida").
++SetInterface("Alger", "Alger_I_Medea").
++SetInterface("Alger", "Alger_I_Ouargla").
++SetInterface("Alger", "Alger_I_TiziTTOuzou").
++SetInterface("Alger", "Alger_I_Djelfa").
++SetInterface("Alger", "Alger_I_Bejaia").
++SetInterface("Alger", "Alger_I_Constantine").
++SetInterface("Alger", "Alger_I_Internet").
++SetInterface("Alger", "Alger_I_Setif").
++SetInterface("Alger", "Alger_I_Chlef").
++SetInterface("Alger", "Alger_I_Oran").
+
++SetNode("Tlemcen").
++SetAdminDist("Tlemcen", "static", 1).
++SetAdminDist("Tlemcen", "bgp", 2).
++SetAdminDist("Tlemcen", "ospf", 3).
++SetInterface("Tlemcen", "Tlemcen_I_Oran").
+
++SetNode("OumTTelTTBouaghi").
++SetAdminDist("OumTTelTTBouaghi", "static", 1).
++SetAdminDist("OumTTelTTBouaghi", "bgp", 2).
++SetAdminDist("OumTTelTTBouaghi", "ospf", 3).
++SetInterface("OumTTelTTBouaghi", "OumTTelTTBouaghi_I_Constantine").
+
++SetNode("Medea").
++SetAdminDist("Medea", "static", 1).
++SetAdminDist("Medea", "bgp", 2).
++SetAdminDist("Medea", "ospf", 3).
++SetInterface("Medea", "Medea_I_Alger").
+
++SetNode("Saida").
++SetAdminDist("Saida", "static", 1).
++SetAdminDist("Saida", "bgp", 2).
++SetAdminDist("Saida", "ospf", 3).
++SetInterface("Saida", "Saida_I_Oran").
+
++SetNode("SidiTTBelTTAbbes").
++SetAdminDist("SidiTTBelTTAbbes", "static", 1).
++SetAdminDist("SidiTTBelTTAbbes", "bgp", 2).
++SetAdminDist("SidiTTBelTTAbbes", "ospf", 3).
++SetInterface("SidiTTBelTTAbbes", "SidiTTBelTTAbbes_I_Oran").
+
++SetNode("Tebessa").
++SetAdminDist("Tebessa", "static", 1).
++SetAdminDist("Tebessa", "bgp", 2).
++SetAdminDist("Tebessa", "ospf", 3).
++SetInterface("Tebessa", "Tebessa_I_Constantine").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Alger").
+
++SetNode("Annaba").
++SetAdminDist("Annaba", "static", 1).
++SetAdminDist("Annaba", "bgp", 2).
++SetAdminDist("Annaba", "ospf", 3).
++SetInterface("Annaba", "Annaba_I_Constantine").
+
++SetNode("Bejaia").
++SetAdminDist("Bejaia", "static", 1).
++SetAdminDist("Bejaia", "bgp", 2).
++SetAdminDist("Bejaia", "ospf", 3).
++SetInterface("Bejaia", "Bejaia_I_Alger").
+
++SetNode("Mascara").
++SetAdminDist("Mascara", "static", 1).
++SetAdminDist("Mascara", "bgp", 2).
++SetAdminDist("Mascara", "ospf", 3).
++SetInterface("Mascara", "Mascara_I_Oran").
+
++SetNode("Oran").
++SetAdminDist("Oran", "static", 1).
++SetAdminDist("Oran", "bgp", 2).
++SetAdminDist("Oran", "ospf", 3).
++SetInterface("Oran", "Oran_I_Mostaganem").
++SetInterface("Oran", "Oran_I_Tiaret").
++SetInterface("Oran", "Oran_I_Alger").
++SetInterface("Oran", "Oran_I_Tlemcen").
++SetInterface("Oran", "Oran_I_Saida").
++SetInterface("Oran", "Oran_I_Mascara").
++SetInterface("Oran", "Oran_I_SidiTTBelTTAbbes").
+
++SetNode("Batna").
++SetAdminDist("Batna", "static", 1).
++SetAdminDist("Batna", "bgp", 2).
++SetAdminDist("Batna", "ospf", 3).
++SetInterface("Batna", "Batna_I_Constantine").
+
++SetNode("Biskra").
++SetAdminDist("Biskra", "static", 1).
++SetAdminDist("Biskra", "bgp", 2).
++SetAdminDist("Biskra", "ospf", 3).
++SetInterface("Biskra", "Biskra_I_Constantine").
+
++SetNode("Tiaret").
++SetAdminDist("Tiaret", "static", 1).
++SetAdminDist("Tiaret", "bgp", 2).
++SetAdminDist("Tiaret", "ospf", 3).
++SetInterface("Tiaret", "Tiaret_I_Oran").
+
++SetNode("Guelma").
++SetAdminDist("Guelma", "static", 1).
++SetAdminDist("Guelma", "bgp", 2).
++SetAdminDist("Guelma", "ospf", 3).
++SetInterface("Guelma", "Guelma_I_Constantine").
+
++SetNode("Ouargla").
++SetAdminDist("Ouargla", "static", 1).
++SetAdminDist("Ouargla", "bgp", 2).
++SetAdminDist("Ouargla", "ospf", 3).
++SetInterface("Ouargla", "Ouargla_I_ElOued").
++SetInterface("Ouargla", "Ouargla_I_Alger").
++SetInterface("Ouargla", "Ouargla_I_Laghouat").
+
++SetNode("TiziTTOuzou").
++SetAdminDist("TiziTTOuzou", "static", 1).
++SetAdminDist("TiziTTOuzou", "bgp", 2).
++SetAdminDist("TiziTTOuzou", "ospf", 3).
++SetInterface("TiziTTOuzou", "TiziTTOuzou_I_Alger").
+
++SetNode("Djelfa").
++SetAdminDist("Djelfa", "static", 1).
++SetAdminDist("Djelfa", "bgp", 2).
++SetAdminDist("Djelfa", "ospf", 3).
++SetInterface("Djelfa", "Djelfa_I_Alger").
+
++SetNode("Jijel").
++SetAdminDist("Jijel", "static", 1).
++SetAdminDist("Jijel", "bgp", 2).
++SetAdminDist("Jijel", "ospf", 3).
++SetInterface("Jijel", "Jijel_I_Constantine").
+
++SetNode("ElOued").
++SetAdminDist("ElOued", "static", 1).
++SetAdminDist("ElOued", "bgp", 2).
++SetAdminDist("ElOued", "ospf", 3).
++SetInterface("ElOued", "ElOued_I_Ouargla").
+
++SetNode("Skikda").
++SetAdminDist("Skikda", "static", 1).
++SetAdminDist("Skikda", "bgp", 2).
++SetAdminDist("Skikda", "ospf", 3).
++SetInterface("Skikda", "Skikda_I_Constantine").
+
++SetNode("Laghouat").
++SetAdminDist("Laghouat", "static", 1).
++SetAdminDist("Laghouat", "bgp", 2).
++SetAdminDist("Laghouat", "ospf", 3).
++SetInterface("Laghouat", "Laghouat_I_Ouargla").
+
++SetNode("Setif").
++SetAdminDist("Setif", "static", 1).
++SetAdminDist("Setif", "bgp", 2).
++SetAdminDist("Setif", "ospf", 3).
++SetInterface("Setif", "Setif_I_Alger").
+
++SetNode("Chlef").
++SetAdminDist("Chlef", "static", 1).
++SetAdminDist("Chlef", "bgp", 2).
++SetAdminDist("Chlef", "ospf", 3).
++SetInterface("Chlef", "Chlef_I_Alger").
+
++SetNode("Constantine").
++SetAdminDist("Constantine", "static", 1).
++SetAdminDist("Constantine", "bgp", 2).
++SetAdminDist("Constantine", "ospf", 3).
++SetInterface("Constantine", "Constantine_I_Annaba").
++SetInterface("Constantine", "Constantine_I_Biskra").
++SetInterface("Constantine", "Constantine_I_Alger").
++SetInterface("Constantine", "Constantine_I_OumTTelTTBouaghi").
++SetInterface("Constantine", "Constantine_I_Guelma").
++SetInterface("Constantine", "Constantine_I_Jijel").
++SetInterface("Constantine", "Constantine_I_Batna").
++SetInterface("Constantine", "Constantine_I_Skikda").
++SetInterface("Constantine", "Constantine_I_Msila").
++SetInterface("Constantine", "Constantine_I_Tebessa").
+
++SetLink("Blida_I_Alger", "Alger_I_Blida").
++SetLink("Internet_I_Alger", "Alger_I_Internet").
++SetLink("Msila_I_Constantine", "Constantine_I_Msila").
++SetLink("Mostaganem_I_Oran", "Oran_I_Mostaganem").
++SetLink("Alger_I_GEANT", "GEANT_I_Alger").
++SetLink("Alger_I_Medea", "Medea_I_Alger").
++SetLink("Alger_I_Ouargla", "Ouargla_I_Alger").
++SetLink("Alger_I_TiziTTOuzou", "TiziTTOuzou_I_Alger").
++SetLink("Alger_I_Djelfa", "Djelfa_I_Alger").
++SetLink("Alger_I_Bejaia", "Bejaia_I_Alger").
++SetLink("Alger_I_Constantine", "Constantine_I_Alger").
++SetLink("Alger_I_Setif", "Setif_I_Alger").
++SetLink("Alger_I_Chlef", "Chlef_I_Alger").
++SetLink("Alger_I_Oran", "Oran_I_Alger").
++SetLink("Tlemcen_I_Oran", "Oran_I_Tlemcen").
++SetLink("OumTTelTTBouaghi_I_Constantine", "Constantine_I_OumTTelTTBouaghi").
++SetLink("Saida_I_Oran", "Oran_I_Saida").
++SetLink("SidiTTBelTTAbbes_I_Oran", "Oran_I_SidiTTBelTTAbbes").
++SetLink("Tebessa_I_Constantine", "Constantine_I_Tebessa").
++SetLink("Annaba_I_Constantine", "Constantine_I_Annaba").
++SetLink("Mascara_I_Oran", "Oran_I_Mascara").
++SetLink("Oran_I_Tiaret", "Tiaret_I_Oran").
++SetLink("Batna_I_Constantine", "Constantine_I_Batna").
++SetLink("Biskra_I_Constantine", "Constantine_I_Biskra").
++SetLink("Guelma_I_Constantine", "Constantine_I_Guelma").
++SetLink("Ouargla_I_ElOued", "ElOued_I_Ouargla").
++SetLink("Ouargla_I_Laghouat", "Laghouat_I_Ouargla").
++SetLink("Jijel_I_Constantine", "Constantine_I_Jijel").
++SetLink("Skikda_I_Constantine", "Constantine_I_Skikda").
+
+
++SetNetwork("Tiaret", "N_Tiaret").
++SetNetwork("Guelma", "N_Guelma").
++SetNetwork("Laghouat", "N_Laghouat").
++SetNetwork("Alger", "N_Alger").
++SetNetwork("Saida", "N_Saida").
++SetNetwork("ElOued", "N_ElOued").
++SetNetwork("Mascara", "N_Mascara").
++SetNetwork("Internet", "N_Internet").
++SetNetwork("SidiTTBelTTAbbes", "N_SidiTTBelTTAbbes").
++SetNetwork("TiziTTOuzou", "N_TiziTTOuzou").

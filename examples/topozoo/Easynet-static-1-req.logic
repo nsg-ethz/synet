@@ -1,0 +1,20 @@
+
++Fwd("N_Washington", "1", "Paris", "static").
++Fwd("N_Washington", "Paris", "Washington", "static").
++Fwd("N_Washington", "HongTTKong", "London", "static").
++Fwd("N_Washington", "London", "Paris", "static").
++Fwd("N_Washington", "LosTTAngeles", "Washington", "static").
++Fwd("N_Washington", "NewTTYork", "Washington", "static").
++Fwd("N_Washington", "Mumbai", "HongTTKong", "static").
++Fwd("N_Washington", "1ID2", "1ID3", "static").
++Fwd("N_Washington", "1ID3", "1ID0", "static").
++Fwd("N_Washington", "1ID0", "1ID7", "static").
++Fwd("N_Washington", "1ID7", "Paris", "static").
++Fwd("N_Washington", "Madrid", "1", "static").
++Fwd("N_Washington", "1ID1", "1ID7", "static").
++Fwd("N_Washington", "Milan", "1", "static").
++Fwd("N_Washington", "SanTTJose_", "LosTTAngeles", "static").
++Fwd("N_Washington", "PaloTTAlto_", "HongTTKong", "static").
++Fwd("N_Washington", "1ID6", "1ID1", "static").
++Fwd("N_Washington", "Shanghai", "HongTTKong", "static").
+

@@ -1,0 +1,18 @@
+
++Fwd("N_RNEP1", "CarnegieTTCollege", "Kirkcaldy", "ospf").
++Fwd("N_RNEP1", "Kirkcaldy", "NodeID5", "ospf").
++Fwd("N_RNEP1", "NodeID5", "RNEP1", "ospf").
++Fwd("N_RNEP1", "UniversityTTofTTAbertayTTDundee", "RNEP1", "ospf").
++Fwd("N_RNEP1", "UniversityTTofTTStTTAndrews", "RNEP1", "ospf").
++Fwd("N_RNEP1", "JanetTTandTTInternetID6", "Leeds", "ospf").
++Fwd("N_RNEP1", "Leeds", "RNEP1", "ospf").
++Fwd("N_RNEP1", "UoDTTFifeTTCampus", "Kirkcaldy", "ospf").
++Fwd("N_RNEP1", "AdamTTSmithTTCollege", "Kirkcaldy", "ospf").
++Fwd("N_RNEP1", "ElmwoodTTCollege", "RNEP1", "ospf").
++Fwd("N_RNEP1", "UniversityTTofTTDundee", "RNEP1", "ospf").
++Fwd("N_RNEP1", "RNEP2", "RNEP1", "ospf").
++Fwd("N_RNEP1", "AngusTTCollege", "RNEP1", "ospf").
++Fwd("N_RNEP1", "JanetTTandTTInternet", "Glasgow", "ospf").
++Fwd("N_RNEP1", "Glasgow", "Leeds", "ospf").
++Fwd("N_RNEP1", "DundeeTTCollege", "RNEP1", "ospf").
+

@@ -1,0 +1,16 @@
+
++Fwd("N_Southport", "Manchester", "Liverpool", "ospf").
++Fwd("N_Southport", "Liverpool", "Southport", "ospf").
++Fwd("N_Southport", "Peterborough", "Leicester", "ospf").
++Fwd("N_Southport", "Leicester", "Sheffield", "ospf").
++Fwd("N_Southport", "Sheffield", "Leeds", "ospf").
++Fwd("N_Southport", "Leeds", "Bracewell", "ospf").
++Fwd("N_Southport", "Bracewell", "Southport", "ospf").
++Fwd("N_Southport", "London", "Reading", "ospf").
++Fwd("N_Southport", "Reading", "Bristol", "ospf").
++Fwd("N_Southport", "Bristol", "Birmingham", "ospf").
++Fwd("N_Southport", "Birmingham", "Manchester", "ospf").
++Fwd("N_Southport", "NodeID2", "Reading", "ospf").
++Fwd("N_Southport", "Cambridge", "London", "ospf").
++Fwd("N_Southport", "NodeID3", "London", "ospf").
+

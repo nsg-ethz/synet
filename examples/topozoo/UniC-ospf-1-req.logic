@@ -1,0 +1,26 @@
+
++Fwd("N_Arthus", "Orestad", "Naestved", "ospf").
++Fwd("N_Arthus", "Naestved", "Nyborg", "ospf").
++Fwd("N_Arthus", "Nyborg", "Odense", "ospf").
++Fwd("N_Arthus", "Odense", "Vejle", "ospf").
++Fwd("N_Arthus", "Vejle", "Arthus", "ospf").
++Fwd("N_Arthus", "Kolding", "Vejle", "ospf").
++Fwd("N_Arthus", "Silkeborg", "Herning", "ospf").
++Fwd("N_Arthus", "Herning", "Vejle", "ospf").
++Fwd("N_Arthus", "Slagelse", "Nyborg", "ospf").
++Fwd("N_Arthus", "NORDUnetID10", "Orestad", "ospf").
++Fwd("N_Arthus", "NodeID12", "Lyngby", "ospf").
++Fwd("N_Arthus", "Lyngby", "Holbaek", "ospf").
++Fwd("N_Arthus", "Holbaek", "Slagelse", "ospf").
++Fwd("N_Arthus", "NodeID13", "Lyngby", "ospf").
++Fwd("N_Arthus", "NodeID14", "Orestad", "ospf").
++Fwd("N_Arthus", "NodeID15", "Arthus", "ospf").
++Fwd("N_Arthus", "NodeID17", "Aalborg", "ospf").
++Fwd("N_Arthus", "Aalborg", "Hobro", "ospf").
++Fwd("N_Arthus", "Hobro", "Arthus", "ospf").
++Fwd("N_Arthus", "NodeID9", "NodeID13", "ospf").
++Fwd("N_Arthus", "NORDUnet", "Lyngby", "ospf").
++Fwd("N_Arthus", "NodeID23", "Silkeborg", "ospf").
++Fwd("N_Arthus", "NodeID24", "Arthus", "ospf").
++Fwd("N_Arthus", "Farso", "Aalborg", "ospf").
+

@@ -1,0 +1,22 @@
+
++Fwd("N_Chicago", "Houston", "StTTLouis", "static").
++Fwd("N_Chicago", "StTTLouis", "Chicago", "static").
++Fwd("N_Chicago", "Oakland", "SaltTTLakeTTCity", "static").
++Fwd("N_Chicago", "SaltTTLakeTTCity", "Denver", "static").
++Fwd("N_Chicago", "Denver", "KansasTTCity", "static").
++Fwd("N_Chicago", "KansasTTCity", "StTTLouis", "static").
++Fwd("N_Chicago", "SanTTDiego", "Phoenix", "static").
++Fwd("N_Chicago", "Phoenix", "Tucson", "static").
++Fwd("N_Chicago", "Tucson", "Dallas", "static").
++Fwd("N_Chicago", "Dallas", "Houston", "static").
++Fwd("N_Chicago", "LosTTAngeles", "SanTTDiego", "static").
++Fwd("N_Chicago", "Pittsburgh", "Detroit", "static").
++Fwd("N_Chicago", "Detroit", "Chicago", "static").
++Fwd("N_Chicago", "NewTTYork", "Washington_TTDC", "static").
++Fwd("N_Chicago", "Washington_TTDC", "Atlanta", "static").
++Fwd("N_Chicago", "Atlanta", "Houston", "static").
++Fwd("N_Chicago", "Philadelphia", "Pittsburgh", "static").
++Fwd("N_Chicago", "Minneapolis", "Chicago", "static").
++Fwd("N_Chicago", "SantaTTClara", "Oakland", "static").
++Fwd("N_Chicago", "Seattle", "Oakland", "static").
+

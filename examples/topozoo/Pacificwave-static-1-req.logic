@@ -1,0 +1,19 @@
+
++Fwd("N_Internet2TTDCN", "CENIC", "PacificTTWaveTTLosTTAngeles", "static").
++Fwd("N_Internet2TTDCN", "PacificTTWaveTTLosTTAngeles", "Internet2TTDCN", "static").
++Fwd("N_Internet2TTDCN", "PacificTTWaveTTSeattle", "PacificTTWaveTTLosTTAngeles", "static").
++Fwd("N_Internet2TTDCN", "StarLight", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "KRLight", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "CSTNetTTHKEOEP", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "Internet2TTDCNID7", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "CANARIE", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "CENICID9", "PacificTTWaveTTSunnyvale", "static").
++Fwd("N_Internet2TTDCN", "PacificTTWaveTTSunnyvale", "PacificTTWaveTTLosTTAngeles", "static").
++Fwd("N_Internet2TTDCN", "AARNETTTSydney", "PacificTTWaveTTLosTTAngeles", "static").
++Fwd("N_Internet2TTDCN", "NLRTTFrameNetID6", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "JGN2TTPlusTTTokyo", "PacificTTWaveTTLosTTAngeles", "static").
++Fwd("N_Internet2TTDCN", "NLRTTFrameNet", "PacificTTWaveTTSunnyvale", "static").
++Fwd("N_Internet2TTDCN", "PacificTTNorthwestTTGigapop", "PacificTTWaveTTSeattle", "static").
++Fwd("N_Internet2TTDCN", "PacificTTWaveTTHawaii", "PacificTTWaveTTLosTTAngeles", "static").
++Fwd("N_Internet2TTDCN", "NLRTTFrameNetID8", "PacificTTWaveTTLosTTAngeles", "static").
+

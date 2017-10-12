@@ -1,0 +1,250 @@
++SetNode("St_TTPolten").
++SetAdminDist("St_TTPolten", "static", 1).
++SetAdminDist("St_TTPolten", "bgp", 2).
++SetAdminDist("St_TTPolten", "ospf", 3).
++SetInterface("St_TTPolten", "St_TTPolten_I_Vienna1").
++SetInterface("St_TTPolten", "St_TTPolten_I_Krems").
+
++SetNode("Innsbruck2").
++SetAdminDist("Innsbruck2", "static", 1).
++SetAdminDist("Innsbruck2", "bgp", 2).
++SetAdminDist("Innsbruck2", "ospf", 3).
++SetInterface("Innsbruck2", "Innsbruck2_I_Innsbruck1").
++SetInterface("Innsbruck2", "Innsbruck2_I_Dornbirn").
++SetInterface("Innsbruck2", "Innsbruck2_I_Vienna1").
+
++SetNode("Innsbruck1").
++SetAdminDist("Innsbruck1", "static", 1).
++SetAdminDist("Innsbruck1", "bgp", 2).
++SetAdminDist("Innsbruck1", "ospf", 3).
++SetInterface("Innsbruck1", "Innsbruck1_I_Innsbruck2").
++SetInterface("Innsbruck1", "Innsbruck1_I_Dornbirn").
++SetInterface("Innsbruck1", "Innsbruck1_I_Vienna2").
+
++SetNode("Linz2").
++SetAdminDist("Linz2", "static", 1).
++SetAdminDist("Linz2", "bgp", 2).
++SetAdminDist("Linz2", "ospf", 3).
++SetInterface("Linz2", "Linz2_I_Vienna1").
++SetInterface("Linz2", "Linz2_I_Linz1").
+
++SetNode("Linz1").
++SetAdminDist("Linz1", "static", 1).
++SetAdminDist("Linz1", "bgp", 2).
++SetAdminDist("Linz1", "ospf", 3).
++SetInterface("Linz1", "Linz1_I_Linz2").
++SetInterface("Linz1", "Linz1_I_Vienna2").
+
++SetNode("NodeID10").
++SetAdminDist("NodeID10", "static", 1).
++SetAdminDist("NodeID10", "bgp", 2).
++SetAdminDist("NodeID10", "ospf", 3).
++SetInterface("NodeID10", "NodeID10_I_GEANT").
++SetInterface("NodeID10", "NodeID10_I_Level3").
++SetInterface("NodeID10", "NodeID10_I_SANET").
++SetInterface("NodeID10", "NodeID10_I_CESNET").
++SetInterface("NodeID10", "NodeID10_I_VIX").
++SetInterface("NodeID10", "NodeID10_I_Vienna1").
++SetInterface("NodeID10", "NodeID10_I_Vienna2").
+
++SetNode("Leoben").
++SetAdminDist("Leoben", "static", 1).
++SetAdminDist("Leoben", "bgp", 2).
++SetAdminDist("Leoben", "ospf", 3).
++SetInterface("Leoben", "Leoben_I_Graz2").
++SetInterface("Leoben", "Leoben_I_Graz1").
+
++SetNode("SANET").
++SetAdminDist("SANET", "static", 1).
++SetAdminDist("SANET", "bgp", 2).
++SetAdminDist("SANET", "ospf", 3).
++SetInterface("SANET", "SANET_I_NodeID10").
+
++SetNode("Klagenfurt1").
++SetAdminDist("Klagenfurt1", "static", 1).
++SetAdminDist("Klagenfurt1", "bgp", 2).
++SetAdminDist("Klagenfurt1", "ospf", 3).
++SetInterface("Klagenfurt1", "Klagenfurt1_I_Klagenfurt2").
++SetInterface("Klagenfurt1", "Klagenfurt1_I_Vienna1").
+
++SetNode("Klagenfurt2").
++SetAdminDist("Klagenfurt2", "static", 1).
++SetAdminDist("Klagenfurt2", "bgp", 2).
++SetAdminDist("Klagenfurt2", "ospf", 3).
++SetInterface("Klagenfurt2", "Klagenfurt2_I_Klagenfurt1").
++SetInterface("Klagenfurt2", "Klagenfurt2_I_Vienna2").
+
++SetNode("Vienna1").
++SetAdminDist("Vienna1", "static", 1).
++SetAdminDist("Vienna1", "bgp", 2).
++SetAdminDist("Vienna1", "ospf", 3).
++SetInterface("Vienna1", "Vienna1_I_Salzburg1").
++SetInterface("Vienna1", "Vienna1_I_Graz2").
++SetInterface("Vienna1", "Vienna1_I_NodeID10").
++SetInterface("Vienna1", "Vienna1_I_St_TTPolten").
++SetInterface("Vienna1", "Vienna1_I_Innsbruck2").
++SetInterface("Vienna1", "Vienna1_I_Linz2").
++SetInterface("Vienna1", "Vienna1_I_Eisenstadt").
++SetInterface("Vienna1", "Vienna1_I_Klagenfurt1").
+
++SetNode("Vienna2").
++SetAdminDist("Vienna2", "static", 1).
++SetAdminDist("Vienna2", "bgp", 2).
++SetAdminDist("Vienna2", "ospf", 3).
++SetInterface("Vienna2", "Vienna2_I_Graz1").
++SetInterface("Vienna2", "Vienna2_I_NodeID10").
++SetInterface("Vienna2", "Vienna2_I_Innsbruck1").
++SetInterface("Vienna2", "Vienna2_I_Linz1").
++SetInterface("Vienna2", "Vienna2_I_Eisenstadt").
++SetInterface("Vienna2", "Vienna2_I_Klagenfurt2").
++SetInterface("Vienna2", "Vienna2_I_Salzburg2").
++SetInterface("Vienna2", "Vienna2_I_Krems").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_NodeID10").
+
++SetNode("Eisenstadt").
++SetAdminDist("Eisenstadt", "static", 1).
++SetAdminDist("Eisenstadt", "bgp", 2).
++SetAdminDist("Eisenstadt", "ospf", 3).
++SetInterface("Eisenstadt", "Eisenstadt_I_Vienna1").
++SetInterface("Eisenstadt", "Eisenstadt_I_Vienna2").
+
++SetNode("Krems").
++SetAdminDist("Krems", "static", 1).
++SetAdminDist("Krems", "bgp", 2).
++SetAdminDist("Krems", "ospf", 3).
++SetInterface("Krems", "Krems_I_St_TTPolten").
++SetInterface("Krems", "Krems_I_Vienna2").
+
++SetNode("CESNET").
++SetAdminDist("CESNET", "static", 1).
++SetAdminDist("CESNET", "bgp", 2).
++SetAdminDist("CESNET", "ospf", 3).
++SetInterface("CESNET", "CESNET_I_NodeID10").
+
++SetNode("Graz2").
++SetAdminDist("Graz2", "static", 1).
++SetAdminDist("Graz2", "bgp", 2).
++SetAdminDist("Graz2", "ospf", 3).
++SetInterface("Graz2", "Graz2_I_Leoben").
++SetInterface("Graz2", "Graz2_I_Graz1").
++SetInterface("Graz2", "Graz2_I_Vienna1").
+
++SetNode("Graz1").
++SetAdminDist("Graz1", "static", 1).
++SetAdminDist("Graz1", "bgp", 2).
++SetAdminDist("Graz1", "ospf", 3).
++SetInterface("Graz1", "Graz1_I_Leoben").
++SetInterface("Graz1", "Graz1_I_Vienna2").
++SetInterface("Graz1", "Graz1_I_Graz2").
+
++SetNode("Dornbirn").
++SetAdminDist("Dornbirn", "static", 1).
++SetAdminDist("Dornbirn", "bgp", 2).
++SetAdminDist("Dornbirn", "ospf", 3).
++SetInterface("Dornbirn", "Dornbirn_I_Innsbruck2").
++SetInterface("Dornbirn", "Dornbirn_I_Innsbruck1").
+
++SetNode("Level3").
++SetAdminDist("Level3", "static", 1).
++SetAdminDist("Level3", "bgp", 2).
++SetAdminDist("Level3", "ospf", 3).
++SetInterface("Level3", "Level3_I_NodeID10").
+
++SetNode("Salzburg1").
++SetAdminDist("Salzburg1", "static", 1).
++SetAdminDist("Salzburg1", "bgp", 2).
++SetAdminDist("Salzburg1", "ospf", 3).
++SetInterface("Salzburg1", "Salzburg1_I_Salzburg2").
++SetInterface("Salzburg1", "Salzburg1_I_Vienna1").
+
++SetNode("VIX").
++SetAdminDist("VIX", "static", 1).
++SetAdminDist("VIX", "bgp", 2).
++SetAdminDist("VIX", "ospf", 3).
++SetInterface("VIX", "VIX_I_NodeID10").
+
++SetNode("Salzburg2").
++SetAdminDist("Salzburg2", "static", 1).
++SetAdminDist("Salzburg2", "bgp", 2).
++SetAdminDist("Salzburg2", "ospf", 3).
++SetInterface("Salzburg2", "Salzburg2_I_Salzburg1").
++SetInterface("Salzburg2", "Salzburg2_I_Vienna2").
+
++SetLink("St_TTPolten_I_Vienna1", "Vienna1_I_St_TTPolten").
++SetLink("St_TTPolten_I_Krems", "Krems_I_St_TTPolten").
++SetLink("Innsbruck2_I_Innsbruck1", "Innsbruck1_I_Innsbruck2").
++SetLink("Innsbruck2_I_Dornbirn", "Dornbirn_I_Innsbruck2").
++SetLink("Innsbruck2_I_Vienna1", "Vienna1_I_Innsbruck2").
++SetLink("Innsbruck1_I_Dornbirn", "Dornbirn_I_Innsbruck1").
++SetLink("Innsbruck1_I_Vienna2", "Vienna2_I_Innsbruck1").
++SetLink("Linz2_I_Vienna1", "Vienna1_I_Linz2").
++SetLink("Linz2_I_Linz1", "Linz1_I_Linz2").
++SetLink("Linz1_I_Vienna2", "Vienna2_I_Linz1").
++SetLink("NodeID10_I_GEANT", "GEANT_I_NodeID10").
++SetLink("NodeID10_I_Level3", "Level3_I_NodeID10").
++SetLink("NodeID10_I_SANET", "SANET_I_NodeID10").
++SetLink("NodeID10_I_CESNET", "CESNET_I_NodeID10").
++SetLink("NodeID10_I_VIX", "VIX_I_NodeID10").
++SetLink("NodeID10_I_Vienna1", "Vienna1_I_NodeID10").
++SetLink("NodeID10_I_Vienna2", "Vienna2_I_NodeID10").
++SetLink("Leoben_I_Graz2", "Graz2_I_Leoben").
++SetLink("Leoben_I_Graz1", "Graz1_I_Leoben").
++SetLink("Klagenfurt1_I_Klagenfurt2", "Klagenfurt2_I_Klagenfurt1").
++SetLink("Klagenfurt1_I_Vienna1", "Vienna1_I_Klagenfurt1").
++SetLink("Klagenfurt2_I_Vienna2", "Vienna2_I_Klagenfurt2").
++SetLink("Vienna1_I_Salzburg1", "Salzburg1_I_Vienna1").
++SetLink("Vienna1_I_Graz2", "Graz2_I_Vienna1").
++SetLink("Vienna1_I_Eisenstadt", "Eisenstadt_I_Vienna1").
++SetLink("Vienna2_I_Graz1", "Graz1_I_Vienna2").
++SetLink("Vienna2_I_Eisenstadt", "Eisenstadt_I_Vienna2").
++SetLink("Vienna2_I_Salzburg2", "Salzburg2_I_Vienna2").
++SetLink("Vienna2_I_Krems", "Krems_I_Vienna2").
++SetLink("Graz2_I_Graz1", "Graz1_I_Graz2").
++SetLink("Salzburg1_I_Salzburg2", "Salzburg2_I_Salzburg1").
+
+
++SetNetwork("St_TTPolten", "N_St_TTPolten").
++SetBGPAnnouncement("St_TTPolten", "N_St_TTPolten", "NBGP_St_TTPolten", "1;2;3", 3).
++SetNetwork("NodeID10", "N_NodeID10").
++SetBGPAnnouncement("NodeID10", "N_NodeID10", "NBGP_NodeID10", "1;2;3", 3).
++SetNetwork("Graz1", "N_Graz1").
++SetBGPAnnouncement("Graz1", "N_Graz1", "NBGP_Graz1", "1;2;3", 3).
++SetNetwork("Linz1", "N_Linz1").
++SetBGPAnnouncement("Linz1", "N_Linz1", "NBGP_Linz1", "1;2;3", 3).
++SetNetwork("Vienna1", "N_Vienna1").
++SetBGPAnnouncement("Vienna1", "N_Vienna1", "NBGP_Vienna1", "1;2;3", 3).
++SetNetwork("CESNET", "N_CESNET").
++SetBGPAnnouncement("CESNET", "N_CESNET", "NBGP_CESNET", "1;2;3", 3).
++SetNetwork("Innsbruck1", "N_Innsbruck1").
++SetBGPAnnouncement("Innsbruck1", "N_Innsbruck1", "NBGP_Innsbruck1", "1;2;3", 3).
++SetNetwork("Level3", "N_Level3").
++SetBGPAnnouncement("Level3", "N_Level3", "NBGP_Level3", "1;2;3", 3).
++SetNetwork("Linz2", "N_Linz2").
++SetBGPAnnouncement("Linz2", "N_Linz2", "NBGP_Linz2", "1;2;3", 3).
++SetNetwork("Vienna2", "N_Vienna2").
++SetBGPAnnouncement("Vienna2", "N_Vienna2", "NBGP_Vienna2", "1;2;3", 3).
++SetNetwork("SANET", "N_SANET").
++SetBGPAnnouncement("SANET", "N_SANET", "NBGP_SANET", "1;2;3", 3).
++SetNetwork("GEANT", "N_GEANT").
++SetBGPAnnouncement("GEANT", "N_GEANT", "NBGP_GEANT", "1;2;3", 3).
++SetNetwork("VIX", "N_VIX").
++SetBGPAnnouncement("VIX", "N_VIX", "NBGP_VIX", "1;2;3", 3).
++SetNetwork("Klagenfurt2", "N_Klagenfurt2").
++SetBGPAnnouncement("Klagenfurt2", "N_Klagenfurt2", "NBGP_Klagenfurt2", "1;2;3", 3).
++SetNetwork("Graz2", "N_Graz2").
++SetBGPAnnouncement("Graz2", "N_Graz2", "NBGP_Graz2", "1;2;3", 3).
++SetNetwork("Krems", "N_Krems").
++SetBGPAnnouncement("Krems", "N_Krems", "NBGP_Krems", "1;2;3", 3).
++SetNetwork("Leoben", "N_Leoben").
++SetBGPAnnouncement("Leoben", "N_Leoben", "NBGP_Leoben", "1;2;3", 3).
++SetNetwork("Salzburg2", "N_Salzburg2").
++SetBGPAnnouncement("Salzburg2", "N_Salzburg2", "NBGP_Salzburg2", "1;2;3", 3).
++SetNetwork("Dornbirn", "N_Dornbirn").
++SetBGPAnnouncement("Dornbirn", "N_Dornbirn", "NBGP_Dornbirn", "1;2;3", 3).
++SetNetwork("Eisenstadt", "N_Eisenstadt").
++SetBGPAnnouncement("Eisenstadt", "N_Eisenstadt", "NBGP_Eisenstadt", "1;2;3", 3).

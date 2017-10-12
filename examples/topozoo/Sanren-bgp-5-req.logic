@@ -1,0 +1,66 @@
+
++Fwd("N_EastTTLondon", "PortTTElizabeth", "EastTTLondon", "ospf").
++Fwd("NBGP_EastTTLondon", "PortTTElizabeth", "EastTTLondon", "bgp").
++Fwd("N_EastTTLondon", "Durban", "EastTTLondon", "ospf").
++Fwd("NBGP_EastTTLondon", "Durban", "EastTTLondon", "bgp").
++Fwd("N_EastTTLondon", "Bloemfontein", "CapeTTTown", "ospf").
++Fwd("NBGP_EastTTLondon", "Bloemfontein", "CapeTTTown", "bgp").
++Fwd("N_EastTTLondon", "CapeTTTown", "PortTTElizabeth", "ospf").
++Fwd("NBGP_EastTTLondon", "CapeTTTown", "PortTTElizabeth", "bgp").
++Fwd("N_EastTTLondon", "Johannesburg", "Pretoria", "ospf").
++Fwd("NBGP_EastTTLondon", "Johannesburg", "Pretoria", "bgp").
++Fwd("N_EastTTLondon", "Pretoria", "Durban", "ospf").
++Fwd("NBGP_EastTTLondon", "Pretoria", "Durban", "bgp").
+
++Fwd("N_PortTTElizabeth", "EastTTLondon", "PortTTElizabeth", "ospf").
++Fwd("NBGP_PortTTElizabeth", "EastTTLondon", "PortTTElizabeth", "bgp").
++Fwd("N_PortTTElizabeth", "Durban", "EastTTLondon", "ospf").
++Fwd("NBGP_PortTTElizabeth", "Durban", "EastTTLondon", "bgp").
++Fwd("N_PortTTElizabeth", "Bloemfontein", "CapeTTTown", "ospf").
++Fwd("NBGP_PortTTElizabeth", "Bloemfontein", "CapeTTTown", "bgp").
++Fwd("N_PortTTElizabeth", "CapeTTTown", "PortTTElizabeth", "ospf").
++Fwd("NBGP_PortTTElizabeth", "CapeTTTown", "PortTTElizabeth", "bgp").
++Fwd("N_PortTTElizabeth", "Johannesburg", "Bloemfontein", "ospf").
++Fwd("NBGP_PortTTElizabeth", "Johannesburg", "Bloemfontein", "bgp").
++Fwd("N_PortTTElizabeth", "Pretoria", "Durban", "ospf").
++Fwd("NBGP_PortTTElizabeth", "Pretoria", "Durban", "bgp").
+
++Fwd("N_CapeTTTown", "PortTTElizabeth", "CapeTTTown", "ospf").
++Fwd("NBGP_CapeTTTown", "PortTTElizabeth", "CapeTTTown", "bgp").
++Fwd("N_CapeTTTown", "EastTTLondon", "PortTTElizabeth", "ospf").
++Fwd("NBGP_CapeTTTown", "EastTTLondon", "PortTTElizabeth", "bgp").
++Fwd("N_CapeTTTown", "Durban", "EastTTLondon", "ospf").
++Fwd("NBGP_CapeTTTown", "Durban", "EastTTLondon", "bgp").
++Fwd("N_CapeTTTown", "Bloemfontein", "CapeTTTown", "ospf").
++Fwd("NBGP_CapeTTTown", "Bloemfontein", "CapeTTTown", "bgp").
++Fwd("N_CapeTTTown", "Johannesburg", "Bloemfontein", "ospf").
++Fwd("NBGP_CapeTTTown", "Johannesburg", "Bloemfontein", "bgp").
++Fwd("N_CapeTTTown", "Pretoria", "Durban", "ospf").
++Fwd("NBGP_CapeTTTown", "Pretoria", "Durban", "bgp").
+
++Fwd("N_Pretoria", "PortTTElizabeth", "EastTTLondon", "ospf").
++Fwd("NBGP_Pretoria", "PortTTElizabeth", "EastTTLondon", "bgp").
++Fwd("N_Pretoria", "EastTTLondon", "Durban", "ospf").
++Fwd("NBGP_Pretoria", "EastTTLondon", "Durban", "bgp").
++Fwd("N_Pretoria", "Durban", "Pretoria", "ospf").
++Fwd("NBGP_Pretoria", "Durban", "Pretoria", "bgp").
++Fwd("N_Pretoria", "Bloemfontein", "Johannesburg", "ospf").
++Fwd("NBGP_Pretoria", "Bloemfontein", "Johannesburg", "bgp").
++Fwd("N_Pretoria", "Johannesburg", "Pretoria", "ospf").
++Fwd("NBGP_Pretoria", "Johannesburg", "Pretoria", "bgp").
++Fwd("N_Pretoria", "CapeTTTown", "PortTTElizabeth", "ospf").
++Fwd("NBGP_Pretoria", "CapeTTTown", "PortTTElizabeth", "bgp").
+
++Fwd("N_Johannesburg", "PortTTElizabeth", "CapeTTTown", "ospf").
++Fwd("NBGP_Johannesburg", "PortTTElizabeth", "CapeTTTown", "bgp").
++Fwd("N_Johannesburg", "CapeTTTown", "Bloemfontein", "ospf").
++Fwd("NBGP_Johannesburg", "CapeTTTown", "Bloemfontein", "bgp").
++Fwd("N_Johannesburg", "Bloemfontein", "Johannesburg", "ospf").
++Fwd("NBGP_Johannesburg", "Bloemfontein", "Johannesburg", "bgp").
++Fwd("N_Johannesburg", "EastTTLondon", "Durban", "ospf").
++Fwd("NBGP_Johannesburg", "EastTTLondon", "Durban", "bgp").
++Fwd("N_Johannesburg", "Durban", "Pretoria", "ospf").
++Fwd("NBGP_Johannesburg", "Durban", "Pretoria", "bgp").
++Fwd("N_Johannesburg", "Pretoria", "Johannesburg", "ospf").
++Fwd("NBGP_Johannesburg", "Pretoria", "Johannesburg", "bgp").
+

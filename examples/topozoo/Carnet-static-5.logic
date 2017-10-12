@@ -1,0 +1,356 @@
++SetNode("Krizevci").
++SetAdminDist("Krizevci", "static", 1).
++SetAdminDist("Krizevci", "bgp", 2).
++SetAdminDist("Krizevci", "ospf", 3).
++SetInterface("Krizevci", "Krizevci_I_Zagreb").
+
++SetNode("Dubrovnik").
++SetAdminDist("Dubrovnik", "static", 1).
++SetAdminDist("Dubrovnik", "bgp", 2).
++SetAdminDist("Dubrovnik", "ospf", 3).
++SetInterface("Dubrovnik", "Dubrovnik_I_Split").
+
++SetNode("Cakovec").
++SetAdminDist("Cakovec", "static", 1).
++SetAdminDist("Cakovec", "bgp", 2).
++SetAdminDist("Cakovec", "ospf", 3).
++SetInterface("Cakovec", "Cakovec_I_Varazdin").
+
++SetNode("Split").
++SetAdminDist("Split", "static", 1).
++SetAdminDist("Split", "bgp", 2).
++SetAdminDist("Split", "ospf", 3).
++SetInterface("Split", "Split_I_Solin").
++SetInterface("Split", "Split_I_Knin").
++SetInterface("Split", "Split_I_Zagreb").
++SetInterface("Split", "Split_I_Sibenik").
++SetInterface("Split", "Split_I_Dubrovnik").
++SetInterface("Split", "Split_I_Trogic").
++SetInterface("Split", "Split_I_Hvar").
++SetInterface("Split", "Split_I_Zadar").
++SetInterface("Split", "Split_I_Pucisca").
+
++SetNode("Sisak").
++SetAdminDist("Sisak", "static", 1).
++SetAdminDist("Sisak", "bgp", 2).
++SetAdminDist("Sisak", "ospf", 3).
++SetInterface("Sisak", "Sisak_I_Petrinja").
++SetInterface("Sisak", "Sisak_I_Zagreb").
+
++SetNode("Osijek").
++SetAdminDist("Osijek", "static", 1).
++SetAdminDist("Osijek", "bgp", 2).
++SetAdminDist("Osijek", "ospf", 3).
++SetInterface("Osijek", "Osijek_I_Vukovar").
++SetInterface("Osijek", "Osijek_I_Pozega").
++SetInterface("Osijek", "Osijek_I_Slavonski").
++SetInterface("Osijek", "Osijek_I_Dakovo").
++SetInterface("Osijek", "Osijek_I_Zagreb").
+
++SetNode("Virovitica").
++SetAdminDist("Virovitica", "static", 1).
++SetAdminDist("Virovitica", "bgp", 2).
++SetAdminDist("Virovitica", "ospf", 3).
++SetInterface("Virovitica", "Virovitica_I_Zagreb").
+
++SetNode("Pucisca").
++SetAdminDist("Pucisca", "static", 1).
++SetAdminDist("Pucisca", "bgp", 2).
++SetAdminDist("Pucisca", "ospf", 3).
++SetInterface("Pucisca", "Pucisca_I_Split").
+
++SetNode("Jastrebarsko").
++SetAdminDist("Jastrebarsko", "static", 1).
++SetAdminDist("Jastrebarsko", "bgp", 2).
++SetAdminDist("Jastrebarsko", "ospf", 3).
++SetInterface("Jastrebarsko", "Jastrebarsko_I_Zagreb").
+
++SetNode("Vinkovci").
++SetAdminDist("Vinkovci", "static", 1).
++SetAdminDist("Vinkovci", "bgp", 2).
++SetAdminDist("Vinkovci", "ospf", 3).
++SetInterface("Vinkovci", "Vinkovci_I_Vukovar").
+
++SetNode("Pozega").
++SetAdminDist("Pozega", "static", 1).
++SetAdminDist("Pozega", "bgp", 2).
++SetAdminDist("Pozega", "ospf", 3).
++SetInterface("Pozega", "Pozega_I_Osijek").
+
++SetNode("Rijeka").
++SetAdminDist("Rijeka", "static", 1).
++SetAdminDist("Rijeka", "bgp", 2).
++SetAdminDist("Rijeka", "ospf", 3).
++SetInterface("Rijeka", "Rijeka_I_Otocac").
++SetInterface("Rijeka", "Rijeka_I_Opatija").
++SetInterface("Rijeka", "Rijeka_I_M_TTLosinj").
++SetInterface("Rijeka", "Rijeka_I_Zagreb").
++SetInterface("Rijeka", "Rijeka_I_Pula").
++SetInterface("Rijeka", "Rijeka_I_Gospic").
++SetInterface("Rijeka", "Rijeka_I_Buje").
++SetInterface("Rijeka", "Rijeka_I_Visnjan").
++SetInterface("Rijeka", "Rijeka_I_Porec").
+
++SetNode("Zagreb").
++SetAdminDist("Zagreb", "static", 1).
++SetAdminDist("Zagreb", "bgp", 2).
++SetAdminDist("Zagreb", "ospf", 3).
++SetInterface("Zagreb", "Zagreb_I_Krizevci").
++SetInterface("Zagreb", "Zagreb_I_GEANT").
++SetInterface("Zagreb", "Zagreb_I_Rijeka").
++SetInterface("Zagreb", "Zagreb_I_Bjelovar").
++SetInterface("Zagreb", "Zagreb_I_Zabresic").
++SetInterface("Zagreb", "Zagreb_I_Samobor").
++SetInterface("Zagreb", "Zagreb_I_Jastrebarsko").
++SetInterface("Zagreb", "Zagreb_I_Kutina").
++SetInterface("Zagreb", "Zagreb_I_Karlovac").
++SetInterface("Zagreb", "Zagreb_I_Varazdin").
++SetInterface("Zagreb", "Zagreb_I_Split").
++SetInterface("Zagreb", "Zagreb_I_Sisak").
++SetInterface("Zagreb", "Zagreb_I_BIHarnet").
++SetInterface("Zagreb", "Zagreb_I_Osijek").
++SetInterface("Zagreb", "Zagreb_I_Virovitica").
++SetInterface("Zagreb", "Zagreb_I_Gorica").
++SetInterface("Zagreb", "Zagreb_I_GEANTID9").
++SetInterface("Zagreb", "Zagreb_I_StaraTTGradnifska").
+
++SetNode("Bjelovar").
++SetAdminDist("Bjelovar", "static", 1).
++SetAdminDist("Bjelovar", "bgp", 2).
++SetAdminDist("Bjelovar", "ospf", 3).
++SetInterface("Bjelovar", "Bjelovar_I_Zagreb").
+
++SetNode("Rovinj").
++SetAdminDist("Rovinj", "static", 1).
++SetAdminDist("Rovinj", "bgp", 2).
++SetAdminDist("Rovinj", "ospf", 3).
++SetInterface("Rovinj", "Rovinj_I_Pula").
+
++SetNode("Gospic").
++SetAdminDist("Gospic", "static", 1).
++SetAdminDist("Gospic", "bgp", 2).
++SetAdminDist("Gospic", "ospf", 3).
++SetInterface("Gospic", "Gospic_I_Rijeka").
+
++SetNode("Buje").
++SetAdminDist("Buje", "static", 1).
++SetAdminDist("Buje", "bgp", 2).
++SetAdminDist("Buje", "ospf", 3).
++SetInterface("Buje", "Buje_I_Rijeka").
+
++SetNode("Petrinja").
++SetAdminDist("Petrinja", "static", 1).
++SetAdminDist("Petrinja", "bgp", 2).
++SetAdminDist("Petrinja", "ospf", 3).
++SetInterface("Petrinja", "Petrinja_I_Sisak").
+
++SetNode("M_TTLosinj").
++SetAdminDist("M_TTLosinj", "static", 1).
++SetAdminDist("M_TTLosinj", "bgp", 2).
++SetAdminDist("M_TTLosinj", "ospf", 3).
++SetInterface("M_TTLosinj", "M_TTLosinj_I_Rijeka").
+
++SetNode("GEANTID9").
++SetAdminDist("GEANTID9", "static", 1).
++SetAdminDist("GEANTID9", "bgp", 2).
++SetAdminDist("GEANTID9", "ospf", 3).
++SetInterface("GEANTID9", "GEANTID9_I_Zagreb").
+
++SetNode("StaraTTGradnifska").
++SetAdminDist("StaraTTGradnifska", "static", 1).
++SetAdminDist("StaraTTGradnifska", "bgp", 2).
++SetAdminDist("StaraTTGradnifska", "ospf", 3).
++SetInterface("StaraTTGradnifska", "StaraTTGradnifska_I_Zagreb").
+
++SetNode("Otocac").
++SetAdminDist("Otocac", "static", 1).
++SetAdminDist("Otocac", "bgp", 2).
++SetAdminDist("Otocac", "ospf", 3).
++SetInterface("Otocac", "Otocac_I_Rijeka").
+
++SetNode("Solin").
++SetAdminDist("Solin", "static", 1).
++SetAdminDist("Solin", "bgp", 2).
++SetAdminDist("Solin", "ospf", 3).
++SetInterface("Solin", "Solin_I_Split").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Zagreb").
+
++SetNode("Dakovo").
++SetAdminDist("Dakovo", "static", 1).
++SetAdminDist("Dakovo", "bgp", 2).
++SetAdminDist("Dakovo", "ospf", 3).
++SetInterface("Dakovo", "Dakovo_I_Osijek").
+
++SetNode("Pula").
++SetAdminDist("Pula", "static", 1).
++SetAdminDist("Pula", "bgp", 2).
++SetAdminDist("Pula", "ospf", 3).
++SetInterface("Pula", "Pula_I_Rovinj").
++SetInterface("Pula", "Pula_I_Rijeka").
+
++SetNode("Kutina").
++SetAdminDist("Kutina", "static", 1).
++SetAdminDist("Kutina", "bgp", 2).
++SetAdminDist("Kutina", "ospf", 3).
++SetInterface("Kutina", "Kutina_I_Zagreb").
+
++SetNode("Karlovac").
++SetAdminDist("Karlovac", "static", 1).
++SetAdminDist("Karlovac", "bgp", 2).
++SetAdminDist("Karlovac", "ospf", 3).
++SetInterface("Karlovac", "Karlovac_I_Zagreb").
+
++SetNode("Slavonski").
++SetAdminDist("Slavonski", "static", 1).
++SetAdminDist("Slavonski", "bgp", 2).
++SetAdminDist("Slavonski", "ospf", 3).
++SetInterface("Slavonski", "Slavonski_I_Osijek").
+
++SetNode("Trogic").
++SetAdminDist("Trogic", "static", 1).
++SetAdminDist("Trogic", "bgp", 2).
++SetAdminDist("Trogic", "ospf", 3).
++SetInterface("Trogic", "Trogic_I_Split").
+
++SetNode("Zadar").
++SetAdminDist("Zadar", "static", 1).
++SetAdminDist("Zadar", "bgp", 2).
++SetAdminDist("Zadar", "ospf", 3).
++SetInterface("Zadar", "Zadar_I_Split").
++SetInterface("Zadar", "Zadar_I_ZenumikTTD").
+
++SetNode("Gorica").
++SetAdminDist("Gorica", "static", 1).
++SetAdminDist("Gorica", "bgp", 2).
++SetAdminDist("Gorica", "ospf", 3).
++SetInterface("Gorica", "Gorica_I_Zagreb").
+
++SetNode("Visnjan").
++SetAdminDist("Visnjan", "static", 1).
++SetAdminDist("Visnjan", "bgp", 2).
++SetAdminDist("Visnjan", "ospf", 3).
++SetInterface("Visnjan", "Visnjan_I_Rijeka").
+
++SetNode("Porec").
++SetAdminDist("Porec", "static", 1).
++SetAdminDist("Porec", "bgp", 2).
++SetAdminDist("Porec", "ospf", 3).
++SetInterface("Porec", "Porec_I_Rijeka").
+
++SetNode("Zabresic").
++SetAdminDist("Zabresic", "static", 1).
++SetAdminDist("Zabresic", "bgp", 2).
++SetAdminDist("Zabresic", "ospf", 3).
++SetInterface("Zabresic", "Zabresic_I_Zagreb").
+
++SetNode("Knin").
++SetAdminDist("Knin", "static", 1).
++SetAdminDist("Knin", "bgp", 2).
++SetAdminDist("Knin", "ospf", 3).
++SetInterface("Knin", "Knin_I_Split").
+
++SetNode("Opatija").
++SetAdminDist("Opatija", "static", 1).
++SetAdminDist("Opatija", "bgp", 2).
++SetAdminDist("Opatija", "ospf", 3).
++SetInterface("Opatija", "Opatija_I_Rijeka").
+
++SetNode("Sibenik").
++SetAdminDist("Sibenik", "static", 1).
++SetAdminDist("Sibenik", "bgp", 2).
++SetAdminDist("Sibenik", "ospf", 3).
++SetInterface("Sibenik", "Sibenik_I_Split").
+
++SetNode("Vukovar").
++SetAdminDist("Vukovar", "static", 1).
++SetAdminDist("Vukovar", "bgp", 2).
++SetAdminDist("Vukovar", "ospf", 3).
++SetInterface("Vukovar", "Vukovar_I_Osijek").
++SetInterface("Vukovar", "Vukovar_I_Vinkovci").
+
++SetNode("Samobor").
++SetAdminDist("Samobor", "static", 1).
++SetAdminDist("Samobor", "bgp", 2).
++SetAdminDist("Samobor", "ospf", 3).
++SetInterface("Samobor", "Samobor_I_Zagreb").
+
++SetNode("Varazdin").
++SetAdminDist("Varazdin", "static", 1).
++SetAdminDist("Varazdin", "bgp", 2).
++SetAdminDist("Varazdin", "ospf", 3).
++SetInterface("Varazdin", "Varazdin_I_Zagreb").
++SetInterface("Varazdin", "Varazdin_I_Cakovec").
+
++SetNode("Hvar").
++SetAdminDist("Hvar", "static", 1).
++SetAdminDist("Hvar", "bgp", 2).
++SetAdminDist("Hvar", "ospf", 3).
++SetInterface("Hvar", "Hvar_I_Split").
+
++SetNode("BIHarnet").
++SetAdminDist("BIHarnet", "static", 1).
++SetAdminDist("BIHarnet", "bgp", 2).
++SetAdminDist("BIHarnet", "ospf", 3).
++SetInterface("BIHarnet", "BIHarnet_I_Zagreb").
+
++SetNode("ZenumikTTD").
++SetAdminDist("ZenumikTTD", "static", 1).
++SetAdminDist("ZenumikTTD", "bgp", 2).
++SetAdminDist("ZenumikTTD", "ospf", 3).
++SetInterface("ZenumikTTD", "ZenumikTTD_I_Zadar").
+
++SetLink("Krizevci_I_Zagreb", "Zagreb_I_Krizevci").
++SetLink("Dubrovnik_I_Split", "Split_I_Dubrovnik").
++SetLink("Cakovec_I_Varazdin", "Varazdin_I_Cakovec").
++SetLink("Split_I_Solin", "Solin_I_Split").
++SetLink("Split_I_Knin", "Knin_I_Split").
++SetLink("Split_I_Zagreb", "Zagreb_I_Split").
++SetLink("Split_I_Sibenik", "Sibenik_I_Split").
++SetLink("Split_I_Trogic", "Trogic_I_Split").
++SetLink("Split_I_Hvar", "Hvar_I_Split").
++SetLink("Split_I_Zadar", "Zadar_I_Split").
++SetLink("Split_I_Pucisca", "Pucisca_I_Split").
++SetLink("Sisak_I_Petrinja", "Petrinja_I_Sisak").
++SetLink("Sisak_I_Zagreb", "Zagreb_I_Sisak").
++SetLink("Osijek_I_Vukovar", "Vukovar_I_Osijek").
++SetLink("Osijek_I_Pozega", "Pozega_I_Osijek").
++SetLink("Osijek_I_Slavonski", "Slavonski_I_Osijek").
++SetLink("Osijek_I_Dakovo", "Dakovo_I_Osijek").
++SetLink("Osijek_I_Zagreb", "Zagreb_I_Osijek").
++SetLink("Virovitica_I_Zagreb", "Zagreb_I_Virovitica").
++SetLink("Jastrebarsko_I_Zagreb", "Zagreb_I_Jastrebarsko").
++SetLink("Vinkovci_I_Vukovar", "Vukovar_I_Vinkovci").
++SetLink("Rijeka_I_Otocac", "Otocac_I_Rijeka").
++SetLink("Rijeka_I_Opatija", "Opatija_I_Rijeka").
++SetLink("Rijeka_I_M_TTLosinj", "M_TTLosinj_I_Rijeka").
++SetLink("Rijeka_I_Zagreb", "Zagreb_I_Rijeka").
++SetLink("Rijeka_I_Pula", "Pula_I_Rijeka").
++SetLink("Rijeka_I_Gospic", "Gospic_I_Rijeka").
++SetLink("Rijeka_I_Buje", "Buje_I_Rijeka").
++SetLink("Rijeka_I_Visnjan", "Visnjan_I_Rijeka").
++SetLink("Rijeka_I_Porec", "Porec_I_Rijeka").
++SetLink("Zagreb_I_GEANT", "GEANT_I_Zagreb").
++SetLink("Zagreb_I_Bjelovar", "Bjelovar_I_Zagreb").
++SetLink("Zagreb_I_Zabresic", "Zabresic_I_Zagreb").
++SetLink("Zagreb_I_Samobor", "Samobor_I_Zagreb").
++SetLink("Zagreb_I_Kutina", "Kutina_I_Zagreb").
++SetLink("Zagreb_I_Karlovac", "Karlovac_I_Zagreb").
++SetLink("Zagreb_I_Varazdin", "Varazdin_I_Zagreb").
++SetLink("Zagreb_I_BIHarnet", "BIHarnet_I_Zagreb").
++SetLink("Zagreb_I_Gorica", "Gorica_I_Zagreb").
++SetLink("Zagreb_I_GEANTID9", "GEANTID9_I_Zagreb").
++SetLink("Zagreb_I_StaraTTGradnifska", "StaraTTGradnifska_I_Zagreb").
++SetLink("Rovinj_I_Pula", "Pula_I_Rovinj").
++SetLink("Zadar_I_ZenumikTTD", "ZenumikTTD_I_Zadar").
+
+
++SetNetwork("Gospic", "N_Gospic").
++SetNetwork("Opatija", "N_Opatija").
++SetNetwork("Varazdin", "N_Varazdin").
++SetNetwork("Bjelovar", "N_Bjelovar").
++SetNetwork("GEANTID9", "N_GEANTID9").

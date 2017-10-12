@@ -1,0 +1,124 @@
++SetNode("Manchester").
++SetAdminDist("Manchester", "static", 1).
++SetAdminDist("Manchester", "bgp", 2).
++SetAdminDist("Manchester", "ospf", 3).
++SetInterface("Manchester", "Manchester_I_Liverpool").
++SetInterface("Manchester", "Manchester_I_Birmingham").
+
++SetNode("Liverpool").
++SetAdminDist("Liverpool", "static", 1).
++SetAdminDist("Liverpool", "bgp", 2).
++SetAdminDist("Liverpool", "ospf", 3).
++SetInterface("Liverpool", "Liverpool_I_Manchester").
++SetInterface("Liverpool", "Liverpool_I_Southport").
+
++SetNode("Peterborough").
++SetAdminDist("Peterborough", "static", 1).
++SetAdminDist("Peterborough", "bgp", 2).
++SetAdminDist("Peterborough", "ospf", 3).
++SetInterface("Peterborough", "Peterborough_I_Cambridge").
++SetInterface("Peterborough", "Peterborough_I_Leicester").
+
++SetNode("Leicester").
++SetAdminDist("Leicester", "static", 1).
++SetAdminDist("Leicester", "bgp", 2).
++SetAdminDist("Leicester", "ospf", 3).
++SetInterface("Leicester", "Leicester_I_Sheffield").
++SetInterface("Leicester", "Leicester_I_Peterborough").
+
++SetNode("Sheffield").
++SetAdminDist("Sheffield", "static", 1).
++SetAdminDist("Sheffield", "bgp", 2).
++SetAdminDist("Sheffield", "ospf", 3).
++SetInterface("Sheffield", "Sheffield_I_Leeds").
++SetInterface("Sheffield", "Sheffield_I_Leicester").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_Reading").
++SetInterface("London", "London_I_NodeID3").
++SetInterface("London", "London_I_Cambridge").
+
++SetNode("NodeID2").
++SetAdminDist("NodeID2", "static", 1).
++SetAdminDist("NodeID2", "bgp", 2).
++SetAdminDist("NodeID2", "ospf", 3).
++SetInterface("NodeID2", "NodeID2_I_Reading").
+
++SetNode("Cambridge").
++SetAdminDist("Cambridge", "static", 1).
++SetAdminDist("Cambridge", "bgp", 2).
++SetAdminDist("Cambridge", "ospf", 3).
++SetInterface("Cambridge", "Cambridge_I_London").
++SetInterface("Cambridge", "Cambridge_I_Peterborough").
+
++SetNode("Leeds").
++SetAdminDist("Leeds", "static", 1).
++SetAdminDist("Leeds", "bgp", 2).
++SetAdminDist("Leeds", "ospf", 3).
++SetInterface("Leeds", "Leeds_I_Bracewell").
++SetInterface("Leeds", "Leeds_I_Sheffield").
+
++SetNode("NodeID3").
++SetAdminDist("NodeID3", "static", 1).
++SetAdminDist("NodeID3", "bgp", 2).
++SetAdminDist("NodeID3", "ospf", 3).
++SetInterface("NodeID3", "NodeID3_I_London").
+
++SetNode("Bristol").
++SetAdminDist("Bristol", "static", 1).
++SetAdminDist("Bristol", "bgp", 2).
++SetAdminDist("Bristol", "ospf", 3).
++SetInterface("Bristol", "Bristol_I_Reading").
++SetInterface("Bristol", "Bristol_I_Birmingham").
+
++SetNode("Bracewell").
++SetAdminDist("Bracewell", "static", 1).
++SetAdminDist("Bracewell", "bgp", 2).
++SetAdminDist("Bracewell", "ospf", 3).
++SetInterface("Bracewell", "Bracewell_I_Leeds").
++SetInterface("Bracewell", "Bracewell_I_Southport").
+
++SetNode("Birmingham").
++SetAdminDist("Birmingham", "static", 1).
++SetAdminDist("Birmingham", "bgp", 2).
++SetAdminDist("Birmingham", "ospf", 3).
++SetInterface("Birmingham", "Birmingham_I_Manchester").
++SetInterface("Birmingham", "Birmingham_I_Bristol").
+
++SetNode("Reading").
++SetAdminDist("Reading", "static", 1).
++SetAdminDist("Reading", "bgp", 2).
++SetAdminDist("Reading", "ospf", 3).
++SetInterface("Reading", "Reading_I_NodeID2").
++SetInterface("Reading", "Reading_I_London").
++SetInterface("Reading", "Reading_I_Bristol").
+
++SetNode("Southport").
++SetAdminDist("Southport", "static", 1).
++SetAdminDist("Southport", "bgp", 2).
++SetAdminDist("Southport", "ospf", 3).
++SetInterface("Southport", "Southport_I_Bracewell").
++SetInterface("Southport", "Southport_I_Liverpool").
+
++SetLink("Manchester_I_Liverpool", "Liverpool_I_Manchester").
++SetLink("Manchester_I_Birmingham", "Birmingham_I_Manchester").
++SetLink("Liverpool_I_Southport", "Southport_I_Liverpool").
++SetLink("Peterborough_I_Cambridge", "Cambridge_I_Peterborough").
++SetLink("Peterborough_I_Leicester", "Leicester_I_Peterborough").
++SetLink("Leicester_I_Sheffield", "Sheffield_I_Leicester").
++SetLink("Sheffield_I_Leeds", "Leeds_I_Sheffield").
++SetLink("London_I_Reading", "Reading_I_London").
++SetLink("London_I_NodeID3", "NodeID3_I_London").
++SetLink("London_I_Cambridge", "Cambridge_I_London").
++SetLink("NodeID2_I_Reading", "Reading_I_NodeID2").
++SetLink("Leeds_I_Bracewell", "Bracewell_I_Leeds").
++SetLink("Bristol_I_Reading", "Reading_I_Bristol").
++SetLink("Bristol_I_Birmingham", "Birmingham_I_Bristol").
++SetLink("Bracewell_I_Southport", "Southport_I_Bracewell").
+
+
++SetNetwork("Reading", "N_Reading").
++SetBGPAnnouncement("Reading", "N_Reading", "NBGP_Reading", "1;2;3", 3).

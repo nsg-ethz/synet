@@ -1,0 +1,163 @@
++SetNode("UniversityTT4").
++SetAdminDist("UniversityTT4", "static", 1).
++SetAdminDist("UniversityTT4", "bgp", 2).
++SetAdminDist("UniversityTT4", "ospf", 3).
++SetInterface("UniversityTT4", "UniversityTT4_I_NodeID15").
+
++SetNode("UniversityTT1").
++SetAdminDist("UniversityTT1", "static", 1).
++SetAdminDist("UniversityTT1", "bgp", 2).
++SetAdminDist("UniversityTT1", "ospf", 3).
++SetInterface("UniversityTT1", "UniversityTT1_I_Tanger").
+
++SetNode("UniversityTT3").
++SetAdminDist("UniversityTT3", "static", 1).
++SetAdminDist("UniversityTT3", "bgp", 2).
++SetAdminDist("UniversityTT3", "ospf", 3).
++SetInterface("UniversityTT3", "UniversityTT3_I_NodeID6").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_NodeID13").
+
++SetNode("UniversityTT2").
++SetAdminDist("UniversityTT2", "static", 1).
++SetAdminDist("UniversityTT2", "bgp", 2).
++SetAdminDist("UniversityTT2", "ospf", 3).
++SetInterface("UniversityTT2", "UniversityTT2_I_Agadir").
+
++SetNode("Tanger").
++SetAdminDist("Tanger", "static", 1).
++SetAdminDist("Tanger", "bgp", 2).
++SetAdminDist("Tanger", "ospf", 3).
++SetInterface("Tanger", "Tanger_I_Casa").
++SetInterface("Tanger", "Tanger_I_UniversityTT1").
++SetInterface("Tanger", "Tanger_I_Fes").
+
++SetNode("NodeID13").
++SetAdminDist("NodeID13", "static", 1).
++SetAdminDist("NodeID13", "bgp", 2).
++SetAdminDist("NodeID13", "ospf", 3).
++SetInterface("NodeID13", "NodeID13_I_NodeID15").
++SetInterface("NodeID13", "NodeID13_I_GEANT").
++SetInterface("NodeID13", "NodeID13_I_Internet").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_NodeID6").
++SetInterface("NodeID15", "NodeID15_I_UniversityTT4").
++SetInterface("NodeID15", "NodeID15_I_NodeID13").
++SetInterface("NodeID15", "NodeID15_I_Rabat").
+
++SetNode("Rabat").
++SetAdminDist("Rabat", "static", 1).
++SetAdminDist("Rabat", "bgp", 2).
++SetAdminDist("Rabat", "ospf", 3).
++SetInterface("Rabat", "Rabat_I_Casa").
++SetInterface("Rabat", "Rabat_I_Agadir").
++SetInterface("Rabat", "Rabat_I_NodeID15").
+
++SetNode("NodeID6").
++SetAdminDist("NodeID6", "static", 1).
++SetAdminDist("NodeID6", "bgp", 2).
++SetAdminDist("NodeID6", "ospf", 3).
++SetInterface("NodeID6", "NodeID6_I_Casa").
++SetInterface("NodeID6", "NodeID6_I_NodeID15").
++SetInterface("NodeID6", "NodeID6_I_UniversityTT3").
++SetInterface("NodeID6", "NodeID6_I_InstitutionTT1").
+
++SetNode("Agadir").
++SetAdminDist("Agadir", "static", 1).
++SetAdminDist("Agadir", "bgp", 2).
++SetAdminDist("Agadir", "ospf", 3).
++SetInterface("Agadir", "Agadir_I_UniversityTT2").
++SetInterface("Agadir", "Agadir_I_Rabat").
++SetInterface("Agadir", "Agadir_I_Marrkech").
+
++SetNode("Fes").
++SetAdminDist("Fes", "static", 1).
++SetAdminDist("Fes", "bgp", 2).
++SetAdminDist("Fes", "ospf", 3).
++SetInterface("Fes", "Fes_I_Tanger").
++SetInterface("Fes", "Fes_I_Marrkech").
+
++SetNode("Internet").
++SetAdminDist("Internet", "static", 1).
++SetAdminDist("Internet", "bgp", 2).
++SetAdminDist("Internet", "ospf", 3).
++SetInterface("Internet", "Internet_I_NodeID13").
+
++SetNode("Casa").
++SetAdminDist("Casa", "static", 1).
++SetAdminDist("Casa", "bgp", 2).
++SetAdminDist("Casa", "ospf", 3).
++SetInterface("Casa", "Casa_I_NodeID6").
++SetInterface("Casa", "Casa_I_Rabat").
++SetInterface("Casa", "Casa_I_Tanger").
+
++SetNode("InstitutionTT1").
++SetAdminDist("InstitutionTT1", "static", 1).
++SetAdminDist("InstitutionTT1", "bgp", 2).
++SetAdminDist("InstitutionTT1", "ospf", 3).
++SetInterface("InstitutionTT1", "InstitutionTT1_I_NodeID6").
+
++SetNode("Marrkech").
++SetAdminDist("Marrkech", "static", 1).
++SetAdminDist("Marrkech", "bgp", 2).
++SetAdminDist("Marrkech", "ospf", 3).
++SetInterface("Marrkech", "Marrkech_I_Agadir").
++SetInterface("Marrkech", "Marrkech_I_Fes").
+
++SetLink("UniversityTT4_I_NodeID15", "NodeID15_I_UniversityTT4").
++SetLink("UniversityTT1_I_Tanger", "Tanger_I_UniversityTT1").
++SetLink("UniversityTT3_I_NodeID6", "NodeID6_I_UniversityTT3").
++SetLink("GEANT_I_NodeID13", "NodeID13_I_GEANT").
++SetLink("UniversityTT2_I_Agadir", "Agadir_I_UniversityTT2").
++SetLink("Tanger_I_Casa", "Casa_I_Tanger").
++SetLink("Tanger_I_Fes", "Fes_I_Tanger").
++SetLink("NodeID13_I_NodeID15", "NodeID15_I_NodeID13").
++SetLink("NodeID13_I_Internet", "Internet_I_NodeID13").
++SetLink("NodeID15_I_NodeID6", "NodeID6_I_NodeID15").
++SetLink("NodeID15_I_Rabat", "Rabat_I_NodeID15").
++SetLink("Rabat_I_Casa", "Casa_I_Rabat").
++SetLink("Rabat_I_Agadir", "Agadir_I_Rabat").
++SetLink("NodeID6_I_Casa", "Casa_I_NodeID6").
++SetLink("NodeID6_I_InstitutionTT1", "InstitutionTT1_I_NodeID6").
++SetLink("Agadir_I_Marrkech", "Marrkech_I_Agadir").
++SetLink("Fes_I_Marrkech", "Marrkech_I_Fes").
+
+
++SetNetwork("Agadir", "N_Agadir").
++SetBGPAnnouncement("Agadir", "N_Agadir", "NBGP_Agadir", "1;2;3", 3).
++SetNetwork("Rabat", "N_Rabat").
++SetBGPAnnouncement("Rabat", "N_Rabat", "NBGP_Rabat", "1;2;3", 3).
++SetNetwork("UniversityTT2", "N_UniversityTT2").
++SetBGPAnnouncement("UniversityTT2", "N_UniversityTT2", "NBGP_UniversityTT2", "1;2;3", 3).
++SetNetwork("UniversityTT1", "N_UniversityTT1").
++SetBGPAnnouncement("UniversityTT1", "N_UniversityTT1", "NBGP_UniversityTT1", "1;2;3", 3).
++SetNetwork("Casa", "N_Casa").
++SetBGPAnnouncement("Casa", "N_Casa", "NBGP_Casa", "1;2;3", 3).
++SetNetwork("NodeID15", "N_NodeID15").
++SetBGPAnnouncement("NodeID15", "N_NodeID15", "NBGP_NodeID15", "1;2;3", 3).
++SetNetwork("GEANT", "N_GEANT").
++SetBGPAnnouncement("GEANT", "N_GEANT", "NBGP_GEANT", "1;2;3", 3).
++SetNetwork("InstitutionTT1", "N_InstitutionTT1").
++SetBGPAnnouncement("InstitutionTT1", "N_InstitutionTT1", "NBGP_InstitutionTT1", "1;2;3", 3).
++SetNetwork("Fes", "N_Fes").
++SetBGPAnnouncement("Fes", "N_Fes", "NBGP_Fes", "1;2;3", 3).
++SetNetwork("Internet", "N_Internet").
++SetBGPAnnouncement("Internet", "N_Internet", "NBGP_Internet", "1;2;3", 3).
++SetNetwork("Tanger", "N_Tanger").
++SetBGPAnnouncement("Tanger", "N_Tanger", "NBGP_Tanger", "1;2;3", 3).
++SetNetwork("Marrkech", "N_Marrkech").
++SetBGPAnnouncement("Marrkech", "N_Marrkech", "NBGP_Marrkech", "1;2;3", 3).
++SetNetwork("NodeID13", "N_NodeID13").
++SetBGPAnnouncement("NodeID13", "N_NodeID13", "NBGP_NodeID13", "1;2;3", 3).
++SetNetwork("UniversityTT4", "N_UniversityTT4").
++SetBGPAnnouncement("UniversityTT4", "N_UniversityTT4", "NBGP_UniversityTT4", "1;2;3", 3).
++SetNetwork("NodeID6", "N_NodeID6").
++SetBGPAnnouncement("NodeID6", "N_NodeID6", "NBGP_NodeID6", "1;2;3", 3).

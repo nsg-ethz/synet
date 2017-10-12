@@ -1,0 +1,12 @@
+
++Fwd("N_Seattle", "Dallas", "Chicago", "ospf").
++Fwd("NBGP_Seattle", "Dallas", "Chicago", "bgp").
++Fwd("N_Seattle", "Chicago", "Seattle", "ospf").
++Fwd("NBGP_Seattle", "Chicago", "Seattle", "bgp").
++Fwd("N_Seattle", "Minneapolis", "Chicago", "ospf").
++Fwd("NBGP_Seattle", "Minneapolis", "Chicago", "bgp").
++Fwd("N_Seattle", "SanTTJose", "Seattle", "ospf").
++Fwd("NBGP_Seattle", "SanTTJose", "Seattle", "bgp").
++Fwd("N_Seattle", "Vienna", "SanTTJose", "ospf").
++Fwd("NBGP_Seattle", "Vienna", "SanTTJose", "bgp").
+

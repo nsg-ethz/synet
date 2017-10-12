@@ -1,0 +1,56 @@
+
++Fwd("N_Belgrade", "Krusevac", "Podgorica", "ospf").
++Fwd("NBGP_Belgrade", "Krusevac", "Podgorica", "bgp").
++Fwd("N_Belgrade", "Podgorica", "NoviTTSad", "ospf").
++Fwd("NBGP_Belgrade", "Podgorica", "NoviTTSad", "bgp").
++Fwd("N_Belgrade", "NoviTTSad", "Belgrade", "ospf").
++Fwd("NBGP_Belgrade", "NoviTTSad", "Belgrade", "bgp").
++Fwd("N_Belgrade", "Nis", "Kragujevac", "ospf").
++Fwd("NBGP_Belgrade", "Nis", "Kragujevac", "bgp").
++Fwd("N_Belgrade", "Kragujevac", "Belgrade", "ospf").
++Fwd("NBGP_Belgrade", "Kragujevac", "Belgrade", "bgp").
+
++Fwd("N_Podgorica", "Krusevac", "Podgorica", "ospf").
++Fwd("NBGP_Podgorica", "Krusevac", "Podgorica", "bgp").
++Fwd("N_Podgorica", "Belgrade", "NoviTTSad", "ospf").
++Fwd("NBGP_Podgorica", "Belgrade", "NoviTTSad", "bgp").
++Fwd("N_Podgorica", "NoviTTSad", "Podgorica", "ospf").
++Fwd("NBGP_Podgorica", "NoviTTSad", "Podgorica", "bgp").
++Fwd("N_Podgorica", "Nis", "Krusevac", "ospf").
++Fwd("NBGP_Podgorica", "Nis", "Krusevac", "bgp").
++Fwd("N_Podgorica", "Kragujevac", "Nis", "ospf").
++Fwd("NBGP_Podgorica", "Kragujevac", "Nis", "bgp").
+
++Fwd("N_Nis", "Krusevac", "Nis", "ospf").
++Fwd("NBGP_Nis", "Krusevac", "Nis", "bgp").
++Fwd("N_Nis", "Belgrade", "Kragujevac", "ospf").
++Fwd("NBGP_Nis", "Belgrade", "Kragujevac", "bgp").
++Fwd("N_Nis", "Kragujevac", "Nis", "ospf").
++Fwd("NBGP_Nis", "Kragujevac", "Nis", "bgp").
++Fwd("N_Nis", "Podgorica", "Krusevac", "ospf").
++Fwd("NBGP_Nis", "Podgorica", "Krusevac", "bgp").
++Fwd("N_Nis", "NoviTTSad", "Podgorica", "ospf").
++Fwd("NBGP_Nis", "NoviTTSad", "Podgorica", "bgp").
+
++Fwd("N_Kragujevac", "Krusevac", "Nis", "ospf").
++Fwd("NBGP_Kragujevac", "Krusevac", "Nis", "bgp").
++Fwd("N_Kragujevac", "Nis", "Kragujevac", "ospf").
++Fwd("NBGP_Kragujevac", "Nis", "Kragujevac", "bgp").
++Fwd("N_Kragujevac", "Belgrade", "Kragujevac", "ospf").
++Fwd("NBGP_Kragujevac", "Belgrade", "Kragujevac", "bgp").
++Fwd("N_Kragujevac", "Podgorica", "NoviTTSad", "ospf").
++Fwd("NBGP_Kragujevac", "Podgorica", "NoviTTSad", "bgp").
++Fwd("N_Kragujevac", "NoviTTSad", "Belgrade", "ospf").
++Fwd("NBGP_Kragujevac", "NoviTTSad", "Belgrade", "bgp").
+
++Fwd("N_Krusevac", "Belgrade", "NoviTTSad", "ospf").
++Fwd("NBGP_Krusevac", "Belgrade", "NoviTTSad", "bgp").
++Fwd("N_Krusevac", "NoviTTSad", "Podgorica", "ospf").
++Fwd("NBGP_Krusevac", "NoviTTSad", "Podgorica", "bgp").
++Fwd("N_Krusevac", "Podgorica", "Krusevac", "ospf").
++Fwd("NBGP_Krusevac", "Podgorica", "Krusevac", "bgp").
++Fwd("N_Krusevac", "Nis", "Krusevac", "ospf").
++Fwd("NBGP_Krusevac", "Nis", "Krusevac", "bgp").
++Fwd("N_Krusevac", "Kragujevac", "Nis", "ospf").
++Fwd("NBGP_Krusevac", "Kragujevac", "Nis", "bgp").
+

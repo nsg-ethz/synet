@@ -1,0 +1,21 @@
+
++Fwd("N_Manchester", "Bethel", "Norway", "ospf").
++Fwd("N_Manchester", "Norway", "Standish", "ospf").
++Fwd("N_Manchester", "Standish", "Portland", "ospf").
++Fwd("N_Manchester", "Portland", "Portsmouth", "ospf").
++Fwd("N_Manchester", "Portsmouth", "Manchester", "ospf").
++Fwd("N_Manchester", "Boston", "Manchester", "ospf").
++Fwd("N_Manchester", "Keene", "Dover", "ospf").
++Fwd("N_Manchester", "Dover", "Portland", "ospf").
++Fwd("N_Manchester", "Sanford", "Portsmouth", "ospf").
++Fwd("N_Manchester", "AugustaID19", "Bangor", "ospf").
++Fwd("N_Manchester", "Bangor", "Lewiston", "ospf").
++Fwd("N_Manchester", "Lewiston", "Portland", "ospf").
++Fwd("N_Manchester", "Augusta", "AugustaID19", "ospf").
++Fwd("N_Manchester", "Biddeford", "Sanford", "ospf").
++Fwd("N_Manchester", "Buckfield", "Standish", "ospf").
++Fwd("N_Manchester", "Framingham", "Boston", "ospf").
++Fwd("N_Manchester", "Worcester", "Framingham", "ospf").
++Fwd("N_Manchester", "Turner", "Augusta", "ospf").
++Fwd("N_Manchester", "Springfield", "Worcester", "ospf").
+

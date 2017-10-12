@@ -1,0 +1,26 @@
+
++Fwd("N_Viljandi", "Tartu", "Jogeva", "ospf").
++Fwd("NBGP_Viljandi", "Tartu", "Jogeva", "bgp").
++Fwd("N_Viljandi", "Jogeva", "Paide", "ospf").
++Fwd("NBGP_Viljandi", "Jogeva", "Paide", "bgp").
++Fwd("N_Viljandi", "Paide", "Viljandi", "ospf").
++Fwd("NBGP_Viljandi", "Paide", "Viljandi", "bgp").
++Fwd("N_Viljandi", "Rakvere", "Tallinn", "ospf").
++Fwd("NBGP_Viljandi", "Rakvere", "Tallinn", "bgp").
++Fwd("N_Viljandi", "Tallinn", "Viljandi", "ospf").
++Fwd("NBGP_Viljandi", "Tallinn", "Viljandi", "bgp").
++Fwd("N_Viljandi", "Narva", "Tallinn", "ospf").
++Fwd("NBGP_Viljandi", "Narva", "Tallinn", "bgp").
++Fwd("N_Viljandi", "Voru", "Tartu", "ospf").
++Fwd("NBGP_Viljandi", "Voru", "Tartu", "bgp").
++Fwd("N_Viljandi", "Kuressaare", "Tallinn", "ospf").
++Fwd("NBGP_Viljandi", "Kuressaare", "Tallinn", "bgp").
++Fwd("N_Viljandi", "Turi", "Paide", "ospf").
++Fwd("NBGP_Viljandi", "Turi", "Paide", "bgp").
++Fwd("N_Viljandi", "Parnu", "Tallinn", "ospf").
++Fwd("NBGP_Viljandi", "Parnu", "Tallinn", "bgp").
++Fwd("N_Viljandi", "Haapsald", "Tallinn", "ospf").
++Fwd("NBGP_Viljandi", "Haapsald", "Tallinn", "bgp").
++Fwd("N_Viljandi", "GEANT2", "Tallinn", "ospf").
++Fwd("NBGP_Viljandi", "GEANT2", "Tallinn", "bgp").
+

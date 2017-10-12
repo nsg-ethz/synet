@@ -1,0 +1,10 @@
+
++Fwd("N_NETNOD", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_NETNOD", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_NETNOD", "Stockholm", "NETNOD", "ospf").
++Fwd("N_NETNOD", "GEANT", "Stockholm", "ospf").
++Fwd("N_NETNOD", "Helsinki", "Stockholm", "ospf").
++Fwd("N_NETNOD", "Oslo", "Copenhagen", "ospf").
++Fwd("N_NETNOD", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_NETNOD", "GeneralTTInternet", "Stockholm", "ospf").
+

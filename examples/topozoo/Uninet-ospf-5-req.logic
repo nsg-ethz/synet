@@ -1,0 +1,66 @@
+
++Fwd("N_CBI", "NPM", "NRT", "ospf").
++Fwd("N_CBI", "NRT", "BKK", "ospf").
++Fwd("N_CBI", "BKK", "CBI", "ospf").
++Fwd("N_CBI", "SKN", "KKN", "ospf").
++Fwd("N_CBI", "KKN", "NRM", "ospf").
++Fwd("N_CBI", "NRM", "BKK", "ospf").
++Fwd("N_CBI", "CMI", "BKK", "ospf").
++Fwd("N_CBI", "PNK", "CMI", "ospf").
++Fwd("N_CBI", "SKA", "CBI", "ospf").
++Fwd("N_CBI", "CRI", "PNK", "ospf").
++Fwd("N_CBI", "UBI", "NRM", "ospf").
++Fwd("N_CBI", "_", "KKN", "ospf").
+
++Fwd("N_NPM", "SKN", "KKN", "ospf").
++Fwd("N_NPM", "KKN", "NRM", "ospf").
++Fwd("N_NPM", "NRM", "BKK", "ospf").
++Fwd("N_NPM", "BKK", "NPM", "ospf").
++Fwd("N_NPM", "CMI", "BKK", "ospf").
++Fwd("N_NPM", "CBI", "BKK", "ospf").
++Fwd("N_NPM", "PNK", "CMI", "ospf").
++Fwd("N_NPM", "SKA", "CBI", "ospf").
++Fwd("N_NPM", "CRI", "PNK", "ospf").
++Fwd("N_NPM", "UBI", "NRM", "ospf").
++Fwd("N_NPM", "_", "KKN", "ospf").
++Fwd("N_NPM", "NRT", "BKK", "ospf").
+
++Fwd("N_NRT", "NPM", "NRT", "ospf").
++Fwd("N_NRT", "SKN", "KKN", "ospf").
++Fwd("N_NRT", "KKN", "NRM", "ospf").
++Fwd("N_NRT", "NRM", "BKK", "ospf").
++Fwd("N_NRT", "BKK", "NRT", "ospf").
++Fwd("N_NRT", "CMI", "BKK", "ospf").
++Fwd("N_NRT", "CBI", "SKA", "ospf").
++Fwd("N_NRT", "SKA", "NRT", "ospf").
++Fwd("N_NRT", "PNK", "CMI", "ospf").
++Fwd("N_NRT", "CRI", "PNK", "ospf").
++Fwd("N_NRT", "UBI", "NRM", "ospf").
++Fwd("N_NRT", "_", "KKN", "ospf").
+
++Fwd("N_NRM", "NPM", "NRT", "ospf").
++Fwd("N_NRM", "NRT", "BKK", "ospf").
++Fwd("N_NRM", "BKK", "NRM", "ospf").
++Fwd("N_NRM", "SKN", "KKN", "ospf").
++Fwd("N_NRM", "KKN", "NRM", "ospf").
++Fwd("N_NRM", "CMI", "BKK", "ospf").
++Fwd("N_NRM", "CBI", "BKK", "ospf").
++Fwd("N_NRM", "PNK", "KKN", "ospf").
++Fwd("N_NRM", "SKA", "CBI", "ospf").
++Fwd("N_NRM", "CRI", "PNK", "ospf").
++Fwd("N_NRM", "UBI", "NRM", "ospf").
++Fwd("N_NRM", "_", "KKN", "ospf").
+
++Fwd("N_PNK", "NPM", "NRT", "ospf").
++Fwd("N_PNK", "NRT", "BKK", "ospf").
++Fwd("N_PNK", "BKK", "PNK", "ospf").
++Fwd("N_PNK", "SKN", "KKN", "ospf").
++Fwd("N_PNK", "KKN", "PNK", "ospf").
++Fwd("N_PNK", "CMI", "PNK", "ospf").
++Fwd("N_PNK", "NRM", "BKK", "ospf").
++Fwd("N_PNK", "CBI", "BKK", "ospf").
++Fwd("N_PNK", "SKA", "CBI", "ospf").
++Fwd("N_PNK", "CRI", "PNK", "ospf").
++Fwd("N_PNK", "UBI", "NRM", "ospf").
++Fwd("N_PNK", "_", "KKN", "ospf").
+

@@ -1,0 +1,14 @@
+
++Fwd("N_NodeID0", "Ostrava", "Olomouc", "ospf").
++Fwd("N_NodeID0", "Olomouc", "NodeID0", "ospf").
++Fwd("N_NodeID0", "Pardubice", "NodeID2", "ospf").
++Fwd("N_NodeID0", "NodeID2", "Praha", "ospf").
++Fwd("N_NodeID0", "Praha", "NodeID1", "ospf").
++Fwd("N_NodeID0", "NodeID1", "NodeID0", "ospf").
++Fwd("N_NodeID0", "Plzen", "Praha", "ospf").
++Fwd("N_NodeID0", "Liberec", "Praha", "ospf").
++Fwd("N_NodeID0", "TEN_34", "Praha", "ospf").
++Fwd("N_NodeID0", "HradecTTKralove", "NodeID2", "ospf").
++Fwd("N_NodeID0", "CeskeTTBudejovice", "NodeID1", "ospf").
++Fwd("N_NodeID0", "Brno", "NodeID0", "ospf").
+

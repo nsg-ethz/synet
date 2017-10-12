@@ -1,0 +1,66 @@
+
++Fwd("N_Calgary", "Toronto", "Regina", "ospf").
++Fwd("N_Calgary", "Regina", "Calgary", "ospf").
++Fwd("N_Calgary", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("N_Calgary", "Vancouver", "Edmonton", "ospf").
++Fwd("N_Calgary", "Edmonton", "Calgary", "ospf").
++Fwd("N_Calgary", "NewTTYork", "Toronto", "ospf").
++Fwd("N_Calgary", "Saskatoon", "Toronto", "ospf").
++Fwd("N_Calgary", "Victoria", "Vancouver", "ospf").
++Fwd("N_Calgary", "Winnipeg", "Regina", "ospf").
++Fwd("N_Calgary", "Halifax", "Toronto", "ospf").
++Fwd("N_Calgary", "Seattle", "Vancouver", "ospf").
++Fwd("N_Calgary", "Montreal", "Toronto", "ospf").
+
++Fwd("N_Winnipeg", "Toronto", "Saskatoon", "ospf").
++Fwd("N_Winnipeg", "Saskatoon", "Winnipeg", "ospf").
++Fwd("N_Winnipeg", "Regina", "Winnipeg", "ospf").
++Fwd("N_Winnipeg", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Vancouver", "Saskatoon", "ospf").
++Fwd("N_Winnipeg", "NewTTYork", "Toronto", "ospf").
++Fwd("N_Winnipeg", "Edmonton", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Victoria", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Calgary", "Saskatoon", "ospf").
++Fwd("N_Winnipeg", "Halifax", "Toronto", "ospf").
++Fwd("N_Winnipeg", "Seattle", "Vancouver", "ospf").
++Fwd("N_Winnipeg", "Montreal", "Toronto", "ospf").
+
++Fwd("N_Vancouver", "Toronto", "Regina", "ospf").
++Fwd("N_Vancouver", "Regina", "Vancouver", "ospf").
++Fwd("N_Vancouver", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("N_Vancouver", "NewTTYork", "Toronto", "ospf").
++Fwd("N_Vancouver", "Edmonton", "Vancouver", "ospf").
++Fwd("N_Vancouver", "Saskatoon", "Toronto", "ospf").
++Fwd("N_Vancouver", "Victoria", "Vancouver", "ospf").
++Fwd("N_Vancouver", "Winnipeg", "Regina", "ospf").
++Fwd("N_Vancouver", "Calgary", "Edmonton", "ospf").
++Fwd("N_Vancouver", "Halifax", "Toronto", "ospf").
++Fwd("N_Vancouver", "Seattle", "Vancouver", "ospf").
++Fwd("N_Vancouver", "Montreal", "Toronto", "ospf").
+
++Fwd("N_Montreal", "Toronto", "Montreal", "ospf").
++Fwd("N_Montreal", "Regina", "Toronto", "ospf").
++Fwd("N_Montreal", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("N_Montreal", "Vancouver", "Saskatoon", "ospf").
++Fwd("N_Montreal", "Saskatoon", "Toronto", "ospf").
++Fwd("N_Montreal", "NewTTYork", "Toronto", "ospf").
++Fwd("N_Montreal", "Edmonton", "Vancouver", "ospf").
++Fwd("N_Montreal", "Victoria", "Vancouver", "ospf").
++Fwd("N_Montreal", "Winnipeg", "Saskatoon", "ospf").
++Fwd("N_Montreal", "Calgary", "Saskatoon", "ospf").
++Fwd("N_Montreal", "Halifax", "Toronto", "ospf").
++Fwd("N_Montreal", "Seattle", "Vancouver", "ospf").
+
++Fwd("N_Victoria", "Toronto", "Regina", "ospf").
++Fwd("N_Victoria", "Regina", "Vancouver", "ospf").
++Fwd("N_Victoria", "Vancouver", "Victoria", "ospf").
++Fwd("N_Victoria", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("N_Victoria", "NewTTYork", "Toronto", "ospf").
++Fwd("N_Victoria", "Edmonton", "Vancouver", "ospf").
++Fwd("N_Victoria", "Saskatoon", "Toronto", "ospf").
++Fwd("N_Victoria", "Winnipeg", "Regina", "ospf").
++Fwd("N_Victoria", "Calgary", "Edmonton", "ospf").
++Fwd("N_Victoria", "Halifax", "Toronto", "ospf").
++Fwd("N_Victoria", "Seattle", "Vancouver", "ospf").
++Fwd("N_Victoria", "Montreal", "Toronto", "ospf").
+

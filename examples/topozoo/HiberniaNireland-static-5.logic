@@ -1,0 +1,160 @@
++SetNode("Europe").
++SetAdminDist("Europe", "static", 1).
++SetAdminDist("Europe", "bgp", 2).
++SetAdminDist("Europe", "ospf", 3).
++SetInterface("Europe", "Europe_I_Southport").
+
++SetNode("Omagh").
++SetAdminDist("Omagh", "static", 1).
++SetAdminDist("Omagh", "bgp", 2).
++SetAdminDist("Omagh", "ospf", 3).
++SetInterface("Omagh", "Omagh_I_Strabane").
++SetInterface("Omagh", "Omagh_I_Armagh").
+
++SetNode("Belfast").
++SetAdminDist("Belfast", "static", 1).
++SetAdminDist("Belfast", "bgp", 2).
++SetAdminDist("Belfast", "ospf", 3).
++SetInterface("Belfast", "Belfast_I_Portadown").
++SetInterface("Belfast", "Belfast_I_Ballymena").
+
++SetNode("Castleblayney").
++SetAdminDist("Castleblayney", "static", 1).
++SetAdminDist("Castleblayney", "bgp", 2).
++SetAdminDist("Castleblayney", "ospf", 3).
++SetInterface("Castleblayney", "Castleblayney_I_Dundalk").
++SetInterface("Castleblayney", "Castleblayney_I_Monaghan").
+
++SetNode("Drogheda").
++SetAdminDist("Drogheda", "static", 1).
++SetAdminDist("Drogheda", "bgp", 2).
++SetAdminDist("Drogheda", "ospf", 3).
++SetInterface("Drogheda", "Drogheda_I_Dundalk").
++SetInterface("Drogheda", "Drogheda_I_Dublin").
+
++SetNode("Dublin").
++SetAdminDist("Dublin", "static", 1).
++SetAdminDist("Dublin", "bgp", 2).
++SetAdminDist("Dublin", "ospf", 3).
++SetInterface("Dublin", "Dublin_I_Drogheda").
++SetInterface("Dublin", "Dublin_I_NorthTTAmerica").
++SetInterface("Dublin", "Dublin_I_Southport").
+
++SetNode("NodeID12").
++SetAdminDist("NodeID12", "static", 1).
++SetAdminDist("NodeID12", "bgp", 2).
++SetAdminDist("NodeID12", "ospf", 3).
++SetInterface("NodeID12", "NodeID12_I_NorthTTAmerica").
++SetInterface("NodeID12", "NodeID12_I_Coleraine").
++SetInterface("NodeID12", "NodeID12_I_Southport").
+
++SetNode("Londonderry").
++SetAdminDist("Londonderry", "static", 1).
++SetAdminDist("Londonderry", "bgp", 2).
++SetAdminDist("Londonderry", "ospf", 3).
++SetInterface("Londonderry", "Londonderry_I_Letterkenny").
++SetInterface("Londonderry", "Londonderry_I_Strabane").
++SetInterface("Londonderry", "Londonderry_I_Coleraine").
+
++SetNode("Armagh").
++SetAdminDist("Armagh", "static", 1).
++SetAdminDist("Armagh", "bgp", 2).
++SetAdminDist("Armagh", "ospf", 3).
++SetInterface("Armagh", "Armagh_I_Omagh").
++SetInterface("Armagh", "Armagh_I_Portadown").
++SetInterface("Armagh", "Armagh_I_Monaghan").
+
++SetNode("NorthTTAmerica").
++SetAdminDist("NorthTTAmerica", "static", 1).
++SetAdminDist("NorthTTAmerica", "bgp", 2).
++SetAdminDist("NorthTTAmerica", "ospf", 3).
++SetInterface("NorthTTAmerica", "NorthTTAmerica_I_NodeID12").
++SetInterface("NorthTTAmerica", "NorthTTAmerica_I_Dublin").
+
++SetNode("Strabane").
++SetAdminDist("Strabane", "static", 1).
++SetAdminDist("Strabane", "bgp", 2).
++SetAdminDist("Strabane", "ospf", 3).
++SetInterface("Strabane", "Strabane_I_Omagh").
++SetInterface("Strabane", "Strabane_I_Letterkenny").
++SetInterface("Strabane", "Strabane_I_Londonderry").
+
++SetNode("Monaghan").
++SetAdminDist("Monaghan", "static", 1).
++SetAdminDist("Monaghan", "bgp", 2).
++SetAdminDist("Monaghan", "ospf", 3).
++SetInterface("Monaghan", "Monaghan_I_Castleblayney").
++SetInterface("Monaghan", "Monaghan_I_Armagh").
+
++SetNode("Ballymena").
++SetAdminDist("Ballymena", "static", 1).
++SetAdminDist("Ballymena", "bgp", 2).
++SetAdminDist("Ballymena", "ospf", 3).
++SetInterface("Ballymena", "Ballymena_I_Belfast").
++SetInterface("Ballymena", "Ballymena_I_Coleraine").
+
++SetNode("Coleraine").
++SetAdminDist("Coleraine", "static", 1).
++SetAdminDist("Coleraine", "bgp", 2).
++SetAdminDist("Coleraine", "ospf", 3).
++SetInterface("Coleraine", "Coleraine_I_NodeID12").
++SetInterface("Coleraine", "Coleraine_I_Londonderry").
++SetInterface("Coleraine", "Coleraine_I_Ballymena").
+
++SetNode("Dundalk").
++SetAdminDist("Dundalk", "static", 1).
++SetAdminDist("Dundalk", "bgp", 2).
++SetAdminDist("Dundalk", "ospf", 3).
++SetInterface("Dundalk", "Dundalk_I_Drogheda").
++SetInterface("Dundalk", "Dundalk_I_Castleblayney").
+
++SetNode("Letterkenny").
++SetAdminDist("Letterkenny", "static", 1).
++SetAdminDist("Letterkenny", "bgp", 2).
++SetAdminDist("Letterkenny", "ospf", 3).
++SetInterface("Letterkenny", "Letterkenny_I_Strabane").
++SetInterface("Letterkenny", "Letterkenny_I_Londonderry").
+
++SetNode("Portadown").
++SetAdminDist("Portadown", "static", 1).
++SetAdminDist("Portadown", "bgp", 2).
++SetAdminDist("Portadown", "ospf", 3).
++SetInterface("Portadown", "Portadown_I_Armagh").
++SetInterface("Portadown", "Portadown_I_Belfast").
+
++SetNode("Southport").
++SetAdminDist("Southport", "static", 1).
++SetAdminDist("Southport", "bgp", 2).
++SetAdminDist("Southport", "ospf", 3).
++SetInterface("Southport", "Southport_I_Europe").
++SetInterface("Southport", "Southport_I_NodeID12").
++SetInterface("Southport", "Southport_I_Dublin").
+
++SetLink("Europe_I_Southport", "Southport_I_Europe").
++SetLink("Omagh_I_Strabane", "Strabane_I_Omagh").
++SetLink("Omagh_I_Armagh", "Armagh_I_Omagh").
++SetLink("Belfast_I_Portadown", "Portadown_I_Belfast").
++SetLink("Belfast_I_Ballymena", "Ballymena_I_Belfast").
++SetLink("Castleblayney_I_Dundalk", "Dundalk_I_Castleblayney").
++SetLink("Castleblayney_I_Monaghan", "Monaghan_I_Castleblayney").
++SetLink("Drogheda_I_Dundalk", "Dundalk_I_Drogheda").
++SetLink("Drogheda_I_Dublin", "Dublin_I_Drogheda").
++SetLink("Dublin_I_NorthTTAmerica", "NorthTTAmerica_I_Dublin").
++SetLink("Dublin_I_Southport", "Southport_I_Dublin").
++SetLink("NodeID12_I_NorthTTAmerica", "NorthTTAmerica_I_NodeID12").
++SetLink("NodeID12_I_Coleraine", "Coleraine_I_NodeID12").
++SetLink("NodeID12_I_Southport", "Southport_I_NodeID12").
++SetLink("Londonderry_I_Letterkenny", "Letterkenny_I_Londonderry").
++SetLink("Londonderry_I_Strabane", "Strabane_I_Londonderry").
++SetLink("Londonderry_I_Coleraine", "Coleraine_I_Londonderry").
++SetLink("Armagh_I_Portadown", "Portadown_I_Armagh").
++SetLink("Armagh_I_Monaghan", "Monaghan_I_Armagh").
++SetLink("Strabane_I_Letterkenny", "Letterkenny_I_Strabane").
++SetLink("Ballymena_I_Coleraine", "Coleraine_I_Ballymena").
+
+
++SetNetwork("NorthTTAmerica", "N_NorthTTAmerica").
++SetNetwork("Ballymena", "N_Ballymena").
++SetNetwork("Portadown", "N_Portadown").
++SetNetwork("Armagh", "N_Armagh").
++SetNetwork("Letterkenny", "N_Letterkenny").

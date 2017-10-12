@@ -1,0 +1,114 @@
++SetNode("Toronto").
++SetAdminDist("Toronto", "static", 1).
++SetAdminDist("Toronto", "bgp", 2).
++SetAdminDist("Toronto", "ospf", 3).
++SetInterface("Toronto", "Toronto_I_Buffalo").
++SetInterface("Toronto", "Toronto_I_Montreal").
+
++SetNode("Albany").
++SetAdminDist("Albany", "static", 1).
++SetAdminDist("Albany", "bgp", 2).
++SetAdminDist("Albany", "ospf", 3).
++SetInterface("Albany", "Albany_I_Buffalo").
++SetInterface("Albany", "Albany_I_Montreal").
++SetInterface("Albany", "Albany_I_NewTTYork").
+
++SetNode("Edmundston").
++SetAdminDist("Edmundston", "static", 1).
++SetAdminDist("Edmundston", "bgp", 2).
++SetAdminDist("Edmundston", "ospf", 3).
++SetInterface("Edmundston", "Edmundston_I_Quebec").
++SetInterface("Edmundston", "Edmundston_I_Moncton").
+
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_Boston").
++SetInterface("NewTTYork", "NewTTYork_I_Albany").
+
++SetNode("Boston").
++SetAdminDist("Boston", "static", 1).
++SetAdminDist("Boston", "bgp", 2).
++SetAdminDist("Boston", "ospf", 3).
++SetInterface("Boston", "Boston_I_NodeID4").
++SetInterface("Boston", "Boston_I_NewTTYork").
+
++SetNode("NodeID1").
++SetAdminDist("NodeID1", "static", 1).
++SetAdminDist("NodeID1", "bgp", 2).
++SetAdminDist("NodeID1", "ospf", 3).
++SetInterface("NodeID1", "NodeID1_I_NodeID4").
+
++SetNode("NodeID4").
++SetAdminDist("NodeID4", "static", 1).
++SetAdminDist("NodeID4", "bgp", 2).
++SetAdminDist("NodeID4", "ospf", 3).
++SetInterface("NodeID4", "NodeID4_I_Boston").
++SetInterface("NodeID4", "NodeID4_I_Halifax").
++SetInterface("NodeID4", "NodeID4_I_NodeID1").
+
++SetNode("NodeID2").
++SetAdminDist("NodeID2", "static", 1).
++SetAdminDist("NodeID2", "bgp", 2).
++SetAdminDist("NodeID2", "ospf", 3).
++SetInterface("NodeID2", "NodeID2_I_Halifax").
+
++SetNode("Quebec").
++SetAdminDist("Quebec", "static", 1).
++SetAdminDist("Quebec", "bgp", 2).
++SetAdminDist("Quebec", "ospf", 3).
++SetInterface("Quebec", "Quebec_I_Montreal").
++SetInterface("Quebec", "Quebec_I_Edmundston").
+
++SetNode("Moncton").
++SetAdminDist("Moncton", "static", 1).
++SetAdminDist("Moncton", "bgp", 2).
++SetAdminDist("Moncton", "ospf", 3).
++SetInterface("Moncton", "Moncton_I_Halifax").
++SetInterface("Moncton", "Moncton_I_Edmundston").
+
++SetNode("Halifax").
++SetAdminDist("Halifax", "static", 1).
++SetAdminDist("Halifax", "bgp", 2).
++SetAdminDist("Halifax", "ospf", 3).
++SetInterface("Halifax", "Halifax_I_NodeID4").
++SetInterface("Halifax", "Halifax_I_NodeID2").
++SetInterface("Halifax", "Halifax_I_Moncton").
+
++SetNode("Buffalo").
++SetAdminDist("Buffalo", "static", 1).
++SetAdminDist("Buffalo", "bgp", 2).
++SetAdminDist("Buffalo", "ospf", 3).
++SetInterface("Buffalo", "Buffalo_I_Toronto").
++SetInterface("Buffalo", "Buffalo_I_Albany").
+
++SetNode("Montreal").
++SetAdminDist("Montreal", "static", 1).
++SetAdminDist("Montreal", "bgp", 2).
++SetAdminDist("Montreal", "ospf", 3).
++SetInterface("Montreal", "Montreal_I_Toronto").
++SetInterface("Montreal", "Montreal_I_Albany").
++SetInterface("Montreal", "Montreal_I_Quebec").
+
++SetLink("Toronto_I_Buffalo", "Buffalo_I_Toronto").
++SetLink("Toronto_I_Montreal", "Montreal_I_Toronto").
++SetLink("Albany_I_Buffalo", "Buffalo_I_Albany").
++SetLink("Albany_I_Montreal", "Montreal_I_Albany").
++SetLink("Albany_I_NewTTYork", "NewTTYork_I_Albany").
++SetLink("Edmundston_I_Quebec", "Quebec_I_Edmundston").
++SetLink("Edmundston_I_Moncton", "Moncton_I_Edmundston").
++SetLink("NewTTYork_I_Boston", "Boston_I_NewTTYork").
++SetLink("Boston_I_NodeID4", "NodeID4_I_Boston").
++SetLink("NodeID1_I_NodeID4", "NodeID4_I_NodeID1").
++SetLink("NodeID4_I_Halifax", "Halifax_I_NodeID4").
++SetLink("NodeID2_I_Halifax", "Halifax_I_NodeID2").
++SetLink("Quebec_I_Montreal", "Montreal_I_Quebec").
++SetLink("Moncton_I_Halifax", "Halifax_I_Moncton").
+
+
++SetNetwork("Quebec", "N_Quebec").
++SetNetwork("Moncton", "N_Moncton").
++SetNetwork("Buffalo", "N_Buffalo").
++SetNetwork("NodeID1", "N_NodeID1").
++SetNetwork("Montreal", "N_Montreal").

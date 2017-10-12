@@ -1,0 +1,17 @@
+
++Fwd("N_Montreal", "Toronto", "Montreal", "ospf").
++Fwd("N_Montreal", "Vancouver", "Toronto", "ospf").
++Fwd("N_Montreal", "LosTTAngeles", "Dallas", "ospf").
++Fwd("N_Montreal", "Dallas", "Chicago", "ospf").
++Fwd("N_Montreal", "Chicago", "NewTTYork", "ospf").
++Fwd("N_Montreal", "NewTTYork", "Montreal", "ospf").
++Fwd("N_Montreal", "Miami", "Atlanta", "ospf").
++Fwd("N_Montreal", "Atlanta", "Dallas", "ospf").
++Fwd("N_Montreal", "Fremont", "Seattle", "ospf").
++Fwd("N_Montreal", "Seattle", "Chicago", "ospf").
++Fwd("N_Montreal", "London", "NewTTYork", "ospf").
++Fwd("N_Montreal", "Herndon_Ashburn", "NewTTYork", "ospf").
++Fwd("N_Montreal", "SanTTAntonio", "Dallas", "ospf").
++Fwd("N_Montreal", "Amsterdam", "London", "ospf").
++Fwd("N_Montreal", "SanTTJose", "LosTTAngeles", "ospf").
+

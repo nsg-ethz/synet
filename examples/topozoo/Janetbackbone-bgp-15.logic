@@ -1,0 +1,312 @@
++SetNode("Sco_locate").
++SetAdminDist("Sco_locate", "static", 1).
++SetAdminDist("Sco_locate", "bgp", 2).
++SetAdminDist("Sco_locate", "ospf", 3).
++SetInterface("Sco_locate", "Sco_locate_I_Leeds").
++SetInterface("Sco_locate", "Sco_locate_I_Glasgow").
+
++SetNode("WREN").
++SetAdminDist("WREN", "static", 1).
++SetAdminDist("WREN", "bgp", 2).
++SetAdminDist("WREN", "ospf", 3).
++SetInterface("WREN", "WREN_I_Reading").
++SetInterface("WREN", "WREN_I_SWERN").
+
++SetNode("UHIMI").
++SetAdminDist("UHIMI", "static", 1).
++SetAdminDist("UHIMI", "bgp", 2).
++SetAdminDist("UHIMI", "ospf", 3).
++SetInterface("UHIMI", "UHIMI_I_AbMAN").
++SetInterface("UHIMI", "UHIMI_I_Glasgow").
+
++SetNode("Reading").
++SetAdminDist("Reading", "static", 1).
++SetAdminDist("Reading", "bgp", 2).
++SetAdminDist("Reading", "ospf", 3).
++SetInterface("Reading", "Reading_I_KentishTTMAN").
++SetInterface("Reading", "Reading_I_WREN").
++SetInterface("Reading", "Reading_I_Warrington").
++SetInterface("Reading", "Reading_I_TVN").
++SetInterface("Reading", "Reading_I_Bristol").
++SetInterface("Reading", "Reading_I_Telecity").
+
++SetNode("Glasgow").
++SetAdminDist("Glasgow", "static", 1).
++SetAdminDist("Glasgow", "bgp", 2).
++SetAdminDist("Glasgow", "ospf", 3).
++SetInterface("Glasgow", "Glasgow_I_NorMAN").
++SetInterface("Glasgow", "Glasgow_I_Sco_locate").
++SetInterface("Glasgow", "Glasgow_I_Warrington").
++SetInterface("Glasgow", "Glasgow_I_Clydenet").
++SetInterface("Glasgow", "Glasgow_I_UHIMI").
++SetInterface("Glasgow", "Glasgow_I_NNW").
++SetInterface("Glasgow", "Glasgow_I_NIRAN").
++SetInterface("Glasgow", "Glasgow_I_C_NLMAN").
+
++SetNode("NIRAN").
++SetAdminDist("NIRAN", "static", 1).
++SetAdminDist("NIRAN", "bgp", 2).
++SetAdminDist("NIRAN", "ospf", 3).
++SetInterface("NIRAN", "NIRAN_I_Dublin").
++SetInterface("NIRAN", "NIRAN_I_Glasgow").
+
++SetNode("C_NLMAN").
++SetAdminDist("C_NLMAN", "static", 1).
++SetAdminDist("C_NLMAN", "bgp", 2).
++SetAdminDist("C_NLMAN", "ospf", 3).
++SetInterface("C_NLMAN", "C_NLMAN_I_Warrington").
++SetInterface("C_NLMAN", "C_NLMAN_I_Glasgow").
+
++SetNode("EMMAN").
++SetAdminDist("EMMAN", "static", 1).
++SetAdminDist("EMMAN", "bgp", 2).
++SetAdminDist("EMMAN", "ospf", 3).
++SetInterface("EMMAN", "EMMAN_I_London").
++SetInterface("EMMAN", "EMMAN_I_Leeds").
+
++SetNode("Warrington").
++SetAdminDist("Warrington", "static", 1).
++SetAdminDist("Warrington", "bgp", 2).
++SetAdminDist("Warrington", "ospf", 3).
++SetInterface("Warrington", "Warrington_I_Dublin").
++SetInterface("Warrington", "Warrington_I_Leeds").
++SetInterface("Warrington", "Warrington_I_NNW").
++SetInterface("Warrington", "Warrington_I_MidMAN").
++SetInterface("Warrington", "Warrington_I_Reading").
++SetInterface("Warrington", "Warrington_I_C_NLMAN").
++SetInterface("Warrington", "Warrington_I_Glasgow").
+
++SetNode("TVN").
++SetAdminDist("TVN", "static", 1).
++SetAdminDist("TVN", "bgp", 2).
++SetAdminDist("TVN", "ospf", 3).
++SetInterface("TVN", "TVN_I_Reading").
++SetInterface("TVN", "TVN_I_LMN").
+
++SetNode("Leeds").
++SetAdminDist("Leeds", "static", 1).
++SetAdminDist("Leeds", "bgp", 2).
++SetAdminDist("Leeds", "ospf", 3).
++SetInterface("Leeds", "Leeds_I_NorMAN").
++SetInterface("Leeds", "Leeds_I_Sco_locate").
++SetInterface("Leeds", "Leeds_I_EastNet").
++SetInterface("Leeds", "Leeds_I_EMMAN").
++SetInterface("Leeds", "Leeds_I_YHMAN").
++SetInterface("Leeds", "Leeds_I_Warrington").
++SetInterface("Leeds", "Leeds_I_MidMAN").
++SetInterface("Leeds", "Leeds_I_FaTMAN").
++SetInterface("Leeds", "Leeds_I_London").
++SetInterface("Leeds", "Leeds_I_EaStMAN").
+
++SetNode("FaTMAN").
++SetAdminDist("FaTMAN", "static", 1).
++SetAdminDist("FaTMAN", "bgp", 2).
++SetAdminDist("FaTMAN", "ospf", 3).
++SetInterface("FaTMAN", "FaTMAN_I_AbMAN").
++SetInterface("FaTMAN", "FaTMAN_I_Leeds").
+
++SetNode("SWERN").
++SetAdminDist("SWERN", "static", 1).
++SetAdminDist("SWERN", "bgp", 2).
++SetAdminDist("SWERN", "ospf", 3).
++SetInterface("SWERN", "SWERN_I_WREN").
++SetInterface("SWERN", "SWERN_I_Bristol").
+
++SetNode("NNW").
++SetAdminDist("NNW", "static", 1).
++SetAdminDist("NNW", "bgp", 2).
++SetAdminDist("NNW", "ospf", 3).
++SetInterface("NNW", "NNW_I_YHMAN").
++SetInterface("NNW", "NNW_I_Warrington").
++SetInterface("NNW", "NNW_I_Glasgow").
+
++SetNode("EaStMAN").
++SetAdminDist("EaStMAN", "static", 1).
++SetAdminDist("EaStMAN", "bgp", 2).
++SetAdminDist("EaStMAN", "ospf", 3).
++SetInterface("EaStMAN", "EaStMAN_I_Clydenet").
++SetInterface("EaStMAN", "EaStMAN_I_Leeds").
+
++SetNode("NorMAN").
++SetAdminDist("NorMAN", "static", 1).
++SetAdminDist("NorMAN", "bgp", 2).
++SetAdminDist("NorMAN", "ospf", 3).
++SetInterface("NorMAN", "NorMAN_I_Leeds").
++SetInterface("NorMAN", "NorMAN_I_Glasgow").
+
++SetNode("Dublin").
++SetAdminDist("Dublin", "static", 1).
++SetAdminDist("Dublin", "bgp", 2).
++SetAdminDist("Dublin", "ospf", 3).
++SetInterface("Dublin", "Dublin_I_NIRAN").
++SetInterface("Dublin", "Dublin_I_Warrington").
+
++SetNode("Clydenet").
++SetAdminDist("Clydenet", "static", 1).
++SetAdminDist("Clydenet", "bgp", 2).
++SetAdminDist("Clydenet", "ospf", 3).
++SetInterface("Clydenet", "Clydenet_I_EaStMAN").
++SetInterface("Clydenet", "Clydenet_I_Glasgow").
+
++SetNode("MidMAN").
++SetAdminDist("MidMAN", "static", 1).
++SetAdminDist("MidMAN", "bgp", 2).
++SetAdminDist("MidMAN", "ospf", 3).
++SetInterface("MidMAN", "MidMAN_I_Leeds").
++SetInterface("MidMAN", "MidMAN_I_Warrington").
+
++SetNode("Bristol").
++SetAdminDist("Bristol", "static", 1).
++SetAdminDist("Bristol", "bgp", 2).
++SetAdminDist("Bristol", "ospf", 3).
++SetInterface("Bristol", "Bristol_I_London").
++SetInterface("Bristol", "Bristol_I_Reading").
++SetInterface("Bristol", "Bristol_I_LeNSE").
++SetInterface("Bristol", "Bristol_I_SWERN").
+
++SetNode("LeNSE").
++SetAdminDist("LeNSE", "static", 1).
++SetAdminDist("LeNSE", "bgp", 2).
++SetAdminDist("LeNSE", "ospf", 3).
++SetInterface("LeNSE", "LeNSE_I_London").
++SetInterface("LeNSE", "LeNSE_I_Bristol").
+
++SetNode("KentishTTMAN").
++SetAdminDist("KentishTTMAN", "static", 1).
++SetAdminDist("KentishTTMAN", "bgp", 2).
++SetAdminDist("KentishTTMAN", "ospf", 3).
++SetInterface("KentishTTMAN", "KentishTTMAN_I_Reading").
++SetInterface("KentishTTMAN", "KentishTTMAN_I_London").
+
++SetNode("EastNet").
++SetAdminDist("EastNet", "static", 1).
++SetAdminDist("EastNet", "bgp", 2).
++SetAdminDist("EastNet", "ospf", 3).
++SetInterface("EastNet", "EastNet_I_London").
++SetInterface("EastNet", "EastNet_I_Leeds").
+
++SetNode("AbMAN").
++SetAdminDist("AbMAN", "static", 1).
++SetAdminDist("AbMAN", "bgp", 2).
++SetAdminDist("AbMAN", "ospf", 3).
++SetInterface("AbMAN", "AbMAN_I_FaTMAN").
++SetInterface("AbMAN", "AbMAN_I_UHIMI").
+
++SetNode("YHMAN").
++SetAdminDist("YHMAN", "static", 1).
++SetAdminDist("YHMAN", "bgp", 2).
++SetAdminDist("YHMAN", "ospf", 3).
++SetInterface("YHMAN", "YHMAN_I_NNW").
++SetInterface("YHMAN", "YHMAN_I_Leeds").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_KentishTTMAN").
++SetInterface("London", "London_I_Bristol").
++SetInterface("London", "London_I_EastNet").
++SetInterface("London", "London_I_EMMAN").
++SetInterface("London", "London_I_Leeds").
++SetInterface("London", "London_I_Telehouse").
++SetInterface("London", "London_I_LMN").
++SetInterface("London", "London_I_LeNSE").
+
++SetNode("Telehouse").
++SetAdminDist("Telehouse", "static", 1).
++SetAdminDist("Telehouse", "bgp", 2).
++SetAdminDist("Telehouse", "ospf", 3).
++SetInterface("Telehouse", "Telehouse_I_London").
++SetInterface("Telehouse", "Telehouse_I_Telecity").
+
++SetNode("LMN").
++SetAdminDist("LMN", "static", 1).
++SetAdminDist("LMN", "bgp", 2).
++SetAdminDist("LMN", "ospf", 3).
++SetInterface("LMN", "LMN_I_TVN").
++SetInterface("LMN", "LMN_I_London").
+
++SetNode("Telecity").
++SetAdminDist("Telecity", "static", 1).
++SetAdminDist("Telecity", "bgp", 2).
++SetAdminDist("Telecity", "ospf", 3).
++SetInterface("Telecity", "Telecity_I_Reading").
++SetInterface("Telecity", "Telecity_I_Telehouse").
+
++SetLink("Sco_locate_I_Leeds", "Leeds_I_Sco_locate").
++SetLink("Sco_locate_I_Glasgow", "Glasgow_I_Sco_locate").
++SetLink("WREN_I_Reading", "Reading_I_WREN").
++SetLink("WREN_I_SWERN", "SWERN_I_WREN").
++SetLink("UHIMI_I_AbMAN", "AbMAN_I_UHIMI").
++SetLink("UHIMI_I_Glasgow", "Glasgow_I_UHIMI").
++SetLink("Reading_I_KentishTTMAN", "KentishTTMAN_I_Reading").
++SetLink("Reading_I_Warrington", "Warrington_I_Reading").
++SetLink("Reading_I_TVN", "TVN_I_Reading").
++SetLink("Reading_I_Bristol", "Bristol_I_Reading").
++SetLink("Reading_I_Telecity", "Telecity_I_Reading").
++SetLink("Glasgow_I_NorMAN", "NorMAN_I_Glasgow").
++SetLink("Glasgow_I_Warrington", "Warrington_I_Glasgow").
++SetLink("Glasgow_I_Clydenet", "Clydenet_I_Glasgow").
++SetLink("Glasgow_I_NNW", "NNW_I_Glasgow").
++SetLink("Glasgow_I_NIRAN", "NIRAN_I_Glasgow").
++SetLink("Glasgow_I_C_NLMAN", "C_NLMAN_I_Glasgow").
++SetLink("NIRAN_I_Dublin", "Dublin_I_NIRAN").
++SetLink("C_NLMAN_I_Warrington", "Warrington_I_C_NLMAN").
++SetLink("EMMAN_I_London", "London_I_EMMAN").
++SetLink("EMMAN_I_Leeds", "Leeds_I_EMMAN").
++SetLink("Warrington_I_Dublin", "Dublin_I_Warrington").
++SetLink("Warrington_I_Leeds", "Leeds_I_Warrington").
++SetLink("Warrington_I_NNW", "NNW_I_Warrington").
++SetLink("Warrington_I_MidMAN", "MidMAN_I_Warrington").
++SetLink("TVN_I_LMN", "LMN_I_TVN").
++SetLink("Leeds_I_NorMAN", "NorMAN_I_Leeds").
++SetLink("Leeds_I_EastNet", "EastNet_I_Leeds").
++SetLink("Leeds_I_YHMAN", "YHMAN_I_Leeds").
++SetLink("Leeds_I_MidMAN", "MidMAN_I_Leeds").
++SetLink("Leeds_I_FaTMAN", "FaTMAN_I_Leeds").
++SetLink("Leeds_I_London", "London_I_Leeds").
++SetLink("Leeds_I_EaStMAN", "EaStMAN_I_Leeds").
++SetLink("FaTMAN_I_AbMAN", "AbMAN_I_FaTMAN").
++SetLink("SWERN_I_Bristol", "Bristol_I_SWERN").
++SetLink("NNW_I_YHMAN", "YHMAN_I_NNW").
++SetLink("EaStMAN_I_Clydenet", "Clydenet_I_EaStMAN").
++SetLink("Bristol_I_London", "London_I_Bristol").
++SetLink("Bristol_I_LeNSE", "LeNSE_I_Bristol").
++SetLink("LeNSE_I_London", "London_I_LeNSE").
++SetLink("KentishTTMAN_I_London", "London_I_KentishTTMAN").
++SetLink("EastNet_I_London", "London_I_EastNet").
++SetLink("London_I_Telehouse", "Telehouse_I_London").
++SetLink("London_I_LMN", "LMN_I_London").
++SetLink("Telehouse_I_Telecity", "Telecity_I_Telehouse").
+
+
++SetNetwork("KentishTTMAN", "N_KentishTTMAN").
++SetBGPAnnouncement("KentishTTMAN", "N_KentishTTMAN", "NBGP_KentishTTMAN", "1;2;3", 3).
++SetNetwork("Warrington", "N_Warrington").
++SetBGPAnnouncement("Warrington", "N_Warrington", "NBGP_Warrington", "1;2;3", 3).
++SetNetwork("AbMAN", "N_AbMAN").
++SetBGPAnnouncement("AbMAN", "N_AbMAN", "NBGP_AbMAN", "1;2;3", 3).
++SetNetwork("WREN", "N_WREN").
++SetBGPAnnouncement("WREN", "N_WREN", "NBGP_WREN", "1;2;3", 3).
++SetNetwork("London", "N_London").
++SetBGPAnnouncement("London", "N_London", "NBGP_London", "1;2;3", 3).
++SetNetwork("Clydenet", "N_Clydenet").
++SetBGPAnnouncement("Clydenet", "N_Clydenet", "NBGP_Clydenet", "1;2;3", 3).
++SetNetwork("EaStMAN", "N_EaStMAN").
++SetBGPAnnouncement("EaStMAN", "N_EaStMAN", "NBGP_EaStMAN", "1;2;3", 3).
++SetNetwork("EMMAN", "N_EMMAN").
++SetBGPAnnouncement("EMMAN", "N_EMMAN", "NBGP_EMMAN", "1;2;3", 3).
++SetNetwork("Dublin", "N_Dublin").
++SetBGPAnnouncement("Dublin", "N_Dublin", "NBGP_Dublin", "1;2;3", 3).
++SetNetwork("NorMAN", "N_NorMAN").
++SetBGPAnnouncement("NorMAN", "N_NorMAN", "NBGP_NorMAN", "1;2;3", 3).
++SetNetwork("Leeds", "N_Leeds").
++SetBGPAnnouncement("Leeds", "N_Leeds", "NBGP_Leeds", "1;2;3", 3).
++SetNetwork("Reading", "N_Reading").
++SetBGPAnnouncement("Reading", "N_Reading", "NBGP_Reading", "1;2;3", 3).
++SetNetwork("MidMAN", "N_MidMAN").
++SetBGPAnnouncement("MidMAN", "N_MidMAN", "NBGP_MidMAN", "1;2;3", 3).
++SetNetwork("FaTMAN", "N_FaTMAN").
++SetBGPAnnouncement("FaTMAN", "N_FaTMAN", "NBGP_FaTMAN", "1;2;3", 3).
++SetNetwork("LeNSE", "N_LeNSE").
++SetBGPAnnouncement("LeNSE", "N_LeNSE", "NBGP_LeNSE", "1;2;3", 3).

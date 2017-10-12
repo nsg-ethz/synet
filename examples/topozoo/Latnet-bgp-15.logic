@@ -1,0 +1,599 @@
++SetNode("Aloja").
++SetAdminDist("Aloja", "static", 1).
++SetAdminDist("Aloja", "bgp", 2).
++SetAdminDist("Aloja", "ospf", 3).
++SetInterface("Aloja", "Aloja_I_Limbazi").
++SetInterface("Aloja", "Aloja_I_Mazsalaca").
++SetInterface("Aloja", "Aloja_I_Pociems").
+
++SetNode("Jelgava").
++SetAdminDist("Jelgava", "static", 1).
++SetAdminDist("Jelgava", "bgp", 2).
++SetAdminDist("Jelgava", "ospf", 3).
++SetInterface("Jelgava", "Jelgava_I_Dobele").
++SetInterface("Jelgava", "Jelgava_I_Kalnciems").
++SetInterface("Jelgava", "Jelgava_I_Riga").
++SetInterface("Jelgava", "Jelgava_I_Platone").
++SetInterface("Jelgava", "Jelgava_I_Livberze").
++SetInterface("Jelgava", "Jelgava_I_Ozolnieki").
+
++SetNode("Broceni").
++SetAdminDist("Broceni", "static", 1).
++SetAdminDist("Broceni", "bgp", 2).
++SetAdminDist("Broceni", "ospf", 3).
++SetInterface("Broceni", "Broceni_I_Saldus").
+
++SetNode("Malnava").
++SetAdminDist("Malnava", "static", 1).
++SetAdminDist("Malnava", "bgp", 2).
++SetAdminDist("Malnava", "ospf", 3).
++SetInterface("Malnava", "Malnava_I_Karsava").
++SetInterface("Malnava", "Malnava_I_Pusmucova").
+
++SetNode("Olaine").
++SetAdminDist("Olaine", "static", 1).
++SetAdminDist("Olaine", "bgp", 2).
++SetAdminDist("Olaine", "ospf", 3).
++SetInterface("Olaine", "Olaine_I_Riga").
++SetInterface("Olaine", "Olaine_I_Ozolnieki").
+
++SetNode("Rezekne").
++SetAdminDist("Rezekne", "static", 1).
++SetAdminDist("Rezekne", "bgp", 2).
++SetAdminDist("Rezekne", "ospf", 3).
++SetInterface("Rezekne", "Rezekne_I_Ludza").
++SetInterface("Rezekne", "Rezekne_I_Riga").
++SetInterface("Rezekne", "Rezekne_I_Daugapils").
+
++SetNode("Mazsalaca").
++SetAdminDist("Mazsalaca", "static", 1).
++SetAdminDist("Mazsalaca", "bgp", 2).
++SetAdminDist("Mazsalaca", "ospf", 3).
++SetInterface("Mazsalaca", "Mazsalaca_I_Aloja").
++SetInterface("Mazsalaca", "Mazsalaca_I_Rujiena").
+
++SetNode("Ulbroka").
++SetAdminDist("Ulbroka", "static", 1).
++SetAdminDist("Ulbroka", "bgp", 2).
++SetAdminDist("Ulbroka", "ospf", 3).
++SetInterface("Ulbroka", "Ulbroka_I_Riga").
+
++SetNode("Eleja").
++SetAdminDist("Eleja", "static", 1).
++SetAdminDist("Eleja", "bgp", 2).
++SetAdminDist("Eleja", "ospf", 3).
++SetInterface("Eleja", "Eleja_I_Platone").
+
++SetNode("Dobele").
++SetAdminDist("Dobele", "static", 1).
++SetAdminDist("Dobele", "bgp", 2).
++SetAdminDist("Dobele", "ospf", 3).
++SetInterface("Dobele", "Dobele_I_Jelgava").
++SetInterface("Dobele", "Dobele_I_Auce").
+
++SetNode("Kraslava").
++SetAdminDist("Kraslava", "static", 1).
++SetAdminDist("Kraslava", "bgp", 2).
++SetAdminDist("Kraslava", "ospf", 3).
++SetInterface("Kraslava", "Kraslava_I_Riga").
+
++SetNode("Sigulda").
++SetAdminDist("Sigulda", "static", 1).
++SetAdminDist("Sigulda", "bgp", 2).
++SetAdminDist("Sigulda", "ospf", 3).
++SetInterface("Sigulda", "Sigulda_I_Krimulda").
++SetInterface("Sigulda", "Sigulda_I_Riga").
++SetInterface("Sigulda", "Sigulda_I_Vangazi").
++SetInterface("Sigulda", "Sigulda_I_Ledurga").
++SetInterface("Sigulda", "Sigulda_I_Ragona").
++SetInterface("Sigulda", "Sigulda_I_Liepupe").
+
++SetNode("Cibla").
++SetAdminDist("Cibla", "static", 1).
++SetAdminDist("Cibla", "bgp", 2).
++SetAdminDist("Cibla", "ospf", 3).
++SetInterface("Cibla", "Cibla_I_Ludza").
+
++SetNode("Balvi").
++SetAdminDist("Balvi", "static", 1).
++SetAdminDist("Balvi", "bgp", 2).
++SetAdminDist("Balvi", "ospf", 3).
++SetInterface("Balvi", "Balvi_I_Riga").
+
++SetNode("Grobina").
++SetAdminDist("Grobina", "static", 1).
++SetAdminDist("Grobina", "bgp", 2).
++SetAdminDist("Grobina", "ospf", 3).
++SetInterface("Grobina", "Grobina_I_Liepaja").
+
++SetNode("Pociems").
++SetAdminDist("Pociems", "static", 1).
++SetAdminDist("Pociems", "bgp", 2).
++SetAdminDist("Pociems", "ospf", 3).
++SetInterface("Pociems", "Pociems_I_Aloja").
+
++SetNode("Limbazi").
++SetAdminDist("Limbazi", "static", 1).
++SetAdminDist("Limbazi", "bgp", 2).
++SetAdminDist("Limbazi", "ospf", 3).
++SetInterface("Limbazi", "Limbazi_I_Aloja").
++SetInterface("Limbazi", "Limbazi_I_Riga").
++SetInterface("Limbazi", "Limbazi_I_Liepupe").
++SetInterface("Limbazi", "Limbazi_I_Vijkene").
+
++SetNode("Auce").
++SetAdminDist("Auce", "static", 1).
++SetAdminDist("Auce", "bgp", 2).
++SetAdminDist("Auce", "ospf", 3).
++SetInterface("Auce", "Auce_I_Dobele").
+
++SetNode("Pusmucova").
++SetAdminDist("Pusmucova", "static", 1).
++SetAdminDist("Pusmucova", "bgp", 2).
++SetAdminDist("Pusmucova", "ospf", 3).
++SetInterface("Pusmucova", "Pusmucova_I_Malnava").
+
++SetNode("Talsi").
++SetAdminDist("Talsi", "static", 1).
++SetAdminDist("Talsi", "bgp", 2).
++SetAdminDist("Talsi", "ospf", 3).
++SetInterface("Talsi", "Talsi_I_Riga").
+
++SetNode("Preili").
++SetAdminDist("Preili", "static", 1).
++SetAdminDist("Preili", "bgp", 2).
++SetAdminDist("Preili", "ospf", 3).
++SetInterface("Preili", "Preili_I_Riga").
++SetInterface("Preili", "Preili_I_Daugapils").
+
++SetNode("Gulbene").
++SetAdminDist("Gulbene", "static", 1).
++SetAdminDist("Gulbene", "bgp", 2).
++SetAdminDist("Gulbene", "ospf", 3).
++SetInterface("Gulbene", "Gulbene_I_Riga").
+
++SetNode("Aizpute").
++SetAdminDist("Aizpute", "static", 1).
++SetAdminDist("Aizpute", "bgp", 2).
++SetAdminDist("Aizpute", "ospf", 3).
++SetInterface("Aizpute", "Aizpute_I_Riga").
+
++SetNode("Saldus").
++SetAdminDist("Saldus", "static", 1).
++SetAdminDist("Saldus", "bgp", 2).
++SetAdminDist("Saldus", "ospf", 3).
++SetInterface("Saldus", "Saldus_I_Broceni").
++SetInterface("Saldus", "Saldus_I_Riga").
+
++SetNode("Vangazi").
++SetAdminDist("Vangazi", "static", 1).
++SetAdminDist("Vangazi", "bgp", 2).
++SetAdminDist("Vangazi", "ospf", 3).
++SetInterface("Vangazi", "Vangazi_I_Sigulda").
+
++SetNode("Valmiera").
++SetAdminDist("Valmiera", "static", 1).
++SetAdminDist("Valmiera", "bgp", 2).
++SetAdminDist("Valmiera", "ospf", 3).
++SetInterface("Valmiera", "Valmiera_I_Riga").
++SetInterface("Valmiera", "Valmiera_I_Strenci").
+
++SetNode("Jurmala").
++SetAdminDist("Jurmala", "static", 1).
++SetAdminDist("Jurmala", "bgp", 2).
++SetAdminDist("Jurmala", "ospf", 3).
++SetInterface("Jurmala", "Jurmala_I_Riga").
+
++SetNode("Vijkene").
++SetAdminDist("Vijkene", "static", 1).
++SetAdminDist("Vijkene", "bgp", 2).
++SetAdminDist("Vijkene", "ospf", 3).
++SetInterface("Vijkene", "Vijkene_I_Limbazi").
+
++SetNode("GEANT2").
++SetAdminDist("GEANT2", "static", 1).
++SetAdminDist("GEANT2", "bgp", 2).
++SetAdminDist("GEANT2", "ospf", 3).
++SetInterface("GEANT2", "GEANT2_I_Riga").
+
++SetNode("Adazi").
++SetAdminDist("Adazi", "static", 1).
++SetAdminDist("Adazi", "bgp", 2).
++SetAdminDist("Adazi", "ospf", 3).
++SetInterface("Adazi", "Adazi_I_Riga").
++SetInterface("Adazi", "Adazi_I_Carnikava").
+
++SetNode("Iecava").
++SetAdminDist("Iecava", "static", 1).
++SetAdminDist("Iecava", "bgp", 2).
++SetAdminDist("Iecava", "ospf", 3).
++SetInterface("Iecava", "Iecava_I_Riga").
+
++SetNode("Ikskile").
++SetAdminDist("Ikskile", "static", 1).
++SetAdminDist("Ikskile", "bgp", 2).
++SetAdminDist("Ikskile", "ospf", 3).
++SetInterface("Ikskile", "Ikskile_I_Salaspils").
++SetInterface("Ikskile", "Ikskile_I_Ogre").
++SetInterface("Ikskile", "Ikskile_I_Kegums").
+
++SetNode("Riga").
++SetAdminDist("Riga", "static", 1).
++SetAdminDist("Riga", "bgp", 2).
++SetAdminDist("Riga", "ospf", 3).
++SetInterface("Riga", "Riga_I_Rezekne").
++SetInterface("Riga", "Riga_I_Ulbroka").
++SetInterface("Riga", "Riga_I_Kraslava").
++SetInterface("Riga", "Riga_I_Sigulda").
++SetInterface("Riga", "Riga_I_Balvi").
++SetInterface("Riga", "Riga_I_Limbazi").
++SetInterface("Riga", "Riga_I_Talsi").
++SetInterface("Riga", "Riga_I_Preili").
++SetInterface("Riga", "Riga_I_Saldus").
++SetInterface("Riga", "Riga_I_Skriveri").
++SetInterface("Riga", "Riga_I_Carnikava").
++SetInterface("Riga", "Riga_I_GEANT2").
++SetInterface("Riga", "Riga_I_Adazi").
++SetInterface("Riga", "Riga_I_Iecava").
++SetInterface("Riga", "Riga_I_Gulbene").
++SetInterface("Riga", "Riga_I_Aizpute").
++SetInterface("Riga", "Riga_I_Jelgava").
++SetInterface("Riga", "Riga_I_Jurmala").
++SetInterface("Riga", "Riga_I_Daugapils").
++SetInterface("Riga", "Riga_I_Liepaja").
++SetInterface("Riga", "Riga_I_Valmiera").
++SetInterface("Riga", "Riga_I_Salaspils").
++SetInterface("Riga", "Riga_I_Rujiena").
++SetInterface("Riga", "Riga_I_Olaine").
++SetInterface("Riga", "Riga_I_Bauska").
++SetInterface("Riga", "Riga_I_Karsava").
++SetInterface("Riga", "Riga_I_Tukums").
++SetInterface("Riga", "Riga_I_Kekava").
++SetInterface("Riga", "Riga_I_Baldone").
++SetInterface("Riga", "Riga_I_Vilani").
+
++SetNode("Krimulda").
++SetAdminDist("Krimulda", "static", 1).
++SetAdminDist("Krimulda", "bgp", 2).
++SetAdminDist("Krimulda", "ospf", 3).
++SetInterface("Krimulda", "Krimulda_I_Sigulda").
+
++SetNode("Skriveri").
++SetAdminDist("Skriveri", "static", 1).
++SetAdminDist("Skriveri", "bgp", 2).
++SetAdminDist("Skriveri", "ospf", 3).
++SetInterface("Skriveri", "Skriveri_I_Riga").
+
++SetNode("Ozolnieki").
++SetAdminDist("Ozolnieki", "static", 1).
++SetAdminDist("Ozolnieki", "bgp", 2).
++SetAdminDist("Ozolnieki", "ospf", 3).
++SetInterface("Ozolnieki", "Ozolnieki_I_Jelgava").
++SetInterface("Ozolnieki", "Ozolnieki_I_Olaine").
+
++SetNode("Jumprava").
++SetAdminDist("Jumprava", "static", 1).
++SetAdminDist("Jumprava", "bgp", 2).
++SetAdminDist("Jumprava", "ospf", 3).
++SetInterface("Jumprava", "Jumprava_I_Aizkroukle").
++SetInterface("Jumprava", "Jumprava_I_Lielvarde").
+
++SetNode("Kapsede").
++SetAdminDist("Kapsede", "static", 1).
++SetAdminDist("Kapsede", "bgp", 2).
++SetAdminDist("Kapsede", "ospf", 3).
++SetInterface("Kapsede", "Kapsede_I_Liepaja").
+
++SetNode("Platone").
++SetAdminDist("Platone", "static", 1).
++SetAdminDist("Platone", "bgp", 2).
++SetAdminDist("Platone", "ospf", 3).
++SetInterface("Platone", "Platone_I_Jelgava").
++SetInterface("Platone", "Platone_I_Eleja").
++SetInterface("Platone", "Platone_I_Vircava").
+
++SetNode("Liepaja").
++SetAdminDist("Liepaja", "static", 1).
++SetAdminDist("Liepaja", "bgp", 2).
++SetAdminDist("Liepaja", "ospf", 3).
++SetInterface("Liepaja", "Liepaja_I_Kapsede").
++SetInterface("Liepaja", "Liepaja_I_Riga").
++SetInterface("Liepaja", "Liepaja_I_Grobina").
+
++SetNode("Ventspits").
++SetAdminDist("Ventspits", "static", 1).
++SetAdminDist("Ventspits", "bgp", 2).
++SetAdminDist("Ventspits", "ospf", 3).
++SetInterface("Ventspits", "Ventspits_I_Tukums").
+
++SetNode("Livberze").
++SetAdminDist("Livberze", "static", 1).
++SetAdminDist("Livberze", "bgp", 2).
++SetAdminDist("Livberze", "ospf", 3).
++SetInterface("Livberze", "Livberze_I_Jelgava").
+
++SetNode("Carnikava").
++SetAdminDist("Carnikava", "static", 1).
++SetAdminDist("Carnikava", "bgp", 2).
++SetAdminDist("Carnikava", "ospf", 3).
++SetInterface("Carnikava", "Carnikava_I_Riga").
++SetInterface("Carnikava", "Carnikava_I_Adazi").
+
++SetNode("Jekabpils").
++SetAdminDist("Jekabpils", "static", 1).
++SetAdminDist("Jekabpils", "bgp", 2).
++SetAdminDist("Jekabpils", "ospf", 3).
++SetInterface("Jekabpils", "Jekabpils_I_Viesite").
++SetInterface("Jekabpils", "Jekabpils_I_Livani").
+
++SetNode("Ludza").
++SetAdminDist("Ludza", "static", 1).
++SetAdminDist("Ludza", "bgp", 2).
++SetAdminDist("Ludza", "ospf", 3).
++SetInterface("Ludza", "Ludza_I_Cibla").
++SetInterface("Ludza", "Ludza_I_Rezekne").
++SetInterface("Ludza", "Ludza_I_Zvigzdene").
++SetInterface("Ludza", "Ludza_I_Zilupe").
+
++SetNode("Viesite").
++SetAdminDist("Viesite", "static", 1).
++SetAdminDist("Viesite", "bgp", 2).
++SetAdminDist("Viesite", "ospf", 3).
++SetInterface("Viesite", "Viesite_I_Jekabpils").
++SetInterface("Viesite", "Viesite_I_Aizkroukle").
+
++SetNode("Salaspils").
++SetAdminDist("Salaspils", "static", 1).
++SetAdminDist("Salaspils", "bgp", 2).
++SetAdminDist("Salaspils", "ospf", 3).
++SetInterface("Salaspils", "Salaspils_I_Ikskile").
++SetInterface("Salaspils", "Salaspils_I_Riga").
+
++SetNode("Rujiena").
++SetAdminDist("Rujiena", "static", 1).
++SetAdminDist("Rujiena", "bgp", 2).
++SetAdminDist("Rujiena", "ospf", 3).
++SetInterface("Rujiena", "Rujiena_I_Riga").
++SetInterface("Rujiena", "Rujiena_I_Mazsalaca").
+
++SetNode("Lielvarde").
++SetAdminDist("Lielvarde", "static", 1).
++SetAdminDist("Lielvarde", "bgp", 2).
++SetAdminDist("Lielvarde", "ospf", 3).
++SetInterface("Lielvarde", "Lielvarde_I_Jumprava").
++SetInterface("Lielvarde", "Lielvarde_I_Kegums").
+
++SetNode("Ogre").
++SetAdminDist("Ogre", "static", 1).
++SetAdminDist("Ogre", "bgp", 2).
++SetAdminDist("Ogre", "ospf", 3).
++SetInterface("Ogre", "Ogre_I_Ikskile").
+
++SetNode("Kegums").
++SetAdminDist("Kegums", "static", 1).
++SetAdminDist("Kegums", "bgp", 2).
++SetAdminDist("Kegums", "ospf", 3).
++SetInterface("Kegums", "Kegums_I_Ikskile").
++SetInterface("Kegums", "Kegums_I_Lielvarde").
+
++SetNode("Livani").
++SetAdminDist("Livani", "static", 1).
++SetAdminDist("Livani", "bgp", 2).
++SetAdminDist("Livani", "ospf", 3).
++SetInterface("Livani", "Livani_I_Jekabpils").
+
++SetNode("Aizkroukle").
++SetAdminDist("Aizkroukle", "static", 1).
++SetAdminDist("Aizkroukle", "bgp", 2).
++SetAdminDist("Aizkroukle", "ospf", 3).
++SetInterface("Aizkroukle", "Aizkroukle_I_Viesite").
++SetInterface("Aizkroukle", "Aizkroukle_I_Jumprava").
+
++SetNode("Kalnciems").
++SetAdminDist("Kalnciems", "static", 1).
++SetAdminDist("Kalnciems", "bgp", 2).
++SetAdminDist("Kalnciems", "ospf", 3).
++SetInterface("Kalnciems", "Kalnciems_I_Jelgava").
+
++SetNode("Strenci").
++SetAdminDist("Strenci", "static", 1).
++SetAdminDist("Strenci", "bgp", 2).
++SetAdminDist("Strenci", "ospf", 3).
++SetInterface("Strenci", "Strenci_I_Valmiera").
+
++SetNode("Zvigzdene").
++SetAdminDist("Zvigzdene", "static", 1).
++SetAdminDist("Zvigzdene", "bgp", 2).
++SetAdminDist("Zvigzdene", "ospf", 3).
++SetInterface("Zvigzdene", "Zvigzdene_I_Ludza").
+
++SetNode("Salagriva").
++SetAdminDist("Salagriva", "static", 1).
++SetAdminDist("Salagriva", "bgp", 2).
++SetAdminDist("Salagriva", "ospf", 3).
++SetInterface("Salagriva", "Salagriva_I_Liepupe").
+
++SetNode("Liepupe").
++SetAdminDist("Liepupe", "static", 1).
++SetAdminDist("Liepupe", "bgp", 2).
++SetAdminDist("Liepupe", "ospf", 3).
++SetInterface("Liepupe", "Liepupe_I_Salagriva").
++SetInterface("Liepupe", "Liepupe_I_Sigulda").
++SetInterface("Liepupe", "Liepupe_I_Limbazi").
+
++SetNode("Bauska").
++SetAdminDist("Bauska", "static", 1).
++SetAdminDist("Bauska", "bgp", 2).
++SetAdminDist("Bauska", "ospf", 3).
++SetInterface("Bauska", "Bauska_I_Riga").
+
++SetNode("Karsava").
++SetAdminDist("Karsava", "static", 1).
++SetAdminDist("Karsava", "bgp", 2).
++SetAdminDist("Karsava", "ospf", 3).
++SetInterface("Karsava", "Karsava_I_Riga").
++SetInterface("Karsava", "Karsava_I_Malnava").
+
++SetNode("Tukums").
++SetAdminDist("Tukums", "static", 1).
++SetAdminDist("Tukums", "bgp", 2).
++SetAdminDist("Tukums", "ospf", 3).
++SetInterface("Tukums", "Tukums_I_Ventspits").
++SetInterface("Tukums", "Tukums_I_Riga").
+
++SetNode("Ledurga").
++SetAdminDist("Ledurga", "static", 1).
++SetAdminDist("Ledurga", "bgp", 2).
++SetAdminDist("Ledurga", "ospf", 3).
++SetInterface("Ledurga", "Ledurga_I_Sigulda").
+
++SetNode("Vircava").
++SetAdminDist("Vircava", "static", 1).
++SetAdminDist("Vircava", "bgp", 2).
++SetAdminDist("Vircava", "ospf", 3).
++SetInterface("Vircava", "Vircava_I_Platone").
+
++SetNode("Ragona").
++SetAdminDist("Ragona", "static", 1).
++SetAdminDist("Ragona", "bgp", 2).
++SetAdminDist("Ragona", "ospf", 3).
++SetInterface("Ragona", "Ragona_I_Sigulda").
+
++SetNode("Kekava").
++SetAdminDist("Kekava", "static", 1).
++SetAdminDist("Kekava", "bgp", 2).
++SetAdminDist("Kekava", "ospf", 3).
++SetInterface("Kekava", "Kekava_I_Riga").
+
++SetNode("Baldone").
++SetAdminDist("Baldone", "static", 1).
++SetAdminDist("Baldone", "bgp", 2).
++SetAdminDist("Baldone", "ospf", 3).
++SetInterface("Baldone", "Baldone_I_Riga").
+
++SetNode("Vilani").
++SetAdminDist("Vilani", "static", 1).
++SetAdminDist("Vilani", "bgp", 2).
++SetAdminDist("Vilani", "ospf", 3).
++SetInterface("Vilani", "Vilani_I_Riga").
+
++SetNode("Zilupe").
++SetAdminDist("Zilupe", "static", 1).
++SetAdminDist("Zilupe", "bgp", 2).
++SetAdminDist("Zilupe", "ospf", 3).
++SetInterface("Zilupe", "Zilupe_I_Ludza").
+
++SetNode("Daugapils").
++SetAdminDist("Daugapils", "static", 1).
++SetAdminDist("Daugapils", "bgp", 2).
++SetAdminDist("Daugapils", "ospf", 3).
++SetInterface("Daugapils", "Daugapils_I_Rezekne").
++SetInterface("Daugapils", "Daugapils_I_Riga").
++SetInterface("Daugapils", "Daugapils_I_Preili").
+
++SetLink("Aloja_I_Limbazi", "Limbazi_I_Aloja").
++SetLink("Aloja_I_Mazsalaca", "Mazsalaca_I_Aloja").
++SetLink("Aloja_I_Pociems", "Pociems_I_Aloja").
++SetLink("Jelgava_I_Dobele", "Dobele_I_Jelgava").
++SetLink("Jelgava_I_Kalnciems", "Kalnciems_I_Jelgava").
++SetLink("Jelgava_I_Riga", "Riga_I_Jelgava").
++SetLink("Jelgava_I_Platone", "Platone_I_Jelgava").
++SetLink("Jelgava_I_Livberze", "Livberze_I_Jelgava").
++SetLink("Jelgava_I_Ozolnieki", "Ozolnieki_I_Jelgava").
++SetLink("Broceni_I_Saldus", "Saldus_I_Broceni").
++SetLink("Malnava_I_Karsava", "Karsava_I_Malnava").
++SetLink("Malnava_I_Pusmucova", "Pusmucova_I_Malnava").
++SetLink("Olaine_I_Riga", "Riga_I_Olaine").
++SetLink("Olaine_I_Ozolnieki", "Ozolnieki_I_Olaine").
++SetLink("Rezekne_I_Ludza", "Ludza_I_Rezekne").
++SetLink("Rezekne_I_Riga", "Riga_I_Rezekne").
++SetLink("Rezekne_I_Daugapils", "Daugapils_I_Rezekne").
++SetLink("Mazsalaca_I_Rujiena", "Rujiena_I_Mazsalaca").
++SetLink("Ulbroka_I_Riga", "Riga_I_Ulbroka").
++SetLink("Eleja_I_Platone", "Platone_I_Eleja").
++SetLink("Dobele_I_Auce", "Auce_I_Dobele").
++SetLink("Kraslava_I_Riga", "Riga_I_Kraslava").
++SetLink("Sigulda_I_Krimulda", "Krimulda_I_Sigulda").
++SetLink("Sigulda_I_Riga", "Riga_I_Sigulda").
++SetLink("Sigulda_I_Vangazi", "Vangazi_I_Sigulda").
++SetLink("Sigulda_I_Ledurga", "Ledurga_I_Sigulda").
++SetLink("Sigulda_I_Ragona", "Ragona_I_Sigulda").
++SetLink("Sigulda_I_Liepupe", "Liepupe_I_Sigulda").
++SetLink("Cibla_I_Ludza", "Ludza_I_Cibla").
++SetLink("Balvi_I_Riga", "Riga_I_Balvi").
++SetLink("Grobina_I_Liepaja", "Liepaja_I_Grobina").
++SetLink("Limbazi_I_Riga", "Riga_I_Limbazi").
++SetLink("Limbazi_I_Liepupe", "Liepupe_I_Limbazi").
++SetLink("Limbazi_I_Vijkene", "Vijkene_I_Limbazi").
++SetLink("Talsi_I_Riga", "Riga_I_Talsi").
++SetLink("Preili_I_Riga", "Riga_I_Preili").
++SetLink("Preili_I_Daugapils", "Daugapils_I_Preili").
++SetLink("Gulbene_I_Riga", "Riga_I_Gulbene").
++SetLink("Aizpute_I_Riga", "Riga_I_Aizpute").
++SetLink("Saldus_I_Riga", "Riga_I_Saldus").
++SetLink("Valmiera_I_Riga", "Riga_I_Valmiera").
++SetLink("Valmiera_I_Strenci", "Strenci_I_Valmiera").
++SetLink("Jurmala_I_Riga", "Riga_I_Jurmala").
++SetLink("GEANT2_I_Riga", "Riga_I_GEANT2").
++SetLink("Adazi_I_Riga", "Riga_I_Adazi").
++SetLink("Adazi_I_Carnikava", "Carnikava_I_Adazi").
++SetLink("Iecava_I_Riga", "Riga_I_Iecava").
++SetLink("Ikskile_I_Salaspils", "Salaspils_I_Ikskile").
++SetLink("Ikskile_I_Ogre", "Ogre_I_Ikskile").
++SetLink("Ikskile_I_Kegums", "Kegums_I_Ikskile").
++SetLink("Riga_I_Skriveri", "Skriveri_I_Riga").
++SetLink("Riga_I_Carnikava", "Carnikava_I_Riga").
++SetLink("Riga_I_Daugapils", "Daugapils_I_Riga").
++SetLink("Riga_I_Liepaja", "Liepaja_I_Riga").
++SetLink("Riga_I_Salaspils", "Salaspils_I_Riga").
++SetLink("Riga_I_Rujiena", "Rujiena_I_Riga").
++SetLink("Riga_I_Bauska", "Bauska_I_Riga").
++SetLink("Riga_I_Karsava", "Karsava_I_Riga").
++SetLink("Riga_I_Tukums", "Tukums_I_Riga").
++SetLink("Riga_I_Kekava", "Kekava_I_Riga").
++SetLink("Riga_I_Baldone", "Baldone_I_Riga").
++SetLink("Riga_I_Vilani", "Vilani_I_Riga").
++SetLink("Jumprava_I_Aizkroukle", "Aizkroukle_I_Jumprava").
++SetLink("Jumprava_I_Lielvarde", "Lielvarde_I_Jumprava").
++SetLink("Kapsede_I_Liepaja", "Liepaja_I_Kapsede").
++SetLink("Platone_I_Vircava", "Vircava_I_Platone").
++SetLink("Ventspits_I_Tukums", "Tukums_I_Ventspits").
++SetLink("Jekabpils_I_Viesite", "Viesite_I_Jekabpils").
++SetLink("Jekabpils_I_Livani", "Livani_I_Jekabpils").
++SetLink("Ludza_I_Zvigzdene", "Zvigzdene_I_Ludza").
++SetLink("Ludza_I_Zilupe", "Zilupe_I_Ludza").
++SetLink("Viesite_I_Aizkroukle", "Aizkroukle_I_Viesite").
++SetLink("Lielvarde_I_Kegums", "Kegums_I_Lielvarde").
++SetLink("Salagriva_I_Liepupe", "Liepupe_I_Salagriva").
+
+
++SetNetwork("Vijkene", "N_Vijkene").
++SetBGPAnnouncement("Vijkene", "N_Vijkene", "NBGP_Vijkene", "1;2;3", 3).
++SetNetwork("Strenci", "N_Strenci").
++SetBGPAnnouncement("Strenci", "N_Strenci", "NBGP_Strenci", "1;2;3", 3).
++SetNetwork("Ozolnieki", "N_Ozolnieki").
++SetBGPAnnouncement("Ozolnieki", "N_Ozolnieki", "NBGP_Ozolnieki", "1;2;3", 3).
++SetNetwork("Karsava", "N_Karsava").
++SetBGPAnnouncement("Karsava", "N_Karsava", "NBGP_Karsava", "1;2;3", 3).
++SetNetwork("Vilani", "N_Vilani").
++SetBGPAnnouncement("Vilani", "N_Vilani", "NBGP_Vilani", "1;2;3", 3).
++SetNetwork("Auce", "N_Auce").
++SetBGPAnnouncement("Auce", "N_Auce", "NBGP_Auce", "1;2;3", 3).
++SetNetwork("Aloja", "N_Aloja").
++SetBGPAnnouncement("Aloja", "N_Aloja", "NBGP_Aloja", "1;2;3", 3).
++SetNetwork("Preili", "N_Preili").
++SetBGPAnnouncement("Preili", "N_Preili", "NBGP_Preili", "1;2;3", 3).
++SetNetwork("Vircava", "N_Vircava").
++SetBGPAnnouncement("Vircava", "N_Vircava", "NBGP_Vircava", "1;2;3", 3).
++SetNetwork("Livberze", "N_Livberze").
++SetBGPAnnouncement("Livberze", "N_Livberze", "NBGP_Livberze", "1;2;3", 3).
++SetNetwork("Salaspils", "N_Salaspils").
++SetBGPAnnouncement("Salaspils", "N_Salaspils", "NBGP_Salaspils", "1;2;3", 3).
++SetNetwork("Platone", "N_Platone").
++SetBGPAnnouncement("Platone", "N_Platone", "NBGP_Platone", "1;2;3", 3).
++SetNetwork("Krimulda", "N_Krimulda").
++SetBGPAnnouncement("Krimulda", "N_Krimulda", "NBGP_Krimulda", "1;2;3", 3).
++SetNetwork("Aizkroukle", "N_Aizkroukle").
++SetBGPAnnouncement("Aizkroukle", "N_Aizkroukle", "NBGP_Aizkroukle", "1;2;3", 3).
++SetNetwork("Kegums", "N_Kegums").
++SetBGPAnnouncement("Kegums", "N_Kegums", "NBGP_Kegums", "1;2;3", 3).

@@ -1,0 +1,196 @@
++SetNode("Kiev").
++SetAdminDist("Kiev", "static", 1).
++SetAdminDist("Kiev", "bgp", 2).
++SetAdminDist("Kiev", "ospf", 3).
++SetInterface("Kiev", "Kiev_I_Zhitomir").
++SetInterface("Kiev", "Kiev_I_Pereyaslav").
++SetInterface("Kiev", "Kiev_I_Vinnitsa").
++SetInterface("Kiev", "Kiev_I_Kamianets_Podilsky").
++SetInterface("Kiev", "Kiev_I_Cherkassy").
++SetInterface("Kiev", "Kiev_I_Lviv").
++SetInterface("Kiev", "Kiev_I_FrankfurtTT_Internet_").
++SetInterface("Kiev", "Kiev_I_Poltava").
++SetInterface("Kiev", "Kiev_I_UA_IX").
+
++SetNode("Mykolaiv").
++SetAdminDist("Mykolaiv", "static", 1).
++SetAdminDist("Mykolaiv", "bgp", 2).
++SetAdminDist("Mykolaiv", "ospf", 3).
++SetInterface("Mykolaiv", "Mykolaiv_I_Kherson").
++SetInterface("Mykolaiv", "Mykolaiv_I_Cherkassy").
++SetInterface("Mykolaiv", "Mykolaiv_I_Odessa").
+
++SetNode("Cherkassy").
++SetAdminDist("Cherkassy", "static", 1).
++SetAdminDist("Cherkassy", "bgp", 2).
++SetAdminDist("Cherkassy", "ospf", 3).
++SetInterface("Cherkassy", "Cherkassy_I_Mykolaiv").
++SetInterface("Cherkassy", "Cherkassy_I_Kiev").
+
++SetNode("Lutsk").
++SetAdminDist("Lutsk", "static", 1).
++SetAdminDist("Lutsk", "bgp", 2).
++SetAdminDist("Lutsk", "ospf", 3).
++SetInterface("Lutsk", "Lutsk_I_Zhitomir").
+
++SetNode("Simferopol").
++SetAdminDist("Simferopol", "static", 1).
++SetAdminDist("Simferopol", "bgp", 2).
++SetAdminDist("Simferopol", "ospf", 3).
++SetInterface("Simferopol", "Simferopol_I_Sevastopol").
++SetInterface("Simferopol", "Simferopol_I_Kherson").
+
++SetNode("Odessa").
++SetAdminDist("Odessa", "static", 1).
++SetAdminDist("Odessa", "bgp", 2).
++SetAdminDist("Odessa", "ospf", 3).
++SetInterface("Odessa", "Odessa_I_Mykolaiv").
++SetInterface("Odessa", "Odessa_I_Odessa_IX").
+
++SetNode("Odessa_IX").
++SetAdminDist("Odessa_IX", "static", 1).
++SetAdminDist("Odessa_IX", "bgp", 2).
++SetAdminDist("Odessa_IX", "ospf", 3).
++SetInterface("Odessa_IX", "Odessa_IX_I_Odessa").
+
++SetNode("Kharkiv_IX").
++SetAdminDist("Kharkiv_IX", "static", 1).
++SetAdminDist("Kharkiv_IX", "bgp", 2).
++SetAdminDist("Kharkiv_IX", "ospf", 3).
++SetInterface("Kharkiv_IX", "Kharkiv_IX_I_Kharkiv").
+
++SetNode("Kherson").
++SetAdminDist("Kherson", "static", 1).
++SetAdminDist("Kherson", "bgp", 2).
++SetAdminDist("Kherson", "ospf", 3).
++SetInterface("Kherson", "Kherson_I_Mykolaiv").
++SetInterface("Kherson", "Kherson_I_Simferopol").
+
++SetNode("Vinnitsa").
++SetAdminDist("Vinnitsa", "static", 1).
++SetAdminDist("Vinnitsa", "bgp", 2).
++SetAdminDist("Vinnitsa", "ospf", 3).
++SetInterface("Vinnitsa", "Vinnitsa_I_Khmelnitsky").
++SetInterface("Vinnitsa", "Vinnitsa_I_Kiev").
+
++SetNode("Kamianets_Podilsky").
++SetAdminDist("Kamianets_Podilsky", "static", 1).
++SetAdminDist("Kamianets_Podilsky", "bgp", 2).
++SetAdminDist("Kamianets_Podilsky", "ospf", 3).
++SetInterface("Kamianets_Podilsky", "Kamianets_Podilsky_I_Kiev").
+
++SetNode("Lviv").
++SetAdminDist("Lviv", "static", 1).
++SetAdminDist("Lviv", "bgp", 2).
++SetAdminDist("Lviv", "ospf", 3).
++SetInterface("Lviv", "Lviv_I_Khmelnitsky").
++SetInterface("Lviv", "Lviv_I_Kiev").
++SetInterface("Lviv", "Lviv_I_PoznanTT_GEANTTT_TTInternet_").
+
++SetNode("Dnipropetrovsk").
++SetAdminDist("Dnipropetrovsk", "static", 1).
++SetAdminDist("Dnipropetrovsk", "bgp", 2).
++SetAdminDist("Dnipropetrovsk", "ospf", 3).
++SetInterface("Dnipropetrovsk", "Dnipropetrovsk_I_Poltava").
++SetInterface("Dnipropetrovsk", "Dnipropetrovsk_I_Donetsk").
++SetInterface("Dnipropetrovsk", "Dnipropetrovsk_I_Zaporizhia").
+
++SetNode("Poltava").
++SetAdminDist("Poltava", "static", 1).
++SetAdminDist("Poltava", "bgp", 2).
++SetAdminDist("Poltava", "ospf", 3).
++SetInterface("Poltava", "Poltava_I_Dnipropetrovsk").
++SetInterface("Poltava", "Poltava_I_Kiev").
++SetInterface("Poltava", "Poltava_I_Kharkiv").
+
++SetNode("Zaporizhia").
++SetAdminDist("Zaporizhia", "static", 1).
++SetAdminDist("Zaporizhia", "bgp", 2).
++SetAdminDist("Zaporizhia", "ospf", 3).
++SetInterface("Zaporizhia", "Zaporizhia_I_Dnipropetrovsk").
+
++SetNode("PoznanTT_GEANTTT_TTInternet_").
++SetAdminDist("PoznanTT_GEANTTT_TTInternet_", "static", 1).
++SetAdminDist("PoznanTT_GEANTTT_TTInternet_", "bgp", 2).
++SetAdminDist("PoznanTT_GEANTTT_TTInternet_", "ospf", 3).
++SetInterface("PoznanTT_GEANTTT_TTInternet_", "PoznanTT_GEANTTT_TTInternet__I_Lviv").
+
++SetNode("Pereyaslav").
++SetAdminDist("Pereyaslav", "static", 1).
++SetAdminDist("Pereyaslav", "bgp", 2).
++SetAdminDist("Pereyaslav", "ospf", 3).
++SetInterface("Pereyaslav", "Pereyaslav_I_Kiev").
+
++SetNode("Sevastopol").
++SetAdminDist("Sevastopol", "static", 1).
++SetAdminDist("Sevastopol", "bgp", 2).
++SetAdminDist("Sevastopol", "ospf", 3).
++SetInterface("Sevastopol", "Sevastopol_I_Simferopol").
+
++SetNode("Kharkiv").
++SetAdminDist("Kharkiv", "static", 1).
++SetAdminDist("Kharkiv", "bgp", 2).
++SetAdminDist("Kharkiv", "ospf", 3).
++SetInterface("Kharkiv", "Kharkiv_I_Poltava").
++SetInterface("Kharkiv", "Kharkiv_I_Kharkiv_IX").
+
++SetNode("FrankfurtTT_Internet_").
++SetAdminDist("FrankfurtTT_Internet_", "static", 1).
++SetAdminDist("FrankfurtTT_Internet_", "bgp", 2).
++SetAdminDist("FrankfurtTT_Internet_", "ospf", 3).
++SetInterface("FrankfurtTT_Internet_", "FrankfurtTT_Internet__I_Kiev").
+
++SetNode("Khmelnitsky").
++SetAdminDist("Khmelnitsky", "static", 1).
++SetAdminDist("Khmelnitsky", "bgp", 2).
++SetAdminDist("Khmelnitsky", "ospf", 3).
++SetInterface("Khmelnitsky", "Khmelnitsky_I_Vinnitsa").
++SetInterface("Khmelnitsky", "Khmelnitsky_I_Lviv").
+
++SetNode("Zhitomir").
++SetAdminDist("Zhitomir", "static", 1).
++SetAdminDist("Zhitomir", "bgp", 2).
++SetAdminDist("Zhitomir", "ospf", 3).
++SetInterface("Zhitomir", "Zhitomir_I_Lutsk").
++SetInterface("Zhitomir", "Zhitomir_I_Kiev").
+
++SetNode("Donetsk").
++SetAdminDist("Donetsk", "static", 1).
++SetAdminDist("Donetsk", "bgp", 2).
++SetAdminDist("Donetsk", "ospf", 3).
++SetInterface("Donetsk", "Donetsk_I_Dnipropetrovsk").
+
++SetNode("UA_IX").
++SetAdminDist("UA_IX", "static", 1).
++SetAdminDist("UA_IX", "bgp", 2).
++SetAdminDist("UA_IX", "ospf", 3).
++SetInterface("UA_IX", "UA_IX_I_Kiev").
+
++SetLink("Kiev_I_Zhitomir", "Zhitomir_I_Kiev").
++SetLink("Kiev_I_Pereyaslav", "Pereyaslav_I_Kiev").
++SetLink("Kiev_I_Vinnitsa", "Vinnitsa_I_Kiev").
++SetLink("Kiev_I_Kamianets_Podilsky", "Kamianets_Podilsky_I_Kiev").
++SetLink("Kiev_I_Cherkassy", "Cherkassy_I_Kiev").
++SetLink("Kiev_I_Lviv", "Lviv_I_Kiev").
++SetLink("Kiev_I_FrankfurtTT_Internet_", "FrankfurtTT_Internet__I_Kiev").
++SetLink("Kiev_I_Poltava", "Poltava_I_Kiev").
++SetLink("Kiev_I_UA_IX", "UA_IX_I_Kiev").
++SetLink("Mykolaiv_I_Kherson", "Kherson_I_Mykolaiv").
++SetLink("Mykolaiv_I_Cherkassy", "Cherkassy_I_Mykolaiv").
++SetLink("Mykolaiv_I_Odessa", "Odessa_I_Mykolaiv").
++SetLink("Lutsk_I_Zhitomir", "Zhitomir_I_Lutsk").
++SetLink("Simferopol_I_Sevastopol", "Sevastopol_I_Simferopol").
++SetLink("Simferopol_I_Kherson", "Kherson_I_Simferopol").
++SetLink("Odessa_I_Odessa_IX", "Odessa_IX_I_Odessa").
++SetLink("Kharkiv_IX_I_Kharkiv", "Kharkiv_I_Kharkiv_IX").
++SetLink("Vinnitsa_I_Khmelnitsky", "Khmelnitsky_I_Vinnitsa").
++SetLink("Lviv_I_Khmelnitsky", "Khmelnitsky_I_Lviv").
++SetLink("Lviv_I_PoznanTT_GEANTTT_TTInternet_", "PoznanTT_GEANTTT_TTInternet__I_Lviv").
++SetLink("Dnipropetrovsk_I_Poltava", "Poltava_I_Dnipropetrovsk").
++SetLink("Dnipropetrovsk_I_Donetsk", "Donetsk_I_Dnipropetrovsk").
++SetLink("Dnipropetrovsk_I_Zaporizhia", "Zaporizhia_I_Dnipropetrovsk").
++SetLink("Poltava_I_Kharkiv", "Kharkiv_I_Poltava").
+
+
++SetNetwork("Kiev", "N_Kiev").
++SetBGPAnnouncement("Kiev", "N_Kiev", "NBGP_Kiev", "1;2;3", 3).

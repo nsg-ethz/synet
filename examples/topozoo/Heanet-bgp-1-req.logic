@@ -1,0 +1,14 @@
+
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "CityWest", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "CityWest", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Kilcarbery", "DCUTT_DublinTTCityTTUniversity", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Galway", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Galway", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Limerick", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Limerick", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "TDCTT_TrinityTTCollegeTTDublin_", "Kilcarbery", "bgp").
++Fwd("N_DCUTT_DublinTTCityTTUniversity", "Cork", "CityWest", "ospf").
++Fwd("NBGP_DCUTT_DublinTTCityTTUniversity", "Cork", "CityWest", "bgp").
+

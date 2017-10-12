@@ -1,0 +1,60 @@
++SetNode("Vitebsk").
++SetAdminDist("Vitebsk", "static", 1).
++SetAdminDist("Vitebsk", "bgp", 2).
++SetAdminDist("Vitebsk", "ospf", 3).
++SetInterface("Vitebsk", "Vitebsk_I_Minsk").
+
++SetNode("Gomel").
++SetAdminDist("Gomel", "static", 1).
++SetAdminDist("Gomel", "bgp", 2).
++SetAdminDist("Gomel", "ospf", 3).
++SetInterface("Gomel", "Gomel_I_Minsk").
+
++SetNode("Mogilev").
++SetAdminDist("Mogilev", "static", 1).
++SetAdminDist("Mogilev", "bgp", 2).
++SetAdminDist("Mogilev", "ospf", 3).
++SetInterface("Mogilev", "Mogilev_I_Minsk").
+
++SetNode("Minsk").
++SetAdminDist("Minsk", "static", 1).
++SetAdminDist("Minsk", "bgp", 2).
++SetAdminDist("Minsk", "ospf", 3).
++SetInterface("Minsk", "Minsk_I_Vitebsk").
++SetInterface("Minsk", "Minsk_I_Gomel").
++SetInterface("Minsk", "Minsk_I_Mogilev").
++SetInterface("Minsk", "Minsk_I_Brest").
++SetInterface("Minsk", "Minsk_I_PionierTTGEANTTT2").
++SetInterface("Minsk", "Minsk_I_Grodno").
+
++SetNode("Brest").
++SetAdminDist("Brest", "static", 1).
++SetAdminDist("Brest", "bgp", 2).
++SetAdminDist("Brest", "ospf", 3).
++SetInterface("Brest", "Brest_I_Minsk").
+
++SetNode("PionierTTGEANTTT2").
++SetAdminDist("PionierTTGEANTTT2", "static", 1).
++SetAdminDist("PionierTTGEANTTT2", "bgp", 2).
++SetAdminDist("PionierTTGEANTTT2", "ospf", 3).
++SetInterface("PionierTTGEANTTT2", "PionierTTGEANTTT2_I_Minsk").
+
++SetNode("Grodno").
++SetAdminDist("Grodno", "static", 1).
++SetAdminDist("Grodno", "bgp", 2).
++SetAdminDist("Grodno", "ospf", 3).
++SetInterface("Grodno", "Grodno_I_Minsk").
+
++SetLink("Vitebsk_I_Minsk", "Minsk_I_Vitebsk").
++SetLink("Gomel_I_Minsk", "Minsk_I_Gomel").
++SetLink("Mogilev_I_Minsk", "Minsk_I_Mogilev").
++SetLink("Minsk_I_Brest", "Brest_I_Minsk").
++SetLink("Minsk_I_PionierTTGEANTTT2", "PionierTTGEANTTT2_I_Minsk").
++SetLink("Minsk_I_Grodno", "Grodno_I_Minsk").
+
+
++SetNetwork("Minsk", "N_Minsk").
++SetNetwork("Gomel", "N_Gomel").
++SetNetwork("PionierTTGEANTTT2", "N_PionierTTGEANTTT2").
++SetNetwork("Brest", "N_Brest").
++SetNetwork("Vitebsk", "N_Vitebsk").

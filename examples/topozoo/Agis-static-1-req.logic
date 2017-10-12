@@ -1,0 +1,26 @@
+
++Fwd("N_Miami", "NewTTYork", "Atlanta", "static").
++Fwd("N_Miami", "Atlanta", "Miami", "static").
++Fwd("N_Miami", "Dallas", "Atlanta", "static").
++Fwd("N_Miami", "MexicoTTCity", "Dallas", "static").
++Fwd("N_Miami", "Philadelphia", "NewTTYork", "static").
++Fwd("N_Miami", "Phoenix", "Dallas", "static").
++Fwd("N_Miami", "Sacramento", "LosTTAngeles", "static").
++Fwd("N_Miami", "LosTTAngeles", "Phoenix", "static").
++Fwd("N_Miami", "Chicago", "StTTLouis", "static").
++Fwd("N_Miami", "StTTLouis", "Dallas", "static").
++Fwd("N_Miami", "Pennsauken", "Philadelphia", "static").
++Fwd("N_Miami", "Detroit", "Pittsburg", "static").
++Fwd("N_Miami", "Pittsburg", "Philadelphia", "static").
++Fwd("N_Miami", "SantaTTClara", "LosTTAngeles", "static").
++Fwd("N_Miami", "Houston", "Dallas", "static").
++Fwd("N_Miami", "SanTTDiego", "LosTTAngeles", "static").
++Fwd("N_Miami", "Stockton", "SantaTTClara", "static").
++Fwd("N_Miami", "SanTTFrancisco", "Seattle", "static").
++Fwd("N_Miami", "Seattle", "Chicago", "static").
++Fwd("N_Miami", "Boston", "NewTTYork", "static").
++Fwd("N_Miami", "Fresno", "SantaTTClara", "static").
++Fwd("N_Miami", "Minneapolis", "Chicago", "static").
++Fwd("N_Miami", "Washington_TTDC", "Atlanta", "static").
++Fwd("N_Miami", "SaltTTLakeTTCity", "Seattle", "static").
+

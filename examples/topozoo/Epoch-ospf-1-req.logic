@@ -1,0 +1,7 @@
+
++Fwd("N_Atlanta", "LosTTAngeles", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Chicago", "Vienna", "ospf").
++Fwd("N_Atlanta", "Vienna", "Atlanta", "ospf").
++Fwd("N_Atlanta", "PaloTTAlto", "LosTTAngeles", "ospf").
++Fwd("N_Atlanta", "Denver", "PaloTTAlto", "ospf").
+

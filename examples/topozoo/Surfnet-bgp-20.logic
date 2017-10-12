@@ -1,0 +1,496 @@
++SetNode("Yerseke").
++SetAdminDist("Yerseke", "static", 1).
++SetAdminDist("Yerseke", "bgp", 2).
++SetAdminDist("Yerseke", "ospf", 3).
++SetInterface("Yerseke", "Yerseke_I_Vlissingen").
++SetInterface("Yerseke", "Yerseke_I_BergenTTopTTZoom").
+
++SetNode("Assen").
++SetAdminDist("Assen", "static", 1).
++SetAdminDist("Assen", "bgp", 2).
++SetAdminDist("Assen", "ospf", 3).
++SetInterface("Assen", "Assen_I_Groningen").
++SetInterface("Assen", "Assen_I_Hoogeveen").
++SetInterface("Assen", "Assen_I_Dwingeloo").
+
++SetNode("Maasbracht").
++SetAdminDist("Maasbracht", "static", 1).
++SetAdminDist("Maasbracht", "bgp", 2).
++SetAdminDist("Maasbracht", "ospf", 3).
++SetInterface("Maasbracht", "Maasbracht_I_Maastricht").
++SetInterface("Maasbracht", "Maasbracht_I_Eindhoven").
+
++SetNode("BergenTTopTTZoom").
++SetAdminDist("BergenTTopTTZoom", "static", 1).
++SetAdminDist("BergenTTopTTZoom", "bgp", 2).
++SetAdminDist("BergenTTopTTZoom", "ospf", 3).
++SetInterface("BergenTTopTTZoom", "BergenTTopTTZoom_I_Breda").
++SetInterface("BergenTTopTTZoom", "BergenTTopTTZoom_I_Zierikzee").
++SetInterface("BergenTTopTTZoom", "BergenTTopTTZoom_I_Yerseke").
+
++SetNode("Delft").
++SetAdminDist("Delft", "static", 1).
++SetAdminDist("Delft", "bgp", 2).
++SetAdminDist("Delft", "ospf", 3).
++SetInterface("Delft", "Delft_I_Amsterdam").
++SetInterface("Delft", "Delft_I_Leiden").
++SetInterface("Delft", "Delft_I_Rotterdam").
++SetInterface("Delft", "Delft_I_Utrecht").
++SetInterface("Delft", "Delft_I_DenTTHaag").
+
++SetNode("Meppel").
++SetAdminDist("Meppel", "static", 1).
++SetAdminDist("Meppel", "bgp", 2).
++SetAdminDist("Meppel", "ospf", 3).
++SetInterface("Meppel", "Meppel_I_Hoogeveen").
++SetInterface("Meppel", "Meppel_I_Zwolle").
+
++SetNode("Nieuwegen").
++SetAdminDist("Nieuwegen", "static", 1).
++SetAdminDist("Nieuwegen", "bgp", 2).
++SetAdminDist("Nieuwegen", "ospf", 3).
++SetInterface("Nieuwegen", "Nieuwegen_I_Utrecht").
++SetInterface("Nieuwegen", "Nieuwegen_I_DenTTBosch").
+
++SetNode("Eindhoven").
++SetAdminDist("Eindhoven", "static", 1).
++SetAdminDist("Eindhoven", "bgp", 2).
++SetAdminDist("Eindhoven", "ospf", 3).
++SetInterface("Eindhoven", "Eindhoven_I_Maasbracht").
++SetInterface("Eindhoven", "Eindhoven_I_Tilburg").
++SetInterface("Eindhoven", "Eindhoven_I_DenTTBosch").
++SetInterface("Eindhoven", "Eindhoven_I_Utrecht").
+
++SetNode("Rotterdam").
++SetAdminDist("Rotterdam", "static", 1).
++SetAdminDist("Rotterdam", "bgp", 2).
++SetAdminDist("Rotterdam", "ospf", 3).
++SetInterface("Rotterdam", "Rotterdam_I_Dordrecht").
++SetInterface("Rotterdam", "Rotterdam_I_Delft").
++SetInterface("Rotterdam", "Rotterdam_I_Gouda").
+
++SetNode("Heerlen").
++SetAdminDist("Heerlen", "static", 1).
++SetAdminDist("Heerlen", "bgp", 2).
++SetAdminDist("Heerlen", "ospf", 3).
++SetInterface("Heerlen", "Heerlen_I_Maastricht").
++SetInterface("Heerlen", "Heerlen_I_Venlo").
+
++SetNode("Emmen").
++SetAdminDist("Emmen", "static", 1).
++SetAdminDist("Emmen", "bgp", 2).
++SetAdminDist("Emmen", "ospf", 3).
++SetInterface("Emmen", "Emmen_I_Winschoten").
++SetInterface("Emmen", "Emmen_I_Hoogeveen").
+
++SetNode("Breukelen").
++SetAdminDist("Breukelen", "static", 1).
++SetAdminDist("Breukelen", "bgp", 2).
++SetAdminDist("Breukelen", "ospf", 3).
++SetInterface("Breukelen", "Breukelen_I_Amsterdam").
++SetInterface("Breukelen", "Breukelen_I_Utrecht").
+
++SetNode("DenTTHaag").
++SetAdminDist("DenTTHaag", "static", 1).
++SetAdminDist("DenTTHaag", "bgp", 2).
++SetAdminDist("DenTTHaag", "ospf", 3).
++SetInterface("DenTTHaag", "DenTTHaag_I_Delft").
++SetInterface("DenTTHaag", "DenTTHaag_I_Leiden").
+
++SetNode("Lelystad").
++SetAdminDist("Lelystad", "static", 1).
++SetAdminDist("Lelystad", "bgp", 2).
++SetAdminDist("Lelystad", "ospf", 3).
++SetInterface("Lelystad", "Lelystad_I_Amsterdam").
++SetInterface("Lelystad", "Lelystad_I_Zwolle").
+
++SetNode("Dwingeloo").
++SetAdminDist("Dwingeloo", "static", 1).
++SetAdminDist("Dwingeloo", "bgp", 2).
++SetAdminDist("Dwingeloo", "ospf", 3).
++SetInterface("Dwingeloo", "Dwingeloo_I_Amsterdam").
++SetInterface("Dwingeloo", "Dwingeloo_I_Westerbork").
++SetInterface("Dwingeloo", "Dwingeloo_I_Assen").
+
++SetNode("Groningen").
++SetAdminDist("Groningen", "static", 1).
++SetAdminDist("Groningen", "bgp", 2).
++SetAdminDist("Groningen", "ospf", 3).
++SetInterface("Groningen", "Groningen_I_Winschoten").
++SetInterface("Groningen", "Groningen_I_Leeuwarden").
++SetInterface("Groningen", "Groningen_I_Assen").
+
++SetNode("Arnhem").
++SetAdminDist("Arnhem", "static", 1).
++SetAdminDist("Arnhem", "bgp", 2).
++SetAdminDist("Arnhem", "ospf", 3).
++SetInterface("Arnhem", "Arnhem_I_Deventer").
++SetInterface("Arnhem", "Arnhem_I_Nijmegen").
++SetInterface("Arnhem", "Arnhem_I_Zutphen").
+
++SetNode("Hoogeveen").
++SetAdminDist("Hoogeveen", "static", 1).
++SetAdminDist("Hoogeveen", "bgp", 2).
++SetAdminDist("Hoogeveen", "ospf", 3).
++SetInterface("Hoogeveen", "Hoogeveen_I_Emmen").
++SetInterface("Hoogeveen", "Hoogeveen_I_Meppel").
++SetInterface("Hoogeveen", "Hoogeveen_I_Assen").
+
++SetNode("Westerbork").
++SetAdminDist("Westerbork", "static", 1).
++SetAdminDist("Westerbork", "bgp", 2).
++SetAdminDist("Westerbork", "ospf", 3).
++SetInterface("Westerbork", "Westerbork_I_Dwingeloo").
+
++SetNode("Zwolle").
++SetAdminDist("Zwolle", "static", 1).
++SetAdminDist("Zwolle", "bgp", 2).
++SetAdminDist("Zwolle", "ospf", 3).
++SetInterface("Zwolle", "Zwolle_I_Deventer").
++SetInterface("Zwolle", "Zwolle_I_Enschede").
++SetInterface("Zwolle", "Zwolle_I_Meppel").
++SetInterface("Zwolle", "Zwolle_I_Lelystad").
++SetInterface("Zwolle", "Zwolle_I_Amsterdam").
+
++SetNode("Dordrecht").
++SetAdminDist("Dordrecht", "static", 1).
++SetAdminDist("Dordrecht", "bgp", 2).
++SetAdminDist("Dordrecht", "ospf", 3).
++SetInterface("Dordrecht", "Dordrecht_I_Breda").
++SetInterface("Dordrecht", "Dordrecht_I_Rotterdam").
+
++SetNode("Breda").
++SetAdminDist("Breda", "static", 1).
++SetAdminDist("Breda", "bgp", 2).
++SetAdminDist("Breda", "ospf", 3).
++SetInterface("Breda", "Breda_I_Dordrecht").
++SetInterface("Breda", "Breda_I_Tilburg").
++SetInterface("Breda", "Breda_I_BergenTTopTTZoom").
+
++SetNode("Alkmaar").
++SetAdminDist("Alkmaar", "static", 1).
++SetAdminDist("Alkmaar", "bgp", 2).
++SetAdminDist("Alkmaar", "ospf", 3).
++SetInterface("Alkmaar", "Alkmaar_I_Amsterdam").
++SetInterface("Alkmaar", "Alkmaar_I_Haarlem").
++SetInterface("Alkmaar", "Alkmaar_I_DenTTHelder").
+
++SetNode("Lisse").
++SetAdminDist("Lisse", "static", 1).
++SetAdminDist("Lisse", "bgp", 2).
++SetAdminDist("Lisse", "ospf", 3).
++SetInterface("Lisse", "Lisse_I_Oegstgeest").
++SetInterface("Lisse", "Lisse_I_Schiphol_Rijk").
+
++SetNode("Apeldoorn").
++SetAdminDist("Apeldoorn", "static", 1).
++SetAdminDist("Apeldoorn", "bgp", 2).
++SetAdminDist("Apeldoorn", "ospf", 3).
++SetInterface("Apeldoorn", "Apeldoorn_I_Deventer").
++SetInterface("Apeldoorn", "Apeldoorn_I_Zutphen").
+
++SetNode("Winschoten").
++SetAdminDist("Winschoten", "static", 1).
++SetAdminDist("Winschoten", "bgp", 2).
++SetAdminDist("Winschoten", "ospf", 3).
++SetInterface("Winschoten", "Winschoten_I_Groningen").
++SetInterface("Winschoten", "Winschoten_I_Emmen").
+
++SetNode("Houten").
++SetAdminDist("Houten", "static", 1).
++SetAdminDist("Houten", "bgp", 2).
++SetAdminDist("Houten", "ospf", 3).
++SetInterface("Houten", "Houten_I_Utrecht").
+
++SetNode("Utrecht").
++SetAdminDist("Utrecht", "static", 1).
++SetAdminDist("Utrecht", "bgp", 2).
++SetAdminDist("Utrecht", "ospf", 3).
++SetInterface("Utrecht", "Utrecht_I_Eindhoven").
++SetInterface("Utrecht", "Utrecht_I_Wageningen").
++SetInterface("Utrecht", "Utrecht_I_Breukelen").
++SetInterface("Utrecht", "Utrecht_I_Hilversum").
++SetInterface("Utrecht", "Utrecht_I_Houten").
++SetInterface("Utrecht", "Utrecht_I_Nieuwegen").
++SetInterface("Utrecht", "Utrecht_I_Delft").
++SetInterface("Utrecht", "Utrecht_I_Amsterdam").
++SetInterface("Utrecht", "Utrecht_I_Gouda").
+
++SetNode("Amsterdam").
++SetAdminDist("Amsterdam", "static", 1).
++SetAdminDist("Amsterdam", "bgp", 2).
++SetAdminDist("Amsterdam", "ospf", 3).
++SetInterface("Amsterdam", "Amsterdam_I_Zwolle").
++SetInterface("Amsterdam", "Amsterdam_I_Breukelen").
++SetInterface("Amsterdam", "Amsterdam_I_Leiden").
++SetInterface("Amsterdam", "Amsterdam_I_Alkmaar").
++SetInterface("Amsterdam", "Amsterdam_I_Hilversum").
++SetInterface("Amsterdam", "Amsterdam_I_Lelystad").
++SetInterface("Amsterdam", "Amsterdam_I_Utrecht").
++SetInterface("Amsterdam", "Amsterdam_I_Delft").
++SetInterface("Amsterdam", "Amsterdam_I_Schiphol_Rijk").
++SetInterface("Amsterdam", "Amsterdam_I_Dwingeloo").
+
++SetNode("Vlissingen").
++SetAdminDist("Vlissingen", "static", 1).
++SetAdminDist("Vlissingen", "bgp", 2).
++SetAdminDist("Vlissingen", "ospf", 3).
++SetInterface("Vlissingen", "Vlissingen_I_Middelburg").
++SetInterface("Vlissingen", "Vlissingen_I_Yerseke").
+
++SetNode("Zierikzee").
++SetAdminDist("Zierikzee", "static", 1).
++SetAdminDist("Zierikzee", "bgp", 2).
++SetAdminDist("Zierikzee", "ospf", 3).
++SetInterface("Zierikzee", "Zierikzee_I_Middelburg").
++SetInterface("Zierikzee", "Zierikzee_I_BergenTTopTTZoom").
+
++SetNode("Venlo").
++SetAdminDist("Venlo", "static", 1).
++SetAdminDist("Venlo", "bgp", 2).
++SetAdminDist("Venlo", "ospf", 3).
++SetInterface("Venlo", "Venlo_I_Nijmegen").
++SetInterface("Venlo", "Venlo_I_Heerlen").
+
++SetNode("Enschede").
++SetAdminDist("Enschede", "static", 1).
++SetAdminDist("Enschede", "bgp", 2).
++SetAdminDist("Enschede", "ospf", 3).
++SetInterface("Enschede", "Enschede_I_Nijmegen").
++SetInterface("Enschede", "Enschede_I_Zwolle").
+
++SetNode("Oegstgeest").
++SetAdminDist("Oegstgeest", "static", 1).
++SetAdminDist("Oegstgeest", "bgp", 2).
++SetAdminDist("Oegstgeest", "ospf", 3).
++SetInterface("Oegstgeest", "Oegstgeest_I_Leiden").
++SetInterface("Oegstgeest", "Oegstgeest_I_Lisse").
+
++SetNode("DenTTBosch").
++SetAdminDist("DenTTBosch", "static", 1).
++SetAdminDist("DenTTBosch", "bgp", 2).
++SetAdminDist("DenTTBosch", "ospf", 3).
++SetInterface("DenTTBosch", "DenTTBosch_I_Oss").
++SetInterface("DenTTBosch", "DenTTBosch_I_Eindhoven").
++SetInterface("DenTTBosch", "DenTTBosch_I_Nieuwegen").
+
++SetNode("Leeuwarden").
++SetAdminDist("Leeuwarden", "static", 1).
++SetAdminDist("Leeuwarden", "bgp", 2).
++SetAdminDist("Leeuwarden", "ospf", 3).
++SetInterface("Leeuwarden", "Leeuwarden_I_Groningen").
++SetInterface("Leeuwarden", "Leeuwarden_I_DenTTHelder").
+
++SetNode("Zutphen").
++SetAdminDist("Zutphen", "static", 1).
++SetAdminDist("Zutphen", "bgp", 2).
++SetAdminDist("Zutphen", "ospf", 3).
++SetInterface("Zutphen", "Zutphen_I_Arnhem").
++SetInterface("Zutphen", "Zutphen_I_Apeldoorn").
+
++SetNode("Leiden").
++SetAdminDist("Leiden", "static", 1).
++SetAdminDist("Leiden", "bgp", 2).
++SetAdminDist("Leiden", "ospf", 3).
++SetInterface("Leiden", "Leiden_I_Delft").
++SetInterface("Leiden", "Leiden_I_Amsterdam").
++SetInterface("Leiden", "Leiden_I_Oegstgeest").
++SetInterface("Leiden", "Leiden_I_Haarlem").
++SetInterface("Leiden", "Leiden_I_DenTTHaag").
+
++SetNode("Oss").
++SetAdminDist("Oss", "static", 1).
++SetAdminDist("Oss", "bgp", 2).
++SetAdminDist("Oss", "ospf", 3).
++SetInterface("Oss", "Oss_I_DenTTBosch").
+
++SetNode("Hilversum").
++SetAdminDist("Hilversum", "static", 1).
++SetAdminDist("Hilversum", "bgp", 2).
++SetAdminDist("Hilversum", "ospf", 3).
++SetInterface("Hilversum", "Hilversum_I_Amsterdam").
++SetInterface("Hilversum", "Hilversum_I_Utrecht").
+
++SetNode("Middelburg").
++SetAdminDist("Middelburg", "static", 1).
++SetAdminDist("Middelburg", "bgp", 2).
++SetAdminDist("Middelburg", "ospf", 3).
++SetInterface("Middelburg", "Middelburg_I_Vlissingen").
++SetInterface("Middelburg", "Middelburg_I_Zierikzee").
+
++SetNode("Maastricht").
++SetAdminDist("Maastricht", "static", 1).
++SetAdminDist("Maastricht", "bgp", 2).
++SetAdminDist("Maastricht", "ospf", 3).
++SetInterface("Maastricht", "Maastricht_I_Maasbracht").
++SetInterface("Maastricht", "Maastricht_I_Heerlen").
+
++SetNode("Schiphol_Rijk").
++SetAdminDist("Schiphol_Rijk", "static", 1).
++SetAdminDist("Schiphol_Rijk", "bgp", 2).
++SetAdminDist("Schiphol_Rijk", "ospf", 3).
++SetInterface("Schiphol_Rijk", "Schiphol_Rijk_I_Amsterdam").
++SetInterface("Schiphol_Rijk", "Schiphol_Rijk_I_Lisse").
+
++SetNode("Nijmegen").
++SetAdminDist("Nijmegen", "static", 1).
++SetAdminDist("Nijmegen", "bgp", 2).
++SetAdminDist("Nijmegen", "ospf", 3).
++SetInterface("Nijmegen", "Nijmegen_I_Wageningen").
++SetInterface("Nijmegen", "Nijmegen_I_Arnhem").
++SetInterface("Nijmegen", "Nijmegen_I_Venlo").
++SetInterface("Nijmegen", "Nijmegen_I_Enschede").
+
++SetNode("DenTTHelder").
++SetAdminDist("DenTTHelder", "static", 1).
++SetAdminDist("DenTTHelder", "bgp", 2).
++SetAdminDist("DenTTHelder", "ospf", 3).
++SetInterface("DenTTHelder", "DenTTHelder_I_Alkmaar").
++SetInterface("DenTTHelder", "DenTTHelder_I_Leeuwarden").
+
++SetNode("Wageningen").
++SetAdminDist("Wageningen", "static", 1).
++SetAdminDist("Wageningen", "bgp", 2).
++SetAdminDist("Wageningen", "ospf", 3).
++SetInterface("Wageningen", "Wageningen_I_Utrecht").
++SetInterface("Wageningen", "Wageningen_I_Nijmegen").
+
++SetNode("Deventer").
++SetAdminDist("Deventer", "static", 1).
++SetAdminDist("Deventer", "bgp", 2).
++SetAdminDist("Deventer", "ospf", 3).
++SetInterface("Deventer", "Deventer_I_Arnhem").
++SetInterface("Deventer", "Deventer_I_Zwolle").
++SetInterface("Deventer", "Deventer_I_Apeldoorn").
+
++SetNode("Tilburg").
++SetAdminDist("Tilburg", "static", 1).
++SetAdminDist("Tilburg", "bgp", 2).
++SetAdminDist("Tilburg", "ospf", 3).
++SetInterface("Tilburg", "Tilburg_I_Breda").
++SetInterface("Tilburg", "Tilburg_I_Eindhoven").
+
++SetNode("Gouda").
++SetAdminDist("Gouda", "static", 1).
++SetAdminDist("Gouda", "bgp", 2).
++SetAdminDist("Gouda", "ospf", 3).
++SetInterface("Gouda", "Gouda_I_Rotterdam").
++SetInterface("Gouda", "Gouda_I_Utrecht").
+
++SetNode("Haarlem").
++SetAdminDist("Haarlem", "static", 1).
++SetAdminDist("Haarlem", "bgp", 2).
++SetAdminDist("Haarlem", "ospf", 3).
++SetInterface("Haarlem", "Haarlem_I_Leiden").
++SetInterface("Haarlem", "Haarlem_I_Alkmaar").
+
++SetLink("Yerseke_I_Vlissingen", "Vlissingen_I_Yerseke").
++SetLink("Yerseke_I_BergenTTopTTZoom", "BergenTTopTTZoom_I_Yerseke").
++SetLink("Assen_I_Groningen", "Groningen_I_Assen").
++SetLink("Assen_I_Hoogeveen", "Hoogeveen_I_Assen").
++SetLink("Assen_I_Dwingeloo", "Dwingeloo_I_Assen").
++SetLink("Maasbracht_I_Maastricht", "Maastricht_I_Maasbracht").
++SetLink("Maasbracht_I_Eindhoven", "Eindhoven_I_Maasbracht").
++SetLink("BergenTTopTTZoom_I_Breda", "Breda_I_BergenTTopTTZoom").
++SetLink("BergenTTopTTZoom_I_Zierikzee", "Zierikzee_I_BergenTTopTTZoom").
++SetLink("Delft_I_Amsterdam", "Amsterdam_I_Delft").
++SetLink("Delft_I_Leiden", "Leiden_I_Delft").
++SetLink("Delft_I_Rotterdam", "Rotterdam_I_Delft").
++SetLink("Delft_I_Utrecht", "Utrecht_I_Delft").
++SetLink("Delft_I_DenTTHaag", "DenTTHaag_I_Delft").
++SetLink("Meppel_I_Hoogeveen", "Hoogeveen_I_Meppel").
++SetLink("Meppel_I_Zwolle", "Zwolle_I_Meppel").
++SetLink("Nieuwegen_I_Utrecht", "Utrecht_I_Nieuwegen").
++SetLink("Nieuwegen_I_DenTTBosch", "DenTTBosch_I_Nieuwegen").
++SetLink("Eindhoven_I_Tilburg", "Tilburg_I_Eindhoven").
++SetLink("Eindhoven_I_DenTTBosch", "DenTTBosch_I_Eindhoven").
++SetLink("Eindhoven_I_Utrecht", "Utrecht_I_Eindhoven").
++SetLink("Rotterdam_I_Dordrecht", "Dordrecht_I_Rotterdam").
++SetLink("Rotterdam_I_Gouda", "Gouda_I_Rotterdam").
++SetLink("Heerlen_I_Maastricht", "Maastricht_I_Heerlen").
++SetLink("Heerlen_I_Venlo", "Venlo_I_Heerlen").
++SetLink("Emmen_I_Winschoten", "Winschoten_I_Emmen").
++SetLink("Emmen_I_Hoogeveen", "Hoogeveen_I_Emmen").
++SetLink("Breukelen_I_Amsterdam", "Amsterdam_I_Breukelen").
++SetLink("Breukelen_I_Utrecht", "Utrecht_I_Breukelen").
++SetLink("DenTTHaag_I_Leiden", "Leiden_I_DenTTHaag").
++SetLink("Lelystad_I_Amsterdam", "Amsterdam_I_Lelystad").
++SetLink("Lelystad_I_Zwolle", "Zwolle_I_Lelystad").
++SetLink("Dwingeloo_I_Amsterdam", "Amsterdam_I_Dwingeloo").
++SetLink("Dwingeloo_I_Westerbork", "Westerbork_I_Dwingeloo").
++SetLink("Groningen_I_Winschoten", "Winschoten_I_Groningen").
++SetLink("Groningen_I_Leeuwarden", "Leeuwarden_I_Groningen").
++SetLink("Arnhem_I_Deventer", "Deventer_I_Arnhem").
++SetLink("Arnhem_I_Nijmegen", "Nijmegen_I_Arnhem").
++SetLink("Arnhem_I_Zutphen", "Zutphen_I_Arnhem").
++SetLink("Zwolle_I_Deventer", "Deventer_I_Zwolle").
++SetLink("Zwolle_I_Enschede", "Enschede_I_Zwolle").
++SetLink("Zwolle_I_Amsterdam", "Amsterdam_I_Zwolle").
++SetLink("Dordrecht_I_Breda", "Breda_I_Dordrecht").
++SetLink("Breda_I_Tilburg", "Tilburg_I_Breda").
++SetLink("Alkmaar_I_Amsterdam", "Amsterdam_I_Alkmaar").
++SetLink("Alkmaar_I_Haarlem", "Haarlem_I_Alkmaar").
++SetLink("Alkmaar_I_DenTTHelder", "DenTTHelder_I_Alkmaar").
++SetLink("Lisse_I_Oegstgeest", "Oegstgeest_I_Lisse").
++SetLink("Lisse_I_Schiphol_Rijk", "Schiphol_Rijk_I_Lisse").
++SetLink("Apeldoorn_I_Deventer", "Deventer_I_Apeldoorn").
++SetLink("Apeldoorn_I_Zutphen", "Zutphen_I_Apeldoorn").
++SetLink("Houten_I_Utrecht", "Utrecht_I_Houten").
++SetLink("Utrecht_I_Wageningen", "Wageningen_I_Utrecht").
++SetLink("Utrecht_I_Hilversum", "Hilversum_I_Utrecht").
++SetLink("Utrecht_I_Amsterdam", "Amsterdam_I_Utrecht").
++SetLink("Utrecht_I_Gouda", "Gouda_I_Utrecht").
++SetLink("Amsterdam_I_Leiden", "Leiden_I_Amsterdam").
++SetLink("Amsterdam_I_Hilversum", "Hilversum_I_Amsterdam").
++SetLink("Amsterdam_I_Schiphol_Rijk", "Schiphol_Rijk_I_Amsterdam").
++SetLink("Vlissingen_I_Middelburg", "Middelburg_I_Vlissingen").
++SetLink("Zierikzee_I_Middelburg", "Middelburg_I_Zierikzee").
++SetLink("Venlo_I_Nijmegen", "Nijmegen_I_Venlo").
++SetLink("Enschede_I_Nijmegen", "Nijmegen_I_Enschede").
++SetLink("Oegstgeest_I_Leiden", "Leiden_I_Oegstgeest").
++SetLink("DenTTBosch_I_Oss", "Oss_I_DenTTBosch").
++SetLink("Leeuwarden_I_DenTTHelder", "DenTTHelder_I_Leeuwarden").
++SetLink("Leiden_I_Haarlem", "Haarlem_I_Leiden").
++SetLink("Nijmegen_I_Wageningen", "Wageningen_I_Nijmegen").
+
+
++SetNetwork("Leiden", "N_Leiden").
++SetBGPAnnouncement("Leiden", "N_Leiden", "NBGP_Leiden", "1;2;3", 3).
++SetNetwork("Nijmegen", "N_Nijmegen").
++SetBGPAnnouncement("Nijmegen", "N_Nijmegen", "NBGP_Nijmegen", "1;2;3", 3).
++SetNetwork("BergenTTopTTZoom", "N_BergenTTopTTZoom").
++SetBGPAnnouncement("BergenTTopTTZoom", "N_BergenTTopTTZoom", "NBGP_BergenTTopTTZoom", "1;2;3", 3).
++SetNetwork("Breukelen", "N_Breukelen").
++SetBGPAnnouncement("Breukelen", "N_Breukelen", "NBGP_Breukelen", "1;2;3", 3).
++SetNetwork("Enschede", "N_Enschede").
++SetBGPAnnouncement("Enschede", "N_Enschede", "NBGP_Enschede", "1;2;3", 3).
++SetNetwork("Breda", "N_Breda").
++SetBGPAnnouncement("Breda", "N_Breda", "NBGP_Breda", "1;2;3", 3).
++SetNetwork("Yerseke", "N_Yerseke").
++SetBGPAnnouncement("Yerseke", "N_Yerseke", "NBGP_Yerseke", "1;2;3", 3).
++SetNetwork("Apeldoorn", "N_Apeldoorn").
++SetBGPAnnouncement("Apeldoorn", "N_Apeldoorn", "NBGP_Apeldoorn", "1;2;3", 3).
++SetNetwork("Venlo", "N_Venlo").
++SetBGPAnnouncement("Venlo", "N_Venlo", "NBGP_Venlo", "1;2;3", 3).
++SetNetwork("Groningen", "N_Groningen").
++SetBGPAnnouncement("Groningen", "N_Groningen", "NBGP_Groningen", "1;2;3", 3).
++SetNetwork("Alkmaar", "N_Alkmaar").
++SetBGPAnnouncement("Alkmaar", "N_Alkmaar", "NBGP_Alkmaar", "1;2;3", 3).
++SetNetwork("Gouda", "N_Gouda").
++SetBGPAnnouncement("Gouda", "N_Gouda", "NBGP_Gouda", "1;2;3", 3).
++SetNetwork("DenTTHelder", "N_DenTTHelder").
++SetBGPAnnouncement("DenTTHelder", "N_DenTTHelder", "NBGP_DenTTHelder", "1;2;3", 3).
++SetNetwork("Winschoten", "N_Winschoten").
++SetBGPAnnouncement("Winschoten", "N_Winschoten", "NBGP_Winschoten", "1;2;3", 3).
++SetNetwork("Emmen", "N_Emmen").
++SetBGPAnnouncement("Emmen", "N_Emmen", "NBGP_Emmen", "1;2;3", 3).
++SetNetwork("DenTTHaag", "N_DenTTHaag").
++SetBGPAnnouncement("DenTTHaag", "N_DenTTHaag", "NBGP_DenTTHaag", "1;2;3", 3).
++SetNetwork("Utrecht", "N_Utrecht").
++SetBGPAnnouncement("Utrecht", "N_Utrecht", "NBGP_Utrecht", "1;2;3", 3).
++SetNetwork("Westerbork", "N_Westerbork").
++SetBGPAnnouncement("Westerbork", "N_Westerbork", "NBGP_Westerbork", "1;2;3", 3).
++SetNetwork("Lelystad", "N_Lelystad").
++SetBGPAnnouncement("Lelystad", "N_Lelystad", "NBGP_Lelystad", "1;2;3", 3).
++SetNetwork("Rotterdam", "N_Rotterdam").
++SetBGPAnnouncement("Rotterdam", "N_Rotterdam", "NBGP_Rotterdam", "1;2;3", 3).

@@ -1,0 +1,66 @@
+
++Fwd("N_NIX", "Ostrava", "Brno", "static").
++Fwd("N_NIX", "Brno", "Praha", "static").
++Fwd("N_NIX", "Praha", "NIX", "static").
++Fwd("N_NIX", "TEN_155", "Praha", "static").
++Fwd("N_NIX", "Plzen", "Praha", "static").
++Fwd("N_NIX", "Pardubice", "Praha", "static").
++Fwd("N_NIX", "Zlin", "Brno", "static").
++Fwd("N_NIX", "Liberec", "Praha", "static").
++Fwd("N_NIX", "UstiTTnadTTLabem", "Praha", "static").
++Fwd("N_NIX", "HradecTTKralove", "Praha", "static").
++Fwd("N_NIX", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_NIX", "Olomouc", "Brno", "static").
+
++Fwd("N_TEN_155", "Ostrava", "Brno", "static").
++Fwd("N_TEN_155", "Brno", "Praha", "static").
++Fwd("N_TEN_155", "Praha", "TEN_155", "static").
++Fwd("N_TEN_155", "Plzen", "Praha", "static").
++Fwd("N_TEN_155", "Pardubice", "Praha", "static").
++Fwd("N_TEN_155", "Zlin", "Brno", "static").
++Fwd("N_TEN_155", "Liberec", "Praha", "static").
++Fwd("N_TEN_155", "UstiTTnadTTLabem", "Praha", "static").
++Fwd("N_TEN_155", "NIX", "Praha", "static").
++Fwd("N_TEN_155", "HradecTTKralove", "Praha", "static").
++Fwd("N_TEN_155", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_TEN_155", "Olomouc", "Brno", "static").
+
++Fwd("N_Olomouc", "Ostrava", "Brno", "static").
++Fwd("N_Olomouc", "Brno", "Olomouc", "static").
++Fwd("N_Olomouc", "TEN_155", "Praha", "static").
++Fwd("N_Olomouc", "Praha", "Brno", "static").
++Fwd("N_Olomouc", "Plzen", "Praha", "static").
++Fwd("N_Olomouc", "Pardubice", "Praha", "static").
++Fwd("N_Olomouc", "Zlin", "Brno", "static").
++Fwd("N_Olomouc", "Liberec", "Praha", "static").
++Fwd("N_Olomouc", "UstiTTnadTTLabem", "Praha", "static").
++Fwd("N_Olomouc", "NIX", "Praha", "static").
++Fwd("N_Olomouc", "HradecTTKralove", "Praha", "static").
++Fwd("N_Olomouc", "CeskeTTBudejovice", "Praha", "static").
+
++Fwd("N_UstiTTnadTTLabem", "Ostrava", "Brno", "static").
++Fwd("N_UstiTTnadTTLabem", "Brno", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "Praha", "UstiTTnadTTLabem", "static").
++Fwd("N_UstiTTnadTTLabem", "TEN_155", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "Plzen", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "Pardubice", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "Zlin", "Brno", "static").
++Fwd("N_UstiTTnadTTLabem", "Liberec", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "NIX", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "HradecTTKralove", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_UstiTTnadTTLabem", "Olomouc", "Brno", "static").
+
++Fwd("N_Zlin", "Ostrava", "Brno", "static").
++Fwd("N_Zlin", "Brno", "Zlin", "static").
++Fwd("N_Zlin", "TEN_155", "Praha", "static").
++Fwd("N_Zlin", "Praha", "Brno", "static").
++Fwd("N_Zlin", "Plzen", "Praha", "static").
++Fwd("N_Zlin", "Pardubice", "Praha", "static").
++Fwd("N_Zlin", "Liberec", "Praha", "static").
++Fwd("N_Zlin", "UstiTTnadTTLabem", "Praha", "static").
++Fwd("N_Zlin", "NIX", "Praha", "static").
++Fwd("N_Zlin", "HradecTTKralove", "Praha", "static").
++Fwd("N_Zlin", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Zlin", "Olomouc", "Brno", "static").
+

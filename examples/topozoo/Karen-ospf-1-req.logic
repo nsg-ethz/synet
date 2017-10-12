@@ -1,0 +1,26 @@
+
++Fwd("N_NAP", "HLT", "ROT", "ospf").
++Fwd("N_NAP", "ROT", "NAP", "ospf").
++Fwd("N_NAP", "MUP", "NAP", "ospf").
++Fwd("N_NAP", "AKL", "PNR", "ospf").
++Fwd("N_NAP", "PNR", "MUP", "ospf").
++Fwd("N_NAP", "WLG", "PNR", "ospf").
++Fwd("N_NAP", "NSH", "AKL", "ospf").
++Fwd("N_NAP", "TAU", "ROT", "ospf").
++Fwd("N_NAP", "NLS", "WLG", "ospf").
++Fwd("N_NAP", "Syd", "AKL", "ospf").
++Fwd("N_NAP", "POR", "AVL", "ospf").
++Fwd("N_NAP", "AVL", "MUP", "ospf").
++Fwd("N_NAP", "WAG", "PNR", "ospf").
++Fwd("N_NAP", "CHC", "WLG", "ospf").
++Fwd("N_NAP", "GIS", "NAP", "ospf").
++Fwd("N_NAP", "TPO", "CHC", "ospf").
++Fwd("N_NAP", "DUD", "WLG", "ospf").
++Fwd("N_NAP", "WRK", "NSH", "ospf").
++Fwd("N_NAP", "MTA", "AKL", "ospf").
++Fwd("N_NAP", "NPL", "PNR", "ospf").
++Fwd("N_NAP", "IVM", "DUD", "ospf").
++Fwd("N_NAP", "INV", "DUD", "ospf").
++Fwd("N_NAP", "LAX", "AKL", "ospf").
++Fwd("N_NAP", "LCN", "CHC", "ospf").
+

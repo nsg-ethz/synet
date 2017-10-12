@@ -1,0 +1,7 @@
+
++Fwd("N_Denver", "LosTTAngeles", "PaloTTAlto", "static").
++Fwd("N_Denver", "PaloTTAlto", "Denver", "static").
++Fwd("N_Denver", "Chicago", "Denver", "static").
++Fwd("N_Denver", "Atlanta", "LosTTAngeles", "static").
++Fwd("N_Denver", "Vienna", "PaloTTAlto", "static").
+

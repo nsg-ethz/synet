@@ -1,0 +1,423 @@
++SetNode("UTEI").
++SetAdminDist("UTEI", "static", 1).
++SetAdminDist("UTEI", "bgp", 2).
++SetAdminDist("UTEI", "ospf", 3).
++SetInterface("UTEI", "UTEI_I_Cd_J").
++SetInterface("UTEI", "UTEI_I_Abilene").
+
++SetNode("ITE").
++SetAdminDist("ITE", "static", 1).
++SetAdminDist("ITE", "bgp", 2).
++SetAdminDist("ITE", "ospf", 3).
++SetInterface("ITE", "ITE_I_UNAM").
+
++SetNode("Abilene").
++SetAdminDist("Abilene", "static", 1).
++SetAdminDist("Abilene", "bgp", 2).
++SetAdminDist("Abilene", "ospf", 3).
++SetInterface("Abilene", "Abilene_I_UTEI").
++SetInterface("Abilene", "Abilene_I_CENIC").
+
++SetNode("ITAM").
++SetAdminDist("ITAM", "static", 1).
++SetAdminDist("ITAM", "bgp", 2).
++SetAdminDist("ITAM", "ospf", 3).
++SetInterface("ITAM", "ITAM_I_UNAM").
+
++SetNode("UPALP").
++SetAdminDist("UPALP", "static", 1).
++SetAdminDist("UPALP", "bgp", 2).
++SetAdminDist("UPALP", "ospf", 3).
++SetInterface("UPALP", "UPALP_I_VPN").
+
++SetNode("UaSLP").
++SetAdminDist("UaSLP", "static", 1).
++SetAdminDist("UaSLP", "bgp", 2).
++SetAdminDist("UaSLP", "ospf", 3).
++SetInterface("UaSLP", "UaSLP_I_VPN").
+
++SetNode("CAN").
++SetAdminDist("CAN", "static", 1).
++SetAdminDist("CAN", "bgp", 2).
++SetAdminDist("CAN", "ospf", 3).
++SetInterface("CAN", "CAN_I_MEX").
+
++SetNode("VBNS").
++SetAdminDist("VBNS", "static", 1).
++SetAdminDist("VBNS", "bgp", 2).
++SetAdminDist("VBNS", "ospf", 3).
++SetInterface("VBNS", "VBNS_I_MTY").
+
++SetNode("ULSA").
++SetAdminDist("ULSA", "static", 1).
++SetAdminDist("ULSA", "bgp", 2).
++SetAdminDist("ULSA", "ospf", 3).
++SetInterface("ULSA", "ULSA_I_UNAM").
+
++SetNode("CENIC").
++SetAdminDist("CENIC", "static", 1).
++SetAdminDist("CENIC", "bgp", 2).
++SetAdminDist("CENIC", "ospf", 3).
++SetInterface("CENIC", "CENIC_I_TU").
++SetInterface("CENIC", "CENIC_I_Abilene").
+
++SetNode("UACJ").
++SetAdminDist("UACJ", "static", 1).
++SetAdminDist("UACJ", "bgp", 2).
++SetAdminDist("UACJ", "ospf", 3).
++SetInterface("UACJ", "UACJ_I_Cd_J").
+
++SetNode("TU").
++SetAdminDist("TU", "static", 1).
++SetAdminDist("TU", "bgp", 2).
++SetAdminDist("TU", "ospf", 3).
++SetInterface("TU", "TU_I__ID50").
++SetInterface("TU", "TU_I_CENIC").
++SetInterface("TU", "TU_I_GDL").
+
++SetNode("UAT").
++SetAdminDist("UAT", "static", 1).
++SetAdminDist("UAT", "bgp", 2).
++SetAdminDist("UAT", "ospf", 3).
++SetInterface("UAT", "UAT_I_NodeID0").
+
++SetNode("NodeID31").
++SetAdminDist("NodeID31", "static", 1).
++SetAdminDist("NodeID31", "bgp", 2).
++SetAdminDist("NodeID31", "ospf", 3).
++SetInterface("NodeID31", "NodeID31_I_UV").
++SetInterface("NodeID31", "NodeID31_I_IPN").
++SetInterface("NodeID31", "NodeID31_I_CO_").
++SetInterface("NodeID31", "NodeID31_I_UAEM").
++SetInterface("NodeID31", "NodeID31_I_UAEH").
++SetInterface("NodeID31", "NodeID31_I_ILCE").
++SetInterface("NodeID31", "NodeID31_I_UAM").
++SetInterface("NodeID31", "NodeID31_I_ITSEM").
++SetInterface("NodeID31", "NodeID31_I_UDLAP").
++SetInterface("NodeID31", "NodeID31_I_MILITARY").
++SetInterface("NodeID31", "NodeID31_I_BUAP").
++SetInterface("NodeID31", "NodeID31_I_MEX").
+
++SetNode("UAEH").
++SetAdminDist("UAEH", "static", 1).
++SetAdminDist("UAEH", "bgp", 2).
++SetAdminDist("UAEH", "ospf", 3).
++SetInterface("UAEH", "UAEH_I_NodeID31").
+
++SetNode("UAM").
++SetAdminDist("UAM", "static", 1).
++SetAdminDist("UAM", "bgp", 2).
++SetAdminDist("UAM", "ospf", 3).
++SetInterface("UAM", "UAM_I_NodeID31").
+
++SetNode("UAL").
++SetAdminDist("UAL", "static", 1).
++SetAdminDist("UAL", "bgp", 2).
++SetAdminDist("UAL", "ospf", 3).
++SetInterface("UAL", "UAL_I_NodeID0").
+
++SetNode("NodeID0").
++SetAdminDist("NodeID0", "static", 1).
++SetAdminDist("NodeID0", "bgp", 2).
++SetAdminDist("NodeID0", "ospf", 3).
++SetInterface("NodeID0", "NodeID0_I_ITESM").
++SetInterface("NodeID0", "NodeID0_I_MTY").
++SetInterface("NodeID0", "NodeID0_I_UANL").
++SetInterface("NodeID0", "NodeID0_I_UAL").
++SetInterface("NodeID0", "NodeID0_I_UAT").
+
++SetNode("UDLAP").
++SetAdminDist("UDLAP", "static", 1).
++SetAdminDist("UDLAP", "bgp", 2).
++SetAdminDist("UDLAP", "ospf", 3).
++SetInterface("UDLAP", "UDLAP_I_INANDO").
++SetInterface("UDLAP", "UDLAP_I_NodeID31").
+
++SetNode("MILITARY").
++SetAdminDist("MILITARY", "static", 1).
++SetAdminDist("MILITARY", "bgp", 2).
++SetAdminDist("MILITARY", "ospf", 3).
++SetInterface("MILITARY", "MILITARY_I_NodeID31").
+
++SetNode("LANIA").
++SetAdminDist("LANIA", "static", 1).
++SetAdminDist("LANIA", "bgp", 2).
++SetAdminDist("LANIA", "ospf", 3).
++SetInterface("LANIA", "LANIA_I_UV").
+
++SetNode("VPN").
++SetAdminDist("VPN", "static", 1).
++SetAdminDist("VPN", "bgp", 2).
++SetAdminDist("VPN", "ospf", 3).
++SetInterface("VPN", "VPN_I_UaSLP").
++SetInterface("VPN", "VPN_I_UPALP").
++SetInterface("VPN", "VPN_I_OCSE_").
++SetInterface("VPN", "VPN_I_Ucol").
++SetInterface("VPN", "VPN_I_UniSod_").
++SetInterface("VPN", "VPN_I_MEX").
+
++SetNode("CUDI").
++SetAdminDist("CUDI", "static", 1).
++SetAdminDist("CUDI", "bgp", 2).
++SetAdminDist("CUDI", "ospf", 3).
++SetInterface("CUDI", "CUDI_I_UNAM").
+
++SetNode("_").
++SetAdminDist("_", "static", 1).
++SetAdminDist("_", "bgp", 2).
++SetAdminDist("_", "ospf", 3).
++SetInterface("_", "__I_UNAM").
+
++SetNode("UDG").
++SetAdminDist("UDG", "static", 1).
++SetAdminDist("UDG", "bgp", 2).
++SetAdminDist("UDG", "ospf", 3).
++SetInterface("UDG", "UDG_I_GDL").
+
++SetNode("INANDO").
++SetAdminDist("INANDO", "static", 1).
++SetAdminDist("INANDO", "bgp", 2).
++SetAdminDist("INANDO", "ospf", 3).
++SetInterface("INANDO", "INANDO_I_UDLAP").
+
++SetNode("_ID50").
++SetAdminDist("_ID50", "static", 1).
++SetAdminDist("_ID50", "bgp", 2).
++SetAdminDist("_ID50", "ospf", 3).
++SetInterface("_ID50", "_ID50_I_TU").
++SetInterface("_ID50", "_ID50_I_UABC").
+
++SetNode("MTY").
++SetAdminDist("MTY", "static", 1).
++SetAdminDist("MTY", "bgp", 2).
++SetAdminDist("MTY", "ospf", 3).
++SetInterface("MTY", "MTY_I_VBNS").
++SetInterface("MTY", "MTY_I_GDL").
++SetInterface("MTY", "MTY_I_Cd_J").
++SetInterface("MTY", "MTY_I_NodeID0").
++SetInterface("MTY", "MTY_I_MEX").
+
++SetNode("ITESM").
++SetAdminDist("ITESM", "static", 1).
++SetAdminDist("ITESM", "bgp", 2).
++SetAdminDist("ITESM", "ospf", 3).
++SetInterface("ITESM", "ITESM_I_NodeID0").
+
++SetNode("UAEM").
++SetAdminDist("UAEM", "static", 1).
++SetAdminDist("UAEM", "bgp", 2).
++SetAdminDist("UAEM", "ospf", 3).
++SetInterface("UAEM", "UAEM_I_NodeID31").
+
++SetNode("OCSE_").
++SetAdminDist("OCSE_", "static", 1).
++SetAdminDist("OCSE_", "bgp", 2).
++SetAdminDist("OCSE_", "ospf", 3).
++SetInterface("OCSE_", "OCSE__I_VPN").
+
++SetNode("IMP").
++SetAdminDist("IMP", "static", 1).
++SetAdminDist("IMP", "bgp", 2).
++SetAdminDist("IMP", "ospf", 3).
++SetInterface("IMP", "IMP_I_UNAM").
+
++SetNode("ILCE").
++SetAdminDist("ILCE", "static", 1).
++SetAdminDist("ILCE", "bgp", 2).
++SetAdminDist("ILCE", "ospf", 3).
++SetInterface("ILCE", "ILCE_I_NodeID31").
+
++SetNode("UANL").
++SetAdminDist("UANL", "static", 1).
++SetAdminDist("UANL", "bgp", 2).
++SetAdminDist("UANL", "ospf", 3).
++SetInterface("UANL", "UANL_I_NodeID0").
+
++SetNode("Ucol").
++SetAdminDist("Ucol", "static", 1).
++SetAdminDist("Ucol", "bgp", 2).
++SetAdminDist("Ucol", "ospf", 3).
++SetInterface("Ucol", "Ucol_I_VPN").
+
++SetNode("CP").
++SetAdminDist("CP", "static", 1).
++SetAdminDist("CP", "bgp", 2).
++SetAdminDist("CP", "ospf", 3).
++SetInterface("CP", "CP_I_UNAM").
+
++SetNode("UniSod_").
++SetAdminDist("UniSod_", "static", 1).
++SetAdminDist("UniSod_", "bgp", 2).
++SetAdminDist("UniSod_", "ospf", 3).
++SetInterface("UniSod_", "UniSod__I_VPN").
+
++SetNode("BUAP").
++SetAdminDist("BUAP", "static", 1).
++SetAdminDist("BUAP", "bgp", 2).
++SetAdminDist("BUAP", "ospf", 3).
++SetInterface("BUAP", "BUAP_I_NodeID31").
+
++SetNode("UV").
++SetAdminDist("UV", "static", 1).
++SetAdminDist("UV", "bgp", 2).
++SetAdminDist("UV", "ospf", 3).
++SetInterface("UV", "UV_I_LANIA").
++SetInterface("UV", "UV_I_NodeID31").
+
++SetNode("IPN").
++SetAdminDist("IPN", "static", 1).
++SetAdminDist("IPN", "bgp", 2).
++SetAdminDist("IPN", "ospf", 3).
++SetInterface("IPN", "IPN_I_NodeID31").
+
++SetNode("UP").
++SetAdminDist("UP", "static", 1).
++SetAdminDist("UP", "bgp", 2).
++SetAdminDist("UP", "ospf", 3).
++SetInterface("UP", "UP_I_UNAM").
+
++SetNode("CO_").
++SetAdminDist("CO_", "static", 1).
++SetAdminDist("CO_", "bgp", 2).
++SetAdminDist("CO_", "ospf", 3).
++SetInterface("CO_", "CO__I____").
++SetInterface("CO_", "CO__I_NodeID31").
+
++SetNode("UABC").
++SetAdminDist("UABC", "static", 1).
++SetAdminDist("UABC", "bgp", 2).
++SetAdminDist("UABC", "ospf", 3).
++SetInterface("UABC", "UABC_I__ID50").
+
++SetNode("UASLP").
++SetAdminDist("UASLP", "static", 1).
++SetAdminDist("UASLP", "bgp", 2).
++SetAdminDist("UASLP", "ospf", 3).
++SetInterface("UASLP", "UASLP_I_UNAM").
+
++SetNode("ITSEM").
++SetAdminDist("ITSEM", "static", 1).
++SetAdminDist("ITSEM", "bgp", 2).
++SetAdminDist("ITSEM", "ospf", 3).
++SetInterface("ITSEM", "ITSEM_I_NodeID31").
+
++SetNode("Cd_J").
++SetAdminDist("Cd_J", "static", 1).
++SetAdminDist("Cd_J", "bgp", 2).
++SetAdminDist("Cd_J", "ospf", 3).
++SetInterface("Cd_J", "Cd_J_I_UTEI").
++SetInterface("Cd_J", "Cd_J_I_MTY").
++SetInterface("Cd_J", "Cd_J_I_UACJ").
+
++SetNode("___").
++SetAdminDist("___", "static", 1).
++SetAdminDist("___", "bgp", 2).
++SetAdminDist("___", "ospf", 3).
++SetInterface("___", "____I_CO_").
+
++SetNode("UNAM").
++SetAdminDist("UNAM", "static", 1).
++SetAdminDist("UNAM", "bgp", 2).
++SetAdminDist("UNAM", "ospf", 3).
++SetInterface("UNAM", "UNAM_I_CP").
++SetInterface("UNAM", "UNAM_I_ITE").
++SetInterface("UNAM", "UNAM_I_UP").
++SetInterface("UNAM", "UNAM_I_ITAM").
++SetInterface("UNAM", "UNAM_I_UASLP").
++SetInterface("UNAM", "UNAM_I_IMP").
++SetInterface("UNAM", "UNAM_I_CUDI").
++SetInterface("UNAM", "UNAM_I_ULSA").
++SetInterface("UNAM", "UNAM_I_MEX").
++SetInterface("UNAM", "UNAM_I__").
++SetInterface("UNAM", "UNAM_I_TAMU").
+
++SetNode("GDL").
++SetAdminDist("GDL", "static", 1).
++SetAdminDist("GDL", "bgp", 2).
++SetAdminDist("GDL", "ospf", 3).
++SetInterface("GDL", "GDL_I_TU").
++SetInterface("GDL", "GDL_I_UDG").
++SetInterface("GDL", "GDL_I_MTY").
++SetInterface("GDL", "GDL_I_MEX").
+
++SetNode("MEX").
++SetAdminDist("MEX", "static", 1).
++SetAdminDist("MEX", "bgp", 2).
++SetAdminDist("MEX", "ospf", 3).
++SetInterface("MEX", "MEX_I_MTY").
++SetInterface("MEX", "MEX_I_NodeID31").
++SetInterface("MEX", "MEX_I_CAN").
++SetInterface("MEX", "MEX_I_VPN").
++SetInterface("MEX", "MEX_I_GDL").
++SetInterface("MEX", "MEX_I_UNAM").
+
++SetNode("TAMU").
++SetAdminDist("TAMU", "static", 1).
++SetAdminDist("TAMU", "bgp", 2).
++SetAdminDist("TAMU", "ospf", 3).
++SetInterface("TAMU", "TAMU_I_UNAM").
+
++SetLink("UTEI_I_Cd_J", "Cd_J_I_UTEI").
++SetLink("UTEI_I_Abilene", "Abilene_I_UTEI").
++SetLink("ITE_I_UNAM", "UNAM_I_ITE").
++SetLink("Abilene_I_CENIC", "CENIC_I_Abilene").
++SetLink("ITAM_I_UNAM", "UNAM_I_ITAM").
++SetLink("UPALP_I_VPN", "VPN_I_UPALP").
++SetLink("UaSLP_I_VPN", "VPN_I_UaSLP").
++SetLink("CAN_I_MEX", "MEX_I_CAN").
++SetLink("VBNS_I_MTY", "MTY_I_VBNS").
++SetLink("ULSA_I_UNAM", "UNAM_I_ULSA").
++SetLink("CENIC_I_TU", "TU_I_CENIC").
++SetLink("UACJ_I_Cd_J", "Cd_J_I_UACJ").
++SetLink("TU_I__ID50", "_ID50_I_TU").
++SetLink("TU_I_GDL", "GDL_I_TU").
++SetLink("UAT_I_NodeID0", "NodeID0_I_UAT").
++SetLink("NodeID31_I_UV", "UV_I_NodeID31").
++SetLink("NodeID31_I_IPN", "IPN_I_NodeID31").
++SetLink("NodeID31_I_CO_", "CO__I_NodeID31").
++SetLink("NodeID31_I_UAEM", "UAEM_I_NodeID31").
++SetLink("NodeID31_I_UAEH", "UAEH_I_NodeID31").
++SetLink("NodeID31_I_ILCE", "ILCE_I_NodeID31").
++SetLink("NodeID31_I_UAM", "UAM_I_NodeID31").
++SetLink("NodeID31_I_ITSEM", "ITSEM_I_NodeID31").
++SetLink("NodeID31_I_UDLAP", "UDLAP_I_NodeID31").
++SetLink("NodeID31_I_MILITARY", "MILITARY_I_NodeID31").
++SetLink("NodeID31_I_BUAP", "BUAP_I_NodeID31").
++SetLink("NodeID31_I_MEX", "MEX_I_NodeID31").
++SetLink("UAL_I_NodeID0", "NodeID0_I_UAL").
++SetLink("NodeID0_I_ITESM", "ITESM_I_NodeID0").
++SetLink("NodeID0_I_MTY", "MTY_I_NodeID0").
++SetLink("NodeID0_I_UANL", "UANL_I_NodeID0").
++SetLink("UDLAP_I_INANDO", "INANDO_I_UDLAP").
++SetLink("LANIA_I_UV", "UV_I_LANIA").
++SetLink("VPN_I_OCSE_", "OCSE__I_VPN").
++SetLink("VPN_I_Ucol", "Ucol_I_VPN").
++SetLink("VPN_I_UniSod_", "UniSod__I_VPN").
++SetLink("VPN_I_MEX", "MEX_I_VPN").
++SetLink("CUDI_I_UNAM", "UNAM_I_CUDI").
++SetLink("__I_UNAM", "UNAM_I__").
++SetLink("UDG_I_GDL", "GDL_I_UDG").
++SetLink("_ID50_I_UABC", "UABC_I__ID50").
++SetLink("MTY_I_GDL", "GDL_I_MTY").
++SetLink("MTY_I_Cd_J", "Cd_J_I_MTY").
++SetLink("MTY_I_MEX", "MEX_I_MTY").
++SetLink("IMP_I_UNAM", "UNAM_I_IMP").
++SetLink("CP_I_UNAM", "UNAM_I_CP").
++SetLink("UP_I_UNAM", "UNAM_I_UP").
++SetLink("CO__I____", "____I_CO_").
++SetLink("UASLP_I_UNAM", "UNAM_I_UASLP").
++SetLink("UNAM_I_MEX", "MEX_I_UNAM").
++SetLink("UNAM_I_TAMU", "TAMU_I_UNAM").
++SetLink("GDL_I_MEX", "MEX_I_GDL").
+
+
++SetNetwork("ITE", "N_ITE").
++SetNetwork("CO_", "N_CO_").
++SetNetwork("Cd_J", "N_Cd_J").
++SetNetwork("CUDI", "N_CUDI").
++SetNetwork("UDLAP", "N_UDLAP").
++SetNetwork("TU", "N_TU").
++SetNetwork("GDL", "N_GDL").
++SetNetwork("OCSE_", "N_OCSE_").
++SetNetwork("UNAM", "N_UNAM").
++SetNetwork("NodeID31", "N_NodeID31").

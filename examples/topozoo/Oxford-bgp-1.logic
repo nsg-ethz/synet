@@ -1,0 +1,182 @@
++SetNode("Bethel").
++SetAdminDist("Bethel", "static", 1).
++SetAdminDist("Bethel", "bgp", 2).
++SetAdminDist("Bethel", "ospf", 3).
++SetInterface("Bethel", "Bethel_I_Turner").
++SetInterface("Bethel", "Bethel_I_Norway").
+
++SetNode("Portsmouth").
++SetAdminDist("Portsmouth", "static", 1).
++SetAdminDist("Portsmouth", "bgp", 2).
++SetAdminDist("Portsmouth", "ospf", 3).
++SetInterface("Portsmouth", "Portsmouth_I_Portland").
++SetInterface("Portsmouth", "Portsmouth_I_Manchester").
++SetInterface("Portsmouth", "Portsmouth_I_Sanford").
+
++SetNode("Standish").
++SetAdminDist("Standish", "static", 1).
++SetAdminDist("Standish", "bgp", 2).
++SetAdminDist("Standish", "ospf", 3).
++SetInterface("Standish", "Standish_I_Portland").
++SetInterface("Standish", "Standish_I_Norway").
++SetInterface("Standish", "Standish_I_Buckfield").
+
++SetNode("Boston").
++SetAdminDist("Boston", "static", 1).
++SetAdminDist("Boston", "bgp", 2).
++SetAdminDist("Boston", "ospf", 3).
++SetInterface("Boston", "Boston_I_Manchester").
++SetInterface("Boston", "Boston_I_Framingham").
+
++SetNode("Keene").
++SetAdminDist("Keene", "static", 1).
++SetAdminDist("Keene", "bgp", 2).
++SetAdminDist("Keene", "ospf", 3).
++SetInterface("Keene", "Keene_I_Springfield").
++SetInterface("Keene", "Keene_I_Dover").
+
++SetNode("Sanford").
++SetAdminDist("Sanford", "static", 1).
++SetAdminDist("Sanford", "bgp", 2).
++SetAdminDist("Sanford", "ospf", 3).
++SetInterface("Sanford", "Sanford_I_Biddeford").
++SetInterface("Sanford", "Sanford_I_Portsmouth").
+
++SetNode("AugustaID19").
++SetAdminDist("AugustaID19", "static", 1).
++SetAdminDist("AugustaID19", "bgp", 2).
++SetAdminDist("AugustaID19", "ospf", 3).
++SetInterface("AugustaID19", "AugustaID19_I_Lewiston").
++SetInterface("AugustaID19", "AugustaID19_I_Bangor").
++SetInterface("AugustaID19", "AugustaID19_I_Augusta").
+
++SetNode("Augusta").
++SetAdminDist("Augusta", "static", 1).
++SetAdminDist("Augusta", "bgp", 2).
++SetAdminDist("Augusta", "ospf", 3).
++SetInterface("Augusta", "Augusta_I_Turner").
++SetInterface("Augusta", "Augusta_I_Lewiston").
++SetInterface("Augusta", "Augusta_I_Buckfield").
++SetInterface("Augusta", "Augusta_I_AugustaID19").
+
++SetNode("Biddeford").
++SetAdminDist("Biddeford", "static", 1).
++SetAdminDist("Biddeford", "bgp", 2).
++SetAdminDist("Biddeford", "ospf", 3).
++SetInterface("Biddeford", "Biddeford_I_Portland").
++SetInterface("Biddeford", "Biddeford_I_Sanford").
+
++SetNode("Buckfield").
++SetAdminDist("Buckfield", "static", 1).
++SetAdminDist("Buckfield", "bgp", 2).
++SetAdminDist("Buckfield", "ospf", 3).
++SetInterface("Buckfield", "Buckfield_I_Standish").
++SetInterface("Buckfield", "Buckfield_I_Norway").
++SetInterface("Buckfield", "Buckfield_I_Augusta").
+
++SetNode("Bangor").
++SetAdminDist("Bangor", "static", 1).
++SetAdminDist("Bangor", "bgp", 2).
++SetAdminDist("Bangor", "ospf", 3).
++SetInterface("Bangor", "Bangor_I_Lewiston").
++SetInterface("Bangor", "Bangor_I_AugustaID19").
+
++SetNode("Manchester").
++SetAdminDist("Manchester", "static", 1).
++SetAdminDist("Manchester", "bgp", 2).
++SetAdminDist("Manchester", "ospf", 3).
++SetInterface("Manchester", "Manchester_I_Boston").
++SetInterface("Manchester", "Manchester_I_Portsmouth").
+
++SetNode("Framingham").
++SetAdminDist("Framingham", "static", 1).
++SetAdminDist("Framingham", "bgp", 2).
++SetAdminDist("Framingham", "ospf", 3).
++SetInterface("Framingham", "Framingham_I_Boston").
++SetInterface("Framingham", "Framingham_I_Worcester").
+
++SetNode("Worcester").
++SetAdminDist("Worcester", "static", 1).
++SetAdminDist("Worcester", "bgp", 2).
++SetAdminDist("Worcester", "ospf", 3).
++SetInterface("Worcester", "Worcester_I_Springfield").
++SetInterface("Worcester", "Worcester_I_Framingham").
+
++SetNode("Turner").
++SetAdminDist("Turner", "static", 1).
++SetAdminDist("Turner", "bgp", 2).
++SetAdminDist("Turner", "ospf", 3).
++SetInterface("Turner", "Turner_I_Bethel").
++SetInterface("Turner", "Turner_I_Augusta").
+
++SetNode("Lewiston").
++SetAdminDist("Lewiston", "static", 1).
++SetAdminDist("Lewiston", "bgp", 2).
++SetAdminDist("Lewiston", "ospf", 3).
++SetInterface("Lewiston", "Lewiston_I_Portland").
++SetInterface("Lewiston", "Lewiston_I_Bangor").
++SetInterface("Lewiston", "Lewiston_I_AugustaID19").
++SetInterface("Lewiston", "Lewiston_I_Augusta").
+
++SetNode("Norway").
++SetAdminDist("Norway", "static", 1).
++SetAdminDist("Norway", "bgp", 2).
++SetAdminDist("Norway", "ospf", 3).
++SetInterface("Norway", "Norway_I_Standish").
++SetInterface("Norway", "Norway_I_Bethel").
++SetInterface("Norway", "Norway_I_Buckfield").
+
++SetNode("Portland").
++SetAdminDist("Portland", "static", 1).
++SetAdminDist("Portland", "bgp", 2).
++SetAdminDist("Portland", "ospf", 3).
++SetInterface("Portland", "Portland_I_Standish").
++SetInterface("Portland", "Portland_I_Biddeford").
++SetInterface("Portland", "Portland_I_Portsmouth").
++SetInterface("Portland", "Portland_I_Lewiston").
++SetInterface("Portland", "Portland_I_Dover").
+
++SetNode("Springfield").
++SetAdminDist("Springfield", "static", 1).
++SetAdminDist("Springfield", "bgp", 2).
++SetAdminDist("Springfield", "ospf", 3).
++SetInterface("Springfield", "Springfield_I_Worcester").
++SetInterface("Springfield", "Springfield_I_Keene").
+
++SetNode("Dover").
++SetAdminDist("Dover", "static", 1).
++SetAdminDist("Dover", "bgp", 2).
++SetAdminDist("Dover", "ospf", 3).
++SetInterface("Dover", "Dover_I_Portland").
++SetInterface("Dover", "Dover_I_Keene").
+
++SetLink("Bethel_I_Turner", "Turner_I_Bethel").
++SetLink("Bethel_I_Norway", "Norway_I_Bethel").
++SetLink("Portsmouth_I_Portland", "Portland_I_Portsmouth").
++SetLink("Portsmouth_I_Manchester", "Manchester_I_Portsmouth").
++SetLink("Portsmouth_I_Sanford", "Sanford_I_Portsmouth").
++SetLink("Standish_I_Portland", "Portland_I_Standish").
++SetLink("Standish_I_Norway", "Norway_I_Standish").
++SetLink("Standish_I_Buckfield", "Buckfield_I_Standish").
++SetLink("Boston_I_Manchester", "Manchester_I_Boston").
++SetLink("Boston_I_Framingham", "Framingham_I_Boston").
++SetLink("Keene_I_Springfield", "Springfield_I_Keene").
++SetLink("Keene_I_Dover", "Dover_I_Keene").
++SetLink("Sanford_I_Biddeford", "Biddeford_I_Sanford").
++SetLink("AugustaID19_I_Lewiston", "Lewiston_I_AugustaID19").
++SetLink("AugustaID19_I_Bangor", "Bangor_I_AugustaID19").
++SetLink("AugustaID19_I_Augusta", "Augusta_I_AugustaID19").
++SetLink("Augusta_I_Turner", "Turner_I_Augusta").
++SetLink("Augusta_I_Lewiston", "Lewiston_I_Augusta").
++SetLink("Augusta_I_Buckfield", "Buckfield_I_Augusta").
++SetLink("Biddeford_I_Portland", "Portland_I_Biddeford").
++SetLink("Buckfield_I_Norway", "Norway_I_Buckfield").
++SetLink("Bangor_I_Lewiston", "Lewiston_I_Bangor").
++SetLink("Framingham_I_Worcester", "Worcester_I_Framingham").
++SetLink("Worcester_I_Springfield", "Springfield_I_Worcester").
++SetLink("Lewiston_I_Portland", "Portland_I_Lewiston").
++SetLink("Portland_I_Dover", "Dover_I_Portland").
+
+
++SetNetwork("Buckfield", "N_Buckfield").
++SetBGPAnnouncement("Buckfield", "N_Buckfield", "NBGP_Buckfield", "1;2;3", 3).

@@ -1,0 +1,36 @@
+
++Fwd("N_Helsinki", "EUROPE", "Stockholm", "static").
++Fwd("N_Helsinki", "Stockholm", "Helsinki", "static").
++Fwd("N_Helsinki", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Helsinki", "Copenhagen", "Stockholm", "static").
++Fwd("N_Helsinki", "USA", "Stockholm", "static").
++Fwd("N_Helsinki", "Trondheim", "Stockholm", "static").
+
++Fwd("N_Trondheim", "EUROPE", "Stockholm", "static").
++Fwd("N_Trondheim", "Stockholm", "Trondheim", "static").
++Fwd("N_Trondheim", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Trondheim", "Copenhagen", "Stockholm", "static").
++Fwd("N_Trondheim", "USA", "Stockholm", "static").
++Fwd("N_Trondheim", "Helsinki", "Stockholm", "static").
+
++Fwd("N_Copenhagen", "EUROPE", "Stockholm", "static").
++Fwd("N_Copenhagen", "Stockholm", "Copenhagen", "static").
++Fwd("N_Copenhagen", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Copenhagen", "USA", "Stockholm", "static").
++Fwd("N_Copenhagen", "Helsinki", "Stockholm", "static").
++Fwd("N_Copenhagen", "Trondheim", "Stockholm", "static").
+
++Fwd("N_Stockholm", "EUROPE", "Stockholm", "static").
++Fwd("N_Stockholm", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Stockholm", "Copenhagen", "Stockholm", "static").
++Fwd("N_Stockholm", "USA", "Stockholm", "static").
++Fwd("N_Stockholm", "Helsinki", "Stockholm", "static").
++Fwd("N_Stockholm", "Trondheim", "Stockholm", "static").
+
++Fwd("N_EUROPE", "Reykjavik", "Copenhagen", "static").
++Fwd("N_EUROPE", "Copenhagen", "Stockholm", "static").
++Fwd("N_EUROPE", "Stockholm", "EUROPE", "static").
++Fwd("N_EUROPE", "USA", "Stockholm", "static").
++Fwd("N_EUROPE", "Helsinki", "Stockholm", "static").
++Fwd("N_EUROPE", "Trondheim", "Stockholm", "static").
+

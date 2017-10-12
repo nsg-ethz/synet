@@ -1,0 +1,19 @@
+
++Fwd("N_Stanford", "CASE", "Lincoln", "ospf").
++Fwd("N_Stanford", "Lincoln", "MIT", "ospf").
++Fwd("N_Stanford", "MIT", "BBN", "ospf").
++Fwd("N_Stanford", "BBN", "BBNID9", "ospf").
++Fwd("N_Stanford", "BBNID9", "RAND", "ospf").
++Fwd("N_Stanford", "RAND", "UCLA", "ospf").
++Fwd("N_Stanford", "UCLA", "Stanford", "ospf").
++Fwd("N_Stanford", "HARVARD", "BBNID9", "ospf").
++Fwd("N_Stanford", "SRI", "UCLA", "ospf").
++Fwd("N_Stanford", "UTAH", "SRI", "ospf").
++Fwd("N_Stanford", "CARNEGIE", "CASE", "ospf").
++Fwd("N_Stanford", "ILLINOIS", "UTAH", "ospf").
++Fwd("N_Stanford", "BURROUGHS", "HARVARD", "ospf").
++Fwd("N_Stanford", "UCSB", "SRI", "ospf").
++Fwd("N_Stanford", "SDC", "RAND", "ospf").
++Fwd("N_Stanford", "MITRE", "BURROUGHS", "ospf").
++Fwd("N_Stanford", "AMES", "Stanford", "ospf").
+

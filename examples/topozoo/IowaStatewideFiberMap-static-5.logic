@@ -1,0 +1,295 @@
++SetNode("CedarTTRapids").
++SetAdminDist("CedarTTRapids", "static", 1).
++SetAdminDist("CedarTTRapids", "bgp", 2).
++SetAdminDist("CedarTTRapids", "ospf", 3).
++SetInterface("CedarTTRapids", "CedarTTRapids_I_Grinnell").
++SetInterface("CedarTTRapids", "CedarTTRapids_I_Davenport").
++SetInterface("CedarTTRapids", "CedarTTRapids_I_Waterloo").
++SetInterface("CedarTTRapids", "CedarTTRapids_I_IowaTTCity").
+
++SetNode("SiouxTTCity").
++SetAdminDist("SiouxTTCity", "static", 1).
++SetAdminDist("SiouxTTCity", "bgp", 2).
++SetAdminDist("SiouxTTCity", "ospf", 3).
++SetInterface("SiouxTTCity", "SiouxTTCity_I_NodeID10").
++SetInterface("SiouxTTCity", "SiouxTTCity_I_NodeID11").
++SetInterface("SiouxTTCity", "SiouxTTCity_I_Harlan").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Davenport").
+
++SetNode("Oskaloosa").
++SetAdminDist("Oskaloosa", "static", 1).
++SetAdminDist("Oskaloosa", "bgp", 2).
++SetAdminDist("Oskaloosa", "ospf", 3).
++SetInterface("Oskaloosa", "Oskaloosa_I_Grinnell").
++SetInterface("Oskaloosa", "Oskaloosa_I_Ottumwa").
+
++SetNode("Fairfield").
++SetAdminDist("Fairfield", "static", 1).
++SetAdminDist("Fairfield", "bgp", 2).
++SetAdminDist("Fairfield", "ospf", 3).
++SetInterface("Fairfield", "Fairfield_I_Mt_TTPleasant").
++SetInterface("Fairfield", "Fairfield_I_Bloomfield").
+
++SetNode("Dubuque").
++SetAdminDist("Dubuque", "static", 1).
++SetAdminDist("Dubuque", "bgp", 2).
++SetAdminDist("Dubuque", "ospf", 3).
++SetInterface("Dubuque", "Dubuque_I_Davenport").
+
++SetNode("Marshalltown").
++SetAdminDist("Marshalltown", "static", 1).
++SetAdminDist("Marshalltown", "bgp", 2).
++SetAdminDist("Marshalltown", "ospf", 3).
++SetInterface("Marshalltown", "Marshalltown_I_NodeID12").
++SetInterface("Marshalltown", "Marshalltown_I_Newton").
+
++SetNode("MasonTTCity").
++SetAdminDist("MasonTTCity", "static", 1).
++SetAdminDist("MasonTTCity", "bgp", 2).
++SetAdminDist("MasonTTCity", "ospf", 3).
++SetInterface("MasonTTCity", "MasonTTCity_I_NodeID12").
++SetInterface("MasonTTCity", "MasonTTCity_I_Waterloo").
++SetInterface("MasonTTCity", "MasonTTCity_I_Minneapolis").
+
++SetNode("Omaha").
++SetAdminDist("Omaha", "static", 1).
++SetAdminDist("Omaha", "bgp", 2).
++SetAdminDist("Omaha", "ospf", 3).
++SetInterface("Omaha", "Omaha_I_Harlan").
++SetInterface("Omaha", "Omaha_I_KansasTTCity").
++SetInterface("Omaha", "Omaha_I_Stanton").
+
++SetNode("DesTTMoines").
++SetAdminDist("DesTTMoines", "static", 1).
++SetAdminDist("DesTTMoines", "bgp", 2).
++SetAdminDist("DesTTMoines", "ospf", 3).
++SetInterface("DesTTMoines", "DesTTMoines_I_Ames").
++SetInterface("DesTTMoines", "DesTTMoines_I_Newton").
++SetInterface("DesTTMoines", "DesTTMoines_I_Harlan").
++SetInterface("DesTTMoines", "DesTTMoines_I_Osceola").
+
++SetNode("Creston").
++SetAdminDist("Creston", "static", 1).
++SetAdminDist("Creston", "bgp", 2).
++SetAdminDist("Creston", "ospf", 3).
++SetInterface("Creston", "Creston_I_Stanton").
++SetInterface("Creston", "Creston_I_Osceola").
+
++SetNode("Clarinda").
++SetAdminDist("Clarinda", "static", 1).
++SetAdminDist("Clarinda", "bgp", 2).
++SetAdminDist("Clarinda", "ospf", 3).
++SetInterface("Clarinda", "Clarinda_I_Stanton").
+
++SetNode("Stanton").
++SetAdminDist("Stanton", "static", 1).
++SetAdminDist("Stanton", "bgp", 2).
++SetAdminDist("Stanton", "ospf", 3).
++SetInterface("Stanton", "Stanton_I_Clarinda").
++SetInterface("Stanton", "Stanton_I_Harlan").
++SetInterface("Stanton", "Stanton_I_Omaha").
++SetInterface("Stanton", "Stanton_I_Creston").
+
++SetNode("FtTTDodge").
++SetAdminDist("FtTTDodge", "static", 1).
++SetAdminDist("FtTTDodge", "bgp", 2).
++SetAdminDist("FtTTDodge", "ospf", 3).
++SetInterface("FtTTDodge", "FtTTDodge_I_NodeID11").
++SetInterface("FtTTDodge", "FtTTDodge_I_NodeID12").
+
++SetNode("IowaTTCity").
++SetAdminDist("IowaTTCity", "static", 1).
++SetAdminDist("IowaTTCity", "bgp", 2).
++SetAdminDist("IowaTTCity", "ospf", 3).
++SetInterface("IowaTTCity", "IowaTTCity_I_CedarTTRapids").
++SetInterface("IowaTTCity", "IowaTTCity_I_Davenport").
+
++SetNode("NodeID10").
++SetAdminDist("NodeID10", "static", 1).
++SetAdminDist("NodeID10", "bgp", 2).
++SetAdminDist("NodeID10", "ospf", 3).
++SetInterface("NodeID10", "NodeID10_I_SiouxTTCity").
++SetInterface("NodeID10", "NodeID10_I_Spencer").
++SetInterface("NodeID10", "NodeID10_I_SiouxTTFalls").
+
++SetNode("NodeID11").
++SetAdminDist("NodeID11", "static", 1).
++SetAdminDist("NodeID11", "bgp", 2).
++SetAdminDist("NodeID11", "ospf", 3).
++SetInterface("NodeID11", "NodeID11_I_SiouxTTCity").
++SetInterface("NodeID11", "NodeID11_I_Spencer").
++SetInterface("NodeID11", "NodeID11_I_FtTTDodge").
+
++SetNode("NodeID12").
++SetAdminDist("NodeID12", "static", 1).
++SetAdminDist("NodeID12", "bgp", 2).
++SetAdminDist("NodeID12", "ospf", 3).
++SetInterface("NodeID12", "NodeID12_I_MasonTTCity").
++SetInterface("NodeID12", "NodeID12_I_Ames").
++SetInterface("NodeID12", "NodeID12_I_FtTTDodge").
++SetInterface("NodeID12", "NodeID12_I_Marshalltown").
+
++SetNode("SiouxTTFalls").
++SetAdminDist("SiouxTTFalls", "static", 1).
++SetAdminDist("SiouxTTFalls", "bgp", 2).
++SetAdminDist("SiouxTTFalls", "ospf", 3).
++SetInterface("SiouxTTFalls", "SiouxTTFalls_I_NodeID10").
+
++SetNode("Ames").
++SetAdminDist("Ames", "static", 1).
++SetAdminDist("Ames", "bgp", 2).
++SetAdminDist("Ames", "ospf", 3).
++SetInterface("Ames", "Ames_I_NodeID12").
++SetInterface("Ames", "Ames_I_DesTTMoines").
+
++SetNode("Waterloo").
++SetAdminDist("Waterloo", "static", 1).
++SetAdminDist("Waterloo", "bgp", 2).
++SetAdminDist("Waterloo", "ospf", 3).
++SetInterface("Waterloo", "Waterloo_I_MasonTTCity").
++SetInterface("Waterloo", "Waterloo_I_CedarTTRapids").
+
++SetNode("Osceola").
++SetAdminDist("Osceola", "static", 1).
++SetAdminDist("Osceola", "bgp", 2).
++SetAdminDist("Osceola", "ospf", 3).
++SetInterface("Osceola", "Osceola_I_Bloomfield").
++SetInterface("Osceola", "Osceola_I_DesTTMoines").
++SetInterface("Osceola", "Osceola_I_Creston").
+
++SetNode("Harlan").
++SetAdminDist("Harlan", "static", 1).
++SetAdminDist("Harlan", "bgp", 2).
++SetAdminDist("Harlan", "ospf", 3).
++SetInterface("Harlan", "Harlan_I_SiouxTTCity").
++SetInterface("Harlan", "Harlan_I_Stanton").
++SetInterface("Harlan", "Harlan_I_Omaha").
++SetInterface("Harlan", "Harlan_I_DesTTMoines").
+
++SetNode("Davenport").
++SetAdminDist("Davenport", "static", 1).
++SetAdminDist("Davenport", "bgp", 2).
++SetAdminDist("Davenport", "ospf", 3).
++SetInterface("Davenport", "Davenport_I_CedarTTRapids").
++SetInterface("Davenport", "Davenport_I_Chicago").
++SetInterface("Davenport", "Davenport_I_Dubuque").
++SetInterface("Davenport", "Davenport_I_Muscatine").
++SetInterface("Davenport", "Davenport_I_IowaTTCity").
+
++SetNode("Spencer").
++SetAdminDist("Spencer", "static", 1).
++SetAdminDist("Spencer", "bgp", 2).
++SetAdminDist("Spencer", "ospf", 3).
++SetInterface("Spencer", "Spencer_I_NodeID10").
++SetInterface("Spencer", "Spencer_I_NodeID11").
+
++SetNode("Ottumwa").
++SetAdminDist("Ottumwa", "static", 1).
++SetAdminDist("Ottumwa", "bgp", 2).
++SetAdminDist("Ottumwa", "ospf", 3).
++SetInterface("Ottumwa", "Ottumwa_I_Bloomfield").
++SetInterface("Ottumwa", "Ottumwa_I_Oskaloosa").
+
++SetNode("KansasTTCity").
++SetAdminDist("KansasTTCity", "static", 1).
++SetAdminDist("KansasTTCity", "bgp", 2).
++SetAdminDist("KansasTTCity", "ospf", 3).
++SetInterface("KansasTTCity", "KansasTTCity_I_Omaha").
+
++SetNode("Mt_TTPleasant").
++SetAdminDist("Mt_TTPleasant", "static", 1).
++SetAdminDist("Mt_TTPleasant", "bgp", 2).
++SetAdminDist("Mt_TTPleasant", "ospf", 3).
++SetInterface("Mt_TTPleasant", "Mt_TTPleasant_I_Muscatine").
++SetInterface("Mt_TTPleasant", "Mt_TTPleasant_I_Fairfield").
+
++SetNode("Newton").
++SetAdminDist("Newton", "static", 1).
++SetAdminDist("Newton", "bgp", 2).
++SetAdminDist("Newton", "ospf", 3).
++SetInterface("Newton", "Newton_I_DesTTMoines").
++SetInterface("Newton", "Newton_I_Marshalltown").
++SetInterface("Newton", "Newton_I_Grinnell").
+
++SetNode("Bloomfield").
++SetAdminDist("Bloomfield", "static", 1).
++SetAdminDist("Bloomfield", "bgp", 2).
++SetAdminDist("Bloomfield", "ospf", 3).
++SetInterface("Bloomfield", "Bloomfield_I_Osceola").
++SetInterface("Bloomfield", "Bloomfield_I_Ottumwa").
++SetInterface("Bloomfield", "Bloomfield_I_Fairfield").
+
++SetNode("Minneapolis").
++SetAdminDist("Minneapolis", "static", 1).
++SetAdminDist("Minneapolis", "bgp", 2).
++SetAdminDist("Minneapolis", "ospf", 3).
++SetInterface("Minneapolis", "Minneapolis_I_MasonTTCity").
+
++SetNode("Grinnell").
++SetAdminDist("Grinnell", "static", 1).
++SetAdminDist("Grinnell", "bgp", 2).
++SetAdminDist("Grinnell", "ospf", 3).
++SetInterface("Grinnell", "Grinnell_I_CedarTTRapids").
++SetInterface("Grinnell", "Grinnell_I_Newton").
++SetInterface("Grinnell", "Grinnell_I_Oskaloosa").
+
++SetNode("Muscatine").
++SetAdminDist("Muscatine", "static", 1).
++SetAdminDist("Muscatine", "bgp", 2).
++SetAdminDist("Muscatine", "ospf", 3).
++SetInterface("Muscatine", "Muscatine_I_Mt_TTPleasant").
++SetInterface("Muscatine", "Muscatine_I_Davenport").
+
++SetLink("CedarTTRapids_I_Grinnell", "Grinnell_I_CedarTTRapids").
++SetLink("CedarTTRapids_I_Davenport", "Davenport_I_CedarTTRapids").
++SetLink("CedarTTRapids_I_Waterloo", "Waterloo_I_CedarTTRapids").
++SetLink("CedarTTRapids_I_IowaTTCity", "IowaTTCity_I_CedarTTRapids").
++SetLink("SiouxTTCity_I_NodeID10", "NodeID10_I_SiouxTTCity").
++SetLink("SiouxTTCity_I_NodeID11", "NodeID11_I_SiouxTTCity").
++SetLink("SiouxTTCity_I_Harlan", "Harlan_I_SiouxTTCity").
++SetLink("Chicago_I_Davenport", "Davenport_I_Chicago").
++SetLink("Oskaloosa_I_Grinnell", "Grinnell_I_Oskaloosa").
++SetLink("Oskaloosa_I_Ottumwa", "Ottumwa_I_Oskaloosa").
++SetLink("Fairfield_I_Mt_TTPleasant", "Mt_TTPleasant_I_Fairfield").
++SetLink("Fairfield_I_Bloomfield", "Bloomfield_I_Fairfield").
++SetLink("Dubuque_I_Davenport", "Davenport_I_Dubuque").
++SetLink("Marshalltown_I_NodeID12", "NodeID12_I_Marshalltown").
++SetLink("Marshalltown_I_Newton", "Newton_I_Marshalltown").
++SetLink("MasonTTCity_I_NodeID12", "NodeID12_I_MasonTTCity").
++SetLink("MasonTTCity_I_Waterloo", "Waterloo_I_MasonTTCity").
++SetLink("MasonTTCity_I_Minneapolis", "Minneapolis_I_MasonTTCity").
++SetLink("Omaha_I_Harlan", "Harlan_I_Omaha").
++SetLink("Omaha_I_KansasTTCity", "KansasTTCity_I_Omaha").
++SetLink("Omaha_I_Stanton", "Stanton_I_Omaha").
++SetLink("DesTTMoines_I_Ames", "Ames_I_DesTTMoines").
++SetLink("DesTTMoines_I_Newton", "Newton_I_DesTTMoines").
++SetLink("DesTTMoines_I_Harlan", "Harlan_I_DesTTMoines").
++SetLink("DesTTMoines_I_Osceola", "Osceola_I_DesTTMoines").
++SetLink("Creston_I_Stanton", "Stanton_I_Creston").
++SetLink("Creston_I_Osceola", "Osceola_I_Creston").
++SetLink("Clarinda_I_Stanton", "Stanton_I_Clarinda").
++SetLink("Stanton_I_Harlan", "Harlan_I_Stanton").
++SetLink("FtTTDodge_I_NodeID11", "NodeID11_I_FtTTDodge").
++SetLink("FtTTDodge_I_NodeID12", "NodeID12_I_FtTTDodge").
++SetLink("IowaTTCity_I_Davenport", "Davenport_I_IowaTTCity").
++SetLink("NodeID10_I_Spencer", "Spencer_I_NodeID10").
++SetLink("NodeID10_I_SiouxTTFalls", "SiouxTTFalls_I_NodeID10").
++SetLink("NodeID11_I_Spencer", "Spencer_I_NodeID11").
++SetLink("NodeID12_I_Ames", "Ames_I_NodeID12").
++SetLink("Osceola_I_Bloomfield", "Bloomfield_I_Osceola").
++SetLink("Davenport_I_Muscatine", "Muscatine_I_Davenport").
++SetLink("Ottumwa_I_Bloomfield", "Bloomfield_I_Ottumwa").
++SetLink("Mt_TTPleasant_I_Muscatine", "Muscatine_I_Mt_TTPleasant").
++SetLink("Newton_I_Grinnell", "Grinnell_I_Newton").
+
+
++SetNetwork("DesTTMoines", "N_DesTTMoines").
++SetNetwork("Mt_TTPleasant", "N_Mt_TTPleasant").
++SetNetwork("Grinnell", "N_Grinnell").
++SetNetwork("Creston", "N_Creston").
++SetNetwork("Minneapolis", "N_Minneapolis").

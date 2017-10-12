@@ -1,0 +1,21 @@
+
++Fwd("N_Sacramento", "SydneyTT1", "SydneyTT2", "static").
++Fwd("N_Sacramento", "SydneyTT2", "AucklandTT2", "static").
++Fwd("N_Sacramento", "AucklandTT2", "AucklandTT1", "static").
++Fwd("N_Sacramento", "AucklandTT1", "HawaiiTT2", "static").
++Fwd("N_Sacramento", "HawaiiTT2", "LosTTAngeles", "static").
++Fwd("N_Sacramento", "LosTTAngeles", "Sacramento", "static").
++Fwd("N_Sacramento", "Singapore_Malaysia", "Guam", "static").
++Fwd("N_Sacramento", "Guam", "Japan", "static").
++Fwd("N_Sacramento", "Japan", "Sacramento", "static").
++Fwd("N_Sacramento", "Korea", "Japan", "static").
++Fwd("N_Sacramento", "HongTTKong", "Japan", "static").
++Fwd("N_Sacramento", "PhilippinesTT1", "Guam", "static").
++Fwd("N_Sacramento", "HawaiiTT1", "Sacramento", "static").
++Fwd("N_Sacramento", "PhilippinesTT2", "HongTTKong", "static").
++Fwd("N_Sacramento", "Melbourne", "SydneyTT1", "static").
++Fwd("N_Sacramento", "Perth", "Singapore_Malaysia", "static").
++Fwd("N_Sacramento", "Thailand", "Singapore_Malaysia", "static").
++Fwd("N_Sacramento", "Fiji", "HawaiiTT1", "static").
++Fwd("N_Sacramento", "Taiwan", "HongTTKong", "static").
+

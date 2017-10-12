@@ -1,0 +1,8 @@
+
++Fwd("N_Stockholm", "EUROPE", "Stockholm", "static").
++Fwd("N_Stockholm", "Reykjavik", "Copenhagen", "static").
++Fwd("N_Stockholm", "Copenhagen", "Stockholm", "static").
++Fwd("N_Stockholm", "USA", "Stockholm", "static").
++Fwd("N_Stockholm", "Helsinki", "Stockholm", "static").
++Fwd("N_Stockholm", "Trondheim", "Stockholm", "static").
+

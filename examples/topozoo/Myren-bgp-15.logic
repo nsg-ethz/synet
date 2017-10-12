@@ -1,0 +1,334 @@
++SetNode("UMT").
++SetAdminDist("UMT", "static", 1).
++SetAdminDist("UMT", "bgp", 2).
++SetAdminDist("UMT", "ospf", 3).
++SetInterface("UMT", "UMT_I_EastTTCoastTTPoPTT_UMP_").
+
++SetNode("UMP").
++SetAdminDist("UMP", "static", 1).
++SetAdminDist("UMP", "bgp", 2).
++SetAdminDist("UMP", "ospf", 3).
++SetInterface("UMP", "UMP_I_EastTTCoastTTPoPTT_UMP_").
+
++SetNode("UMS").
++SetAdminDist("UMS", "static", 1).
++SetAdminDist("UMS", "bgp", 2).
++SetAdminDist("UMS", "ospf", 3).
++SetInterface("UMS", "UMS_I_KLTTPoPTT_UM_").
+
++SetNode("UPNIM").
++SetAdminDist("UPNIM", "static", 1).
++SetAdminDist("UPNIM", "bgp", 2).
++SetAdminDist("UPNIM", "ospf", 3).
++SetInterface("UPNIM", "UPNIM_I_KLTTPoPTT_UM_").
+
++SetNode("USM").
++SetAdminDist("USM", "static", 1).
++SetAdminDist("USM", "bgp", 2).
++SetAdminDist("USM", "ospf", 3).
++SetInterface("USM", "USM_I_NorthTTPoPTT_USM_").
+
++SetNode("UNIMAS").
++SetAdminDist("UNIMAS", "static", 1).
++SetAdminDist("UNIMAS", "bgp", 2).
++SetAdminDist("UNIMAS", "ospf", 3).
++SetInterface("UNIMAS", "UNIMAS_I_KLTTPoPTT_UM_").
+
++SetNode("UniMAP").
++SetAdminDist("UniMAP", "static", 1).
++SetAdminDist("UniMAP", "bgp", 2).
++SetAdminDist("UniMAP", "ospf", 3).
++SetInterface("UniMAP", "UniMAP_I_NorthTTPoPTT_USM_").
+
++SetNode("UKM").
++SetAdminDist("UKM", "static", 1).
++SetAdminDist("UKM", "bgp", 2).
++SetAdminDist("UKM", "ospf", 3).
++SetInterface("UKM", "UKM_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("MonashTTMalaysia").
++SetAdminDist("MonashTTMalaysia", "static", 1).
++SetAdminDist("MonashTTMalaysia", "bgp", 2).
++SetAdminDist("MonashTTMalaysia", "ospf", 3).
++SetInterface("MonashTTMalaysia", "MonashTTMalaysia_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("MIMOS").
++SetAdminDist("MIMOS", "static", 1).
++SetAdminDist("MIMOS", "bgp", 2).
++SetAdminDist("MIMOS", "ospf", 3).
++SetInterface("MIMOS", "MIMOS_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("UMK").
++SetAdminDist("UMK", "static", 1).
++SetAdminDist("UMK", "bgp", 2).
++SetAdminDist("UMK", "ospf", 3).
++SetInterface("UMK", "UMK_I_EastTTCoastTTPoPTT_UMP_").
+
++SetNode("UM").
++SetAdminDist("UM", "static", 1).
++SetAdminDist("UM", "bgp", 2).
++SetAdminDist("UM", "ospf", 3).
++SetInterface("UM", "UM_I_KLTTPoPTT_UM_").
+
++SetNode("IUM").
++SetAdminDist("IUM", "static", 1).
++SetAdminDist("IUM", "bgp", 2).
++SetAdminDist("IUM", "ospf", 3).
++SetInterface("IUM", "IUM_I_KLTTPoPTT_UM_").
+
++SetNode("TMRnD").
++SetAdminDist("TMRnD", "static", 1).
++SetAdminDist("TMRnD", "bgp", 2).
++SetAdminDist("TMRnD", "ospf", 3).
++SetInterface("TMRnD", "TMRnD_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("CyberjayaTTPoPTT_NOC_").
++SetAdminDist("CyberjayaTTPoPTT_NOC_", "static", 1).
++SetAdminDist("CyberjayaTTPoPTT_NOC_", "bgp", 2).
++SetAdminDist("CyberjayaTTPoPTT_NOC_", "ospf", 3).
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_UPM").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_TMRnD").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_MMU").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_UNITEN").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_KLTTPoPTT_UM_").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_NorthTTPoPTT_USM_").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_USIM").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_NOC").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_SouthTTPoPTT_UTM_").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_MoHE").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_UKM").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_MonashTTMalaysia").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_EastTTCoastTTPoPTT_UMP_").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_NottinghamTTMalaysia").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_MIMOS").
++SetInterface("CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_BorderTTRouter").
+
++SetNode("USIM").
++SetAdminDist("USIM", "static", 1).
++SetAdminDist("USIM", "bgp", 2).
++SetAdminDist("USIM", "ospf", 3).
++SetInterface("USIM", "USIM_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("EastTTCoastTTPoPTT_UMP_").
++SetAdminDist("EastTTCoastTTPoPTT_UMP_", "static", 1).
++SetAdminDist("EastTTCoastTTPoPTT_UMP_", "bgp", 2).
++SetAdminDist("EastTTCoastTTPoPTT_UMP_", "ospf", 3).
++SetInterface("EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UMT").
++SetInterface("EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UMP").
++SetInterface("EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_CyberjayaTTPoPTT_NOC_").
++SetInterface("EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_KLTTPoPTT_UM_").
++SetInterface("EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UMK").
++SetInterface("EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UDM").
+
++SetNode("KLTTPoPTT_UM_").
++SetAdminDist("KLTTPoPTT_UM_", "static", 1).
++SetAdminDist("KLTTPoPTT_UM_", "bgp", 2).
++SetAdminDist("KLTTPoPTT_UM_", "ospf", 3).
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_SouthTTPoPTT_UTM_").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_IUM").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UMS").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UPNIM").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_CyberjayaTTPoPTT_NOC_").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UiTM").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UNIMAS").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_NorthTTPoPTT_USM_").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UM").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UTP").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_EastTTCoastTTPoPTT_UMP_").
++SetInterface("KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UPSI").
+
++SetNode("BorderTTRouter").
++SetAdminDist("BorderTTRouter", "static", 1).
++SetAdminDist("BorderTTRouter", "bgp", 2).
++SetAdminDist("BorderTTRouter", "ospf", 3).
++SetInterface("BorderTTRouter", "BorderTTRouter_I_CyberjayaTTPoPTT_NOC_").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_TEIN3").
++SetInterface("BorderTTRouter", "BorderTTRouter_I_CommodityTTInternet").
+
++SetNode("UPM").
++SetAdminDist("UPM", "static", 1).
++SetAdminDist("UPM", "bgp", 2).
++SetAdminDist("UPM", "ospf", 3).
++SetInterface("UPM", "UPM_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("UiTM").
++SetAdminDist("UiTM", "static", 1).
++SetAdminDist("UiTM", "bgp", 2).
++SetAdminDist("UiTM", "ospf", 3).
++SetInterface("UiTM", "UiTM_I_KLTTPoPTT_UM_").
+
++SetNode("NorthTTPoPTT_USM_").
++SetAdminDist("NorthTTPoPTT_USM_", "static", 1).
++SetAdminDist("NorthTTPoPTT_USM_", "bgp", 2).
++SetAdminDist("NorthTTPoPTT_USM_", "ospf", 3).
++SetInterface("NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_UUM").
++SetInterface("NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_CyberjayaTTPoPTT_NOC_").
++SetInterface("NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_USM").
++SetInterface("NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_UniMAP").
++SetInterface("NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_KLTTPoPTT_UM_").
+
++SetNode("TEIN3").
++SetAdminDist("TEIN3", "static", 1).
++SetAdminDist("TEIN3", "bgp", 2).
++SetAdminDist("TEIN3", "ospf", 3).
++SetInterface("TEIN3", "TEIN3_I_BorderTTRouter").
+
++SetNode("UTM").
++SetAdminDist("UTM", "static", 1).
++SetAdminDist("UTM", "bgp", 2).
++SetAdminDist("UTM", "ospf", 3).
++SetInterface("UTM", "UTM_I_SouthTTPoPTT_UTM_").
+
++SetNode("SouthTTPoPTT_UTM_").
++SetAdminDist("SouthTTPoPTT_UTM_", "static", 1).
++SetAdminDist("SouthTTPoPTT_UTM_", "bgp", 2).
++SetAdminDist("SouthTTPoPTT_UTM_", "ospf", 3).
++SetInterface("SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_KLTTPoPTT_UM_").
++SetInterface("SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_CyberjayaTTPoPTT_NOC_").
++SetInterface("SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_UTHM").
++SetInterface("SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_UTeM").
++SetInterface("SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_UTM").
+
++SetNode("UTHM").
++SetAdminDist("UTHM", "static", 1).
++SetAdminDist("UTHM", "bgp", 2).
++SetAdminDist("UTHM", "ospf", 3).
++SetInterface("UTHM", "UTHM_I_SouthTTPoPTT_UTM_").
+
++SetNode("UPSI").
++SetAdminDist("UPSI", "static", 1).
++SetAdminDist("UPSI", "bgp", 2).
++SetAdminDist("UPSI", "ospf", 3).
++SetInterface("UPSI", "UPSI_I_KLTTPoPTT_UM_").
+
++SetNode("CommodityTTInternet").
++SetAdminDist("CommodityTTInternet", "static", 1).
++SetAdminDist("CommodityTTInternet", "bgp", 2).
++SetAdminDist("CommodityTTInternet", "ospf", 3).
++SetInterface("CommodityTTInternet", "CommodityTTInternet_I_BorderTTRouter").
+
++SetNode("UTeM").
++SetAdminDist("UTeM", "static", 1).
++SetAdminDist("UTeM", "bgp", 2).
++SetAdminDist("UTeM", "ospf", 3).
++SetInterface("UTeM", "UTeM_I_SouthTTPoPTT_UTM_").
+
++SetNode("MMU").
++SetAdminDist("MMU", "static", 1).
++SetAdminDist("MMU", "bgp", 2).
++SetAdminDist("MMU", "ospf", 3).
++SetInterface("MMU", "MMU_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("UNITEN").
++SetAdminDist("UNITEN", "static", 1).
++SetAdminDist("UNITEN", "bgp", 2).
++SetAdminDist("UNITEN", "ospf", 3).
++SetInterface("UNITEN", "UNITEN_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("UTP").
++SetAdminDist("UTP", "static", 1).
++SetAdminDist("UTP", "bgp", 2).
++SetAdminDist("UTP", "ospf", 3).
++SetInterface("UTP", "UTP_I_KLTTPoPTT_UM_").
+
++SetNode("NottinghamTTMalaysia").
++SetAdminDist("NottinghamTTMalaysia", "static", 1).
++SetAdminDist("NottinghamTTMalaysia", "bgp", 2).
++SetAdminDist("NottinghamTTMalaysia", "ospf", 3).
++SetInterface("NottinghamTTMalaysia", "NottinghamTTMalaysia_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("NOC").
++SetAdminDist("NOC", "static", 1).
++SetAdminDist("NOC", "bgp", 2).
++SetAdminDist("NOC", "ospf", 3).
++SetInterface("NOC", "NOC_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("UUM").
++SetAdminDist("UUM", "static", 1).
++SetAdminDist("UUM", "bgp", 2).
++SetAdminDist("UUM", "ospf", 3).
++SetInterface("UUM", "UUM_I_NorthTTPoPTT_USM_").
+
++SetNode("MoHE").
++SetAdminDist("MoHE", "static", 1).
++SetAdminDist("MoHE", "bgp", 2).
++SetAdminDist("MoHE", "ospf", 3).
++SetInterface("MoHE", "MoHE_I_CyberjayaTTPoPTT_NOC_").
+
++SetNode("UDM").
++SetAdminDist("UDM", "static", 1).
++SetAdminDist("UDM", "bgp", 2).
++SetAdminDist("UDM", "ospf", 3).
++SetInterface("UDM", "UDM_I_EastTTCoastTTPoPTT_UMP_").
+
++SetLink("UMT_I_EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UMT").
++SetLink("UMP_I_EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UMP").
++SetLink("UMS_I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UMS").
++SetLink("UPNIM_I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UPNIM").
++SetLink("USM_I_NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_USM").
++SetLink("UNIMAS_I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UNIMAS").
++SetLink("UniMAP_I_NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_UniMAP").
++SetLink("UKM_I_CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_UKM").
++SetLink("MonashTTMalaysia_I_CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_MonashTTMalaysia").
++SetLink("MIMOS_I_CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_MIMOS").
++SetLink("UMK_I_EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_UMK").
++SetLink("UM_I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_UM").
++SetLink("IUM_I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_IUM").
++SetLink("TMRnD_I_CyberjayaTTPoPTT_NOC_", "CyberjayaTTPoPTT_NOC__I_TMRnD").
++SetLink("CyberjayaTTPoPTT_NOC__I_UPM", "UPM_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_MMU", "MMU_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_UNITEN", "UNITEN_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_USIM", "USIM_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_NOC", "NOC_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_MoHE", "MoHE_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_EastTTCoastTTPoPTT_UMP_", "EastTTCoastTTPoPTT_UMP__I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_NottinghamTTMalaysia", "NottinghamTTMalaysia_I_CyberjayaTTPoPTT_NOC_").
++SetLink("CyberjayaTTPoPTT_NOC__I_BorderTTRouter", "BorderTTRouter_I_CyberjayaTTPoPTT_NOC_").
++SetLink("EastTTCoastTTPoPTT_UMP__I_KLTTPoPTT_UM_", "KLTTPoPTT_UM__I_EastTTCoastTTPoPTT_UMP_").
++SetLink("EastTTCoastTTPoPTT_UMP__I_UDM", "UDM_I_EastTTCoastTTPoPTT_UMP_").
++SetLink("KLTTPoPTT_UM__I_SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_KLTTPoPTT_UM_").
++SetLink("KLTTPoPTT_UM__I_UiTM", "UiTM_I_KLTTPoPTT_UM_").
++SetLink("KLTTPoPTT_UM__I_NorthTTPoPTT_USM_", "NorthTTPoPTT_USM__I_KLTTPoPTT_UM_").
++SetLink("KLTTPoPTT_UM__I_UTP", "UTP_I_KLTTPoPTT_UM_").
++SetLink("KLTTPoPTT_UM__I_UPSI", "UPSI_I_KLTTPoPTT_UM_").
++SetLink("BorderTTRouter_I_TEIN3", "TEIN3_I_BorderTTRouter").
++SetLink("BorderTTRouter_I_CommodityTTInternet", "CommodityTTInternet_I_BorderTTRouter").
++SetLink("NorthTTPoPTT_USM__I_UUM", "UUM_I_NorthTTPoPTT_USM_").
++SetLink("UTM_I_SouthTTPoPTT_UTM_", "SouthTTPoPTT_UTM__I_UTM").
++SetLink("SouthTTPoPTT_UTM__I_UTHM", "UTHM_I_SouthTTPoPTT_UTM_").
++SetLink("SouthTTPoPTT_UTM__I_UTeM", "UTeM_I_SouthTTPoPTT_UTM_").
+
+
++SetNetwork("UPNIM", "N_UPNIM").
++SetBGPAnnouncement("UPNIM", "N_UPNIM", "NBGP_UPNIM", "1;2;3", 3).
++SetNetwork("UTM", "N_UTM").
++SetBGPAnnouncement("UTM", "N_UTM", "NBGP_UTM", "1;2;3", 3).
++SetNetwork("UMK", "N_UMK").
++SetBGPAnnouncement("UMK", "N_UMK", "NBGP_UMK", "1;2;3", 3).
++SetNetwork("UTeM", "N_UTeM").
++SetBGPAnnouncement("UTeM", "N_UTeM", "NBGP_UTeM", "1;2;3", 3).
++SetNetwork("TMRnD", "N_TMRnD").
++SetBGPAnnouncement("TMRnD", "N_TMRnD", "NBGP_TMRnD", "1;2;3", 3).
++SetNetwork("USIM", "N_USIM").
++SetBGPAnnouncement("USIM", "N_USIM", "NBGP_USIM", "1;2;3", 3).
++SetNetwork("IUM", "N_IUM").
++SetBGPAnnouncement("IUM", "N_IUM", "NBGP_IUM", "1;2;3", 3).
++SetNetwork("MMU", "N_MMU").
++SetBGPAnnouncement("MMU", "N_MMU", "NBGP_MMU", "1;2;3", 3).
++SetNetwork("UM", "N_UM").
++SetBGPAnnouncement("UM", "N_UM", "NBGP_UM", "1;2;3", 3).
++SetNetwork("UPM", "N_UPM").
++SetBGPAnnouncement("UPM", "N_UPM", "NBGP_UPM", "1;2;3", 3).
++SetNetwork("EastTTCoastTTPoPTT_UMP_", "N_EastTTCoastTTPoPTT_UMP_").
++SetBGPAnnouncement("EastTTCoastTTPoPTT_UMP_", "N_EastTTCoastTTPoPTT_UMP_", "NBGP_EastTTCoastTTPoPTT_UMP_", "1;2;3", 3).
++SetNetwork("UUM", "N_UUM").
++SetBGPAnnouncement("UUM", "N_UUM", "NBGP_UUM", "1;2;3", 3).
++SetNetwork("SouthTTPoPTT_UTM_", "N_SouthTTPoPTT_UTM_").
++SetBGPAnnouncement("SouthTTPoPTT_UTM_", "N_SouthTTPoPTT_UTM_", "NBGP_SouthTTPoPTT_UTM_", "1;2;3", 3).
++SetNetwork("UTHM", "N_UTHM").
++SetBGPAnnouncement("UTHM", "N_UTHM", "NBGP_UTHM", "1;2;3", 3).
++SetNetwork("CommodityTTInternet", "N_CommodityTTInternet").
++SetBGPAnnouncement("CommodityTTInternet", "N_CommodityTTInternet", "NBGP_CommodityTTInternet", "1;2;3", 3).

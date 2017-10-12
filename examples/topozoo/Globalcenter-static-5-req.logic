@@ -1,0 +1,46 @@
+
++Fwd("N_Seattle", "Phoenix", "Seattle", "static").
++Fwd("N_Seattle", "Dallas", "Chicago", "static").
++Fwd("N_Seattle", "Chicago", "Seattle", "static").
++Fwd("N_Seattle", "Whippany", "Seattle", "static").
++Fwd("N_Seattle", "Minneapolis", "Seattle", "static").
++Fwd("N_Seattle", "Atlanta", "SanTTJose", "static").
++Fwd("N_Seattle", "SanTTJose", "Chicago", "static").
++Fwd("N_Seattle", "Vienna", "Chicago", "static").
+
++Fwd("N_SanTTJose", "Phoenix", "Whippany", "static").
++Fwd("N_SanTTJose", "Whippany", "Atlanta", "static").
++Fwd("N_SanTTJose", "Atlanta", "SanTTJose", "static").
++Fwd("N_SanTTJose", "Dallas", "Whippany", "static").
++Fwd("N_SanTTJose", "Chicago", "Seattle", "static").
++Fwd("N_SanTTJose", "Seattle", "Dallas", "static").
++Fwd("N_SanTTJose", "Minneapolis", "Whippany", "static").
++Fwd("N_SanTTJose", "Vienna", "Chicago", "static").
+
++Fwd("N_Atlanta", "Phoenix", "Whippany", "static").
++Fwd("N_Atlanta", "Whippany", "Atlanta", "static").
++Fwd("N_Atlanta", "Dallas", "Whippany", "static").
++Fwd("N_Atlanta", "Chicago", "Seattle", "static").
++Fwd("N_Atlanta", "Seattle", "Dallas", "static").
++Fwd("N_Atlanta", "Minneapolis", "Whippany", "static").
++Fwd("N_Atlanta", "SanTTJose", "Atlanta", "static").
++Fwd("N_Atlanta", "Vienna", "Chicago", "static").
+
++Fwd("N_Phoenix", "Dallas", "Chicago", "static").
++Fwd("N_Phoenix", "Chicago", "Phoenix", "static").
++Fwd("N_Phoenix", "Whippany", "Phoenix", "static").
++Fwd("N_Phoenix", "Minneapolis", "Vienna", "static").
++Fwd("N_Phoenix", "Vienna", "Phoenix", "static").
++Fwd("N_Phoenix", "Atlanta", "SanTTJose", "static").
++Fwd("N_Phoenix", "SanTTJose", "Chicago", "static").
++Fwd("N_Phoenix", "Seattle", "Dallas", "static").
+
++Fwd("N_Minneapolis", "Phoenix", "Whippany", "static").
++Fwd("N_Minneapolis", "Whippany", "Minneapolis", "static").
++Fwd("N_Minneapolis", "Dallas", "Chicago", "static").
++Fwd("N_Minneapolis", "Chicago", "Seattle", "static").
++Fwd("N_Minneapolis", "Seattle", "Minneapolis", "static").
++Fwd("N_Minneapolis", "Atlanta", "SanTTJose", "static").
++Fwd("N_Minneapolis", "SanTTJose", "Vienna", "static").
++Fwd("N_Minneapolis", "Vienna", "Minneapolis", "static").
+

@@ -1,0 +1,24 @@
+
++Fwd("N_BNIX", "Hasselt", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "BrusselTTIITTB", "BrusselTTITTA", "ospf").
++Fwd("N_BNIX", "BrusselTTITTA", "BNIX", "ospf").
++Fwd("N_BNIX", "LINX", "BrusselTTITTA", "ospf").
++Fwd("N_BNIX", "Liege", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Arlon", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "TheTTWorldwideTTInternet", "BrusselTTITTA", "ospf").
++Fwd("N_BNIX", "Korthijk", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Geel", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Brugge", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "BrusselTTIITTA", "BNIX", "ospf").
++Fwd("N_BNIX", "Namur", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Gent", "BrusselTTITTB", "ospf").
++Fwd("N_BNIX", "BrusselTTITTB", "Charleroi", "ospf").
++Fwd("N_BNIX", "Charleroi", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Mons", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Louvain_la_Neuve", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "AMS_IX", "BrusselTTITTA", "ospf").
++Fwd("N_BNIX", "Antwerpen", "BrusselTTIITTB", "ospf").
++Fwd("N_BNIX", "Leuven", "BrusselTTITTB", "ospf").
++Fwd("N_BNIX", "SFINX", "BrusselTTITTA", "ospf").
++Fwd("N_BNIX", "Geant2", "BrusselTTITTA", "ospf").
+

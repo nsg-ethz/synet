@@ -1,0 +1,12 @@
+
++Fwd("N_NoviTTSad", "Krusevac", "Podgorica", "ospf").
++Fwd("NBGP_NoviTTSad", "Krusevac", "Podgorica", "bgp").
++Fwd("N_NoviTTSad", "Podgorica", "NoviTTSad", "ospf").
++Fwd("NBGP_NoviTTSad", "Podgorica", "NoviTTSad", "bgp").
++Fwd("N_NoviTTSad", "Belgrade", "NoviTTSad", "ospf").
++Fwd("NBGP_NoviTTSad", "Belgrade", "NoviTTSad", "bgp").
++Fwd("N_NoviTTSad", "Nis", "Kragujevac", "ospf").
++Fwd("NBGP_NoviTTSad", "Nis", "Kragujevac", "bgp").
++Fwd("N_NoviTTSad", "Kragujevac", "Belgrade", "ospf").
++Fwd("NBGP_NoviTTSad", "Kragujevac", "Belgrade", "bgp").
+

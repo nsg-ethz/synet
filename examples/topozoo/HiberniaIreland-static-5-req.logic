@@ -1,0 +1,41 @@
+
++Fwd("N_Cork", "Galway", "Limerick", "static").
++Fwd("N_Cork", "Limerick", "Cork", "static").
++Fwd("N_Cork", "Portlaioise", "Limerick", "static").
++Fwd("N_Cork", "Dublin", "Waterford", "static").
++Fwd("N_Cork", "Waterford", "Cork", "static").
++Fwd("N_Cork", "NodeID6", "Dublin", "static").
++Fwd("N_Cork", "NodeID7", "Dublin", "static").
+
++Fwd("N_Portlaioise", "Galway", "Limerick", "static").
++Fwd("N_Portlaioise", "Limerick", "Portlaioise", "static").
++Fwd("N_Portlaioise", "Dublin", "Portlaioise", "static").
++Fwd("N_Portlaioise", "Cork", "Limerick", "static").
++Fwd("N_Portlaioise", "NodeID6", "Dublin", "static").
++Fwd("N_Portlaioise", "NodeID7", "Dublin", "static").
++Fwd("N_Portlaioise", "Waterford", "Dublin", "static").
+
++Fwd("N_NodeID7", "Galway", "Limerick", "static").
++Fwd("N_NodeID7", "Limerick", "Portlaioise", "static").
++Fwd("N_NodeID7", "Portlaioise", "Dublin", "static").
++Fwd("N_NodeID7", "Dublin", "NodeID7", "static").
++Fwd("N_NodeID7", "Cork", "Limerick", "static").
++Fwd("N_NodeID7", "NodeID6", "Dublin", "static").
++Fwd("N_NodeID7", "Waterford", "Dublin", "static").
+
++Fwd("N_Waterford", "Galway", "Limerick", "static").
++Fwd("N_Waterford", "Limerick", "Cork", "static").
++Fwd("N_Waterford", "Cork", "Waterford", "static").
++Fwd("N_Waterford", "Portlaioise", "Dublin", "static").
++Fwd("N_Waterford", "Dublin", "Waterford", "static").
++Fwd("N_Waterford", "NodeID6", "Dublin", "static").
++Fwd("N_Waterford", "NodeID7", "Dublin", "static").
+
++Fwd("N_NodeID6", "Galway", "Limerick", "static").
++Fwd("N_NodeID6", "Limerick", "Portlaioise", "static").
++Fwd("N_NodeID6", "Portlaioise", "Dublin", "static").
++Fwd("N_NodeID6", "Dublin", "NodeID6", "static").
++Fwd("N_NodeID6", "Cork", "Limerick", "static").
++Fwd("N_NodeID6", "NodeID7", "Dublin", "static").
++Fwd("N_NodeID6", "Waterford", "Dublin", "static").
+

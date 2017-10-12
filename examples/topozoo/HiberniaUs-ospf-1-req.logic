@@ -1,0 +1,23 @@
+
++Fwd("N_Atlanta", "Albany", "NewTTYork", "ospf").
++Fwd("N_Atlanta", "NewTTYork", "Newark", "ospf").
++Fwd("N_Atlanta", "Newark", "Ashburn", "ospf").
++Fwd("N_Atlanta", "Ashburn", "McLean", "ospf").
++Fwd("N_Atlanta", "McLean", "Richmond", "ospf").
++Fwd("N_Atlanta", "Richmond", "Raleigh", "ospf").
++Fwd("N_Atlanta", "Raleigh", "Charlotte", "ospf").
++Fwd("N_Atlanta", "Charlotte", "Atlanta", "ospf").
++Fwd("N_Atlanta", "Chicago", "Pittsburgh", "ospf").
++Fwd("N_Atlanta", "Pittsburgh", "Ashburn", "ospf").
++Fwd("N_Atlanta", "Philadelphia", "Ashburn", "ospf").
++Fwd("N_Atlanta", "NodeID11", "Halifax", "ospf").
++Fwd("N_Atlanta", "Halifax", "Montreal", "ospf").
++Fwd("N_Atlanta", "Montreal", "Toronto", "ospf").
++Fwd("N_Atlanta", "Toronto", "Buffalo", "ospf").
++Fwd("N_Atlanta", "Buffalo", "Cleveland", "ospf").
++Fwd("N_Atlanta", "Cleveland", "Pittsburgh", "ospf").
++Fwd("N_Atlanta", "NodeID10", "Halifax", "ospf").
++Fwd("N_Atlanta", "Boston", "Albany", "ospf").
++Fwd("N_Atlanta", "WhiteTTPlains", "Newark", "ospf").
++Fwd("N_Atlanta", "Stamford", "NewTTYork", "ospf").
+

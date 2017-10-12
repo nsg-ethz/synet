@@ -1,0 +1,288 @@
++SetNode("Rzeszow").
++SetAdminDist("Rzeszow", "static", 1).
++SetAdminDist("Rzeszow", "bgp", 2).
++SetAdminDist("Rzeszow", "ospf", 3).
++SetInterface("Rzeszow", "Rzeszow_I_Krakow").
++SetInterface("Rzeszow", "Rzeszow_I_Lublin").
+
++SetNode("Szczecin").
++SetAdminDist("Szczecin", "static", 1).
++SetAdminDist("Szczecin", "bgp", 2).
++SetAdminDist("Szczecin", "ospf", 3).
++SetInterface("Szczecin", "Szczecin_I_Kolobrzeg").
++SetInterface("Szczecin", "Szczecin_I_Pila").
+
++SetNode("Pila").
++SetAdminDist("Pila", "static", 1).
++SetAdminDist("Pila", "bgp", 2).
++SetAdminDist("Pila", "ospf", 3).
++SetInterface("Pila", "Pila_I_Poznan").
++SetInterface("Pila", "Pila_I_Szczecin").
++SetInterface("Pila", "Pila_I_Bydgoszcz").
+
++SetNode("GorzowTTWilkp").
++SetAdminDist("GorzowTTWilkp", "static", 1).
++SetAdminDist("GorzowTTWilkp", "bgp", 2).
++SetAdminDist("GorzowTTWilkp", "ospf", 3).
++SetInterface("GorzowTTWilkp", "GorzowTTWilkp_I_Poznan").
+
++SetNode("Kalisz").
++SetAdminDist("Kalisz", "static", 1).
++SetAdminDist("Kalisz", "bgp", 2).
++SetAdminDist("Kalisz", "ospf", 3).
++SetInterface("Kalisz", "Kalisz_I_Wroclaw").
++SetInterface("Kalisz", "Kalisz_I_Lodz").
++SetInterface("Kalisz", "Kalisz_I_Poznan").
+
++SetNode("Gdyia").
++SetAdminDist("Gdyia", "static", 1).
++SetAdminDist("Gdyia", "bgp", 2).
++SetAdminDist("Gdyia", "ospf", 3).
++SetInterface("Gdyia", "Gdyia_I_Gdansk").
++SetInterface("Gdyia", "Gdyia_I_Slupsk").
+
++SetNode("Slupsk").
++SetAdminDist("Slupsk", "static", 1).
++SetAdminDist("Slupsk", "bgp", 2).
++SetAdminDist("Slupsk", "ospf", 3).
++SetInterface("Slupsk", "Slupsk_I_Gdyia").
++SetInterface("Slupsk", "Slupsk_I_Koszalin").
+
++SetNode("NodeID10").
++SetAdminDist("NodeID10", "static", 1).
++SetAdminDist("NodeID10", "bgp", 2).
++SetAdminDist("NodeID10", "ospf", 3).
++SetInterface("NodeID10", "NodeID10_I_Prague").
++SetInterface("NodeID10", "NodeID10_I_Krakow").
++SetInterface("NodeID10", "NodeID10_I_Kalowice").
++SetInterface("NodeID10", "NodeID10_I_Bratislava").
+
++SetNode("Bialystok").
++SetAdminDist("Bialystok", "static", 1).
++SetAdminDist("Bialystok", "bgp", 2).
++SetAdminDist("Bialystok", "ospf", 3).
++SetInterface("Bialystok", "Bialystok_I_Olszlyn").
++SetInterface("Bialystok", "Bialystok_I_Warsaw").
+
++SetNode("Opole").
++SetAdminDist("Opole", "static", 1).
++SetAdminDist("Opole", "bgp", 2).
++SetAdminDist("Opole", "ospf", 3).
++SetInterface("Opole", "Opole_I_Wroclaw").
++SetInterface("Opole", "Opole_I_Kalowice").
+
++SetNode("Bratislava").
++SetAdminDist("Bratislava", "static", 1).
++SetAdminDist("Bratislava", "bgp", 2).
++SetAdminDist("Bratislava", "ospf", 3).
++SetInterface("Bratislava", "Bratislava_I_NodeID10").
+
++SetNode("Lodz").
++SetAdminDist("Lodz", "static", 1).
++SetAdminDist("Lodz", "bgp", 2).
++SetAdminDist("Lodz", "ospf", 3).
++SetInterface("Lodz", "Lodz_I_Kalisz").
++SetInterface("Lodz", "Lodz_I_Warsaw").
+
++SetNode("Berlin").
++SetAdminDist("Berlin", "static", 1).
++SetAdminDist("Berlin", "bgp", 2).
++SetAdminDist("Berlin", "ospf", 3).
++SetInterface("Berlin", "Berlin_I_Warsaw").
+
++SetNode("Lublin").
++SetAdminDist("Lublin", "static", 1).
++SetAdminDist("Lublin", "bgp", 2).
++SetAdminDist("Lublin", "ospf", 3).
++SetInterface("Lublin", "Lublin_I_Rzeszow").
++SetInterface("Lublin", "Lublin_I_Warsaw").
+
++SetNode("Kielce").
++SetAdminDist("Kielce", "static", 1).
++SetAdminDist("Kielce", "bgp", 2).
++SetAdminDist("Kielce", "ospf", 3).
++SetInterface("Kielce", "Kielce_I_Krakow").
++SetInterface("Kielce", "Kielce_I_Radom").
+
++SetNode("Poznan").
++SetAdminDist("Poznan", "static", 1).
++SetAdminDist("Poznan", "bgp", 2).
++SetAdminDist("Poznan", "ospf", 3).
++SetInterface("Poznan", "Poznan_I_Kalisz").
++SetInterface("Poznan", "Poznan_I_GorzowTTWilkp").
++SetInterface("Poznan", "Poznan_I_Pila").
++SetInterface("Poznan", "Poznan_I_ZielonaTTGora").
+
++SetNode("Gdansk").
++SetAdminDist("Gdansk", "static", 1).
++SetAdminDist("Gdansk", "bgp", 2).
++SetAdminDist("Gdansk", "ospf", 3).
++SetInterface("Gdansk", "Gdansk_I_Gdyia").
++SetInterface("Gdansk", "Gdansk_I_Olszlyn").
++SetInterface("Gdansk", "Gdansk_I_Bydgoszcz").
+
++SetNode("Olszlyn").
++SetAdminDist("Olszlyn", "static", 1).
++SetAdminDist("Olszlyn", "bgp", 2).
++SetAdminDist("Olszlyn", "ospf", 3).
++SetInterface("Olszlyn", "Olszlyn_I_Bialystok").
++SetInterface("Olszlyn", "Olszlyn_I_Gdansk").
+
++SetNode("Bydgoszcz").
++SetAdminDist("Bydgoszcz", "static", 1).
++SetAdminDist("Bydgoszcz", "bgp", 2).
++SetAdminDist("Bydgoszcz", "ospf", 3).
++SetInterface("Bydgoszcz", "Bydgoszcz_I_Pila").
++SetInterface("Bydgoszcz", "Bydgoszcz_I_Gdansk").
++SetInterface("Bydgoszcz", "Bydgoszcz_I_Torun").
+
++SetNode("Radom").
++SetAdminDist("Radom", "static", 1).
++SetAdminDist("Radom", "bgp", 2).
++SetAdminDist("Radom", "ospf", 3).
++SetInterface("Radom", "Radom_I_Kielce").
++SetInterface("Radom", "Radom_I_Warsaw").
+
++SetNode("Torun").
++SetAdminDist("Torun", "static", 1).
++SetAdminDist("Torun", "bgp", 2).
++SetAdminDist("Torun", "ospf", 3).
++SetInterface("Torun", "Torun_I_Bydgoszcz").
++SetInterface("Torun", "Torun_I_Wlocawek").
+
++SetNode("Plock").
++SetAdminDist("Plock", "static", 1).
++SetAdminDist("Plock", "bgp", 2).
++SetAdminDist("Plock", "ospf", 3).
++SetInterface("Plock", "Plock_I_Wlocawek").
++SetInterface("Plock", "Plock_I_Warsaw").
+
++SetNode("Frankfurt").
++SetAdminDist("Frankfurt", "static", 1).
++SetAdminDist("Frankfurt", "bgp", 2).
++SetAdminDist("Frankfurt", "ospf", 3).
++SetInterface("Frankfurt", "Frankfurt_I_Warsaw").
+
++SetNode("Wroclaw").
++SetAdminDist("Wroclaw", "static", 1).
++SetAdminDist("Wroclaw", "bgp", 2).
++SetAdminDist("Wroclaw", "ospf", 3).
++SetInterface("Wroclaw", "Wroclaw_I_Kalisz").
++SetInterface("Wroclaw", "Wroclaw_I_Opole").
+
++SetNode("Krakow").
++SetAdminDist("Krakow", "static", 1).
++SetAdminDist("Krakow", "bgp", 2).
++SetAdminDist("Krakow", "ospf", 3).
++SetInterface("Krakow", "Krakow_I_NodeID10").
++SetInterface("Krakow", "Krakow_I_Rzeszow").
++SetInterface("Krakow", "Krakow_I_Tarnow").
++SetInterface("Krakow", "Krakow_I_Kielce").
+
++SetNode("Wlocawek").
++SetAdminDist("Wlocawek", "static", 1).
++SetAdminDist("Wlocawek", "bgp", 2).
++SetAdminDist("Wlocawek", "ospf", 3).
++SetInterface("Wlocawek", "Wlocawek_I_Plock").
++SetInterface("Wlocawek", "Wlocawek_I_Torun").
+
++SetNode("Prague").
++SetAdminDist("Prague", "static", 1).
++SetAdminDist("Prague", "bgp", 2).
++SetAdminDist("Prague", "ospf", 3).
++SetInterface("Prague", "Prague_I_NodeID10").
+
++SetNode("Kalowice").
++SetAdminDist("Kalowice", "static", 1).
++SetAdminDist("Kalowice", "bgp", 2).
++SetAdminDist("Kalowice", "ospf", 3).
++SetInterface("Kalowice", "Kalowice_I_NodeID10").
++SetInterface("Kalowice", "Kalowice_I_Opole").
+
++SetNode("Koszalin").
++SetAdminDist("Koszalin", "static", 1).
++SetAdminDist("Koszalin", "bgp", 2).
++SetAdminDist("Koszalin", "ospf", 3).
++SetInterface("Koszalin", "Koszalin_I_Kolobrzeg").
++SetInterface("Koszalin", "Koszalin_I_Slupsk").
+
++SetNode("ZielonaTTGora").
++SetAdminDist("ZielonaTTGora", "static", 1).
++SetAdminDist("ZielonaTTGora", "bgp", 2).
++SetAdminDist("ZielonaTTGora", "ospf", 3).
++SetInterface("ZielonaTTGora", "ZielonaTTGora_I_Poznan").
+
++SetNode("Tarnow").
++SetAdminDist("Tarnow", "static", 1).
++SetAdminDist("Tarnow", "bgp", 2).
++SetAdminDist("Tarnow", "ospf", 3).
++SetInterface("Tarnow", "Tarnow_I_Krakow").
+
++SetNode("Kolobrzeg").
++SetAdminDist("Kolobrzeg", "static", 1).
++SetAdminDist("Kolobrzeg", "bgp", 2).
++SetAdminDist("Kolobrzeg", "ospf", 3).
++SetInterface("Kolobrzeg", "Kolobrzeg_I_Koszalin").
++SetInterface("Kolobrzeg", "Kolobrzeg_I_Szczecin").
+
++SetNode("Warsaw").
++SetAdminDist("Warsaw", "static", 1).
++SetAdminDist("Warsaw", "bgp", 2).
++SetAdminDist("Warsaw", "ospf", 3).
++SetInterface("Warsaw", "Warsaw_I_Bialystok").
++SetInterface("Warsaw", "Warsaw_I_Radom").
++SetInterface("Warsaw", "Warsaw_I_Lodz").
++SetInterface("Warsaw", "Warsaw_I_Berlin").
++SetInterface("Warsaw", "Warsaw_I_Lublin").
++SetInterface("Warsaw", "Warsaw_I_Plock").
++SetInterface("Warsaw", "Warsaw_I_Frankfurt").
+
++SetLink("Rzeszow_I_Krakow", "Krakow_I_Rzeszow").
++SetLink("Rzeszow_I_Lublin", "Lublin_I_Rzeszow").
++SetLink("Szczecin_I_Kolobrzeg", "Kolobrzeg_I_Szczecin").
++SetLink("Szczecin_I_Pila", "Pila_I_Szczecin").
++SetLink("Pila_I_Poznan", "Poznan_I_Pila").
++SetLink("Pila_I_Bydgoszcz", "Bydgoszcz_I_Pila").
++SetLink("GorzowTTWilkp_I_Poznan", "Poznan_I_GorzowTTWilkp").
++SetLink("Kalisz_I_Wroclaw", "Wroclaw_I_Kalisz").
++SetLink("Kalisz_I_Lodz", "Lodz_I_Kalisz").
++SetLink("Kalisz_I_Poznan", "Poznan_I_Kalisz").
++SetLink("Gdyia_I_Gdansk", "Gdansk_I_Gdyia").
++SetLink("Gdyia_I_Slupsk", "Slupsk_I_Gdyia").
++SetLink("Slupsk_I_Koszalin", "Koszalin_I_Slupsk").
++SetLink("NodeID10_I_Prague", "Prague_I_NodeID10").
++SetLink("NodeID10_I_Krakow", "Krakow_I_NodeID10").
++SetLink("NodeID10_I_Kalowice", "Kalowice_I_NodeID10").
++SetLink("NodeID10_I_Bratislava", "Bratislava_I_NodeID10").
++SetLink("Bialystok_I_Olszlyn", "Olszlyn_I_Bialystok").
++SetLink("Bialystok_I_Warsaw", "Warsaw_I_Bialystok").
++SetLink("Opole_I_Wroclaw", "Wroclaw_I_Opole").
++SetLink("Opole_I_Kalowice", "Kalowice_I_Opole").
++SetLink("Lodz_I_Warsaw", "Warsaw_I_Lodz").
++SetLink("Berlin_I_Warsaw", "Warsaw_I_Berlin").
++SetLink("Lublin_I_Warsaw", "Warsaw_I_Lublin").
++SetLink("Kielce_I_Krakow", "Krakow_I_Kielce").
++SetLink("Kielce_I_Radom", "Radom_I_Kielce").
++SetLink("Poznan_I_ZielonaTTGora", "ZielonaTTGora_I_Poznan").
++SetLink("Gdansk_I_Olszlyn", "Olszlyn_I_Gdansk").
++SetLink("Gdansk_I_Bydgoszcz", "Bydgoszcz_I_Gdansk").
++SetLink("Bydgoszcz_I_Torun", "Torun_I_Bydgoszcz").
++SetLink("Radom_I_Warsaw", "Warsaw_I_Radom").
++SetLink("Torun_I_Wlocawek", "Wlocawek_I_Torun").
++SetLink("Plock_I_Wlocawek", "Wlocawek_I_Plock").
++SetLink("Plock_I_Warsaw", "Warsaw_I_Plock").
++SetLink("Frankfurt_I_Warsaw", "Warsaw_I_Frankfurt").
++SetLink("Krakow_I_Tarnow", "Tarnow_I_Krakow").
++SetLink("Koszalin_I_Kolobrzeg", "Kolobrzeg_I_Koszalin").
+
+
++SetNetwork("Tarnow", "N_Tarnow").
++SetNetwork("GorzowTTWilkp", "N_GorzowTTWilkp").
++SetNetwork("Bydgoszcz", "N_Bydgoszcz").
++SetNetwork("Rzeszow", "N_Rzeszow").
++SetNetwork("Olszlyn", "N_Olszlyn").
++SetNetwork("Prague", "N_Prague").
++SetNetwork("NodeID10", "N_NodeID10").
++SetNetwork("ZielonaTTGora", "N_ZielonaTTGora").
++SetNetwork("Kielce", "N_Kielce").
++SetNetwork("Szczecin", "N_Szczecin").

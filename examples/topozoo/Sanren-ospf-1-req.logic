@@ -1,0 +1,8 @@
+
++Fwd("N_Durban", "PortTTElizabeth", "EastTTLondon", "ospf").
++Fwd("N_Durban", "EastTTLondon", "Durban", "ospf").
++Fwd("N_Durban", "Bloemfontein", "Johannesburg", "ospf").
++Fwd("N_Durban", "Johannesburg", "Pretoria", "ospf").
++Fwd("N_Durban", "Pretoria", "Durban", "ospf").
++Fwd("N_Durban", "CapeTTTown", "PortTTElizabeth", "ospf").
+

@@ -1,0 +1,26 @@
+
++Fwd("N_PHNX", "CHCG", "STLS", "ospf").
++Fwd("N_PHNX", "STLS", "LA03", "ospf").
++Fwd("N_PHNX", "LA03", "PHNX", "ospf").
++Fwd("N_PHNX", "CLEV", "NSVL", "ospf").
++Fwd("N_PHNX", "NSVL", "DLLS", "ospf").
++Fwd("N_PHNX", "DLLS", "LA03", "ospf").
++Fwd("N_PHNX", "ATLN", "STLS", "ospf").
++Fwd("N_PHNX", "HSTN", "DLLS", "ospf").
++Fwd("N_PHNX", "SNDG", "PHNX", "ospf").
++Fwd("N_PHNX", "KSCY", "DNVR", "ospf").
++Fwd("N_PHNX", "DNVR", "SNFN", "ospf").
++Fwd("N_PHNX", "SNFN", "LA03", "ospf").
++Fwd("N_PHNX", "RLGH", "ATLN", "ospf").
++Fwd("N_PHNX", "SLKC", "LA03", "ospf").
++Fwd("N_PHNX", "PTLD", "SNFN", "ospf").
++Fwd("N_PHNX", "ORLD", "HSTN", "ospf").
++Fwd("N_PHNX", "SNAN", "DLLS", "ospf").
++Fwd("N_PHNX", "WASH", "ATLN", "ospf").
++Fwd("N_PHNX", "PHLA", "CHCG", "ospf").
++Fwd("N_PHNX", "STTL", "CHCG", "ospf").
++Fwd("N_PHNX", "NY54", "WASH", "ospf").
++Fwd("N_PHNX", "CMBR", "NY54", "ospf").
++Fwd("N_PHNX", "SCRM", "SLKC", "ospf").
++Fwd("N_PHNX", "NWOR", "DLLS", "ospf").
+

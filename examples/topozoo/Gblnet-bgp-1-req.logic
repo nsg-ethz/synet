@@ -1,0 +1,16 @@
+
++Fwd("N_Amsterdam", "NewTTYork", "Amsterdam", "ospf").
++Fwd("NBGP_Amsterdam", "NewTTYork", "Amsterdam", "bgp").
++Fwd("N_Amsterdam", "Paris", "Amsterdam", "ospf").
++Fwd("NBGP_Amsterdam", "Paris", "Amsterdam", "bgp").
++Fwd("N_Amsterdam", "Moscow", "StTTPetersburg", "ospf").
++Fwd("NBGP_Amsterdam", "Moscow", "StTTPetersburg", "bgp").
++Fwd("N_Amsterdam", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("NBGP_Amsterdam", "StTTPetersburg", "Stockholm", "bgp").
++Fwd("N_Amsterdam", "Stockholm", "Amsterdam", "ospf").
++Fwd("NBGP_Amsterdam", "Stockholm", "Amsterdam", "bgp").
++Fwd("N_Amsterdam", "London", "Amsterdam", "ospf").
++Fwd("NBGP_Amsterdam", "London", "Amsterdam", "bgp").
++Fwd("N_Amsterdam", "Frankfurt", "Amsterdam", "ospf").
++Fwd("NBGP_Amsterdam", "Frankfurt", "Amsterdam", "bgp").
+

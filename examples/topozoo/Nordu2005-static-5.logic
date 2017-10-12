@@ -1,0 +1,79 @@
++SetNode("NETNOD").
++SetAdminDist("NETNOD", "static", 1).
++SetAdminDist("NETNOD", "bgp", 2).
++SetAdminDist("NETNOD", "ospf", 3).
++SetInterface("NETNOD", "NETNOD_I_Stockholm").
+
++SetNode("Reykjavik").
++SetAdminDist("Reykjavik", "static", 1).
++SetAdminDist("Reykjavik", "bgp", 2).
++SetAdminDist("Reykjavik", "ospf", 3).
++SetInterface("Reykjavik", "Reykjavik_I_Copenhagen").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Stockholm").
+
++SetNode("Helsinki").
++SetAdminDist("Helsinki", "static", 1).
++SetAdminDist("Helsinki", "bgp", 2).
++SetAdminDist("Helsinki", "ospf", 3).
++SetInterface("Helsinki", "Helsinki_I_Stockholm").
+
++SetNode("Oslo").
++SetAdminDist("Oslo", "static", 1).
++SetAdminDist("Oslo", "bgp", 2).
++SetAdminDist("Oslo", "ospf", 3).
++SetInterface("Oslo", "Oslo_I_Copenhagen").
++SetInterface("Oslo", "Oslo_I_Stockholm").
+
++SetNode("StTTPetersburg").
++SetAdminDist("StTTPetersburg", "static", 1).
++SetAdminDist("StTTPetersburg", "bgp", 2).
++SetAdminDist("StTTPetersburg", "ospf", 3).
++SetInterface("StTTPetersburg", "StTTPetersburg_I_Stockholm").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_NETNOD").
++SetInterface("Stockholm", "Stockholm_I_GEANT").
++SetInterface("Stockholm", "Stockholm_I_Helsinki").
++SetInterface("Stockholm", "Stockholm_I_Oslo").
++SetInterface("Stockholm", "Stockholm_I_StTTPetersburg").
++SetInterface("Stockholm", "Stockholm_I_Copenhagen").
++SetInterface("Stockholm", "Stockholm_I_GeneralTTInternet").
+
++SetNode("Copenhagen").
++SetAdminDist("Copenhagen", "static", 1).
++SetAdminDist("Copenhagen", "bgp", 2).
++SetAdminDist("Copenhagen", "ospf", 3).
++SetInterface("Copenhagen", "Copenhagen_I_Oslo").
++SetInterface("Copenhagen", "Copenhagen_I_Reykjavik").
++SetInterface("Copenhagen", "Copenhagen_I_Stockholm").
+
++SetNode("GeneralTTInternet").
++SetAdminDist("GeneralTTInternet", "static", 1).
++SetAdminDist("GeneralTTInternet", "bgp", 2).
++SetAdminDist("GeneralTTInternet", "ospf", 3).
++SetInterface("GeneralTTInternet", "GeneralTTInternet_I_Stockholm").
+
++SetLink("NETNOD_I_Stockholm", "Stockholm_I_NETNOD").
++SetLink("Reykjavik_I_Copenhagen", "Copenhagen_I_Reykjavik").
++SetLink("GEANT_I_Stockholm", "Stockholm_I_GEANT").
++SetLink("Helsinki_I_Stockholm", "Stockholm_I_Helsinki").
++SetLink("Oslo_I_Copenhagen", "Copenhagen_I_Oslo").
++SetLink("Oslo_I_Stockholm", "Stockholm_I_Oslo").
++SetLink("StTTPetersburg_I_Stockholm", "Stockholm_I_StTTPetersburg").
++SetLink("Stockholm_I_Copenhagen", "Copenhagen_I_Stockholm").
++SetLink("Stockholm_I_GeneralTTInternet", "GeneralTTInternet_I_Stockholm").
+
+
++SetNetwork("Oslo", "N_Oslo").
++SetNetwork("GeneralTTInternet", "N_GeneralTTInternet").
++SetNetwork("GEANT", "N_GEANT").
++SetNetwork("Helsinki", "N_Helsinki").
++SetNetwork("NETNOD", "N_NETNOD").

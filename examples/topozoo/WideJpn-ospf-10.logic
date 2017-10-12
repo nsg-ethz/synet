@@ -1,0 +1,261 @@
++SetNode("TITECH").
++SetAdminDist("TITECH", "static", 1).
++SetAdminDist("TITECH", "bgp", 2).
++SetAdminDist("TITECH", "ospf", 3).
++SetInterface("TITECH", "TITECH_I_KDDITTOtemachi").
+
++SetNode("Tsukuba").
++SetAdminDist("Tsukuba", "static", 1).
++SetAdminDist("Tsukuba", "bgp", 2).
++SetAdminDist("Tsukuba", "ospf", 3).
++SetInterface("Tsukuba", "Tsukuba_I_NTTTTOtemachi").
+
++SetNode("NTTTTOtemachi").
++SetAdminDist("NTTTTOtemachi", "static", 1).
++SetAdminDist("NTTTTOtemachi", "bgp", 2).
++SetAdminDist("NTTTTOtemachi", "ospf", 3).
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_Dojima").
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_Tsukuba").
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_KDDITTOtemachi").
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_JGN2PlusID14").
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_Bangkok").
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_Komatsu").
++SetInterface("NTTTTOtemachi", "NTTTTOtemachi_I_T_Lex").
+
++SetNode("KDDI").
++SetAdminDist("KDDI", "static", 1).
++SetAdminDist("KDDI", "bgp", 2).
++SetAdminDist("KDDI", "ospf", 3).
++SetInterface("KDDI", "KDDI_I_KDDITTOtemachi").
+
++SetNode("JGN2PlusID14").
++SetAdminDist("JGN2PlusID14", "static", 1).
++SetAdminDist("JGN2PlusID14", "bgp", 2).
++SetAdminDist("JGN2PlusID14", "ospf", 3).
++SetInterface("JGN2PlusID14", "JGN2PlusID14_I_NTTTTOtemachi").
+
++SetNode("DIX_IE").
++SetAdminDist("DIX_IE", "static", 1).
++SetAdminDist("DIX_IE", "bgp", 2).
++SetAdminDist("DIX_IE", "ospf", 3).
++SetInterface("DIX_IE", "DIX_IE_I_KDDITTOtemachi").
+
++SetNode("PAIX").
++SetAdminDist("PAIX", "static", 1).
++SetAdminDist("PAIX", "bgp", 2).
++SetAdminDist("PAIX", "ospf", 3).
++SetInterface("PAIX", "PAIX_I_SanTTFrancisco").
+
++SetNode("Nara").
++SetAdminDist("Nara", "static", 1).
++SetAdminDist("Nara", "bgp", 2).
++SetAdminDist("Nara", "ospf", 3).
++SetInterface("Nara", "Nara_I_Fujisawa").
++SetInterface("Nara", "Nara_I_Dojima").
++SetInterface("Nara", "Nara_I_Sakyo").
+
++SetNode("Fujisawa").
++SetAdminDist("Fujisawa", "static", 1).
++SetAdminDist("Fujisawa", "bgp", 2).
++SetAdminDist("Fujisawa", "ospf", 3).
++SetInterface("Fujisawa", "Fujisawa_I_Nara").
++SetInterface("Fujisawa", "Fujisawa_I_AI3").
++SetInterface("Fujisawa", "Fujisawa_I_Yagami").
+
++SetNode("APAN").
++SetAdminDist("APAN", "static", 1).
++SetAdminDist("APAN", "bgp", 2).
++SetAdminDist("APAN", "ospf", 3).
++SetInterface("APAN", "APAN_I_KDDITTOtemachi").
+
++SetNode("JGN2Plus").
++SetAdminDist("JGN2Plus", "static", 1).
++SetAdminDist("JGN2Plus", "bgp", 2).
++SetAdminDist("JGN2Plus", "ospf", 3).
++SetInterface("JGN2Plus", "JGN2Plus_I_Dojima").
+
++SetNode("Bangkok").
++SetAdminDist("Bangkok", "static", 1).
++SetAdminDist("Bangkok", "bgp", 2).
++SetAdminDist("Bangkok", "ospf", 3).
++SetInterface("Bangkok", "Bangkok_I_NTTTTOtemachi").
+
++SetNode("Dojima").
++SetAdminDist("Dojima", "static", 1).
++SetAdminDist("Dojima", "bgp", 2).
++SetAdminDist("Dojima", "ospf", 3).
++SetInterface("Dojima", "Dojima_I_Fukuoka").
++SetInterface("Dojima", "Dojima_I_NTTTTOtemachi").
++SetInterface("Dojima", "Dojima_I_NSPIXP_3").
++SetInterface("Dojima", "Dojima_I_JGN2Plus").
++SetInterface("Dojima", "Dojima_I_Kurashiki").
++SetInterface("Dojima", "Dojima_I_Sakyo").
++SetInterface("Dojima", "Dojima_I_Nara").
++SetInterface("Dojima", "Dojima_I_Hiroshima").
+
++SetNode("Fukuoka").
++SetAdminDist("Fukuoka", "static", 1).
++SetAdminDist("Fukuoka", "bgp", 2).
++SetAdminDist("Fukuoka", "ospf", 3).
++SetInterface("Fukuoka", "Fukuoka_I_Dojima").
++SetInterface("Fukuoka", "Fukuoka_I_Hiroshima").
++SetInterface("Fukuoka", "Fukuoka_I_Kurashiki").
+
++SetNode("KDDITTOtemachi").
++SetAdminDist("KDDITTOtemachi", "static", 1).
++SetAdminDist("KDDITTOtemachi", "bgp", 2).
++SetAdminDist("KDDITTOtemachi", "ospf", 3).
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_NTTTTOtemachi").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_APAN").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_TITECH").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_LosTTAngeles").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_KDDI").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_DIX_IE").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_Hachioji").
++SetInterface("KDDITTOtemachi", "KDDITTOtemachi_I_Nezu").
+
++SetNode("Sendai").
++SetAdminDist("Sendai", "static", 1).
++SetAdminDist("Sendai", "bgp", 2).
++SetAdminDist("Sendai", "ospf", 3).
++SetInterface("Sendai", "Sendai_I_Nezu").
+
++SetNode("Komatsu").
++SetAdminDist("Komatsu", "static", 1).
++SetAdminDist("Komatsu", "bgp", 2).
++SetAdminDist("Komatsu", "ospf", 3).
++SetInterface("Komatsu", "Komatsu_I_NTTTTOtemachi").
+
++SetNode("Yagami").
++SetAdminDist("Yagami", "static", 1).
++SetAdminDist("Yagami", "bgp", 2).
++SetAdminDist("Yagami", "ospf", 3).
++SetInterface("Yagami", "Yagami_I_Fujisawa").
++SetInterface("Yagami", "Yagami_I_ShinKawasaki").
++SetInterface("Yagami", "Yagami_I_Nezu").
+
++SetNode("Sakyo").
++SetAdminDist("Sakyo", "static", 1).
++SetAdminDist("Sakyo", "bgp", 2).
++SetAdminDist("Sakyo", "ospf", 3).
++SetInterface("Sakyo", "Sakyo_I_Dojima").
++SetInterface("Sakyo", "Sakyo_I_Nara").
+
++SetNode("Hiroshima").
++SetAdminDist("Hiroshima", "static", 1).
++SetAdminDist("Hiroshima", "bgp", 2).
++SetAdminDist("Hiroshima", "ospf", 3).
++SetInterface("Hiroshima", "Hiroshima_I_Dojima").
++SetInterface("Hiroshima", "Hiroshima_I_Fukuoka").
+
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_KDDITTOtemachi").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_LAIIX").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_SanTTFrancisco").
+
++SetNode("SanTTFrancisco").
++SetAdminDist("SanTTFrancisco", "static", 1).
++SetAdminDist("SanTTFrancisco", "bgp", 2).
++SetAdminDist("SanTTFrancisco", "ospf", 3).
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_PAIX").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_LosTTAngeles").
+
++SetNode("LAIIX").
++SetAdminDist("LAIIX", "static", 1).
++SetAdminDist("LAIIX", "bgp", 2).
++SetAdminDist("LAIIX", "ospf", 3).
++SetInterface("LAIIX", "LAIIX_I_LosTTAngeles").
+
++SetNode("AI3").
++SetAdminDist("AI3", "static", 1).
++SetAdminDist("AI3", "bgp", 2).
++SetAdminDist("AI3", "ospf", 3).
++SetInterface("AI3", "AI3_I_Fujisawa").
+
++SetNode("Hachioji").
++SetAdminDist("Hachioji", "static", 1).
++SetAdminDist("Hachioji", "bgp", 2).
++SetAdminDist("Hachioji", "ospf", 3).
++SetInterface("Hachioji", "Hachioji_I_KDDITTOtemachi").
+
++SetNode("Nezu").
++SetAdminDist("Nezu", "static", 1).
++SetAdminDist("Nezu", "bgp", 2).
++SetAdminDist("Nezu", "ospf", 3).
++SetInterface("Nezu", "Nezu_I_KDDITTOtemachi").
++SetInterface("Nezu", "Nezu_I_Sendai").
++SetInterface("Nezu", "Nezu_I_Yagami").
+
++SetNode("T_Lex").
++SetAdminDist("T_Lex", "static", 1).
++SetAdminDist("T_Lex", "bgp", 2).
++SetAdminDist("T_Lex", "ospf", 3).
++SetInterface("T_Lex", "T_Lex_I_NTTTTOtemachi").
+
++SetNode("Kurashiki").
++SetAdminDist("Kurashiki", "static", 1).
++SetAdminDist("Kurashiki", "bgp", 2).
++SetAdminDist("Kurashiki", "ospf", 3).
++SetInterface("Kurashiki", "Kurashiki_I_Dojima").
++SetInterface("Kurashiki", "Kurashiki_I_Fukuoka").
+
++SetNode("ShinKawasaki").
++SetAdminDist("ShinKawasaki", "static", 1).
++SetAdminDist("ShinKawasaki", "bgp", 2).
++SetAdminDist("ShinKawasaki", "ospf", 3).
++SetInterface("ShinKawasaki", "ShinKawasaki_I_Yagami").
+
++SetNode("NSPIXP_3").
++SetAdminDist("NSPIXP_3", "static", 1).
++SetAdminDist("NSPIXP_3", "bgp", 2).
++SetAdminDist("NSPIXP_3", "ospf", 3).
++SetInterface("NSPIXP_3", "NSPIXP_3_I_Dojima").
+
++SetLink("TITECH_I_KDDITTOtemachi", "KDDITTOtemachi_I_TITECH").
++SetLink("Tsukuba_I_NTTTTOtemachi", "NTTTTOtemachi_I_Tsukuba").
++SetLink("NTTTTOtemachi_I_Dojima", "Dojima_I_NTTTTOtemachi").
++SetLink("NTTTTOtemachi_I_KDDITTOtemachi", "KDDITTOtemachi_I_NTTTTOtemachi").
++SetLink("NTTTTOtemachi_I_JGN2PlusID14", "JGN2PlusID14_I_NTTTTOtemachi").
++SetLink("NTTTTOtemachi_I_Bangkok", "Bangkok_I_NTTTTOtemachi").
++SetLink("NTTTTOtemachi_I_Komatsu", "Komatsu_I_NTTTTOtemachi").
++SetLink("NTTTTOtemachi_I_T_Lex", "T_Lex_I_NTTTTOtemachi").
++SetLink("KDDI_I_KDDITTOtemachi", "KDDITTOtemachi_I_KDDI").
++SetLink("DIX_IE_I_KDDITTOtemachi", "KDDITTOtemachi_I_DIX_IE").
++SetLink("PAIX_I_SanTTFrancisco", "SanTTFrancisco_I_PAIX").
++SetLink("Nara_I_Fujisawa", "Fujisawa_I_Nara").
++SetLink("Nara_I_Dojima", "Dojima_I_Nara").
++SetLink("Nara_I_Sakyo", "Sakyo_I_Nara").
++SetLink("Fujisawa_I_AI3", "AI3_I_Fujisawa").
++SetLink("Fujisawa_I_Yagami", "Yagami_I_Fujisawa").
++SetLink("APAN_I_KDDITTOtemachi", "KDDITTOtemachi_I_APAN").
++SetLink("JGN2Plus_I_Dojima", "Dojima_I_JGN2Plus").
++SetLink("Dojima_I_Fukuoka", "Fukuoka_I_Dojima").
++SetLink("Dojima_I_NSPIXP_3", "NSPIXP_3_I_Dojima").
++SetLink("Dojima_I_Kurashiki", "Kurashiki_I_Dojima").
++SetLink("Dojima_I_Sakyo", "Sakyo_I_Dojima").
++SetLink("Dojima_I_Hiroshima", "Hiroshima_I_Dojima").
++SetLink("Fukuoka_I_Hiroshima", "Hiroshima_I_Fukuoka").
++SetLink("Fukuoka_I_Kurashiki", "Kurashiki_I_Fukuoka").
++SetLink("KDDITTOtemachi_I_LosTTAngeles", "LosTTAngeles_I_KDDITTOtemachi").
++SetLink("KDDITTOtemachi_I_Hachioji", "Hachioji_I_KDDITTOtemachi").
++SetLink("KDDITTOtemachi_I_Nezu", "Nezu_I_KDDITTOtemachi").
++SetLink("Sendai_I_Nezu", "Nezu_I_Sendai").
++SetLink("Yagami_I_ShinKawasaki", "ShinKawasaki_I_Yagami").
++SetLink("Yagami_I_Nezu", "Nezu_I_Yagami").
++SetLink("LosTTAngeles_I_LAIIX", "LAIIX_I_LosTTAngeles").
++SetLink("LosTTAngeles_I_SanTTFrancisco", "SanTTFrancisco_I_LosTTAngeles").
+
+
++SetNetwork("Dojima", "N_Dojima").
++SetNetwork("AI3", "N_AI3").
++SetNetwork("TITECH", "N_TITECH").
++SetNetwork("Fujisawa", "N_Fujisawa").
++SetNetwork("LosTTAngeles", "N_LosTTAngeles").
++SetNetwork("T_Lex", "N_T_Lex").
++SetNetwork("JGN2PlusID14", "N_JGN2PlusID14").
++SetNetwork("Hachioji", "N_Hachioji").
++SetNetwork("Kurashiki", "N_Kurashiki").
++SetNetwork("Fukuoka", "N_Fukuoka").

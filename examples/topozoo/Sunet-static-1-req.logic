@@ -1,0 +1,27 @@
+
++Fwd("N_Visby", "Halmstad", "Lund", "static").
++Fwd("N_Visby", "Lund", "Vaxjo", "static").
++Fwd("N_Visby", "Vaxjo", "Jonkoping", "static").
++Fwd("N_Visby", "Jonkoping", "Linkoping", "static").
++Fwd("N_Visby", "Linkoping", "Stockholm", "static").
++Fwd("N_Visby", "Stockholm", "Visby", "static").
++Fwd("N_Visby", "Uppsala", "Stockholm", "static").
++Fwd("N_Visby", "Kiruna", "Lulea", "static").
++Fwd("N_Visby", "Lulea", "NodeID20", "static").
++Fwd("N_Visby", "NodeID20", "Sundsvall", "static").
++Fwd("N_Visby", "Sundsvall", "Gavle", "static").
++Fwd("N_Visby", "Gavle", "Uppsala", "static").
++Fwd("N_Visby", "Goteborg", "Trollhattan", "static").
++Fwd("N_Visby", "Trollhattan", "Skovde", "static").
++Fwd("N_Visby", "Skovde", "Orebro", "static").
++Fwd("N_Visby", "Orebro", "Vasten", "static").
++Fwd("N_Visby", "Vasten", "Stockholm", "static").
++Fwd("N_Visby", "Boras", "Goteborg", "static").
++Fwd("N_Visby", "Umea", "Sundsvall", "static").
++Fwd("N_Visby", "Borlange", "Gavle", "static").
++Fwd("N_Visby", "Malmo", "Lund", "static").
++Fwd("N_Visby", "Kristianstad", "Malmo", "static").
++Fwd("N_Visby", "Kalmar", "Vaxjo", "static").
++Fwd("N_Visby", "Ronneby", "Kalmar", "static").
++Fwd("N_Visby", "Karlstad", "Orebro", "static").
+

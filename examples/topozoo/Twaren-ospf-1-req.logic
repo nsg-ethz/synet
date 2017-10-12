@@ -1,0 +1,21 @@
+
++Fwd("N_NIU", "NHLUE", "TP", "ospf").
++Fwd("N_NIU", "TP", "NIU", "ospf").
++Fwd("N_NIU", "TN", "TC", "ospf").
++Fwd("N_NIU", "TC", "TP", "ospf").
++Fwd("N_NIU", "LA", "HC", "ospf").
++Fwd("N_NIU", "HC", "TP", "ospf").
++Fwd("N_NIU", "NTHU", "HC", "ospf").
++Fwd("N_NIU", "NCHU", "TC", "ospf").
++Fwd("N_NIU", "CHI", "TP", "ospf").
++Fwd("N_NIU", "NTU", "TP", "ospf").
++Fwd("N_NIU", "NCU", "HC", "ospf").
++Fwd("N_NIU", "NCKU", "TN", "ospf").
++Fwd("N_NIU", "CCU", "TN", "ospf").
++Fwd("N_NIU", "NCNU", "TC", "ospf").
++Fwd("N_NIU", "NDHU", "TP", "ospf").
++Fwd("N_NIU", "NTTU", "TN", "ospf").
++Fwd("N_NIU", "NCTU", "HC", "ospf").
++Fwd("N_NIU", "ASCC", "TP", "ospf").
++Fwd("N_NIU", "NSYSU", "TN", "ospf").
+

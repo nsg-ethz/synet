@@ -1,0 +1,19 @@
+
++Fwd("N_Tampa", "Toronto", "Detroit", "static").
++Fwd("N_Tampa", "Detroit", "Columbus", "static").
++Fwd("N_Tampa", "Columbus", "NewTTYork", "static").
++Fwd("N_Tampa", "NewTTYork", "Tampa", "static").
++Fwd("N_Tampa", "StTTLouis", "Detroit", "static").
++Fwd("N_Tampa", "Schaumburg", "Columbus", "static").
++Fwd("N_Tampa", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_Tampa", "LosTTAngeles", "Schaumburg", "static").
++Fwd("N_Tampa", "Phoenix", "Dallas", "static").
++Fwd("N_Tampa", "Dallas", "Atlanta", "static").
++Fwd("N_Tampa", "Atlanta", "Tampa", "static").
++Fwd("N_Tampa", "Chicago", "Dallas", "static").
++Fwd("N_Tampa", "Philadelphia", "NewTTYork", "static").
++Fwd("N_Tampa", "WhiteTTPlains", "NewTTYork", "static").
++Fwd("N_Tampa", "Vancouver", "SanTTFrancisco", "static").
++Fwd("N_Tampa", "Montreal", "Philadelphia", "static").
++Fwd("N_Tampa", "Bethesda", "Atlanta", "static").
+

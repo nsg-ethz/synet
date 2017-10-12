@@ -1,0 +1,20 @@
+
++Fwd("N_Spokane", "Olympia", "Tacoma", "static").
++Fwd("N_Spokane", "Tacoma", "WestinTT_TTSeattle", "static").
++Fwd("N_Spokane", "WestinTT_TTSeattle", "Yakima", "static").
++Fwd("N_Spokane", "Yakima", "Othello", "static").
++Fwd("N_Spokane", "Othello", "Spokane", "static").
++Fwd("N_Spokane", "Bellingham", "Vancouver", "static").
++Fwd("N_Spokane", "Vancouver", "WestinTT_TTSeattle", "static").
++Fwd("N_Spokane", "WallaTTWalla", "Pasco", "static").
++Fwd("N_Spokane", "Pasco", "Yakima", "static").
++Fwd("N_Spokane", "Ellensburg", "Wenatchee", "static").
++Fwd("N_Spokane", "Wenatchee", "Spokane", "static").
++Fwd("N_Spokane", "Lewiston", "Pullman", "static").
++Fwd("N_Spokane", "Pullman", "Spokane", "static").
++Fwd("N_Spokane", "Kennewick", "Yakima", "static").
++Fwd("N_Spokane", "Everett", "WestinTT_TTSeattle", "static").
++Fwd("N_Spokane", "CoeurTTd_Alene", "Spokane", "static").
++Fwd("N_Spokane", "MtTTVernon", "Everett", "static").
++Fwd("N_Spokane", "Portland", "WestinTT_TTSeattle", "static").
+

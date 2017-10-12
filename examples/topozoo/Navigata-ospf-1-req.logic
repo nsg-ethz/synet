@@ -1,0 +1,14 @@
+
++Fwd("N_NewTTYork", "Toronto", "NewTTYork", "ospf").
++Fwd("N_NewTTYork", "Regina", "Toronto", "ospf").
++Fwd("N_NewTTYork", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("N_NewTTYork", "Vancouver", "Regina", "ospf").
++Fwd("N_NewTTYork", "Edmonton", "Calgary", "ospf").
++Fwd("N_NewTTYork", "Calgary", "Regina", "ospf").
++Fwd("N_NewTTYork", "Saskatoon", "Toronto", "ospf").
++Fwd("N_NewTTYork", "Victoria", "Vancouver", "ospf").
++Fwd("N_NewTTYork", "Winnipeg", "Regina", "ospf").
++Fwd("N_NewTTYork", "Halifax", "Toronto", "ospf").
++Fwd("N_NewTTYork", "Seattle", "Vancouver", "ospf").
++Fwd("N_NewTTYork", "Montreal", "Toronto", "ospf").
+

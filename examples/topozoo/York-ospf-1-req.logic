@@ -1,0 +1,24 @@
+
++Fwd("N_Sheffield", "Slough", "London", "ospf").
++Fwd("N_Sheffield", "London", "MiltonTTKeynes", "ospf").
++Fwd("N_Sheffield", "MiltonTTKeynes", "Northampton", "ospf").
++Fwd("N_Sheffield", "Northampton", "Leicester", "ospf").
++Fwd("N_Sheffield", "Leicester", "Nottingham", "ospf").
++Fwd("N_Sheffield", "Nottingham", "Sheffield", "ospf").
++Fwd("N_Sheffield", "Reading", "Slough", "ospf").
++Fwd("N_Sheffield", "Banbury", "Reading", "ospf").
++Fwd("N_Sheffield", "Glasgow", "Edinburgh", "ospf").
++Fwd("N_Sheffield", "Edinburgh", "Newcastle", "ospf").
++Fwd("N_Sheffield", "Newcastle", "Middlesborough", "ospf").
++Fwd("N_Sheffield", "Middlesborough", "York", "ospf").
++Fwd("N_Sheffield", "York", "Harrogate", "ospf").
++Fwd("N_Sheffield", "Harrogate", "Leeds", "ospf").
++Fwd("N_Sheffield", "Leeds", "Sheffield", "ospf").
++Fwd("N_Sheffield", "Croydon", "London", "ospf").
++Fwd("N_Sheffield", "Brighton", "Reading", "ospf").
++Fwd("N_Sheffield", "Bristol", "Reading", "ospf").
++Fwd("N_Sheffield", "Birmingham", "Banbury", "ospf").
++Fwd("N_Sheffield", "Preston", "Manchester", "ospf").
++Fwd("N_Sheffield", "Manchester", "Birmingham", "ospf").
++Fwd("N_Sheffield", "Carlisle", "Glasgow", "ospf").
+

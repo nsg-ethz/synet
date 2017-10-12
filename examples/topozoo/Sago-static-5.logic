@@ -1,0 +1,148 @@
++SetNode("Surrency").
++SetAdminDist("Surrency", "static", 1).
++SetAdminDist("Surrency", "bgp", 2).
++SetAdminDist("Surrency", "ospf", 3).
++SetInterface("Surrency", "Surrency_I_Newell").
++SetInterface("Surrency", "Surrency_I_Tarrytown").
+
++SetNode("WestTTPalmTTBeach").
++SetAdminDist("WestTTPalmTTBeach", "static", 1).
++SetAdminDist("WestTTPalmTTBeach", "bgp", 2).
++SetAdminDist("WestTTPalmTTBeach", "ospf", 3).
++SetInterface("WestTTPalmTTBeach", "WestTTPalmTTBeach_I_Ft_TTPierce").
++SetInterface("WestTTPalmTTBeach", "WestTTPalmTTBeach_I_Ft_TTLauderdale").
+
++SetNode("LakeTTAlfred").
++SetAdminDist("LakeTTAlfred", "static", 1).
++SetAdminDist("LakeTTAlfred", "bgp", 2).
++SetAdminDist("LakeTTAlfred", "ospf", 3).
++SetInterface("LakeTTAlfred", "LakeTTAlfred_I_Orlando").
++SetInterface("LakeTTAlfred", "LakeTTAlfred_I_Tampa").
+
++SetNode("DaytonaTTBeach").
++SetAdminDist("DaytonaTTBeach", "static", 1).
++SetAdminDist("DaytonaTTBeach", "bgp", 2).
++SetAdminDist("DaytonaTTBeach", "ospf", 3).
++SetInterface("DaytonaTTBeach", "DaytonaTTBeach_I_Orlando").
++SetInterface("DaytonaTTBeach", "DaytonaTTBeach_I_St_TTAugustine").
++SetInterface("DaytonaTTBeach", "DaytonaTTBeach_I_Titusville").
+
++SetNode("Miami").
++SetAdminDist("Miami", "static", 1).
++SetAdminDist("Miami", "bgp", 2).
++SetAdminDist("Miami", "ospf", 3).
++SetInterface("Miami", "Miami_I_Ft_TTLauderdale").
+
++SetNode("Orlando").
++SetAdminDist("Orlando", "static", 1).
++SetAdminDist("Orlando", "bgp", 2).
++SetAdminDist("Orlando", "ospf", 3).
++SetInterface("Orlando", "Orlando_I_DaytonaTTBeach").
++SetInterface("Orlando", "Orlando_I_LakeTTAlfred").
+
++SetNode("Newell").
++SetAdminDist("Newell", "static", 1).
++SetAdminDist("Newell", "bgp", 2).
++SetAdminDist("Newell", "ospf", 3).
++SetInterface("Newell", "Newell_I_Surrency").
++SetInterface("Newell", "Newell_I_Jacksonville").
+
++SetNode("Titusville").
++SetAdminDist("Titusville", "static", 1).
++SetAdminDist("Titusville", "bgp", 2).
++SetAdminDist("Titusville", "ospf", 3).
++SetInterface("Titusville", "Titusville_I_Melbourne").
++SetInterface("Titusville", "Titusville_I_DaytonaTTBeach").
+
++SetNode("Melbourne").
++SetAdminDist("Melbourne", "static", 1).
++SetAdminDist("Melbourne", "bgp", 2).
++SetAdminDist("Melbourne", "ospf", 3).
++SetInterface("Melbourne", "Melbourne_I_Ft_TTPierce").
++SetInterface("Melbourne", "Melbourne_I_Titusville").
+
++SetNode("Ft_TTPierce").
++SetAdminDist("Ft_TTPierce", "static", 1).
++SetAdminDist("Ft_TTPierce", "bgp", 2).
++SetAdminDist("Ft_TTPierce", "ospf", 3).
++SetInterface("Ft_TTPierce", "Ft_TTPierce_I_Melbourne").
++SetInterface("Ft_TTPierce", "Ft_TTPierce_I_WestTTPalmTTBeach").
+
++SetNode("Gordon").
++SetAdminDist("Gordon", "static", 1).
++SetAdminDist("Gordon", "bgp", 2).
++SetAdminDist("Gordon", "ospf", 3).
++SetInterface("Gordon", "Gordon_I_Tarrytown").
++SetInterface("Gordon", "Gordon_I_Flovilla").
+
++SetNode("St_TTAugustine").
++SetAdminDist("St_TTAugustine", "static", 1).
++SetAdminDist("St_TTAugustine", "bgp", 2).
++SetAdminDist("St_TTAugustine", "ospf", 3).
++SetInterface("St_TTAugustine", "St_TTAugustine_I_DaytonaTTBeach").
++SetInterface("St_TTAugustine", "St_TTAugustine_I_Jacksonville").
+
++SetNode("Ft_TTLauderdale").
++SetAdminDist("Ft_TTLauderdale", "static", 1).
++SetAdminDist("Ft_TTLauderdale", "bgp", 2).
++SetAdminDist("Ft_TTLauderdale", "ospf", 3).
++SetInterface("Ft_TTLauderdale", "Ft_TTLauderdale_I_Miami").
++SetInterface("Ft_TTLauderdale", "Ft_TTLauderdale_I_WestTTPalmTTBeach").
+
++SetNode("Atlanta").
++SetAdminDist("Atlanta", "static", 1).
++SetAdminDist("Atlanta", "bgp", 2).
++SetAdminDist("Atlanta", "ospf", 3).
++SetInterface("Atlanta", "Atlanta_I_Flovilla").
+
++SetNode("Flovilla").
++SetAdminDist("Flovilla", "static", 1).
++SetAdminDist("Flovilla", "bgp", 2).
++SetAdminDist("Flovilla", "ospf", 3).
++SetInterface("Flovilla", "Flovilla_I_Atlanta").
++SetInterface("Flovilla", "Flovilla_I_Gordon").
+
++SetNode("Jacksonville").
++SetAdminDist("Jacksonville", "static", 1).
++SetAdminDist("Jacksonville", "bgp", 2).
++SetAdminDist("Jacksonville", "ospf", 3).
++SetInterface("Jacksonville", "Jacksonville_I_Newell").
++SetInterface("Jacksonville", "Jacksonville_I_St_TTAugustine").
+
++SetNode("Tampa").
++SetAdminDist("Tampa", "static", 1).
++SetAdminDist("Tampa", "bgp", 2).
++SetAdminDist("Tampa", "ospf", 3).
++SetInterface("Tampa", "Tampa_I_LakeTTAlfred").
+
++SetNode("Tarrytown").
++SetAdminDist("Tarrytown", "static", 1).
++SetAdminDist("Tarrytown", "bgp", 2).
++SetAdminDist("Tarrytown", "ospf", 3).
++SetInterface("Tarrytown", "Tarrytown_I_Surrency").
++SetInterface("Tarrytown", "Tarrytown_I_Gordon").
+
++SetLink("Surrency_I_Newell", "Newell_I_Surrency").
++SetLink("Surrency_I_Tarrytown", "Tarrytown_I_Surrency").
++SetLink("WestTTPalmTTBeach_I_Ft_TTPierce", "Ft_TTPierce_I_WestTTPalmTTBeach").
++SetLink("WestTTPalmTTBeach_I_Ft_TTLauderdale", "Ft_TTLauderdale_I_WestTTPalmTTBeach").
++SetLink("LakeTTAlfred_I_Orlando", "Orlando_I_LakeTTAlfred").
++SetLink("LakeTTAlfred_I_Tampa", "Tampa_I_LakeTTAlfred").
++SetLink("DaytonaTTBeach_I_Orlando", "Orlando_I_DaytonaTTBeach").
++SetLink("DaytonaTTBeach_I_St_TTAugustine", "St_TTAugustine_I_DaytonaTTBeach").
++SetLink("DaytonaTTBeach_I_Titusville", "Titusville_I_DaytonaTTBeach").
++SetLink("Miami_I_Ft_TTLauderdale", "Ft_TTLauderdale_I_Miami").
++SetLink("Newell_I_Jacksonville", "Jacksonville_I_Newell").
++SetLink("Titusville_I_Melbourne", "Melbourne_I_Titusville").
++SetLink("Melbourne_I_Ft_TTPierce", "Ft_TTPierce_I_Melbourne").
++SetLink("Gordon_I_Tarrytown", "Tarrytown_I_Gordon").
++SetLink("Gordon_I_Flovilla", "Flovilla_I_Gordon").
++SetLink("St_TTAugustine_I_Jacksonville", "Jacksonville_I_St_TTAugustine").
++SetLink("Atlanta_I_Flovilla", "Flovilla_I_Atlanta").
+
+
++SetNetwork("Titusville", "N_Titusville").
++SetNetwork("Atlanta", "N_Atlanta").
++SetNetwork("Orlando", "N_Orlando").
++SetNetwork("Miami", "N_Miami").
++SetNetwork("Ft_TTLauderdale", "N_Ft_TTLauderdale").

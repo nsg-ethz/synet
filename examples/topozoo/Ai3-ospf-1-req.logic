@@ -1,0 +1,11 @@
+
++Fwd("N_TP", "ASTI", "KEIO", "ospf").
++Fwd("N_TP", "KEIO", "TP", "ospf").
++Fwd("N_TP", "AIT", "KEIO", "ospf").
++Fwd("N_TP", "USM", "KEIO", "ospf").
++Fwd("N_TP", "TU", "AIT", "ospf").
++Fwd("N_TP", "ITB", "KEIO", "ospf").
++Fwd("N_TP", "IOIT", "KEIO", "ospf").
++Fwd("N_TP", "NAIST", "KEIO", "ospf").
++Fwd("N_TP", "UNIBRAW", "ITB", "ospf").
+

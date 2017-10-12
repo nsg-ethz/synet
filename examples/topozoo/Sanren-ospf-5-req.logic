@@ -1,0 +1,36 @@
+
++Fwd("N_PortTTElizabeth", "EastTTLondon", "PortTTElizabeth", "ospf").
++Fwd("N_PortTTElizabeth", "Durban", "EastTTLondon", "ospf").
++Fwd("N_PortTTElizabeth", "Bloemfontein", "CapeTTTown", "ospf").
++Fwd("N_PortTTElizabeth", "CapeTTTown", "PortTTElizabeth", "ospf").
++Fwd("N_PortTTElizabeth", "Johannesburg", "Pretoria", "ospf").
++Fwd("N_PortTTElizabeth", "Pretoria", "Durban", "ospf").
+
++Fwd("N_Durban", "PortTTElizabeth", "EastTTLondon", "ospf").
++Fwd("N_Durban", "EastTTLondon", "Durban", "ospf").
++Fwd("N_Durban", "Bloemfontein", "Johannesburg", "ospf").
++Fwd("N_Durban", "Johannesburg", "Pretoria", "ospf").
++Fwd("N_Durban", "Pretoria", "Durban", "ospf").
++Fwd("N_Durban", "CapeTTTown", "PortTTElizabeth", "ospf").
+
++Fwd("N_Pretoria", "PortTTElizabeth", "EastTTLondon", "ospf").
++Fwd("N_Pretoria", "EastTTLondon", "Durban", "ospf").
++Fwd("N_Pretoria", "Durban", "Pretoria", "ospf").
++Fwd("N_Pretoria", "Bloemfontein", "Johannesburg", "ospf").
++Fwd("N_Pretoria", "Johannesburg", "Pretoria", "ospf").
++Fwd("N_Pretoria", "CapeTTTown", "Bloemfontein", "ospf").
+
++Fwd("N_CapeTTTown", "PortTTElizabeth", "CapeTTTown", "ospf").
++Fwd("N_CapeTTTown", "EastTTLondon", "PortTTElizabeth", "ospf").
++Fwd("N_CapeTTTown", "Durban", "EastTTLondon", "ospf").
++Fwd("N_CapeTTTown", "Bloemfontein", "CapeTTTown", "ospf").
++Fwd("N_CapeTTTown", "Johannesburg", "Bloemfontein", "ospf").
++Fwd("N_CapeTTTown", "Pretoria", "Durban", "ospf").
+
++Fwd("N_Bloemfontein", "PortTTElizabeth", "CapeTTTown", "ospf").
++Fwd("N_Bloemfontein", "CapeTTTown", "Bloemfontein", "ospf").
++Fwd("N_Bloemfontein", "EastTTLondon", "PortTTElizabeth", "ospf").
++Fwd("N_Bloemfontein", "Durban", "Pretoria", "ospf").
++Fwd("N_Bloemfontein", "Pretoria", "Johannesburg", "ospf").
++Fwd("N_Bloemfontein", "Johannesburg", "Bloemfontein", "ospf").
+

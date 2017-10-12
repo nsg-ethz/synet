@@ -1,0 +1,14 @@
+
++Fwd("N_PNK", "NPM", "NRT", "ospf").
++Fwd("N_PNK", "NRT", "SKA", "ospf").
++Fwd("N_PNK", "SKA", "CBI", "ospf").
++Fwd("N_PNK", "CBI", "BKK", "ospf").
++Fwd("N_PNK", "BKK", "PNK", "ospf").
++Fwd("N_PNK", "SKN", "KKN", "ospf").
++Fwd("N_PNK", "KKN", "PNK", "ospf").
++Fwd("N_PNK", "CMI", "PNK", "ospf").
++Fwd("N_PNK", "NRM", "BKK", "ospf").
++Fwd("N_PNK", "CRI", "PNK", "ospf").
++Fwd("N_PNK", "UBI", "NRM", "ospf").
++Fwd("N_PNK", "_", "KKN", "ospf").
+

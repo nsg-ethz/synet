@@ -1,0 +1,88 @@
++SetNode("Galway").
++SetAdminDist("Galway", "static", 1).
++SetAdminDist("Galway", "bgp", 2).
++SetAdminDist("Galway", "ospf", 3).
++SetInterface("Galway", "Galway_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Tralee").
++SetAdminDist("Tralee", "static", 1).
++SetAdminDist("Tralee", "bgp", 2).
++SetAdminDist("Tralee", "ospf", 3).
++SetInterface("Tralee", "Tralee_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Dundalk").
++SetAdminDist("Dundalk", "static", 1).
++SetAdminDist("Dundalk", "bgp", 2).
++SetAdminDist("Dundalk", "ospf", 3).
++SetInterface("Dundalk", "Dundalk_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Limerick").
++SetAdminDist("Limerick", "static", 1).
++SetAdminDist("Limerick", "bgp", 2).
++SetAdminDist("Limerick", "ospf", 3).
++SetInterface("Limerick", "Limerick_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Athlone").
++SetAdminDist("Athlone", "static", 1).
++SetAdminDist("Athlone", "bgp", 2).
++SetAdminDist("Athlone", "ospf", 3).
++SetInterface("Athlone", "Athlone_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Cork").
++SetAdminDist("Cork", "static", 1).
++SetAdminDist("Cork", "bgp", 2).
++SetAdminDist("Cork", "ospf", 3).
++SetInterface("Cork", "Cork_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Blanchardstown_TTDunTTLaoghaire_TTTallaght").
++SetAdminDist("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static", 1).
++SetAdminDist("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp", 2).
++SetAdminDist("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf", 3).
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Galway").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Tralee").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Dundalk").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Limerick").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Athlone").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Cork").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Waterford").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Letterkenny").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Carlow").
++SetInterface("Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Sligo").
+
++SetNode("Waterford").
++SetAdminDist("Waterford", "static", 1).
++SetAdminDist("Waterford", "bgp", 2).
++SetAdminDist("Waterford", "ospf", 3).
++SetInterface("Waterford", "Waterford_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Letterkenny").
++SetAdminDist("Letterkenny", "static", 1).
++SetAdminDist("Letterkenny", "bgp", 2).
++SetAdminDist("Letterkenny", "ospf", 3).
++SetInterface("Letterkenny", "Letterkenny_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Carlow").
++SetAdminDist("Carlow", "static", 1).
++SetAdminDist("Carlow", "bgp", 2).
++SetAdminDist("Carlow", "ospf", 3).
++SetInterface("Carlow", "Carlow_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetNode("Sligo").
++SetAdminDist("Sligo", "static", 1).
++SetAdminDist("Sligo", "bgp", 2).
++SetAdminDist("Sligo", "ospf", 3).
++SetInterface("Sligo", "Sligo_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
++SetLink("Galway_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Galway").
++SetLink("Tralee_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Tralee").
++SetLink("Dundalk_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Dundalk").
++SetLink("Limerick_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Limerick").
++SetLink("Athlone_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Athlone").
++SetLink("Cork_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Cork").
++SetLink("Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Waterford", "Waterford_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
++SetLink("Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Letterkenny", "Letterkenny_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
++SetLink("Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Carlow", "Carlow_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
++SetLink("Blanchardstown_TTDunTTLaoghaire_TTTallaght_I_Sligo", "Sligo_I_Blanchardstown_TTDunTTLaoghaire_TTTallaght").
+
+
++SetNetwork("Athlone", "N_Athlone").

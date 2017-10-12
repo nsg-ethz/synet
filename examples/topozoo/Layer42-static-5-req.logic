@@ -1,0 +1,31 @@
+
++Fwd("N_Seattle", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_Seattle", "SanTTFrancisco", "Seattle", "static").
++Fwd("N_Seattle", "Chicago", "WashingtonTTDC", "static").
++Fwd("N_Seattle", "WashingtonTTDC", "SanTTFrancisco", "static").
++Fwd("N_Seattle", "NewTTYorkTTCity", "WashingtonTTDC", "static").
+
++Fwd("N_LosTTAngeles", "SanTTFrancisco", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Chicago", "WashingtonTTDC", "static").
++Fwd("N_LosTTAngeles", "WashingtonTTDC", "SanTTFrancisco", "static").
++Fwd("N_LosTTAngeles", "NewTTYorkTTCity", "WashingtonTTDC", "static").
++Fwd("N_LosTTAngeles", "Seattle", "SanTTFrancisco", "static").
+
++Fwd("N_WashingtonTTDC", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_WashingtonTTDC", "SanTTFrancisco", "WashingtonTTDC", "static").
++Fwd("N_WashingtonTTDC", "Chicago", "WashingtonTTDC", "static").
++Fwd("N_WashingtonTTDC", "NewTTYorkTTCity", "WashingtonTTDC", "static").
++Fwd("N_WashingtonTTDC", "Seattle", "SanTTFrancisco", "static").
+
++Fwd("N_SanTTFrancisco", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "Chicago", "WashingtonTTDC", "static").
++Fwd("N_SanTTFrancisco", "WashingtonTTDC", "SanTTFrancisco", "static").
++Fwd("N_SanTTFrancisco", "NewTTYorkTTCity", "WashingtonTTDC", "static").
++Fwd("N_SanTTFrancisco", "Seattle", "SanTTFrancisco", "static").
+
++Fwd("N_NewTTYorkTTCity", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_NewTTYorkTTCity", "SanTTFrancisco", "Chicago", "static").
++Fwd("N_NewTTYorkTTCity", "Chicago", "NewTTYorkTTCity", "static").
++Fwd("N_NewTTYorkTTCity", "WashingtonTTDC", "Chicago", "static").
++Fwd("N_NewTTYorkTTCity", "Seattle", "SanTTFrancisco", "static").
+

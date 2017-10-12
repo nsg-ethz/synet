@@ -1,0 +1,12 @@
+
++Fwd("N_Schools", "Biopolis", "SingAREN_GIX", "static").
++Fwd("N_Schools", "SingAREN_GIX", "Schools", "static").
++Fwd("N_Schools", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "static").
++Fwd("N_Schools", "AARNET", "SingAREN_GIX", "static").
++Fwd("N_Schools", "NTU", "SingAREN_GIX", "static").
++Fwd("N_Schools", "NUS", "SingAREN_GIX", "static").
++Fwd("N_Schools", "TEIN3", "SingAREN_GIX", "static").
++Fwd("N_Schools", "SingARENTTmembers", "SingAREN_GIX", "static").
++Fwd("N_Schools", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "static").
++Fwd("N_Schools", "Fusionopolis", "SingAREN_GIX", "static").
+

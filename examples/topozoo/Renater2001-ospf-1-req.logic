@@ -1,0 +1,25 @@
+
++Fwd("N_Lyon", "Orleans", "Paris", "ospf").
++Fwd("N_Lyon", "Paris", "Lyon", "ospf").
++Fwd("N_Lyon", "Strasbourg", "Besancon", "ospf").
++Fwd("N_Lyon", "Besancon", "Lyon", "ospf").
++Fwd("N_Lyon", "Lille", "Paris", "ospf").
++Fwd("N_Lyon", "Poiters", "Paris", "ospf").
++Fwd("N_Lyon", "Compiegne", "Paris", "ospf").
++Fwd("N_Lyon", "Clermont_Ferrand", "Lyon", "ospf").
++Fwd("N_Lyon", "Reims", "Paris", "ospf").
++Fwd("N_Lyon", "Limoges", "Poiters", "ospf").
++Fwd("N_Lyon", "Grenoble", "Lyon", "ospf").
++Fwd("N_Lyon", "Caen", "Rouen", "ospf").
++Fwd("N_Lyon", "Rouen", "Paris", "ospf").
++Fwd("N_Lyon", "Nantes", "Poiters", "ospf").
++Fwd("N_Lyon", "Dijon", "Besancon", "ospf").
++Fwd("N_Lyon", "Nancy", "Strasbourg", "ospf").
++Fwd("N_Lyon", "Rennes", "Paris", "ospf").
++Fwd("N_Lyon", "Bordeaux", "Poiters", "ospf").
++Fwd("N_Lyon", "Marseille", "Lyon", "ospf").
++Fwd("N_Lyon", "Sophia", "Marseille", "ospf").
++Fwd("N_Lyon", "Toulouse", "Lyon", "ospf").
++Fwd("N_Lyon", "Montpellier", "Marseille", "ospf").
++Fwd("N_Lyon", "Corte", "Sophia", "ospf").
+

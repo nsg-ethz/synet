@@ -1,0 +1,311 @@
++SetNode("UCATT_TTChatham").
++SetAdminDist("UCATT_TTChatham", "static", 1).
++SetAdminDist("UCATT_TTChatham", "bgp", 2).
++SetAdminDist("UCATT_TTChatham", "ospf", 3).
++SetInterface("UCATT_TTChatham", "UCATT_TTChatham_I_Chatham").
+
++SetNode("HadlowTTCollegeTTCanterbury").
++SetAdminDist("HadlowTTCollegeTTCanterbury", "static", 1).
++SetAdminDist("HadlowTTCollegeTTCanterbury", "bgp", 2).
++SetAdminDist("HadlowTTCollegeTTCanterbury", "ospf", 3).
++SetInterface("HadlowTTCollegeTTCanterbury", "HadlowTTCollegeTTCanterbury_I_UoK_C").
+
++SetNode("UCATT_TTCanterbury").
++SetAdminDist("UCATT_TTCanterbury", "static", 1).
++SetAdminDist("UCATT_TTCanterbury", "bgp", 2).
++SetAdminDist("UCATT_TTCanterbury", "ospf", 3).
++SetInterface("UCATT_TTCanterbury", "UCATT_TTCanterbury_I_UoK_C").
+
++SetNode("MidTTKentTTCollege").
++SetAdminDist("MidTTKentTTCollege", "static", 1).
++SetAdminDist("MidTTKentTTCollege", "bgp", 2).
++SetAdminDist("MidTTKentTTCollege", "ospf", 3).
++SetInterface("MidTTKentTTCollege", "MidTTKentTTCollege_I_Chatham").
+
++SetNode("KPSN").
++SetAdminDist("KPSN", "static", 1).
++SetAdminDist("KPSN", "bgp", 2).
++SetAdminDist("KPSN", "ospf", 3).
++SetInterface("KPSN", "KPSN_I_PilgrimTT_TTAshford").
++SetInterface("KPSN", "KPSN_I_UoK_C").
++SetInterface("KPSN", "KPSN_I_UniversityTTCollegeTTFolkestone").
++SetInterface("KPSN", "KPSN_I_EIS_Maidstone").
+
++SetNode("UniversitiesTTatTTMedway").
++SetAdminDist("UniversitiesTTatTTMedway", "static", 1).
++SetAdminDist("UniversitiesTTatTTMedway", "bgp", 2).
++SetAdminDist("UniversitiesTTatTTMedway", "ospf", 3).
++SetInterface("UniversitiesTTatTTMedway", "UniversitiesTTatTTMedway_I_Chatham").
+
++SetNode("HadlowTTCollegeTTMottingham").
++SetAdminDist("HadlowTTCollegeTTMottingham", "static", 1).
++SetAdminDist("HadlowTTCollegeTTMottingham", "bgp", 2).
++SetAdminDist("HadlowTTCollegeTTMottingham", "ospf", 3).
++SetInterface("HadlowTTCollegeTTMottingham", "HadlowTTCollegeTTMottingham_I_UoG_AH").
+
++SetNode("HadlowTTCollege").
++SetAdminDist("HadlowTTCollege", "static", 1).
++SetAdminDist("HadlowTTCollege", "bgp", 2).
++SetAdminDist("HadlowTTCollege", "ospf", 3).
++SetInterface("HadlowTTCollege", "HadlowTTCollege_I_CCCU_S").
+
++SetNode("CanterburyTTCollege").
++SetAdminDist("CanterburyTTCollege", "static", 1).
++SetAdminDist("CanterburyTTCollege", "bgp", 2).
++SetAdminDist("CanterburyTTCollege", "ospf", 3).
++SetInterface("CanterburyTTCollege", "CanterburyTTCollege_I_UoK_C").
+
++SetNode("Pilgrim_Canterbury").
++SetAdminDist("Pilgrim_Canterbury", "static", 1).
++SetAdminDist("Pilgrim_Canterbury", "bgp", 2).
++SetAdminDist("Pilgrim_Canterbury", "ospf", 3).
++SetInterface("Pilgrim_Canterbury", "Pilgrim_Canterbury_I_UoK_C").
+
++SetNode("UoG_AH").
++SetAdminDist("UoG_AH", "static", 1).
++SetAdminDist("UoG_AH", "bgp", 2).
++SetAdminDist("UoG_AH", "ospf", 3).
++SetInterface("UoG_AH", "UoG_AH_I_UCA_Epsom").
++SetInterface("UoG_AH", "UoG_AH_I_NWTTKentTTCollegeTT_TTDartford").
++SetInterface("UoG_AH", "UoG_AH_I_Chatham").
++SetInterface("UoG_AH", "UoG_AH_I_HadlowTTCollegeTTMottingham").
+
++SetNode("IFSTTSchoolTTofTTFinance").
++SetAdminDist("IFSTTSchoolTTofTTFinance", "static", 1).
++SetAdminDist("IFSTTSchoolTTofTTFinance", "bgp", 2).
++SetAdminDist("IFSTTSchoolTTofTTFinance", "ospf", 3).
++SetInterface("IFSTTSchoolTTofTTFinance", "IFSTTSchoolTTofTTFinance_I_UoK_C").
+
++SetNode("UCCA_C").
++SetAdminDist("UCCA_C", "static", 1).
++SetAdminDist("UCCA_C", "bgp", 2).
++SetAdminDist("UCCA_C", "ospf", 3).
++SetInterface("UCCA_C", "UCCA_C_I_UoK_C").
+
++SetNode("HilderstoneTTCollege").
++SetAdminDist("HilderstoneTTCollege", "static", 1).
++SetAdminDist("HilderstoneTTCollege", "bgp", 2).
++SetAdminDist("HilderstoneTTCollege", "ospf", 3).
++SetInterface("HilderstoneTTCollege", "HilderstoneTTCollege_I_CCCU_T").
+
++SetNode("PilgrimTT_TTAshford").
++SetAdminDist("PilgrimTT_TTAshford", "static", 1).
++SetAdminDist("PilgrimTT_TTAshford", "bgp", 2).
++SetAdminDist("PilgrimTT_TTAshford", "ospf", 3).
++SetInterface("PilgrimTT_TTAshford", "PilgrimTT_TTAshford_I_KPSN").
+
++SetNode("DortonTTCollege").
++SetAdminDist("DortonTTCollege", "static", 1).
++SetAdminDist("DortonTTCollege", "bgp", 2).
++SetAdminDist("DortonTTCollege", "ospf", 3).
++SetInterface("DortonTTCollege", "DortonTTCollege_I_CCCU_S").
+
++SetNode("janetID14").
++SetAdminDist("janetID14", "static", 1).
++SetAdminDist("janetID14", "bgp", 2).
++SetAdminDist("janetID14", "ospf", 3).
++SetInterface("janetID14", "janetID14_I_Chatham").
+
++SetNode("Chatham").
++SetAdminDist("Chatham", "static", 1).
++SetAdminDist("Chatham", "bgp", 2).
++SetAdminDist("Chatham", "ospf", 3).
++SetInterface("Chatham", "Chatham_I_UCATT_TTChatham").
++SetInterface("Chatham", "Chatham_I_WEA").
++SetInterface("Chatham", "Chatham_I_UoG_AH").
++SetInterface("Chatham", "Chatham_I_UCATT_TTRochester").
++SetInterface("Chatham", "Chatham_I_EIS_Maidstone").
++SetInterface("Chatham", "Chatham_I_MidTTKentTTCollege").
++SetInterface("Chatham", "Chatham_I_UniversitiesTTatTTMedway").
++SetInterface("Chatham", "Chatham_I_MedwayTTCouncil").
++SetInterface("Chatham", "Chatham_I_janetID14").
+
++SetNode("SOASTT_TTWye").
++SetAdminDist("SOASTT_TTWye", "static", 1).
++SetAdminDist("SOASTT_TTWye", "bgp", 2).
++SetAdminDist("SOASTT_TTWye", "ospf", 3).
++SetInterface("SOASTT_TTWye", "SOASTT_TTWye_I_UoK_C").
+
++SetNode("WEA").
++SetAdminDist("WEA", "static", 1).
++SetAdminDist("WEA", "bgp", 2).
++SetAdminDist("WEA", "ospf", 3).
++SetInterface("WEA", "WEA_I_Chatham").
+
++SetNode("Pilgrims_Margate").
++SetAdminDist("Pilgrims_Margate", "static", 1).
++SetAdminDist("Pilgrims_Margate", "bgp", 2).
++SetAdminDist("Pilgrims_Margate", "ospf", 3).
++SetInterface("Pilgrims_Margate", "Pilgrims_Margate_I_CCCU_T").
+
++SetNode("janet").
++SetAdminDist("janet", "static", 1).
++SetAdminDist("janet", "bgp", 2).
++SetAdminDist("janet", "ospf", 3).
++SetInterface("janet", "janet_I_UoK_C").
+
++SetNode("ThanetTTCollege").
++SetAdminDist("ThanetTTCollege", "static", 1).
++SetAdminDist("ThanetTTCollege", "bgp", 2).
++SetAdminDist("ThanetTTCollege", "ospf", 3).
++SetInterface("ThanetTTCollege", "ThanetTTCollege_I_CCCU_T").
+
++SetNode("UCATT_TTRochester").
++SetAdminDist("UCATT_TTRochester", "static", 1).
++SetAdminDist("UCATT_TTRochester", "bgp", 2).
++SetAdminDist("UCATT_TTRochester", "ospf", 3).
++SetInterface("UCATT_TTRochester", "UCATT_TTRochester_I_Chatham").
+
++SetNode("UoK_C").
++SetAdminDist("UoK_C", "static", 1).
++SetAdminDist("UoK_C", "bgp", 2).
++SetAdminDist("UoK_C", "ospf", 3).
++SetInterface("UoK_C", "UoK_C_I_SOASTT_TTWye").
++SetInterface("UoK_C", "UoK_C_I_IFSTTSchoolTTofTTFinance").
++SetInterface("UoK_C", "UoK_C_I_KTTCollege_TTAshford").
++SetInterface("UoK_C", "UoK_C_I_UCCA_C").
++SetInterface("UoK_C", "UoK_C_I_UCATT_TTCanterbury").
++SetInterface("UoK_C", "UoK_C_I_KPSN").
++SetInterface("UoK_C", "UoK_C_I_EIS_Maidstone").
++SetInterface("UoK_C", "UoK_C_I_CCCU_T").
++SetInterface("UoK_C", "UoK_C_I_UniversityTTofTTKent").
++SetInterface("UoK_C", "UoK_C_I_HadlowTTCollegeTTCanterbury").
++SetInterface("UoK_C", "UoK_C_I_CanterburyTTCollege").
++SetInterface("UoK_C", "UoK_C_I_Pilgrim_Canterbury").
++SetInterface("UoK_C", "UoK_C_I_janet").
+
++SetNode("CCCU_T").
++SetAdminDist("CCCU_T", "static", 1).
++SetAdminDist("CCCU_T", "bgp", 2).
++SetAdminDist("CCCU_T", "ospf", 3).
++SetInterface("CCCU_T", "CCCU_T_I_HilderstoneTTCollege").
++SetInterface("CCCU_T", "CCCU_T_I_Pilgrims_Margate").
++SetInterface("CCCU_T", "CCCU_T_I_UoK_C").
++SetInterface("CCCU_T", "CCCU_T_I_ThanetTTCollege").
+
++SetNode("CCCU_S").
++SetAdminDist("CCCU_S", "static", 1).
++SetAdminDist("CCCU_S", "bgp", 2).
++SetAdminDist("CCCU_S", "ospf", 3).
++SetInterface("CCCU_S", "CCCU_S_I_WestTTKentTTCollege").
++SetInterface("CCCU_S", "CCCU_S_I_EIS_Maidstone").
++SetInterface("CCCU_S", "CCCU_S_I_UoKTT_TTTonbridge").
++SetInterface("CCCU_S", "CCCU_S_I_DortonTTCollege").
++SetInterface("CCCU_S", "CCCU_S_I_HadlowTTCollege").
+
++SetNode("UniversityTTofTTKent").
++SetAdminDist("UniversityTTofTTKent", "static", 1).
++SetAdminDist("UniversityTTofTTKent", "bgp", 2).
++SetAdminDist("UniversityTTofTTKent", "ospf", 3).
++SetInterface("UniversityTTofTTKent", "UniversityTTofTTKent_I_UoK_C").
+
++SetNode("UCATT_TTMaidstone").
++SetAdminDist("UCATT_TTMaidstone", "static", 1).
++SetAdminDist("UCATT_TTMaidstone", "bgp", 2).
++SetAdminDist("UCATT_TTMaidstone", "ospf", 3).
++SetInterface("UCATT_TTMaidstone", "UCATT_TTMaidstone_I_EIS_Maidstone").
+
++SetNode("NWTTKentTTCollegeTT_TTDartford").
++SetAdminDist("NWTTKentTTCollegeTT_TTDartford", "static", 1).
++SetAdminDist("NWTTKentTTCollegeTT_TTDartford", "bgp", 2).
++SetAdminDist("NWTTKentTTCollegeTT_TTDartford", "ospf", 3).
++SetInterface("NWTTKentTTCollegeTT_TTDartford", "NWTTKentTTCollegeTT_TTDartford_I_UoG_AH").
+
++SetNode("UCA_Epsom").
++SetAdminDist("UCA_Epsom", "static", 1).
++SetAdminDist("UCA_Epsom", "bgp", 2).
++SetAdminDist("UCA_Epsom", "ospf", 3).
++SetInterface("UCA_Epsom", "UCA_Epsom_I_UoG_AH").
+
++SetNode("orbitalnet").
++SetAdminDist("orbitalnet", "static", 1).
++SetAdminDist("orbitalnet", "bgp", 2).
++SetAdminDist("orbitalnet", "ospf", 3).
++SetInterface("orbitalnet", "orbitalnet_I_EIS_Maidstone").
+
++SetNode("KTTCollege_TTAshford").
++SetAdminDist("KTTCollege_TTAshford", "static", 1).
++SetAdminDist("KTTCollege_TTAshford", "bgp", 2).
++SetAdminDist("KTTCollege_TTAshford", "ospf", 3).
++SetInterface("KTTCollege_TTAshford", "KTTCollege_TTAshford_I_UoK_C").
+
++SetNode("UniversityTTCollegeTTFolkestone").
++SetAdminDist("UniversityTTCollegeTTFolkestone", "static", 1).
++SetAdminDist("UniversityTTCollegeTTFolkestone", "bgp", 2).
++SetAdminDist("UniversityTTCollegeTTFolkestone", "ospf", 3).
++SetInterface("UniversityTTCollegeTTFolkestone", "UniversityTTCollegeTTFolkestone_I_KPSN").
+
++SetNode("EIS_Maidstone").
++SetAdminDist("EIS_Maidstone", "static", 1).
++SetAdminDist("EIS_Maidstone", "bgp", 2).
++SetAdminDist("EIS_Maidstone", "ospf", 3).
++SetInterface("EIS_Maidstone", "EIS_Maidstone_I_orbitalnet").
++SetInterface("EIS_Maidstone", "EIS_Maidstone_I_KPSN").
++SetInterface("EIS_Maidstone", "EIS_Maidstone_I_UoK_C").
++SetInterface("EIS_Maidstone", "EIS_Maidstone_I_CCCU_S").
++SetInterface("EIS_Maidstone", "EIS_Maidstone_I_UCATT_TTMaidstone").
++SetInterface("EIS_Maidstone", "EIS_Maidstone_I_Chatham").
+
++SetNode("WestTTKentTTCollege").
++SetAdminDist("WestTTKentTTCollege", "static", 1).
++SetAdminDist("WestTTKentTTCollege", "bgp", 2).
++SetAdminDist("WestTTKentTTCollege", "ospf", 3).
++SetInterface("WestTTKentTTCollege", "WestTTKentTTCollege_I_CCCU_S").
+
++SetNode("MedwayTTCouncil").
++SetAdminDist("MedwayTTCouncil", "static", 1).
++SetAdminDist("MedwayTTCouncil", "bgp", 2).
++SetAdminDist("MedwayTTCouncil", "ospf", 3).
++SetInterface("MedwayTTCouncil", "MedwayTTCouncil_I_Chatham").
+
++SetNode("UoKTT_TTTonbridge").
++SetAdminDist("UoKTT_TTTonbridge", "static", 1).
++SetAdminDist("UoKTT_TTTonbridge", "bgp", 2).
++SetAdminDist("UoKTT_TTTonbridge", "ospf", 3).
++SetInterface("UoKTT_TTTonbridge", "UoKTT_TTTonbridge_I_CCCU_S").
+
++SetLink("UCATT_TTChatham_I_Chatham", "Chatham_I_UCATT_TTChatham").
++SetLink("HadlowTTCollegeTTCanterbury_I_UoK_C", "UoK_C_I_HadlowTTCollegeTTCanterbury").
++SetLink("UCATT_TTCanterbury_I_UoK_C", "UoK_C_I_UCATT_TTCanterbury").
++SetLink("MidTTKentTTCollege_I_Chatham", "Chatham_I_MidTTKentTTCollege").
++SetLink("KPSN_I_PilgrimTT_TTAshford", "PilgrimTT_TTAshford_I_KPSN").
++SetLink("KPSN_I_UoK_C", "UoK_C_I_KPSN").
++SetLink("KPSN_I_UniversityTTCollegeTTFolkestone", "UniversityTTCollegeTTFolkestone_I_KPSN").
++SetLink("KPSN_I_EIS_Maidstone", "EIS_Maidstone_I_KPSN").
++SetLink("UniversitiesTTatTTMedway_I_Chatham", "Chatham_I_UniversitiesTTatTTMedway").
++SetLink("HadlowTTCollegeTTMottingham_I_UoG_AH", "UoG_AH_I_HadlowTTCollegeTTMottingham").
++SetLink("HadlowTTCollege_I_CCCU_S", "CCCU_S_I_HadlowTTCollege").
++SetLink("CanterburyTTCollege_I_UoK_C", "UoK_C_I_CanterburyTTCollege").
++SetLink("Pilgrim_Canterbury_I_UoK_C", "UoK_C_I_Pilgrim_Canterbury").
++SetLink("UoG_AH_I_UCA_Epsom", "UCA_Epsom_I_UoG_AH").
++SetLink("UoG_AH_I_NWTTKentTTCollegeTT_TTDartford", "NWTTKentTTCollegeTT_TTDartford_I_UoG_AH").
++SetLink("UoG_AH_I_Chatham", "Chatham_I_UoG_AH").
++SetLink("IFSTTSchoolTTofTTFinance_I_UoK_C", "UoK_C_I_IFSTTSchoolTTofTTFinance").
++SetLink("UCCA_C_I_UoK_C", "UoK_C_I_UCCA_C").
++SetLink("HilderstoneTTCollege_I_CCCU_T", "CCCU_T_I_HilderstoneTTCollege").
++SetLink("DortonTTCollege_I_CCCU_S", "CCCU_S_I_DortonTTCollege").
++SetLink("janetID14_I_Chatham", "Chatham_I_janetID14").
++SetLink("Chatham_I_WEA", "WEA_I_Chatham").
++SetLink("Chatham_I_UCATT_TTRochester", "UCATT_TTRochester_I_Chatham").
++SetLink("Chatham_I_EIS_Maidstone", "EIS_Maidstone_I_Chatham").
++SetLink("Chatham_I_MedwayTTCouncil", "MedwayTTCouncil_I_Chatham").
++SetLink("SOASTT_TTWye_I_UoK_C", "UoK_C_I_SOASTT_TTWye").
++SetLink("Pilgrims_Margate_I_CCCU_T", "CCCU_T_I_Pilgrims_Margate").
++SetLink("janet_I_UoK_C", "UoK_C_I_janet").
++SetLink("ThanetTTCollege_I_CCCU_T", "CCCU_T_I_ThanetTTCollege").
++SetLink("UoK_C_I_KTTCollege_TTAshford", "KTTCollege_TTAshford_I_UoK_C").
++SetLink("UoK_C_I_EIS_Maidstone", "EIS_Maidstone_I_UoK_C").
++SetLink("UoK_C_I_CCCU_T", "CCCU_T_I_UoK_C").
++SetLink("UoK_C_I_UniversityTTofTTKent", "UniversityTTofTTKent_I_UoK_C").
++SetLink("CCCU_S_I_WestTTKentTTCollege", "WestTTKentTTCollege_I_CCCU_S").
++SetLink("CCCU_S_I_EIS_Maidstone", "EIS_Maidstone_I_CCCU_S").
++SetLink("CCCU_S_I_UoKTT_TTTonbridge", "UoKTT_TTTonbridge_I_CCCU_S").
++SetLink("UCATT_TTMaidstone_I_EIS_Maidstone", "EIS_Maidstone_I_UCATT_TTMaidstone").
++SetLink("orbitalnet_I_EIS_Maidstone", "EIS_Maidstone_I_orbitalnet").
+
+
++SetNetwork("CCCU_T", "N_CCCU_T").
++SetNetwork("janetID14", "N_janetID14").
++SetNetwork("MidTTKentTTCollege", "N_MidTTKentTTCollege").
++SetNetwork("WestTTKentTTCollege", "N_WestTTKentTTCollege").
++SetNetwork("CanterburyTTCollege", "N_CanterburyTTCollege").

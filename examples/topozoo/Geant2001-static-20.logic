@@ -1,0 +1,271 @@
++SetNode("BE").
++SetAdminDist("BE", "static", 1).
++SetAdminDist("BE", "bgp", 2).
++SetAdminDist("BE", "ospf", 3).
++SetInterface("BE", "BE_I_FR").
++SetInterface("BE", "BE_I_LU").
++SetInterface("BE", "BE_I_NL").
+
++SetNode("FR").
++SetAdminDist("FR", "static", 1).
++SetAdminDist("FR", "bgp", 2).
++SetAdminDist("FR", "ospf", 3).
++SetInterface("FR", "FR_I_BE").
++SetInterface("FR", "FR_I_CH").
++SetInterface("FR", "FR_I_DE").
++SetInterface("FR", "FR_I_LU").
++SetInterface("FR", "FR_I_UK").
++SetInterface("FR", "FR_I_ES").
+
++SetNode("BG").
++SetAdminDist("BG", "static", 1).
++SetAdminDist("BG", "bgp", 2).
++SetAdminDist("BG", "ospf", 3).
++SetInterface("BG", "BG_I_GR").
+
++SetNode("HR").
++SetAdminDist("HR", "static", 1).
++SetAdminDist("HR", "bgp", 2).
++SetAdminDist("HR", "ospf", 3).
++SetInterface("HR", "HR_I_AT").
+
++SetNode("DE").
++SetAdminDist("DE", "static", 1).
++SetAdminDist("DE", "bgp", 2).
++SetAdminDist("DE", "ospf", 3).
++SetInterface("DE", "DE_I_FR").
++SetInterface("DE", "DE_I_NL").
++SetInterface("DE", "DE_I_GR").
++SetInterface("DE", "DE_I_IT").
++SetInterface("DE", "DE_I_CZ").
++SetInterface("DE", "DE_I_AT").
++SetInterface("DE", "DE_I_IE").
++SetInterface("DE", "DE_I_SE").
+
++SetNode("HU").
++SetAdminDist("HU", "static", 1).
++SetAdminDist("HU", "bgp", 2).
++SetAdminDist("HU", "ospf", 3).
++SetInterface("HU", "HU_I_SK").
++SetInterface("HU", "HU_I_RO").
++SetInterface("HU", "HU_I_AT").
++SetInterface("HU", "HU_I_SL").
+
++SetNode("NL").
++SetAdminDist("NL", "static", 1).
++SetAdminDist("NL", "bgp", 2).
++SetAdminDist("NL", "ospf", 3).
++SetInterface("NL", "NL_I_BE").
++SetInterface("NL", "NL_I_DE").
++SetInterface("NL", "NL_I_UK").
+
++SetNode("PT").
++SetAdminDist("PT", "static", 1).
++SetAdminDist("PT", "bgp", 2).
++SetAdminDist("PT", "ospf", 3).
++SetInterface("PT", "PT_I_ES").
+
++SetNode("LV").
++SetAdminDist("LV", "static", 1).
++SetAdminDist("LV", "bgp", 2).
++SetAdminDist("LV", "ospf", 3).
++SetInterface("LV", "LV_I_SE").
+
++SetNode("LT").
++SetAdminDist("LT", "static", 1).
++SetAdminDist("LT", "bgp", 2).
++SetAdminDist("LT", "ospf", 3).
++SetInterface("LT", "LT_I_SE").
+
++SetNode("LU").
++SetAdminDist("LU", "static", 1).
++SetAdminDist("LU", "bgp", 2).
++SetAdminDist("LU", "ospf", 3).
++SetInterface("LU", "LU_I_BE").
++SetInterface("LU", "LU_I_FR").
+
++SetNode("RO").
++SetAdminDist("RO", "static", 1).
++SetAdminDist("RO", "bgp", 2).
++SetAdminDist("RO", "ospf", 3).
++SetInterface("RO", "RO_I_HU").
+
++SetNode("PL").
++SetAdminDist("PL", "static", 1).
++SetAdminDist("PL", "bgp", 2).
++SetAdminDist("PL", "ospf", 3).
++SetInterface("PL", "PL_I_CZ").
++SetInterface("PL", "PL_I_SE").
+
++SetNode("CH").
++SetAdminDist("CH", "static", 1).
++SetAdminDist("CH", "bgp", 2).
++SetAdminDist("CH", "ospf", 3).
++SetInterface("CH", "CH_I_FR").
++SetInterface("CH", "CH_I_AT").
++SetInterface("CH", "CH_I_IT").
+
++SetNode("GR").
++SetAdminDist("GR", "static", 1).
++SetAdminDist("GR", "bgp", 2).
++SetAdminDist("GR", "ospf", 3).
++SetInterface("GR", "GR_I_BG").
++SetInterface("GR", "GR_I_CY").
++SetInterface("GR", "GR_I_DE").
++SetInterface("GR", "GR_I_UK").
+
++SetNode("EE").
++SetAdminDist("EE", "static", 1).
++SetAdminDist("EE", "bgp", 2).
++SetAdminDist("EE", "ospf", 3).
++SetInterface("EE", "EE_I_SE").
+
++SetNode("IT").
++SetAdminDist("IT", "static", 1).
++SetAdminDist("IT", "bgp", 2).
++SetAdminDist("IT", "ospf", 3).
++SetInterface("IT", "IT_I_CH").
++SetInterface("IT", "IT_I_DE").
++SetInterface("IT", "IT_I_ES").
+
++SetNode("CZ").
++SetAdminDist("CZ", "static", 1).
++SetAdminDist("CZ", "bgp", 2).
++SetAdminDist("CZ", "ospf", 3).
++SetInterface("CZ", "CZ_I_SK").
++SetInterface("CZ", "CZ_I_DE").
++SetInterface("CZ", "CZ_I_PL").
+
++SetNode("CY").
++SetAdminDist("CY", "static", 1).
++SetAdminDist("CY", "bgp", 2).
++SetAdminDist("CY", "ospf", 3).
++SetInterface("CY", "CY_I_GR").
+
++SetNode("AT").
++SetAdminDist("AT", "static", 1).
++SetAdminDist("AT", "bgp", 2).
++SetAdminDist("AT", "ospf", 3).
++SetInterface("AT", "AT_I_HR").
++SetInterface("AT", "AT_I_CH").
++SetInterface("AT", "AT_I_DE").
++SetInterface("AT", "AT_I_SL").
++SetInterface("AT", "AT_I_HU").
+
++SetNode("IE").
++SetAdminDist("IE", "static", 1).
++SetAdminDist("IE", "bgp", 2).
++SetAdminDist("IE", "ospf", 3).
++SetInterface("IE", "IE_I_DE").
++SetInterface("IE", "IE_I_UK").
+
++SetNode("ES").
++SetAdminDist("ES", "static", 1).
++SetAdminDist("ES", "bgp", 2).
++SetAdminDist("ES", "ospf", 3).
++SetInterface("ES", "ES_I_FR").
++SetInterface("ES", "ES_I_IT").
++SetInterface("ES", "ES_I_PT").
+
++SetNode("SK").
++SetAdminDist("SK", "static", 1).
++SetAdminDist("SK", "bgp", 2).
++SetAdminDist("SK", "ospf", 3).
++SetInterface("SK", "SK_I_CZ").
++SetInterface("SK", "SK_I_HU").
+
++SetNode("UK").
++SetAdminDist("UK", "static", 1).
++SetAdminDist("UK", "bgp", 2).
++SetAdminDist("UK", "ospf", 3).
++SetInterface("UK", "UK_I_FR").
++SetInterface("UK", "UK_I_NL").
++SetInterface("UK", "UK_I_GR").
++SetInterface("UK", "UK_I_IL").
++SetInterface("UK", "UK_I_IE").
++SetInterface("UK", "UK_I_SE").
+
++SetNode("SL").
++SetAdminDist("SL", "static", 1).
++SetAdminDist("SL", "bgp", 2).
++SetAdminDist("SL", "ospf", 3).
++SetInterface("SL", "SL_I_AT").
++SetInterface("SL", "SL_I_HU").
+
++SetNode("SE").
++SetAdminDist("SE", "static", 1).
++SetAdminDist("SE", "bgp", 2).
++SetAdminDist("SE", "ospf", 3).
++SetInterface("SE", "SE_I_EE").
++SetInterface("SE", "SE_I_DE").
++SetInterface("SE", "SE_I_LV").
++SetInterface("SE", "SE_I_LT").
++SetInterface("SE", "SE_I_UK").
++SetInterface("SE", "SE_I_PL").
+
++SetNode("IL").
++SetAdminDist("IL", "static", 1).
++SetAdminDist("IL", "bgp", 2).
++SetAdminDist("IL", "ospf", 3).
++SetInterface("IL", "IL_I_UK").
+
++SetLink("BE_I_FR", "FR_I_BE").
++SetLink("BE_I_LU", "LU_I_BE").
++SetLink("BE_I_NL", "NL_I_BE").
++SetLink("FR_I_CH", "CH_I_FR").
++SetLink("FR_I_DE", "DE_I_FR").
++SetLink("FR_I_LU", "LU_I_FR").
++SetLink("FR_I_UK", "UK_I_FR").
++SetLink("FR_I_ES", "ES_I_FR").
++SetLink("BG_I_GR", "GR_I_BG").
++SetLink("HR_I_AT", "AT_I_HR").
++SetLink("DE_I_NL", "NL_I_DE").
++SetLink("DE_I_GR", "GR_I_DE").
++SetLink("DE_I_IT", "IT_I_DE").
++SetLink("DE_I_CZ", "CZ_I_DE").
++SetLink("DE_I_AT", "AT_I_DE").
++SetLink("DE_I_IE", "IE_I_DE").
++SetLink("DE_I_SE", "SE_I_DE").
++SetLink("HU_I_SK", "SK_I_HU").
++SetLink("HU_I_RO", "RO_I_HU").
++SetLink("HU_I_AT", "AT_I_HU").
++SetLink("HU_I_SL", "SL_I_HU").
++SetLink("NL_I_UK", "UK_I_NL").
++SetLink("PT_I_ES", "ES_I_PT").
++SetLink("LV_I_SE", "SE_I_LV").
++SetLink("LT_I_SE", "SE_I_LT").
++SetLink("PL_I_CZ", "CZ_I_PL").
++SetLink("PL_I_SE", "SE_I_PL").
++SetLink("CH_I_AT", "AT_I_CH").
++SetLink("CH_I_IT", "IT_I_CH").
++SetLink("GR_I_CY", "CY_I_GR").
++SetLink("GR_I_UK", "UK_I_GR").
++SetLink("EE_I_SE", "SE_I_EE").
++SetLink("IT_I_ES", "ES_I_IT").
++SetLink("CZ_I_SK", "SK_I_CZ").
++SetLink("AT_I_SL", "SL_I_AT").
++SetLink("IE_I_UK", "UK_I_IE").
++SetLink("UK_I_IL", "IL_I_UK").
++SetLink("UK_I_SE", "SE_I_UK").
+
+
++SetNetwork("IT", "N_IT").
++SetNetwork("CH", "N_CH").
++SetNetwork("RO", "N_RO").
++SetNetwork("PT", "N_PT").
++SetNetwork("EE", "N_EE").
++SetNetwork("NL", "N_NL").
++SetNetwork("IL", "N_IL").
++SetNetwork("UK", "N_UK").
++SetNetwork("BG", "N_BG").
++SetNetwork("IE", "N_IE").
++SetNetwork("DE", "N_DE").
++SetNetwork("GR", "N_GR").
++SetNetwork("BE", "N_BE").
++SetNetwork("CY", "N_CY").
++SetNetwork("LU", "N_LU").
++SetNetwork("LT", "N_LT").
++SetNetwork("PL", "N_PL").
++SetNetwork("ES", "N_ES").
++SetNetwork("FR", "N_FR").
++SetNetwork("AT", "N_AT").

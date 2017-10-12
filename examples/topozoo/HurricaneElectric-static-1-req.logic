@@ -1,0 +1,25 @@
+
++Fwd("N_SanTTJoseTT1", "NewTTYorkTT1", "Ashburn", "static").
++Fwd("N_SanTTJoseTT1", "Ashburn", "PaloTTAlto", "static").
++Fwd("N_SanTTJoseTT1", "PaloTTAlto", "SanTTJoseTT1", "static").
++Fwd("N_SanTTJoseTT1", "Chicago", "Dallas", "static").
++Fwd("N_SanTTJoseTT1", "Dallas", "Ashburn", "static").
++Fwd("N_SanTTJoseTT1", "Paris", "Ashburn", "static").
++Fwd("N_SanTTJoseTT1", "Atlanta", "Ashburn", "static").
++Fwd("N_SanTTJoseTT1", "Toronto", "NewTTYorkTT2", "static").
++Fwd("N_SanTTJoseTT1", "NewTTYorkTT2", "NewTTYorkTT1", "static").
++Fwd("N_SanTTJoseTT1", "NewTTYorkTT3", "NewTTYorkTT1", "static").
++Fwd("N_SanTTJoseTT1", "Tokyo", "SanTTJoseTT1", "static").
++Fwd("N_SanTTJoseTT1", "Miami", "Ashburn", "static").
++Fwd("N_SanTTJoseTT1", "SanTTJoseTT2", "PaloTTAlto", "static").
++Fwd("N_SanTTJoseTT1", "Stockholm", "Frankfurt", "static").
++Fwd("N_SanTTJoseTT1", "Frankfurt", "Paris", "static").
++Fwd("N_SanTTJoseTT1", "Amsterdam", "NewTTYorkTT1", "static").
++Fwd("N_SanTTJoseTT1", "LosTTAngeles", "PaloTTAlto", "static").
++Fwd("N_SanTTJoseTT1", "Zurich", "Frankfurt", "static").
++Fwd("N_SanTTJoseTT1", "HongTTKong", "SanTTJoseTT1", "static").
++Fwd("N_SanTTJoseTT1", "London", "Ashburn", "static").
++Fwd("N_SanTTJoseTT1", "FremontTT2", "PaloTTAlto", "static").
++Fwd("N_SanTTJoseTT1", "FremontTT1", "PaloTTAlto", "static").
++Fwd("N_SanTTJoseTT1", "Seattle", "SanTTJoseTT2", "static").
+

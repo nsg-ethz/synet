@@ -1,0 +1,18 @@
+
++Fwd("N_Moree", "Dubbo", "Moree", "static").
++Fwd("N_Moree", "Parkes", "Dubbo", "static").
++Fwd("N_Moree", "Geelong", "Melbourne", "static").
++Fwd("N_Moree", "Melbourne", "Albury", "static").
++Fwd("N_Moree", "Albury", "Canberra", "static").
++Fwd("N_Moree", "Canberra", "Sydney", "static").
++Fwd("N_Moree", "Sydney", "Newcastle", "static").
++Fwd("N_Moree", "Newcastle", "Coff_sTTHarbour", "static").
++Fwd("N_Moree", "Coff_sTTHarbour", "Brisbane", "static").
++Fwd("N_Moree", "Brisbane", "Moree", "static").
++Fwd("N_Moree", "PortTTAugusta", "Adelaide", "static").
++Fwd("N_Moree", "Adelaide", "Geelong", "static").
++Fwd("N_Moree", "Kalgoorlie", "PortTTAugusta", "static").
++Fwd("N_Moree", "NodeID2", "Parkes", "static").
++Fwd("N_Moree", "Perth", "Adelaide", "static").
++Fwd("N_Moree", "Shepparton", "NodeID2", "static").
+

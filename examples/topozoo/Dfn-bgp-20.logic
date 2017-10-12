@@ -1,0 +1,593 @@
++SetNode("FHM").
++SetAdminDist("FHM", "static", 1).
++SetAdminDist("FHM", "bgp", 2).
++SetAdminDist("FHM", "ospf", 3).
++SetInterface("FHM", "FHM_I_GAR").
++SetInterface("FHM", "FHM_I_REG").
+
++SetNode("AAC").
++SetAdminDist("AAC", "static", 1).
++SetAdminDist("AAC", "bgp", 2).
++SetAdminDist("AAC", "ospf", 3).
++SetInterface("AAC", "AAC_I_FZJ").
++SetInterface("AAC", "AAC_I_FRA").
++SetInterface("AAC", "AAC_I_BON").
+
++SetNode("DES").
++SetAdminDist("DES", "static", 1).
++SetAdminDist("DES", "bgp", 2).
++SetAdminDist("DES", "ospf", 3).
++SetInterface("DES", "DES_I_TUB").
++SetInterface("DES", "DES_I_HAM").
+
++SetNode("BRE").
++SetAdminDist("BRE", "static", 1).
++SetAdminDist("BRE", "bgp", 2).
++SetAdminDist("BRE", "ospf", 3).
++SetInterface("BRE", "BRE_I_HAN").
++SetInterface("BRE", "BRE_I_HAM").
++SetInterface("BRE", "BRE_I_EWE").
+
++SetNode("BAY").
++SetAdminDist("BAY", "static", 1).
++SetAdminDist("BAY", "bgp", 2).
++SetAdminDist("BAY", "ospf", 3).
++SetInterface("BAY", "BAY_I_ERL").
++SetInterface("BAY", "BAY_I_POT").
+
++SetNode("MUE").
++SetAdminDist("MUE", "static", 1).
++SetAdminDist("MUE", "bgp", 2).
++SetAdminDist("MUE", "ospf", 3).
++SetInterface("MUE", "MUE_I_DUI").
++SetInterface("MUE", "MUE_I_BIE").
++SetInterface("MUE", "MUE_I_EWE").
+
++SetNode("DOR").
++SetAdminDist("DOR", "static", 1).
++SetAdminDist("DOR", "bgp", 2).
++SetAdminDist("DOR", "ospf", 3).
++SetInterface("DOR", "DOR_I_WUP").
++SetInterface("DOR", "DOR_I_BOC").
+
++SetNode("PAD").
++SetAdminDist("PAD", "static", 1).
++SetAdminDist("PAD", "bgp", 2).
++SetAdminDist("PAD", "ospf", 3).
++SetInterface("PAD", "PAD_I_KAS").
++SetInterface("PAD", "PAD_I_BIE").
+
++SetNode("BON").
++SetAdminDist("BON", "static", 1).
++SetAdminDist("BON", "bgp", 2).
++SetAdminDist("BON", "ospf", 3).
++SetInterface("BON", "BON_I_BIR").
++SetInterface("BON", "BON_I_AAC").
+
++SetNode("GSI").
++SetAdminDist("GSI", "static", 1).
++SetAdminDist("GSI", "bgp", 2).
++SetAdminDist("GSI", "ospf", 3).
++SetInterface("GSI", "GSI_I_FRA").
++SetInterface("GSI", "GSI_I_HEI").
+
++SetNode("BOC").
++SetAdminDist("BOC", "static", 1).
++SetAdminDist("BOC", "bgp", 2).
++SetAdminDist("BOC", "ospf", 3).
++SetInterface("BOC", "BOC_I_DOR").
++SetInterface("BOC", "BOC_I_DUI").
+
++SetNode("DRE").
++SetAdminDist("DRE", "static", 1).
++SetAdminDist("DRE", "bgp", 2).
++SetAdminDist("DRE", "ospf", 3).
++SetInterface("DRE", "DRE_I_ERL").
++SetInterface("DRE", "DRE_I_POT").
++SetInterface("DRE", "DRE_I_CHE").
+
++SetNode("REG").
++SetAdminDist("REG", "static", 1).
++SetAdminDist("REG", "bgp", 2).
++SetAdminDist("REG", "ospf", 3).
++SetInterface("REG", "REG_I_FHM").
++SetInterface("REG", "REG_I_ERL").
+
++SetNode("CHE").
++SetAdminDist("CHE", "static", 1).
++SetAdminDist("CHE", "bgp", 2).
++SetAdminDist("CHE", "ospf", 3).
++SetInterface("CHE", "CHE_I_LEI").
++SetInterface("CHE", "CHE_I_DRE").
+
++SetNode("FFO").
++SetAdminDist("FFO", "static", 1).
++SetAdminDist("FFO", "bgp", 2).
++SetAdminDist("FFO", "ospf", 3).
++SetInterface("FFO", "FFO_I_POT").
++SetInterface("FFO", "FFO_I_ZIB").
++SetInterface("FFO", "FFO_I_HAN").
+
++SetNode("ERL").
++SetAdminDist("ERL", "static", 1).
++SetAdminDist("ERL", "bgp", 2).
++SetAdminDist("ERL", "ospf", 3).
++SetInterface("ERL", "ERL_I_FRA").
++SetInterface("ERL", "ERL_I_HAN").
++SetInterface("ERL", "ERL_I_AUG").
++SetInterface("ERL", "ERL_I_LEI").
++SetInterface("ERL", "ERL_I_POT").
++SetInterface("ERL", "ERL_I_ILM").
++SetInterface("ERL", "ERL_I_BAY").
++SetInterface("ERL", "ERL_I_WUE").
++SetInterface("ERL", "ERL_I_DRE").
++SetInterface("ERL", "ERL_I_REG").
+
++SetNode("DeCixID12").
++SetAdminDist("DeCixID12", "static", 1).
++SetAdminDist("DeCixID12", "bgp", 2).
++SetAdminDist("DeCixID12", "ospf", 3).
++SetInterface("DeCixID12", "DeCixID12_I_POT").
+
++SetNode("Geant").
++SetAdminDist("Geant", "static", 1).
++SetAdminDist("Geant", "bgp", 2).
++SetAdminDist("Geant", "ospf", 3).
++SetInterface("Geant", "Geant_I_FRA").
+
++SetNode("HUB").
++SetAdminDist("HUB", "static", 1).
++SetAdminDist("HUB", "bgp", 2).
++SetAdminDist("HUB", "ospf", 3).
++SetInterface("HUB", "HUB_I_TUB").
++SetInterface("HUB", "HUB_I_ADH").
+
++SetNode("SAA").
++SetAdminDist("SAA", "static", 1).
++SetAdminDist("SAA", "bgp", 2).
++SetAdminDist("SAA", "ospf", 3).
++SetInterface("SAA", "SAA_I_FRA").
++SetInterface("SAA", "SAA_I_KAI").
+
++SetNode("BIE").
++SetAdminDist("BIE", "static", 1).
++SetAdminDist("BIE", "bgp", 2).
++SetAdminDist("BIE", "ospf", 3).
++SetInterface("BIE", "BIE_I_MUE").
++SetInterface("BIE", "BIE_I_PAD").
++SetInterface("BIE", "BIE_I_HAN").
+
++SetNode("GAR").
++SetAdminDist("GAR", "static", 1).
++SetAdminDist("GAR", "bgp", 2).
++SetAdminDist("GAR", "ospf", 3).
++SetInterface("GAR", "GAR_I_FHM").
++SetInterface("GAR", "GAR_I_STU").
++SetInterface("GAR", "GAR_I_FRA").
++SetInterface("GAR", "GAR_I_AUG").
+
++SetNode("Telia").
++SetAdminDist("Telia", "static", 1).
++SetAdminDist("Telia", "bgp", 2).
++SetAdminDist("Telia", "ospf", 3).
++SetInterface("Telia", "Telia_I_POT").
+
++SetNode("POT").
++SetAdminDist("POT", "static", 1).
++SetAdminDist("POT", "bgp", 2).
++SetAdminDist("POT", "ospf", 3).
++SetInterface("POT", "POT_I_FFO").
++SetInterface("POT", "POT_I_FRA").
++SetInterface("POT", "POT_I_DeCixID12").
++SetInterface("POT", "POT_I_HAN").
++SetInterface("POT", "POT_I_BAY").
++SetInterface("POT", "POT_I_Telia").
++SetInterface("POT", "POT_I_GRE").
++SetInterface("POT", "POT_I_ZIB").
++SetInterface("POT", "POT_I_MAG").
++SetInterface("POT", "POT_I_ERL").
++SetInterface("POT", "POT_I_TUB").
++SetInterface("POT", "POT_I_DRE").
+
++SetNode("BIR").
++SetAdminDist("BIR", "static", 1).
++SetAdminDist("BIR", "bgp", 2).
++SetAdminDist("BIR", "ospf", 3).
++SetInterface("BIR", "BIR_I_FRA").
++SetInterface("BIR", "BIR_I_WUP").
++SetInterface("BIR", "BIR_I_BON").
+
++SetNode("DeCix").
++SetAdminDist("DeCix", "static", 1).
++SetAdminDist("DeCix", "bgp", 2).
++SetAdminDist("DeCix", "ospf", 3).
++SetInterface("DeCix", "DeCix_I_FRA").
+
++SetNode("DUI").
++SetAdminDist("DUI", "static", 1).
++SetAdminDist("DUI", "bgp", 2).
++SetAdminDist("DUI", "ospf", 3).
++SetInterface("DUI", "DUI_I_MUE").
++SetInterface("DUI", "DUI_I_FZJ").
++SetInterface("DUI", "DUI_I_BOC").
++SetInterface("DUI", "DUI_I_HAN").
+
++SetNode("FRA").
++SetAdminDist("FRA", "static", 1).
++SetAdminDist("FRA", "bgp", 2).
++SetAdminDist("FRA", "ospf", 3).
++SetInterface("FRA", "FRA_I_HAN").
++SetInterface("FRA", "FRA_I_KAI").
++SetInterface("FRA", "FRA_I_Geant").
++SetInterface("FRA", "FRA_I_AAC").
++SetInterface("FRA", "FRA_I_SAA").
++SetInterface("FRA", "FRA_I_GAR").
++SetInterface("FRA", "FRA_I_FZK").
++SetInterface("FRA", "FRA_I_ERL").
++SetInterface("FRA", "FRA_I_GIE").
++SetInterface("FRA", "FRA_I_GC").
++SetInterface("FRA", "FRA_I_WUE").
++SetInterface("FRA", "FRA_I_GSI").
++SetInterface("FRA", "FRA_I_BIR").
++SetInterface("FRA", "FRA_I_POT").
++SetInterface("FRA", "FRA_I_DeCix").
+
++SetNode("ILM").
++SetAdminDist("ILM", "static", 1).
++SetAdminDist("ILM", "bgp", 2).
++SetAdminDist("ILM", "ospf", 3).
++SetInterface("ILM", "ILM_I_ERL").
++SetInterface("ILM", "ILM_I_JEN").
+
++SetNode("WUE").
++SetAdminDist("WUE", "static", 1).
++SetAdminDist("WUE", "bgp", 2).
++SetAdminDist("WUE", "ospf", 3).
++SetInterface("WUE", "WUE_I_ERL").
++SetInterface("WUE", "WUE_I_FRA").
+
++SetNode("AUG").
++SetAdminDist("AUG", "static", 1).
++SetAdminDist("AUG", "bgp", 2).
++SetAdminDist("AUG", "ospf", 3).
++SetInterface("AUG", "AUG_I_ERL").
++SetInterface("AUG", "AUG_I_GAR").
+
++SetNode("GOE").
++SetAdminDist("GOE", "static", 1).
++SetAdminDist("GOE", "bgp", 2).
++SetAdminDist("GOE", "ospf", 3).
++SetInterface("GOE", "GOE_I_KAS").
++SetInterface("GOE", "GOE_I_HAN").
+
++SetNode("TelekomID15").
++SetAdminDist("TelekomID15", "static", 1).
++SetAdminDist("TelekomID15", "bgp", 2).
++SetAdminDist("TelekomID15", "ospf", 3).
++SetInterface("TelekomID15", "TelekomID15_I_LEI").
+
++SetNode("EWE").
++SetAdminDist("EWE", "static", 1).
++SetAdminDist("EWE", "bgp", 2).
++SetAdminDist("EWE", "ospf", 3).
++SetInterface("EWE", "EWE_I_MUE").
++SetInterface("EWE", "EWE_I_BRE").
+
++SetNode("Telekom").
++SetAdminDist("Telekom", "static", 1).
++SetAdminDist("Telekom", "bgp", 2).
++SetAdminDist("Telekom", "ospf", 3).
++SetInterface("Telekom", "Telekom_I_HAN").
+
++SetNode("FZJ").
++SetAdminDist("FZJ", "static", 1).
++SetAdminDist("FZJ", "bgp", 2).
++SetAdminDist("FZJ", "ospf", 3).
++SetInterface("FZJ", "FZJ_I_DUI").
++SetInterface("FZJ", "FZJ_I_AAC").
+
++SetNode("GIE").
++SetAdminDist("GIE", "static", 1).
++SetAdminDist("GIE", "bgp", 2).
++SetAdminDist("GIE", "ospf", 3).
++SetInterface("GIE", "GIE_I_FRA").
++SetInterface("GIE", "GIE_I_MAR").
+
++SetNode("GRE").
++SetAdminDist("GRE", "static", 1).
++SetAdminDist("GRE", "bgp", 2).
++SetAdminDist("GRE", "ospf", 3).
++SetInterface("GRE", "GRE_I_POT").
++SetInterface("GRE", "GRE_I_ROS").
+
++SetNode("GC").
++SetAdminDist("GC", "static", 1).
++SetAdminDist("GC", "bgp", 2).
++SetAdminDist("GC", "ospf", 3).
++SetInterface("GC", "GC_I_FRA").
+
++SetNode("JEN").
++SetAdminDist("JEN", "static", 1).
++SetAdminDist("JEN", "bgp", 2).
++SetAdminDist("JEN", "ospf", 3).
++SetInterface("JEN", "JEN_I_LEI").
++SetInterface("JEN", "JEN_I_ILM").
+
++SetNode("HEI").
++SetAdminDist("HEI", "static", 1).
++SetAdminDist("HEI", "bgp", 2).
++SetAdminDist("HEI", "ospf", 3).
++SetInterface("HEI", "HEI_I_FZK").
++SetInterface("HEI", "HEI_I_GSI").
+
++SetNode("ADH").
++SetAdminDist("ADH", "static", 1).
++SetAdminDist("ADH", "bgp", 2).
++SetAdminDist("ADH", "ospf", 3).
++SetInterface("ADH", "ADH_I_ZIB").
++SetInterface("ADH", "ADH_I_HUB").
+
++SetNode("FZK").
++SetAdminDist("FZK", "static", 1).
++SetAdminDist("FZK", "bgp", 2).
++SetAdminDist("FZK", "ospf", 3).
++SetInterface("FZK", "FZK_I_STU").
++SetInterface("FZK", "FZK_I_FRA").
++SetInterface("FZK", "FZK_I_KAI").
++SetInterface("FZK", "FZK_I_HEI").
+
++SetNode("MAR").
++SetAdminDist("MAR", "static", 1).
++SetAdminDist("MAR", "bgp", 2).
++SetAdminDist("MAR", "ospf", 3).
++SetInterface("MAR", "MAR_I_KAS").
++SetInterface("MAR", "MAR_I_GIE").
+
++SetNode("ROS").
++SetAdminDist("ROS", "static", 1).
++SetAdminDist("ROS", "bgp", 2).
++SetAdminDist("ROS", "ospf", 3).
++SetInterface("ROS", "ROS_I_GRE").
++SetInterface("ROS", "ROS_I_HAN").
++SetInterface("ROS", "ROS_I_KIE").
+
++SetNode("STU").
++SetAdminDist("STU", "static", 1).
++SetAdminDist("STU", "bgp", 2).
++SetAdminDist("STU", "ospf", 3).
++SetInterface("STU", "STU_I_FZK").
++SetInterface("STU", "STU_I_GAR").
+
++SetNode("LEI").
++SetAdminDist("LEI", "static", 1).
++SetAdminDist("LEI", "bgp", 2).
++SetAdminDist("LEI", "ospf", 3).
++SetInterface("LEI", "LEI_I_ERL").
++SetInterface("LEI", "LEI_I_JEN").
++SetInterface("LEI", "LEI_I_CHE").
++SetInterface("LEI", "LEI_I_TelekomID15").
+
++SetNode("HAM").
++SetAdminDist("HAM", "static", 1).
++SetAdminDist("HAM", "bgp", 2).
++SetAdminDist("HAM", "ospf", 3).
++SetInterface("HAM", "HAM_I_BRE").
++SetInterface("HAM", "HAM_I_DES").
+
++SetNode("KAS").
++SetAdminDist("KAS", "static", 1).
++SetAdminDist("KAS", "bgp", 2).
++SetAdminDist("KAS", "ospf", 3).
++SetInterface("KAS", "KAS_I_GOE").
++SetInterface("KAS", "KAS_I_MAR").
++SetInterface("KAS", "KAS_I_PAD").
+
++SetNode("WUP").
++SetAdminDist("WUP", "static", 1).
++SetAdminDist("WUP", "bgp", 2).
++SetAdminDist("WUP", "ospf", 3).
++SetInterface("WUP", "WUP_I_DOR").
++SetInterface("WUP", "WUP_I_BIR").
+
++SetNode("HAN").
++SetAdminDist("HAN", "static", 1).
++SetAdminDist("HAN", "bgp", 2).
++SetAdminDist("HAN", "ospf", 3).
++SetInterface("HAN", "HAN_I_DUI").
++SetInterface("HAN", "HAN_I_FRA").
++SetInterface("HAN", "HAN_I_GOE").
++SetInterface("HAN", "HAN_I_FFO").
++SetInterface("HAN", "HAN_I_POT").
++SetInterface("HAN", "HAN_I_BIE").
++SetInterface("HAN", "HAN_I_Telekom").
++SetInterface("HAN", "HAN_I_BRA").
++SetInterface("HAN", "HAN_I_ERL").
++SetInterface("HAN", "HAN_I_BRE").
++SetInterface("HAN", "HAN_I_ROS").
++SetInterface("HAN", "HAN_I_KIE").
+
++SetNode("KIE").
++SetAdminDist("KIE", "static", 1).
++SetAdminDist("KIE", "bgp", 2).
++SetAdminDist("KIE", "ospf", 3).
++SetInterface("KIE", "KIE_I_ROS").
++SetInterface("KIE", "KIE_I_HAN").
+
++SetNode("MAG").
++SetAdminDist("MAG", "static", 1).
++SetAdminDist("MAG", "bgp", 2).
++SetAdminDist("MAG", "ospf", 3).
++SetInterface("MAG", "MAG_I_POT").
++SetInterface("MAG", "MAG_I_BRA").
+
++SetNode("ZEU").
++SetAdminDist("ZEU", "static", 1).
++SetAdminDist("ZEU", "bgp", 2).
++SetAdminDist("ZEU", "ospf", 3).
++SetInterface("ZEU", "ZEU_I_TUB").
++SetInterface("ZEU", "ZEU_I_ZIB").
+
++SetNode("ZIB").
++SetAdminDist("ZIB", "static", 1).
++SetAdminDist("ZIB", "bgp", 2).
++SetAdminDist("ZIB", "ospf", 3).
++SetInterface("ZIB", "ZIB_I_FFO").
++SetInterface("ZIB", "ZIB_I_TUB").
++SetInterface("ZIB", "ZIB_I_POT").
++SetInterface("ZIB", "ZIB_I_ADH").
++SetInterface("ZIB", "ZIB_I_ZEU").
+
++SetNode("TUB").
++SetAdminDist("TUB", "static", 1).
++SetAdminDist("TUB", "bgp", 2).
++SetAdminDist("TUB", "ospf", 3).
++SetInterface("TUB", "TUB_I_POT").
++SetInterface("TUB", "TUB_I_DES").
++SetInterface("TUB", "TUB_I_ZIB").
++SetInterface("TUB", "TUB_I_HUB").
++SetInterface("TUB", "TUB_I_ZEU").
+
++SetNode("KAI").
++SetAdminDist("KAI", "static", 1).
++SetAdminDist("KAI", "bgp", 2).
++SetAdminDist("KAI", "ospf", 3).
++SetInterface("KAI", "KAI_I_FZK").
++SetInterface("KAI", "KAI_I_SAA").
++SetInterface("KAI", "KAI_I_FRA").
+
++SetNode("BRA").
++SetAdminDist("BRA", "static", 1).
++SetAdminDist("BRA", "bgp", 2).
++SetAdminDist("BRA", "ospf", 3).
++SetInterface("BRA", "BRA_I_MAG").
++SetInterface("BRA", "BRA_I_HAN").
+
++SetLink("FHM_I_GAR", "GAR_I_FHM").
++SetLink("FHM_I_REG", "REG_I_FHM").
++SetLink("AAC_I_FZJ", "FZJ_I_AAC").
++SetLink("AAC_I_FRA", "FRA_I_AAC").
++SetLink("AAC_I_BON", "BON_I_AAC").
++SetLink("DES_I_TUB", "TUB_I_DES").
++SetLink("DES_I_HAM", "HAM_I_DES").
++SetLink("BRE_I_HAN", "HAN_I_BRE").
++SetLink("BRE_I_HAM", "HAM_I_BRE").
++SetLink("BRE_I_EWE", "EWE_I_BRE").
++SetLink("BAY_I_ERL", "ERL_I_BAY").
++SetLink("BAY_I_POT", "POT_I_BAY").
++SetLink("MUE_I_DUI", "DUI_I_MUE").
++SetLink("MUE_I_BIE", "BIE_I_MUE").
++SetLink("MUE_I_EWE", "EWE_I_MUE").
++SetLink("DOR_I_WUP", "WUP_I_DOR").
++SetLink("DOR_I_BOC", "BOC_I_DOR").
++SetLink("PAD_I_KAS", "KAS_I_PAD").
++SetLink("PAD_I_BIE", "BIE_I_PAD").
++SetLink("BON_I_BIR", "BIR_I_BON").
++SetLink("GSI_I_FRA", "FRA_I_GSI").
++SetLink("GSI_I_HEI", "HEI_I_GSI").
++SetLink("BOC_I_DUI", "DUI_I_BOC").
++SetLink("DRE_I_ERL", "ERL_I_DRE").
++SetLink("DRE_I_POT", "POT_I_DRE").
++SetLink("DRE_I_CHE", "CHE_I_DRE").
++SetLink("REG_I_ERL", "ERL_I_REG").
++SetLink("CHE_I_LEI", "LEI_I_CHE").
++SetLink("FFO_I_POT", "POT_I_FFO").
++SetLink("FFO_I_ZIB", "ZIB_I_FFO").
++SetLink("FFO_I_HAN", "HAN_I_FFO").
++SetLink("ERL_I_FRA", "FRA_I_ERL").
++SetLink("ERL_I_HAN", "HAN_I_ERL").
++SetLink("ERL_I_AUG", "AUG_I_ERL").
++SetLink("ERL_I_LEI", "LEI_I_ERL").
++SetLink("ERL_I_POT", "POT_I_ERL").
++SetLink("ERL_I_ILM", "ILM_I_ERL").
++SetLink("ERL_I_WUE", "WUE_I_ERL").
++SetLink("DeCixID12_I_POT", "POT_I_DeCixID12").
++SetLink("Geant_I_FRA", "FRA_I_Geant").
++SetLink("HUB_I_TUB", "TUB_I_HUB").
++SetLink("HUB_I_ADH", "ADH_I_HUB").
++SetLink("SAA_I_FRA", "FRA_I_SAA").
++SetLink("SAA_I_KAI", "KAI_I_SAA").
++SetLink("BIE_I_HAN", "HAN_I_BIE").
++SetLink("GAR_I_STU", "STU_I_GAR").
++SetLink("GAR_I_FRA", "FRA_I_GAR").
++SetLink("GAR_I_AUG", "AUG_I_GAR").
++SetLink("Telia_I_POT", "POT_I_Telia").
++SetLink("POT_I_FRA", "FRA_I_POT").
++SetLink("POT_I_HAN", "HAN_I_POT").
++SetLink("POT_I_GRE", "GRE_I_POT").
++SetLink("POT_I_ZIB", "ZIB_I_POT").
++SetLink("POT_I_MAG", "MAG_I_POT").
++SetLink("POT_I_TUB", "TUB_I_POT").
++SetLink("BIR_I_FRA", "FRA_I_BIR").
++SetLink("BIR_I_WUP", "WUP_I_BIR").
++SetLink("DeCix_I_FRA", "FRA_I_DeCix").
++SetLink("DUI_I_FZJ", "FZJ_I_DUI").
++SetLink("DUI_I_HAN", "HAN_I_DUI").
++SetLink("FRA_I_HAN", "HAN_I_FRA").
++SetLink("FRA_I_KAI", "KAI_I_FRA").
++SetLink("FRA_I_FZK", "FZK_I_FRA").
++SetLink("FRA_I_GIE", "GIE_I_FRA").
++SetLink("FRA_I_GC", "GC_I_FRA").
++SetLink("FRA_I_WUE", "WUE_I_FRA").
++SetLink("ILM_I_JEN", "JEN_I_ILM").
++SetLink("GOE_I_KAS", "KAS_I_GOE").
++SetLink("GOE_I_HAN", "HAN_I_GOE").
++SetLink("TelekomID15_I_LEI", "LEI_I_TelekomID15").
++SetLink("Telekom_I_HAN", "HAN_I_Telekom").
++SetLink("GIE_I_MAR", "MAR_I_GIE").
++SetLink("GRE_I_ROS", "ROS_I_GRE").
++SetLink("JEN_I_LEI", "LEI_I_JEN").
++SetLink("HEI_I_FZK", "FZK_I_HEI").
++SetLink("ADH_I_ZIB", "ZIB_I_ADH").
++SetLink("FZK_I_STU", "STU_I_FZK").
++SetLink("FZK_I_KAI", "KAI_I_FZK").
++SetLink("MAR_I_KAS", "KAS_I_MAR").
++SetLink("ROS_I_HAN", "HAN_I_ROS").
++SetLink("ROS_I_KIE", "KIE_I_ROS").
++SetLink("HAN_I_BRA", "BRA_I_HAN").
++SetLink("HAN_I_KIE", "KIE_I_HAN").
++SetLink("MAG_I_BRA", "BRA_I_MAG").
++SetLink("ZEU_I_TUB", "TUB_I_ZEU").
++SetLink("ZEU_I_ZIB", "ZIB_I_ZEU").
++SetLink("ZIB_I_TUB", "TUB_I_ZIB").
+
+
++SetNetwork("TUB", "N_TUB").
++SetBGPAnnouncement("TUB", "N_TUB", "NBGP_TUB", "1;2;3", 3).
++SetNetwork("GOE", "N_GOE").
++SetBGPAnnouncement("GOE", "N_GOE", "NBGP_GOE", "1;2;3", 3).
++SetNetwork("ILM", "N_ILM").
++SetBGPAnnouncement("ILM", "N_ILM", "NBGP_ILM", "1;2;3", 3).
++SetNetwork("MAG", "N_MAG").
++SetBGPAnnouncement("MAG", "N_MAG", "NBGP_MAG", "1;2;3", 3).
++SetNetwork("AUG", "N_AUG").
++SetBGPAnnouncement("AUG", "N_AUG", "NBGP_AUG", "1;2;3", 3).
++SetNetwork("FRA", "N_FRA").
++SetBGPAnnouncement("FRA", "N_FRA", "NBGP_FRA", "1;2;3", 3).
++SetNetwork("CHE", "N_CHE").
++SetBGPAnnouncement("CHE", "N_CHE", "NBGP_CHE", "1;2;3", 3).
++SetNetwork("PAD", "N_PAD").
++SetBGPAnnouncement("PAD", "N_PAD", "NBGP_PAD", "1;2;3", 3).
++SetNetwork("GAR", "N_GAR").
++SetBGPAnnouncement("GAR", "N_GAR", "NBGP_GAR", "1;2;3", 3).
++SetNetwork("BIE", "N_BIE").
++SetBGPAnnouncement("BIE", "N_BIE", "NBGP_BIE", "1;2;3", 3).
++SetNetwork("KIE", "N_KIE").
++SetBGPAnnouncement("KIE", "N_KIE", "NBGP_KIE", "1;2;3", 3).
++SetNetwork("TelekomID15", "N_TelekomID15").
++SetBGPAnnouncement("TelekomID15", "N_TelekomID15", "NBGP_TelekomID15", "1;2;3", 3).
++SetNetwork("KAS", "N_KAS").
++SetBGPAnnouncement("KAS", "N_KAS", "NBGP_KAS", "1;2;3", 3).
++SetNetwork("STU", "N_STU").
++SetBGPAnnouncement("STU", "N_STU", "NBGP_STU", "1;2;3", 3).
++SetNetwork("GRE", "N_GRE").
++SetBGPAnnouncement("GRE", "N_GRE", "NBGP_GRE", "1;2;3", 3).
++SetNetwork("DeCixID12", "N_DeCixID12").
++SetBGPAnnouncement("DeCixID12", "N_DeCixID12", "NBGP_DeCixID12", "1;2;3", 3).
++SetNetwork("GSI", "N_GSI").
++SetBGPAnnouncement("GSI", "N_GSI", "NBGP_GSI", "1;2;3", 3).
++SetNetwork("HAM", "N_HAM").
++SetBGPAnnouncement("HAM", "N_HAM", "NBGP_HAM", "1;2;3", 3).
++SetNetwork("HAN", "N_HAN").
++SetBGPAnnouncement("HAN", "N_HAN", "NBGP_HAN", "1;2;3", 3).
++SetNetwork("BAY", "N_BAY").
++SetBGPAnnouncement("BAY", "N_BAY", "NBGP_BAY", "1;2;3", 3).

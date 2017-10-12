@@ -1,0 +1,31 @@
+
++Fwd("N_Chicago", "Dallas", "Chicago", "static").
++Fwd("N_Chicago", "Minneapolis", "Chicago", "static").
++Fwd("N_Chicago", "Seattle", "Chicago", "static").
++Fwd("N_Chicago", "SanTTJose", "Chicago", "static").
++Fwd("N_Chicago", "Vienna", "SanTTJose", "static").
+
++Fwd("N_Minneapolis", "Dallas", "Chicago", "static").
++Fwd("N_Minneapolis", "Chicago", "Minneapolis", "static").
++Fwd("N_Minneapolis", "Seattle", "Chicago", "static").
++Fwd("N_Minneapolis", "SanTTJose", "Chicago", "static").
++Fwd("N_Minneapolis", "Vienna", "SanTTJose", "static").
+
++Fwd("N_Dallas", "Chicago", "Dallas", "static").
++Fwd("N_Dallas", "Minneapolis", "Chicago", "static").
++Fwd("N_Dallas", "Seattle", "Chicago", "static").
++Fwd("N_Dallas", "SanTTJose", "Chicago", "static").
++Fwd("N_Dallas", "Vienna", "SanTTJose", "static").
+
++Fwd("N_Vienna", "Dallas", "Chicago", "static").
++Fwd("N_Vienna", "Chicago", "SanTTJose", "static").
++Fwd("N_Vienna", "SanTTJose", "Vienna", "static").
++Fwd("N_Vienna", "Minneapolis", "Chicago", "static").
++Fwd("N_Vienna", "Seattle", "SanTTJose", "static").
+
++Fwd("N_SanTTJose", "Dallas", "Chicago", "static").
++Fwd("N_SanTTJose", "Chicago", "SanTTJose", "static").
++Fwd("N_SanTTJose", "Minneapolis", "Chicago", "static").
++Fwd("N_SanTTJose", "Seattle", "SanTTJose", "static").
++Fwd("N_SanTTJose", "Vienna", "SanTTJose", "static").
+

@@ -1,0 +1,23 @@
+
++Fwd("N_Ten155", "BA", "NAID12", "static").
++Fwd("N_Ten155", "NAID12", "BO", "static").
++Fwd("N_Ten155", "BO", "RMID18", "static").
++Fwd("N_Ten155", "RMID18", "MI", "static").
++Fwd("N_Ten155", "MI", "Ten155", "static").
++Fwd("N_Ten155", "USA", "MI", "static").
++Fwd("N_Ten155", "FI", "BO", "static").
++Fwd("N_Ten155", "NA", "NAID12", "static").
++Fwd("N_Ten155", "TS", "MI", "static").
++Fwd("N_Ten155", "TO", "MI", "static").
++Fwd("N_Ten155", "PA", "NAID12", "static").
++Fwd("N_Ten155", "MIID10", "MI", "static").
++Fwd("N_Ten155", "PD", "BO", "static").
++Fwd("N_Ten155", "RM", "RMID18", "static").
++Fwd("N_Ten155", "PI", "BO", "static").
++Fwd("N_Ten155", "FRA", "RMID18", "static").
++Fwd("N_Ten155", "CA", "RMID18", "static").
++Fwd("N_Ten155", "AQ", "RMID18", "static").
++Fwd("N_Ten155", "GE", "MI", "static").
++Fwd("N_Ten155", "CT", "NAID12", "static").
++Fwd("N_Ten155", "BOID8", "BO", "static").
+

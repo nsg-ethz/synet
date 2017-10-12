@@ -1,0 +1,21 @@
+
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "StTTClementTTofTTOhridTTUniversityTTinTTBitola", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "NOCTTandTTCampusSocialTTSciences", "I_TTofTTEarthquakeTTEngineering", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "NationalBroadcastingcompanyTTComm_TTTower", "CampusTTMedicine", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "CampusTTMedicine", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "CampusTTArchTTandTTCivilTTEng", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "I_TTofTTEconomy", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "I_TTofTTMacedonianTTLiterature", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "CampusTTNaturalTTSciencesTTandTTMathematics", "NationalBroadcastingcompanyTTComm_TTTower", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "CampusTechnical", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "F_TTofTTMiningTTandTTGeologyTTStip", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "I_TTofTTNationalTTHistory", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "F_TTofTTPedagogy", "CampusTechnical", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "NationalTTandTTUnivTTLibrary", "NationalBroadcastingcompanyTTComm_TTTower", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "SeveralTTMinistriesTTofTTtheTTGovernment", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "CampusBiotech_TTSciences", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "MOL", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "ONnetTTNEOTELTTSONET", "NationalBroadcastingcompanyTTComm_TTTower", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "ITTofTTPoliticalTTandTTJuridicalTTRes", "NOCTTandTTCampusSocialTTSciences", "static").
++Fwd("N_I_TTofTTEarthquakeTTEngineering", "GEANTTTSEEREN", "NOCTTandTTCampusSocialTTSciences", "static").
+

@@ -1,0 +1,41 @@
+
++Fwd("N_Stockholm", "NewTTYork", "Amsterdam", "static").
++Fwd("N_Stockholm", "Amsterdam", "Stockholm", "static").
++Fwd("N_Stockholm", "Paris", "Amsterdam", "static").
++Fwd("N_Stockholm", "Moscow", "StTTPetersburg", "static").
++Fwd("N_Stockholm", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_Stockholm", "London", "Amsterdam", "static").
++Fwd("N_Stockholm", "Frankfurt", "Amsterdam", "static").
+
++Fwd("N_Frankfurt", "NewTTYork", "Amsterdam", "static").
++Fwd("N_Frankfurt", "Amsterdam", "Frankfurt", "static").
++Fwd("N_Frankfurt", "Paris", "Amsterdam", "static").
++Fwd("N_Frankfurt", "Moscow", "StTTPetersburg", "static").
++Fwd("N_Frankfurt", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_Frankfurt", "Stockholm", "Amsterdam", "static").
++Fwd("N_Frankfurt", "London", "Amsterdam", "static").
+
++Fwd("N_Moscow", "NewTTYork", "Amsterdam", "static").
++Fwd("N_Moscow", "Amsterdam", "Stockholm", "static").
++Fwd("N_Moscow", "Stockholm", "StTTPetersburg", "static").
++Fwd("N_Moscow", "StTTPetersburg", "Moscow", "static").
++Fwd("N_Moscow", "Paris", "Amsterdam", "static").
++Fwd("N_Moscow", "London", "Amsterdam", "static").
++Fwd("N_Moscow", "Frankfurt", "Amsterdam", "static").
+
++Fwd("N_NewTTYork", "Paris", "Amsterdam", "static").
++Fwd("N_NewTTYork", "Amsterdam", "NewTTYork", "static").
++Fwd("N_NewTTYork", "Moscow", "StTTPetersburg", "static").
++Fwd("N_NewTTYork", "StTTPetersburg", "Stockholm", "static").
++Fwd("N_NewTTYork", "Stockholm", "Amsterdam", "static").
++Fwd("N_NewTTYork", "London", "Amsterdam", "static").
++Fwd("N_NewTTYork", "Frankfurt", "Amsterdam", "static").
+
++Fwd("N_StTTPetersburg", "NewTTYork", "Amsterdam", "static").
++Fwd("N_StTTPetersburg", "Amsterdam", "Stockholm", "static").
++Fwd("N_StTTPetersburg", "Stockholm", "StTTPetersburg", "static").
++Fwd("N_StTTPetersburg", "Paris", "Amsterdam", "static").
++Fwd("N_StTTPetersburg", "Moscow", "StTTPetersburg", "static").
++Fwd("N_StTTPetersburg", "London", "Amsterdam", "static").
++Fwd("N_StTTPetersburg", "Frankfurt", "Amsterdam", "static").
+

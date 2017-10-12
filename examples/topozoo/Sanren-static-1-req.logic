@@ -1,0 +1,8 @@
+
++Fwd("N_Pretoria", "PortTTElizabeth", "EastTTLondon", "static").
++Fwd("N_Pretoria", "EastTTLondon", "Durban", "static").
++Fwd("N_Pretoria", "Durban", "Pretoria", "static").
++Fwd("N_Pretoria", "Bloemfontein", "Johannesburg", "static").
++Fwd("N_Pretoria", "Johannesburg", "Pretoria", "static").
++Fwd("N_Pretoria", "CapeTTTown", "PortTTElizabeth", "static").
+

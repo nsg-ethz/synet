@@ -1,0 +1,295 @@
++SetNode("Toronto").
++SetAdminDist("Toronto", "static", 1).
++SetAdminDist("Toronto", "bgp", 2).
++SetAdminDist("Toronto", "ospf", 3).
++SetInterface("Toronto", "Toronto_I_Windsor_Detroit").
++SetInterface("Toronto", "Toronto_I_NewTTYork").
++SetInterface("Toronto", "Toronto_I_Winnipeg").
++SetInterface("Toronto", "Toronto_I_Ottawa").
++SetInterface("Toronto", "Toronto_I_ThunderTTBay").
+
++SetNode("Regina").
++SetAdminDist("Regina", "static", 1).
++SetAdminDist("Regina", "bgp", 2).
++SetAdminDist("Regina", "ospf", 3).
++SetInterface("Regina", "Regina_I_Calgary").
++SetInterface("Regina", "Regina_I_Winnipeg").
+
++SetNode("EuropeTTetTTautresTTpays").
++SetAdminDist("EuropeTTetTTautresTTpays", "static", 1).
++SetAdminDist("EuropeTTetTTautresTTpays", "bgp", 2).
++SetAdminDist("EuropeTTetTTautresTTpays", "ospf", 3).
++SetInterface("EuropeTTetTTautresTTpays", "EuropeTTetTTautresTTpays_I_NewTTYork").
+
++SetNode("Kelowna").
++SetAdminDist("Kelowna", "static", 1).
++SetAdminDist("Kelowna", "bgp", 2).
++SetAdminDist("Kelowna", "ospf", 3).
++SetInterface("Kelowna", "Kelowna_I_Kamloops").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_NorthTTandTTSouthTTAmerica").
++SetInterface("Chicago", "Chicago_I_Winnipeg").
++SetInterface("Chicago", "Chicago_I_Windsor_Detroit").
++SetInterface("Chicago", "Chicago_I_Calgary").
++SetInterface("Chicago", "Chicago_I_EuropeTTandTTotherTTcountriesID19").
++SetInterface("Chicago", "Chicago_I_Seattle").
++SetInterface("Chicago", "Chicago_I_AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud").
+
++SetNode("Whitehorse").
++SetAdminDist("Whitehorse", "static", 1).
++SetAdminDist("Whitehorse", "bgp", 2).
++SetAdminDist("Whitehorse", "ospf", 3).
++SetInterface("Whitehorse", "Whitehorse_I_Edmonton").
+
++SetNode("Winnipeg").
++SetAdminDist("Winnipeg", "static", 1).
++SetAdminDist("Winnipeg", "bgp", 2).
++SetAdminDist("Winnipeg", "ospf", 3).
++SetInterface("Winnipeg", "Winnipeg_I_Toronto").
++SetInterface("Winnipeg", "Winnipeg_I_Regina").
++SetInterface("Winnipeg", "Winnipeg_I_Chicago").
++SetInterface("Winnipeg", "Winnipeg_I_Saskatoon").
++SetInterface("Winnipeg", "Winnipeg_I_Calgary").
++SetInterface("Winnipeg", "Winnipeg_I_ThunderTTBay").
+
++SetNode("Vancouver").
++SetAdminDist("Vancouver", "static", 1).
++SetAdminDist("Vancouver", "bgp", 2).
++SetAdminDist("Vancouver", "ospf", 3).
++SetInterface("Vancouver", "Vancouver_I_Seattle").
++SetInterface("Vancouver", "Vancouver_I_Kamloops").
++SetInterface("Vancouver", "Vancouver_I_Victoria").
+
++SetNode("Calgary").
++SetAdminDist("Calgary", "static", 1).
++SetAdminDist("Calgary", "bgp", 2).
++SetAdminDist("Calgary", "ospf", 3).
++SetInterface("Calgary", "Calgary_I_Edmonton").
++SetInterface("Calgary", "Calgary_I_Winnipeg").
++SetInterface("Calgary", "Calgary_I_Regina").
++SetInterface("Calgary", "Calgary_I_Kamloops").
++SetInterface("Calgary", "Calgary_I_Chicago").
+
++SetNode("EuropeTTandTTotherTTcountriesID19").
++SetAdminDist("EuropeTTandTTotherTTcountriesID19", "static", 1).
++SetAdminDist("EuropeTTandTTotherTTcountriesID19", "bgp", 2).
++SetAdminDist("EuropeTTandTTotherTTcountriesID19", "ospf", 3).
++SetInterface("EuropeTTandTTotherTTcountriesID19", "EuropeTTandTTotherTTcountriesID19_I_Chicago").
+
++SetNode("StTTJohn_s").
++SetAdminDist("StTTJohn_s", "static", 1).
++SetAdminDist("StTTJohn_s", "bgp", 2).
++SetAdminDist("StTTJohn_s", "ospf", 3).
++SetInterface("StTTJohn_s", "StTTJohn_s_I_Europe").
++SetInterface("StTTJohn_s", "StTTJohn_s_I_Halifax").
+
++SetNode("ThunderTTBay").
++SetAdminDist("ThunderTTBay", "static", 1).
++SetAdminDist("ThunderTTBay", "bgp", 2).
++SetAdminDist("ThunderTTBay", "ospf", 3).
++SetInterface("ThunderTTBay", "ThunderTTBay_I_Toronto").
++SetInterface("ThunderTTBay", "ThunderTTBay_I_Winnipeg").
+
++SetNode("Europe").
++SetAdminDist("Europe", "static", 1).
++SetAdminDist("Europe", "bgp", 2).
++SetAdminDist("Europe", "ospf", 3).
++SetInterface("Europe", "Europe_I_StTTJohn_s").
+
++SetNode("Charlottetown").
++SetAdminDist("Charlottetown", "static", 1).
++SetAdminDist("Charlottetown", "bgp", 2).
++SetAdminDist("Charlottetown", "ospf", 3).
++SetInterface("Charlottetown", "Charlottetown_I_Halifax").
++SetInterface("Charlottetown", "Charlottetown_I_Fredericton").
+
++SetNode("Fredericton").
++SetAdminDist("Fredericton", "static", 1).
++SetAdminDist("Fredericton", "bgp", 2).
++SetAdminDist("Fredericton", "ospf", 3).
++SetInterface("Fredericton", "Fredericton_I_Charlottetown").
++SetInterface("Fredericton", "Fredericton_I_Montreal").
+
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_EuropeTTandTTotherTTcountries").
++SetInterface("NewTTYork", "NewTTYork_I_Toronto").
++SetInterface("NewTTYork", "NewTTYork_I_Halifax").
++SetInterface("NewTTYork", "NewTTYork_I_EuropeTTetTTautresTTpays").
++SetInterface("NewTTYork", "NewTTYork_I_Boston").
+
++SetNode("Victoria").
++SetAdminDist("Victoria", "static", 1).
++SetAdminDist("Victoria", "bgp", 2).
++SetAdminDist("Victoria", "ospf", 3).
++SetInterface("Victoria", "Victoria_I_Seattle").
++SetInterface("Victoria", "Victoria_I_Vancouver").
+
++SetNode("Asia_Pacific").
++SetAdminDist("Asia_Pacific", "static", 1).
++SetAdminDist("Asia_Pacific", "bgp", 2).
++SetAdminDist("Asia_Pacific", "ospf", 3).
++SetInterface("Asia_Pacific", "Asia_Pacific_I_Seattle").
+
++SetNode("AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud").
++SetAdminDist("AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud", "static", 1).
++SetAdminDist("AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud", "bgp", 2).
++SetAdminDist("AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud", "ospf", 3).
++SetInterface("AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud", "AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud_I_Chicago").
+
++SetNode("EuropeTTandTTotherTTcountries").
++SetAdminDist("EuropeTTandTTotherTTcountries", "static", 1).
++SetAdminDist("EuropeTTandTTotherTTcountries", "bgp", 2).
++SetAdminDist("EuropeTTandTTotherTTcountries", "ospf", 3).
++SetInterface("EuropeTTandTTotherTTcountries", "EuropeTTandTTotherTTcountries_I_NewTTYork").
+
++SetNode("Yellowknife").
++SetAdminDist("Yellowknife", "static", 1).
++SetAdminDist("Yellowknife", "bgp", 2).
++SetAdminDist("Yellowknife", "ospf", 3).
++SetInterface("Yellowknife", "Yellowknife_I_Edmonton").
+
++SetNode("Saskatoon").
++SetAdminDist("Saskatoon", "static", 1).
++SetAdminDist("Saskatoon", "bgp", 2).
++SetAdminDist("Saskatoon", "ospf", 3).
++SetInterface("Saskatoon", "Saskatoon_I_Edmonton").
++SetInterface("Saskatoon", "Saskatoon_I_Winnipeg").
+
++SetNode("Ottawa").
++SetAdminDist("Ottawa", "static", 1).
++SetAdminDist("Ottawa", "bgp", 2).
++SetAdminDist("Ottawa", "ospf", 3).
++SetInterface("Ottawa", "Ottawa_I_Toronto").
++SetInterface("Ottawa", "Ottawa_I_Montreal").
+
++SetNode("Windsor_Detroit").
++SetAdminDist("Windsor_Detroit", "static", 1).
++SetAdminDist("Windsor_Detroit", "bgp", 2).
++SetAdminDist("Windsor_Detroit", "ospf", 3).
++SetInterface("Windsor_Detroit", "Windsor_Detroit_I_Toronto").
++SetInterface("Windsor_Detroit", "Windsor_Detroit_I_Chicago").
+
++SetNode("Halifax").
++SetAdminDist("Halifax", "static", 1).
++SetAdminDist("Halifax", "bgp", 2).
++SetAdminDist("Halifax", "ospf", 3).
++SetInterface("Halifax", "Halifax_I_Charlottetown").
++SetInterface("Halifax", "Halifax_I_StTTJohn_s").
++SetInterface("Halifax", "Halifax_I_NewTTYork").
++SetInterface("Halifax", "Halifax_I_Montreal").
+
++SetNode("Montreal").
++SetAdminDist("Montreal", "static", 1).
++SetAdminDist("Montreal", "bgp", 2).
++SetAdminDist("Montreal", "ospf", 3).
++SetInterface("Montreal", "Montreal_I_Boston").
++SetInterface("Montreal", "Montreal_I_Halifax").
++SetInterface("Montreal", "Montreal_I_Ottawa").
++SetInterface("Montreal", "Montreal_I_Fredericton").
+
++SetNode("Kamloops").
++SetAdminDist("Kamloops", "static", 1).
++SetAdminDist("Kamloops", "bgp", 2).
++SetAdminDist("Kamloops", "ospf", 3).
++SetInterface("Kamloops", "Kamloops_I_Calgary").
++SetInterface("Kamloops", "Kamloops_I_Vancouver").
++SetInterface("Kamloops", "Kamloops_I_Kelowna").
+
++SetNode("Boston").
++SetAdminDist("Boston", "static", 1).
++SetAdminDist("Boston", "bgp", 2).
++SetAdminDist("Boston", "ospf", 3).
++SetInterface("Boston", "Boston_I_NewTTYork").
++SetInterface("Boston", "Boston_I_Montreal").
+
++SetNode("Edmonton").
++SetAdminDist("Edmonton", "static", 1).
++SetAdminDist("Edmonton", "bgp", 2).
++SetAdminDist("Edmonton", "ospf", 3).
++SetInterface("Edmonton", "Edmonton_I_Whitehorse").
++SetInterface("Edmonton", "Edmonton_I_Yellowknife").
++SetInterface("Edmonton", "Edmonton_I_Saskatoon").
++SetInterface("Edmonton", "Edmonton_I_Calgary").
+
++SetNode("NorthTTandTTSouthTTAmerica").
++SetAdminDist("NorthTTandTTSouthTTAmerica", "static", 1).
++SetAdminDist("NorthTTandTTSouthTTAmerica", "bgp", 2).
++SetAdminDist("NorthTTandTTSouthTTAmerica", "ospf", 3).
++SetInterface("NorthTTandTTSouthTTAmerica", "NorthTTandTTSouthTTAmerica_I_Chicago").
+
++SetNode("Asie_Pacifique").
++SetAdminDist("Asie_Pacifique", "static", 1).
++SetAdminDist("Asie_Pacifique", "bgp", 2).
++SetAdminDist("Asie_Pacifique", "ospf", 3).
++SetInterface("Asie_Pacifique", "Asie_Pacifique_I_Seattle").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_Asia_Pacific").
++SetInterface("Seattle", "Seattle_I_Asie_Pacifique").
++SetInterface("Seattle", "Seattle_I_Victoria").
++SetInterface("Seattle", "Seattle_I_Vancouver").
++SetInterface("Seattle", "Seattle_I_Chicago").
+
++SetLink("Toronto_I_Windsor_Detroit", "Windsor_Detroit_I_Toronto").
++SetLink("Toronto_I_NewTTYork", "NewTTYork_I_Toronto").
++SetLink("Toronto_I_Winnipeg", "Winnipeg_I_Toronto").
++SetLink("Toronto_I_Ottawa", "Ottawa_I_Toronto").
++SetLink("Toronto_I_ThunderTTBay", "ThunderTTBay_I_Toronto").
++SetLink("Regina_I_Calgary", "Calgary_I_Regina").
++SetLink("Regina_I_Winnipeg", "Winnipeg_I_Regina").
++SetLink("EuropeTTetTTautresTTpays_I_NewTTYork", "NewTTYork_I_EuropeTTetTTautresTTpays").
++SetLink("Kelowna_I_Kamloops", "Kamloops_I_Kelowna").
++SetLink("Chicago_I_NorthTTandTTSouthTTAmerica", "NorthTTandTTSouthTTAmerica_I_Chicago").
++SetLink("Chicago_I_Winnipeg", "Winnipeg_I_Chicago").
++SetLink("Chicago_I_Windsor_Detroit", "Windsor_Detroit_I_Chicago").
++SetLink("Chicago_I_Calgary", "Calgary_I_Chicago").
++SetLink("Chicago_I_EuropeTTandTTotherTTcountriesID19", "EuropeTTandTTotherTTcountriesID19_I_Chicago").
++SetLink("Chicago_I_Seattle", "Seattle_I_Chicago").
++SetLink("Chicago_I_AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud", "AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud_I_Chicago").
++SetLink("Whitehorse_I_Edmonton", "Edmonton_I_Whitehorse").
++SetLink("Winnipeg_I_Saskatoon", "Saskatoon_I_Winnipeg").
++SetLink("Winnipeg_I_Calgary", "Calgary_I_Winnipeg").
++SetLink("Winnipeg_I_ThunderTTBay", "ThunderTTBay_I_Winnipeg").
++SetLink("Vancouver_I_Seattle", "Seattle_I_Vancouver").
++SetLink("Vancouver_I_Kamloops", "Kamloops_I_Vancouver").
++SetLink("Vancouver_I_Victoria", "Victoria_I_Vancouver").
++SetLink("Calgary_I_Edmonton", "Edmonton_I_Calgary").
++SetLink("Calgary_I_Kamloops", "Kamloops_I_Calgary").
++SetLink("StTTJohn_s_I_Europe", "Europe_I_StTTJohn_s").
++SetLink("StTTJohn_s_I_Halifax", "Halifax_I_StTTJohn_s").
++SetLink("Charlottetown_I_Halifax", "Halifax_I_Charlottetown").
++SetLink("Charlottetown_I_Fredericton", "Fredericton_I_Charlottetown").
++SetLink("Fredericton_I_Montreal", "Montreal_I_Fredericton").
++SetLink("NewTTYork_I_EuropeTTandTTotherTTcountries", "EuropeTTandTTotherTTcountries_I_NewTTYork").
++SetLink("NewTTYork_I_Halifax", "Halifax_I_NewTTYork").
++SetLink("NewTTYork_I_Boston", "Boston_I_NewTTYork").
++SetLink("Victoria_I_Seattle", "Seattle_I_Victoria").
++SetLink("Asia_Pacific_I_Seattle", "Seattle_I_Asia_Pacific").
++SetLink("Yellowknife_I_Edmonton", "Edmonton_I_Yellowknife").
++SetLink("Saskatoon_I_Edmonton", "Edmonton_I_Saskatoon").
++SetLink("Ottawa_I_Montreal", "Montreal_I_Ottawa").
++SetLink("Halifax_I_Montreal", "Montreal_I_Halifax").
++SetLink("Montreal_I_Boston", "Boston_I_Montreal").
++SetLink("Asie_Pacifique_I_Seattle", "Seattle_I_Asie_Pacifique").
+
+
++SetNetwork("Asia_Pacific", "N_Asia_Pacific").
++SetNetwork("Chicago", "N_Chicago").
++SetNetwork("Seattle", "N_Seattle").
++SetNetwork("AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud", "N_AmeriqueTTduTTNordTTetTTAmeriqueTTduTTSud").
++SetNetwork("Saskatoon", "N_Saskatoon").
++SetNetwork("NorthTTandTTSouthTTAmerica", "N_NorthTTandTTSouthTTAmerica").
++SetNetwork("Calgary", "N_Calgary").
++SetNetwork("Victoria", "N_Victoria").
++SetNetwork("EuropeTTandTTotherTTcountries", "N_EuropeTTandTTotherTTcountries").
++SetNetwork("Ottawa", "N_Ottawa").

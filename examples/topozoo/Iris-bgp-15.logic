@@ -1,0 +1,479 @@
++SetNode("NewTTHope").
++SetAdminDist("NewTTHope", "static", 1).
++SetAdminDist("NewTTHope", "bgp", 2).
++SetAdminDist("NewTTHope", "ospf", 3).
++SetInterface("NewTTHope", "NewTTHope_I_Huntsville").
++SetInterface("NewTTHope", "NewTTHope_I_Scottsboro").
+
++SetNode("UnionTTCity").
++SetAdminDist("UnionTTCity", "static", 1).
++SetAdminDist("UnionTTCity", "bgp", 2).
++SetAdminDist("UnionTTCity", "ospf", 3).
++SetInterface("UnionTTCity", "UnionTTCity_I_TrentonID37").
++SetInterface("UnionTTCity", "UnionTTCity_I_Mayfield").
++SetInterface("UnionTTCity", "UnionTTCity_I_Martin").
+
++SetNode("Jackson").
++SetAdminDist("Jackson", "static", 1).
++SetAdminDist("Jackson", "bgp", 2).
++SetAdminDist("Jackson", "ospf", 3).
++SetInterface("Jackson", "Jackson_I_TrentonID37").
++SetInterface("Jackson", "Jackson_I_Yuma").
++SetInterface("Jackson", "Jackson_I_Memphis").
++SetInterface("Jackson", "Jackson_I_Henderson").
+
++SetNode("Crossville").
++SetAdminDist("Crossville", "static", 1).
++SetAdminDist("Crossville", "bgp", 2).
++SetAdminDist("Crossville", "ospf", 3).
++SetInterface("Crossville", "Crossville_I_McMinnville").
++SetInterface("Crossville", "Crossville_I_Gainesboro").
+
++SetNode("TrentonID37").
++SetAdminDist("TrentonID37", "static", 1).
++SetAdminDist("TrentonID37", "bgp", 2).
++SetAdminDist("TrentonID37", "ospf", 3).
++SetInterface("TrentonID37", "TrentonID37_I_UnionTTCity").
++SetInterface("TrentonID37", "TrentonID37_I_Jackson").
+
++SetNode("Paris").
++SetAdminDist("Paris", "static", 1).
++SetAdminDist("Paris", "bgp", 2).
++SetAdminDist("Paris", "ospf", 3).
++SetInterface("Paris", "Paris_I_Camden").
++SetInterface("Paris", "Paris_I_Murray").
++SetInterface("Paris", "Paris_I_McKenzie").
+
++SetNode("Martin").
++SetAdminDist("Martin", "static", 1).
++SetAdminDist("Martin", "bgp", 2).
++SetAdminDist("Martin", "ospf", 3).
++SetInterface("Martin", "Martin_I_UnionTTCity").
++SetInterface("Martin", "Martin_I_McKenzie").
+
++SetNode("Greenville").
++SetAdminDist("Greenville", "static", 1).
++SetAdminDist("Greenville", "bgp", 2).
++SetAdminDist("Greenville", "ospf", 3).
++SetInterface("Greenville", "Greenville_I_JohnsonTTCity").
++SetInterface("Greenville", "Greenville_I_Morristown").
+
++SetNode("Pulaski").
++SetAdminDist("Pulaski", "static", 1).
++SetAdminDist("Pulaski", "bgp", 2).
++SetAdminDist("Pulaski", "ospf", 3).
++SetInterface("Pulaski", "Pulaski_I_Loretto").
++SetInterface("Pulaski", "Pulaski_I_Ardmore").
+
++SetNode("Morristown").
++SetAdminDist("Morristown", "static", 1).
++SetAdminDist("Morristown", "bgp", 2).
++SetAdminDist("Morristown", "ospf", 3).
++SetInterface("Morristown", "Morristown_I_Knoxville").
++SetInterface("Morristown", "Morristown_I_Greenville").
+
++SetNode("McKenzie").
++SetAdminDist("McKenzie", "static", 1).
++SetAdminDist("McKenzie", "bgp", 2).
++SetAdminDist("McKenzie", "ospf", 3).
++SetInterface("McKenzie", "McKenzie_I_Paris").
++SetInterface("McKenzie", "McKenzie_I_Yuma").
++SetInterface("McKenzie", "McKenzie_I_Martin").
+
++SetNode("Millington").
++SetAdminDist("Millington", "static", 1).
++SetAdminDist("Millington", "bgp", 2).
++SetAdminDist("Millington", "ospf", 3).
++SetInterface("Millington", "Millington_I_Memphis").
++SetInterface("Millington", "Millington_I_Brownsville").
+
++SetNode("Glasgow").
++SetAdminDist("Glasgow", "static", 1).
++SetAdminDist("Glasgow", "bgp", 2).
++SetAdminDist("Glasgow", "ospf", 3).
++SetInterface("Glasgow", "Glasgow_I_Scottsville").
+
++SetNode("Henderson").
++SetAdminDist("Henderson", "static", 1).
++SetAdminDist("Henderson", "bgp", 2).
++SetAdminDist("Henderson", "ospf", 3).
++SetInterface("Henderson", "Henderson_I_Jackson").
++SetInterface("Henderson", "Henderson_I_Waynesboro").
+
++SetNode("Yuma").
++SetAdminDist("Yuma", "static", 1).
++SetAdminDist("Yuma", "bgp", 2).
++SetAdminDist("Yuma", "ospf", 3).
++SetInterface("Yuma", "Yuma_I_Bruceton").
++SetInterface("Yuma", "Yuma_I_Nashville").
++SetInterface("Yuma", "Yuma_I_Jackson").
++SetInterface("Yuma", "Yuma_I_McKenzie").
+
++SetNode("Columbia").
++SetAdminDist("Columbia", "static", 1).
++SetAdminDist("Columbia", "bgp", 2).
++SetAdminDist("Columbia", "ospf", 3).
++SetInterface("Columbia", "Columbia_I_Huntsville").
++SetInterface("Columbia", "Columbia_I_Nashville").
+
++SetNode("ScottTTCounty").
++SetAdminDist("ScottTTCounty", "static", 1).
++SetAdminDist("ScottTTCounty", "bgp", 2).
++SetAdminDist("ScottTTCounty", "ospf", 3).
++SetInterface("ScottTTCounty", "ScottTTCounty_I_JohnsonTTCity").
+
++SetNode("Huntsville").
++SetAdminDist("Huntsville", "static", 1).
++SetAdminDist("Huntsville", "bgp", 2).
++SetAdminDist("Huntsville", "ospf", 3).
++SetInterface("Huntsville", "Huntsville_I_NewTTHope").
++SetInterface("Huntsville", "Huntsville_I_Chattanooga").
++SetInterface("Huntsville", "Huntsville_I_Loretto").
++SetInterface("Huntsville", "Huntsville_I_Columbia").
++SetInterface("Huntsville", "Huntsville_I_Ardmore").
+
++SetNode("JohnsonTTCity").
++SetAdminDist("JohnsonTTCity", "static", 1).
++SetAdminDist("JohnsonTTCity", "bgp", 2).
++SetAdminDist("JohnsonTTCity", "ospf", 3).
++SetInterface("JohnsonTTCity", "JohnsonTTCity_I_Knoxville").
++SetInterface("JohnsonTTCity", "JohnsonTTCity_I_Greenville").
++SetInterface("JohnsonTTCity", "JohnsonTTCity_I_ScottTTCounty").
+
++SetNode("Nashville").
++SetAdminDist("Nashville", "static", 1).
++SetAdminDist("Nashville", "bgp", 2).
++SetAdminDist("Nashville", "ospf", 3).
++SetInterface("Nashville", "Nashville_I_Yuma").
++SetInterface("Nashville", "Nashville_I_Columbia").
++SetInterface("Nashville", "Nashville_I_ChapelTTHill").
++SetInterface("Nashville", "Nashville_I_Gainesboro").
+
++SetNode("Dunlap").
++SetAdminDist("Dunlap", "static", 1).
++SetAdminDist("Dunlap", "bgp", 2).
++SetAdminDist("Dunlap", "ospf", 3).
++SetInterface("Dunlap", "Dunlap_I_Chattanooga").
++SetInterface("Dunlap", "Dunlap_I_Spencer").
+
++SetNode("Chickamauga").
++SetAdminDist("Chickamauga", "static", 1).
++SetAdminDist("Chickamauga", "bgp", 2).
++SetAdminDist("Chickamauga", "ospf", 3).
++SetInterface("Chickamauga", "Chickamauga_I_Ringgold").
++SetInterface("Chickamauga", "Chickamauga_I_Trenton").
+
++SetNode("Waynesboro").
++SetAdminDist("Waynesboro", "static", 1).
++SetAdminDist("Waynesboro", "bgp", 2).
++SetAdminDist("Waynesboro", "ospf", 3).
++SetInterface("Waynesboro", "Waynesboro_I_Loretto").
++SetInterface("Waynesboro", "Waynesboro_I_Henderson").
+
++SetNode("ChapelTTHill").
++SetAdminDist("ChapelTTHill", "static", 1).
++SetAdminDist("ChapelTTHill", "bgp", 2).
++SetAdminDist("ChapelTTHill", "ospf", 3).
++SetInterface("ChapelTTHill", "ChapelTTHill_I_Nashville").
++SetInterface("ChapelTTHill", "ChapelTTHill_I_Smyrna").
++SetInterface("ChapelTTHill", "ChapelTTHill_I_Spencer").
++SetInterface("ChapelTTHill", "ChapelTTHill_I_Ardmore").
+
++SetNode("Memphis").
++SetAdminDist("Memphis", "static", 1).
++SetAdminDist("Memphis", "bgp", 2).
++SetAdminDist("Memphis", "ospf", 3).
++SetInterface("Memphis", "Memphis_I_Jackson").
++SetInterface("Memphis", "Memphis_I_Millington").
+
++SetNode("Chattanooga").
++SetAdminDist("Chattanooga", "static", 1).
++SetAdminDist("Chattanooga", "bgp", 2).
++SetAdminDist("Chattanooga", "ospf", 3).
++SetInterface("Chattanooga", "Chattanooga_I_Ringgold").
++SetInterface("Chattanooga", "Chattanooga_I_Huntsville").
++SetInterface("Chattanooga", "Chattanooga_I_Knoxville").
++SetInterface("Chattanooga", "Chattanooga_I_Dunlap").
+
++SetNode("Knoxville").
++SetAdminDist("Knoxville", "static", 1).
++SetAdminDist("Knoxville", "bgp", 2).
++SetAdminDist("Knoxville", "ospf", 3).
++SetInterface("Knoxville", "Knoxville_I_Wartburg").
++SetInterface("Knoxville", "Knoxville_I_JohnsonTTCity").
++SetInterface("Knoxville", "Knoxville_I_Morristown").
++SetInterface("Knoxville", "Knoxville_I_Chattanooga").
+
++SetNode("Bruceton").
++SetAdminDist("Bruceton", "static", 1).
++SetAdminDist("Bruceton", "bgp", 2).
++SetAdminDist("Bruceton", "ospf", 3).
++SetInterface("Bruceton", "Bruceton_I_Yuma").
++SetInterface("Bruceton", "Bruceton_I_Camden").
+
++SetNode("Paducah").
++SetAdminDist("Paducah", "static", 1).
++SetAdminDist("Paducah", "bgp", 2).
++SetAdminDist("Paducah", "ospf", 3).
++SetInterface("Paducah", "Paducah_I_Mayfield").
++SetInterface("Paducah", "Paducah_I_Murray").
+
++SetNode("Wartburg").
++SetAdminDist("Wartburg", "static", 1).
++SetAdminDist("Wartburg", "bgp", 2).
++SetAdminDist("Wartburg", "ospf", 3).
++SetInterface("Wartburg", "Wartburg_I_Knoxville").
++SetInterface("Wartburg", "Wartburg_I_Gainesboro").
+
++SetNode("Mayfield").
++SetAdminDist("Mayfield", "static", 1).
++SetAdminDist("Mayfield", "bgp", 2).
++SetAdminDist("Mayfield", "ospf", 3).
++SetInterface("Mayfield", "Mayfield_I_UnionTTCity").
++SetInterface("Mayfield", "Mayfield_I_Paducah").
+
++SetNode("Lafayette").
++SetAdminDist("Lafayette", "static", 1).
++SetAdminDist("Lafayette", "bgp", 2).
++SetAdminDist("Lafayette", "ospf", 3).
++SetInterface("Lafayette", "Lafayette_I_Scottsville").
++SetInterface("Lafayette", "Lafayette_I_Gainesboro").
+
++SetNode("Franklin").
++SetAdminDist("Franklin", "static", 1).
++SetAdminDist("Franklin", "bgp", 2).
++SetAdminDist("Franklin", "ospf", 3).
++SetInterface("Franklin", "Franklin_I_Scottsville").
++SetInterface("Franklin", "Franklin_I_BowlingTTGreen").
+
++SetNode("Gainesboro").
++SetAdminDist("Gainesboro", "static", 1).
++SetAdminDist("Gainesboro", "bgp", 2).
++SetAdminDist("Gainesboro", "ospf", 3).
++SetInterface("Gainesboro", "Gainesboro_I_Crossville").
++SetInterface("Gainesboro", "Gainesboro_I_Nashville").
++SetInterface("Gainesboro", "Gainesboro_I_Wartburg").
++SetInterface("Gainesboro", "Gainesboro_I_Lafayette").
++SetInterface("Gainesboro", "Gainesboro_I_Smithville").
++SetInterface("Gainesboro", "Gainesboro_I_MtTTJuliet").
+
++SetNode("NewTTJohnsonville").
++SetAdminDist("NewTTJohnsonville", "static", 1).
++SetAdminDist("NewTTJohnsonville", "bgp", 2).
++SetAdminDist("NewTTJohnsonville", "ospf", 3).
++SetInterface("NewTTJohnsonville", "NewTTJohnsonville_I_Camden").
+
++SetNode("Spencer").
++SetAdminDist("Spencer", "static", 1).
++SetAdminDist("Spencer", "bgp", 2).
++SetAdminDist("Spencer", "ospf", 3).
++SetInterface("Spencer", "Spencer_I_McMinnville").
++SetInterface("Spencer", "Spencer_I_ChapelTTHill").
++SetInterface("Spencer", "Spencer_I_Smithville").
++SetInterface("Spencer", "Spencer_I_Dunlap").
+
++SetNode("Brownsville").
++SetAdminDist("Brownsville", "static", 1).
++SetAdminDist("Brownsville", "bgp", 2).
++SetAdminDist("Brownsville", "ospf", 3).
++SetInterface("Brownsville", "Brownsville_I_Millington").
+
++SetNode("Ringgold").
++SetAdminDist("Ringgold", "static", 1).
++SetAdminDist("Ringgold", "bgp", 2).
++SetAdminDist("Ringgold", "ospf", 3).
++SetInterface("Ringgold", "Ringgold_I_Chattanooga").
++SetInterface("Ringgold", "Ringgold_I_Chickamauga").
+
++SetNode("Trenton").
++SetAdminDist("Trenton", "static", 1).
++SetAdminDist("Trenton", "bgp", 2).
++SetAdminDist("Trenton", "ospf", 3).
++SetInterface("Trenton", "Trenton_I_Rainsville").
++SetInterface("Trenton", "Trenton_I_Chickamauga").
+
++SetNode("Ardmore").
++SetAdminDist("Ardmore", "static", 1).
++SetAdminDist("Ardmore", "bgp", 2).
++SetAdminDist("Ardmore", "ospf", 3).
++SetInterface("Ardmore", "Ardmore_I_Pulaski").
++SetInterface("Ardmore", "Ardmore_I_Huntsville").
++SetInterface("Ardmore", "Ardmore_I_ChapelTTHill").
+
++SetNode("MtTTJuliet").
++SetAdminDist("MtTTJuliet", "static", 1).
++SetAdminDist("MtTTJuliet", "bgp", 2).
++SetAdminDist("MtTTJuliet", "ospf", 3).
++SetInterface("MtTTJuliet", "MtTTJuliet_I_Smyrna").
++SetInterface("MtTTJuliet", "MtTTJuliet_I_Gainesboro").
+
++SetNode("BowlingTTGreen").
++SetAdminDist("BowlingTTGreen", "static", 1).
++SetAdminDist("BowlingTTGreen", "bgp", 2).
++SetAdminDist("BowlingTTGreen", "ospf", 3).
++SetInterface("BowlingTTGreen", "BowlingTTGreen_I_Franklin").
++SetInterface("BowlingTTGreen", "BowlingTTGreen_I_Scottsville").
+
++SetNode("Smyrna").
++SetAdminDist("Smyrna", "static", 1).
++SetAdminDist("Smyrna", "bgp", 2).
++SetAdminDist("Smyrna", "ospf", 3).
++SetInterface("Smyrna", "Smyrna_I_MtTTJuliet").
++SetInterface("Smyrna", "Smyrna_I_ChapelTTHill").
+
++SetNode("Murray").
++SetAdminDist("Murray", "static", 1).
++SetAdminDist("Murray", "bgp", 2).
++SetAdminDist("Murray", "ospf", 3).
++SetInterface("Murray", "Murray_I_Paris").
++SetInterface("Murray", "Murray_I_Paducah").
+
++SetNode("Scottsville").
++SetAdminDist("Scottsville", "static", 1).
++SetAdminDist("Scottsville", "bgp", 2).
++SetAdminDist("Scottsville", "ospf", 3).
++SetInterface("Scottsville", "Scottsville_I_Lafayette").
++SetInterface("Scottsville", "Scottsville_I_Glasgow").
++SetInterface("Scottsville", "Scottsville_I_Franklin").
++SetInterface("Scottsville", "Scottsville_I_BowlingTTGreen").
+
++SetNode("Rainsville").
++SetAdminDist("Rainsville", "static", 1).
++SetAdminDist("Rainsville", "bgp", 2).
++SetAdminDist("Rainsville", "ospf", 3).
++SetInterface("Rainsville", "Rainsville_I_Trenton").
++SetInterface("Rainsville", "Rainsville_I_Scottsboro").
+
++SetNode("Camden").
++SetAdminDist("Camden", "static", 1).
++SetAdminDist("Camden", "bgp", 2).
++SetAdminDist("Camden", "ospf", 3).
++SetInterface("Camden", "Camden_I_Paris").
++SetInterface("Camden", "Camden_I_Bruceton").
++SetInterface("Camden", "Camden_I_NewTTJohnsonville").
+
++SetNode("Smithville").
++SetAdminDist("Smithville", "static", 1).
++SetAdminDist("Smithville", "bgp", 2).
++SetAdminDist("Smithville", "ospf", 3).
++SetInterface("Smithville", "Smithville_I_Spencer").
++SetInterface("Smithville", "Smithville_I_Gainesboro").
+
++SetNode("McMinnville").
++SetAdminDist("McMinnville", "static", 1).
++SetAdminDist("McMinnville", "bgp", 2).
++SetAdminDist("McMinnville", "ospf", 3).
++SetInterface("McMinnville", "McMinnville_I_Spencer").
++SetInterface("McMinnville", "McMinnville_I_Crossville").
+
++SetNode("Loretto").
++SetAdminDist("Loretto", "static", 1).
++SetAdminDist("Loretto", "bgp", 2).
++SetAdminDist("Loretto", "ospf", 3).
++SetInterface("Loretto", "Loretto_I_Pulaski").
++SetInterface("Loretto", "Loretto_I_Huntsville").
++SetInterface("Loretto", "Loretto_I_Waynesboro").
+
++SetNode("Scottsboro").
++SetAdminDist("Scottsboro", "static", 1).
++SetAdminDist("Scottsboro", "bgp", 2).
++SetAdminDist("Scottsboro", "ospf", 3).
++SetInterface("Scottsboro", "Scottsboro_I_NewTTHope").
++SetInterface("Scottsboro", "Scottsboro_I_Rainsville").
+
++SetLink("NewTTHope_I_Huntsville", "Huntsville_I_NewTTHope").
++SetLink("NewTTHope_I_Scottsboro", "Scottsboro_I_NewTTHope").
++SetLink("UnionTTCity_I_TrentonID37", "TrentonID37_I_UnionTTCity").
++SetLink("UnionTTCity_I_Mayfield", "Mayfield_I_UnionTTCity").
++SetLink("UnionTTCity_I_Martin", "Martin_I_UnionTTCity").
++SetLink("Jackson_I_TrentonID37", "TrentonID37_I_Jackson").
++SetLink("Jackson_I_Yuma", "Yuma_I_Jackson").
++SetLink("Jackson_I_Memphis", "Memphis_I_Jackson").
++SetLink("Jackson_I_Henderson", "Henderson_I_Jackson").
++SetLink("Crossville_I_McMinnville", "McMinnville_I_Crossville").
++SetLink("Crossville_I_Gainesboro", "Gainesboro_I_Crossville").
++SetLink("Paris_I_Camden", "Camden_I_Paris").
++SetLink("Paris_I_Murray", "Murray_I_Paris").
++SetLink("Paris_I_McKenzie", "McKenzie_I_Paris").
++SetLink("Martin_I_McKenzie", "McKenzie_I_Martin").
++SetLink("Greenville_I_JohnsonTTCity", "JohnsonTTCity_I_Greenville").
++SetLink("Greenville_I_Morristown", "Morristown_I_Greenville").
++SetLink("Pulaski_I_Loretto", "Loretto_I_Pulaski").
++SetLink("Pulaski_I_Ardmore", "Ardmore_I_Pulaski").
++SetLink("Morristown_I_Knoxville", "Knoxville_I_Morristown").
++SetLink("McKenzie_I_Yuma", "Yuma_I_McKenzie").
++SetLink("Millington_I_Memphis", "Memphis_I_Millington").
++SetLink("Millington_I_Brownsville", "Brownsville_I_Millington").
++SetLink("Glasgow_I_Scottsville", "Scottsville_I_Glasgow").
++SetLink("Henderson_I_Waynesboro", "Waynesboro_I_Henderson").
++SetLink("Yuma_I_Bruceton", "Bruceton_I_Yuma").
++SetLink("Yuma_I_Nashville", "Nashville_I_Yuma").
++SetLink("Columbia_I_Huntsville", "Huntsville_I_Columbia").
++SetLink("Columbia_I_Nashville", "Nashville_I_Columbia").
++SetLink("ScottTTCounty_I_JohnsonTTCity", "JohnsonTTCity_I_ScottTTCounty").
++SetLink("Huntsville_I_Chattanooga", "Chattanooga_I_Huntsville").
++SetLink("Huntsville_I_Loretto", "Loretto_I_Huntsville").
++SetLink("Huntsville_I_Ardmore", "Ardmore_I_Huntsville").
++SetLink("JohnsonTTCity_I_Knoxville", "Knoxville_I_JohnsonTTCity").
++SetLink("Nashville_I_ChapelTTHill", "ChapelTTHill_I_Nashville").
++SetLink("Nashville_I_Gainesboro", "Gainesboro_I_Nashville").
++SetLink("Dunlap_I_Chattanooga", "Chattanooga_I_Dunlap").
++SetLink("Dunlap_I_Spencer", "Spencer_I_Dunlap").
++SetLink("Chickamauga_I_Ringgold", "Ringgold_I_Chickamauga").
++SetLink("Chickamauga_I_Trenton", "Trenton_I_Chickamauga").
++SetLink("Waynesboro_I_Loretto", "Loretto_I_Waynesboro").
++SetLink("ChapelTTHill_I_Smyrna", "Smyrna_I_ChapelTTHill").
++SetLink("ChapelTTHill_I_Spencer", "Spencer_I_ChapelTTHill").
++SetLink("ChapelTTHill_I_Ardmore", "Ardmore_I_ChapelTTHill").
++SetLink("Chattanooga_I_Ringgold", "Ringgold_I_Chattanooga").
++SetLink("Chattanooga_I_Knoxville", "Knoxville_I_Chattanooga").
++SetLink("Knoxville_I_Wartburg", "Wartburg_I_Knoxville").
++SetLink("Bruceton_I_Camden", "Camden_I_Bruceton").
++SetLink("Paducah_I_Mayfield", "Mayfield_I_Paducah").
++SetLink("Paducah_I_Murray", "Murray_I_Paducah").
++SetLink("Wartburg_I_Gainesboro", "Gainesboro_I_Wartburg").
++SetLink("Lafayette_I_Scottsville", "Scottsville_I_Lafayette").
++SetLink("Lafayette_I_Gainesboro", "Gainesboro_I_Lafayette").
++SetLink("Franklin_I_Scottsville", "Scottsville_I_Franklin").
++SetLink("Franklin_I_BowlingTTGreen", "BowlingTTGreen_I_Franklin").
++SetLink("Gainesboro_I_Smithville", "Smithville_I_Gainesboro").
++SetLink("Gainesboro_I_MtTTJuliet", "MtTTJuliet_I_Gainesboro").
++SetLink("NewTTJohnsonville_I_Camden", "Camden_I_NewTTJohnsonville").
++SetLink("Spencer_I_McMinnville", "McMinnville_I_Spencer").
++SetLink("Spencer_I_Smithville", "Smithville_I_Spencer").
++SetLink("Trenton_I_Rainsville", "Rainsville_I_Trenton").
++SetLink("MtTTJuliet_I_Smyrna", "Smyrna_I_MtTTJuliet").
++SetLink("BowlingTTGreen_I_Scottsville", "Scottsville_I_BowlingTTGreen").
++SetLink("Rainsville_I_Scottsboro", "Scottsboro_I_Rainsville").
+
+
++SetNetwork("ChapelTTHill", "N_ChapelTTHill").
++SetBGPAnnouncement("ChapelTTHill", "N_ChapelTTHill", "NBGP_ChapelTTHill", "1;2;3", 3).
++SetNetwork("Morristown", "N_Morristown").
++SetBGPAnnouncement("Morristown", "N_Morristown", "NBGP_Morristown", "1;2;3", 3).
++SetNetwork("Gainesboro", "N_Gainesboro").
++SetBGPAnnouncement("Gainesboro", "N_Gainesboro", "NBGP_Gainesboro", "1;2;3", 3).
++SetNetwork("Murray", "N_Murray").
++SetBGPAnnouncement("Murray", "N_Murray", "NBGP_Murray", "1;2;3", 3).
++SetNetwork("TrentonID37", "N_TrentonID37").
++SetBGPAnnouncement("TrentonID37", "N_TrentonID37", "NBGP_TrentonID37", "1;2;3", 3).
++SetNetwork("Smyrna", "N_Smyrna").
++SetBGPAnnouncement("Smyrna", "N_Smyrna", "NBGP_Smyrna", "1;2;3", 3).
++SetNetwork("Brownsville", "N_Brownsville").
++SetBGPAnnouncement("Brownsville", "N_Brownsville", "NBGP_Brownsville", "1;2;3", 3).
++SetNetwork("MtTTJuliet", "N_MtTTJuliet").
++SetBGPAnnouncement("MtTTJuliet", "N_MtTTJuliet", "NBGP_MtTTJuliet", "1;2;3", 3).
++SetNetwork("Chickamauga", "N_Chickamauga").
++SetBGPAnnouncement("Chickamauga", "N_Chickamauga", "NBGP_Chickamauga", "1;2;3", 3).
++SetNetwork("Henderson", "N_Henderson").
++SetBGPAnnouncement("Henderson", "N_Henderson", "NBGP_Henderson", "1;2;3", 3).
++SetNetwork("Bruceton", "N_Bruceton").
++SetBGPAnnouncement("Bruceton", "N_Bruceton", "NBGP_Bruceton", "1;2;3", 3).
++SetNetwork("Yuma", "N_Yuma").
++SetBGPAnnouncement("Yuma", "N_Yuma", "NBGP_Yuma", "1;2;3", 3).
++SetNetwork("Crossville", "N_Crossville").
++SetBGPAnnouncement("Crossville", "N_Crossville", "NBGP_Crossville", "1;2;3", 3).
++SetNetwork("Dunlap", "N_Dunlap").
++SetBGPAnnouncement("Dunlap", "N_Dunlap", "NBGP_Dunlap", "1;2;3", 3).
++SetNetwork("NewTTHope", "N_NewTTHope").
++SetBGPAnnouncement("NewTTHope", "N_NewTTHope", "NBGP_NewTTHope", "1;2;3", 3).

@@ -1,0 +1,26 @@
+
++Fwd("N_NorthWestNet_TTSeattle", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCAR_TTBoulder", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCAR_TTBoulder", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "NCAR_TTBoulder", "NorthWestNet_TTSeattle", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "NCAR_TTBoulder", "NorthWestNet_TTSeattle", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "SURANET_TTGeorgiaTTTech_TTAtlanta", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "SURANET_TTGeorgiaTTTech_TTAtlanta", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "CornellTTTheoryTTCenter_TTIthacaTTNY", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "CornellTTTheoryTTCenter_TTIthacaTTNY", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "CornellTTTheoryTTCenter_TTIthacaTTNY", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "CornellTTTheoryTTCenter_TTIthacaTTNY", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "BARRnet_TTPaloTTAlto", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "BARRnet_TTPaloTTAlto", "NorthWestNet_TTSeattle", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "BARRnet_TTPaloTTAlto", "NorthWestNet_TTSeattle", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "SanTTDiegoTTSupercomputerTTCenter", "BARRnet_TTPaloTTAlto", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "SanTTDiegoTTSupercomputerTTCenter", "BARRnet_TTPaloTTAlto", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "MIDnet_TTLincoln_TTNE", "NCSA_TTUniversityTTofTTIllinois_TTChampaign", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "Westnet_TTSaltTTLakeTTCity", "NCAR_TTBoulder", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "SEQSUINET_TTRiceTTUniversity_TTHouston", "SanTTDiegoTTSupercomputerTTCenter", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "SEQSUINET_TTRiceTTUniversity_TTHouston", "SanTTDiegoTTSupercomputerTTCenter", "bgp").
++Fwd("N_NorthWestNet_TTSeattle", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf").
++Fwd("NBGP_NorthWestNet_TTSeattle", "PittsburghTTSupercomputerTTCenter", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "bgp").
+

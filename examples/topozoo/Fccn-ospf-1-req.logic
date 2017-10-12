@@ -1,0 +1,24 @@
+
++Fwd("N_Beja", "Covilha", "Porto", "ospf").
++Fwd("N_Beja", "Porto", "Coimbra", "ospf").
++Fwd("N_Beja", "Coimbra", "Lisboa", "ospf").
++Fwd("N_Beja", "Lisboa", "Setubal", "ospf").
++Fwd("N_Beja", "Setubal", "Beja", "ospf").
++Fwd("N_Beja", "VianaTTdeTTCastelo", "Porto", "ospf").
++Fwd("N_Beja", "Braga", "Porto", "ospf").
++Fwd("N_Beja", "Tomar", "Lisboa", "ospf").
++Fwd("N_Beja", "Viseu", "Lisboa", "ospf").
++Fwd("N_Beja", "Faro", "Setubal", "ospf").
++Fwd("N_Beja", "Samtarem", "Lisboa", "ospf").
++Fwd("N_Beja", "CasteloTTBranco", "Lisboa", "ospf").
++Fwd("N_Beja", "Leiria", "Coimbra", "ospf").
++Fwd("N_Beja", "Guarda", "Porto", "ospf").
++Fwd("N_Beja", "Portalegre", "Lisboa", "ospf").
++Fwd("N_Beja", "VillaTTReal", "Porto", "ospf").
++Fwd("N_Beja", "Aveiro", "Coimbra", "ospf").
++Fwd("N_Beja", "Evora", "Lisboa", "ospf").
++Fwd("N_Beja", "PontaTTDelgada", "Lisboa", "ospf").
++Fwd("N_Beja", "Barcelos", "Porto", "ospf").
++Fwd("N_Beja", "Funchal", "Lisboa", "ospf").
++Fwd("N_Beja", "Bragancia", "Porto", "ospf").
+

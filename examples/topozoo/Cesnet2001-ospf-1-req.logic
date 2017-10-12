@@ -1,0 +1,24 @@
+
++Fwd("N_Liberec", "USA", "Praha", "ospf").
++Fwd("N_Liberec", "Praha", "Liberec", "ospf").
++Fwd("N_Liberec", "Vyskov", "Brno", "ospf").
++Fwd("N_Liberec", "Brno", "Praha", "ospf").
++Fwd("N_Liberec", "Opava", "Ostrava", "ospf").
++Fwd("N_Liberec", "Ostrava", "Praha", "ospf").
++Fwd("N_Liberec", "Pardubice", "Praha", "ospf").
++Fwd("N_Liberec", "Tabor", "CeskeTTBudejovice", "ospf").
++Fwd("N_Liberec", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("N_Liberec", "Decin", "UstiTTnadTTLabem", "ospf").
++Fwd("N_Liberec", "UstiTTnadTTLabem", "Praha", "ospf").
++Fwd("N_Liberec", "HradecTTKralove", "Praha", "ospf").
++Fwd("N_Liberec", "Olomouc", "Ostrava", "ospf").
++Fwd("N_Liberec", "TEN_155", "Praha", "ospf").
++Fwd("N_Liberec", "KostelecTTnTTC_L", "Praha", "ospf").
++Fwd("N_Liberec", "Breclav_Lednice", "Brno", "ospf").
++Fwd("N_Liberec", "Zlin", "Brno", "ospf").
++Fwd("N_Liberec", "Karvina", "Ostrava", "ospf").
++Fwd("N_Liberec", "Plzen", "Praha", "ospf").
++Fwd("N_Liberec", "NIX", "Praha", "ospf").
++Fwd("N_Liberec", "Cheb", "Plzen", "ospf").
++Fwd("N_Liberec", "JindrichuvTTHradec", "CeskeTTBudejovice", "ospf").
+

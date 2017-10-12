@@ -1,0 +1,17 @@
+
++Fwd("N_Internet", "UniversityTT4", "NodeID15", "static").
++Fwd("N_Internet", "NodeID15", "NodeID13", "static").
++Fwd("N_Internet", "NodeID13", "Internet", "static").
++Fwd("N_Internet", "UniversityTT1", "Tanger", "static").
++Fwd("N_Internet", "Tanger", "Casa", "static").
++Fwd("N_Internet", "Casa", "NodeID6", "static").
++Fwd("N_Internet", "NodeID6", "NodeID15", "static").
++Fwd("N_Internet", "UniversityTT3", "NodeID6", "static").
++Fwd("N_Internet", "GEANT", "NodeID13", "static").
++Fwd("N_Internet", "UniversityTT2", "Agadir", "static").
++Fwd("N_Internet", "Agadir", "Rabat", "static").
++Fwd("N_Internet", "Rabat", "NodeID15", "static").
++Fwd("N_Internet", "Fes", "Marrkech", "static").
++Fwd("N_Internet", "Marrkech", "Agadir", "static").
++Fwd("N_Internet", "InstitutionTT1", "NodeID6", "static").
+

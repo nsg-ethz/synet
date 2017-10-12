@@ -1,0 +1,360 @@
++SetNode("Paris").
++SetAdminDist("Paris", "static", 1).
++SetAdminDist("Paris", "bgp", 2).
++SetAdminDist("Paris", "ospf", 3).
++SetInterface("Paris", "Paris_I_Frankfurt").
+
++SetNode("Dortmund").
++SetAdminDist("Dortmund", "static", 1).
++SetAdminDist("Dortmund", "bgp", 2).
++SetAdminDist("Dortmund", "ospf", 3).
++SetInterface("Dortmund", "Dortmund_I_Gutersloh").
++SetInterface("Dortmund", "Dortmund_I_Essen").
+
++SetNode("Bremen").
++SetAdminDist("Bremen", "static", 1).
++SetAdminDist("Bremen", "bgp", 2).
++SetAdminDist("Bremen", "ospf", 3).
++SetInterface("Bremen", "Bremen_I_Hanover").
++SetInterface("Bremen", "Bremen_I_Hamburg").
+
++SetNode("Erfurt").
++SetAdminDist("Erfurt", "static", 1).
++SetAdminDist("Erfurt", "bgp", 2).
++SetAdminDist("Erfurt", "ospf", 3).
++SetInterface("Erfurt", "Erfurt_I_Leipzig").
++SetInterface("Erfurt", "Erfurt_I_Coburg").
+
++SetNode("Coburg").
++SetAdminDist("Coburg", "static", 1).
++SetAdminDist("Coburg", "bgp", 2).
++SetAdminDist("Coburg", "ospf", 3).
++SetInterface("Coburg", "Coburg_I_Nuremberg").
++SetInterface("Coburg", "Coburg_I_Erfurt").
+
++SetNode("Brunswick").
++SetAdminDist("Brunswick", "static", 1).
++SetAdminDist("Brunswick", "bgp", 2).
++SetAdminDist("Brunswick", "ospf", 3).
++SetInterface("Brunswick", "Brunswick_I_Hanover").
++SetInterface("Brunswick", "Brunswick_I_Magdeburg").
+
++SetNode("Karlsruhe").
++SetAdminDist("Karlsruhe", "static", 1).
++SetAdminDist("Karlsruhe", "bgp", 2).
++SetAdminDist("Karlsruhe", "ospf", 3).
++SetInterface("Karlsruhe", "Karlsruhe_I_Stuttgart").
++SetInterface("Karlsruhe", "Karlsruhe_I_Mannheim").
+
++SetNode("Vienna").
++SetAdminDist("Vienna", "static", 1).
++SetAdminDist("Vienna", "bgp", 2).
++SetAdminDist("Vienna", "ospf", 3).
++SetInterface("Vienna", "Vienna_I_Munich").
++SetInterface("Vienna", "Vienna_I_Bratislava").
+
++SetNode("Duren").
++SetAdminDist("Duren", "static", 1).
++SetAdminDist("Duren", "bgp", 2).
++SetAdminDist("Duren", "ospf", 3).
++SetInterface("Duren", "Duren_I_Dusseldorf").
+
++SetNode("Dresden").
++SetAdminDist("Dresden", "static", 1).
++SetAdminDist("Dresden", "bgp", 2).
++SetAdminDist("Dresden", "ospf", 3).
++SetInterface("Dresden", "Dresden_I_Berlin").
++SetInterface("Dresden", "Dresden_I_Leipzig").
+
++SetNode("NodeID11").
++SetAdminDist("NodeID11", "static", 1).
++SetAdminDist("NodeID11", "bgp", 2).
++SetAdminDist("NodeID11", "ospf", 3).
++SetInterface("NodeID11", "NodeID11_I_Berlin").
++SetInterface("NodeID11", "NodeID11_I_Rostock").
++SetInterface("NodeID11", "NodeID11_I_Hamburg").
+
++SetNode("Augsburg").
++SetAdminDist("Augsburg", "static", 1).
++SetAdminDist("Augsburg", "bgp", 2).
++SetAdminDist("Augsburg", "ospf", 3).
++SetInterface("Augsburg", "Augsburg_I_Stuttgart").
++SetInterface("Augsburg", "Augsburg_I_Munich").
+
++SetNode("Munich").
++SetAdminDist("Munich", "static", 1).
++SetAdminDist("Munich", "bgp", 2).
++SetAdminDist("Munich", "ospf", 3).
++SetInterface("Munich", "Munich_I_Augsburg").
++SetInterface("Munich", "Munich_I_Vienna").
++SetInterface("Munich", "Munich_I_Ingolstadt").
+
++SetNode("Ingolstadt").
++SetAdminDist("Ingolstadt", "static", 1).
++SetAdminDist("Ingolstadt", "bgp", 2).
++SetAdminDist("Ingolstadt", "ospf", 3).
++SetInterface("Ingolstadt", "Ingolstadt_I_Nuremberg").
++SetInterface("Ingolstadt", "Ingolstadt_I_Munich").
+
++SetNode("Hertford").
++SetAdminDist("Hertford", "static", 1).
++SetAdminDist("Hertford", "bgp", 2).
++SetAdminDist("Hertford", "ospf", 3).
++SetInterface("Hertford", "Hertford_I_Hanover").
++SetInterface("Hertford", "Hertford_I_Bielefeld").
+
++SetNode("Berlin").
++SetAdminDist("Berlin", "static", 1).
++SetAdminDist("Berlin", "bgp", 2).
++SetAdminDist("Berlin", "ospf", 3).
++SetInterface("Berlin", "Berlin_I_NodeID11").
++SetInterface("Berlin", "Berlin_I_Magdeburg").
++SetInterface("Berlin", "Berlin_I_Dresden").
+
++SetNode("Hamburg").
++SetAdminDist("Hamburg", "static", 1).
++SetAdminDist("Hamburg", "bgp", 2).
++SetAdminDist("Hamburg", "ospf", 3).
++SetInterface("Hamburg", "Hamburg_I_NodeID11").
++SetInterface("Hamburg", "Hamburg_I_Bremen").
++SetInterface("Hamburg", "Hamburg_I_Kiel").
+
++SetNode("Kiel").
++SetAdminDist("Kiel", "static", 1).
++SetAdminDist("Kiel", "bgp", 2).
++SetAdminDist("Kiel", "ospf", 3).
++SetInterface("Kiel", "Kiel_I_Copenhagen").
++SetInterface("Kiel", "Kiel_I_Hamburg").
+
++SetNode("Brno").
++SetAdminDist("Brno", "static", 1).
++SetAdminDist("Brno", "bgp", 2).
++SetAdminDist("Brno", "ospf", 3).
++SetInterface("Brno", "Brno_I_Prague").
++SetInterface("Brno", "Brno_I_Bratislava").
+
++SetNode("Hanover").
++SetAdminDist("Hanover", "static", 1).
++SetAdminDist("Hanover", "bgp", 2).
++SetAdminDist("Hanover", "ospf", 3).
++SetInterface("Hanover", "Hanover_I_Hertford").
++SetInterface("Hanover", "Hanover_I_Brunswick").
++SetInterface("Hanover", "Hanover_I_Bremen").
+
++SetNode("Nuremberg").
++SetAdminDist("Nuremberg", "static", 1).
++SetAdminDist("Nuremberg", "bgp", 2).
++SetAdminDist("Nuremberg", "ospf", 3).
++SetInterface("Nuremberg", "Nuremberg_I_Wurzburg").
++SetInterface("Nuremberg", "Nuremberg_I_Prague").
++SetInterface("Nuremberg", "Nuremberg_I_Coburg").
++SetInterface("Nuremberg", "Nuremberg_I_Ingolstadt").
+
++SetNode("Wurzburg").
++SetAdminDist("Wurzburg", "static", 1).
++SetAdminDist("Wurzburg", "bgp", 2).
++SetAdminDist("Wurzburg", "ospf", 3).
++SetInterface("Wurzburg", "Wurzburg_I_Nuremberg").
++SetInterface("Wurzburg", "Wurzburg_I_Frankfurt").
+
++SetNode("Dusseldorf").
++SetAdminDist("Dusseldorf", "static", 1).
++SetAdminDist("Dusseldorf", "bgp", 2).
++SetAdminDist("Dusseldorf", "ospf", 3).
++SetInterface("Dusseldorf", "Dusseldorf_I_Aachen").
++SetInterface("Dusseldorf", "Dusseldorf_I_Duren").
++SetInterface("Dusseldorf", "Dusseldorf_I_Essen").
++SetInterface("Dusseldorf", "Dusseldorf_I_Cologne").
++SetInterface("Dusseldorf", "Dusseldorf_I_Amsterdam").
+
++SetNode("Bratislava").
++SetAdminDist("Bratislava", "static", 1).
++SetAdminDist("Bratislava", "bgp", 2).
++SetAdminDist("Bratislava", "ospf", 3).
++SetInterface("Bratislava", "Bratislava_I_Brno").
++SetInterface("Bratislava", "Bratislava_I_Vienna").
+
++SetNode("Stuttgart").
++SetAdminDist("Stuttgart", "static", 1).
++SetAdminDist("Stuttgart", "bgp", 2).
++SetAdminDist("Stuttgart", "ospf", 3).
++SetInterface("Stuttgart", "Stuttgart_I_Augsburg").
++SetInterface("Stuttgart", "Stuttgart_I_Karlsruhe").
+
++SetNode("Magdeburg").
++SetAdminDist("Magdeburg", "static", 1).
++SetAdminDist("Magdeburg", "bgp", 2).
++SetAdminDist("Magdeburg", "ospf", 3).
++SetInterface("Magdeburg", "Magdeburg_I_Berlin").
++SetInterface("Magdeburg", "Magdeburg_I_Brunswick").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_Copenhagen").
+
++SetNode("Aachen").
++SetAdminDist("Aachen", "static", 1).
++SetAdminDist("Aachen", "bgp", 2).
++SetAdminDist("Aachen", "ospf", 3).
++SetInterface("Aachen", "Aachen_I_Dusseldorf").
+
++SetNode("Rostock").
++SetAdminDist("Rostock", "static", 1).
++SetAdminDist("Rostock", "bgp", 2).
++SetAdminDist("Rostock", "ospf", 3).
++SetInterface("Rostock", "Rostock_I_NodeID11").
++SetInterface("Rostock", "Rostock_I_Copenhagen").
+
++SetNode("Frankfurt").
++SetAdminDist("Frankfurt", "static", 1).
++SetAdminDist("Frankfurt", "bgp", 2).
++SetAdminDist("Frankfurt", "ospf", 3).
++SetInterface("Frankfurt", "Frankfurt_I_Paris").
++SetInterface("Frankfurt", "Frankfurt_I_Mannheim").
++SetInterface("Frankfurt", "Frankfurt_I_Wurzburg").
++SetInterface("Frankfurt", "Frankfurt_I_Bonn").
++SetInterface("Frankfurt", "Frankfurt_I_Zurich").
+
++SetNode("Mannheim").
++SetAdminDist("Mannheim", "static", 1).
++SetAdminDist("Mannheim", "bgp", 2).
++SetAdminDist("Mannheim", "ospf", 3).
++SetInterface("Mannheim", "Mannheim_I_Frankfurt").
++SetInterface("Mannheim", "Mannheim_I_Karlsruhe").
+
++SetNode("Zurich").
++SetAdminDist("Zurich", "static", 1).
++SetAdminDist("Zurich", "bgp", 2).
++SetAdminDist("Zurich", "ospf", 3).
++SetInterface("Zurich", "Zurich_I_Frankfurt").
+
++SetNode("Gutersloh").
++SetAdminDist("Gutersloh", "static", 1).
++SetAdminDist("Gutersloh", "bgp", 2).
++SetAdminDist("Gutersloh", "ospf", 3).
++SetInterface("Gutersloh", "Gutersloh_I_Dortmund").
++SetInterface("Gutersloh", "Gutersloh_I_Bielefeld").
+
++SetNode("Prague").
++SetAdminDist("Prague", "static", 1).
++SetAdminDist("Prague", "bgp", 2).
++SetAdminDist("Prague", "ospf", 3).
++SetInterface("Prague", "Prague_I_Nuremberg").
++SetInterface("Prague", "Prague_I_Brno").
+
++SetNode("Leipzig").
++SetAdminDist("Leipzig", "static", 1).
++SetAdminDist("Leipzig", "bgp", 2).
++SetAdminDist("Leipzig", "ospf", 3).
++SetInterface("Leipzig", "Leipzig_I_Erfurt").
++SetInterface("Leipzig", "Leipzig_I_Dresden").
+
++SetNode("Cologne").
++SetAdminDist("Cologne", "static", 1).
++SetAdminDist("Cologne", "bgp", 2).
++SetAdminDist("Cologne", "ospf", 3).
++SetInterface("Cologne", "Cologne_I_Dusseldorf").
++SetInterface("Cologne", "Cologne_I_Bonn").
+
++SetNode("Bielefeld").
++SetAdminDist("Bielefeld", "static", 1).
++SetAdminDist("Bielefeld", "bgp", 2).
++SetAdminDist("Bielefeld", "ospf", 3).
++SetInterface("Bielefeld", "Bielefeld_I_Hertford").
++SetInterface("Bielefeld", "Bielefeld_I_Gutersloh").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_Amsterdam").
+
++SetNode("Amsterdam").
++SetAdminDist("Amsterdam", "static", 1).
++SetAdminDist("Amsterdam", "bgp", 2).
++SetAdminDist("Amsterdam", "ospf", 3).
++SetInterface("Amsterdam", "Amsterdam_I_London").
++SetInterface("Amsterdam", "Amsterdam_I_Dusseldorf").
+
++SetNode("Copenhagen").
++SetAdminDist("Copenhagen", "static", 1).
++SetAdminDist("Copenhagen", "bgp", 2).
++SetAdminDist("Copenhagen", "ospf", 3).
++SetInterface("Copenhagen", "Copenhagen_I_Rostock").
++SetInterface("Copenhagen", "Copenhagen_I_Stockholm").
++SetInterface("Copenhagen", "Copenhagen_I_Kiel").
+
++SetNode("Essen").
++SetAdminDist("Essen", "static", 1).
++SetAdminDist("Essen", "bgp", 2).
++SetAdminDist("Essen", "ospf", 3).
++SetInterface("Essen", "Essen_I_Dortmund").
++SetInterface("Essen", "Essen_I_Dusseldorf").
+
++SetNode("Bonn").
++SetAdminDist("Bonn", "static", 1).
++SetAdminDist("Bonn", "bgp", 2).
++SetAdminDist("Bonn", "ospf", 3).
++SetInterface("Bonn", "Bonn_I_Cologne").
++SetInterface("Bonn", "Bonn_I_Frankfurt").
+
++SetLink("Paris_I_Frankfurt", "Frankfurt_I_Paris").
++SetLink("Dortmund_I_Gutersloh", "Gutersloh_I_Dortmund").
++SetLink("Dortmund_I_Essen", "Essen_I_Dortmund").
++SetLink("Bremen_I_Hanover", "Hanover_I_Bremen").
++SetLink("Bremen_I_Hamburg", "Hamburg_I_Bremen").
++SetLink("Erfurt_I_Leipzig", "Leipzig_I_Erfurt").
++SetLink("Erfurt_I_Coburg", "Coburg_I_Erfurt").
++SetLink("Coburg_I_Nuremberg", "Nuremberg_I_Coburg").
++SetLink("Brunswick_I_Hanover", "Hanover_I_Brunswick").
++SetLink("Brunswick_I_Magdeburg", "Magdeburg_I_Brunswick").
++SetLink("Karlsruhe_I_Stuttgart", "Stuttgart_I_Karlsruhe").
++SetLink("Karlsruhe_I_Mannheim", "Mannheim_I_Karlsruhe").
++SetLink("Vienna_I_Munich", "Munich_I_Vienna").
++SetLink("Vienna_I_Bratislava", "Bratislava_I_Vienna").
++SetLink("Duren_I_Dusseldorf", "Dusseldorf_I_Duren").
++SetLink("Dresden_I_Berlin", "Berlin_I_Dresden").
++SetLink("Dresden_I_Leipzig", "Leipzig_I_Dresden").
++SetLink("NodeID11_I_Berlin", "Berlin_I_NodeID11").
++SetLink("NodeID11_I_Rostock", "Rostock_I_NodeID11").
++SetLink("NodeID11_I_Hamburg", "Hamburg_I_NodeID11").
++SetLink("Augsburg_I_Stuttgart", "Stuttgart_I_Augsburg").
++SetLink("Augsburg_I_Munich", "Munich_I_Augsburg").
++SetLink("Munich_I_Ingolstadt", "Ingolstadt_I_Munich").
++SetLink("Ingolstadt_I_Nuremberg", "Nuremberg_I_Ingolstadt").
++SetLink("Hertford_I_Hanover", "Hanover_I_Hertford").
++SetLink("Hertford_I_Bielefeld", "Bielefeld_I_Hertford").
++SetLink("Berlin_I_Magdeburg", "Magdeburg_I_Berlin").
++SetLink("Hamburg_I_Kiel", "Kiel_I_Hamburg").
++SetLink("Kiel_I_Copenhagen", "Copenhagen_I_Kiel").
++SetLink("Brno_I_Prague", "Prague_I_Brno").
++SetLink("Brno_I_Bratislava", "Bratislava_I_Brno").
++SetLink("Nuremberg_I_Wurzburg", "Wurzburg_I_Nuremberg").
++SetLink("Nuremberg_I_Prague", "Prague_I_Nuremberg").
++SetLink("Wurzburg_I_Frankfurt", "Frankfurt_I_Wurzburg").
++SetLink("Dusseldorf_I_Aachen", "Aachen_I_Dusseldorf").
++SetLink("Dusseldorf_I_Essen", "Essen_I_Dusseldorf").
++SetLink("Dusseldorf_I_Cologne", "Cologne_I_Dusseldorf").
++SetLink("Dusseldorf_I_Amsterdam", "Amsterdam_I_Dusseldorf").
++SetLink("Stockholm_I_Copenhagen", "Copenhagen_I_Stockholm").
++SetLink("Rostock_I_Copenhagen", "Copenhagen_I_Rostock").
++SetLink("Frankfurt_I_Mannheim", "Mannheim_I_Frankfurt").
++SetLink("Frankfurt_I_Bonn", "Bonn_I_Frankfurt").
++SetLink("Frankfurt_I_Zurich", "Zurich_I_Frankfurt").
++SetLink("Gutersloh_I_Bielefeld", "Bielefeld_I_Gutersloh").
++SetLink("Cologne_I_Bonn", "Bonn_I_Cologne").
++SetLink("London_I_Amsterdam", "Amsterdam_I_London").
+
+
++SetNetwork("Erfurt", "N_Erfurt").
++SetNetwork("Duren", "N_Duren").
++SetNetwork("Bratislava", "N_Bratislava").
++SetNetwork("Hamburg", "N_Hamburg").
++SetNetwork("Kiel", "N_Kiel").
++SetNetwork("NodeID11", "N_NodeID11").
++SetNetwork("Wurzburg", "N_Wurzburg").
++SetNetwork("Munich", "N_Munich").
++SetNetwork("Gutersloh", "N_Gutersloh").
++SetNetwork("Stockholm", "N_Stockholm").

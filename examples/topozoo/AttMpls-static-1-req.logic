@@ -1,0 +1,26 @@
+
++Fwd("N_NY54", "CHCG", "PHLA", "static").
++Fwd("N_NY54", "PHLA", "NY54", "static").
++Fwd("N_NY54", "CLEV", "PHLA", "static").
++Fwd("N_NY54", "ATLN", "WASH", "static").
++Fwd("N_NY54", "WASH", "PHLA", "static").
++Fwd("N_NY54", "HSTN", "DLLS", "static").
++Fwd("N_NY54", "DLLS", "ATLN", "static").
++Fwd("N_NY54", "SNDG", "LA03", "static").
++Fwd("N_NY54", "LA03", "STLS", "static").
++Fwd("N_NY54", "STLS", "NSVL", "static").
++Fwd("N_NY54", "NSVL", "CLEV", "static").
++Fwd("N_NY54", "KSCY", "STLS", "static").
++Fwd("N_NY54", "SNFN", "DLLS", "static").
++Fwd("N_NY54", "DNVR", "CHCG", "static").
++Fwd("N_NY54", "RLGH", "WASH", "static").
++Fwd("N_NY54", "SLKC", "CHCG", "static").
++Fwd("N_NY54", "PTLD", "STTL", "static").
++Fwd("N_NY54", "STTL", "CHCG", "static").
++Fwd("N_NY54", "ORLD", "ATLN", "static").
++Fwd("N_NY54", "SNAN", "DLLS", "static").
++Fwd("N_NY54", "PHNX", "SNAN", "static").
++Fwd("N_NY54", "CMBR", "PHLA", "static").
++Fwd("N_NY54", "SCRM", "SLKC", "static").
++Fwd("N_NY54", "NWOR", "ORLD", "static").
+

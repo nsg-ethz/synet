@@ -1,0 +1,26 @@
+
++Fwd("N_Silkeborg", "Orestad", "Lyngby", "static").
++Fwd("N_Silkeborg", "Lyngby", "Holbaek", "static").
++Fwd("N_Silkeborg", "Holbaek", "Slagelse", "static").
++Fwd("N_Silkeborg", "Slagelse", "Nyborg", "static").
++Fwd("N_Silkeborg", "Nyborg", "Odense", "static").
++Fwd("N_Silkeborg", "Odense", "Vejle", "static").
++Fwd("N_Silkeborg", "Vejle", "Herning", "static").
++Fwd("N_Silkeborg", "Herning", "Silkeborg", "static").
++Fwd("N_Silkeborg", "Kolding", "Vejle", "static").
++Fwd("N_Silkeborg", "NORDUnetID10", "Orestad", "static").
++Fwd("N_Silkeborg", "NodeID12", "Lyngby", "static").
++Fwd("N_Silkeborg", "NodeID13", "Lyngby", "static").
++Fwd("N_Silkeborg", "NodeID14", "Orestad", "static").
++Fwd("N_Silkeborg", "NodeID15", "Arthus", "static").
++Fwd("N_Silkeborg", "Arthus", "Vejle", "static").
++Fwd("N_Silkeborg", "NodeID17", "Aalborg", "static").
++Fwd("N_Silkeborg", "Aalborg", "Farso", "static").
++Fwd("N_Silkeborg", "Farso", "Silkeborg", "static").
++Fwd("N_Silkeborg", "NodeID9", "NodeID13", "static").
++Fwd("N_Silkeborg", "Naestved", "Nyborg", "static").
++Fwd("N_Silkeborg", "NORDUnet", "Lyngby", "static").
++Fwd("N_Silkeborg", "Hobro", "Aalborg", "static").
++Fwd("N_Silkeborg", "NodeID23", "Silkeborg", "static").
++Fwd("N_Silkeborg", "NodeID24", "Arthus", "static").
+

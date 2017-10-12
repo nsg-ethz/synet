@@ -1,0 +1,13 @@
+
++Fwd("N_DRTTDataTTReservoir", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "static").
++Fwd("N_DRTTDataTTReservoir", "ONS_15454", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "DRTTDataTTReservoir", "static").
++Fwd("N_DRTTDataTTReservoir", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "BigIronTT15000TTAS23814", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "WIDETTAS2500", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "static").
++Fwd("N_DRTTDataTTReservoir", "JGN2", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_DRTTDataTTReservoir", "CatTT6500TTAS23814", "NetIronTTN140GTTAS23814", "static").
+

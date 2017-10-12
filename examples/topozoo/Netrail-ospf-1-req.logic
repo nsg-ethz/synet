@@ -1,0 +1,8 @@
+
++Fwd("N_Washington_TTDC", "NewTTYork", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "Chicago", "Atlanta", "ospf").
++Fwd("N_Washington_TTDC", "Atlanta", "PaloTTAlto", "ospf").
++Fwd("N_Washington_TTDC", "PaloTTAlto", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "Miami", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "Baltimore", "Washington_TTDC", "ospf").
+

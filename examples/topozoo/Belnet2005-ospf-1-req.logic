@@ -1,0 +1,24 @@
+
++Fwd("N_Liege", "Hasselt", "BrusselTTITTB", "ospf").
++Fwd("N_Liege", "BrusselTTITTB", "Namur", "ospf").
++Fwd("N_Liege", "Namur", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "BrusselTTIITTB", "Liege", "ospf").
++Fwd("N_Liege", "LINX", "BrusselTTITTA", "ospf").
++Fwd("N_Liege", "BrusselTTITTA", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "Arlon", "BrusselTTITTB", "ospf").
++Fwd("N_Liege", "TheTTWorldwideTTInternet", "BrusselTTITTA", "ospf").
++Fwd("N_Liege", "Korthijk", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "Geel", "BrusselTTITTB", "ospf").
++Fwd("N_Liege", "Brugge", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "BrusselTTIITTA", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "Gent", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "Mons", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "Charleroi", "BrusselTTIITTB", "ospf").
++Fwd("N_Liege", "Louvain_la_Neuve", "BrusselTTITTB", "ospf").
++Fwd("N_Liege", "AMS_IX", "BrusselTTITTA", "ospf").
++Fwd("N_Liege", "Antwerpen", "BrusselTTITTB", "ospf").
++Fwd("N_Liege", "Leuven", "BrusselTTITTB", "ospf").
++Fwd("N_Liege", "SFINX", "BrusselTTITTA", "ospf").
++Fwd("N_Liege", "BNIX", "BrusselTTIITTA", "ospf").
++Fwd("N_Liege", "Geant2", "BrusselTTITTA", "ospf").
+

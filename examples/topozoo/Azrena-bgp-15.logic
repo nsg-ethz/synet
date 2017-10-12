@@ -1,0 +1,205 @@
++SetNode("DistributionTTswitch").
++SetAdminDist("DistributionTTswitch", "static", 1).
++SetAdminDist("DistributionTTswitch", "bgp", 2).
++SetAdminDist("DistributionTTswitch", "ospf", 3).
++SetInterface("DistributionTTswitch", "DistributionTTswitch_I_Physics").
++SetInterface("DistributionTTswitch", "DistributionTTswitch_I_InformationTTTech_").
++SetInterface("DistributionTTswitch", "DistributionTTswitch_I_NodeID0").
++SetInterface("DistributionTTswitch", "DistributionTTswitch_I_Geology").
+
++SetNode("Cybenetics").
++SetAdminDist("Cybenetics", "static", 1).
++SetAdminDist("Cybenetics", "bgp", 2).
++SetAdminDist("Cybenetics", "ospf", 3).
++SetInterface("Cybenetics", "Cybenetics_I_InformationTTTech_").
+
++SetNode("WirelessTTrouter").
++SetAdminDist("WirelessTTrouter", "static", 1).
++SetAdminDist("WirelessTTrouter", "bgp", 2).
++SetAdminDist("WirelessTTrouter", "ospf", 3).
++SetInterface("WirelessTTrouter", "WirelessTTrouter_I_ForeignTTLanguageTTUni_").
++SetInterface("WirelessTTrouter", "WirelessTTrouter_I_KhazarTTUni").
++SetInterface("WirelessTTrouter", "WirelessTTrouter_I_NodeID0").
+
++SetNode("VSATTTStation").
++SetAdminDist("VSATTTStation", "static", 1).
++SetAdminDist("VSATTTStation", "bgp", 2).
++SetAdminDist("VSATTTStation", "ospf", 3).
++SetInterface("VSATTTStation", "VSATTTStation_I_SilkTTHighway").
++SetInterface("VSATTTStation", "VSATTTStation_I_NOC").
+
++SetNode("WirelessTTserver").
++SetAdminDist("WirelessTTserver", "static", 1).
++SetAdminDist("WirelessTTserver", "bgp", 2).
++SetAdminDist("WirelessTTserver", "ospf", 3).
++SetInterface("WirelessTTserver", "WirelessTTserver_I_TechnicalTTUni").
++SetInterface("WirelessTTserver", "WirelessTTserver_I_NodeID0").
++SetInterface("WirelessTTserver", "WirelessTTserver_I_Architecture_BuildingTTUni").
++SetInterface("WirelessTTserver", "WirelessTTserver_I_RENASCENE").
+
++SetNode("KhazarTTUni").
++SetAdminDist("KhazarTTUni", "static", 1).
++SetAdminDist("KhazarTTUni", "bgp", 2).
++SetAdminDist("KhazarTTUni", "ospf", 3).
++SetInterface("KhazarTTUni", "KhazarTTUni_I_WirelessTTrouter").
+
++SetNode("InformationTTTech_").
++SetAdminDist("InformationTTTech_", "static", 1).
++SetAdminDist("InformationTTTech_", "bgp", 2).
++SetAdminDist("InformationTTTech_", "ospf", 3).
++SetInterface("InformationTTTech_", "InformationTTTech__I_Cybenetics").
++SetInterface("InformationTTTech_", "InformationTTTech__I_DistributionTTswitch").
++SetInterface("InformationTTTech_", "InformationTTTech__I_BakuTTUni").
++SetInterface("InformationTTTech_", "InformationTTTech__I_ShamsaTTObs_").
+
++SetNode("Geology").
++SetAdminDist("Geology", "static", 1).
++SetAdminDist("Geology", "bgp", 2).
++SetAdminDist("Geology", "ospf", 3).
++SetInterface("Geology", "Geology_I_DistributionTTswitch").
+
++SetNode("TechnicalTTUni").
++SetAdminDist("TechnicalTTUni", "static", 1).
++SetAdminDist("TechnicalTTUni", "bgp", 2).
++SetAdminDist("TechnicalTTUni", "ospf", 3).
++SetInterface("TechnicalTTUni", "TechnicalTTUni_I_WirelessTTserver").
+
++SetNode("LocalTTISP").
++SetAdminDist("LocalTTISP", "static", 1).
++SetAdminDist("LocalTTISP", "bgp", 2).
++SetAdminDist("LocalTTISP", "ospf", 3).
++SetInterface("LocalTTISP", "LocalTTISP_I_NOC").
+
++SetNode("NodeID0").
++SetAdminDist("NodeID0", "static", 1).
++SetAdminDist("NodeID0", "bgp", 2).
++SetAdminDist("NodeID0", "ospf", 3).
++SetInterface("NodeID0", "NodeID0_I_WirelessTTserver").
++SetInterface("NodeID0", "NodeID0_I_DialupTTserver").
++SetInterface("NodeID0", "NodeID0_I_NOC").
++SetInterface("NodeID0", "NodeID0_I_DistributionTTswitch").
++SetInterface("NodeID0", "NodeID0_I_WirelessTTrouter").
+
++SetNode("ForeignTTLanguageTTUni_").
++SetAdminDist("ForeignTTLanguageTTUni_", "static", 1).
++SetAdminDist("ForeignTTLanguageTTUni_", "bgp", 2).
++SetAdminDist("ForeignTTLanguageTTUni_", "ospf", 3).
++SetInterface("ForeignTTLanguageTTUni_", "ForeignTTLanguageTTUni__I_WirelessTTrouter").
+
++SetNode("RENASCENE").
++SetAdminDist("RENASCENE", "static", 1).
++SetAdminDist("RENASCENE", "bgp", 2).
++SetAdminDist("RENASCENE", "ospf", 3).
++SetInterface("RENASCENE", "RENASCENE_I_WirelessTTserver").
+
++SetNode("BakuTTUni").
++SetAdminDist("BakuTTUni", "static", 1).
++SetAdminDist("BakuTTUni", "bgp", 2).
++SetAdminDist("BakuTTUni", "ospf", 3).
++SetInterface("BakuTTUni", "BakuTTUni_I_InformationTTTech_").
+
++SetNode("SilkTTHighway").
++SetAdminDist("SilkTTHighway", "static", 1).
++SetAdminDist("SilkTTHighway", "bgp", 2).
++SetAdminDist("SilkTTHighway", "ospf", 3).
++SetInterface("SilkTTHighway", "SilkTTHighway_I_VSATTTStation").
+
++SetNode("DialupTTserver").
++SetAdminDist("DialupTTserver", "static", 1).
++SetAdminDist("DialupTTserver", "bgp", 2).
++SetAdminDist("DialupTTserver", "ospf", 3).
++SetInterface("DialupTTserver", "DialupTTserver_I_ANASTTusers").
++SetInterface("DialupTTserver", "DialupTTserver_I_NodeID0").
+
++SetNode("Architecture_BuildingTTUni").
++SetAdminDist("Architecture_BuildingTTUni", "static", 1).
++SetAdminDist("Architecture_BuildingTTUni", "bgp", 2).
++SetAdminDist("Architecture_BuildingTTUni", "ospf", 3).
++SetInterface("Architecture_BuildingTTUni", "Architecture_BuildingTTUni_I_WirelessTTserver").
+
++SetNode("EconomicalTTUni").
++SetAdminDist("EconomicalTTUni", "static", 1).
++SetAdminDist("EconomicalTTUni", "bgp", 2).
++SetAdminDist("EconomicalTTUni", "ospf", 3).
++SetInterface("EconomicalTTUni", "EconomicalTTUni_I_NOC").
+
++SetNode("Physics").
++SetAdminDist("Physics", "static", 1).
++SetAdminDist("Physics", "bgp", 2).
++SetAdminDist("Physics", "ospf", 3).
++SetInterface("Physics", "Physics_I_DistributionTTswitch").
+
++SetNode("NOC").
++SetAdminDist("NOC", "static", 1).
++SetAdminDist("NOC", "bgp", 2).
++SetAdminDist("NOC", "ospf", 3).
++SetInterface("NOC", "NOC_I_EconomicalTTUni").
++SetInterface("NOC", "NOC_I_VSATTTStation").
++SetInterface("NOC", "NOC_I_LocalTTISP").
++SetInterface("NOC", "NOC_I_NodeID0").
+
++SetNode("ShamsaTTObs_").
++SetAdminDist("ShamsaTTObs_", "static", 1).
++SetAdminDist("ShamsaTTObs_", "bgp", 2).
++SetAdminDist("ShamsaTTObs_", "ospf", 3).
++SetInterface("ShamsaTTObs_", "ShamsaTTObs__I_InformationTTTech_").
+
++SetNode("ANASTTusers").
++SetAdminDist("ANASTTusers", "static", 1).
++SetAdminDist("ANASTTusers", "bgp", 2).
++SetAdminDist("ANASTTusers", "ospf", 3).
++SetInterface("ANASTTusers", "ANASTTusers_I_DialupTTserver").
+
++SetLink("DistributionTTswitch_I_Physics", "Physics_I_DistributionTTswitch").
++SetLink("DistributionTTswitch_I_InformationTTTech_", "InformationTTTech__I_DistributionTTswitch").
++SetLink("DistributionTTswitch_I_NodeID0", "NodeID0_I_DistributionTTswitch").
++SetLink("DistributionTTswitch_I_Geology", "Geology_I_DistributionTTswitch").
++SetLink("Cybenetics_I_InformationTTTech_", "InformationTTTech__I_Cybenetics").
++SetLink("WirelessTTrouter_I_ForeignTTLanguageTTUni_", "ForeignTTLanguageTTUni__I_WirelessTTrouter").
++SetLink("WirelessTTrouter_I_KhazarTTUni", "KhazarTTUni_I_WirelessTTrouter").
++SetLink("WirelessTTrouter_I_NodeID0", "NodeID0_I_WirelessTTrouter").
++SetLink("VSATTTStation_I_SilkTTHighway", "SilkTTHighway_I_VSATTTStation").
++SetLink("VSATTTStation_I_NOC", "NOC_I_VSATTTStation").
++SetLink("WirelessTTserver_I_TechnicalTTUni", "TechnicalTTUni_I_WirelessTTserver").
++SetLink("WirelessTTserver_I_NodeID0", "NodeID0_I_WirelessTTserver").
++SetLink("WirelessTTserver_I_Architecture_BuildingTTUni", "Architecture_BuildingTTUni_I_WirelessTTserver").
++SetLink("WirelessTTserver_I_RENASCENE", "RENASCENE_I_WirelessTTserver").
++SetLink("InformationTTTech__I_BakuTTUni", "BakuTTUni_I_InformationTTTech_").
++SetLink("InformationTTTech__I_ShamsaTTObs_", "ShamsaTTObs__I_InformationTTTech_").
++SetLink("LocalTTISP_I_NOC", "NOC_I_LocalTTISP").
++SetLink("NodeID0_I_DialupTTserver", "DialupTTserver_I_NodeID0").
++SetLink("NodeID0_I_NOC", "NOC_I_NodeID0").
++SetLink("DialupTTserver_I_ANASTTusers", "ANASTTusers_I_DialupTTserver").
++SetLink("EconomicalTTUni_I_NOC", "NOC_I_EconomicalTTUni").
+
+
++SetNetwork("Physics", "N_Physics").
++SetBGPAnnouncement("Physics", "N_Physics", "NBGP_Physics", "1;2;3", 3).
++SetNetwork("LocalTTISP", "N_LocalTTISP").
++SetBGPAnnouncement("LocalTTISP", "N_LocalTTISP", "NBGP_LocalTTISP", "1;2;3", 3).
++SetNetwork("ForeignTTLanguageTTUni_", "N_ForeignTTLanguageTTUni_").
++SetBGPAnnouncement("ForeignTTLanguageTTUni_", "N_ForeignTTLanguageTTUni_", "NBGP_ForeignTTLanguageTTUni_", "1;2;3", 3).
++SetNetwork("InformationTTTech_", "N_InformationTTTech_").
++SetBGPAnnouncement("InformationTTTech_", "N_InformationTTTech_", "NBGP_InformationTTTech_", "1;2;3", 3).
++SetNetwork("BakuTTUni", "N_BakuTTUni").
++SetBGPAnnouncement("BakuTTUni", "N_BakuTTUni", "NBGP_BakuTTUni", "1;2;3", 3).
++SetNetwork("EconomicalTTUni", "N_EconomicalTTUni").
++SetBGPAnnouncement("EconomicalTTUni", "N_EconomicalTTUni", "NBGP_EconomicalTTUni", "1;2;3", 3).
++SetNetwork("VSATTTStation", "N_VSATTTStation").
++SetBGPAnnouncement("VSATTTStation", "N_VSATTTStation", "NBGP_VSATTTStation", "1;2;3", 3).
++SetNetwork("DialupTTserver", "N_DialupTTserver").
++SetBGPAnnouncement("DialupTTserver", "N_DialupTTserver", "NBGP_DialupTTserver", "1;2;3", 3).
++SetNetwork("ShamsaTTObs_", "N_ShamsaTTObs_").
++SetBGPAnnouncement("ShamsaTTObs_", "N_ShamsaTTObs_", "NBGP_ShamsaTTObs_", "1;2;3", 3).
++SetNetwork("Architecture_BuildingTTUni", "N_Architecture_BuildingTTUni").
++SetBGPAnnouncement("Architecture_BuildingTTUni", "N_Architecture_BuildingTTUni", "NBGP_Architecture_BuildingTTUni", "1;2;3", 3).
++SetNetwork("WirelessTTserver", "N_WirelessTTserver").
++SetBGPAnnouncement("WirelessTTserver", "N_WirelessTTserver", "NBGP_WirelessTTserver", "1;2;3", 3).
++SetNetwork("Cybenetics", "N_Cybenetics").
++SetBGPAnnouncement("Cybenetics", "N_Cybenetics", "NBGP_Cybenetics", "1;2;3", 3).
++SetNetwork("NodeID0", "N_NodeID0").
++SetBGPAnnouncement("NodeID0", "N_NodeID0", "NBGP_NodeID0", "1;2;3", 3).
++SetNetwork("WirelessTTrouter", "N_WirelessTTrouter").
++SetBGPAnnouncement("WirelessTTrouter", "N_WirelessTTrouter", "NBGP_WirelessTTrouter", "1;2;3", 3).
++SetNetwork("KhazarTTUni", "N_KhazarTTUni").
++SetBGPAnnouncement("KhazarTTUni", "N_KhazarTTUni", "NBGP_KhazarTTUni", "1;2;3", 3).

@@ -1,0 +1,20 @@
+
++Fwd("N_TP", "ASTI", "KEIO", "ospf").
++Fwd("NBGP_TP", "ASTI", "KEIO", "bgp").
++Fwd("N_TP", "KEIO", "TP", "ospf").
++Fwd("NBGP_TP", "KEIO", "TP", "bgp").
++Fwd("N_TP", "AIT", "KEIO", "ospf").
++Fwd("NBGP_TP", "AIT", "KEIO", "bgp").
++Fwd("N_TP", "USM", "KEIO", "ospf").
++Fwd("NBGP_TP", "USM", "KEIO", "bgp").
++Fwd("N_TP", "TU", "AIT", "ospf").
++Fwd("NBGP_TP", "TU", "AIT", "bgp").
++Fwd("N_TP", "ITB", "KEIO", "ospf").
++Fwd("NBGP_TP", "ITB", "KEIO", "bgp").
++Fwd("N_TP", "IOIT", "KEIO", "ospf").
++Fwd("NBGP_TP", "IOIT", "KEIO", "bgp").
++Fwd("N_TP", "NAIST", "KEIO", "ospf").
++Fwd("NBGP_TP", "NAIST", "KEIO", "bgp").
++Fwd("N_TP", "UNIBRAW", "ITB", "ospf").
++Fwd("NBGP_TP", "UNIBRAW", "ITB", "bgp").
+

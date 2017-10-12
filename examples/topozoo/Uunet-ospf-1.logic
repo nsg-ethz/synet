@@ -1,0 +1,500 @@
++SetNode("NewTTOrleans").
++SetAdminDist("NewTTOrleans", "static", 1).
++SetAdminDist("NewTTOrleans", "bgp", 2).
++SetAdminDist("NewTTOrleans", "ospf", 3).
++SetInterface("NewTTOrleans", "NewTTOrleans_I_Miami").
++SetInterface("NewTTOrleans", "NewTTOrleans_I_Houston").
++SetInterface("NewTTOrleans", "NewTTOrleans_I_Orlando").
+
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_SanTTFrancisco").
++SetInterface("NewTTYork", "NewTTYork_I_Dallas").
++SetInterface("NewTTYork", "NewTTYork_I_Boston").
++SetInterface("NewTTYork", "NewTTYork_I_Chicago").
++SetInterface("NewTTYork", "NewTTYork_I_Philadelphia").
++SetInterface("NewTTYork", "NewTTYork_I_Cologne").
++SetInterface("NewTTYork", "NewTTYork_I_Cleveland").
++SetInterface("NewTTYork", "NewTTYork_I_Montreal").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Indianapolis").
++SetInterface("Chicago", "Chicago_I_KansasTTCity").
++SetInterface("Chicago", "Chicago_I_NewTTYork").
++SetInterface("Chicago", "Chicago_I_SanTTFrancisco").
++SetInterface("Chicago", "Chicago_I_Dallas").
++SetInterface("Chicago", "Chicago_I_Minneapolis").
++SetInterface("Chicago", "Chicago_I_Detroit").
++SetInterface("Chicago", "Chicago_I_Washington_TTDC").
++SetInterface("Chicago", "Chicago_I_Atlanta").
++SetInterface("Chicago", "Chicago_I_Seattle").
+
++SetNode("Austin").
++SetAdminDist("Austin", "static", 1).
++SetAdminDist("Austin", "bgp", 2).
++SetAdminDist("Austin", "ospf", 3).
++SetInterface("Austin", "Austin_I_Houston").
++SetInterface("Austin", "Austin_I_Dallas").
+
++SetNode("Philadelphia").
++SetAdminDist("Philadelphia", "static", 1).
++SetAdminDist("Philadelphia", "bgp", 2).
++SetAdminDist("Philadelphia", "ospf", 3).
++SetInterface("Philadelphia", "Philadelphia_I_NewTTYork").
++SetInterface("Philadelphia", "Philadelphia_I_Baltimore").
+
++SetNode("Denver").
++SetAdminDist("Denver", "static", 1).
++SetAdminDist("Denver", "bgp", 2).
++SetAdminDist("Denver", "ospf", 3).
++SetInterface("Denver", "Denver_I_LasTTVegas").
++SetInterface("Denver", "Denver_I_SaltTTLakeTTCity").
++SetInterface("Denver", "Denver_I_KansasTTCity").
+
++SetNode("LasTTVegas").
++SetAdminDist("LasTTVegas", "static", 1).
++SetAdminDist("LasTTVegas", "bgp", 2).
++SetAdminDist("LasTTVegas", "ospf", 3).
++SetInterface("LasTTVegas", "LasTTVegas_I_LosTTAngeles").
++SetInterface("LasTTVegas", "LasTTVegas_I_Denver").
++SetInterface("LasTTVegas", "LasTTVegas_I_Phoenix").
+
++SetNode("Vancouver").
++SetAdminDist("Vancouver", "static", 1).
++SetAdminDist("Vancouver", "bgp", 2).
++SetAdminDist("Vancouver", "ospf", 3).
++SetInterface("Vancouver", "Vancouver_I_Calgary").
++SetInterface("Vancouver", "Vancouver_I_Seattle").
+
++SetNode("Calgary").
++SetAdminDist("Calgary", "static", 1).
++SetAdminDist("Calgary", "bgp", 2).
++SetAdminDist("Calgary", "ospf", 3).
++SetInterface("Calgary", "Calgary_I_Toronto").
++SetInterface("Calgary", "Calgary_I_Edmonton").
++SetInterface("Calgary", "Calgary_I_Vancouver").
+
++SetNode("Indianapolis").
++SetAdminDist("Indianapolis", "static", 1).
++SetAdminDist("Indianapolis", "bgp", 2).
++SetAdminDist("Indianapolis", "ospf", 3).
++SetInterface("Indianapolis", "Indianapolis_I_StTTLouis").
++SetInterface("Indianapolis", "Indianapolis_I_Chicago").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_Washington_TTDC").
+
++SetNode("Pittsburgh").
++SetAdminDist("Pittsburgh", "static", 1).
++SetAdminDist("Pittsburgh", "bgp", 2).
++SetAdminDist("Pittsburgh", "ospf", 3).
++SetInterface("Pittsburgh", "Pittsburgh_I_Washington_TTDC").
++SetInterface("Pittsburgh", "Pittsburgh_I_Cleveland").
+
++SetNode("Buffalo").
++SetAdminDist("Buffalo", "static", 1).
++SetAdminDist("Buffalo", "bgp", 2).
++SetAdminDist("Buffalo", "ospf", 3).
++SetInterface("Buffalo", "Buffalo_I_Toronto").
++SetInterface("Buffalo", "Buffalo_I_Hartford").
++SetInterface("Buffalo", "Buffalo_I_Cleveland").
+
++SetNode("HawaiiID35").
++SetAdminDist("HawaiiID35", "static", 1).
++SetAdminDist("HawaiiID35", "bgp", 2).
++SetAdminDist("HawaiiID35", "ospf", 3).
++SetInterface("HawaiiID35", "HawaiiID35_I_SanTTFrancisco").
+
++SetNode("Dallas").
++SetAdminDist("Dallas", "static", 1).
++SetAdminDist("Dallas", "bgp", 2).
++SetAdminDist("Dallas", "ospf", 3).
++SetInterface("Dallas", "Dallas_I_Houston").
++SetInterface("Dallas", "Dallas_I_KansasTTCity").
++SetInterface("Dallas", "Dallas_I_SanTTFrancisco").
++SetInterface("Dallas", "Dallas_I_NewTTYork").
++SetInterface("Dallas", "Dallas_I_Chicago").
++SetInterface("Dallas", "Dallas_I_Washington_TTDC").
++SetInterface("Dallas", "Dallas_I_Atlanta").
++SetInterface("Dallas", "Dallas_I_Seattle").
++SetInterface("Dallas", "Dallas_I_Austin").
++SetInterface("Dallas", "Dallas_I_LosTTAngeles").
+
++SetNode("Hartford").
++SetAdminDist("Hartford", "static", 1).
++SetAdminDist("Hartford", "bgp", 2).
++SetAdminDist("Hartford", "ospf", 3).
++SetInterface("Hartford", "Hartford_I_Boston").
++SetInterface("Hartford", "Hartford_I_Buffalo").
+
++SetNode("Baltimore").
++SetAdminDist("Baltimore", "static", 1).
++SetAdminDist("Baltimore", "bgp", 2).
++SetAdminDist("Baltimore", "ospf", 3).
++SetInterface("Baltimore", "Baltimore_I_Philadelphia").
++SetInterface("Baltimore", "Baltimore_I_Washington_TTDC").
+
++SetNode("Atlanta").
++SetAdminDist("Atlanta", "static", 1).
++SetAdminDist("Atlanta", "bgp", 2).
++SetAdminDist("Atlanta", "ospf", 3).
++SetInterface("Atlanta", "Atlanta_I_Dallas").
++SetInterface("Atlanta", "Atlanta_I_Miami").
++SetInterface("Atlanta", "Atlanta_I_Chicago").
++SetInterface("Atlanta", "Atlanta_I_Raleigh").
++SetInterface("Atlanta", "Atlanta_I_Washington_TTDC").
++SetInterface("Atlanta", "Atlanta_I_Jacksonville").
+
++SetNode("Jacksonville").
++SetAdminDist("Jacksonville", "static", 1).
++SetAdminDist("Jacksonville", "bgp", 2).
++SetAdminDist("Jacksonville", "ospf", 3).
++SetInterface("Jacksonville", "Jacksonville_I_Atlanta").
++SetInterface("Jacksonville", "Jacksonville_I_Orlando").
+
++SetNode("Toronto").
++SetAdminDist("Toronto", "static", 1).
++SetAdminDist("Toronto", "bgp", 2).
++SetAdminDist("Toronto", "ospf", 3).
++SetInterface("Toronto", "Toronto_I_Calgary").
++SetInterface("Toronto", "Toronto_I_Kitchener").
++SetInterface("Toronto", "Toronto_I_Buffalo").
++SetInterface("Toronto", "Toronto_I_London").
++SetInterface("Toronto", "Toronto_I_Ottawa").
+
++SetNode("StTTLouis").
++SetAdminDist("StTTLouis", "static", 1).
++SetAdminDist("StTTLouis", "bgp", 2).
++SetAdminDist("StTTLouis", "ospf", 3).
++SetInterface("StTTLouis", "StTTLouis_I_Indianapolis").
++SetInterface("StTTLouis", "StTTLouis_I_KansasTTCity").
+
++SetNode("Tokyo").
++SetAdminDist("Tokyo", "static", 1).
++SetAdminDist("Tokyo", "bgp", 2).
++SetAdminDist("Tokyo", "ospf", 3).
++SetInterface("Tokyo", "Tokyo_I_Seattle").
+
++SetNode("Miami").
++SetAdminDist("Miami", "static", 1).
++SetAdminDist("Miami", "bgp", 2).
++SetAdminDist("Miami", "ospf", 3).
++SetInterface("Miami", "Miami_I_NewTTOrleans").
++SetInterface("Miami", "Miami_I_Houston").
++SetInterface("Miami", "Miami_I_Atlanta").
++SetInterface("Miami", "Miami_I_Orlando").
++SetInterface("Miami", "Miami_I_Monaco").
+
++SetNode("Orlando").
++SetAdminDist("Orlando", "static", 1).
++SetAdminDist("Orlando", "bgp", 2).
++SetAdminDist("Orlando", "ospf", 3).
++SetInterface("Orlando", "Orlando_I_NewTTOrleans").
++SetInterface("Orlando", "Orlando_I_Miami").
++SetInterface("Orlando", "Orlando_I_Jacksonville").
+
++SetNode("Hawaii").
++SetAdminDist("Hawaii", "static", 1).
++SetAdminDist("Hawaii", "bgp", 2).
++SetAdminDist("Hawaii", "ospf", 3).
++SetInterface("Hawaii", "Hawaii_I_LosTTAngeles").
+
++SetNode("Detroit").
++SetAdminDist("Detroit", "static", 1).
++SetAdminDist("Detroit", "bgp", 2).
++SetAdminDist("Detroit", "ospf", 3).
++SetInterface("Detroit", "Detroit_I_Cleveland").
++SetInterface("Detroit", "Detroit_I_Chicago").
+
++SetNode("Phoenix").
++SetAdminDist("Phoenix", "static", 1).
++SetAdminDist("Phoenix", "bgp", 2).
++SetAdminDist("Phoenix", "ospf", 3).
++SetInterface("Phoenix", "Phoenix_I_LasTTVegas").
++SetInterface("Phoenix", "Phoenix_I_Houston").
++SetInterface("Phoenix", "Phoenix_I_SanTTDiego").
+
++SetNode("Ottawa").
++SetAdminDist("Ottawa", "static", 1).
++SetAdminDist("Ottawa", "bgp", 2).
++SetAdminDist("Ottawa", "ospf", 3).
++SetInterface("Ottawa", "Ottawa_I_Toronto").
++SetInterface("Ottawa", "Ottawa_I_Montreal").
+
++SetNode("Monaco").
++SetAdminDist("Monaco", "static", 1).
++SetAdminDist("Monaco", "bgp", 2).
++SetAdminDist("Monaco", "ospf", 3).
++SetInterface("Monaco", "Monaco_I_Miami").
+
++SetNode("SanTTDiego").
++SetAdminDist("SanTTDiego", "static", 1).
++SetAdminDist("SanTTDiego", "bgp", 2).
++SetAdminDist("SanTTDiego", "ospf", 3).
++SetInterface("SanTTDiego", "SanTTDiego_I_LosTTAngeles").
++SetInterface("SanTTDiego", "SanTTDiego_I_Phoenix").
+
++SetNode("Kitchener").
++SetAdminDist("Kitchener", "static", 1).
++SetAdminDist("Kitchener", "bgp", 2).
++SetAdminDist("Kitchener", "ospf", 3).
++SetInterface("Kitchener", "Kitchener_I_Toronto").
+
++SetNode("Halifax").
++SetAdminDist("Halifax", "static", 1).
++SetAdminDist("Halifax", "bgp", 2).
++SetAdminDist("Halifax", "ospf", 3).
++SetInterface("Halifax", "Halifax_I_Montreal").
+
++SetNode("Montreal").
++SetAdminDist("Montreal", "static", 1).
++SetAdminDist("Montreal", "bgp", 2).
++SetAdminDist("Montreal", "ospf", 3).
++SetInterface("Montreal", "Montreal_I_Halifax").
++SetInterface("Montreal", "Montreal_I_NewTTYork").
++SetInterface("Montreal", "Montreal_I_Ottawa").
+
++SetNode("Houston").
++SetAdminDist("Houston", "static", 1).
++SetAdminDist("Houston", "bgp", 2).
++SetAdminDist("Houston", "ospf", 3).
++SetInterface("Houston", "Houston_I_NewTTOrleans").
++SetInterface("Houston", "Houston_I_Phoenix").
++SetInterface("Houston", "Houston_I_Dallas").
++SetInterface("Houston", "Houston_I_Miami").
++SetInterface("Houston", "Houston_I_Washington_TTDC").
++SetInterface("Houston", "Houston_I_Austin").
+
++SetNode("KansasTTCity").
++SetAdminDist("KansasTTCity", "static", 1).
++SetAdminDist("KansasTTCity", "bgp", 2).
++SetAdminDist("KansasTTCity", "ospf", 3).
++SetInterface("KansasTTCity", "KansasTTCity_I_StTTLouis").
++SetInterface("KansasTTCity", "KansasTTCity_I_SanTTFrancisco").
++SetInterface("KansasTTCity", "KansasTTCity_I_Dallas").
++SetInterface("KansasTTCity", "KansasTTCity_I_Chicago").
++SetInterface("KansasTTCity", "KansasTTCity_I_Denver").
++SetInterface("KansasTTCity", "KansasTTCity_I_Washington_TTDC").
++SetInterface("KansasTTCity", "KansasTTCity_I_Seattle").
+
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_SanTTDiego").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_SanTTFrancisco").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Dallas").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Hawaii").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_LasTTVegas").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Washington_TTDC").
+
++SetNode("SanTTFrancisco").
++SetAdminDist("SanTTFrancisco", "static", 1).
++SetAdminDist("SanTTFrancisco", "bgp", 2).
++SetAdminDist("SanTTFrancisco", "ospf", 3).
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_KansasTTCity").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_LosTTAngeles").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_NewTTYork").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Dallas").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_HawaiiID35").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Chicago").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Washington_TTDC").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Portland").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Seattle").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_SaltTTLakeTTCity").
+
++SetNode("Boston").
++SetAdminDist("Boston", "static", 1).
++SetAdminDist("Boston", "bgp", 2).
++SetAdminDist("Boston", "ospf", 3).
++SetInterface("Boston", "Boston_I_Hartford").
++SetInterface("Boston", "Boston_I_Washington_TTDC").
++SetInterface("Boston", "Boston_I_NewTTYork").
+
++SetNode("Edmonton").
++SetAdminDist("Edmonton", "static", 1).
++SetAdminDist("Edmonton", "bgp", 2).
++SetAdminDist("Edmonton", "ospf", 3).
++SetInterface("Edmonton", "Edmonton_I_Calgary").
+
++SetNode("Minneapolis").
++SetAdminDist("Minneapolis", "static", 1).
++SetAdminDist("Minneapolis", "bgp", 2).
++SetAdminDist("Minneapolis", "ospf", 3).
++SetInterface("Minneapolis", "Minneapolis_I_Cleveland").
++SetInterface("Minneapolis", "Minneapolis_I_Chicago").
+
++SetNode("Cologne").
++SetAdminDist("Cologne", "static", 1).
++SetAdminDist("Cologne", "bgp", 2).
++SetAdminDist("Cologne", "ospf", 3).
++SetInterface("Cologne", "Cologne_I_NewTTYork").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_Toronto").
+
++SetNode("Washington_TTDC").
++SetAdminDist("Washington_TTDC", "static", 1).
++SetAdminDist("Washington_TTDC", "bgp", 2).
++SetAdminDist("Washington_TTDC", "ospf", 3).
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Houston").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_KansasTTCity").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_LosTTAngeles").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_SanTTFrancisco").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Chicago").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Pittsburgh").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Boston").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Dallas").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Stockholm").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_LondonID11").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Atlanta").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Baltimore").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Raleigh").
+
++SetNode("Cleveland").
++SetAdminDist("Cleveland", "static", 1).
++SetAdminDist("Cleveland", "bgp", 2).
++SetAdminDist("Cleveland", "ospf", 3).
++SetInterface("Cleveland", "Cleveland_I_Pittsburgh").
++SetInterface("Cleveland", "Cleveland_I_Buffalo").
++SetInterface("Cleveland", "Cleveland_I_NewTTYork").
++SetInterface("Cleveland", "Cleveland_I_Detroit").
++SetInterface("Cleveland", "Cleveland_I_Minneapolis").
+
++SetNode("Raleigh").
++SetAdminDist("Raleigh", "static", 1).
++SetAdminDist("Raleigh", "bgp", 2).
++SetAdminDist("Raleigh", "ospf", 3).
++SetInterface("Raleigh", "Raleigh_I_Atlanta").
++SetInterface("Raleigh", "Raleigh_I_Washington_TTDC").
+
++SetNode("Portland").
++SetAdminDist("Portland", "static", 1).
++SetAdminDist("Portland", "bgp", 2).
++SetAdminDist("Portland", "ospf", 3).
++SetInterface("Portland", "Portland_I_Seattle").
++SetInterface("Portland", "Portland_I_SanTTFrancisco").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_Tokyo").
++SetInterface("Seattle", "Seattle_I_KansasTTCity").
++SetInterface("Seattle", "Seattle_I_SanTTFrancisco").
++SetInterface("Seattle", "Seattle_I_Dallas").
++SetInterface("Seattle", "Seattle_I_Chicago").
++SetInterface("Seattle", "Seattle_I_Vancouver").
++SetInterface("Seattle", "Seattle_I_Portland").
+
++SetNode("SaltTTLakeTTCity").
++SetAdminDist("SaltTTLakeTTCity", "static", 1).
++SetAdminDist("SaltTTLakeTTCity", "bgp", 2).
++SetAdminDist("SaltTTLakeTTCity", "ospf", 3).
++SetInterface("SaltTTLakeTTCity", "SaltTTLakeTTCity_I_SanTTFrancisco").
++SetInterface("SaltTTLakeTTCity", "SaltTTLakeTTCity_I_Denver").
+
++SetNode("LondonID11").
++SetAdminDist("LondonID11", "static", 1).
++SetAdminDist("LondonID11", "bgp", 2).
++SetAdminDist("LondonID11", "ospf", 3).
++SetInterface("LondonID11", "LondonID11_I_Washington_TTDC").
+
++SetLink("NewTTOrleans_I_Miami", "Miami_I_NewTTOrleans").
++SetLink("NewTTOrleans_I_Houston", "Houston_I_NewTTOrleans").
++SetLink("NewTTOrleans_I_Orlando", "Orlando_I_NewTTOrleans").
++SetLink("NewTTYork_I_SanTTFrancisco", "SanTTFrancisco_I_NewTTYork").
++SetLink("NewTTYork_I_Dallas", "Dallas_I_NewTTYork").
++SetLink("NewTTYork_I_Boston", "Boston_I_NewTTYork").
++SetLink("NewTTYork_I_Chicago", "Chicago_I_NewTTYork").
++SetLink("NewTTYork_I_Philadelphia", "Philadelphia_I_NewTTYork").
++SetLink("NewTTYork_I_Cologne", "Cologne_I_NewTTYork").
++SetLink("NewTTYork_I_Cleveland", "Cleveland_I_NewTTYork").
++SetLink("NewTTYork_I_Montreal", "Montreal_I_NewTTYork").
++SetLink("Chicago_I_Indianapolis", "Indianapolis_I_Chicago").
++SetLink("Chicago_I_KansasTTCity", "KansasTTCity_I_Chicago").
++SetLink("Chicago_I_SanTTFrancisco", "SanTTFrancisco_I_Chicago").
++SetLink("Chicago_I_Dallas", "Dallas_I_Chicago").
++SetLink("Chicago_I_Minneapolis", "Minneapolis_I_Chicago").
++SetLink("Chicago_I_Detroit", "Detroit_I_Chicago").
++SetLink("Chicago_I_Washington_TTDC", "Washington_TTDC_I_Chicago").
++SetLink("Chicago_I_Atlanta", "Atlanta_I_Chicago").
++SetLink("Chicago_I_Seattle", "Seattle_I_Chicago").
++SetLink("Austin_I_Houston", "Houston_I_Austin").
++SetLink("Austin_I_Dallas", "Dallas_I_Austin").
++SetLink("Philadelphia_I_Baltimore", "Baltimore_I_Philadelphia").
++SetLink("Denver_I_LasTTVegas", "LasTTVegas_I_Denver").
++SetLink("Denver_I_SaltTTLakeTTCity", "SaltTTLakeTTCity_I_Denver").
++SetLink("Denver_I_KansasTTCity", "KansasTTCity_I_Denver").
++SetLink("LasTTVegas_I_LosTTAngeles", "LosTTAngeles_I_LasTTVegas").
++SetLink("LasTTVegas_I_Phoenix", "Phoenix_I_LasTTVegas").
++SetLink("Vancouver_I_Calgary", "Calgary_I_Vancouver").
++SetLink("Vancouver_I_Seattle", "Seattle_I_Vancouver").
++SetLink("Calgary_I_Toronto", "Toronto_I_Calgary").
++SetLink("Calgary_I_Edmonton", "Edmonton_I_Calgary").
++SetLink("Indianapolis_I_StTTLouis", "StTTLouis_I_Indianapolis").
++SetLink("Stockholm_I_Washington_TTDC", "Washington_TTDC_I_Stockholm").
++SetLink("Pittsburgh_I_Washington_TTDC", "Washington_TTDC_I_Pittsburgh").
++SetLink("Pittsburgh_I_Cleveland", "Cleveland_I_Pittsburgh").
++SetLink("Buffalo_I_Toronto", "Toronto_I_Buffalo").
++SetLink("Buffalo_I_Hartford", "Hartford_I_Buffalo").
++SetLink("Buffalo_I_Cleveland", "Cleveland_I_Buffalo").
++SetLink("HawaiiID35_I_SanTTFrancisco", "SanTTFrancisco_I_HawaiiID35").
++SetLink("Dallas_I_Houston", "Houston_I_Dallas").
++SetLink("Dallas_I_KansasTTCity", "KansasTTCity_I_Dallas").
++SetLink("Dallas_I_SanTTFrancisco", "SanTTFrancisco_I_Dallas").
++SetLink("Dallas_I_Washington_TTDC", "Washington_TTDC_I_Dallas").
++SetLink("Dallas_I_Atlanta", "Atlanta_I_Dallas").
++SetLink("Dallas_I_Seattle", "Seattle_I_Dallas").
++SetLink("Dallas_I_LosTTAngeles", "LosTTAngeles_I_Dallas").
++SetLink("Hartford_I_Boston", "Boston_I_Hartford").
++SetLink("Baltimore_I_Washington_TTDC", "Washington_TTDC_I_Baltimore").
++SetLink("Atlanta_I_Miami", "Miami_I_Atlanta").
++SetLink("Atlanta_I_Raleigh", "Raleigh_I_Atlanta").
++SetLink("Atlanta_I_Washington_TTDC", "Washington_TTDC_I_Atlanta").
++SetLink("Atlanta_I_Jacksonville", "Jacksonville_I_Atlanta").
++SetLink("Jacksonville_I_Orlando", "Orlando_I_Jacksonville").
++SetLink("Toronto_I_Kitchener", "Kitchener_I_Toronto").
++SetLink("Toronto_I_London", "London_I_Toronto").
++SetLink("Toronto_I_Ottawa", "Ottawa_I_Toronto").
++SetLink("StTTLouis_I_KansasTTCity", "KansasTTCity_I_StTTLouis").
++SetLink("Tokyo_I_Seattle", "Seattle_I_Tokyo").
++SetLink("Miami_I_Houston", "Houston_I_Miami").
++SetLink("Miami_I_Orlando", "Orlando_I_Miami").
++SetLink("Miami_I_Monaco", "Monaco_I_Miami").
++SetLink("Hawaii_I_LosTTAngeles", "LosTTAngeles_I_Hawaii").
++SetLink("Detroit_I_Cleveland", "Cleveland_I_Detroit").
++SetLink("Phoenix_I_Houston", "Houston_I_Phoenix").
++SetLink("Phoenix_I_SanTTDiego", "SanTTDiego_I_Phoenix").
++SetLink("Ottawa_I_Montreal", "Montreal_I_Ottawa").
++SetLink("SanTTDiego_I_LosTTAngeles", "LosTTAngeles_I_SanTTDiego").
++SetLink("Halifax_I_Montreal", "Montreal_I_Halifax").
++SetLink("Houston_I_Washington_TTDC", "Washington_TTDC_I_Houston").
++SetLink("KansasTTCity_I_SanTTFrancisco", "SanTTFrancisco_I_KansasTTCity").
++SetLink("KansasTTCity_I_Washington_TTDC", "Washington_TTDC_I_KansasTTCity").
++SetLink("KansasTTCity_I_Seattle", "Seattle_I_KansasTTCity").
++SetLink("LosTTAngeles_I_SanTTFrancisco", "SanTTFrancisco_I_LosTTAngeles").
++SetLink("LosTTAngeles_I_Washington_TTDC", "Washington_TTDC_I_LosTTAngeles").
++SetLink("SanTTFrancisco_I_Washington_TTDC", "Washington_TTDC_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_Portland", "Portland_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_Seattle", "Seattle_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_SaltTTLakeTTCity", "SaltTTLakeTTCity_I_SanTTFrancisco").
++SetLink("Boston_I_Washington_TTDC", "Washington_TTDC_I_Boston").
++SetLink("Minneapolis_I_Cleveland", "Cleveland_I_Minneapolis").
++SetLink("Washington_TTDC_I_LondonID11", "LondonID11_I_Washington_TTDC").
++SetLink("Washington_TTDC_I_Raleigh", "Raleigh_I_Washington_TTDC").
++SetLink("Portland_I_Seattle", "Seattle_I_Portland").
+
+
++SetNetwork("StTTLouis", "N_StTTLouis").

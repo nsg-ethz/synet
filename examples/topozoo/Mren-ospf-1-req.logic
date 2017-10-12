@@ -1,0 +1,7 @@
+
++Fwd("N_BijeloTTPolje", "Niksic", "Podgorica", "ospf").
++Fwd("N_BijeloTTPolje", "Podgorica", "BijeloTTPolje", "ospf").
++Fwd("N_BijeloTTPolje", "Kotor", "Podgorica", "ospf").
++Fwd("N_BijeloTTPolje", "Njegusi", "Podgorica", "ospf").
++Fwd("N_BijeloTTPolje", "HercegTTNovi", "Podgorica", "ospf").
+

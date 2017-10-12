@@ -1,0 +1,19 @@
+
++Fwd("N_StarLight", "CENIC", "PacificTTWaveTTLosTTAngeles", "ospf").
++Fwd("N_StarLight", "PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "PacificTTWaveTTSeattle", "StarLight", "ospf").
++Fwd("N_StarLight", "KRLight", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "CSTNetTTHKEOEP", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "Internet2TTDCNID7", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "CANARIE", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "CENICID9", "PacificTTWaveTTSunnyvale", "ospf").
++Fwd("N_StarLight", "PacificTTWaveTTSunnyvale", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "AARNETTTSydney", "PacificTTWaveTTLosTTAngeles", "ospf").
++Fwd("N_StarLight", "Internet2TTDCN", "PacificTTWaveTTLosTTAngeles", "ospf").
++Fwd("N_StarLight", "NLRTTFrameNetID6", "PacificTTWaveTTSeattle", "ospf").
++Fwd("N_StarLight", "JGN2TTPlusTTTokyo", "PacificTTWaveTTLosTTAngeles", "ospf").
++Fwd("N_StarLight", "NLRTTFrameNet", "PacificTTWaveTTSunnyvale", "ospf").
++Fwd("N_StarLight", "PacificTTNorthwestTTGigapop", "NLRTTFrameNetID6", "ospf").
++Fwd("N_StarLight", "PacificTTWaveTTHawaii", "PacificTTWaveTTLosTTAngeles", "ospf").
++Fwd("N_StarLight", "NLRTTFrameNetID8", "PacificTTWaveTTLosTTAngeles", "ospf").
+

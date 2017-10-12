@@ -1,0 +1,255 @@
++SetNode("Hasselt").
++SetAdminDist("Hasselt", "static", 1).
++SetAdminDist("Hasselt", "bgp", 2).
++SetAdminDist("Hasselt", "ospf", 3).
++SetInterface("Hasselt", "Hasselt_I_BrusselTTIITTB").
++SetInterface("Hasselt", "Hasselt_I_BrusselTTITTB").
+
++SetNode("LINX").
++SetAdminDist("LINX", "static", 1).
++SetAdminDist("LINX", "bgp", 2).
++SetAdminDist("LINX", "ospf", 3).
++SetInterface("LINX", "LINX_I_BrusselTTITTA").
+
++SetNode("Liege").
++SetAdminDist("Liege", "static", 1).
++SetAdminDist("Liege", "bgp", 2).
++SetAdminDist("Liege", "ospf", 3).
++SetInterface("Liege", "Liege_I_BrusselTTIITTB").
++SetInterface("Liege", "Liege_I_BrusselTTITTB").
+
++SetNode("Arlon").
++SetAdminDist("Arlon", "static", 1).
++SetAdminDist("Arlon", "bgp", 2).
++SetAdminDist("Arlon", "ospf", 3).
++SetInterface("Arlon", "Arlon_I_BrusselTTIITTB").
++SetInterface("Arlon", "Arlon_I_BrusselTTITTB").
+
++SetNode("TheTTWorldwideTTInternet").
++SetAdminDist("TheTTWorldwideTTInternet", "static", 1).
++SetAdminDist("TheTTWorldwideTTInternet", "bgp", 2).
++SetAdminDist("TheTTWorldwideTTInternet", "ospf", 3).
++SetInterface("TheTTWorldwideTTInternet", "TheTTWorldwideTTInternet_I_BrusselTTIITTA").
++SetInterface("TheTTWorldwideTTInternet", "TheTTWorldwideTTInternet_I_BrusselTTITTA").
+
++SetNode("Korthijk").
++SetAdminDist("Korthijk", "static", 1).
++SetAdminDist("Korthijk", "bgp", 2).
++SetAdminDist("Korthijk", "ospf", 3).
++SetInterface("Korthijk", "Korthijk_I_BrusselTTIITTB").
++SetInterface("Korthijk", "Korthijk_I_BrusselTTITTB").
+
++SetNode("Geel").
++SetAdminDist("Geel", "static", 1).
++SetAdminDist("Geel", "bgp", 2).
++SetAdminDist("Geel", "ospf", 3).
++SetInterface("Geel", "Geel_I_BrusselTTIITTB").
++SetInterface("Geel", "Geel_I_BrusselTTITTB").
+
++SetNode("Brugge").
++SetAdminDist("Brugge", "static", 1).
++SetAdminDist("Brugge", "bgp", 2).
++SetAdminDist("Brugge", "ospf", 3).
++SetInterface("Brugge", "Brugge_I_BrusselTTIITTB").
++SetInterface("Brugge", "Brugge_I_BrusselTTITTB").
+
++SetNode("BrusselTTIITTA").
++SetAdminDist("BrusselTTIITTA", "static", 1).
++SetAdminDist("BrusselTTIITTA", "bgp", 2).
++SetAdminDist("BrusselTTIITTA", "ospf", 3).
++SetInterface("BrusselTTIITTA", "BrusselTTIITTA_I_BrusselTTIITTB").
++SetInterface("BrusselTTIITTA", "BrusselTTIITTA_I_BNIX").
++SetInterface("BrusselTTIITTA", "BrusselTTIITTA_I_BrusselTTITTB").
++SetInterface("BrusselTTIITTA", "BrusselTTIITTA_I_TheTTWorldwideTTInternet").
++SetInterface("BrusselTTIITTA", "BrusselTTIITTA_I_BrusselTTITTA").
++SetInterface("BrusselTTIITTA", "BrusselTTIITTA_I_Geant2").
+
++SetNode("BrusselTTIITTB").
++SetAdminDist("BrusselTTIITTB", "static", 1).
++SetAdminDist("BrusselTTIITTB", "bgp", 2).
++SetAdminDist("BrusselTTIITTB", "ospf", 3).
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Antwerpen").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Hasselt").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Namur").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_BrusselTTIITTA").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Gent").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_BrusselTTITTB").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Brugge").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Liege").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Leuven").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Korthijk").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Mons").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Geel").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Charleroi").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Louvain_la_Neuve").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_BrusselTTITTA").
++SetInterface("BrusselTTIITTB", "BrusselTTIITTB_I_Arlon").
+
++SetNode("Namur").
++SetAdminDist("Namur", "static", 1).
++SetAdminDist("Namur", "bgp", 2).
++SetAdminDist("Namur", "ospf", 3).
++SetInterface("Namur", "Namur_I_BrusselTTIITTB").
++SetInterface("Namur", "Namur_I_BrusselTTITTB").
+
++SetNode("Gent").
++SetAdminDist("Gent", "static", 1).
++SetAdminDist("Gent", "bgp", 2).
++SetAdminDist("Gent", "ospf", 3).
++SetInterface("Gent", "Gent_I_BrusselTTIITTB").
++SetInterface("Gent", "Gent_I_BrusselTTITTB").
+
++SetNode("BrusselTTITTB").
++SetAdminDist("BrusselTTITTB", "static", 1).
++SetAdminDist("BrusselTTITTB", "bgp", 2).
++SetAdminDist("BrusselTTITTB", "ospf", 3).
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Antwerpen").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_BrusselTTIITTB").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Hasselt").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Namur").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_BrusselTTIITTA").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Gent").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Brugge").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Liege").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Leuven").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Korthijk").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Mons").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Geel").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Charleroi").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Louvain_la_Neuve").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_BrusselTTITTA").
++SetInterface("BrusselTTITTB", "BrusselTTITTB_I_Arlon").
+
++SetNode("BrusselTTITTA").
++SetAdminDist("BrusselTTITTA", "static", 1).
++SetAdminDist("BrusselTTITTA", "bgp", 2).
++SetAdminDist("BrusselTTITTA", "ospf", 3).
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_BrusselTTIITTA").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_BrusselTTIITTB").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_LINX").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_SFINX").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_BrusselTTITTB").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_AMS_IX").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_Geant2").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_BNIX").
++SetInterface("BrusselTTITTA", "BrusselTTITTA_I_TheTTWorldwideTTInternet").
+
++SetNode("Mons").
++SetAdminDist("Mons", "static", 1).
++SetAdminDist("Mons", "bgp", 2).
++SetAdminDist("Mons", "ospf", 3).
++SetInterface("Mons", "Mons_I_BrusselTTIITTB").
++SetInterface("Mons", "Mons_I_BrusselTTITTB").
+
++SetNode("Charleroi").
++SetAdminDist("Charleroi", "static", 1).
++SetAdminDist("Charleroi", "bgp", 2).
++SetAdminDist("Charleroi", "ospf", 3).
++SetInterface("Charleroi", "Charleroi_I_BrusselTTIITTB").
++SetInterface("Charleroi", "Charleroi_I_BrusselTTITTB").
+
++SetNode("Louvain_la_Neuve").
++SetAdminDist("Louvain_la_Neuve", "static", 1).
++SetAdminDist("Louvain_la_Neuve", "bgp", 2).
++SetAdminDist("Louvain_la_Neuve", "ospf", 3).
++SetInterface("Louvain_la_Neuve", "Louvain_la_Neuve_I_BrusselTTIITTB").
++SetInterface("Louvain_la_Neuve", "Louvain_la_Neuve_I_BrusselTTITTB").
+
++SetNode("AMS_IX").
++SetAdminDist("AMS_IX", "static", 1).
++SetAdminDist("AMS_IX", "bgp", 2).
++SetAdminDist("AMS_IX", "ospf", 3).
++SetInterface("AMS_IX", "AMS_IX_I_BrusselTTITTA").
+
++SetNode("Antwerpen").
++SetAdminDist("Antwerpen", "static", 1).
++SetAdminDist("Antwerpen", "bgp", 2).
++SetAdminDist("Antwerpen", "ospf", 3).
++SetInterface("Antwerpen", "Antwerpen_I_BrusselTTIITTB").
++SetInterface("Antwerpen", "Antwerpen_I_BrusselTTITTB").
+
++SetNode("Leuven").
++SetAdminDist("Leuven", "static", 1).
++SetAdminDist("Leuven", "bgp", 2).
++SetAdminDist("Leuven", "ospf", 3).
++SetInterface("Leuven", "Leuven_I_BrusselTTIITTB").
++SetInterface("Leuven", "Leuven_I_BrusselTTITTB").
+
++SetNode("SFINX").
++SetAdminDist("SFINX", "static", 1).
++SetAdminDist("SFINX", "bgp", 2).
++SetAdminDist("SFINX", "ospf", 3).
++SetInterface("SFINX", "SFINX_I_BrusselTTITTA").
+
++SetNode("BNIX").
++SetAdminDist("BNIX", "static", 1).
++SetAdminDist("BNIX", "bgp", 2).
++SetAdminDist("BNIX", "ospf", 3).
++SetInterface("BNIX", "BNIX_I_BrusselTTIITTA").
++SetInterface("BNIX", "BNIX_I_BrusselTTITTA").
+
++SetNode("Geant2").
++SetAdminDist("Geant2", "static", 1).
++SetAdminDist("Geant2", "bgp", 2).
++SetAdminDist("Geant2", "ospf", 3).
++SetInterface("Geant2", "Geant2_I_BrusselTTIITTA").
++SetInterface("Geant2", "Geant2_I_BrusselTTITTA").
+
++SetLink("Hasselt_I_BrusselTTIITTB", "BrusselTTIITTB_I_Hasselt").
++SetLink("Hasselt_I_BrusselTTITTB", "BrusselTTITTB_I_Hasselt").
++SetLink("LINX_I_BrusselTTITTA", "BrusselTTITTA_I_LINX").
++SetLink("Liege_I_BrusselTTIITTB", "BrusselTTIITTB_I_Liege").
++SetLink("Liege_I_BrusselTTITTB", "BrusselTTITTB_I_Liege").
++SetLink("Arlon_I_BrusselTTIITTB", "BrusselTTIITTB_I_Arlon").
++SetLink("Arlon_I_BrusselTTITTB", "BrusselTTITTB_I_Arlon").
++SetLink("TheTTWorldwideTTInternet_I_BrusselTTIITTA", "BrusselTTIITTA_I_TheTTWorldwideTTInternet").
++SetLink("TheTTWorldwideTTInternet_I_BrusselTTITTA", "BrusselTTITTA_I_TheTTWorldwideTTInternet").
++SetLink("Korthijk_I_BrusselTTIITTB", "BrusselTTIITTB_I_Korthijk").
++SetLink("Korthijk_I_BrusselTTITTB", "BrusselTTITTB_I_Korthijk").
++SetLink("Geel_I_BrusselTTIITTB", "BrusselTTIITTB_I_Geel").
++SetLink("Geel_I_BrusselTTITTB", "BrusselTTITTB_I_Geel").
++SetLink("Brugge_I_BrusselTTIITTB", "BrusselTTIITTB_I_Brugge").
++SetLink("Brugge_I_BrusselTTITTB", "BrusselTTITTB_I_Brugge").
++SetLink("BrusselTTIITTA_I_BrusselTTIITTB", "BrusselTTIITTB_I_BrusselTTIITTA").
++SetLink("BrusselTTIITTA_I_BNIX", "BNIX_I_BrusselTTIITTA").
++SetLink("BrusselTTIITTA_I_BrusselTTITTB", "BrusselTTITTB_I_BrusselTTIITTA").
++SetLink("BrusselTTIITTA_I_BrusselTTITTA", "BrusselTTITTA_I_BrusselTTIITTA").
++SetLink("BrusselTTIITTA_I_Geant2", "Geant2_I_BrusselTTIITTA").
++SetLink("BrusselTTIITTB_I_Antwerpen", "Antwerpen_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_Namur", "Namur_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_Gent", "Gent_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_BrusselTTITTB", "BrusselTTITTB_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_Leuven", "Leuven_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_Mons", "Mons_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_Charleroi", "Charleroi_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_Louvain_la_Neuve", "Louvain_la_Neuve_I_BrusselTTIITTB").
++SetLink("BrusselTTIITTB_I_BrusselTTITTA", "BrusselTTITTA_I_BrusselTTIITTB").
++SetLink("Namur_I_BrusselTTITTB", "BrusselTTITTB_I_Namur").
++SetLink("Gent_I_BrusselTTITTB", "BrusselTTITTB_I_Gent").
++SetLink("BrusselTTITTB_I_Antwerpen", "Antwerpen_I_BrusselTTITTB").
++SetLink("BrusselTTITTB_I_Leuven", "Leuven_I_BrusselTTITTB").
++SetLink("BrusselTTITTB_I_Mons", "Mons_I_BrusselTTITTB").
++SetLink("BrusselTTITTB_I_Charleroi", "Charleroi_I_BrusselTTITTB").
++SetLink("BrusselTTITTB_I_Louvain_la_Neuve", "Louvain_la_Neuve_I_BrusselTTITTB").
++SetLink("BrusselTTITTB_I_BrusselTTITTA", "BrusselTTITTA_I_BrusselTTITTB").
++SetLink("BrusselTTITTA_I_SFINX", "SFINX_I_BrusselTTITTA").
++SetLink("BrusselTTITTA_I_AMS_IX", "AMS_IX_I_BrusselTTITTA").
++SetLink("BrusselTTITTA_I_Geant2", "Geant2_I_BrusselTTITTA").
++SetLink("BrusselTTITTA_I_BNIX", "BNIX_I_BrusselTTITTA").
+
+
++SetNetwork("Louvain_la_Neuve", "N_Louvain_la_Neuve").
++SetNetwork("SFINX", "N_SFINX").
++SetNetwork("BrusselTTITTB", "N_BrusselTTITTB").
++SetNetwork("Namur", "N_Namur").
++SetNetwork("BNIX", "N_BNIX").
++SetNetwork("AMS_IX", "N_AMS_IX").
++SetNetwork("TheTTWorldwideTTInternet", "N_TheTTWorldwideTTInternet").
++SetNetwork("Geel", "N_Geel").
++SetNetwork("Brugge", "N_Brugge").
++SetNetwork("BrusselTTITTA", "N_BrusselTTITTA").
++SetNetwork("Leuven", "N_Leuven").
++SetNetwork("Korthijk", "N_Korthijk").
++SetNetwork("Charleroi", "N_Charleroi").
++SetNetwork("Antwerpen", "N_Antwerpen").
++SetNetwork("LINX", "N_LINX").

@@ -1,0 +1,12 @@
+
++Fwd("N_Seattle", "Boulder", "Cheyenne", "static").
++Fwd("N_Seattle", "Cheyenne", "Stockton", "static").
++Fwd("N_Seattle", "Stockton", "Seattle", "static").
++Fwd("N_Seattle", "KansasTTCity", "Washington_TTDC", "static").
++Fwd("N_Seattle", "Washington_TTDC", "Stockton", "static").
++Fwd("N_Seattle", "Chicago", "Seattle", "static").
++Fwd("N_Seattle", "FortTTWorth", "Washington_TTDC", "static").
++Fwd("N_Seattle", "Anaheim", "Stockton", "static").
++Fwd("N_Seattle", "Atlanta", "Washington_TTDC", "static").
++Fwd("N_Seattle", "NewTTYorkTT_Pennsauken_", "Stockton", "static").
+

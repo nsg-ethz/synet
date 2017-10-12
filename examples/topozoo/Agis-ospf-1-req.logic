@@ -1,0 +1,26 @@
+
++Fwd("N_SantaTTClara", "NewTTYork", "Philadelphia", "ospf").
++Fwd("N_SantaTTClara", "Philadelphia", "Pennsauken", "ospf").
++Fwd("N_SantaTTClara", "Pennsauken", "LosTTAngeles", "ospf").
++Fwd("N_SantaTTClara", "LosTTAngeles", "SantaTTClara", "ospf").
++Fwd("N_SantaTTClara", "Dallas", "Phoenix", "ospf").
++Fwd("N_SantaTTClara", "Phoenix", "LosTTAngeles", "ospf").
++Fwd("N_SantaTTClara", "MexicoTTCity", "Dallas", "ospf").
++Fwd("N_SantaTTClara", "Sacramento", "LosTTAngeles", "ospf").
++Fwd("N_SantaTTClara", "Chicago", "LosTTAngeles", "ospf").
++Fwd("N_SantaTTClara", "Atlanta", "Dallas", "ospf").
++Fwd("N_SantaTTClara", "StTTLouis", "Chicago", "ospf").
++Fwd("N_SantaTTClara", "Miami", "Atlanta", "ospf").
++Fwd("N_SantaTTClara", "Detroit", "Chicago", "ospf").
++Fwd("N_SantaTTClara", "Houston", "Dallas", "ospf").
++Fwd("N_SantaTTClara", "SanTTDiego", "LosTTAngeles", "ospf").
++Fwd("N_SantaTTClara", "Stockton", "SantaTTClara", "ospf").
++Fwd("N_SantaTTClara", "SanTTFrancisco", "SantaTTClara", "ospf").
++Fwd("N_SantaTTClara", "Pittsburg", "Philadelphia", "ospf").
++Fwd("N_SantaTTClara", "Boston", "NewTTYork", "ospf").
++Fwd("N_SantaTTClara", "Fresno", "SantaTTClara", "ospf").
++Fwd("N_SantaTTClara", "Minneapolis", "Chicago", "ospf").
++Fwd("N_SantaTTClara", "Washington_TTDC", "Philadelphia", "ospf").
++Fwd("N_SantaTTClara", "Seattle", "SanTTFrancisco", "ospf").
++Fwd("N_SantaTTClara", "SaltTTLakeTTCity", "Seattle", "ospf").
+

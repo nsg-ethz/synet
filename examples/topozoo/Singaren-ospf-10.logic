@@ -1,0 +1,97 @@
++SetNode("Biopolis").
++SetAdminDist("Biopolis", "static", 1).
++SetAdminDist("Biopolis", "bgp", 2).
++SetAdminDist("Biopolis", "ospf", 3).
++SetInterface("Biopolis", "Biopolis_I_SingAREN_GIX").
+
++SetNode("NICTTTQGPOPTTAPAN_JPTTJapan").
++SetAdminDist("NICTTTQGPOPTTAPAN_JPTTJapan", "static", 1).
++SetAdminDist("NICTTTQGPOPTTAPAN_JPTTJapan", "bgp", 2).
++SetAdminDist("NICTTTQGPOPTTAPAN_JPTTJapan", "ospf", 3).
++SetInterface("NICTTTQGPOPTTAPAN_JPTTJapan", "NICTTTQGPOPTTAPAN_JPTTJapan_I_SingAREN_GIX").
+
++SetNode("AARNET").
++SetAdminDist("AARNET", "static", 1).
++SetAdminDist("AARNET", "bgp", 2).
++SetAdminDist("AARNET", "ospf", 3).
++SetInterface("AARNET", "AARNET_I_SingAREN_GIX").
+
++SetNode("NTU").
++SetAdminDist("NTU", "static", 1).
++SetAdminDist("NTU", "bgp", 2).
++SetAdminDist("NTU", "ospf", 3).
++SetInterface("NTU", "NTU_I_SingAREN_GIX").
+
++SetNode("NUS").
++SetAdminDist("NUS", "static", 1).
++SetAdminDist("NUS", "bgp", 2).
++SetAdminDist("NUS", "ospf", 3).
++SetInterface("NUS", "NUS_I_SingAREN_GIX").
+
++SetNode("TEIN3").
++SetAdminDist("TEIN3", "static", 1).
++SetAdminDist("TEIN3", "bgp", 2).
++SetAdminDist("TEIN3", "ospf", 3).
++SetInterface("TEIN3", "TEIN3_I_SingAREN_GIX").
+
++SetNode("SingARENTTmembers").
++SetAdminDist("SingARENTTmembers", "static", 1).
++SetAdminDist("SingARENTTmembers", "bgp", 2).
++SetAdminDist("SingARENTTmembers", "ospf", 3).
++SetInterface("SingARENTTmembers", "SingARENTTmembers_I_SingAREN_GIX").
+
++SetNode("AcademiaTTSinicaTTTaiwan").
++SetAdminDist("AcademiaTTSinicaTTTaiwan", "static", 1).
++SetAdminDist("AcademiaTTSinicaTTTaiwan", "bgp", 2).
++SetAdminDist("AcademiaTTSinicaTTTaiwan", "ospf", 3).
++SetInterface("AcademiaTTSinicaTTTaiwan", "AcademiaTTSinicaTTTaiwan_I_SingAREN_GIX").
+
++SetNode("SingAREN_GIX").
++SetAdminDist("SingAREN_GIX", "static", 1).
++SetAdminDist("SingAREN_GIX", "bgp", 2).
++SetAdminDist("SingAREN_GIX", "ospf", 3).
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_Biopolis").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_NICTTTQGPOPTTAPAN_JPTTJapan").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_AARNET").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_NTU").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_NUS").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_TEIN3").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_SingARENTTmembers").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_AcademiaTTSinicaTTTaiwan").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_Schools").
++SetInterface("SingAREN_GIX", "SingAREN_GIX_I_Fusionopolis").
+
++SetNode("Schools").
++SetAdminDist("Schools", "static", 1).
++SetAdminDist("Schools", "bgp", 2).
++SetAdminDist("Schools", "ospf", 3).
++SetInterface("Schools", "Schools_I_SingAREN_GIX").
+
++SetNode("Fusionopolis").
++SetAdminDist("Fusionopolis", "static", 1).
++SetAdminDist("Fusionopolis", "bgp", 2).
++SetAdminDist("Fusionopolis", "ospf", 3).
++SetInterface("Fusionopolis", "Fusionopolis_I_SingAREN_GIX").
+
++SetLink("Biopolis_I_SingAREN_GIX", "SingAREN_GIX_I_Biopolis").
++SetLink("NICTTTQGPOPTTAPAN_JPTTJapan_I_SingAREN_GIX", "SingAREN_GIX_I_NICTTTQGPOPTTAPAN_JPTTJapan").
++SetLink("AARNET_I_SingAREN_GIX", "SingAREN_GIX_I_AARNET").
++SetLink("NTU_I_SingAREN_GIX", "SingAREN_GIX_I_NTU").
++SetLink("NUS_I_SingAREN_GIX", "SingAREN_GIX_I_NUS").
++SetLink("TEIN3_I_SingAREN_GIX", "SingAREN_GIX_I_TEIN3").
++SetLink("SingARENTTmembers_I_SingAREN_GIX", "SingAREN_GIX_I_SingARENTTmembers").
++SetLink("AcademiaTTSinicaTTTaiwan_I_SingAREN_GIX", "SingAREN_GIX_I_AcademiaTTSinicaTTTaiwan").
++SetLink("SingAREN_GIX_I_Schools", "Schools_I_SingAREN_GIX").
++SetLink("SingAREN_GIX_I_Fusionopolis", "Fusionopolis_I_SingAREN_GIX").
+
+
++SetNetwork("Schools", "N_Schools").
++SetNetwork("TEIN3", "N_TEIN3").
++SetNetwork("Biopolis", "N_Biopolis").
++SetNetwork("NICTTTQGPOPTTAPAN_JPTTJapan", "N_NICTTTQGPOPTTAPAN_JPTTJapan").
++SetNetwork("Fusionopolis", "N_Fusionopolis").
++SetNetwork("AcademiaTTSinicaTTTaiwan", "N_AcademiaTTSinicaTTTaiwan").
++SetNetwork("NUS", "N_NUS").
++SetNetwork("SingAREN_GIX", "N_SingAREN_GIX").
++SetNetwork("SingARENTTmembers", "N_SingARENTTmembers").
++SetNetwork("NTU", "N_NTU").

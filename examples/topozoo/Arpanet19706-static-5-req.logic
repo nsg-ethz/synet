@@ -1,0 +1,46 @@
+
++Fwd("N_UCSB", "RAND", "UCLA", "static").
++Fwd("N_UCSB", "UCLA", "SRI", "static").
++Fwd("N_UCSB", "SRI", "UCSB", "static").
++Fwd("N_UCSB", "HARVARD", "BBN", "static").
++Fwd("N_UCSB", "BBN", "RAND", "static").
++Fwd("N_UCSB", "UTAH", "SDC", "static").
++Fwd("N_UCSB", "SDC", "RAND", "static").
++Fwd("N_UCSB", "MIT", "UTAH", "static").
+
++Fwd("N_UCLA", "RAND", "UCLA", "static").
++Fwd("N_UCLA", "HARVARD", "BBN", "static").
++Fwd("N_UCLA", "BBN", "RAND", "static").
++Fwd("N_UCLA", "SRI", "UCSB", "static").
++Fwd("N_UCLA", "UCSB", "UCLA", "static").
++Fwd("N_UCLA", "UTAH", "SDC", "static").
++Fwd("N_UCLA", "SDC", "RAND", "static").
++Fwd("N_UCLA", "MIT", "UTAH", "static").
+
++Fwd("N_HARVARD", "RAND", "BBN", "static").
++Fwd("N_HARVARD", "BBN", "HARVARD", "static").
++Fwd("N_HARVARD", "SRI", "UCSB", "static").
++Fwd("N_HARVARD", "UCSB", "UCLA", "static").
++Fwd("N_HARVARD", "UCLA", "RAND", "static").
++Fwd("N_HARVARD", "UTAH", "MIT", "static").
++Fwd("N_HARVARD", "MIT", "BBN", "static").
++Fwd("N_HARVARD", "SDC", "UTAH", "static").
+
++Fwd("N_RAND", "HARVARD", "BBN", "static").
++Fwd("N_RAND", "BBN", "RAND", "static").
++Fwd("N_RAND", "SRI", "UCSB", "static").
++Fwd("N_RAND", "UCSB", "UCLA", "static").
++Fwd("N_RAND", "UCLA", "RAND", "static").
++Fwd("N_RAND", "UTAH", "SDC", "static").
++Fwd("N_RAND", "SDC", "RAND", "static").
++Fwd("N_RAND", "MIT", "UTAH", "static").
+
++Fwd("N_MIT", "RAND", "SDC", "static").
++Fwd("N_MIT", "SDC", "UTAH", "static").
++Fwd("N_MIT", "UTAH", "MIT", "static").
++Fwd("N_MIT", "HARVARD", "BBN", "static").
++Fwd("N_MIT", "BBN", "MIT", "static").
++Fwd("N_MIT", "SRI", "UCSB", "static").
++Fwd("N_MIT", "UCSB", "UCLA", "static").
++Fwd("N_MIT", "UCLA", "RAND", "static").
+

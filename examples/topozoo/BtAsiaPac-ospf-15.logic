@@ -1,0 +1,210 @@
++SetNode("Chenai").
++SetAdminDist("Chenai", "static", 1).
++SetAdminDist("Chenai", "bgp", 2).
++SetAdminDist("Chenai", "ospf", 3).
++SetInterface("Chenai", "Chenai_I_Singapore").
+
++SetNode("Seoul").
++SetAdminDist("Seoul", "static", 1).
++SetAdminDist("Seoul", "bgp", 2).
++SetAdminDist("Seoul", "ospf", 3).
++SetInterface("Seoul", "Seoul_I_HongTTKong").
++SetInterface("Seoul", "Seoul_I_Tokyo").
+
++SetNode("KualaTTLumpur").
++SetAdminDist("KualaTTLumpur", "static", 1).
++SetAdminDist("KualaTTLumpur", "bgp", 2).
++SetAdminDist("KualaTTLumpur", "ospf", 3).
++SetInterface("KualaTTLumpur", "KualaTTLumpur_I_Singapore").
+
++SetNode("Tokyo").
++SetAdminDist("Tokyo", "static", 1).
++SetAdminDist("Tokyo", "bgp", 2).
++SetAdminDist("Tokyo", "ospf", 3).
++SetInterface("Tokyo", "Tokyo_I_Seoul").
++SetInterface("Tokyo", "Tokyo_I_HongTTKong").
++SetInterface("Tokyo", "Tokyo_I_Taipei").
++SetInterface("Tokyo", "Tokyo_I_Manila").
++SetInterface("Tokyo", "Tokyo_I_SanTTJose").
++SetInterface("Tokyo", "Tokyo_I_LosTTAngeles").
+
++SetNode("Sydney").
++SetAdminDist("Sydney", "static", 1).
++SetAdminDist("Sydney", "bgp", 2).
++SetAdminDist("Sydney", "ospf", 3).
++SetInterface("Sydney", "Sydney_I_Auckland").
++SetInterface("Sydney", "Sydney_I_Perth").
++SetInterface("Sydney", "Sydney_I_LosTTAngeles").
++SetInterface("Sydney", "Sydney_I_SanTTJose").
++SetInterface("Sydney", "Sydney_I_Singapore").
+
++SetNode("Jakarta").
++SetAdminDist("Jakarta", "static", 1).
++SetAdminDist("Jakarta", "bgp", 2).
++SetAdminDist("Jakarta", "ospf", 3).
++SetInterface("Jakarta", "Jakarta_I_HongTTKong").
+
++SetNode("HongTTKong").
++SetAdminDist("HongTTKong", "static", 1).
++SetAdminDist("HongTTKong", "bgp", 2).
++SetAdminDist("HongTTKong", "ospf", 3).
++SetInterface("HongTTKong", "HongTTKong_I_Seoul").
++SetInterface("HongTTKong", "HongTTKong_I_Tokyo").
++SetInterface("HongTTKong", "HongTTKong_I_PaloTTAlto").
++SetInterface("HongTTKong", "HongTTKong_I_Jakarta").
++SetInterface("HongTTKong", "HongTTKong_I_Mumbai").
++SetInterface("HongTTKong", "HongTTKong_I_Bangkok").
++SetInterface("HongTTKong", "HongTTKong_I_Perth").
++SetInterface("HongTTKong", "HongTTKong_I_SanTTJose").
++SetInterface("HongTTKong", "HongTTKong_I_Manila").
++SetInterface("HongTTKong", "HongTTKong_I_London").
++SetInterface("HongTTKong", "HongTTKong_I_Taipei").
++SetInterface("HongTTKong", "HongTTKong_I_LosTTAngeles").
+
++SetNode("Auckland").
++SetAdminDist("Auckland", "static", 1).
++SetAdminDist("Auckland", "bgp", 2).
++SetAdminDist("Auckland", "ospf", 3).
++SetInterface("Auckland", "Auckland_I_LosTTAngeles").
++SetInterface("Auckland", "Auckland_I_Sydney").
+
++SetNode("Singapore").
++SetAdminDist("Singapore", "static", 1).
++SetAdminDist("Singapore", "bgp", 2).
++SetAdminDist("Singapore", "ospf", 3).
++SetInterface("Singapore", "Singapore_I_Chenai").
++SetInterface("Singapore", "Singapore_I_KualaTTLumpur").
++SetInterface("Singapore", "Singapore_I_MumbaiID19").
++SetInterface("Singapore", "Singapore_I_Bangkok").
++SetInterface("Singapore", "Singapore_I_Perth").
++SetInterface("Singapore", "Singapore_I_Sydney").
++SetInterface("Singapore", "Singapore_I_London").
+
++SetNode("MumbaiID19").
++SetAdminDist("MumbaiID19", "static", 1).
++SetAdminDist("MumbaiID19", "bgp", 2).
++SetAdminDist("MumbaiID19", "ospf", 3).
++SetInterface("MumbaiID19", "MumbaiID19_I_Singapore").
+
++SetNode("SanTTJose").
++SetAdminDist("SanTTJose", "static", 1).
++SetAdminDist("SanTTJose", "bgp", 2).
++SetAdminDist("SanTTJose", "ospf", 3).
++SetInterface("SanTTJose", "SanTTJose_I_HongTTKong").
++SetInterface("SanTTJose", "SanTTJose_I_Sydney").
++SetInterface("SanTTJose", "SanTTJose_I_Tokyo").
+
++SetNode("Bangkok").
++SetAdminDist("Bangkok", "static", 1).
++SetAdminDist("Bangkok", "bgp", 2).
++SetAdminDist("Bangkok", "ospf", 3).
++SetInterface("Bangkok", "Bangkok_I_HongTTKong").
++SetInterface("Bangkok", "Bangkok_I_Singapore").
+
++SetNode("PaloTTAlto").
++SetAdminDist("PaloTTAlto", "static", 1).
++SetAdminDist("PaloTTAlto", "bgp", 2).
++SetAdminDist("PaloTTAlto", "ospf", 3).
++SetInterface("PaloTTAlto", "PaloTTAlto_I_HongTTKong").
+
++SetNode("Mumbai").
++SetAdminDist("Mumbai", "static", 1).
++SetAdminDist("Mumbai", "bgp", 2).
++SetAdminDist("Mumbai", "ospf", 3).
++SetInterface("Mumbai", "Mumbai_I_HongTTKong").
++SetInterface("Mumbai", "Mumbai_I_London").
++SetInterface("Mumbai", "Mumbai_I_NewTTDelhi").
+
++SetNode("NewTTDelhi").
++SetAdminDist("NewTTDelhi", "static", 1).
++SetAdminDist("NewTTDelhi", "bgp", 2).
++SetAdminDist("NewTTDelhi", "ospf", 3).
++SetInterface("NewTTDelhi", "NewTTDelhi_I_Mumbai").
+
++SetNode("Manila").
++SetAdminDist("Manila", "static", 1).
++SetAdminDist("Manila", "bgp", 2).
++SetAdminDist("Manila", "ospf", 3).
++SetInterface("Manila", "Manila_I_HongTTKong").
++SetInterface("Manila", "Manila_I_Tokyo").
+
++SetNode("Perth").
++SetAdminDist("Perth", "static", 1).
++SetAdminDist("Perth", "bgp", 2).
++SetAdminDist("Perth", "ospf", 3).
++SetInterface("Perth", "Perth_I_HongTTKong").
++SetInterface("Perth", "Perth_I_Sydney").
++SetInterface("Perth", "Perth_I_Singapore").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_HongTTKong").
++SetInterface("London", "London_I_Singapore").
++SetInterface("London", "London_I_Mumbai").
+
++SetNode("Taipei").
++SetAdminDist("Taipei", "static", 1).
++SetAdminDist("Taipei", "bgp", 2).
++SetAdminDist("Taipei", "ospf", 3).
++SetInterface("Taipei", "Taipei_I_HongTTKong").
++SetInterface("Taipei", "Taipei_I_Tokyo").
+
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_HongTTKong").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Auckland").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Sydney").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Tokyo").
+
++SetLink("Chenai_I_Singapore", "Singapore_I_Chenai").
++SetLink("Seoul_I_HongTTKong", "HongTTKong_I_Seoul").
++SetLink("Seoul_I_Tokyo", "Tokyo_I_Seoul").
++SetLink("KualaTTLumpur_I_Singapore", "Singapore_I_KualaTTLumpur").
++SetLink("Tokyo_I_HongTTKong", "HongTTKong_I_Tokyo").
++SetLink("Tokyo_I_Taipei", "Taipei_I_Tokyo").
++SetLink("Tokyo_I_Manila", "Manila_I_Tokyo").
++SetLink("Tokyo_I_SanTTJose", "SanTTJose_I_Tokyo").
++SetLink("Tokyo_I_LosTTAngeles", "LosTTAngeles_I_Tokyo").
++SetLink("Sydney_I_Auckland", "Auckland_I_Sydney").
++SetLink("Sydney_I_Perth", "Perth_I_Sydney").
++SetLink("Sydney_I_LosTTAngeles", "LosTTAngeles_I_Sydney").
++SetLink("Sydney_I_SanTTJose", "SanTTJose_I_Sydney").
++SetLink("Sydney_I_Singapore", "Singapore_I_Sydney").
++SetLink("Jakarta_I_HongTTKong", "HongTTKong_I_Jakarta").
++SetLink("HongTTKong_I_PaloTTAlto", "PaloTTAlto_I_HongTTKong").
++SetLink("HongTTKong_I_Mumbai", "Mumbai_I_HongTTKong").
++SetLink("HongTTKong_I_Bangkok", "Bangkok_I_HongTTKong").
++SetLink("HongTTKong_I_Perth", "Perth_I_HongTTKong").
++SetLink("HongTTKong_I_SanTTJose", "SanTTJose_I_HongTTKong").
++SetLink("HongTTKong_I_Manila", "Manila_I_HongTTKong").
++SetLink("HongTTKong_I_London", "London_I_HongTTKong").
++SetLink("HongTTKong_I_Taipei", "Taipei_I_HongTTKong").
++SetLink("HongTTKong_I_LosTTAngeles", "LosTTAngeles_I_HongTTKong").
++SetLink("Auckland_I_LosTTAngeles", "LosTTAngeles_I_Auckland").
++SetLink("Singapore_I_MumbaiID19", "MumbaiID19_I_Singapore").
++SetLink("Singapore_I_Bangkok", "Bangkok_I_Singapore").
++SetLink("Singapore_I_Perth", "Perth_I_Singapore").
++SetLink("Singapore_I_London", "London_I_Singapore").
++SetLink("Mumbai_I_London", "London_I_Mumbai").
++SetLink("Mumbai_I_NewTTDelhi", "NewTTDelhi_I_Mumbai").
+
+
++SetNetwork("KualaTTLumpur", "N_KualaTTLumpur").
++SetNetwork("NewTTDelhi", "N_NewTTDelhi").
++SetNetwork("LosTTAngeles", "N_LosTTAngeles").
++SetNetwork("Manila", "N_Manila").
++SetNetwork("Taipei", "N_Taipei").
++SetNetwork("Jakarta", "N_Jakarta").
++SetNetwork("London", "N_London").
++SetNetwork("PaloTTAlto", "N_PaloTTAlto").
++SetNetwork("MumbaiID19", "N_MumbaiID19").
++SetNetwork("Bangkok", "N_Bangkok").
++SetNetwork("Perth", "N_Perth").
++SetNetwork("Sydney", "N_Sydney").
++SetNetwork("Auckland", "N_Auckland").
++SetNetwork("Chenai", "N_Chenai").
++SetNetwork("Singapore", "N_Singapore").

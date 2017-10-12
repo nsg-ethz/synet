@@ -1,0 +1,206 @@
++SetNode("DN").
++SetAdminDist("DN", "static", 1).
++SetAdminDist("DN", "bgp", 2).
++SetAdminDist("DN", "ospf", 3).
++SetInterface("DN", "DN_I_Hue").
++SetInterface("DN", "DN_I_VNTTHN").
++SetInterface("DN", "DN_I_NhaTTTrang").
++SetInterface("DN", "DN_I_HCM").
+
++SetNode("JP").
++SetAdminDist("JP", "static", 1).
++SetAdminDist("JP", "bgp", 2).
++SetAdminDist("JP", "ospf", 3).
++SetInterface("JP", "JP_I_HK").
++SetInterface("JP", "JP_I_PH").
++SetInterface("JP", "JP_I_SG").
++SetInterface("JP", "JP_I_AbileneTTInternet2TTUSA").
+
++SetNode("AbileneTTInternet2TTUSA").
++SetAdminDist("AbileneTTInternet2TTUSA", "static", 1).
++SetAdminDist("AbileneTTInternet2TTUSA", "bgp", 2).
++SetAdminDist("AbileneTTInternet2TTUSA", "ospf", 3).
++SetInterface("AbileneTTInternet2TTUSA", "AbileneTTInternet2TTUSA_I_JP").
+
++SetNode("HK").
++SetAdminDist("HK", "static", 1).
++SetAdminDist("HK", "bgp", 2).
++SetAdminDist("HK", "ospf", 3).
++SetInterface("HK", "HK_I_VNTTHN").
++SetInterface("HK", "HK_I_SG").
++SetInterface("HK", "HK_I_CN").
++SetInterface("HK", "HK_I_JP").
+
++SetNode("Internet").
++SetAdminDist("Internet", "static", 1).
++SetAdminDist("Internet", "bgp", 2).
++SetAdminDist("Internet", "ospf", 3).
++SetInterface("Internet", "Internet_I_VNTTHN").
+
++SetNode("HaiTTPhong").
++SetAdminDist("HaiTTPhong", "static", 1).
++SetAdminDist("HaiTTPhong", "bgp", 2).
++SetAdminDist("HaiTTPhong", "ospf", 3).
++SetInterface("HaiTTPhong", "HaiTTPhong_I_VNTTHN").
+
++SetNode("Hue").
++SetAdminDist("Hue", "static", 1).
++SetAdminDist("Hue", "bgp", 2).
++SetAdminDist("Hue", "ospf", 3).
++SetInterface("Hue", "Hue_I_DN").
+
++SetNode("ThaiTTNguyen").
++SetAdminDist("ThaiTTNguyen", "static", 1).
++SetAdminDist("ThaiTTNguyen", "bgp", 2).
++SetAdminDist("ThaiTTNguyen", "ospf", 3).
++SetInterface("ThaiTTNguyen", "ThaiTTNguyen_I_VNTTHN").
+
++SetNode("TH").
++SetAdminDist("TH", "static", 1).
++SetAdminDist("TH", "bgp", 2).
++SetAdminDist("TH", "ospf", 3).
++SetInterface("TH", "TH_I_SG").
+
++SetNode("PH").
++SetAdminDist("PH", "static", 1).
++SetAdminDist("PH", "bgp", 2).
++SetAdminDist("PH", "ospf", 3).
++SetInterface("PH", "PH_I_JP").
+
++SetNode("CT").
++SetAdminDist("CT", "static", 1).
++SetAdminDist("CT", "bgp", 2).
++SetAdminDist("CT", "ospf", 3).
++SetInterface("CT", "CT_I_AnTTGiang").
++SetInterface("CT", "CT_I_HCM").
+
++SetNode("VNTTHN").
++SetAdminDist("VNTTHN", "static", 1).
++SetAdminDist("VNTTHN", "bgp", 2).
++SetAdminDist("VNTTHN", "ospf", 3).
++SetInterface("VNTTHN", "VNTTHN_I_DN").
++SetInterface("VNTTHN", "VNTTHN_I_Vinh").
++SetInterface("VNTTHN", "VNTTHN_I_ThaiTTNguyen").
++SetInterface("VNTTHN", "VNTTHN_I_HK").
++SetInterface("VNTTHN", "VNTTHN_I_Internet").
++SetInterface("VNTTHN", "VNTTHN_I_HaiTTPhong").
++SetInterface("VNTTHN", "VNTTHN_I_HCM").
+
++SetNode("CN").
++SetAdminDist("CN", "static", 1).
++SetAdminDist("CN", "bgp", 2).
++SetAdminDist("CN", "ospf", 3).
++SetInterface("CN", "CN_I_EU").
++SetInterface("CN", "CN_I_HK").
+
++SetNode("AnTTGiang").
++SetAdminDist("AnTTGiang", "static", 1).
++SetAdminDist("AnTTGiang", "bgp", 2).
++SetAdminDist("AnTTGiang", "ospf", 3).
++SetInterface("AnTTGiang", "AnTTGiang_I_CT").
+
++SetNode("AU").
++SetAdminDist("AU", "static", 1).
++SetAdminDist("AU", "bgp", 2).
++SetAdminDist("AU", "ospf", 3).
++SetInterface("AU", "AU_I_SG").
+
++SetNode("NhaTTTrang").
++SetAdminDist("NhaTTTrang", "static", 1).
++SetAdminDist("NhaTTTrang", "bgp", 2).
++SetAdminDist("NhaTTTrang", "ospf", 3).
++SetInterface("NhaTTTrang", "NhaTTTrang_I_DN").
+
++SetNode("EU").
++SetAdminDist("EU", "static", 1).
++SetAdminDist("EU", "bgp", 2).
++SetAdminDist("EU", "ospf", 3).
++SetInterface("EU", "EU_I_CN").
+
++SetNode("ID").
++SetAdminDist("ID", "static", 1).
++SetAdminDist("ID", "bgp", 2).
++SetAdminDist("ID", "ospf", 3).
++SetInterface("ID", "ID_I_SG").
+
++SetNode("HCM").
++SetAdminDist("HCM", "static", 1).
++SetAdminDist("HCM", "bgp", 2).
++SetAdminDist("HCM", "ospf", 3).
++SetInterface("HCM", "HCM_I_DN").
++SetInterface("HCM", "HCM_I_DaTTLat").
++SetInterface("HCM", "HCM_I_VNTTHN").
++SetInterface("HCM", "HCM_I_CT").
+
++SetNode("Vinh").
++SetAdminDist("Vinh", "static", 1).
++SetAdminDist("Vinh", "bgp", 2).
++SetAdminDist("Vinh", "ospf", 3).
++SetInterface("Vinh", "Vinh_I_VNTTHN").
+
++SetNode("MY").
++SetAdminDist("MY", "static", 1).
++SetAdminDist("MY", "bgp", 2).
++SetAdminDist("MY", "ospf", 3).
++SetInterface("MY", "MY_I_SG").
+
++SetNode("KR").
++SetAdminDist("KR", "static", 1).
++SetAdminDist("KR", "bgp", 2).
++SetAdminDist("KR", "ospf", 3).
++SetInterface("KR", "KR_I_SG").
+
++SetNode("DaTTLat").
++SetAdminDist("DaTTLat", "static", 1).
++SetAdminDist("DaTTLat", "bgp", 2).
++SetAdminDist("DaTTLat", "ospf", 3).
++SetInterface("DaTTLat", "DaTTLat_I_HCM").
+
++SetNode("EUID23").
++SetAdminDist("EUID23", "static", 1).
++SetAdminDist("EUID23", "bgp", 2).
++SetAdminDist("EUID23", "ospf", 3).
++SetInterface("EUID23", "EUID23_I_SG").
+
++SetNode("SG").
++SetAdminDist("SG", "static", 1).
++SetAdminDist("SG", "bgp", 2).
++SetAdminDist("SG", "ospf", 3).
++SetInterface("SG", "SG_I_TH").
++SetInterface("SG", "SG_I_HK").
++SetInterface("SG", "SG_I_JP").
++SetInterface("SG", "SG_I_KR").
++SetInterface("SG", "SG_I_AU").
++SetInterface("SG", "SG_I_EUID23").
++SetInterface("SG", "SG_I_MY").
++SetInterface("SG", "SG_I_ID").
+
++SetLink("DN_I_Hue", "Hue_I_DN").
++SetLink("DN_I_VNTTHN", "VNTTHN_I_DN").
++SetLink("DN_I_NhaTTTrang", "NhaTTTrang_I_DN").
++SetLink("DN_I_HCM", "HCM_I_DN").
++SetLink("JP_I_HK", "HK_I_JP").
++SetLink("JP_I_PH", "PH_I_JP").
++SetLink("JP_I_SG", "SG_I_JP").
++SetLink("JP_I_AbileneTTInternet2TTUSA", "AbileneTTInternet2TTUSA_I_JP").
++SetLink("HK_I_VNTTHN", "VNTTHN_I_HK").
++SetLink("HK_I_SG", "SG_I_HK").
++SetLink("HK_I_CN", "CN_I_HK").
++SetLink("Internet_I_VNTTHN", "VNTTHN_I_Internet").
++SetLink("HaiTTPhong_I_VNTTHN", "VNTTHN_I_HaiTTPhong").
++SetLink("ThaiTTNguyen_I_VNTTHN", "VNTTHN_I_ThaiTTNguyen").
++SetLink("TH_I_SG", "SG_I_TH").
++SetLink("CT_I_AnTTGiang", "AnTTGiang_I_CT").
++SetLink("CT_I_HCM", "HCM_I_CT").
++SetLink("VNTTHN_I_Vinh", "Vinh_I_VNTTHN").
++SetLink("VNTTHN_I_HCM", "HCM_I_VNTTHN").
++SetLink("CN_I_EU", "EU_I_CN").
++SetLink("AU_I_SG", "SG_I_AU").
++SetLink("ID_I_SG", "SG_I_ID").
++SetLink("HCM_I_DaTTLat", "DaTTLat_I_HCM").
++SetLink("MY_I_SG", "SG_I_MY").
++SetLink("KR_I_SG", "SG_I_KR").
++SetLink("EUID23_I_SG", "SG_I_EUID23").
+
+
++SetNetwork("JP", "N_JP").

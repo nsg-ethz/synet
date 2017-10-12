@@ -1,0 +1,66 @@
+
++Fwd("N_Incheon", "Jeju", "Kwangju", "static").
++Fwd("N_Incheon", "Kwangju", "Daejeon", "static").
++Fwd("N_Incheon", "Daejeon", "Seoul", "static").
++Fwd("N_Incheon", "Seoul", "Incheon", "static").
++Fwd("N_Incheon", "Suwon", "Seoul", "static").
++Fwd("N_Incheon", "Ochang", "Daejeon", "static").
++Fwd("N_Incheon", "Jeonju", "Daejeon", "static").
++Fwd("N_Incheon", "Daegu", "Daejeon", "static").
++Fwd("N_Incheon", "Changwon", "Daejeon", "static").
++Fwd("N_Incheon", "Busan", "Daejeon", "static").
++Fwd("N_Incheon", "Cheonan", "Daejeon", "static").
++Fwd("N_Incheon", "Pohang", "Daejeon", "static").
+
++Fwd("N_Daegu", "Jeju", "Kwangju", "static").
++Fwd("N_Daegu", "Kwangju", "Daejeon", "static").
++Fwd("N_Daegu", "Daejeon", "Daegu", "static").
++Fwd("N_Daegu", "Seoul", "Daejeon", "static").
++Fwd("N_Daegu", "Suwon", "Seoul", "static").
++Fwd("N_Daegu", "Incheon", "Seoul", "static").
++Fwd("N_Daegu", "Ochang", "Daejeon", "static").
++Fwd("N_Daegu", "Jeonju", "Daejeon", "static").
++Fwd("N_Daegu", "Changwon", "Daejeon", "static").
++Fwd("N_Daegu", "Busan", "Daejeon", "static").
++Fwd("N_Daegu", "Cheonan", "Daejeon", "static").
++Fwd("N_Daegu", "Pohang", "Daejeon", "static").
+
++Fwd("N_Ochang", "Jeju", "Kwangju", "static").
++Fwd("N_Ochang", "Kwangju", "Daejeon", "static").
++Fwd("N_Ochang", "Daejeon", "Ochang", "static").
++Fwd("N_Ochang", "Seoul", "Daejeon", "static").
++Fwd("N_Ochang", "Suwon", "Seoul", "static").
++Fwd("N_Ochang", "Incheon", "Seoul", "static").
++Fwd("N_Ochang", "Jeonju", "Daejeon", "static").
++Fwd("N_Ochang", "Daegu", "Daejeon", "static").
++Fwd("N_Ochang", "Changwon", "Daejeon", "static").
++Fwd("N_Ochang", "Busan", "Daejeon", "static").
++Fwd("N_Ochang", "Cheonan", "Daejeon", "static").
++Fwd("N_Ochang", "Pohang", "Daejeon", "static").
+
++Fwd("N_Kwangju", "Jeju", "Kwangju", "static").
++Fwd("N_Kwangju", "Seoul", "Daejeon", "static").
++Fwd("N_Kwangju", "Daejeon", "Kwangju", "static").
++Fwd("N_Kwangju", "Suwon", "Seoul", "static").
++Fwd("N_Kwangju", "Incheon", "Seoul", "static").
++Fwd("N_Kwangju", "Ochang", "Daejeon", "static").
++Fwd("N_Kwangju", "Jeonju", "Daejeon", "static").
++Fwd("N_Kwangju", "Daegu", "Daejeon", "static").
++Fwd("N_Kwangju", "Changwon", "Daejeon", "static").
++Fwd("N_Kwangju", "Busan", "Daejeon", "static").
++Fwd("N_Kwangju", "Cheonan", "Daejeon", "static").
++Fwd("N_Kwangju", "Pohang", "Daejeon", "static").
+
++Fwd("N_Pohang", "Jeju", "Kwangju", "static").
++Fwd("N_Pohang", "Kwangju", "Daejeon", "static").
++Fwd("N_Pohang", "Daejeon", "Pohang", "static").
++Fwd("N_Pohang", "Seoul", "Daejeon", "static").
++Fwd("N_Pohang", "Suwon", "Seoul", "static").
++Fwd("N_Pohang", "Incheon", "Seoul", "static").
++Fwd("N_Pohang", "Ochang", "Daejeon", "static").
++Fwd("N_Pohang", "Jeonju", "Daejeon", "static").
++Fwd("N_Pohang", "Daegu", "Daejeon", "static").
++Fwd("N_Pohang", "Changwon", "Daejeon", "static").
++Fwd("N_Pohang", "Busan", "Daejeon", "static").
++Fwd("N_Pohang", "Cheonan", "Daejeon", "static").
+

@@ -1,0 +1,241 @@
++SetNode("RAND").
++SetAdminDist("RAND", "static", 1).
++SetAdminDist("RAND", "bgp", 2).
++SetAdminDist("RAND", "ospf", 3).
++SetInterface("RAND", "RAND_I_SDC").
++SetInterface("RAND", "RAND_I_UCLA").
++SetInterface("RAND", "RAND_I_Stanford").
+
++SetNode("USC").
++SetAdminDist("USC", "static", 1).
++SetAdminDist("USC", "bgp", 2).
++SetAdminDist("USC", "ospf", 3).
++SetInterface("USC", "USC_I_Tinker").
++SetInterface("USC", "USC_I_UTAH").
++SetInterface("USC", "USC_I_SDC").
+
++SetNode("UTAH").
++SetAdminDist("UTAH", "static", 1).
++SetAdminDist("UTAH", "bgp", 2).
++SetAdminDist("UTAH", "ospf", 3).
++SetInterface("UTAH", "UTAH_I_USC").
++SetInterface("UTAH", "UTAH_I_McClellan").
++SetInterface("UTAH", "UTAH_I_ILLINOIS").
+
++SetNode("CARNEGIE").
++SetAdminDist("CARNEGIE", "static", 1).
++SetAdminDist("CARNEGIE", "bgp", 2).
++SetAdminDist("CARNEGIE", "ospf", 3).
++SetInterface("CARNEGIE", "CARNEGIE_I_MITRE").
++SetInterface("CARNEGIE", "CARNEGIE_I_CASE").
+
++SetNode("ETAC").
++SetAdminDist("ETAC", "static", 1).
++SetAdminDist("ETAC", "bgp", 2).
++SetAdminDist("ETAC", "ospf", 3).
++SetInterface("ETAC", "ETAC_I_MITRE").
++SetInterface("ETAC", "ETAC_I_NBS").
+
++SetNode("AMES").
++SetAdminDist("AMES", "static", 1).
++SetAdminDist("AMES", "bgp", 2).
++SetAdminDist("AMES", "ospf", 3).
++SetInterface("AMES", "AMES_I_AMESID13").
++SetInterface("AMES", "AMES_I_SRI").
+
++SetNode("MIT").
++SetAdminDist("MIT", "static", 1).
++SetAdminDist("MIT", "bgp", 2).
++SetAdminDist("MIT", "ospf", 3).
++SetInterface("MIT", "MIT_I_BBN").
++SetInterface("MIT", "MIT_I_Lincoln").
++SetInterface("MIT", "MIT_I_ILLINOIS").
+
++SetNode("CASE").
++SetAdminDist("CASE", "static", 1).
++SetAdminDist("CASE", "bgp", 2).
++SetAdminDist("CASE", "ospf", 3).
++SetInterface("CASE", "CASE_I_AFGWC").
++SetInterface("CASE", "CASE_I_RADC").
++SetInterface("CASE", "CASE_I_CARNEGIE").
+
++SetNode("NBS").
++SetAdminDist("NBS", "static", 1).
++SetAdminDist("NBS", "bgp", 2).
++SetAdminDist("NBS", "ospf", 3).
++SetInterface("NBS", "NBS_I_HARVARD").
++SetInterface("NBS", "NBS_I_ETAC").
+
++SetNode("AFGWC").
++SetAdminDist("AFGWC", "static", 1).
++SetAdminDist("AFGWC", "bgp", 2).
++SetAdminDist("AFGWC", "ospf", 3).
++SetInterface("AFGWC", "AFGWC_I_CASE").
+
++SetNode("BBNID15").
++SetAdminDist("BBNID15", "static", 1).
++SetAdminDist("BBNID15", "bgp", 2).
++SetAdminDist("BBNID15", "ospf", 3).
++SetInterface("BBNID15", "BBNID15_I_BBN").
++SetInterface("BBNID15", "BBNID15_I_Tinker").
++SetInterface("BBNID15", "BBNID15_I_HARVARD").
+
++SetNode("ILLINOIS").
++SetAdminDist("ILLINOIS", "static", 1).
++SetAdminDist("ILLINOIS", "bgp", 2).
++SetAdminDist("ILLINOIS", "ospf", 3).
++SetInterface("ILLINOIS", "ILLINOIS_I_UTAH").
++SetInterface("ILLINOIS", "ILLINOIS_I_MIT").
+
++SetNode("Tinker").
++SetAdminDist("Tinker", "static", 1).
++SetAdminDist("Tinker", "bgp", 2).
++SetAdminDist("Tinker", "ospf", 3).
++SetInterface("Tinker", "Tinker_I_BBNID15").
++SetInterface("Tinker", "Tinker_I_USC").
+
++SetNode("BBN").
++SetAdminDist("BBN", "static", 1).
++SetAdminDist("BBN", "bgp", 2).
++SetAdminDist("BBN", "ospf", 3).
++SetInterface("BBN", "BBN_I_BBNID15").
++SetInterface("BBN", "BBN_I_MIT").
+
++SetNode("Lincoln").
++SetAdminDist("Lincoln", "static", 1).
++SetAdminDist("Lincoln", "bgp", 2).
++SetAdminDist("Lincoln", "ospf", 3).
++SetInterface("Lincoln", "Lincoln_I_RADC").
++SetInterface("Lincoln", "Lincoln_I_MIT").
+
++SetNode("HARVARD").
++SetAdminDist("HARVARD", "static", 1).
++SetAdminDist("HARVARD", "bgp", 2).
++SetAdminDist("HARVARD", "ospf", 3).
++SetInterface("HARVARD", "HARVARD_I_NBS").
++SetInterface("HARVARD", "HARVARD_I_BBNID15").
+
++SetNode("Stanford").
++SetAdminDist("Stanford", "static", 1).
++SetAdminDist("Stanford", "bgp", 2).
++SetAdminDist("Stanford", "ospf", 3).
++SetInterface("Stanford", "Stanford_I_AMESID13").
++SetInterface("Stanford", "Stanford_I_RAND").
+
++SetNode("SRI").
++SetAdminDist("SRI", "static", 1).
++SetAdminDist("SRI", "bgp", 2).
++SetAdminDist("SRI", "ospf", 3).
++SetInterface("SRI", "SRI_I_AMES").
++SetInterface("SRI", "SRI_I_UCSB").
++SetInterface("SRI", "SRI_I_McClellan").
+
++SetNode("MITRE").
++SetAdminDist("MITRE", "static", 1).
++SetAdminDist("MITRE", "bgp", 2).
++SetAdminDist("MITRE", "ospf", 3).
++SetInterface("MITRE", "MITRE_I_CARNEGIE").
++SetInterface("MITRE", "MITRE_I_ETAC").
+
++SetNode("RADC").
++SetAdminDist("RADC", "static", 1).
++SetAdminDist("RADC", "bgp", 2).
++SetAdminDist("RADC", "ospf", 3).
++SetInterface("RADC", "RADC_I_CASE").
++SetInterface("RADC", "RADC_I_Lincoln").
+
++SetNode("AMESID13").
++SetAdminDist("AMESID13", "static", 1).
++SetAdminDist("AMESID13", "bgp", 2).
++SetAdminDist("AMESID13", "ospf", 3).
++SetInterface("AMESID13", "AMESID13_I_AMES").
++SetInterface("AMESID13", "AMESID13_I_Stanford").
+
++SetNode("UCLA").
++SetAdminDist("UCLA", "static", 1).
++SetAdminDist("UCLA", "bgp", 2).
++SetAdminDist("UCLA", "ospf", 3).
++SetInterface("UCLA", "UCLA_I_RAND").
++SetInterface("UCLA", "UCLA_I_UCSB").
+
++SetNode("McClellan").
++SetAdminDist("McClellan", "static", 1).
++SetAdminDist("McClellan", "bgp", 2).
++SetAdminDist("McClellan", "ospf", 3).
++SetInterface("McClellan", "McClellan_I_SRI").
++SetInterface("McClellan", "McClellan_I_UTAH").
+
++SetNode("UCSB").
++SetAdminDist("UCSB", "static", 1).
++SetAdminDist("UCSB", "bgp", 2).
++SetAdminDist("UCSB", "ospf", 3).
++SetInterface("UCSB", "UCSB_I_SRI").
++SetInterface("UCSB", "UCSB_I_UCLA").
+
++SetNode("SDC").
++SetAdminDist("SDC", "static", 1).
++SetAdminDist("SDC", "bgp", 2).
++SetAdminDist("SDC", "ospf", 3).
++SetInterface("SDC", "SDC_I_RAND").
++SetInterface("SDC", "SDC_I_USC").
+
++SetLink("RAND_I_SDC", "SDC_I_RAND").
++SetLink("RAND_I_UCLA", "UCLA_I_RAND").
++SetLink("RAND_I_Stanford", "Stanford_I_RAND").
++SetLink("USC_I_Tinker", "Tinker_I_USC").
++SetLink("USC_I_UTAH", "UTAH_I_USC").
++SetLink("USC_I_SDC", "SDC_I_USC").
++SetLink("UTAH_I_McClellan", "McClellan_I_UTAH").
++SetLink("UTAH_I_ILLINOIS", "ILLINOIS_I_UTAH").
++SetLink("CARNEGIE_I_MITRE", "MITRE_I_CARNEGIE").
++SetLink("CARNEGIE_I_CASE", "CASE_I_CARNEGIE").
++SetLink("ETAC_I_MITRE", "MITRE_I_ETAC").
++SetLink("ETAC_I_NBS", "NBS_I_ETAC").
++SetLink("AMES_I_AMESID13", "AMESID13_I_AMES").
++SetLink("AMES_I_SRI", "SRI_I_AMES").
++SetLink("MIT_I_BBN", "BBN_I_MIT").
++SetLink("MIT_I_Lincoln", "Lincoln_I_MIT").
++SetLink("MIT_I_ILLINOIS", "ILLINOIS_I_MIT").
++SetLink("CASE_I_AFGWC", "AFGWC_I_CASE").
++SetLink("CASE_I_RADC", "RADC_I_CASE").
++SetLink("NBS_I_HARVARD", "HARVARD_I_NBS").
++SetLink("BBNID15_I_BBN", "BBN_I_BBNID15").
++SetLink("BBNID15_I_Tinker", "Tinker_I_BBNID15").
++SetLink("BBNID15_I_HARVARD", "HARVARD_I_BBNID15").
++SetLink("Lincoln_I_RADC", "RADC_I_Lincoln").
++SetLink("Stanford_I_AMESID13", "AMESID13_I_Stanford").
++SetLink("SRI_I_UCSB", "UCSB_I_SRI").
++SetLink("SRI_I_McClellan", "McClellan_I_SRI").
++SetLink("UCLA_I_UCSB", "UCSB_I_UCLA").
+
+
++SetNetwork("AFGWC", "N_AFGWC").
++SetBGPAnnouncement("AFGWC", "N_AFGWC", "NBGP_AFGWC", "1;2;3", 3).
++SetNetwork("MITRE", "N_MITRE").
++SetBGPAnnouncement("MITRE", "N_MITRE", "NBGP_MITRE", "1;2;3", 3).
++SetNetwork("NBS", "N_NBS").
++SetBGPAnnouncement("NBS", "N_NBS", "NBGP_NBS", "1;2;3", 3).
++SetNetwork("CASE", "N_CASE").
++SetBGPAnnouncement("CASE", "N_CASE", "NBGP_CASE", "1;2;3", 3).
++SetNetwork("Tinker", "N_Tinker").
++SetBGPAnnouncement("Tinker", "N_Tinker", "NBGP_Tinker", "1;2;3", 3).
++SetNetwork("Lincoln", "N_Lincoln").
++SetBGPAnnouncement("Lincoln", "N_Lincoln", "NBGP_Lincoln", "1;2;3", 3).
++SetNetwork("McClellan", "N_McClellan").
++SetBGPAnnouncement("McClellan", "N_McClellan", "NBGP_McClellan", "1;2;3", 3).
++SetNetwork("CARNEGIE", "N_CARNEGIE").
++SetBGPAnnouncement("CARNEGIE", "N_CARNEGIE", "NBGP_CARNEGIE", "1;2;3", 3).
++SetNetwork("SRI", "N_SRI").
++SetBGPAnnouncement("SRI", "N_SRI", "NBGP_SRI", "1;2;3", 3).
++SetNetwork("AMESID13", "N_AMESID13").
++SetBGPAnnouncement("AMESID13", "N_AMESID13", "NBGP_AMESID13", "1;2;3", 3).
++SetNetwork("RADC", "N_RADC").
++SetBGPAnnouncement("RADC", "N_RADC", "NBGP_RADC", "1;2;3", 3).
++SetNetwork("UCLA", "N_UCLA").
++SetBGPAnnouncement("UCLA", "N_UCLA", "NBGP_UCLA", "1;2;3", 3).
++SetNetwork("AMES", "N_AMES").
++SetBGPAnnouncement("AMES", "N_AMES", "NBGP_AMES", "1;2;3", 3).
++SetNetwork("USC", "N_USC").
++SetBGPAnnouncement("USC", "N_USC", "NBGP_USC", "1;2;3", 3).
++SetNetwork("ETAC", "N_ETAC").
++SetBGPAnnouncement("ETAC", "N_ETAC", "NBGP_ETAC", "1;2;3", 3).

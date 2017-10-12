@@ -1,0 +1,31 @@
+
++Fwd("N_Atlanta", "McLean", "Washington_TTDC", "ospf").
++Fwd("N_Atlanta", "Washington_TTDC", "Atlanta", "ospf").
++Fwd("N_Atlanta", "LosTTAngeles", "Washington_TTDC", "ospf").
++Fwd("N_Atlanta", "SanTTFrancisco", "Washington_TTDC", "ospf").
++Fwd("N_Atlanta", "Chicago", "Atlanta", "ospf").
+
++Fwd("N_Washington_TTDC", "McLean", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "LosTTAngeles", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "SanTTFrancisco", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "Chicago", "SanTTFrancisco", "ospf").
++Fwd("N_Washington_TTDC", "Atlanta", "Washington_TTDC", "ospf").
+
++Fwd("N_SanTTFrancisco", "McLean", "Washington_TTDC", "ospf").
++Fwd("N_SanTTFrancisco", "Washington_TTDC", "LosTTAngeles", "ospf").
++Fwd("N_SanTTFrancisco", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("N_SanTTFrancisco", "Chicago", "SanTTFrancisco", "ospf").
++Fwd("N_SanTTFrancisco", "Atlanta", "SanTTFrancisco", "ospf").
+
++Fwd("N_McLean", "LosTTAngeles", "Washington_TTDC", "ospf").
++Fwd("N_McLean", "Washington_TTDC", "McLean", "ospf").
++Fwd("N_McLean", "SanTTFrancisco", "Washington_TTDC", "ospf").
++Fwd("N_McLean", "Chicago", "SanTTFrancisco", "ospf").
++Fwd("N_McLean", "Atlanta", "Washington_TTDC", "ospf").
+
++Fwd("N_LosTTAngeles", "McLean", "Washington_TTDC", "ospf").
++Fwd("N_LosTTAngeles", "Washington_TTDC", "LosTTAngeles", "ospf").
++Fwd("N_LosTTAngeles", "SanTTFrancisco", "LosTTAngeles", "ospf").
++Fwd("N_LosTTAngeles", "Chicago", "LosTTAngeles", "ospf").
++Fwd("N_LosTTAngeles", "Atlanta", "LosTTAngeles", "ospf").
+

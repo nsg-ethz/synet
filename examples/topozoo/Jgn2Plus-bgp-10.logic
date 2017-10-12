@@ -1,0 +1,163 @@
++SetNode("Singapore").
++SetAdminDist("Singapore", "static", 1).
++SetAdminDist("Singapore", "bgp", 2).
++SetAdminDist("Singapore", "ospf", 3).
++SetInterface("Singapore", "Singapore_I_Tokyo").
+
++SetNode("Hongkong").
++SetAdminDist("Hongkong", "static", 1).
++SetAdminDist("Hongkong", "bgp", 2).
++SetAdminDist("Hongkong", "ospf", 3).
++SetInterface("Hongkong", "Hongkong_I_Tokyo").
+
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_NodeID15").
+
++SetNode("Tokyo").
++SetAdminDist("Tokyo", "static", 1).
++SetAdminDist("Tokyo", "bgp", 2).
++SetAdminDist("Tokyo", "ospf", 3).
++SetInterface("Tokyo", "Tokyo_I_Singapore").
++SetInterface("Tokyo", "Tokyo_I_Hokuriku").
++SetInterface("Tokyo", "Tokyo_I_Tokai").
++SetInterface("Tokyo", "Tokyo_I_NodeID15").
++SetInterface("Tokyo", "Tokyo_I_Tohoku").
++SetInterface("Tokyo", "Tokyo_I_Bangkok").
++SetInterface("Tokyo", "Tokyo_I_Hongkong").
++SetInterface("Tokyo", "Tokyo_I_Shinetsu").
+
++SetNode("Hokuriku").
++SetAdminDist("Hokuriku", "static", 1).
++SetAdminDist("Hokuriku", "bgp", 2).
++SetAdminDist("Hokuriku", "ospf", 3).
++SetInterface("Hokuriku", "Hokuriku_I_Tokyo").
+
++SetNode("Tokai").
++SetAdminDist("Tokai", "static", 1).
++SetAdminDist("Tokai", "bgp", 2).
++SetAdminDist("Tokai", "ospf", 3).
++SetInterface("Tokai", "Tokai_I_Kinki").
++SetInterface("Tokai", "Tokai_I_Tokyo").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_NodeID15").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_Tokyo").
++SetInterface("NodeID15", "NodeID15_I_LosTTAngeles").
++SetInterface("NodeID15", "NodeID15_I_Chicago").
+
++SetNode("Tohoku").
++SetAdminDist("Tohoku", "static", 1).
++SetAdminDist("Tohoku", "bgp", 2).
++SetAdminDist("Tohoku", "ospf", 3).
++SetInterface("Tohoku", "Tohoku_I_Hokkaido").
++SetInterface("Tohoku", "Tohoku_I_Tokyo").
+
++SetNode("Okinawa").
++SetAdminDist("Okinawa", "static", 1).
++SetAdminDist("Okinawa", "bgp", 2).
++SetAdminDist("Okinawa", "ospf", 3).
++SetInterface("Okinawa", "Okinawa_I_Kyushu").
+
++SetNode("Bangkok").
++SetAdminDist("Bangkok", "static", 1).
++SetAdminDist("Bangkok", "bgp", 2).
++SetAdminDist("Bangkok", "ospf", 3).
++SetInterface("Bangkok", "Bangkok_I_Tokyo").
+
++SetNode("Shikoku").
++SetAdminDist("Shikoku", "static", 1).
++SetAdminDist("Shikoku", "bgp", 2).
++SetAdminDist("Shikoku", "ospf", 3).
++SetInterface("Shikoku", "Shikoku_I_Kinki").
+
++SetNode("Chugoku").
++SetAdminDist("Chugoku", "static", 1).
++SetAdminDist("Chugoku", "bgp", 2).
++SetAdminDist("Chugoku", "ospf", 3).
++SetInterface("Chugoku", "Chugoku_I_Kyushu").
++SetInterface("Chugoku", "Chugoku_I_Kinki").
+
++SetNode("Busan").
++SetAdminDist("Busan", "static", 1).
++SetAdminDist("Busan", "bgp", 2).
++SetAdminDist("Busan", "ospf", 3).
++SetInterface("Busan", "Busan_I_Kyushu").
+
++SetNode("Kinki").
++SetAdminDist("Kinki", "static", 1).
++SetAdminDist("Kinki", "bgp", 2).
++SetAdminDist("Kinki", "ospf", 3).
++SetInterface("Kinki", "Kinki_I_Tokai").
++SetInterface("Kinki", "Kinki_I_Chugoku").
++SetInterface("Kinki", "Kinki_I_Shikoku").
+
++SetNode("Shinetsu").
++SetAdminDist("Shinetsu", "static", 1).
++SetAdminDist("Shinetsu", "bgp", 2).
++SetAdminDist("Shinetsu", "ospf", 3).
++SetInterface("Shinetsu", "Shinetsu_I_Tokyo").
+
++SetNode("Hokkaido").
++SetAdminDist("Hokkaido", "static", 1).
++SetAdminDist("Hokkaido", "bgp", 2).
++SetAdminDist("Hokkaido", "ospf", 3).
++SetInterface("Hokkaido", "Hokkaido_I_Tohoku").
+
++SetNode("Kyushu").
++SetAdminDist("Kyushu", "static", 1).
++SetAdminDist("Kyushu", "bgp", 2).
++SetAdminDist("Kyushu", "ospf", 3).
++SetInterface("Kyushu", "Kyushu_I_Chugoku").
++SetInterface("Kyushu", "Kyushu_I_Busan").
++SetInterface("Kyushu", "Kyushu_I_Okinawa").
+
++SetLink("Singapore_I_Tokyo", "Tokyo_I_Singapore").
++SetLink("Hongkong_I_Tokyo", "Tokyo_I_Hongkong").
++SetLink("LosTTAngeles_I_NodeID15", "NodeID15_I_LosTTAngeles").
++SetLink("Tokyo_I_Hokuriku", "Hokuriku_I_Tokyo").
++SetLink("Tokyo_I_Tokai", "Tokai_I_Tokyo").
++SetLink("Tokyo_I_NodeID15", "NodeID15_I_Tokyo").
++SetLink("Tokyo_I_Tohoku", "Tohoku_I_Tokyo").
++SetLink("Tokyo_I_Bangkok", "Bangkok_I_Tokyo").
++SetLink("Tokyo_I_Shinetsu", "Shinetsu_I_Tokyo").
++SetLink("Tokai_I_Kinki", "Kinki_I_Tokai").
++SetLink("Chicago_I_NodeID15", "NodeID15_I_Chicago").
++SetLink("Tohoku_I_Hokkaido", "Hokkaido_I_Tohoku").
++SetLink("Okinawa_I_Kyushu", "Kyushu_I_Okinawa").
++SetLink("Shikoku_I_Kinki", "Kinki_I_Shikoku").
++SetLink("Chugoku_I_Kyushu", "Kyushu_I_Chugoku").
++SetLink("Chugoku_I_Kinki", "Kinki_I_Chugoku").
++SetLink("Busan_I_Kyushu", "Kyushu_I_Busan").
+
+
++SetNetwork("Tokai", "N_Tokai").
++SetBGPAnnouncement("Tokai", "N_Tokai", "NBGP_Tokai", "1;2;3", 3).
++SetNetwork("Kinki", "N_Kinki").
++SetBGPAnnouncement("Kinki", "N_Kinki", "NBGP_Kinki", "1;2;3", 3).
++SetNetwork("Tokyo", "N_Tokyo").
++SetBGPAnnouncement("Tokyo", "N_Tokyo", "NBGP_Tokyo", "1;2;3", 3).
++SetNetwork("Singapore", "N_Singapore").
++SetBGPAnnouncement("Singapore", "N_Singapore", "NBGP_Singapore", "1;2;3", 3).
++SetNetwork("Hongkong", "N_Hongkong").
++SetBGPAnnouncement("Hongkong", "N_Hongkong", "NBGP_Hongkong", "1;2;3", 3).
++SetNetwork("Bangkok", "N_Bangkok").
++SetBGPAnnouncement("Bangkok", "N_Bangkok", "NBGP_Bangkok", "1;2;3", 3).
++SetNetwork("Okinawa", "N_Okinawa").
++SetBGPAnnouncement("Okinawa", "N_Okinawa", "NBGP_Okinawa", "1;2;3", 3).
++SetNetwork("Busan", "N_Busan").
++SetBGPAnnouncement("Busan", "N_Busan", "NBGP_Busan", "1;2;3", 3).
++SetNetwork("Chicago", "N_Chicago").
++SetBGPAnnouncement("Chicago", "N_Chicago", "NBGP_Chicago", "1;2;3", 3).
++SetNetwork("Kyushu", "N_Kyushu").
++SetBGPAnnouncement("Kyushu", "N_Kyushu", "NBGP_Kyushu", "1;2;3", 3).

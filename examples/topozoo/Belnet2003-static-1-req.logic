@@ -1,0 +1,24 @@
+
++Fwd("N_LINX", "Hasselt", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "BrusselTTIITTB", "BrusselTTIITTA", "static").
++Fwd("N_LINX", "BrusselTTIITTA", "LINX", "static").
++Fwd("N_LINX", "Liege", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "Arlon", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "GlobalTTInternet", "BrusselTTIITTA", "static").
++Fwd("N_LINX", "Korthijk", "BrusselTTITTB", "static").
++Fwd("N_LINX", "BrusselTTITTB", "Geel", "static").
++Fwd("N_LINX", "Geel", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "Brugge", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "Namur", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "Gent", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "BrusselTTITTA", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "Mons", "BrusselTTITTB", "static").
++Fwd("N_LINX", "Charleroi", "BrusselTTIITTB", "static").
++Fwd("N_LINX", "Louvain_la_Neuve", "BrusselTTITTB", "static").
++Fwd("N_LINX", "AMS_IX", "BrusselTTIITTA", "static").
++Fwd("N_LINX", "Antwerpen", "BrusselTTITTB", "static").
++Fwd("N_LINX", "Leuven", "BrusselTTITTB", "static").
++Fwd("N_LINX", "SFINX", "BrusselTTIITTA", "static").
++Fwd("N_LINX", "BNIX", "BrusselTTITTA", "static").
++Fwd("N_LINX", "Geant2", "BrusselTTIITTA", "static").
+

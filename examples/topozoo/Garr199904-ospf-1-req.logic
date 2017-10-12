@@ -1,0 +1,24 @@
+
++Fwd("N_CT", "BA", "NAID13", "ospf").
++Fwd("N_CT", "NAID13", "CT", "ospf").
++Fwd("N_CT", "USA", "MI", "ospf").
++Fwd("N_CT", "MI", "RMID19", "ospf").
++Fwd("N_CT", "RMID19", "NAID13", "ospf").
++Fwd("N_CT", "BO", "MI", "ospf").
++Fwd("N_CT", "FI", "BO", "ospf").
++Fwd("N_CT", "NA", "NAID13", "ospf").
++Fwd("N_CT", "TS", "MI", "ospf").
++Fwd("N_CT", "TO", "MI", "ospf").
++Fwd("N_CT", "PA", "NAID13", "ospf").
++Fwd("N_CT", "MIID11", "MI", "ospf").
++Fwd("N_CT", "PD", "BO", "ospf").
++Fwd("N_CT", "RM", "RMID19", "ospf").
++Fwd("N_CT", "PI", "BO", "ospf").
++Fwd("N_CT", "FRA", "RMID19", "ospf").
++Fwd("N_CT", "CA", "RMID19", "ospf").
++Fwd("N_CT", "EsNet", "BO", "ospf").
++Fwd("N_CT", "GE", "MI", "ospf").
++Fwd("N_CT", "AQ", "RMID19", "ospf").
++Fwd("N_CT", "BOID8", "BO", "ospf").
++Fwd("N_CT", "Ten155", "MI", "ospf").
+

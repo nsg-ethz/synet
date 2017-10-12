@@ -1,0 +1,321 @@
++SetNode("MedicalTTcollegeTTofTTSofia").
++SetAdminDist("MedicalTTcollegeTTofTTSofia", "static", 1).
++SetAdminDist("MedicalTTcollegeTTofTTSofia", "bgp", 2).
++SetAdminDist("MedicalTTcollegeTTofTTSofia", "ospf", 3).
++SetInterface("MedicalTTcollegeTTofTTSofia", "MedicalTTcollegeTTofTTSofia_I_MedicalTTUniTTSofia").
+
++SetNode("VarnaTTTechTTUni").
++SetAdminDist("VarnaTTTechTTUni", "static", 1).
++SetAdminDist("VarnaTTTechTTUni", "bgp", 2).
++SetAdminDist("VarnaTTTechTTUni", "ospf", 3).
++SetInterface("VarnaTTTechTTUni", "VarnaTTTechTTUni_I_UniTTofTTEconomics").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_PlevenTTUniversity").
++SetInterface("NodeID15", "NodeID15_I_NMU").
+
++SetNode("AcademyTTofTTSciences").
++SetAdminDist("AcademyTTofTTSciences", "static", 1).
++SetAdminDist("AcademyTTofTTSciences", "bgp", 2).
++SetAdminDist("AcademyTTofTTSciences", "ospf", 3).
++SetInterface("AcademyTTofTTSciences", "AcademyTTofTTSciences_I_IPP_BAS").
+
++SetNode("PlovdivTTUni").
++SetAdminDist("PlovdivTTUni", "static", 1).
++SetAdminDist("PlovdivTTUni", "bgp", 2).
++SetAdminDist("PlovdivTTUni", "ospf", 3).
++SetInterface("PlovdivTTUni", "PlovdivTTUni_I_UniTTofTTEconomics").
++SetInterface("PlovdivTTUni", "PlovdivTTUni_I_Agriculture").
++SetInterface("PlovdivTTUni", "PlovdivTTUni_I_TechnicalTTUni_").
++SetInterface("PlovdivTTUni", "PlovdivTTUni_I_IPP_BAS").
+
++SetNode("MedicalTTUniTTPublicTTHealth").
++SetAdminDist("MedicalTTUniTTPublicTTHealth", "static", 1).
++SetAdminDist("MedicalTTUniTTPublicTTHealth", "bgp", 2).
++SetAdminDist("MedicalTTUniTTPublicTTHealth", "ospf", 3).
++SetInterface("MedicalTTUniTTPublicTTHealth", "MedicalTTUniTTPublicTTHealth_I_SofiaTTUni_").
+
++SetNode("RuseTTUni_").
++SetAdminDist("RuseTTUni_", "static", 1).
++SetAdminDist("RuseTTUni_", "bgp", 2).
++SetAdminDist("RuseTTUni_", "ospf", 3).
++SetInterface("RuseTTUni_", "RuseTTUni__I_MilitaryTTUni").
++SetInterface("RuseTTUni_", "RuseTTUni__I_VasilTTLevskiTTUni").
+
++SetNode("MedicalTTUni_TTPharmacy").
++SetAdminDist("MedicalTTUni_TTPharmacy", "static", 1).
++SetAdminDist("MedicalTTUni_TTPharmacy", "bgp", 2).
++SetAdminDist("MedicalTTUni_TTPharmacy", "ospf", 3).
++SetInterface("MedicalTTUni_TTPharmacy", "MedicalTTUni_TTPharmacy_I_SofiaTTUni_").
+
++SetNode("South_WestTTUni").
++SetAdminDist("South_WestTTUni", "static", 1).
++SetAdminDist("South_WestTTUni", "bgp", 2).
++SetAdminDist("South_WestTTUni", "ospf", 3).
++SetInterface("South_WestTTUni", "South_WestTTUni_I_NodeID14").
+
++SetNode("CivilTTEngineering").
++SetAdminDist("CivilTTEngineering", "static", 1).
++SetAdminDist("CivilTTEngineering", "bgp", 2).
++SetAdminDist("CivilTTEngineering", "ospf", 3).
++SetInterface("CivilTTEngineering", "CivilTTEngineering_I_NodeID1").
+
++SetNode("PlevenTTUniversity").
++SetAdminDist("PlevenTTUniversity", "static", 1).
++SetAdminDist("PlevenTTUniversity", "bgp", 2).
++SetAdminDist("PlevenTTUniversity", "ospf", 3).
++SetInterface("PlevenTTUniversity", "PlevenTTUniversity_I_MilitaryTTUni").
++SetInterface("PlevenTTUniversity", "PlevenTTUniversity_I_NodeID15").
++SetInterface("PlevenTTUniversity", "PlevenTTUniversity_I_IPP_BAS").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_South_WestTTUni").
++SetInterface("NodeID14", "NodeID14_I_IPP_BAS").
+
++SetNode("EconomyTTUni_").
++SetAdminDist("EconomyTTUni_", "static", 1).
++SetAdminDist("EconomyTTUni_", "bgp", 2).
++SetAdminDist("EconomyTTUni_", "ospf", 3).
++SetInterface("EconomyTTUni_", "EconomyTTUni__I_TechnicalTTUni").
++SetInterface("EconomyTTUni_", "EconomyTTUni__I_SofiaTTUniversity").
+
++SetNode("VasilTTLevskiTTUni").
++SetAdminDist("VasilTTLevskiTTUni", "static", 1).
++SetAdminDist("VasilTTLevskiTTUni", "bgp", 2).
++SetAdminDist("VasilTTLevskiTTUni", "ospf", 3).
++SetInterface("VasilTTLevskiTTUni", "VasilTTLevskiTTUni_I_RuseTTUni_").
++SetInterface("VasilTTLevskiTTUni", "VasilTTLevskiTTUni_I_UniTTofTTEconomics").
++SetInterface("VasilTTLevskiTTUni", "VasilTTLevskiTTUni_I_ShumenTTUniversity").
+
++SetNode("TechnicalTTUni").
++SetAdminDist("TechnicalTTUni", "static", 1).
++SetAdminDist("TechnicalTTUni", "bgp", 2).
++SetAdminDist("TechnicalTTUni", "ospf", 3).
++SetInterface("TechnicalTTUni", "TechnicalTTUni_I_EconomyTTUni_").
++SetInterface("TechnicalTTUni", "TechnicalTTUni_I_IPP_BAS").
+
++SetNode("NodeID1").
++SetAdminDist("NodeID1", "static", 1).
++SetAdminDist("NodeID1", "bgp", 2).
++SetAdminDist("NodeID1", "ospf", 3).
++SetInterface("NodeID1", "NodeID1_I_CivilTTEngineering").
++SetInterface("NodeID1", "NodeID1_I_HigherTTAttestationTTCommission").
++SetInterface("NodeID1", "NodeID1_I_Telecom_TTandTTPost").
++SetInterface("NodeID1", "NodeID1_I_IPP_BAS").
+
++SetNode("Telecom_TTandTTPost").
++SetAdminDist("Telecom_TTandTTPost", "static", 1).
++SetAdminDist("Telecom_TTandTTPost", "bgp", 2).
++SetAdminDist("Telecom_TTandTTPost", "ospf", 3).
++SetInterface("Telecom_TTandTTPost", "Telecom_TTandTTPost_I_NodeID1").
+
++SetNode("MilitaryTTUni").
++SetAdminDist("MilitaryTTUni", "static", 1).
++SetAdminDist("MilitaryTTUni", "bgp", 2).
++SetAdminDist("MilitaryTTUni", "ospf", 3).
++SetInterface("MilitaryTTUni", "MilitaryTTUni_I_VelikoTTUni").
++SetInterface("MilitaryTTUni", "MilitaryTTUni_I_PlevenTTUniversity").
++SetInterface("MilitaryTTUni", "MilitaryTTUni_I_GabrovoTTUni").
++SetInterface("MilitaryTTUni", "MilitaryTTUni_I_NodeID23").
++SetInterface("MilitaryTTUni", "MilitaryTTUni_I_RuseTTUni_").
+
++SetNode("VelikoTTUni").
++SetAdminDist("VelikoTTUni", "static", 1).
++SetAdminDist("VelikoTTUni", "bgp", 2).
++SetAdminDist("VelikoTTUni", "ospf", 3).
++SetInterface("VelikoTTUni", "VelikoTTUni_I_MilitaryTTUni").
+
++SetNode("UniTTofTTEconomics").
++SetAdminDist("UniTTofTTEconomics", "static", 1).
++SetAdminDist("UniTTofTTEconomics", "bgp", 2).
++SetAdminDist("UniTTofTTEconomics", "ospf", 3).
++SetInterface("UniTTofTTEconomics", "UniTTofTTEconomics_I_NavalTTAcademy").
++SetInterface("UniTTofTTEconomics", "UniTTofTTEconomics_I_VarnaTTTechTTUni").
++SetInterface("UniTTofTTEconomics", "UniTTofTTEconomics_I_PlovdivTTUni").
++SetInterface("UniTTofTTEconomics", "UniTTofTTEconomics_I_VasilTTLevskiTTUni").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_IPP_BAS").
+
++SetNode("HigherTTAttestationTTCommission").
++SetAdminDist("HigherTTAttestationTTCommission", "static", 1).
++SetAdminDist("HigherTTAttestationTTCommission", "bgp", 2).
++SetAdminDist("HigherTTAttestationTTCommission", "ospf", 3).
++SetInterface("HigherTTAttestationTTCommission", "HigherTTAttestationTTCommission_I_NodeID1").
+
++SetNode("AcademyTTofTTEconomics").
++SetAdminDist("AcademyTTofTTEconomics", "static", 1).
++SetAdminDist("AcademyTTofTTEconomics", "bgp", 2).
++SetAdminDist("AcademyTTofTTEconomics", "ospf", 3).
++SetInterface("AcademyTTofTTEconomics", "AcademyTTofTTEconomics_I_NodeID23").
+
++SetNode("SofiaTTUni_").
++SetAdminDist("SofiaTTUni_", "static", 1).
++SetAdminDist("SofiaTTUni_", "bgp", 2).
++SetAdminDist("SofiaTTUni_", "ospf", 3).
++SetInterface("SofiaTTUni_", "SofiaTTUni__I_MedicalTTUniTTPublicTTHealth").
++SetInterface("SofiaTTUni_", "SofiaTTUni__I_MedicalTTUniTTSofia").
++SetInterface("SofiaTTUni_", "SofiaTTUni__I_Min_TTEducation").
++SetInterface("SofiaTTUni_", "SofiaTTUni__I_MedicalTTUni_TTPharmacy").
++SetInterface("SofiaTTUni_", "SofiaTTUni__I_TodosTTKableshkovTTUni").
+
++SetNode("TechnicalTTUni_").
++SetAdminDist("TechnicalTTUni_", "static", 1).
++SetAdminDist("TechnicalTTUni_", "bgp", 2).
++SetAdminDist("TechnicalTTUni_", "ospf", 3).
++SetInterface("TechnicalTTUni_", "TechnicalTTUni__I_PlovdivTTUni").
+
++SetNode("SofiaTTUniversity").
++SetAdminDist("SofiaTTUniversity", "static", 1).
++SetAdminDist("SofiaTTUniversity", "bgp", 2).
++SetAdminDist("SofiaTTUniversity", "ospf", 3).
++SetInterface("SofiaTTUniversity", "SofiaTTUniversity_I_MedicalTTUniTTSofia").
++SetInterface("SofiaTTUniversity", "SofiaTTUniversity_I_EconomyTTUni_").
+
++SetNode("NodeID23").
++SetAdminDist("NodeID23", "static", 1).
++SetAdminDist("NodeID23", "bgp", 2).
++SetAdminDist("NodeID23", "ospf", 3).
++SetInterface("NodeID23", "NodeID23_I_MilitaryTTUni").
++SetInterface("NodeID23", "NodeID23_I_AcademyTTofTTEconomics").
+
++SetNode("NMU").
++SetAdminDist("NMU", "static", 1).
++SetAdminDist("NMU", "bgp", 2).
++SetAdminDist("NMU", "ospf", 3).
++SetInterface("NMU", "NMU_I_NodeID15").
+
++SetNode("GabrovoTTUni").
++SetAdminDist("GabrovoTTUni", "static", 1).
++SetAdminDist("GabrovoTTUni", "bgp", 2).
++SetAdminDist("GabrovoTTUni", "ospf", 3).
++SetInterface("GabrovoTTUni", "GabrovoTTUni_I_MilitaryTTUni").
+
++SetNode("BGTTInternet").
++SetAdminDist("BGTTInternet", "static", 1).
++SetAdminDist("BGTTInternet", "bgp", 2).
++SetAdminDist("BGTTInternet", "ospf", 3).
++SetInterface("BGTTInternet", "BGTTInternet_I_IPP_BAS").
+
++SetNode("NavalTTAcademy").
++SetAdminDist("NavalTTAcademy", "static", 1).
++SetAdminDist("NavalTTAcademy", "bgp", 2).
++SetAdminDist("NavalTTAcademy", "ospf", 3).
++SetInterface("NavalTTAcademy", "NavalTTAcademy_I_UniTTofTTEconomics").
+
++SetNode("MedicalTTUniTTSofia").
++SetAdminDist("MedicalTTUniTTSofia", "static", 1).
++SetAdminDist("MedicalTTUniTTSofia", "bgp", 2).
++SetAdminDist("MedicalTTUniTTSofia", "ospf", 3).
++SetInterface("MedicalTTUniTTSofia", "MedicalTTUniTTSofia_I_MedicalTTcollegeTTofTTSofia").
++SetInterface("MedicalTTUniTTSofia", "MedicalTTUniTTSofia_I_SofiaTTUni_").
++SetInterface("MedicalTTUniTTSofia", "MedicalTTUniTTSofia_I_SofiaTTUniversity").
+
++SetNode("ShumenTTUniversity").
++SetAdminDist("ShumenTTUniversity", "static", 1).
++SetAdminDist("ShumenTTUniversity", "bgp", 2).
++SetAdminDist("ShumenTTUniversity", "ospf", 3).
++SetInterface("ShumenTTUniversity", "ShumenTTUniversity_I_VasilTTLevskiTTUni").
+
++SetNode("IPP_BAS").
++SetAdminDist("IPP_BAS", "static", 1).
++SetAdminDist("IPP_BAS", "bgp", 2).
++SetAdminDist("IPP_BAS", "ospf", 3).
++SetInterface("IPP_BAS", "IPP_BAS_I_BGTTInternet").
++SetInterface("IPP_BAS", "IPP_BAS_I_GEANT").
++SetInterface("IPP_BAS", "IPP_BAS_I_PlevenTTUniversity").
++SetInterface("IPP_BAS", "IPP_BAS_I_NodeID14").
++SetInterface("IPP_BAS", "IPP_BAS_I_AcademyTTofTTSciences").
++SetInterface("IPP_BAS", "IPP_BAS_I_TechnicalTTUni").
++SetInterface("IPP_BAS", "IPP_BAS_I_PlovdivTTUni").
++SetInterface("IPP_BAS", "IPP_BAS_I_NodeID1").
++SetInterface("IPP_BAS", "IPP_BAS_I_TodosTTKableshkovTTUni").
+
++SetNode("Min_TTEducation").
++SetAdminDist("Min_TTEducation", "static", 1).
++SetAdminDist("Min_TTEducation", "bgp", 2).
++SetAdminDist("Min_TTEducation", "ospf", 3).
++SetInterface("Min_TTEducation", "Min_TTEducation_I_SofiaTTUni_").
+
++SetNode("TodosTTKableshkovTTUni").
++SetAdminDist("TodosTTKableshkovTTUni", "static", 1).
++SetAdminDist("TodosTTKableshkovTTUni", "bgp", 2).
++SetAdminDist("TodosTTKableshkovTTUni", "ospf", 3).
++SetInterface("TodosTTKableshkovTTUni", "TodosTTKableshkovTTUni_I_SofiaTTUni_").
++SetInterface("TodosTTKableshkovTTUni", "TodosTTKableshkovTTUni_I_IPP_BAS").
+
++SetNode("Agriculture").
++SetAdminDist("Agriculture", "static", 1).
++SetAdminDist("Agriculture", "bgp", 2).
++SetAdminDist("Agriculture", "ospf", 3).
++SetInterface("Agriculture", "Agriculture_I_PlovdivTTUni").
+
++SetLink("MedicalTTcollegeTTofTTSofia_I_MedicalTTUniTTSofia", "MedicalTTUniTTSofia_I_MedicalTTcollegeTTofTTSofia").
++SetLink("VarnaTTTechTTUni_I_UniTTofTTEconomics", "UniTTofTTEconomics_I_VarnaTTTechTTUni").
++SetLink("NodeID15_I_PlevenTTUniversity", "PlevenTTUniversity_I_NodeID15").
++SetLink("NodeID15_I_NMU", "NMU_I_NodeID15").
++SetLink("AcademyTTofTTSciences_I_IPP_BAS", "IPP_BAS_I_AcademyTTofTTSciences").
++SetLink("PlovdivTTUni_I_UniTTofTTEconomics", "UniTTofTTEconomics_I_PlovdivTTUni").
++SetLink("PlovdivTTUni_I_Agriculture", "Agriculture_I_PlovdivTTUni").
++SetLink("PlovdivTTUni_I_TechnicalTTUni_", "TechnicalTTUni__I_PlovdivTTUni").
++SetLink("PlovdivTTUni_I_IPP_BAS", "IPP_BAS_I_PlovdivTTUni").
++SetLink("MedicalTTUniTTPublicTTHealth_I_SofiaTTUni_", "SofiaTTUni__I_MedicalTTUniTTPublicTTHealth").
++SetLink("RuseTTUni__I_MilitaryTTUni", "MilitaryTTUni_I_RuseTTUni_").
++SetLink("RuseTTUni__I_VasilTTLevskiTTUni", "VasilTTLevskiTTUni_I_RuseTTUni_").
++SetLink("MedicalTTUni_TTPharmacy_I_SofiaTTUni_", "SofiaTTUni__I_MedicalTTUni_TTPharmacy").
++SetLink("South_WestTTUni_I_NodeID14", "NodeID14_I_South_WestTTUni").
++SetLink("CivilTTEngineering_I_NodeID1", "NodeID1_I_CivilTTEngineering").
++SetLink("PlevenTTUniversity_I_MilitaryTTUni", "MilitaryTTUni_I_PlevenTTUniversity").
++SetLink("PlevenTTUniversity_I_IPP_BAS", "IPP_BAS_I_PlevenTTUniversity").
++SetLink("NodeID14_I_IPP_BAS", "IPP_BAS_I_NodeID14").
++SetLink("EconomyTTUni__I_TechnicalTTUni", "TechnicalTTUni_I_EconomyTTUni_").
++SetLink("EconomyTTUni__I_SofiaTTUniversity", "SofiaTTUniversity_I_EconomyTTUni_").
++SetLink("VasilTTLevskiTTUni_I_UniTTofTTEconomics", "UniTTofTTEconomics_I_VasilTTLevskiTTUni").
++SetLink("VasilTTLevskiTTUni_I_ShumenTTUniversity", "ShumenTTUniversity_I_VasilTTLevskiTTUni").
++SetLink("TechnicalTTUni_I_IPP_BAS", "IPP_BAS_I_TechnicalTTUni").
++SetLink("NodeID1_I_HigherTTAttestationTTCommission", "HigherTTAttestationTTCommission_I_NodeID1").
++SetLink("NodeID1_I_Telecom_TTandTTPost", "Telecom_TTandTTPost_I_NodeID1").
++SetLink("NodeID1_I_IPP_BAS", "IPP_BAS_I_NodeID1").
++SetLink("MilitaryTTUni_I_VelikoTTUni", "VelikoTTUni_I_MilitaryTTUni").
++SetLink("MilitaryTTUni_I_GabrovoTTUni", "GabrovoTTUni_I_MilitaryTTUni").
++SetLink("MilitaryTTUni_I_NodeID23", "NodeID23_I_MilitaryTTUni").
++SetLink("UniTTofTTEconomics_I_NavalTTAcademy", "NavalTTAcademy_I_UniTTofTTEconomics").
++SetLink("GEANT_I_IPP_BAS", "IPP_BAS_I_GEANT").
++SetLink("AcademyTTofTTEconomics_I_NodeID23", "NodeID23_I_AcademyTTofTTEconomics").
++SetLink("SofiaTTUni__I_MedicalTTUniTTSofia", "MedicalTTUniTTSofia_I_SofiaTTUni_").
++SetLink("SofiaTTUni__I_Min_TTEducation", "Min_TTEducation_I_SofiaTTUni_").
++SetLink("SofiaTTUni__I_TodosTTKableshkovTTUni", "TodosTTKableshkovTTUni_I_SofiaTTUni_").
++SetLink("SofiaTTUniversity_I_MedicalTTUniTTSofia", "MedicalTTUniTTSofia_I_SofiaTTUniversity").
++SetLink("BGTTInternet_I_IPP_BAS", "IPP_BAS_I_BGTTInternet").
++SetLink("IPP_BAS_I_TodosTTKableshkovTTUni", "TodosTTKableshkovTTUni_I_IPP_BAS").
+
+
++SetNetwork("CivilTTEngineering", "N_CivilTTEngineering").
++SetBGPAnnouncement("CivilTTEngineering", "N_CivilTTEngineering", "NBGP_CivilTTEngineering", "1;2;3", 3).
++SetNetwork("Agriculture", "N_Agriculture").
++SetBGPAnnouncement("Agriculture", "N_Agriculture", "NBGP_Agriculture", "1;2;3", 3).
++SetNetwork("MilitaryTTUni", "N_MilitaryTTUni").
++SetBGPAnnouncement("MilitaryTTUni", "N_MilitaryTTUni", "NBGP_MilitaryTTUni", "1;2;3", 3).
++SetNetwork("VelikoTTUni", "N_VelikoTTUni").
++SetBGPAnnouncement("VelikoTTUni", "N_VelikoTTUni", "NBGP_VelikoTTUni", "1;2;3", 3).
++SetNetwork("TodosTTKableshkovTTUni", "N_TodosTTKableshkovTTUni").
++SetBGPAnnouncement("TodosTTKableshkovTTUni", "N_TodosTTKableshkovTTUni", "NBGP_TodosTTKableshkovTTUni", "1;2;3", 3).
++SetNetwork("NodeID15", "N_NodeID15").
++SetBGPAnnouncement("NodeID15", "N_NodeID15", "NBGP_NodeID15", "1;2;3", 3).
++SetNetwork("NodeID1", "N_NodeID1").
++SetBGPAnnouncement("NodeID1", "N_NodeID1", "NBGP_NodeID1", "1;2;3", 3).
++SetNetwork("Min_TTEducation", "N_Min_TTEducation").
++SetBGPAnnouncement("Min_TTEducation", "N_Min_TTEducation", "NBGP_Min_TTEducation", "1;2;3", 3).
++SetNetwork("SofiaTTUni_", "N_SofiaTTUni_").
++SetBGPAnnouncement("SofiaTTUni_", "N_SofiaTTUni_", "NBGP_SofiaTTUni_", "1;2;3", 3).
++SetNetwork("PlevenTTUniversity", "N_PlevenTTUniversity").
++SetBGPAnnouncement("PlevenTTUniversity", "N_PlevenTTUniversity", "NBGP_PlevenTTUniversity", "1;2;3", 3).

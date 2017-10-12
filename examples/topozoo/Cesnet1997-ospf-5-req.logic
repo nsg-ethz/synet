@@ -1,0 +1,66 @@
+
++Fwd("N_Olomouc", "Ostrava", "Olomouc", "ospf").
++Fwd("N_Olomouc", "Pardubice", "NodeID2", "ospf").
++Fwd("N_Olomouc", "NodeID2", "Praha", "ospf").
++Fwd("N_Olomouc", "Praha", "NodeID1", "ospf").
++Fwd("N_Olomouc", "NodeID1", "NodeID0", "ospf").
++Fwd("N_Olomouc", "NodeID0", "Olomouc", "ospf").
++Fwd("N_Olomouc", "Plzen", "Praha", "ospf").
++Fwd("N_Olomouc", "Liberec", "Praha", "ospf").
++Fwd("N_Olomouc", "TEN_34", "Praha", "ospf").
++Fwd("N_Olomouc", "HradecTTKralove", "NodeID2", "ospf").
++Fwd("N_Olomouc", "CeskeTTBudejovice", "NodeID1", "ospf").
++Fwd("N_Olomouc", "Brno", "NodeID0", "ospf").
+
++Fwd("N_Praha", "Ostrava", "Olomouc", "ospf").
++Fwd("N_Praha", "Olomouc", "NodeID0", "ospf").
++Fwd("N_Praha", "NodeID0", "NodeID1", "ospf").
++Fwd("N_Praha", "NodeID1", "Praha", "ospf").
++Fwd("N_Praha", "Pardubice", "NodeID2", "ospf").
++Fwd("N_Praha", "NodeID2", "Praha", "ospf").
++Fwd("N_Praha", "Plzen", "Praha", "ospf").
++Fwd("N_Praha", "Liberec", "Praha", "ospf").
++Fwd("N_Praha", "TEN_34", "Praha", "ospf").
++Fwd("N_Praha", "HradecTTKralove", "NodeID2", "ospf").
++Fwd("N_Praha", "CeskeTTBudejovice", "NodeID1", "ospf").
++Fwd("N_Praha", "Brno", "NodeID0", "ospf").
+
++Fwd("N_Ostrava", "Pardubice", "NodeID2", "ospf").
++Fwd("N_Ostrava", "NodeID2", "Praha", "ospf").
++Fwd("N_Ostrava", "Praha", "NodeID1", "ospf").
++Fwd("N_Ostrava", "NodeID1", "NodeID0", "ospf").
++Fwd("N_Ostrava", "NodeID0", "Olomouc", "ospf").
++Fwd("N_Ostrava", "Olomouc", "Ostrava", "ospf").
++Fwd("N_Ostrava", "Plzen", "Praha", "ospf").
++Fwd("N_Ostrava", "Liberec", "Praha", "ospf").
++Fwd("N_Ostrava", "TEN_34", "Praha", "ospf").
++Fwd("N_Ostrava", "HradecTTKralove", "NodeID2", "ospf").
++Fwd("N_Ostrava", "CeskeTTBudejovice", "NodeID1", "ospf").
++Fwd("N_Ostrava", "Brno", "NodeID0", "ospf").
+
++Fwd("N_TEN_34", "Ostrava", "Olomouc", "ospf").
++Fwd("N_TEN_34", "Olomouc", "NodeID0", "ospf").
++Fwd("N_TEN_34", "NodeID0", "NodeID1", "ospf").
++Fwd("N_TEN_34", "NodeID1", "Praha", "ospf").
++Fwd("N_TEN_34", "Praha", "TEN_34", "ospf").
++Fwd("N_TEN_34", "Pardubice", "NodeID2", "ospf").
++Fwd("N_TEN_34", "NodeID2", "Praha", "ospf").
++Fwd("N_TEN_34", "Plzen", "Praha", "ospf").
++Fwd("N_TEN_34", "Liberec", "Praha", "ospf").
++Fwd("N_TEN_34", "HradecTTKralove", "NodeID2", "ospf").
++Fwd("N_TEN_34", "CeskeTTBudejovice", "NodeID1", "ospf").
++Fwd("N_TEN_34", "Brno", "NodeID0", "ospf").
+
++Fwd("N_Plzen", "Ostrava", "Olomouc", "ospf").
++Fwd("N_Plzen", "Olomouc", "NodeID0", "ospf").
++Fwd("N_Plzen", "NodeID0", "NodeID1", "ospf").
++Fwd("N_Plzen", "NodeID1", "Praha", "ospf").
++Fwd("N_Plzen", "Praha", "Plzen", "ospf").
++Fwd("N_Plzen", "Pardubice", "NodeID2", "ospf").
++Fwd("N_Plzen", "NodeID2", "Praha", "ospf").
++Fwd("N_Plzen", "Liberec", "Praha", "ospf").
++Fwd("N_Plzen", "TEN_34", "Praha", "ospf").
++Fwd("N_Plzen", "HradecTTKralove", "NodeID2", "ospf").
++Fwd("N_Plzen", "CeskeTTBudejovice", "NodeID1", "ospf").
++Fwd("N_Plzen", "Brno", "NodeID0", "ospf").
+

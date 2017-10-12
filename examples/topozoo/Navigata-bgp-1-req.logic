@@ -1,0 +1,26 @@
+
++Fwd("N_Calgary", "Toronto", "Saskatoon", "ospf").
++Fwd("NBGP_Calgary", "Toronto", "Saskatoon", "bgp").
++Fwd("N_Calgary", "Saskatoon", "Calgary", "ospf").
++Fwd("NBGP_Calgary", "Saskatoon", "Calgary", "bgp").
++Fwd("N_Calgary", "Regina", "Calgary", "ospf").
++Fwd("NBGP_Calgary", "Regina", "Calgary", "bgp").
++Fwd("N_Calgary", "LosTTAngeles", "Vancouver", "ospf").
++Fwd("NBGP_Calgary", "LosTTAngeles", "Vancouver", "bgp").
++Fwd("N_Calgary", "Vancouver", "Saskatoon", "ospf").
++Fwd("NBGP_Calgary", "Vancouver", "Saskatoon", "bgp").
++Fwd("N_Calgary", "NewTTYork", "Toronto", "ospf").
++Fwd("NBGP_Calgary", "NewTTYork", "Toronto", "bgp").
++Fwd("N_Calgary", "Edmonton", "Calgary", "ospf").
++Fwd("NBGP_Calgary", "Edmonton", "Calgary", "bgp").
++Fwd("N_Calgary", "Victoria", "Vancouver", "ospf").
++Fwd("NBGP_Calgary", "Victoria", "Vancouver", "bgp").
++Fwd("N_Calgary", "Winnipeg", "Regina", "ospf").
++Fwd("NBGP_Calgary", "Winnipeg", "Regina", "bgp").
++Fwd("N_Calgary", "Halifax", "Toronto", "ospf").
++Fwd("NBGP_Calgary", "Halifax", "Toronto", "bgp").
++Fwd("N_Calgary", "Seattle", "Vancouver", "ospf").
++Fwd("NBGP_Calgary", "Seattle", "Vancouver", "bgp").
++Fwd("N_Calgary", "Montreal", "Toronto", "ospf").
++Fwd("NBGP_Calgary", "Montreal", "Toronto", "bgp").
+

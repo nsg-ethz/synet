@@ -1,0 +1,14 @@
+
++Fwd("N_GEANT2", "Tartu", "Jogeva", "ospf").
++Fwd("N_GEANT2", "Jogeva", "Paide", "ospf").
++Fwd("N_GEANT2", "Paide", "Tallinn", "ospf").
++Fwd("N_GEANT2", "Tallinn", "GEANT2", "ospf").
++Fwd("N_GEANT2", "Rakvere", "Tallinn", "ospf").
++Fwd("N_GEANT2", "Narva", "Tallinn", "ospf").
++Fwd("N_GEANT2", "Voru", "Tartu", "ospf").
++Fwd("N_GEANT2", "Viljandi", "Tallinn", "ospf").
++Fwd("N_GEANT2", "Kuressaare", "Tallinn", "ospf").
++Fwd("N_GEANT2", "Turi", "Paide", "ospf").
++Fwd("N_GEANT2", "Parnu", "Tallinn", "ospf").
++Fwd("N_GEANT2", "Haapsald", "Tallinn", "ospf").
+

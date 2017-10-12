@@ -1,0 +1,27 @@
+
++Fwd("N_Kokkola", "Turku", "Rauma", "static").
++Fwd("N_Kokkola", "Rauma", "Pori", "static").
++Fwd("N_Kokkola", "Pori", "Seinajoki", "static").
++Fwd("N_Kokkola", "Seinajoki", "Vaasa", "static").
++Fwd("N_Kokkola", "Vaasa", "Kokkola", "static").
++Fwd("N_Kokkola", "Rovaniemi", "Haukipudas", "static").
++Fwd("N_Kokkola", "Haukipudas", "Oulu", "static").
++Fwd("N_Kokkola", "Oulu", "Kokkola", "static").
++Fwd("N_Kokkola", "Espoo", "Salo", "static").
++Fwd("N_Kokkola", "Salo", "Turku", "static").
++Fwd("N_Kokkola", "Tampere", "Jyvaskyla", "static").
++Fwd("N_Kokkola", "Jyvaskyla", "Mikkeli", "static").
++Fwd("N_Kokkola", "Mikkeli", "Koupio", "static").
++Fwd("N_Kokkola", "Koupio", "Ristijavi", "static").
++Fwd("N_Kokkola", "Ristijavi", "Oulu", "static").
++Fwd("N_Kokkola", "Hameenlinna", "Tampere", "static").
++Fwd("N_Kokkola", "Kouvola", "Mikkeli", "static").
++Fwd("N_Kokkola", "Joensuu", "Koupio", "static").
++Fwd("N_Kokkola", "Kotka", "Kouvola", "static").
++Fwd("N_Kokkola", "Helsinki", "Espoo", "static").
++Fwd("N_Kokkola", "NORDU", "Helsinki", "static").
++Fwd("N_Kokkola", "NORDUID14", "Espoo", "static").
++Fwd("N_Kokkola", "Lappeenranta", "Joensuu", "static").
++Fwd("N_Kokkola", "Lahti", "Kouvola", "static").
++Fwd("N_Kokkola", "Sodankyla", "Rovaniemi", "static").
+

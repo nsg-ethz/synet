@@ -1,0 +1,161 @@
++SetNode("RESTENA").
++SetAdminDist("RESTENA", "static", 1).
++SetAdminDist("RESTENA", "bgp", 2).
++SetAdminDist("RESTENA", "ospf", 3).
++SetInterface("RESTENA", "RESTENA_I_Bettembourg").
++SetInterface("RESTENA", "RESTENA_I_BCE").
++SetInterface("RESTENA", "RESTENA_I_ADSLTT_viaTTEPT_").
++SetInterface("RESTENA", "RESTENA_I_CCRN").
++SetInterface("RESTENA", "RESTENA_I_Walferdange").
++SetInterface("RESTENA", "RESTENA_I_Luxembourg").
++SetInterface("RESTENA", "RESTENA_I_Diekirch").
+
++SetNode("Rollingergrund").
++SetAdminDist("Rollingergrund", "static", 1).
++SetAdminDist("Rollingergrund", "bgp", 2).
++SetAdminDist("Rollingergrund", "ospf", 3).
++SetInterface("Rollingergrund", "Rollingergrund_I_CampusTTGeesseknaeppchen").
+
++SetNode("Bettembourg").
++SetAdminDist("Bettembourg", "static", 1).
++SetAdminDist("Bettembourg", "bgp", 2).
++SetAdminDist("Bettembourg", "ospf", 3).
++SetInterface("Bettembourg", "Bettembourg_I_RESTENA").
++SetInterface("Bettembourg", "Bettembourg_I_Esch_sur_Alzette").
+
++SetNode("UNI_iu").
++SetAdminDist("UNI_iu", "static", 1).
++SetAdminDist("UNI_iu", "bgp", 2).
++SetAdminDist("UNI_iu", "ospf", 3).
++SetInterface("UNI_iu", "UNI_iu_I_Limpertsberg").
++SetInterface("UNI_iu", "UNI_iu_I_CampusTTGeesseknaeppchen").
+
++SetNode("BCE").
++SetAdminDist("BCE", "static", 1).
++SetAdminDist("BCE", "bgp", 2).
++SetAdminDist("BCE", "ospf", 3).
++SetInterface("BCE", "BCE_I_Ettelbruck").
++SetInterface("BCE", "BCE_I_GEANTTTParisTT_FR_").
++SetInterface("BCE", "BCE_I_InternetTTviaTTBruxellesTT_BE_").
++SetInterface("BCE", "BCE_I_Limpertsberg").
++SetInterface("BCE", "BCE_I_ADSLTT_viaTTTango_").
++SetInterface("BCE", "BCE_I_GEANTTTFrankfurtTT_DE_").
++SetInterface("BCE", "BCE_I_RESTENA").
+
++SetNode("CampusTTGeesseknaeppchen").
++SetAdminDist("CampusTTGeesseknaeppchen", "static", 1).
++SetAdminDist("CampusTTGeesseknaeppchen", "bgp", 2).
++SetAdminDist("CampusTTGeesseknaeppchen", "ospf", 3).
++SetInterface("CampusTTGeesseknaeppchen", "CampusTTGeesseknaeppchen_I_UNI_iu").
++SetInterface("CampusTTGeesseknaeppchen", "CampusTTGeesseknaeppchen_I_Luxembourg").
++SetInterface("CampusTTGeesseknaeppchen", "CampusTTGeesseknaeppchen_I_Esch_sur_Alzette").
++SetInterface("CampusTTGeesseknaeppchen", "CampusTTGeesseknaeppchen_I_Rollingergrund").
+
++SetNode("GEANTTTParisTT_FR_").
++SetAdminDist("GEANTTTParisTT_FR_", "static", 1).
++SetAdminDist("GEANTTTParisTT_FR_", "bgp", 2).
++SetAdminDist("GEANTTTParisTT_FR_", "ospf", 3).
++SetInterface("GEANTTTParisTT_FR_", "GEANTTTParisTT_FR__I_BCE").
+
++SetNode("ADSLTT_viaTTEPT_").
++SetAdminDist("ADSLTT_viaTTEPT_", "static", 1).
++SetAdminDist("ADSLTT_viaTTEPT_", "bgp", 2).
++SetAdminDist("ADSLTT_viaTTEPT_", "ospf", 3).
++SetInterface("ADSLTT_viaTTEPT_", "ADSLTT_viaTTEPT__I_RESTENA").
+
++SetNode("Luxembourg").
++SetAdminDist("Luxembourg", "static", 1).
++SetAdminDist("Luxembourg", "bgp", 2).
++SetAdminDist("Luxembourg", "ospf", 3).
++SetInterface("Luxembourg", "Luxembourg_I_CampusTTGeesseknaeppchen").
++SetInterface("Luxembourg", "Luxembourg_I_RESTENA").
+
++SetNode("France").
++SetAdminDist("France", "static", 1).
++SetAdminDist("France", "bgp", 2).
++SetAdminDist("France", "ospf", 3).
++SetInterface("France", "France_I_Esch_sur_Alzette").
+
++SetNode("Limpertsberg").
++SetAdminDist("Limpertsberg", "static", 1).
++SetAdminDist("Limpertsberg", "bgp", 2).
++SetAdminDist("Limpertsberg", "ospf", 3).
++SetInterface("Limpertsberg", "Limpertsberg_I_UNI_iu").
++SetInterface("Limpertsberg", "Limpertsberg_I_BCE").
+
++SetNode("Walferdange").
++SetAdminDist("Walferdange", "static", 1).
++SetAdminDist("Walferdange", "bgp", 2).
++SetAdminDist("Walferdange", "ospf", 3).
++SetInterface("Walferdange", "Walferdange_I_RESTENA").
+
++SetNode("ADSLTT_viaTTTango_").
++SetAdminDist("ADSLTT_viaTTTango_", "static", 1).
++SetAdminDist("ADSLTT_viaTTTango_", "bgp", 2).
++SetAdminDist("ADSLTT_viaTTTango_", "ospf", 3).
++SetInterface("ADSLTT_viaTTTango_", "ADSLTT_viaTTTango__I_BCE").
+
++SetNode("CCRN").
++SetAdminDist("CCRN", "static", 1).
++SetAdminDist("CCRN", "bgp", 2).
++SetAdminDist("CCRN", "ospf", 3).
++SetInterface("CCRN", "CCRN_I_RESTENA").
+
++SetNode("InternetTTviaTTBruxellesTT_BE_").
++SetAdminDist("InternetTTviaTTBruxellesTT_BE_", "static", 1).
++SetAdminDist("InternetTTviaTTBruxellesTT_BE_", "bgp", 2).
++SetAdminDist("InternetTTviaTTBruxellesTT_BE_", "ospf", 3).
++SetInterface("InternetTTviaTTBruxellesTT_BE_", "InternetTTviaTTBruxellesTT_BE__I_BCE").
+
++SetNode("GEANTTTFrankfurtTT_DE_").
++SetAdminDist("GEANTTTFrankfurtTT_DE_", "static", 1).
++SetAdminDist("GEANTTTFrankfurtTT_DE_", "bgp", 2).
++SetAdminDist("GEANTTTFrankfurtTT_DE_", "ospf", 3).
++SetInterface("GEANTTTFrankfurtTT_DE_", "GEANTTTFrankfurtTT_DE__I_BCE").
+
++SetNode("Diekirch").
++SetAdminDist("Diekirch", "static", 1).
++SetAdminDist("Diekirch", "bgp", 2).
++SetAdminDist("Diekirch", "ospf", 3).
++SetInterface("Diekirch", "Diekirch_I_RESTENA").
++SetInterface("Diekirch", "Diekirch_I_Ettelbruck").
+
++SetNode("Ettelbruck").
++SetAdminDist("Ettelbruck", "static", 1).
++SetAdminDist("Ettelbruck", "bgp", 2).
++SetAdminDist("Ettelbruck", "ospf", 3).
++SetInterface("Ettelbruck", "Ettelbruck_I_BCE").
++SetInterface("Ettelbruck", "Ettelbruck_I_Diekirch").
+
++SetNode("Esch_sur_Alzette").
++SetAdminDist("Esch_sur_Alzette", "static", 1).
++SetAdminDist("Esch_sur_Alzette", "bgp", 2).
++SetAdminDist("Esch_sur_Alzette", "ospf", 3).
++SetInterface("Esch_sur_Alzette", "Esch_sur_Alzette_I_CampusTTGeesseknaeppchen").
++SetInterface("Esch_sur_Alzette", "Esch_sur_Alzette_I_Bettembourg").
++SetInterface("Esch_sur_Alzette", "Esch_sur_Alzette_I_France").
+
++SetLink("RESTENA_I_Bettembourg", "Bettembourg_I_RESTENA").
++SetLink("RESTENA_I_BCE", "BCE_I_RESTENA").
++SetLink("RESTENA_I_ADSLTT_viaTTEPT_", "ADSLTT_viaTTEPT__I_RESTENA").
++SetLink("RESTENA_I_CCRN", "CCRN_I_RESTENA").
++SetLink("RESTENA_I_Walferdange", "Walferdange_I_RESTENA").
++SetLink("RESTENA_I_Luxembourg", "Luxembourg_I_RESTENA").
++SetLink("RESTENA_I_Diekirch", "Diekirch_I_RESTENA").
++SetLink("Rollingergrund_I_CampusTTGeesseknaeppchen", "CampusTTGeesseknaeppchen_I_Rollingergrund").
++SetLink("Bettembourg_I_Esch_sur_Alzette", "Esch_sur_Alzette_I_Bettembourg").
++SetLink("UNI_iu_I_Limpertsberg", "Limpertsberg_I_UNI_iu").
++SetLink("UNI_iu_I_CampusTTGeesseknaeppchen", "CampusTTGeesseknaeppchen_I_UNI_iu").
++SetLink("BCE_I_Ettelbruck", "Ettelbruck_I_BCE").
++SetLink("BCE_I_GEANTTTParisTT_FR_", "GEANTTTParisTT_FR__I_BCE").
++SetLink("BCE_I_InternetTTviaTTBruxellesTT_BE_", "InternetTTviaTTBruxellesTT_BE__I_BCE").
++SetLink("BCE_I_Limpertsberg", "Limpertsberg_I_BCE").
++SetLink("BCE_I_ADSLTT_viaTTTango_", "ADSLTT_viaTTTango__I_BCE").
++SetLink("BCE_I_GEANTTTFrankfurtTT_DE_", "GEANTTTFrankfurtTT_DE__I_BCE").
++SetLink("CampusTTGeesseknaeppchen_I_Luxembourg", "Luxembourg_I_CampusTTGeesseknaeppchen").
++SetLink("CampusTTGeesseknaeppchen_I_Esch_sur_Alzette", "Esch_sur_Alzette_I_CampusTTGeesseknaeppchen").
++SetLink("France_I_Esch_sur_Alzette", "Esch_sur_Alzette_I_France").
++SetLink("Diekirch_I_Ettelbruck", "Ettelbruck_I_Diekirch").
+
+
++SetNetwork("CampusTTGeesseknaeppchen", "N_CampusTTGeesseknaeppchen").

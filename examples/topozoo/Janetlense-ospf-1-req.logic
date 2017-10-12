@@ -1,0 +1,21 @@
+
++Fwd("N_Brighton", "AldershotTTAggregation", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "SouthamptonTTCore", "Brighton", "ospf").
++Fwd("N_Brighton", "Surrey", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "Portsmouth", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "HamptonTTParkTTColocation", "BrightonTTAggregation", "ospf").
++Fwd("N_Brighton", "BrightonTTAggregation", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "Winchester", "AldershotTTCore", "ospf").
++Fwd("N_Brighton", "AldershotTTCore", "Brighton", "ospf").
++Fwd("N_Brighton", "Chichester", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "Southampton", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "Wymering", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "Sussex", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "BereTTRegisTTColocation", "BournemouthTTAggregation", "ospf").
++Fwd("N_Brighton", "BournemouthTTAggregation", "AldershotTTCore", "ospf").
++Fwd("N_Brighton", "Bournemouth", "AldershotTTCore", "ospf").
++Fwd("N_Brighton", "IsleTTofTTWightTTColocation", "Wymering", "ospf").
++Fwd("N_Brighton", "Solent", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "SouthamptonTTAggregation", "SouthamptonTTCore", "ospf").
++Fwd("N_Brighton", "JanetTTSJ5", "SouthamptonTTCore", "ospf").
+

@@ -1,0 +1,20 @@
+
++Fwd("N_Greensboro", "Houston", "Dallas", "ospf").
++Fwd("N_Greensboro", "Dallas", "Austell", "ospf").
++Fwd("N_Greensboro", "Austell", "Greensboro", "ospf").
++Fwd("N_Greensboro", "DownersTTGrove", "WillowTTSprings", "ospf").
++Fwd("N_Greensboro", "WillowTTSprings", "Washington_TTDC", "ospf").
++Fwd("N_Greensboro", "Washington_TTDC", "Greensboro", "ospf").
++Fwd("N_Greensboro", "NewTTYork", "Charlton", "ospf").
++Fwd("N_Greensboro", "Charlton", "Washington_TTDC", "ospf").
++Fwd("N_Greensboro", "SanTTFrancisco", "Denver", "ospf").
++Fwd("N_Greensboro", "Denver", "WillowTTSprings", "ospf").
++Fwd("N_Greensboro", "PompanoTTBeach", "Austell", "ospf").
++Fwd("N_Greensboro", "Sacramento", "SanTTFrancisco", "ospf").
++Fwd("N_Greensboro", "NorthTTRoyalton", "DownersTTGrove", "ospf").
++Fwd("N_Greensboro", "WestTTOrange", "Washington_TTDC", "ospf").
++Fwd("N_Greensboro", "LosTTAngeles", "Rialto", "ospf").
++Fwd("N_Greensboro", "Rialto", "Dallas", "ospf").
++Fwd("N_Greensboro", "Seattle", "Denver", "ospf").
++Fwd("N_Greensboro", "Independence", "WillowTTSprings", "ospf").
+

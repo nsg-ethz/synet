@@ -1,0 +1,31 @@
+
++Fwd("N_Denver", "LosTTAngeles", "PaloTTAlto", "static").
++Fwd("N_Denver", "PaloTTAlto", "Denver", "static").
++Fwd("N_Denver", "Chicago", "Denver", "static").
++Fwd("N_Denver", "Atlanta", "LosTTAngeles", "static").
++Fwd("N_Denver", "Vienna", "PaloTTAlto", "static").
+
++Fwd("N_Vienna", "LosTTAngeles", "PaloTTAlto", "static").
++Fwd("N_Vienna", "PaloTTAlto", "Vienna", "static").
++Fwd("N_Vienna", "Chicago", "Vienna", "static").
++Fwd("N_Vienna", "Denver", "PaloTTAlto", "static").
++Fwd("N_Vienna", "Atlanta", "Vienna", "static").
+
++Fwd("N_Atlanta", "LosTTAngeles", "Atlanta", "static").
++Fwd("N_Atlanta", "Chicago", "Vienna", "static").
++Fwd("N_Atlanta", "Vienna", "Atlanta", "static").
++Fwd("N_Atlanta", "PaloTTAlto", "LosTTAngeles", "static").
++Fwd("N_Atlanta", "Denver", "PaloTTAlto", "static").
+
++Fwd("N_PaloTTAlto", "LosTTAngeles", "PaloTTAlto", "static").
++Fwd("N_PaloTTAlto", "Chicago", "Denver", "static").
++Fwd("N_PaloTTAlto", "Denver", "PaloTTAlto", "static").
++Fwd("N_PaloTTAlto", "Atlanta", "LosTTAngeles", "static").
++Fwd("N_PaloTTAlto", "Vienna", "PaloTTAlto", "static").
+
++Fwd("N_LosTTAngeles", "Chicago", "Vienna", "static").
++Fwd("N_LosTTAngeles", "Vienna", "Atlanta", "static").
++Fwd("N_LosTTAngeles", "Atlanta", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "PaloTTAlto", "LosTTAngeles", "static").
++Fwd("N_LosTTAngeles", "Denver", "PaloTTAlto", "static").
+

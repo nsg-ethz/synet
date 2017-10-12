@@ -1,0 +1,24 @@
+
++Fwd("N_NodeID11", "NewTTYork", "Chicago", "ospf").
++Fwd("N_NodeID11", "Chicago", "NodeID11", "ospf").
++Fwd("N_NodeID11", "Paris", "London", "ospf").
++Fwd("N_NodeID11", "London", "NewTTYork", "ospf").
++Fwd("N_NodeID11", "WashingtonTTCDC", "London", "ospf").
++Fwd("N_NodeID11", "Philadelphia", "NewTTYork", "ospf").
++Fwd("N_NodeID11", "Denver", "NodeID11", "ospf").
++Fwd("N_NodeID11", "Phoenix", "Houston", "ospf").
++Fwd("N_NodeID11", "Houston", "Dallas", "ospf").
++Fwd("N_NodeID11", "Dallas", "NodeID11", "ospf").
++Fwd("N_NodeID11", "Atlanta", "Houston", "ospf").
++Fwd("N_NodeID11", "Tokyo", "SanTTFrancisco", "ospf").
++Fwd("N_NodeID11", "SanTTFrancisco", "Denver", "ospf").
++Fwd("N_NodeID11", "Miami", "Houston", "ospf").
++Fwd("N_NodeID11", "Austin", "Dallas", "ospf").
++Fwd("N_NodeID11", "Baltimore", "WashingtonTTCDC", "ospf").
++Fwd("N_NodeID11", "Frankfurt", "Paris", "ospf").
++Fwd("N_NodeID11", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("N_NodeID11", "Boston", "NewTTYork", "ospf").
++Fwd("N_NodeID11", "Amsterdam", "NewTTYork", "ospf").
++Fwd("N_NodeID11", "Portland", "SanTTFrancisco", "ospf").
++Fwd("N_NodeID11", "Seattle", "Chicago", "ospf").
+

@@ -1,0 +1,25 @@
+
++Fwd("N_Clermont_Ferrand", "Orleans", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Paris", "Lyon", "static").
++Fwd("N_Clermont_Ferrand", "Lyon", "Clermont_Ferrand", "static").
++Fwd("N_Clermont_Ferrand", "Strasbourg", "Nancy", "static").
++Fwd("N_Clermont_Ferrand", "Nancy", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Lille", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Poiters", "Orleans", "static").
++Fwd("N_Clermont_Ferrand", "Compiegne", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Reims", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Limoges", "Poiters", "static").
++Fwd("N_Clermont_Ferrand", "Grenoble", "Lyon", "static").
++Fwd("N_Clermont_Ferrand", "Caen", "Rouen", "static").
++Fwd("N_Clermont_Ferrand", "Rouen", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Nantes", "Rennes", "static").
++Fwd("N_Clermont_Ferrand", "Rennes", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Dijon", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Nice_Sophia", "Marseille", "static").
++Fwd("N_Clermont_Ferrand", "Marseille", "Lyon", "static").
++Fwd("N_Clermont_Ferrand", "Bordeaux", "Poiters", "static").
++Fwd("N_Clermont_Ferrand", "Toulouse", "Paris", "static").
++Fwd("N_Clermont_Ferrand", "Montpellier", "Toulouse", "static").
++Fwd("N_Clermont_Ferrand", "Besancon", "Dijon", "static").
++Fwd("N_Clermont_Ferrand", "Corte", "Nice_Sophia", "static").
+

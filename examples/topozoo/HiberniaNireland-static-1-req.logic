@@ -1,0 +1,19 @@
+
++Fwd("N_Coleraine", "Europe", "Southport", "static").
++Fwd("N_Coleraine", "Southport", "NodeID12", "static").
++Fwd("N_Coleraine", "NodeID12", "Coleraine", "static").
++Fwd("N_Coleraine", "Omagh", "Strabane", "static").
++Fwd("N_Coleraine", "Strabane", "Londonderry", "static").
++Fwd("N_Coleraine", "Londonderry", "Coleraine", "static").
++Fwd("N_Coleraine", "Belfast", "Ballymena", "static").
++Fwd("N_Coleraine", "Ballymena", "Coleraine", "static").
++Fwd("N_Coleraine", "Castleblayney", "Monaghan", "static").
++Fwd("N_Coleraine", "Monaghan", "Armagh", "static").
++Fwd("N_Coleraine", "Armagh", "Omagh", "static").
++Fwd("N_Coleraine", "Drogheda", "Dublin", "static").
++Fwd("N_Coleraine", "Dublin", "Southport", "static").
++Fwd("N_Coleraine", "NorthTTAmerica", "NodeID12", "static").
++Fwd("N_Coleraine", "Dundalk", "Drogheda", "static").
++Fwd("N_Coleraine", "Letterkenny", "Londonderry", "static").
++Fwd("N_Coleraine", "Portadown", "Armagh", "static").
+

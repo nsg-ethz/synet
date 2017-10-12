@@ -1,0 +1,15 @@
+
++Fwd("N_Helsinki", "Kaunas", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Stockholm", "Helsinki", "ospf").
++Fwd("N_Helsinki", "USA", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Oslo", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Riga", "Stockholm", "ospf").
++Fwd("N_Helsinki", "TEN_34", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Lviv", "Stockholm", "ospf").
++Fwd("N_Helsinki", "StTTPetersburg", "Helsinki", "ospf").
++Fwd("N_Helsinki", "Petrozavodsk", "Helsinki", "ospf").
++Fwd("N_Helsinki", "Reykjavik", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Tallinn", "Helsinki", "ospf").
++Fwd("N_Helsinki", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_Helsinki", "Warsaw", "Stockholm", "ospf").
+

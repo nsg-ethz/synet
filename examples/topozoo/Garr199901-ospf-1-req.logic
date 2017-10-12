@@ -1,0 +1,17 @@
+
++Fwd("N_FI", "Pv", "MI", "ospf").
++Fwd("N_FI", "MI", "BO", "ospf").
++Fwd("N_FI", "BO", "FI", "ospf").
++Fwd("N_FI", "BA", "NA", "ospf").
++Fwd("N_FI", "NA", "RM", "ospf").
++Fwd("N_FI", "RM", "BO", "ospf").
++Fwd("N_FI", "CA", "RM", "ospf").
++Fwd("N_FI", "TS", "MI", "ospf").
++Fwd("N_FI", "AQ", "RM", "ospf").
++Fwd("N_FI", "TO", "MI", "ospf").
++Fwd("N_FI", "GE", "MI", "ospf").
++Fwd("N_FI", "PA", "NA", "ospf").
++Fwd("N_FI", "PD", "BO", "ospf").
++Fwd("N_FI", "PI", "BO", "ospf").
++Fwd("N_FI", "CT", "NA", "ospf").
+

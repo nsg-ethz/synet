@@ -1,0 +1,151 @@
++SetNode("Keldhaholt").
++SetAdminDist("Keldhaholt", "static", 1).
++SetAdminDist("Keldhaholt", "bgp", 2).
++SetAdminDist("Keldhaholt", "ospf", 3).
++SetInterface("Keldhaholt", "Keldhaholt_I_Ofanleiti").
++SetInterface("Keldhaholt", "Keldhaholt_I_Grensas").
++SetInterface("Keldhaholt", "Keldhaholt_I_Hvanneyri").
+
++SetNode("Bifrost").
++SetAdminDist("Bifrost", "static", 1).
++SetAdminDist("Bifrost", "bgp", 2).
++SetAdminDist("Bifrost", "ospf", 3).
++SetInterface("Bifrost", "Bifrost_I_Hvanneyri").
+
++SetNode("DST_Akureyri").
++SetAdminDist("DST_Akureyri", "static", 1).
++SetAdminDist("DST_Akureyri", "bgp", 2).
++SetAdminDist("DST_Akureyri", "ospf", 3).
++SetInterface("DST_Akureyri", "DST_Akureyri_I_Solborg_Akureyri").
++SetInterface("DST_Akureyri", "DST_Akureyri_I_FSA_Akureyri").
++SetInterface("DST_Akureyri", "DST_Akureyri_I_Fjarski").
+
++SetNode("RIX").
++SetAdminDist("RIX", "static", 1).
++SetAdminDist("RIX", "bgp", 2).
++SetAdminDist("RIX", "ospf", 3).
++SetInterface("RIX", "RIX_I_Taeknigarour").
+
++SetNode("Sturlugata").
++SetAdminDist("Sturlugata", "static", 1).
++SetAdminDist("Sturlugata", "bgp", 2).
++SetAdminDist("Sturlugata", "ospf", 3).
++SetInterface("Sturlugata", "Sturlugata_I_Taeknigarour").
++SetInterface("Sturlugata", "Sturlugata_I_NORDUnet").
++SetInterface("Sturlugata", "Sturlugata_I_Hringbraut").
+
++SetNode("Grensas").
++SetAdminDist("Grensas", "static", 1).
++SetAdminDist("Grensas", "bgp", 2).
++SetAdminDist("Grensas", "ospf", 3).
++SetInterface("Grensas", "Grensas_I_Keldhaholt").
++SetInterface("Grensas", "Grensas_I_Skulagata").
+
++SetNode("Skulagata").
++SetAdminDist("Skulagata", "static", 1).
++SetAdminDist("Skulagata", "bgp", 2).
++SetAdminDist("Skulagata", "ospf", 3).
++SetInterface("Skulagata", "Skulagata_I_Taeknigarour").
++SetInterface("Skulagata", "Skulagata_I_Grensas").
+
++SetNode("NORDUnet").
++SetAdminDist("NORDUnet", "static", 1).
++SetAdminDist("NORDUnet", "bgp", 2).
++SetAdminDist("NORDUnet", "ospf", 3).
++SetInterface("NORDUnet", "NORDUnet_I_Taeknigarour").
++SetInterface("NORDUnet", "NORDUnet_I_Sturlugata").
+
++SetNode("FSA_Akureyri").
++SetAdminDist("FSA_Akureyri", "static", 1).
++SetAdminDist("FSA_Akureyri", "bgp", 2).
++SetAdminDist("FSA_Akureyri", "ospf", 3).
++SetInterface("FSA_Akureyri", "FSA_Akureyri_I_DST_Akureyri").
++SetInterface("FSA_Akureyri", "FSA_Akureyri_I_Solborg_Akureyri").
+
++SetNode("Ofanleiti").
++SetAdminDist("Ofanleiti", "static", 1).
++SetAdminDist("Ofanleiti", "bgp", 2).
++SetAdminDist("Ofanleiti", "ospf", 3).
++SetInterface("Ofanleiti", "Ofanleiti_I_Keldhaholt").
++SetInterface("Ofanleiti", "Ofanleiti_I_Bustaoavegur").
+
++SetNode("Solborg_Akureyri").
++SetAdminDist("Solborg_Akureyri", "static", 1).
++SetAdminDist("Solborg_Akureyri", "bgp", 2).
++SetAdminDist("Solborg_Akureyri", "ospf", 3).
++SetInterface("Solborg_Akureyri", "Solborg_Akureyri_I_DST_Akureyri").
++SetInterface("Solborg_Akureyri", "Solborg_Akureyri_I_FSA_Akureyri").
+
++SetNode("Fjarski").
++SetAdminDist("Fjarski", "static", 1).
++SetAdminDist("Fjarski", "bgp", 2).
++SetAdminDist("Fjarski", "ospf", 3).
++SetInterface("Fjarski", "Fjarski_I_Taeknigarour").
++SetInterface("Fjarski", "Fjarski_I_DST_Akureyri").
+
++SetNode("Taeknigarour").
++SetAdminDist("Taeknigarour", "static", 1).
++SetAdminDist("Taeknigarour", "bgp", 2).
++SetAdminDist("Taeknigarour", "ospf", 3).
++SetInterface("Taeknigarour", "Taeknigarour_I_Skulagata").
++SetInterface("Taeknigarour", "Taeknigarour_I_RIX").
++SetInterface("Taeknigarour", "Taeknigarour_I_NORDUnet").
++SetInterface("Taeknigarour", "Taeknigarour_I_Sturlugata").
++SetInterface("Taeknigarour", "Taeknigarour_I_Fjarski").
+
++SetNode("Hvanneyri").
++SetAdminDist("Hvanneyri", "static", 1).
++SetAdminDist("Hvanneyri", "bgp", 2).
++SetAdminDist("Hvanneyri", "ospf", 3).
++SetInterface("Hvanneyri", "Hvanneyri_I_Keldhaholt").
++SetInterface("Hvanneyri", "Hvanneyri_I_Bifrost").
+
++SetNode("Bustaoavegur").
++SetAdminDist("Bustaoavegur", "static", 1).
++SetAdminDist("Bustaoavegur", "bgp", 2).
++SetAdminDist("Bustaoavegur", "ospf", 3).
++SetInterface("Bustaoavegur", "Bustaoavegur_I_Ofanleiti").
++SetInterface("Bustaoavegur", "Bustaoavegur_I_Hringbraut").
+
++SetNode("Hringbraut").
++SetAdminDist("Hringbraut", "static", 1).
++SetAdminDist("Hringbraut", "bgp", 2).
++SetAdminDist("Hringbraut", "ospf", 3).
++SetInterface("Hringbraut", "Hringbraut_I_Bustaoavegur").
++SetInterface("Hringbraut", "Hringbraut_I_Sturlugata").
+
++SetLink("Keldhaholt_I_Ofanleiti", "Ofanleiti_I_Keldhaholt").
++SetLink("Keldhaholt_I_Grensas", "Grensas_I_Keldhaholt").
++SetLink("Keldhaholt_I_Hvanneyri", "Hvanneyri_I_Keldhaholt").
++SetLink("Bifrost_I_Hvanneyri", "Hvanneyri_I_Bifrost").
++SetLink("DST_Akureyri_I_Solborg_Akureyri", "Solborg_Akureyri_I_DST_Akureyri").
++SetLink("DST_Akureyri_I_FSA_Akureyri", "FSA_Akureyri_I_DST_Akureyri").
++SetLink("DST_Akureyri_I_Fjarski", "Fjarski_I_DST_Akureyri").
++SetLink("RIX_I_Taeknigarour", "Taeknigarour_I_RIX").
++SetLink("Sturlugata_I_Taeknigarour", "Taeknigarour_I_Sturlugata").
++SetLink("Sturlugata_I_NORDUnet", "NORDUnet_I_Sturlugata").
++SetLink("Sturlugata_I_Hringbraut", "Hringbraut_I_Sturlugata").
++SetLink("Grensas_I_Skulagata", "Skulagata_I_Grensas").
++SetLink("Skulagata_I_Taeknigarour", "Taeknigarour_I_Skulagata").
++SetLink("NORDUnet_I_Taeknigarour", "Taeknigarour_I_NORDUnet").
++SetLink("FSA_Akureyri_I_Solborg_Akureyri", "Solborg_Akureyri_I_FSA_Akureyri").
++SetLink("Ofanleiti_I_Bustaoavegur", "Bustaoavegur_I_Ofanleiti").
++SetLink("Fjarski_I_Taeknigarour", "Taeknigarour_I_Fjarski").
++SetLink("Bustaoavegur_I_Hringbraut", "Hringbraut_I_Bustaoavegur").
+
+
++SetNetwork("Skulagata", "N_Skulagata").
++SetNetwork("Ofanleiti", "N_Ofanleiti").
++SetNetwork("Taeknigarour", "N_Taeknigarour").
++SetNetwork("Hringbraut", "N_Hringbraut").
++SetNetwork("Bifrost", "N_Bifrost").
++SetNetwork("Hvanneyri", "N_Hvanneyri").
++SetNetwork("DST_Akureyri", "N_DST_Akureyri").
++SetNetwork("Solborg_Akureyri", "N_Solborg_Akureyri").
++SetNetwork("Fjarski", "N_Fjarski").
++SetNetwork("Keldhaholt", "N_Keldhaholt").
++SetNetwork("FSA_Akureyri", "N_FSA_Akureyri").
++SetNetwork("NORDUnet", "N_NORDUnet").
++SetNetwork("Bustaoavegur", "N_Bustaoavegur").
++SetNetwork("Sturlugata", "N_Sturlugata").
++SetNetwork("RIX", "N_RIX").

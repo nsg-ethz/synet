@@ -1,0 +1,584 @@
++SetNode("AMPATH").
++SetAdminDist("AMPATH", "static", 1).
++SetAdminDist("AMPATH", "bgp", 2).
++SetAdminDist("AMPATH", "ospf", 3).
++SetInterface("AMPATH", "AMPATH_I_SDSC").
+
++SetNode("Abilene").
++SetAdminDist("Abilene", "static", 1).
++SetAdminDist("Abilene", "bgp", 2).
++SetAdminDist("Abilene", "ospf", 3).
++SetInterface("Abilene", "Abilene_I_SUNN").
+
++SetNode("Starlight").
++SetAdminDist("Starlight", "static", 1).
++SetAdminDist("Starlight", "bgp", 2).
++SetAdminDist("Starlight", "ospf", 3).
++SetInterface("Starlight", "Starlight_I_CHI_SL").
+
++SetNode("SInet").
++SetAdminDist("SInet", "static", 1).
++SetAdminDist("SInet", "bgp", 2).
++SetAdminDist("SInet", "ospf", 3).
++SetInterface("SInet", "SInet_I_NEWY").
+
++SetNode("ELPA").
++SetAdminDist("ELPA", "static", 1).
++SetAdminDist("ELPA", "bgp", 2).
++SetAdminDist("ELPA", "ospf", 3).
++SetInterface("ELPA", "ELPA_I_ALBU").
++SetInterface("ELPA", "ELPA_I_SNV1").
++SetInterface("ELPA", "ELPA_I_ATLA").
+
++SetNode("DOE").
++SetAdminDist("DOE", "static", 1).
++SetAdminDist("DOE", "bgp", 2).
++SetAdminDist("DOE", "ospf", 3).
++SetInterface("DOE", "DOE_I_WASH").
+
++SetNode("WASH").
++SetAdminDist("WASH", "static", 1).
++SetAdminDist("WASH", "bgp", 2).
++SetAdminDist("WASH", "ospf", 3).
++SetInterface("WASH", "WASH_I_NodeID21").
++SetInterface("WASH", "WASH_I_NodeID20").
++SetInterface("WASH", "WASH_I_JLAB").
++SetInterface("WASH", "WASH_I_MAXGPOP").
++SetInterface("WASH", "WASH_I_NETL").
++SetInterface("WASH", "WASH_I_DOE").
++SetInterface("WASH", "WASH_I_Equinix").
++SetInterface("WASH", "WASH_I_NEWY").
++SetInterface("WASH", "WASH_I_CHIC").
++SetInterface("WASH", "WASH_I_NNSA").
++SetInterface("WASH", "WASH_I_DOETTGTN").
++SetInterface("WASH", "WASH_I_ATLA").
+
++SetNode("NEWY").
++SetAdminDist("NEWY", "static", 1).
++SetAdminDist("NEWY", "bgp", 2).
++SetAdminDist("NEWY", "ospf", 3).
++SetInterface("NEWY", "NEWY_I_NETL").
++SetInterface("NEWY", "NEWY_I_GEANT").
++SetInterface("NEWY", "NEWY_I_CERN").
++SetInterface("NEWY", "NEWY_I_PSFC").
++SetInterface("NEWY", "NEWY_I_SInet").
++SetInterface("NEWY", "NEWY_I_WASH").
++SetInterface("NEWY", "NEWY_I_BNL").
++SetInterface("NEWY", "NEWY_I_PPPL").
+
++SetNode("PNNL").
++SetAdminDist("PNNL", "static", 1).
++SetAdminDist("PNNL", "bgp", 2).
++SetAdminDist("PNNL", "ospf", 3).
++SetInterface("PNNL", "PNNL_I_LIGO").
++SetInterface("PNNL", "PNNL_I_SEA").
+
++SetNode("DOETTGTN").
++SetAdminDist("DOETTGTN", "static", 1).
++SetAdminDist("DOETTGTN", "bgp", 2).
++SetAdminDist("DOETTGTN", "ospf", 3).
++SetInterface("DOETTGTN", "DOETTGTN_I_WASH").
+
++SetNode("CHIC").
++SetAdminDist("CHIC", "static", 1).
++SetAdminDist("CHIC", "bgp", 2).
++SetAdminDist("CHIC", "ospf", 3).
++SetInterface("CHIC", "CHIC_I_SaltTTLake").
++SetInterface("CHIC", "CHIC_I_ORNL").
++SetInterface("CHIC", "CHIC_I_Denv").
++SetInterface("CHIC", "CHIC_I_EquinixID35").
++SetInterface("CHIC", "CHIC_I_WASH").
++SetInterface("CHIC", "CHIC_I_NETL").
++SetInterface("CHIC", "CHIC_I_CHI_SL").
++SetInterface("CHIC", "CHIC_I_NASH").
++SetInterface("CHIC", "CHIC_I_AMES").
+
++SetNode("AMES").
++SetAdminDist("AMES", "static", 1).
++SetAdminDist("AMES", "bgp", 2).
++SetAdminDist("AMES", "ospf", 3).
++SetInterface("AMES", "AMES_I_ANL").
++SetInterface("AMES", "AMES_I_CHIC").
+
++SetNode("Pacwave").
++SetAdminDist("Pacwave", "static", 1).
++SetAdminDist("Pacwave", "bgp", 2).
++SetAdminDist("Pacwave", "ospf", 3).
++SetInterface("Pacwave", "Pacwave_I_SEA").
+
++SetNode("CHI_SL").
++SetAdminDist("CHI_SL", "static", 1).
++SetAdminDist("CHI_SL", "bgp", 2).
++SetAdminDist("CHI_SL", "ospf", 3).
++SetInterface("CHI_SL", "CHI_SL_I_CERN").
++SetInterface("CHI_SL", "CHI_SL_I_CHIC").
++SetInterface("CHI_SL", "CHI_SL_I_Starlight").
++SetInterface("CHI_SL", "CHI_SL_I_FNAL").
+
++SetNode("YUCCATTMT").
++SetAdminDist("YUCCATTMT", "static", 1).
++SetAdminDist("YUCCATTMT", "bgp", 2).
++SetAdminDist("YUCCATTMT", "ospf", 3).
++SetInterface("YUCCATTMT", "YUCCATTMT_I_SUNN").
+
++SetNode("SaltTTLake").
++SetAdminDist("SaltTTLake", "static", 1).
++SetAdminDist("SaltTTLake", "bgp", 2).
++SetAdminDist("SaltTTLake", "ospf", 3).
++SetInterface("SaltTTLake", "SaltTTLake_I_CHIC").
++SetInterface("SaltTTLake", "SaltTTLake_I_Denv").
++SetInterface("SaltTTLake", "SaltTTLake_I_SEA").
+
++SetNode("CERN").
++SetAdminDist("CERN", "static", 1).
++SetAdminDist("CERN", "bgp", 2).
++SetAdminDist("CERN", "ospf", 3).
++SetInterface("CERN", "CERN_I_NEWY").
++SetInterface("CERN", "CERN_I_CHI_SL").
+
++SetNode("ORAU").
++SetAdminDist("ORAU", "static", 1).
++SetAdminDist("ORAU", "bgp", 2).
++SetAdminDist("ORAU", "ospf", 3).
++SetInterface("ORAU", "ORAU_I_ORNL").
+
++SetNode("NodeID38").
++SetAdminDist("NodeID38", "static", 1).
++SetAdminDist("NodeID38", "bgp", 2).
++SetAdminDist("NodeID38", "ospf", 3).
++SetInterface("NodeID38", "NodeID38_I_NodeID41").
++SetInterface("NodeID38", "NodeID38_I_NodeID39").
+
++SetNode("NodeID39").
++SetAdminDist("NodeID39", "static", 1).
++SetAdminDist("NodeID39", "bgp", 2).
++SetAdminDist("NodeID39", "ospf", 3).
++SetInterface("NodeID39", "NodeID39_I_NodeID38").
++SetInterface("NodeID39", "NodeID39_I_NodeID17").
+
++SetNode("BECHTEL_NV").
++SetAdminDist("BECHTEL_NV", "static", 1).
++SetAdminDist("BECHTEL_NV", "bgp", 2).
++SetAdminDist("BECHTEL_NV", "ospf", 3).
++SetInterface("BECHTEL_NV", "BECHTEL_NV_I_SUNN").
+
++SetNode("LANL").
++SetAdminDist("LANL", "static", 1).
++SetAdminDist("LANL", "bgp", 2).
++SetAdminDist("LANL", "ospf", 3).
++SetInterface("LANL", "LANL_I_ALBU").
+
++SetNode("SNV1").
++SetAdminDist("SNV1", "static", 1).
++SetAdminDist("SNV1", "bgp", 2).
++SetAdminDist("SNV1", "ospf", 3).
++SetInterface("SNV1", "SNV1_I_NodeID25").
++SetInterface("SNV1", "SNV1_I_AUID14").
++SetInterface("SNV1", "SNV1_I_SDSC").
++SetInterface("SNV1", "SNV1_I_ELPA").
++SetInterface("SNV1", "SNV1_I_NASA").
++SetInterface("SNV1", "SNV1_I_SUNN").
++SetInterface("SNV1", "SNV1_I_SEA").
+
++SetNode("MAXGPOP").
++SetAdminDist("MAXGPOP", "static", 1).
++SetAdminDist("MAXGPOP", "bgp", 2).
++SetAdminDist("MAXGPOP", "ospf", 3).
++SetInterface("MAXGPOP", "MAXGPOP_I_WASH").
+
++SetNode("NodeID16").
++SetAdminDist("NodeID16", "static", 1).
++SetAdminDist("NodeID16", "bgp", 2).
++SetAdminDist("NodeID16", "ospf", 3).
++SetInterface("NodeID16", "NodeID16_I_NodeID25").
++SetInterface("NodeID16", "NodeID16_I_NodeID17").
+
++SetNode("NodeID17").
++SetAdminDist("NodeID17", "static", 1).
++SetAdminDist("NodeID17", "bgp", 2).
++SetAdminDist("NodeID17", "ospf", 3).
++SetInterface("NodeID17", "NodeID17_I_NodeID16").
++SetInterface("NodeID17", "NodeID17_I_NodeID39").
+
++SetNode("ORNL").
++SetAdminDist("ORNL", "static", 1).
++SetAdminDist("ORNL", "bgp", 2).
++SetAdminDist("ORNL", "ospf", 3).
++SetInterface("ORNL", "ORNL_I_ORAU").
++SetInterface("ORNL", "ORNL_I_OSTI").
++SetInterface("ORNL", "ORNL_I_NOAA").
++SetInterface("ORNL", "ORNL_I_CHIC").
++SetInterface("ORNL", "ORNL_I_ARM").
++SetInterface("ORNL", "ORNL_I_ATLA").
+
++SetNode("ATLA").
++SetAdminDist("ATLA", "static", 1).
++SetAdminDist("ATLA", "bgp", 2).
++SetAdminDist("ATLA", "ospf", 3).
++SetInterface("ATLA", "ATLA_I_ORNL").
++SetInterface("ATLA", "ATLA_I_WASH").
++SetInterface("ATLA", "ATLA_I_NASH").
++SetInterface("ATLA", "ATLA_I_ELPA").
++SetInterface("ATLA", "ATLA_I_SRS").
+
++SetNode("SEA").
++SetAdminDist("SEA", "static", 1).
++SetAdminDist("SEA", "bgp", 2).
++SetAdminDist("SEA", "ospf", 3).
++SetInterface("SEA", "SEA_I_SaltTTLake").
++SetInterface("SEA", "SEA_I_SNV1").
++SetInterface("SEA", "SEA_I_INL").
++SetInterface("SEA", "SEA_I_SUNN").
++SetInterface("SEA", "SEA_I_PNNL").
++SetInterface("SEA", "SEA_I_AU").
++SetInterface("SEA", "SEA_I_Pacwave").
+
++SetNode("FNAL").
++SetAdminDist("FNAL", "static", 1).
++SetAdminDist("FNAL", "bgp", 2).
++SetAdminDist("FNAL", "ospf", 3).
++SetInterface("FNAL", "FNAL_I_ANL").
++SetInterface("FNAL", "FNAL_I_CHI_SL").
+
++SetNode("NNSA").
++SetAdminDist("NNSA", "static", 1).
++SetAdminDist("NNSA", "bgp", 2).
++SetAdminDist("NNSA", "ospf", 3).
++SetInterface("NNSA", "NNSA_I_WASH").
+
++SetNode("PANTEX").
++SetAdminDist("PANTEX", "static", 1).
++SetAdminDist("PANTEX", "bgp", 2).
++SetAdminDist("PANTEX", "ospf", 3).
++SetInterface("PANTEX", "PANTEX_I_DOE_A").
+
++SetNode("DOE_A").
++SetAdminDist("DOE_A", "static", 1).
++SetAdminDist("DOE_A", "bgp", 2).
++SetAdminDist("DOE_A", "ospf", 3).
++SetInterface("DOE_A", "DOE_A_I_PANTEX").
++SetInterface("DOE_A", "DOE_A_I_ALBU").
++SetInterface("DOE_A", "DOE_A_I_SNLA").
+
++SetNode("EquinixID35").
++SetAdminDist("EquinixID35", "static", 1).
++SetAdminDist("EquinixID35", "bgp", 2).
++SetAdminDist("EquinixID35", "ospf", 3).
++SetInterface("EquinixID35", "EquinixID35_I_CHIC").
+
++SetNode("SNLA").
++SetAdminDist("SNLA", "static", 1).
++SetAdminDist("SNLA", "bgp", 2).
++SetAdminDist("SNLA", "ospf", 3).
++SetInterface("SNLA", "SNLA_I_AlliedTTSignal").
++SetInterface("SNLA", "SNLA_I_ALBU").
++SetInterface("SNLA", "SNLA_I_DOE_A").
+
++SetNode("AlliedTTSignal").
++SetAdminDist("AlliedTTSignal", "static", 1).
++SetAdminDist("AlliedTTSignal", "bgp", 2).
++SetAdminDist("AlliedTTSignal", "ospf", 3).
++SetInterface("AlliedTTSignal", "AlliedTTSignal_I_SNLA").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_NEWY").
+
++SetNode("OSTI").
++SetAdminDist("OSTI", "static", 1).
++SetAdminDist("OSTI", "bgp", 2).
++SetAdminDist("OSTI", "ospf", 3).
++SetInterface("OSTI", "OSTI_I_ORNL").
+
++SetNode("PSFC").
++SetAdminDist("PSFC", "static", 1).
++SetAdminDist("PSFC", "bgp", 2).
++SetAdminDist("PSFC", "ospf", 3).
++SetInterface("PSFC", "PSFC_I_NEWY").
+
++SetNode("LIGO").
++SetAdminDist("LIGO", "static", 1).
++SetAdminDist("LIGO", "bgp", 2).
++SetAdminDist("LIGO", "ospf", 3).
++SetInterface("LIGO", "LIGO_I_PNNL").
+
++SetNode("Denv").
++SetAdminDist("Denv", "static", 1).
++SetAdminDist("Denv", "bgp", 2).
++SetAdminDist("Denv", "ospf", 3).
++SetInterface("Denv", "Denv_I_CHIC").
++SetInterface("Denv", "Denv_I_SaltTTLake").
++SetInterface("Denv", "Denv_I_ALBU").
+
++SetNode("NETL").
++SetAdminDist("NETL", "static", 1).
++SetAdminDist("NETL", "bgp", 2).
++SetAdminDist("NETL", "ospf", 3).
++SetInterface("NETL", "NETL_I_CHIC").
++SetInterface("NETL", "NETL_I_NEWY").
++SetInterface("NETL", "NETL_I_WASH").
+
++SetNode("NREL").
++SetAdminDist("NREL", "static", 1).
++SetAdminDist("NREL", "bgp", 2).
++SetAdminDist("NREL", "ospf", 3).
++SetInterface("NREL", "NREL_I_ALBU").
+
++SetNode("SRS").
++SetAdminDist("SRS", "static", 1).
++SetAdminDist("SRS", "bgp", 2).
++SetAdminDist("SRS", "ospf", 3).
++SetInterface("SRS", "SRS_I_ATLA").
+
++SetNode("Equinix").
++SetAdminDist("Equinix", "static", 1).
++SetAdminDist("Equinix", "bgp", 2).
++SetAdminDist("Equinix", "ospf", 3).
++SetInterface("Equinix", "Equinix_I_WASH").
+
++SetNode("SUNN").
++SetAdminDist("SUNN", "static", 1).
++SetAdminDist("SUNN", "bgp", 2).
++SetAdminDist("SUNN", "ospf", 3).
++SetInterface("SUNN", "SUNN_I_NodeID43").
++SetInterface("SUNN", "SUNN_I_NodeID42").
++SetInterface("SUNN", "SUNN_I_Abilene").
++SetInterface("SUNN", "SUNN_I_BECHTEL_NV").
++SetInterface("SUNN", "SUNN_I_NodeID40").
++SetInterface("SUNN", "SUNN_I_SNV1").
++SetInterface("SUNN", "SUNN_I_SEA").
++SetInterface("SUNN", "SUNN_I_YUCCATTMT").
++SetInterface("SUNN", "SUNN_I_PacificWave").
+
++SetNode("GA").
++SetAdminDist("GA", "static", 1).
++SetAdminDist("GA", "bgp", 2).
++SetAdminDist("GA", "ospf", 3).
++SetInterface("GA", "GA_I_SDSC").
+
++SetNode("BNL").
++SetAdminDist("BNL", "static", 1).
++SetAdminDist("BNL", "bgp", 2).
++SetAdminDist("BNL", "ospf", 3).
++SetInterface("BNL", "BNL_I_NEWY").
+
++SetNode("PPPL").
++SetAdminDist("PPPL", "static", 1).
++SetAdminDist("PPPL", "bgp", 2).
++SetAdminDist("PPPL", "ospf", 3).
++SetInterface("PPPL", "PPPL_I_NEWY").
+
++SetNode("NodeID43").
++SetAdminDist("NodeID43", "static", 1).
++SetAdminDist("NodeID43", "bgp", 2).
++SetAdminDist("NodeID43", "ospf", 3).
++SetInterface("NodeID43", "NodeID43_I_SUNN").
+
++SetNode("NOAA").
++SetAdminDist("NOAA", "static", 1).
++SetAdminDist("NOAA", "bgp", 2).
++SetAdminDist("NOAA", "ospf", 3).
++SetInterface("NOAA", "NOAA_I_ORNL").
+
++SetNode("ALBU").
++SetAdminDist("ALBU", "static", 1).
++SetAdminDist("ALBU", "bgp", 2).
++SetAdminDist("ALBU", "ospf", 3).
++SetInterface("ALBU", "ALBU_I_LANL").
++SetInterface("ALBU", "ALBU_I_Denv").
++SetInterface("ALBU", "ALBU_I_ELPA").
++SetInterface("ALBU", "ALBU_I_NREL").
++SetInterface("ALBU", "ALBU_I_SNLA").
++SetInterface("ALBU", "ALBU_I_DOE_A").
+
++SetNode("PacificWave").
++SetAdminDist("PacificWave", "static", 1).
++SetAdminDist("PacificWave", "bgp", 2).
++SetAdminDist("PacificWave", "ospf", 3).
++SetInterface("PacificWave", "PacificWave_I_SUNN").
+
++SetNode("NodeID21").
++SetAdminDist("NodeID21", "static", 1).
++SetAdminDist("NodeID21", "bgp", 2).
++SetAdminDist("NodeID21", "ospf", 3).
++SetInterface("NodeID21", "NodeID21_I_WASH").
+
++SetNode("NodeID20").
++SetAdminDist("NodeID20", "static", 1).
++SetAdminDist("NodeID20", "bgp", 2).
++SetAdminDist("NodeID20", "ospf", 3).
++SetInterface("NodeID20", "NodeID20_I_WASH").
+
++SetNode("JLAB").
++SetAdminDist("JLAB", "static", 1).
++SetAdminDist("JLAB", "bgp", 2).
++SetAdminDist("JLAB", "ospf", 3).
++SetInterface("JLAB", "JLAB_I_WASH").
+
++SetNode("NodeID25").
++SetAdminDist("NodeID25", "static", 1).
++SetAdminDist("NodeID25", "bgp", 2).
++SetAdminDist("NodeID25", "ospf", 3).
++SetInterface("NodeID25", "NodeID25_I_SNV1").
++SetInterface("NodeID25", "NodeID25_I_NodeID16").
+
++SetNode("NodeID42").
++SetAdminDist("NodeID42", "static", 1).
++SetAdminDist("NodeID42", "bgp", 2).
++SetAdminDist("NodeID42", "ospf", 3).
++SetInterface("NodeID42", "NodeID42_I_SUNN").
+
++SetNode("NodeID41").
++SetAdminDist("NodeID41", "static", 1).
++SetAdminDist("NodeID41", "bgp", 2).
++SetAdminDist("NodeID41", "ospf", 3).
++SetInterface("NodeID41", "NodeID41_I_NodeID38").
++SetInterface("NodeID41", "NodeID41_I_NodeID40").
+
++SetNode("NodeID40").
++SetAdminDist("NodeID40", "static", 1).
++SetAdminDist("NodeID40", "bgp", 2).
++SetAdminDist("NodeID40", "ospf", 3).
++SetInterface("NodeID40", "NodeID40_I_SUNN").
++SetInterface("NodeID40", "NodeID40_I_NodeID41").
+
++SetNode("ANL").
++SetAdminDist("ANL", "static", 1).
++SetAdminDist("ANL", "bgp", 2).
++SetAdminDist("ANL", "ospf", 3).
++SetInterface("ANL", "ANL_I_AMES").
++SetInterface("ANL", "ANL_I_FNAL").
+
++SetNode("SDSC").
++SetAdminDist("SDSC", "static", 1).
++SetAdminDist("SDSC", "bgp", 2).
++SetAdminDist("SDSC", "ospf", 3).
++SetInterface("SDSC", "SDSC_I_SNV1").
++SetInterface("SDSC", "SDSC_I_AMPATH").
++SetInterface("SDSC", "SDSC_I_GA").
+
++SetNode("INL").
++SetAdminDist("INL", "static", 1).
++SetAdminDist("INL", "bgp", 2).
++SetAdminDist("INL", "ospf", 3).
++SetInterface("INL", "INL_I_SEA").
+
++SetNode("AUID14").
++SetAdminDist("AUID14", "static", 1).
++SetAdminDist("AUID14", "bgp", 2).
++SetAdminDist("AUID14", "ospf", 3).
++SetInterface("AUID14", "AUID14_I_SNV1").
+
++SetNode("NASA").
++SetAdminDist("NASA", "static", 1).
++SetAdminDist("NASA", "bgp", 2).
++SetAdminDist("NASA", "ospf", 3).
++SetInterface("NASA", "NASA_I_SNV1").
+
++SetNode("AU").
++SetAdminDist("AU", "static", 1).
++SetAdminDist("AU", "bgp", 2).
++SetAdminDist("AU", "ospf", 3).
++SetInterface("AU", "AU_I_SEA").
+
++SetNode("NASH").
++SetAdminDist("NASH", "static", 1).
++SetAdminDist("NASH", "bgp", 2).
++SetAdminDist("NASH", "ospf", 3).
++SetInterface("NASH", "NASH_I_CHIC").
++SetInterface("NASH", "NASH_I_ATLA").
+
++SetNode("ARM").
++SetAdminDist("ARM", "static", 1).
++SetAdminDist("ARM", "bgp", 2).
++SetAdminDist("ARM", "ospf", 3).
++SetInterface("ARM", "ARM_I_ORNL").
+
++SetLink("AMPATH_I_SDSC", "SDSC_I_AMPATH").
++SetLink("Abilene_I_SUNN", "SUNN_I_Abilene").
++SetLink("Starlight_I_CHI_SL", "CHI_SL_I_Starlight").
++SetLink("SInet_I_NEWY", "NEWY_I_SInet").
++SetLink("ELPA_I_ALBU", "ALBU_I_ELPA").
++SetLink("ELPA_I_SNV1", "SNV1_I_ELPA").
++SetLink("ELPA_I_ATLA", "ATLA_I_ELPA").
++SetLink("DOE_I_WASH", "WASH_I_DOE").
++SetLink("WASH_I_NodeID21", "NodeID21_I_WASH").
++SetLink("WASH_I_NodeID20", "NodeID20_I_WASH").
++SetLink("WASH_I_JLAB", "JLAB_I_WASH").
++SetLink("WASH_I_MAXGPOP", "MAXGPOP_I_WASH").
++SetLink("WASH_I_NETL", "NETL_I_WASH").
++SetLink("WASH_I_Equinix", "Equinix_I_WASH").
++SetLink("WASH_I_NEWY", "NEWY_I_WASH").
++SetLink("WASH_I_CHIC", "CHIC_I_WASH").
++SetLink("WASH_I_NNSA", "NNSA_I_WASH").
++SetLink("WASH_I_DOETTGTN", "DOETTGTN_I_WASH").
++SetLink("WASH_I_ATLA", "ATLA_I_WASH").
++SetLink("NEWY_I_NETL", "NETL_I_NEWY").
++SetLink("NEWY_I_GEANT", "GEANT_I_NEWY").
++SetLink("NEWY_I_CERN", "CERN_I_NEWY").
++SetLink("NEWY_I_PSFC", "PSFC_I_NEWY").
++SetLink("NEWY_I_BNL", "BNL_I_NEWY").
++SetLink("NEWY_I_PPPL", "PPPL_I_NEWY").
++SetLink("PNNL_I_LIGO", "LIGO_I_PNNL").
++SetLink("PNNL_I_SEA", "SEA_I_PNNL").
++SetLink("CHIC_I_SaltTTLake", "SaltTTLake_I_CHIC").
++SetLink("CHIC_I_ORNL", "ORNL_I_CHIC").
++SetLink("CHIC_I_Denv", "Denv_I_CHIC").
++SetLink("CHIC_I_EquinixID35", "EquinixID35_I_CHIC").
++SetLink("CHIC_I_NETL", "NETL_I_CHIC").
++SetLink("CHIC_I_CHI_SL", "CHI_SL_I_CHIC").
++SetLink("CHIC_I_NASH", "NASH_I_CHIC").
++SetLink("CHIC_I_AMES", "AMES_I_CHIC").
++SetLink("AMES_I_ANL", "ANL_I_AMES").
++SetLink("Pacwave_I_SEA", "SEA_I_Pacwave").
++SetLink("CHI_SL_I_CERN", "CERN_I_CHI_SL").
++SetLink("CHI_SL_I_FNAL", "FNAL_I_CHI_SL").
++SetLink("YUCCATTMT_I_SUNN", "SUNN_I_YUCCATTMT").
++SetLink("SaltTTLake_I_Denv", "Denv_I_SaltTTLake").
++SetLink("SaltTTLake_I_SEA", "SEA_I_SaltTTLake").
++SetLink("ORAU_I_ORNL", "ORNL_I_ORAU").
++SetLink("NodeID38_I_NodeID41", "NodeID41_I_NodeID38").
++SetLink("NodeID38_I_NodeID39", "NodeID39_I_NodeID38").
++SetLink("NodeID39_I_NodeID17", "NodeID17_I_NodeID39").
++SetLink("BECHTEL_NV_I_SUNN", "SUNN_I_BECHTEL_NV").
++SetLink("LANL_I_ALBU", "ALBU_I_LANL").
++SetLink("SNV1_I_NodeID25", "NodeID25_I_SNV1").
++SetLink("SNV1_I_AUID14", "AUID14_I_SNV1").
++SetLink("SNV1_I_SDSC", "SDSC_I_SNV1").
++SetLink("SNV1_I_NASA", "NASA_I_SNV1").
++SetLink("SNV1_I_SUNN", "SUNN_I_SNV1").
++SetLink("SNV1_I_SEA", "SEA_I_SNV1").
++SetLink("NodeID16_I_NodeID25", "NodeID25_I_NodeID16").
++SetLink("NodeID16_I_NodeID17", "NodeID17_I_NodeID16").
++SetLink("ORNL_I_OSTI", "OSTI_I_ORNL").
++SetLink("ORNL_I_NOAA", "NOAA_I_ORNL").
++SetLink("ORNL_I_ARM", "ARM_I_ORNL").
++SetLink("ORNL_I_ATLA", "ATLA_I_ORNL").
++SetLink("ATLA_I_NASH", "NASH_I_ATLA").
++SetLink("ATLA_I_SRS", "SRS_I_ATLA").
++SetLink("SEA_I_INL", "INL_I_SEA").
++SetLink("SEA_I_SUNN", "SUNN_I_SEA").
++SetLink("SEA_I_AU", "AU_I_SEA").
++SetLink("FNAL_I_ANL", "ANL_I_FNAL").
++SetLink("PANTEX_I_DOE_A", "DOE_A_I_PANTEX").
++SetLink("DOE_A_I_ALBU", "ALBU_I_DOE_A").
++SetLink("DOE_A_I_SNLA", "SNLA_I_DOE_A").
++SetLink("SNLA_I_AlliedTTSignal", "AlliedTTSignal_I_SNLA").
++SetLink("SNLA_I_ALBU", "ALBU_I_SNLA").
++SetLink("Denv_I_ALBU", "ALBU_I_Denv").
++SetLink("NREL_I_ALBU", "ALBU_I_NREL").
++SetLink("SUNN_I_NodeID43", "NodeID43_I_SUNN").
++SetLink("SUNN_I_NodeID42", "NodeID42_I_SUNN").
++SetLink("SUNN_I_NodeID40", "NodeID40_I_SUNN").
++SetLink("SUNN_I_PacificWave", "PacificWave_I_SUNN").
++SetLink("GA_I_SDSC", "SDSC_I_GA").
++SetLink("NodeID41_I_NodeID40", "NodeID40_I_NodeID41").
+
+
++SetNetwork("Denv", "N_Denv").
++SetNetwork("NodeID20", "N_NodeID20").
++SetNetwork("NodeID16", "N_NodeID16").
++SetNetwork("NodeID38", "N_NodeID38").
++SetNetwork("NASH", "N_NASH").

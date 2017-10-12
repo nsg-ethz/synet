@@ -1,0 +1,130 @@
++SetNode("Rockford").
++SetAdminDist("Rockford", "static", 1).
++SetAdminDist("Rockford", "bgp", 2).
++SetAdminDist("Rockford", "ospf", 3).
++SetInterface("Rockford", "Rockford_I_Chicago").
++SetInterface("Rockford", "Rockford_I_Janesville").
+
++SetNode("Madison").
++SetAdminDist("Madison", "static", 1).
++SetAdminDist("Madison", "bgp", 2).
++SetAdminDist("Madison", "ospf", 3).
++SetInterface("Madison", "Madison_I_BeaverTTDam").
++SetInterface("Madison", "Madison_I_CampTTDouglas").
++SetInterface("Madison", "Madison_I_Waukesha").
++SetInterface("Madison", "Madison_I_Janesville").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Rockford").
++SetInterface("Chicago", "Chicago_I_Milwaukee").
+
++SetNode("BeaverTTDam").
++SetAdminDist("BeaverTTDam", "static", 1).
++SetAdminDist("BeaverTTDam", "bgp", 2).
++SetAdminDist("BeaverTTDam", "ospf", 3).
++SetInterface("BeaverTTDam", "BeaverTTDam_I_FonTTDuTTLac").
++SetInterface("BeaverTTDam", "BeaverTTDam_I_Madison").
+
++SetNode("Wausau").
++SetAdminDist("Wausau", "static", 1).
++SetAdminDist("Wausau", "bgp", 2).
++SetAdminDist("Wausau", "ospf", 3).
++SetInterface("Wausau", "Wausau_I_Minneaopolis").
++SetInterface("Wausau", "Wausau_I_GreenTTBay").
+
++SetNode("FonTTDuTTLac").
++SetAdminDist("FonTTDuTTLac", "static", 1).
++SetAdminDist("FonTTDuTTLac", "bgp", 2).
++SetAdminDist("FonTTDuTTLac", "ospf", 3).
++SetInterface("FonTTDuTTLac", "FonTTDuTTLac_I_BeaverTTDam").
++SetInterface("FonTTDuTTLac", "FonTTDuTTLac_I_Oshkosh").
+
++SetNode("Minneaopolis").
++SetAdminDist("Minneaopolis", "static", 1).
++SetAdminDist("Minneaopolis", "bgp", 2).
++SetAdminDist("Minneaopolis", "ospf", 3).
++SetInterface("Minneaopolis", "Minneaopolis_I_Wausau").
++SetInterface("Minneaopolis", "Minneaopolis_I_EauTTClaire").
+
++SetNode("EauTTClaire").
++SetAdminDist("EauTTClaire", "static", 1).
++SetAdminDist("EauTTClaire", "bgp", 2).
++SetAdminDist("EauTTClaire", "ospf", 3).
++SetInterface("EauTTClaire", "EauTTClaire_I_Minneaopolis").
++SetInterface("EauTTClaire", "EauTTClaire_I_CampTTDouglas").
+
++SetNode("GreenTTBay").
++SetAdminDist("GreenTTBay", "static", 1).
++SetAdminDist("GreenTTBay", "bgp", 2).
++SetAdminDist("GreenTTBay", "ospf", 3).
++SetInterface("GreenTTBay", "GreenTTBay_I_Wausau").
++SetInterface("GreenTTBay", "GreenTTBay_I_Appleton").
+
++SetNode("Janesville").
++SetAdminDist("Janesville", "static", 1).
++SetAdminDist("Janesville", "bgp", 2).
++SetAdminDist("Janesville", "ospf", 3).
++SetInterface("Janesville", "Janesville_I_Rockford").
++SetInterface("Janesville", "Janesville_I_Madison").
+
++SetNode("Milwaukee").
++SetAdminDist("Milwaukee", "static", 1).
++SetAdminDist("Milwaukee", "bgp", 2).
++SetAdminDist("Milwaukee", "ospf", 3).
++SetInterface("Milwaukee", "Milwaukee_I_Waukesha").
++SetInterface("Milwaukee", "Milwaukee_I_Chicago").
+
++SetNode("CampTTDouglas").
++SetAdminDist("CampTTDouglas", "static", 1).
++SetAdminDist("CampTTDouglas", "bgp", 2).
++SetAdminDist("CampTTDouglas", "ospf", 3).
++SetInterface("CampTTDouglas", "CampTTDouglas_I_EauTTClaire").
++SetInterface("CampTTDouglas", "CampTTDouglas_I_Madison").
+
++SetNode("Waukesha").
++SetAdminDist("Waukesha", "static", 1).
++SetAdminDist("Waukesha", "bgp", 2).
++SetAdminDist("Waukesha", "ospf", 3).
++SetInterface("Waukesha", "Waukesha_I_Milwaukee").
++SetInterface("Waukesha", "Waukesha_I_Madison").
+
++SetNode("Oshkosh").
++SetAdminDist("Oshkosh", "static", 1).
++SetAdminDist("Oshkosh", "bgp", 2).
++SetAdminDist("Oshkosh", "ospf", 3).
++SetInterface("Oshkosh", "Oshkosh_I_FonTTDuTTLac").
++SetInterface("Oshkosh", "Oshkosh_I_Appleton").
+
++SetNode("Appleton").
++SetAdminDist("Appleton", "static", 1).
++SetAdminDist("Appleton", "bgp", 2).
++SetAdminDist("Appleton", "ospf", 3).
++SetInterface("Appleton", "Appleton_I_GreenTTBay").
++SetInterface("Appleton", "Appleton_I_Oshkosh").
+
++SetLink("Rockford_I_Chicago", "Chicago_I_Rockford").
++SetLink("Rockford_I_Janesville", "Janesville_I_Rockford").
++SetLink("Madison_I_BeaverTTDam", "BeaverTTDam_I_Madison").
++SetLink("Madison_I_CampTTDouglas", "CampTTDouglas_I_Madison").
++SetLink("Madison_I_Waukesha", "Waukesha_I_Madison").
++SetLink("Madison_I_Janesville", "Janesville_I_Madison").
++SetLink("Chicago_I_Milwaukee", "Milwaukee_I_Chicago").
++SetLink("BeaverTTDam_I_FonTTDuTTLac", "FonTTDuTTLac_I_BeaverTTDam").
++SetLink("Wausau_I_Minneaopolis", "Minneaopolis_I_Wausau").
++SetLink("Wausau_I_GreenTTBay", "GreenTTBay_I_Wausau").
++SetLink("FonTTDuTTLac_I_Oshkosh", "Oshkosh_I_FonTTDuTTLac").
++SetLink("Minneaopolis_I_EauTTClaire", "EauTTClaire_I_Minneaopolis").
++SetLink("EauTTClaire_I_CampTTDouglas", "CampTTDouglas_I_EauTTClaire").
++SetLink("GreenTTBay_I_Appleton", "Appleton_I_GreenTTBay").
++SetLink("Milwaukee_I_Waukesha", "Waukesha_I_Milwaukee").
++SetLink("Oshkosh_I_Appleton", "Appleton_I_Oshkosh").
+
+
++SetNetwork("Waukesha", "N_Waukesha").
++SetNetwork("FonTTDuTTLac", "N_FonTTDuTTLac").
++SetNetwork("CampTTDouglas", "N_CampTTDouglas").
++SetNetwork("Chicago", "N_Chicago").
++SetNetwork("BeaverTTDam", "N_BeaverTTDam").

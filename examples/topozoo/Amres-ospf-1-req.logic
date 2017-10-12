@@ -1,0 +1,26 @@
+
++Fwd("N_Beograd", "KosovskaTTMitrovica", "Beograd", "ospf").
++Fwd("N_Beograd", "BosniaTTandTTHerzegovina", "Sabac", "ospf").
++Fwd("N_Beograd", "Sabac", "Beograd", "ospf").
++Fwd("N_Beograd", "Valjevo", "Beograd", "ospf").
++Fwd("N_Beograd", "NoviTTPazar", "Raska", "ospf").
++Fwd("N_Beograd", "Raska", "Kraljevo", "ospf").
++Fwd("N_Beograd", "Kraljevo", "Kragujevac", "ospf").
++Fwd("N_Beograd", "Kragujevac", "VelikaTTPlana", "ospf").
++Fwd("N_Beograd", "VelikaTTPlana", "Beograd", "ospf").
++Fwd("N_Beograd", "Zrenjanin", "NoviTTSad", "ospf").
++Fwd("N_Beograd", "NoviTTSad", "Beograd", "ospf").
++Fwd("N_Beograd", "HUNGARNET", "Subotica", "ospf").
++Fwd("N_Beograd", "Subotica", "NoviTTSad", "ospf").
++Fwd("N_Beograd", "Nis", "Krustevac", "ospf").
++Fwd("N_Beograd", "Krustevac", "Kraljevo", "ospf").
++Fwd("N_Beograd", "Pirot", "Nis", "ospf").
++Fwd("N_Beograd", "Leskovac", "Nis", "ospf").
++Fwd("N_Beograd", "Bor", "Nis", "ospf").
++Fwd("N_Beograd", "Sombor", "NoviTTSad", "ospf").
++Fwd("N_Beograd", "Uzice", "Valjevo", "ospf").
++Fwd("N_Beograd", "TelekomTTSerbia", "Beograd", "ospf").
++Fwd("N_Beograd", "Vranje", "Leskovac", "ospf").
++Fwd("N_Beograd", "Cacak", "Uzice", "ospf").
++Fwd("N_Beograd", "Pancevo", "Beograd", "ospf").
+

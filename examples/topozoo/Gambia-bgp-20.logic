@@ -1,0 +1,266 @@
++SetNode("GamtelTTHouse").
++SetAdminDist("GamtelTTHouse", "static", 1).
++SetAdminDist("GamtelTTHouse", "bgp", 2).
++SetAdminDist("GamtelTTHouse", "ospf", 3).
++SetInterface("GamtelTTHouse", "GamtelTTHouse_I_Banjul").
+
++SetNode("UNDP").
++SetAdminDist("UNDP", "static", 1).
++SetAdminDist("UNDP", "bgp", 2).
++SetAdminDist("UNDP", "ospf", 3).
++SetInterface("UNDP", "UNDP_I_Bakau").
+
++SetNode("GTMIID9").
++SetAdminDist("GTMIID9", "static", 1).
++SetAdminDist("GTMIID9", "bgp", 2).
++SetAdminDist("GTMIID9", "ospf", 3).
++SetInterface("GTMIID9", "GTMIID9_I_Serekunda").
+
++SetNode("Yundum").
++SetAdminDist("Yundum", "static", 1).
++SetAdminDist("Yundum", "bgp", 2).
++SetAdminDist("Yundum", "ospf", 3).
++SetInterface("Yundum", "Yundum_I_Soma").
++SetInterface("Yundum", "Yundum_I_Serekunda").
+
++SetNode("ManskTTGambia").
++SetAdminDist("ManskTTGambia", "static", 1).
++SetAdminDist("ManskTTGambia", "bgp", 2).
++SetAdminDist("ManskTTGambia", "ospf", 3).
++SetInterface("ManskTTGambia", "ManskTTGambia_I_Banjul").
+
++SetNode("MDI").
++SetAdminDist("MDI", "static", 1).
++SetAdminDist("MDI", "bgp", 2).
++SetAdminDist("MDI", "ospf", 3).
++SetInterface("MDI", "MDI_I_Serekunda").
+
++SetNode("GantdTTCenter").
++SetAdminDist("GantdTTCenter", "static", 1).
++SetAdminDist("GantdTTCenter", "bgp", 2).
++SetAdminDist("GantdTTCenter", "ospf", 3).
++SetInterface("GantdTTCenter", "GantdTTCenter_I_Brikama").
+
++SetNode("GTMI").
++SetAdminDist("GTMI", "static", 1).
++SetAdminDist("GTMI", "bgp", 2).
++SetAdminDist("GTMI", "ospf", 3).
++SetInterface("GTMI", "GTMI_I_Serekunda").
+
++SetNode("Brikama").
++SetAdminDist("Brikama", "static", 1).
++SetAdminDist("Brikama", "bgp", 2).
++SetAdminDist("Brikama", "ospf", 3).
++SetInterface("Brikama", "Brikama_I_GantdTTCenter").
++SetInterface("Brikama", "Brikama_I_Serekunda").
+
++SetNode("Kotu").
++SetAdminDist("Kotu", "static", 1).
++SetAdminDist("Kotu", "bgp", 2).
++SetAdminDist("Kotu", "ospf", 3).
++SetInterface("Kotu", "Kotu_I_Serekunda").
+
++SetNode("ActionTTLtd").
++SetAdminDist("ActionTTLtd", "static", 1).
++SetAdminDist("ActionTTLtd", "bgp", 2).
++SetAdminDist("ActionTTLtd", "ospf", 3).
++SetInterface("ActionTTLtd", "ActionTTLtd_I_Serekunda").
+
++SetNode("TeleglobeTTCanada").
++SetAdminDist("TeleglobeTTCanada", "static", 1).
++SetAdminDist("TeleglobeTTCanada", "bgp", 2).
++SetAdminDist("TeleglobeTTCanada", "ospf", 3).
++SetInterface("TeleglobeTTCanada", "TeleglobeTTCanada_I_Intelsat").
+
++SetNode("EarthTTStation").
++SetAdminDist("EarthTTStation", "static", 1).
++SetAdminDist("EarthTTStation", "bgp", 2).
++SetAdminDist("EarthTTStation", "ospf", 3).
++SetInterface("EarthTTStation", "EarthTTStation_I_Abuko").
++SetInterface("EarthTTStation", "EarthTTStation_I_Intelsat").
+
++SetNode("Serekunda").
++SetAdminDist("Serekunda", "static", 1).
++SetAdminDist("Serekunda", "bgp", 2).
++SetAdminDist("Serekunda", "ospf", 3).
++SetInterface("Serekunda", "Serekunda_I_Bakau").
++SetInterface("Serekunda", "Serekunda_I_MDI").
++SetInterface("Serekunda", "Serekunda_I_Banjul").
++SetInterface("Serekunda", "Serekunda_I_GTMI").
++SetInterface("Serekunda", "Serekunda_I_Brikama").
++SetInterface("Serekunda", "Serekunda_I_Kotu").
++SetInterface("Serekunda", "Serekunda_I_ActionTTLtd").
++SetInterface("Serekunda", "Serekunda_I_Abuko").
++SetInterface("Serekunda", "Serekunda_I_GTMIID9").
++SetInterface("Serekunda", "Serekunda_I_UnivTTGambia").
++SetInterface("Serekunda", "Serekunda_I_Yundum").
+
++SetNode("Bakau").
++SetAdminDist("Bakau", "static", 1).
++SetAdminDist("Bakau", "bgp", 2).
++SetAdminDist("Bakau", "ospf", 3).
++SetInterface("Bakau", "Bakau_I_UNDP").
++SetInterface("Bakau", "Bakau_I_MRC").
++SetInterface("Bakau", "Bakau_I_Serekunda").
+
++SetNode("Basse").
++SetAdminDist("Basse", "static", 1).
++SetAdminDist("Basse", "bgp", 2).
++SetAdminDist("Basse", "ospf", 3).
++SetInterface("Basse", "Basse_I_Soma").
++SetInterface("Basse", "Basse_I_Bansang").
+
++SetNode("Gamnet").
++SetAdminDist("Gamnet", "static", 1).
++SetAdminDist("Gamnet", "bgp", 2).
++SetAdminDist("Gamnet", "ospf", 3).
++SetInterface("Gamnet", "Gamnet_I_Abuko").
+
++SetNode("Farafenni").
++SetAdminDist("Farafenni", "static", 1).
++SetAdminDist("Farafenni", "bgp", 2).
++SetAdminDist("Farafenni", "ospf", 3).
++SetInterface("Farafenni", "Farafenni_I_Soma").
++SetInterface("Farafenni", "Farafenni_I_Kerewan").
+
++SetNode("QnetTTAS").
++SetAdminDist("QnetTTAS", "static", 1).
++SetAdminDist("QnetTTAS", "bgp", 2).
++SetAdminDist("QnetTTAS", "ospf", 3).
++SetInterface("QnetTTAS", "QnetTTAS_I_Abuko").
+
++SetNode("Abuko").
++SetAdminDist("Abuko", "static", 1).
++SetAdminDist("Abuko", "bgp", 2).
++SetAdminDist("Abuko", "ospf", 3).
++SetInterface("Abuko", "Abuko_I_Gamnet").
++SetInterface("Abuko", "Abuko_I_EarthTTStation").
++SetInterface("Abuko", "Abuko_I_QnetTTAS").
++SetInterface("Abuko", "Abuko_I_Serekunda").
+
++SetNode("Intelsat").
++SetAdminDist("Intelsat", "static", 1).
++SetAdminDist("Intelsat", "bgp", 2).
++SetAdminDist("Intelsat", "ospf", 3).
++SetInterface("Intelsat", "Intelsat_I_TeleglobeTTCanada").
++SetInterface("Intelsat", "Intelsat_I_EarthTTStation").
+
++SetNode("MRC").
++SetAdminDist("MRC", "static", 1).
++SetAdminDist("MRC", "bgp", 2).
++SetAdminDist("MRC", "ospf", 3).
++SetInterface("MRC", "MRC_I_Bakau").
+
++SetNode("UnivTTGambia").
++SetAdminDist("UnivTTGambia", "static", 1).
++SetAdminDist("UnivTTGambia", "bgp", 2).
++SetAdminDist("UnivTTGambia", "ospf", 3).
++SetInterface("UnivTTGambia", "UnivTTGambia_I_Serekunda").
+
++SetNode("Banjul").
++SetAdminDist("Banjul", "static", 1).
++SetAdminDist("Banjul", "bgp", 2).
++SetAdminDist("Banjul", "ospf", 3).
++SetInterface("Banjul", "Banjul_I_ManskTTGambia").
++SetInterface("Banjul", "Banjul_I_QuantumTTNet").
++SetInterface("Banjul", "Banjul_I_Kerewan").
++SetInterface("Banjul", "Banjul_I_GamtelTTHouse").
++SetInterface("Banjul", "Banjul_I_Serekunda").
+
++SetNode("Bansang").
++SetAdminDist("Bansang", "static", 1).
++SetAdminDist("Bansang", "bgp", 2).
++SetAdminDist("Bansang", "ospf", 3).
++SetInterface("Bansang", "Bansang_I_Basse").
+
++SetNode("Soma").
++SetAdminDist("Soma", "static", 1).
++SetAdminDist("Soma", "bgp", 2).
++SetAdminDist("Soma", "ospf", 3).
++SetInterface("Soma", "Soma_I_Basse").
++SetInterface("Soma", "Soma_I_Yundum").
++SetInterface("Soma", "Soma_I_Farafenni").
+
++SetNode("Kerewan").
++SetAdminDist("Kerewan", "static", 1).
++SetAdminDist("Kerewan", "bgp", 2).
++SetAdminDist("Kerewan", "ospf", 3).
++SetInterface("Kerewan", "Kerewan_I_Farafenni").
++SetInterface("Kerewan", "Kerewan_I_Banjul").
+
++SetNode("QuantumTTNet").
++SetAdminDist("QuantumTTNet", "static", 1).
++SetAdminDist("QuantumTTNet", "bgp", 2).
++SetAdminDist("QuantumTTNet", "ospf", 3).
++SetInterface("QuantumTTNet", "QuantumTTNet_I_Banjul").
+
++SetLink("GamtelTTHouse_I_Banjul", "Banjul_I_GamtelTTHouse").
++SetLink("UNDP_I_Bakau", "Bakau_I_UNDP").
++SetLink("GTMIID9_I_Serekunda", "Serekunda_I_GTMIID9").
++SetLink("Yundum_I_Soma", "Soma_I_Yundum").
++SetLink("Yundum_I_Serekunda", "Serekunda_I_Yundum").
++SetLink("ManskTTGambia_I_Banjul", "Banjul_I_ManskTTGambia").
++SetLink("MDI_I_Serekunda", "Serekunda_I_MDI").
++SetLink("GantdTTCenter_I_Brikama", "Brikama_I_GantdTTCenter").
++SetLink("GTMI_I_Serekunda", "Serekunda_I_GTMI").
++SetLink("Brikama_I_Serekunda", "Serekunda_I_Brikama").
++SetLink("Kotu_I_Serekunda", "Serekunda_I_Kotu").
++SetLink("ActionTTLtd_I_Serekunda", "Serekunda_I_ActionTTLtd").
++SetLink("TeleglobeTTCanada_I_Intelsat", "Intelsat_I_TeleglobeTTCanada").
++SetLink("EarthTTStation_I_Abuko", "Abuko_I_EarthTTStation").
++SetLink("EarthTTStation_I_Intelsat", "Intelsat_I_EarthTTStation").
++SetLink("Serekunda_I_Bakau", "Bakau_I_Serekunda").
++SetLink("Serekunda_I_Banjul", "Banjul_I_Serekunda").
++SetLink("Serekunda_I_Abuko", "Abuko_I_Serekunda").
++SetLink("Serekunda_I_UnivTTGambia", "UnivTTGambia_I_Serekunda").
++SetLink("Bakau_I_MRC", "MRC_I_Bakau").
++SetLink("Basse_I_Soma", "Soma_I_Basse").
++SetLink("Basse_I_Bansang", "Bansang_I_Basse").
++SetLink("Gamnet_I_Abuko", "Abuko_I_Gamnet").
++SetLink("Farafenni_I_Soma", "Soma_I_Farafenni").
++SetLink("Farafenni_I_Kerewan", "Kerewan_I_Farafenni").
++SetLink("QnetTTAS_I_Abuko", "Abuko_I_QnetTTAS").
++SetLink("Banjul_I_QuantumTTNet", "QuantumTTNet_I_Banjul").
++SetLink("Banjul_I_Kerewan", "Kerewan_I_Banjul").
+
+
++SetNetwork("Bansang", "N_Bansang").
++SetBGPAnnouncement("Bansang", "N_Bansang", "NBGP_Bansang", "1;2;3", 3).
++SetNetwork("Soma", "N_Soma").
++SetBGPAnnouncement("Soma", "N_Soma", "NBGP_Soma", "1;2;3", 3).
++SetNetwork("Abuko", "N_Abuko").
++SetBGPAnnouncement("Abuko", "N_Abuko", "NBGP_Abuko", "1;2;3", 3).
++SetNetwork("Farafenni", "N_Farafenni").
++SetBGPAnnouncement("Farafenni", "N_Farafenni", "NBGP_Farafenni", "1;2;3", 3).
++SetNetwork("GamtelTTHouse", "N_GamtelTTHouse").
++SetBGPAnnouncement("GamtelTTHouse", "N_GamtelTTHouse", "NBGP_GamtelTTHouse", "1;2;3", 3).
++SetNetwork("TeleglobeTTCanada", "N_TeleglobeTTCanada").
++SetBGPAnnouncement("TeleglobeTTCanada", "N_TeleglobeTTCanada", "NBGP_TeleglobeTTCanada", "1;2;3", 3).
++SetNetwork("Kerewan", "N_Kerewan").
++SetBGPAnnouncement("Kerewan", "N_Kerewan", "NBGP_Kerewan", "1;2;3", 3).
++SetNetwork("Yundum", "N_Yundum").
++SetBGPAnnouncement("Yundum", "N_Yundum", "NBGP_Yundum", "1;2;3", 3).
++SetNetwork("QuantumTTNet", "N_QuantumTTNet").
++SetBGPAnnouncement("QuantumTTNet", "N_QuantumTTNet", "NBGP_QuantumTTNet", "1;2;3", 3).
++SetNetwork("Intelsat", "N_Intelsat").
++SetBGPAnnouncement("Intelsat", "N_Intelsat", "NBGP_Intelsat", "1;2;3", 3).
++SetNetwork("Bakau", "N_Bakau").
++SetBGPAnnouncement("Bakau", "N_Bakau", "NBGP_Bakau", "1;2;3", 3).
++SetNetwork("UnivTTGambia", "N_UnivTTGambia").
++SetBGPAnnouncement("UnivTTGambia", "N_UnivTTGambia", "NBGP_UnivTTGambia", "1;2;3", 3).
++SetNetwork("Gamnet", "N_Gamnet").
++SetBGPAnnouncement("Gamnet", "N_Gamnet", "NBGP_Gamnet", "1;2;3", 3).
++SetNetwork("MRC", "N_MRC").
++SetBGPAnnouncement("MRC", "N_MRC", "NBGP_MRC", "1;2;3", 3).
++SetNetwork("Serekunda", "N_Serekunda").
++SetBGPAnnouncement("Serekunda", "N_Serekunda", "NBGP_Serekunda", "1;2;3", 3).
++SetNetwork("GantdTTCenter", "N_GantdTTCenter").
++SetBGPAnnouncement("GantdTTCenter", "N_GantdTTCenter", "NBGP_GantdTTCenter", "1;2;3", 3).
++SetNetwork("UNDP", "N_UNDP").
++SetBGPAnnouncement("UNDP", "N_UNDP", "NBGP_UNDP", "1;2;3", 3).
++SetNetwork("Brikama", "N_Brikama").
++SetBGPAnnouncement("Brikama", "N_Brikama", "NBGP_Brikama", "1;2;3", 3).
++SetNetwork("Banjul", "N_Banjul").
++SetBGPAnnouncement("Banjul", "N_Banjul", "NBGP_Banjul", "1;2;3", 3).
++SetNetwork("GTMI", "N_GTMI").
++SetBGPAnnouncement("GTMI", "N_GTMI", "NBGP_GTMI", "1;2;3", 3).

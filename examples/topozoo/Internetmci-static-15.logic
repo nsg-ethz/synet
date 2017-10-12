@@ -1,0 +1,211 @@
++SetNode("Houston").
++SetAdminDist("Houston", "static", 1).
++SetAdminDist("Houston", "bgp", 2).
++SetAdminDist("Houston", "ospf", 3).
++SetInterface("Houston", "Houston_I_Dallas").
++SetInterface("Houston", "Houston_I_PompanoTTBeach").
+
++SetNode("DownersTTGrove").
++SetAdminDist("DownersTTGrove", "static", 1).
++SetAdminDist("DownersTTGrove", "bgp", 2).
++SetAdminDist("DownersTTGrove", "ospf", 3).
++SetInterface("DownersTTGrove", "DownersTTGrove_I_WillowTTSprings").
++SetInterface("DownersTTGrove", "DownersTTGrove_I_NorthTTRoyalton").
+
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_WestTTOrange").
++SetInterface("NewTTYork", "NewTTYork_I_Charlton").
+
++SetNode("SanTTFrancisco").
++SetAdminDist("SanTTFrancisco", "static", 1).
++SetAdminDist("SanTTFrancisco", "bgp", 2).
++SetAdminDist("SanTTFrancisco", "ospf", 3).
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Sacramento").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Seattle").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Rialto").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_Denver").
++SetInterface("SanTTFrancisco", "SanTTFrancisco_I_LosTTAngeles").
+
++SetNode("PompanoTTBeach").
++SetAdminDist("PompanoTTBeach", "static", 1).
++SetAdminDist("PompanoTTBeach", "bgp", 2).
++SetAdminDist("PompanoTTBeach", "ospf", 3).
++SetInterface("PompanoTTBeach", "PompanoTTBeach_I_Houston").
++SetInterface("PompanoTTBeach", "PompanoTTBeach_I_Austell").
+
++SetNode("Sacramento").
++SetAdminDist("Sacramento", "static", 1).
++SetAdminDist("Sacramento", "bgp", 2).
++SetAdminDist("Sacramento", "ospf", 3).
++SetInterface("Sacramento", "Sacramento_I_SanTTFrancisco").
+
++SetNode("Dallas").
++SetAdminDist("Dallas", "static", 1).
++SetAdminDist("Dallas", "bgp", 2).
++SetAdminDist("Dallas", "ospf", 3).
++SetInterface("Dallas", "Dallas_I_Houston").
++SetInterface("Dallas", "Dallas_I_WillowTTSprings").
++SetInterface("Dallas", "Dallas_I_Rialto").
++SetInterface("Dallas", "Dallas_I_Independence").
++SetInterface("Dallas", "Dallas_I_Austell").
+
++SetNode("Denver").
++SetAdminDist("Denver", "static", 1).
++SetAdminDist("Denver", "bgp", 2).
++SetAdminDist("Denver", "ospf", 3).
++SetInterface("Denver", "Denver_I_Seattle").
++SetInterface("Denver", "Denver_I_WillowTTSprings").
++SetInterface("Denver", "Denver_I_Independence").
++SetInterface("Denver", "Denver_I_SanTTFrancisco").
++SetInterface("Denver", "Denver_I_WestTTOrange").
+
++SetNode("Charlton").
++SetAdminDist("Charlton", "static", 1).
++SetAdminDist("Charlton", "bgp", 2).
++SetAdminDist("Charlton", "ospf", 3).
++SetInterface("Charlton", "Charlton_I_WillowTTSprings").
++SetInterface("Charlton", "Charlton_I_Washington_TTDC").
++SetInterface("Charlton", "Charlton_I_NewTTYork").
++SetInterface("Charlton", "Charlton_I_WestTTOrange").
+
++SetNode("NorthTTRoyalton").
++SetAdminDist("NorthTTRoyalton", "static", 1).
++SetAdminDist("NorthTTRoyalton", "bgp", 2).
++SetAdminDist("NorthTTRoyalton", "ospf", 3).
++SetInterface("NorthTTRoyalton", "NorthTTRoyalton_I_DownersTTGrove").
++SetInterface("NorthTTRoyalton", "NorthTTRoyalton_I_WestTTOrange").
+
++SetNode("WestTTOrange").
++SetAdminDist("WestTTOrange", "static", 1).
++SetAdminDist("WestTTOrange", "bgp", 2).
++SetAdminDist("WestTTOrange", "ospf", 3).
++SetInterface("WestTTOrange", "WestTTOrange_I_NewTTYork").
++SetInterface("WestTTOrange", "WestTTOrange_I_Denver").
++SetInterface("WestTTOrange", "WestTTOrange_I_Charlton").
++SetInterface("WestTTOrange", "WestTTOrange_I_Washington_TTDC").
++SetInterface("WestTTOrange", "WestTTOrange_I_WillowTTSprings").
++SetInterface("WestTTOrange", "WestTTOrange_I_NorthTTRoyalton").
+
++SetNode("WillowTTSprings").
++SetAdminDist("WillowTTSprings", "static", 1).
++SetAdminDist("WillowTTSprings", "bgp", 2).
++SetAdminDist("WillowTTSprings", "ospf", 3).
++SetInterface("WillowTTSprings", "WillowTTSprings_I_DownersTTGrove").
++SetInterface("WillowTTSprings", "WillowTTSprings_I_Dallas").
++SetInterface("WillowTTSprings", "WillowTTSprings_I_Denver").
++SetInterface("WillowTTSprings", "WillowTTSprings_I_Charlton").
++SetInterface("WillowTTSprings", "WillowTTSprings_I_WestTTOrange").
++SetInterface("WillowTTSprings", "WillowTTSprings_I_Washington_TTDC").
++SetInterface("WillowTTSprings", "WillowTTSprings_I_Independence").
+
++SetNode("Greensboro").
++SetAdminDist("Greensboro", "static", 1).
++SetAdminDist("Greensboro", "bgp", 2).
++SetAdminDist("Greensboro", "ospf", 3).
++SetInterface("Greensboro", "Greensboro_I_Washington_TTDC").
++SetInterface("Greensboro", "Greensboro_I_Austell").
+
++SetNode("Washington_TTDC").
++SetAdminDist("Washington_TTDC", "static", 1).
++SetAdminDist("Washington_TTDC", "bgp", 2).
++SetAdminDist("Washington_TTDC", "ospf", 3).
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Charlton").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_WillowTTSprings").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_WestTTOrange").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Greensboro").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Austell").
+
++SetNode("LosTTAngeles").
++SetAdminDist("LosTTAngeles", "static", 1).
++SetAdminDist("LosTTAngeles", "bgp", 2).
++SetAdminDist("LosTTAngeles", "ospf", 3).
++SetInterface("LosTTAngeles", "LosTTAngeles_I_Rialto").
++SetInterface("LosTTAngeles", "LosTTAngeles_I_SanTTFrancisco").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_Denver").
++SetInterface("Seattle", "Seattle_I_SanTTFrancisco").
+
++SetNode("Rialto").
++SetAdminDist("Rialto", "static", 1).
++SetAdminDist("Rialto", "bgp", 2).
++SetAdminDist("Rialto", "ospf", 3).
++SetInterface("Rialto", "Rialto_I_Austell").
++SetInterface("Rialto", "Rialto_I_LosTTAngeles").
++SetInterface("Rialto", "Rialto_I_SanTTFrancisco").
++SetInterface("Rialto", "Rialto_I_Dallas").
+
++SetNode("Independence").
++SetAdminDist("Independence", "static", 1).
++SetAdminDist("Independence", "bgp", 2).
++SetAdminDist("Independence", "ospf", 3).
++SetInterface("Independence", "Independence_I_WillowTTSprings").
++SetInterface("Independence", "Independence_I_Denver").
++SetInterface("Independence", "Independence_I_Dallas").
+
++SetNode("Austell").
++SetAdminDist("Austell", "static", 1).
++SetAdminDist("Austell", "bgp", 2).
++SetAdminDist("Austell", "ospf", 3).
++SetInterface("Austell", "Austell_I_Rialto").
++SetInterface("Austell", "Austell_I_Dallas").
++SetInterface("Austell", "Austell_I_Washington_TTDC").
++SetInterface("Austell", "Austell_I_Greensboro").
++SetInterface("Austell", "Austell_I_PompanoTTBeach").
+
++SetLink("Houston_I_Dallas", "Dallas_I_Houston").
++SetLink("Houston_I_PompanoTTBeach", "PompanoTTBeach_I_Houston").
++SetLink("DownersTTGrove_I_WillowTTSprings", "WillowTTSprings_I_DownersTTGrove").
++SetLink("DownersTTGrove_I_NorthTTRoyalton", "NorthTTRoyalton_I_DownersTTGrove").
++SetLink("NewTTYork_I_WestTTOrange", "WestTTOrange_I_NewTTYork").
++SetLink("NewTTYork_I_Charlton", "Charlton_I_NewTTYork").
++SetLink("SanTTFrancisco_I_Sacramento", "Sacramento_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_Seattle", "Seattle_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_Rialto", "Rialto_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_Denver", "Denver_I_SanTTFrancisco").
++SetLink("SanTTFrancisco_I_LosTTAngeles", "LosTTAngeles_I_SanTTFrancisco").
++SetLink("PompanoTTBeach_I_Austell", "Austell_I_PompanoTTBeach").
++SetLink("Dallas_I_WillowTTSprings", "WillowTTSprings_I_Dallas").
++SetLink("Dallas_I_Rialto", "Rialto_I_Dallas").
++SetLink("Dallas_I_Independence", "Independence_I_Dallas").
++SetLink("Dallas_I_Austell", "Austell_I_Dallas").
++SetLink("Denver_I_Seattle", "Seattle_I_Denver").
++SetLink("Denver_I_WillowTTSprings", "WillowTTSprings_I_Denver").
++SetLink("Denver_I_Independence", "Independence_I_Denver").
++SetLink("Denver_I_WestTTOrange", "WestTTOrange_I_Denver").
++SetLink("Charlton_I_WillowTTSprings", "WillowTTSprings_I_Charlton").
++SetLink("Charlton_I_Washington_TTDC", "Washington_TTDC_I_Charlton").
++SetLink("Charlton_I_WestTTOrange", "WestTTOrange_I_Charlton").
++SetLink("NorthTTRoyalton_I_WestTTOrange", "WestTTOrange_I_NorthTTRoyalton").
++SetLink("WestTTOrange_I_Washington_TTDC", "Washington_TTDC_I_WestTTOrange").
++SetLink("WestTTOrange_I_WillowTTSprings", "WillowTTSprings_I_WestTTOrange").
++SetLink("WillowTTSprings_I_Washington_TTDC", "Washington_TTDC_I_WillowTTSprings").
++SetLink("WillowTTSprings_I_Independence", "Independence_I_WillowTTSprings").
++SetLink("Greensboro_I_Washington_TTDC", "Washington_TTDC_I_Greensboro").
++SetLink("Greensboro_I_Austell", "Austell_I_Greensboro").
++SetLink("Washington_TTDC_I_Austell", "Austell_I_Washington_TTDC").
++SetLink("LosTTAngeles_I_Rialto", "Rialto_I_LosTTAngeles").
++SetLink("Rialto_I_Austell", "Austell_I_Rialto").
+
+
++SetNetwork("NewTTYork", "N_NewTTYork").
++SetNetwork("Rialto", "N_Rialto").
++SetNetwork("Sacramento", "N_Sacramento").
++SetNetwork("Austell", "N_Austell").
++SetNetwork("PompanoTTBeach", "N_PompanoTTBeach").
++SetNetwork("Seattle", "N_Seattle").
++SetNetwork("WillowTTSprings", "N_WillowTTSprings").
++SetNetwork("Independence", "N_Independence").
++SetNetwork("Houston", "N_Houston").
++SetNetwork("Dallas", "N_Dallas").
++SetNetwork("DownersTTGrove", "N_DownersTTGrove").
++SetNetwork("SanTTFrancisco", "N_SanTTFrancisco").
++SetNetwork("LosTTAngeles", "N_LosTTAngeles").
++SetNetwork("Washington_TTDC", "N_Washington_TTDC").
++SetNetwork("WestTTOrange", "N_WestTTOrange").

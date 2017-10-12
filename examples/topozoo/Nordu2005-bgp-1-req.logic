@@ -1,0 +1,18 @@
+
++Fwd("N_Oslo", "NETNOD", "Stockholm", "ospf").
++Fwd("NBGP_Oslo", "NETNOD", "Stockholm", "bgp").
++Fwd("N_Oslo", "Stockholm", "Oslo", "ospf").
++Fwd("NBGP_Oslo", "Stockholm", "Oslo", "bgp").
++Fwd("N_Oslo", "Reykjavik", "Copenhagen", "ospf").
++Fwd("NBGP_Oslo", "Reykjavik", "Copenhagen", "bgp").
++Fwd("N_Oslo", "Copenhagen", "Oslo", "ospf").
++Fwd("NBGP_Oslo", "Copenhagen", "Oslo", "bgp").
++Fwd("N_Oslo", "GEANT", "Stockholm", "ospf").
++Fwd("NBGP_Oslo", "GEANT", "Stockholm", "bgp").
++Fwd("N_Oslo", "Helsinki", "Stockholm", "ospf").
++Fwd("NBGP_Oslo", "Helsinki", "Stockholm", "bgp").
++Fwd("N_Oslo", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("NBGP_Oslo", "StTTPetersburg", "Stockholm", "bgp").
++Fwd("N_Oslo", "GeneralTTInternet", "Stockholm", "ospf").
++Fwd("NBGP_Oslo", "GeneralTTInternet", "Stockholm", "bgp").
+

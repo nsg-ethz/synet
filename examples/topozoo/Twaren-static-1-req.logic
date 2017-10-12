@@ -1,0 +1,21 @@
+
++Fwd("N_TN", "NHLUE", "TP", "static").
++Fwd("N_TN", "TP", "TC", "static").
++Fwd("N_TN", "TC", "TN", "static").
++Fwd("N_TN", "LA", "HC", "static").
++Fwd("N_TN", "HC", "TN", "static").
++Fwd("N_TN", "NTHU", "HC", "static").
++Fwd("N_TN", "NCHU", "TC", "static").
++Fwd("N_TN", "CHI", "TP", "static").
++Fwd("N_TN", "NIU", "TP", "static").
++Fwd("N_TN", "NTU", "TP", "static").
++Fwd("N_TN", "NCU", "HC", "static").
++Fwd("N_TN", "NCKU", "TN", "static").
++Fwd("N_TN", "CCU", "TN", "static").
++Fwd("N_TN", "NCNU", "TC", "static").
++Fwd("N_TN", "NDHU", "TP", "static").
++Fwd("N_TN", "NTTU", "TN", "static").
++Fwd("N_TN", "NCTU", "HC", "static").
++Fwd("N_TN", "ASCC", "TP", "static").
++Fwd("N_TN", "NSYSU", "TN", "static").
+

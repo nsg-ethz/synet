@@ -1,0 +1,193 @@
++SetNode("StTTClementTTofTTOhridTTUniversityTTinTTBitola").
++SetAdminDist("StTTClementTTofTTOhridTTUniversityTTinTTBitola", "static", 1).
++SetAdminDist("StTTClementTTofTTOhridTTUniversityTTinTTBitola", "bgp", 2).
++SetAdminDist("StTTClementTTofTTOhridTTUniversityTTinTTBitola", "ospf", 3).
++SetInterface("StTTClementTTofTTOhridTTUniversityTTinTTBitola", "StTTClementTTofTTOhridTTUniversityTTinTTBitola_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("NationalBroadcastingcompanyTTComm_TTTower").
++SetAdminDist("NationalBroadcastingcompanyTTComm_TTTower", "static", 1).
++SetAdminDist("NationalBroadcastingcompanyTTComm_TTTower", "bgp", 2).
++SetAdminDist("NationalBroadcastingcompanyTTComm_TTTower", "ospf", 3).
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_CampusTTArchTTandTTCivilTTEng").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_CampusTTNaturalTTSciencesTTandTTMathematics").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_CampusTechnical").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_NationalTTandTTUnivTTLibrary").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_ONnetTTNEOTELTTSONET").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_I_TTofTTEarthquakeTTEngineering").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_CampusBiotech_TTSciences").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("NationalBroadcastingcompanyTTComm_TTTower", "NationalBroadcastingcompanyTTComm_TTTower_I_CampusTTMedicine").
+
++SetNode("CampusTTArchTTandTTCivilTTEng").
++SetAdminDist("CampusTTArchTTandTTCivilTTEng", "static", 1).
++SetAdminDist("CampusTTArchTTandTTCivilTTEng", "bgp", 2).
++SetAdminDist("CampusTTArchTTandTTCivilTTEng", "ospf", 3).
++SetInterface("CampusTTArchTTandTTCivilTTEng", "CampusTTArchTTandTTCivilTTEng_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("CampusTTArchTTandTTCivilTTEng", "CampusTTArchTTandTTCivilTTEng_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("I_TTofTTEconomy").
++SetAdminDist("I_TTofTTEconomy", "static", 1).
++SetAdminDist("I_TTofTTEconomy", "bgp", 2).
++SetAdminDist("I_TTofTTEconomy", "ospf", 3).
++SetInterface("I_TTofTTEconomy", "I_TTofTTEconomy_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("I_TTofTTMacedonianTTLiterature").
++SetAdminDist("I_TTofTTMacedonianTTLiterature", "static", 1).
++SetAdminDist("I_TTofTTMacedonianTTLiterature", "bgp", 2).
++SetAdminDist("I_TTofTTMacedonianTTLiterature", "ospf", 3).
++SetInterface("I_TTofTTMacedonianTTLiterature", "I_TTofTTMacedonianTTLiterature_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("CampusTTNaturalTTSciencesTTandTTMathematics").
++SetAdminDist("CampusTTNaturalTTSciencesTTandTTMathematics", "static", 1).
++SetAdminDist("CampusTTNaturalTTSciencesTTandTTMathematics", "bgp", 2).
++SetAdminDist("CampusTTNaturalTTSciencesTTandTTMathematics", "ospf", 3).
++SetInterface("CampusTTNaturalTTSciencesTTandTTMathematics", "CampusTTNaturalTTSciencesTTandTTMathematics_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("CampusTTNaturalTTSciencesTTandTTMathematics", "CampusTTNaturalTTSciencesTTandTTMathematics_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("CampusTechnical").
++SetAdminDist("CampusTechnical", "static", 1).
++SetAdminDist("CampusTechnical", "bgp", 2).
++SetAdminDist("CampusTechnical", "ospf", 3).
++SetInterface("CampusTechnical", "CampusTechnical_I_ITTofTTPoliticalTTandTTJuridicalTTRes").
++SetInterface("CampusTechnical", "CampusTechnical_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("CampusTechnical", "CampusTechnical_I_F_TTofTTPedagogy").
++SetInterface("CampusTechnical", "CampusTechnical_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("F_TTofTTMiningTTandTTGeologyTTStip").
++SetAdminDist("F_TTofTTMiningTTandTTGeologyTTStip", "static", 1).
++SetAdminDist("F_TTofTTMiningTTandTTGeologyTTStip", "bgp", 2).
++SetAdminDist("F_TTofTTMiningTTandTTGeologyTTStip", "ospf", 3).
++SetInterface("F_TTofTTMiningTTandTTGeologyTTStip", "F_TTofTTMiningTTandTTGeologyTTStip_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("I_TTofTTNationalTTHistory").
++SetAdminDist("I_TTofTTNationalTTHistory", "static", 1).
++SetAdminDist("I_TTofTTNationalTTHistory", "bgp", 2).
++SetAdminDist("I_TTofTTNationalTTHistory", "ospf", 3).
++SetInterface("I_TTofTTNationalTTHistory", "I_TTofTTNationalTTHistory_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("F_TTofTTPedagogy").
++SetAdminDist("F_TTofTTPedagogy", "static", 1).
++SetAdminDist("F_TTofTTPedagogy", "bgp", 2).
++SetAdminDist("F_TTofTTPedagogy", "ospf", 3).
++SetInterface("F_TTofTTPedagogy", "F_TTofTTPedagogy_I_CampusTechnical").
+
++SetNode("NationalTTandTTUnivTTLibrary").
++SetAdminDist("NationalTTandTTUnivTTLibrary", "static", 1).
++SetAdminDist("NationalTTandTTUnivTTLibrary", "bgp", 2).
++SetAdminDist("NationalTTandTTUnivTTLibrary", "ospf", 3).
++SetInterface("NationalTTandTTUnivTTLibrary", "NationalTTandTTUnivTTLibrary_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("NationalTTandTTUnivTTLibrary", "NationalTTandTTUnivTTLibrary_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("SeveralTTMinistriesTTofTTtheTTGovernment").
++SetAdminDist("SeveralTTMinistriesTTofTTtheTTGovernment", "static", 1).
++SetAdminDist("SeveralTTMinistriesTTofTTtheTTGovernment", "bgp", 2).
++SetAdminDist("SeveralTTMinistriesTTofTTtheTTGovernment", "ospf", 3).
++SetInterface("SeveralTTMinistriesTTofTTtheTTGovernment", "SeveralTTMinistriesTTofTTtheTTGovernment_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("I_TTofTTEarthquakeTTEngineering").
++SetAdminDist("I_TTofTTEarthquakeTTEngineering", "static", 1).
++SetAdminDist("I_TTofTTEarthquakeTTEngineering", "bgp", 2).
++SetAdminDist("I_TTofTTEarthquakeTTEngineering", "ospf", 3).
++SetInterface("I_TTofTTEarthquakeTTEngineering", "I_TTofTTEarthquakeTTEngineering_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("I_TTofTTEarthquakeTTEngineering", "I_TTofTTEarthquakeTTEngineering_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("CampusBiotech_TTSciences").
++SetAdminDist("CampusBiotech_TTSciences", "static", 1).
++SetAdminDist("CampusBiotech_TTSciences", "bgp", 2).
++SetAdminDist("CampusBiotech_TTSciences", "ospf", 3).
++SetInterface("CampusBiotech_TTSciences", "CampusBiotech_TTSciences_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("CampusBiotech_TTSciences", "CampusBiotech_TTSciences_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("MOL").
++SetAdminDist("MOL", "static", 1).
++SetAdminDist("MOL", "bgp", 2).
++SetAdminDist("MOL", "ospf", 3).
++SetInterface("MOL", "MOL_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("ONnetTTNEOTELTTSONET").
++SetAdminDist("ONnetTTNEOTELTTSONET", "static", 1).
++SetAdminDist("ONnetTTNEOTELTTSONET", "bgp", 2).
++SetAdminDist("ONnetTTNEOTELTTSONET", "ospf", 3).
++SetInterface("ONnetTTNEOTELTTSONET", "ONnetTTNEOTELTTSONET_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("CampusTTMedicine").
++SetAdminDist("CampusTTMedicine", "static", 1).
++SetAdminDist("CampusTTMedicine", "bgp", 2).
++SetAdminDist("CampusTTMedicine", "ospf", 3).
++SetInterface("CampusTTMedicine", "CampusTTMedicine_I_NOCTTandTTCampusSocialTTSciences").
++SetInterface("CampusTTMedicine", "CampusTTMedicine_I_NationalBroadcastingcompanyTTComm_TTTower").
+
++SetNode("ITTofTTPoliticalTTandTTJuridicalTTRes").
++SetAdminDist("ITTofTTPoliticalTTandTTJuridicalTTRes", "static", 1).
++SetAdminDist("ITTofTTPoliticalTTandTTJuridicalTTRes", "bgp", 2).
++SetAdminDist("ITTofTTPoliticalTTandTTJuridicalTTRes", "ospf", 3).
++SetInterface("ITTofTTPoliticalTTandTTJuridicalTTRes", "ITTofTTPoliticalTTandTTJuridicalTTRes_I_CampusTechnical").
++SetInterface("ITTofTTPoliticalTTandTTJuridicalTTRes", "ITTofTTPoliticalTTandTTJuridicalTTRes_I_NOCTTandTTCampusSocialTTSciences").
+
++SetNode("NOCTTandTTCampusSocialTTSciences").
++SetAdminDist("NOCTTandTTCampusSocialTTSciences", "static", 1).
++SetAdminDist("NOCTTandTTCampusSocialTTSciences", "bgp", 2).
++SetAdminDist("NOCTTandTTCampusSocialTTSciences", "ospf", 3).
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_StTTClementTTofTTOhridTTUniversityTTinTTBitola").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTTArchTTandTTCivilTTEng").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTEconomy").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTMacedonianTTLiterature").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTTNaturalTTSciencesTTandTTMathematics").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTechnical").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_F_TTofTTMiningTTandTTGeologyTTStip").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTNationalTTHistory").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_NationalTTandTTUnivTTLibrary").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_SeveralTTMinistriesTTofTTtheTTGovernment").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTEarthquakeTTEngineering").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusBiotech_TTSciences").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_MOL").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTTMedicine").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_ITTofTTPoliticalTTandTTJuridicalTTRes").
++SetInterface("NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_GEANTTTSEEREN").
+
++SetNode("GEANTTTSEEREN").
++SetAdminDist("GEANTTTSEEREN", "static", 1).
++SetAdminDist("GEANTTTSEEREN", "bgp", 2).
++SetAdminDist("GEANTTTSEEREN", "ospf", 3).
++SetInterface("GEANTTTSEEREN", "GEANTTTSEEREN_I_NOCTTandTTCampusSocialTTSciences").
+
++SetLink("StTTClementTTofTTOhridTTUniversityTTinTTBitola_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_StTTClementTTofTTOhridTTUniversityTTinTTBitola").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_CampusTTArchTTandTTCivilTTEng", "CampusTTArchTTandTTCivilTTEng_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_CampusTTNaturalTTSciencesTTandTTMathematics", "CampusTTNaturalTTSciencesTTandTTMathematics_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_CampusTechnical", "CampusTechnical_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_NationalTTandTTUnivTTLibrary", "NationalTTandTTUnivTTLibrary_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_ONnetTTNEOTELTTSONET", "ONnetTTNEOTELTTSONET_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_I_TTofTTEarthquakeTTEngineering", "I_TTofTTEarthquakeTTEngineering_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_CampusBiotech_TTSciences", "CampusBiotech_TTSciences_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("NationalBroadcastingcompanyTTComm_TTTower_I_CampusTTMedicine", "CampusTTMedicine_I_NationalBroadcastingcompanyTTComm_TTTower").
++SetLink("CampusTTArchTTandTTCivilTTEng_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTTArchTTandTTCivilTTEng").
++SetLink("I_TTofTTEconomy_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTEconomy").
++SetLink("I_TTofTTMacedonianTTLiterature_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTMacedonianTTLiterature").
++SetLink("CampusTTNaturalTTSciencesTTandTTMathematics_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTTNaturalTTSciencesTTandTTMathematics").
++SetLink("CampusTechnical_I_ITTofTTPoliticalTTandTTJuridicalTTRes", "ITTofTTPoliticalTTandTTJuridicalTTRes_I_CampusTechnical").
++SetLink("CampusTechnical_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTechnical").
++SetLink("CampusTechnical_I_F_TTofTTPedagogy", "F_TTofTTPedagogy_I_CampusTechnical").
++SetLink("F_TTofTTMiningTTandTTGeologyTTStip_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_F_TTofTTMiningTTandTTGeologyTTStip").
++SetLink("I_TTofTTNationalTTHistory_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTNationalTTHistory").
++SetLink("NationalTTandTTUnivTTLibrary_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_NationalTTandTTUnivTTLibrary").
++SetLink("SeveralTTMinistriesTTofTTtheTTGovernment_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_SeveralTTMinistriesTTofTTtheTTGovernment").
++SetLink("I_TTofTTEarthquakeTTEngineering_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_I_TTofTTEarthquakeTTEngineering").
++SetLink("CampusBiotech_TTSciences_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusBiotech_TTSciences").
++SetLink("MOL_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_MOL").
++SetLink("CampusTTMedicine_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_CampusTTMedicine").
++SetLink("ITTofTTPoliticalTTandTTJuridicalTTRes_I_NOCTTandTTCampusSocialTTSciences", "NOCTTandTTCampusSocialTTSciences_I_ITTofTTPoliticalTTandTTJuridicalTTRes").
++SetLink("NOCTTandTTCampusSocialTTSciences_I_GEANTTTSEEREN", "GEANTTTSEEREN_I_NOCTTandTTCampusSocialTTSciences").
+
+
++SetNetwork("NOCTTandTTCampusSocialTTSciences", "N_NOCTTandTTCampusSocialTTSciences").
++SetNetwork("ITTofTTPoliticalTTandTTJuridicalTTRes", "N_ITTofTTPoliticalTTandTTJuridicalTTRes").
++SetNetwork("F_TTofTTMiningTTandTTGeologyTTStip", "N_F_TTofTTMiningTTandTTGeologyTTStip").
++SetNetwork("I_TTofTTEconomy", "N_I_TTofTTEconomy").
++SetNetwork("ONnetTTNEOTELTTSONET", "N_ONnetTTNEOTELTTSONET").
++SetNetwork("NationalTTandTTUnivTTLibrary", "N_NationalTTandTTUnivTTLibrary").
++SetNetwork("StTTClementTTofTTOhridTTUniversityTTinTTBitola", "N_StTTClementTTofTTOhridTTUniversityTTinTTBitola").
++SetNetwork("GEANTTTSEEREN", "N_GEANTTTSEEREN").
++SetNetwork("CampusTTArchTTandTTCivilTTEng", "N_CampusTTArchTTandTTCivilTTEng").
++SetNetwork("NationalBroadcastingcompanyTTComm_TTTower", "N_NationalBroadcastingcompanyTTComm_TTTower").

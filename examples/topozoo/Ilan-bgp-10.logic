@@ -1,0 +1,137 @@
++SetNode("Technion").
++SetAdminDist("Technion", "static", 1).
++SetAdminDist("Technion", "bgp", 2).
++SetAdminDist("Technion", "ospf", 3).
++SetInterface("Technion", "Technion_I_TelTTAvivTTGigaPoP").
+
++SetNode("TelTTAvivTTUniversity").
++SetAdminDist("TelTTAvivTTUniversity", "static", 1).
++SetAdminDist("TelTTAvivTTUniversity", "bgp", 2).
++SetAdminDist("TelTTAvivTTUniversity", "ospf", 3).
++SetInterface("TelTTAvivTTUniversity", "TelTTAvivTTUniversity_I_PetachTTTikvaTTGigaPoP").
++SetInterface("TelTTAvivTTUniversity", "TelTTAvivTTUniversity_I_TelTTAvivTTGigaPoP").
+
++SetNode("HaifaTTUniversity").
++SetAdminDist("HaifaTTUniversity", "static", 1).
++SetAdminDist("HaifaTTUniversity", "bgp", 2).
++SetAdminDist("HaifaTTUniversity", "ospf", 3).
++SetInterface("HaifaTTUniversity", "HaifaTTUniversity_I_PetachTTTikvaTTGigaPoP").
++SetInterface("HaifaTTUniversity", "HaifaTTUniversity_I_TelTTAvivTTGigaPoP").
+
++SetNode("BenTTGurionTTUniversity").
++SetAdminDist("BenTTGurionTTUniversity", "static", 1).
++SetAdminDist("BenTTGurionTTUniversity", "bgp", 2).
++SetAdminDist("BenTTGurionTTUniversity", "ospf", 3).
++SetInterface("BenTTGurionTTUniversity", "BenTTGurionTTUniversity_I_TelTTAvivTTGigaPoP").
+
++SetNode("PetachTTTikvaTTGigaPoP").
++SetAdminDist("PetachTTTikvaTTGigaPoP", "static", 1).
++SetAdminDist("PetachTTTikvaTTGigaPoP", "bgp", 2).
++SetAdminDist("PetachTTTikvaTTGigaPoP", "ospf", 3).
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_TelTTAvivTTUniversity").
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_HaifaTTUniversity").
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_ExternalTTUsers").
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_IIX").
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_OpenTTUniversity").
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_GEANTTT2TTGermany").
++SetInterface("PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_BarTTIlanTTUniversity").
+
++SetNode("IIX").
++SetAdminDist("IIX", "static", 1).
++SetAdminDist("IIX", "bgp", 2).
++SetAdminDist("IIX", "ospf", 3).
++SetInterface("IIX", "IIX_I_PetachTTTikvaTTGigaPoP").
+
++SetNode("WeizmannTTInstitute").
++SetAdminDist("WeizmannTTInstitute", "static", 1).
++SetAdminDist("WeizmannTTInstitute", "bgp", 2).
++SetAdminDist("WeizmannTTInstitute", "ospf", 3).
++SetInterface("WeizmannTTInstitute", "WeizmannTTInstitute_I_TelTTAvivTTGigaPoP").
+
++SetNode("OpenTTUniversity").
++SetAdminDist("OpenTTUniversity", "static", 1).
++SetAdminDist("OpenTTUniversity", "bgp", 2).
++SetAdminDist("OpenTTUniversity", "ospf", 3).
++SetInterface("OpenTTUniversity", "OpenTTUniversity_I_PetachTTTikvaTTGigaPoP").
+
++SetNode("ExternalTTUsers").
++SetAdminDist("ExternalTTUsers", "static", 1).
++SetAdminDist("ExternalTTUsers", "bgp", 2).
++SetAdminDist("ExternalTTUsers", "ospf", 3).
++SetInterface("ExternalTTUsers", "ExternalTTUsers_I_PetachTTTikvaTTGigaPoP").
+
++SetNode("Int_lTTbackupTT").
++SetAdminDist("Int_lTTbackupTT", "static", 1).
++SetAdminDist("Int_lTTbackupTT", "bgp", 2).
++SetAdminDist("Int_lTTbackupTT", "ospf", 3).
++SetInterface("Int_lTTbackupTT", "Int_lTTbackupTT_I_TelTTAvivTTGigaPoP").
+
++SetNode("TelTTAvivTTGigaPoP").
++SetAdminDist("TelTTAvivTTGigaPoP", "static", 1).
++SetAdminDist("TelTTAvivTTGigaPoP", "bgp", 2).
++SetAdminDist("TelTTAvivTTGigaPoP", "ospf", 3).
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_Technion").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_TelTTAvivTTUniversity").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_HaifaTTUniversity").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_BenTTGurionTTUniversity").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_WeizmannTTInstitute").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_Int_lTTbackupTT").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_HebrewTTUniversity").
++SetInterface("TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_BarTTIlanTTUniversity").
+
++SetNode("HebrewTTUniversity").
++SetAdminDist("HebrewTTUniversity", "static", 1).
++SetAdminDist("HebrewTTUniversity", "bgp", 2).
++SetAdminDist("HebrewTTUniversity", "ospf", 3).
++SetInterface("HebrewTTUniversity", "HebrewTTUniversity_I_TelTTAvivTTGigaPoP").
+
++SetNode("BarTTIlanTTUniversity").
++SetAdminDist("BarTTIlanTTUniversity", "static", 1).
++SetAdminDist("BarTTIlanTTUniversity", "bgp", 2).
++SetAdminDist("BarTTIlanTTUniversity", "ospf", 3).
++SetInterface("BarTTIlanTTUniversity", "BarTTIlanTTUniversity_I_PetachTTTikvaTTGigaPoP").
++SetInterface("BarTTIlanTTUniversity", "BarTTIlanTTUniversity_I_TelTTAvivTTGigaPoP").
+
++SetNode("GEANTTT2TTGermany").
++SetAdminDist("GEANTTT2TTGermany", "static", 1).
++SetAdminDist("GEANTTT2TTGermany", "bgp", 2).
++SetAdminDist("GEANTTT2TTGermany", "ospf", 3).
++SetInterface("GEANTTT2TTGermany", "GEANTTT2TTGermany_I_PetachTTTikvaTTGigaPoP").
+
++SetLink("Technion_I_TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_Technion").
++SetLink("TelTTAvivTTUniversity_I_PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_TelTTAvivTTUniversity").
++SetLink("TelTTAvivTTUniversity_I_TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_TelTTAvivTTUniversity").
++SetLink("HaifaTTUniversity_I_PetachTTTikvaTTGigaPoP", "PetachTTTikvaTTGigaPoP_I_HaifaTTUniversity").
++SetLink("HaifaTTUniversity_I_TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_HaifaTTUniversity").
++SetLink("BenTTGurionTTUniversity_I_TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_BenTTGurionTTUniversity").
++SetLink("PetachTTTikvaTTGigaPoP_I_ExternalTTUsers", "ExternalTTUsers_I_PetachTTTikvaTTGigaPoP").
++SetLink("PetachTTTikvaTTGigaPoP_I_IIX", "IIX_I_PetachTTTikvaTTGigaPoP").
++SetLink("PetachTTTikvaTTGigaPoP_I_OpenTTUniversity", "OpenTTUniversity_I_PetachTTTikvaTTGigaPoP").
++SetLink("PetachTTTikvaTTGigaPoP_I_GEANTTT2TTGermany", "GEANTTT2TTGermany_I_PetachTTTikvaTTGigaPoP").
++SetLink("PetachTTTikvaTTGigaPoP_I_BarTTIlanTTUniversity", "BarTTIlanTTUniversity_I_PetachTTTikvaTTGigaPoP").
++SetLink("WeizmannTTInstitute_I_TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_WeizmannTTInstitute").
++SetLink("Int_lTTbackupTT_I_TelTTAvivTTGigaPoP", "TelTTAvivTTGigaPoP_I_Int_lTTbackupTT").
++SetLink("TelTTAvivTTGigaPoP_I_HebrewTTUniversity", "HebrewTTUniversity_I_TelTTAvivTTGigaPoP").
++SetLink("TelTTAvivTTGigaPoP_I_BarTTIlanTTUniversity", "BarTTIlanTTUniversity_I_TelTTAvivTTGigaPoP").
+
+
++SetNetwork("BenTTGurionTTUniversity", "N_BenTTGurionTTUniversity").
++SetBGPAnnouncement("BenTTGurionTTUniversity", "N_BenTTGurionTTUniversity", "NBGP_BenTTGurionTTUniversity", "1;2;3", 3).
++SetNetwork("PetachTTTikvaTTGigaPoP", "N_PetachTTTikvaTTGigaPoP").
++SetBGPAnnouncement("PetachTTTikvaTTGigaPoP", "N_PetachTTTikvaTTGigaPoP", "NBGP_PetachTTTikvaTTGigaPoP", "1;2;3", 3).
++SetNetwork("TelTTAvivTTUniversity", "N_TelTTAvivTTUniversity").
++SetBGPAnnouncement("TelTTAvivTTUniversity", "N_TelTTAvivTTUniversity", "NBGP_TelTTAvivTTUniversity", "1;2;3", 3).
++SetNetwork("OpenTTUniversity", "N_OpenTTUniversity").
++SetBGPAnnouncement("OpenTTUniversity", "N_OpenTTUniversity", "NBGP_OpenTTUniversity", "1;2;3", 3).
++SetNetwork("WeizmannTTInstitute", "N_WeizmannTTInstitute").
++SetBGPAnnouncement("WeizmannTTInstitute", "N_WeizmannTTInstitute", "NBGP_WeizmannTTInstitute", "1;2;3", 3).
++SetNetwork("IIX", "N_IIX").
++SetBGPAnnouncement("IIX", "N_IIX", "NBGP_IIX", "1;2;3", 3).
++SetNetwork("TelTTAvivTTGigaPoP", "N_TelTTAvivTTGigaPoP").
++SetBGPAnnouncement("TelTTAvivTTGigaPoP", "N_TelTTAvivTTGigaPoP", "NBGP_TelTTAvivTTGigaPoP", "1;2;3", 3).
++SetNetwork("ExternalTTUsers", "N_ExternalTTUsers").
++SetBGPAnnouncement("ExternalTTUsers", "N_ExternalTTUsers", "NBGP_ExternalTTUsers", "1;2;3", 3).
++SetNetwork("BarTTIlanTTUniversity", "N_BarTTIlanTTUniversity").
++SetBGPAnnouncement("BarTTIlanTTUniversity", "N_BarTTIlanTTUniversity", "NBGP_BarTTIlanTTUniversity", "1;2;3", 3).
++SetNetwork("HebrewTTUniversity", "N_HebrewTTUniversity").
++SetBGPAnnouncement("HebrewTTUniversity", "N_HebrewTTUniversity", "NBGP_HebrewTTUniversity", "1;2;3", 3).

@@ -1,0 +1,76 @@
++SetNode("Galway").
++SetAdminDist("Galway", "static", 1).
++SetAdminDist("Galway", "bgp", 2).
++SetAdminDist("Galway", "ospf", 3).
++SetInterface("Galway", "Galway_I_Limerick").
+
++SetNode("Portlaioise").
++SetAdminDist("Portlaioise", "static", 1).
++SetAdminDist("Portlaioise", "bgp", 2).
++SetAdminDist("Portlaioise", "ospf", 3).
++SetInterface("Portlaioise", "Portlaioise_I_Limerick").
++SetInterface("Portlaioise", "Portlaioise_I_Dublin").
+
++SetNode("Limerick").
++SetAdminDist("Limerick", "static", 1).
++SetAdminDist("Limerick", "bgp", 2).
++SetAdminDist("Limerick", "ospf", 3).
++SetInterface("Limerick", "Limerick_I_Galway").
++SetInterface("Limerick", "Limerick_I_Portlaioise").
++SetInterface("Limerick", "Limerick_I_Cork").
+
++SetNode("Dublin").
++SetAdminDist("Dublin", "static", 1).
++SetAdminDist("Dublin", "bgp", 2).
++SetAdminDist("Dublin", "ospf", 3).
++SetInterface("Dublin", "Dublin_I_NodeID6").
++SetInterface("Dublin", "Dublin_I_NodeID7").
++SetInterface("Dublin", "Dublin_I_Portlaioise").
++SetInterface("Dublin", "Dublin_I_Waterford").
+
++SetNode("Cork").
++SetAdminDist("Cork", "static", 1).
++SetAdminDist("Cork", "bgp", 2).
++SetAdminDist("Cork", "ospf", 3).
++SetInterface("Cork", "Cork_I_Limerick").
++SetInterface("Cork", "Cork_I_Waterford").
+
++SetNode("NodeID6").
++SetAdminDist("NodeID6", "static", 1).
++SetAdminDist("NodeID6", "bgp", 2).
++SetAdminDist("NodeID6", "ospf", 3).
++SetInterface("NodeID6", "NodeID6_I_Dublin").
+
++SetNode("NodeID7").
++SetAdminDist("NodeID7", "static", 1).
++SetAdminDist("NodeID7", "bgp", 2).
++SetAdminDist("NodeID7", "ospf", 3).
++SetInterface("NodeID7", "NodeID7_I_Dublin").
+
++SetNode("Waterford").
++SetAdminDist("Waterford", "static", 1).
++SetAdminDist("Waterford", "bgp", 2).
++SetAdminDist("Waterford", "ospf", 3).
++SetInterface("Waterford", "Waterford_I_Dublin").
++SetInterface("Waterford", "Waterford_I_Cork").
+
++SetLink("Galway_I_Limerick", "Limerick_I_Galway").
++SetLink("Portlaioise_I_Limerick", "Limerick_I_Portlaioise").
++SetLink("Portlaioise_I_Dublin", "Dublin_I_Portlaioise").
++SetLink("Limerick_I_Cork", "Cork_I_Limerick").
++SetLink("Dublin_I_NodeID6", "NodeID6_I_Dublin").
++SetLink("Dublin_I_NodeID7", "NodeID7_I_Dublin").
++SetLink("Dublin_I_Waterford", "Waterford_I_Dublin").
++SetLink("Cork_I_Waterford", "Waterford_I_Cork").
+
+
++SetNetwork("Cork", "N_Cork").
++SetBGPAnnouncement("Cork", "N_Cork", "NBGP_Cork", "1;2;3", 3).
++SetNetwork("Portlaioise", "N_Portlaioise").
++SetBGPAnnouncement("Portlaioise", "N_Portlaioise", "NBGP_Portlaioise", "1;2;3", 3).
++SetNetwork("Waterford", "N_Waterford").
++SetBGPAnnouncement("Waterford", "N_Waterford", "NBGP_Waterford", "1;2;3", 3).
++SetNetwork("NodeID7", "N_NodeID7").
++SetBGPAnnouncement("NodeID7", "N_NodeID7", "NBGP_NodeID7", "1;2;3", 3).
++SetNetwork("Dublin", "N_Dublin").
++SetBGPAnnouncement("Dublin", "N_Dublin", "NBGP_Dublin", "1;2;3", 3).

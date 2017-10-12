@@ -1,0 +1,41 @@
+
++Fwd("N_London", "NewTTYork", "Amsterdam", "ospf").
++Fwd("N_London", "Amsterdam", "London", "ospf").
++Fwd("N_London", "Paris", "Amsterdam", "ospf").
++Fwd("N_London", "Moscow", "StTTPetersburg", "ospf").
++Fwd("N_London", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_London", "Stockholm", "Amsterdam", "ospf").
++Fwd("N_London", "Frankfurt", "Amsterdam", "ospf").
+
++Fwd("N_Amsterdam", "NewTTYork", "Amsterdam", "ospf").
++Fwd("N_Amsterdam", "Paris", "Amsterdam", "ospf").
++Fwd("N_Amsterdam", "Moscow", "StTTPetersburg", "ospf").
++Fwd("N_Amsterdam", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Amsterdam", "Stockholm", "Amsterdam", "ospf").
++Fwd("N_Amsterdam", "London", "Amsterdam", "ospf").
++Fwd("N_Amsterdam", "Frankfurt", "Amsterdam", "ospf").
+
++Fwd("N_Paris", "NewTTYork", "Amsterdam", "ospf").
++Fwd("N_Paris", "Amsterdam", "Paris", "ospf").
++Fwd("N_Paris", "Moscow", "StTTPetersburg", "ospf").
++Fwd("N_Paris", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Paris", "Stockholm", "Amsterdam", "ospf").
++Fwd("N_Paris", "London", "Amsterdam", "ospf").
++Fwd("N_Paris", "Frankfurt", "Amsterdam", "ospf").
+
++Fwd("N_Stockholm", "NewTTYork", "Amsterdam", "ospf").
++Fwd("N_Stockholm", "Amsterdam", "Stockholm", "ospf").
++Fwd("N_Stockholm", "Paris", "Amsterdam", "ospf").
++Fwd("N_Stockholm", "Moscow", "StTTPetersburg", "ospf").
++Fwd("N_Stockholm", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Stockholm", "London", "Amsterdam", "ospf").
++Fwd("N_Stockholm", "Frankfurt", "Amsterdam", "ospf").
+
++Fwd("N_Moscow", "NewTTYork", "Amsterdam", "ospf").
++Fwd("N_Moscow", "Amsterdam", "Stockholm", "ospf").
++Fwd("N_Moscow", "Stockholm", "StTTPetersburg", "ospf").
++Fwd("N_Moscow", "StTTPetersburg", "Moscow", "ospf").
++Fwd("N_Moscow", "Paris", "Amsterdam", "ospf").
++Fwd("N_Moscow", "London", "Amsterdam", "ospf").
++Fwd("N_Moscow", "Frankfurt", "Amsterdam", "ospf").
+

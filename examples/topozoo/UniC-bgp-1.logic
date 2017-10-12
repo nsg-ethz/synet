@@ -1,0 +1,210 @@
++SetNode("Orestad").
++SetAdminDist("Orestad", "static", 1).
++SetAdminDist("Orestad", "bgp", 2).
++SetAdminDist("Orestad", "ospf", 3).
++SetInterface("Orestad", "Orestad_I_Naestved").
++SetInterface("Orestad", "Orestad_I_NodeID14").
++SetInterface("Orestad", "Orestad_I_Lyngby").
++SetInterface("Orestad", "Orestad_I_NORDUnetID10").
+
++SetNode("Kolding").
++SetAdminDist("Kolding", "static", 1).
++SetAdminDist("Kolding", "bgp", 2).
++SetAdminDist("Kolding", "ospf", 3).
++SetInterface("Kolding", "Kolding_I_Vejle").
++SetInterface("Kolding", "Kolding_I_Odense").
+
++SetNode("Silkeborg").
++SetAdminDist("Silkeborg", "static", 1).
++SetAdminDist("Silkeborg", "bgp", 2).
++SetAdminDist("Silkeborg", "ospf", 3).
++SetInterface("Silkeborg", "Silkeborg_I_Herning").
++SetInterface("Silkeborg", "Silkeborg_I_NodeID23").
++SetInterface("Silkeborg", "Silkeborg_I_Farso").
+
++SetNode("Slagelse").
++SetAdminDist("Slagelse", "static", 1).
++SetAdminDist("Slagelse", "bgp", 2).
++SetAdminDist("Slagelse", "ospf", 3).
++SetInterface("Slagelse", "Slagelse_I_Nyborg").
++SetInterface("Slagelse", "Slagelse_I_Holbaek").
+
++SetNode("NORDUnetID10").
++SetAdminDist("NORDUnetID10", "static", 1).
++SetAdminDist("NORDUnetID10", "bgp", 2).
++SetAdminDist("NORDUnetID10", "ospf", 3).
++SetInterface("NORDUnetID10", "NORDUnetID10_I_Orestad").
+
++SetNode("NodeID12").
++SetAdminDist("NodeID12", "static", 1).
++SetAdminDist("NodeID12", "bgp", 2).
++SetAdminDist("NodeID12", "ospf", 3).
++SetInterface("NodeID12", "NodeID12_I_Lyngby").
+
++SetNode("NodeID13").
++SetAdminDist("NodeID13", "static", 1).
++SetAdminDist("NodeID13", "bgp", 2).
++SetAdminDist("NodeID13", "ospf", 3).
++SetInterface("NodeID13", "NodeID13_I_Lyngby").
++SetInterface("NodeID13", "NodeID13_I_NodeID9").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_Orestad").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_Arthus").
+
++SetNode("NodeID17").
++SetAdminDist("NodeID17", "static", 1).
++SetAdminDist("NodeID17", "bgp", 2).
++SetAdminDist("NodeID17", "ospf", 3).
++SetInterface("NodeID17", "NodeID17_I_Aalborg").
+
++SetNode("NodeID9").
++SetAdminDist("NodeID9", "static", 1).
++SetAdminDist("NodeID9", "bgp", 2).
++SetAdminDist("NodeID9", "ospf", 3).
++SetInterface("NodeID9", "NodeID9_I_NodeID13").
+
++SetNode("Aalborg").
++SetAdminDist("Aalborg", "static", 1).
++SetAdminDist("Aalborg", "bgp", 2).
++SetAdminDist("Aalborg", "ospf", 3).
++SetInterface("Aalborg", "Aalborg_I_NodeID17").
++SetInterface("Aalborg", "Aalborg_I_Farso").
++SetInterface("Aalborg", "Aalborg_I_Hobro").
+
++SetNode("Naestved").
++SetAdminDist("Naestved", "static", 1).
++SetAdminDist("Naestved", "bgp", 2).
++SetAdminDist("Naestved", "ospf", 3).
++SetInterface("Naestved", "Naestved_I_Nyborg").
++SetInterface("Naestved", "Naestved_I_Orestad").
+
++SetNode("NORDUnet").
++SetAdminDist("NORDUnet", "static", 1).
++SetAdminDist("NORDUnet", "bgp", 2).
++SetAdminDist("NORDUnet", "ospf", 3).
++SetInterface("NORDUnet", "NORDUnet_I_Lyngby").
+
++SetNode("Odense").
++SetAdminDist("Odense", "static", 1).
++SetAdminDist("Odense", "bgp", 2).
++SetAdminDist("Odense", "ospf", 3).
++SetInterface("Odense", "Odense_I_Nyborg").
++SetInterface("Odense", "Odense_I_Vejle").
++SetInterface("Odense", "Odense_I_Kolding").
+
++SetNode("Arthus").
++SetAdminDist("Arthus", "static", 1).
++SetAdminDist("Arthus", "bgp", 2).
++SetAdminDist("Arthus", "ospf", 3).
++SetInterface("Arthus", "Arthus_I_Vejle").
++SetInterface("Arthus", "Arthus_I_NodeID15").
++SetInterface("Arthus", "Arthus_I_NodeID24").
++SetInterface("Arthus", "Arthus_I_Hobro").
+
++SetNode("Holbaek").
++SetAdminDist("Holbaek", "static", 1).
++SetAdminDist("Holbaek", "bgp", 2).
++SetAdminDist("Holbaek", "ospf", 3).
++SetInterface("Holbaek", "Holbaek_I_Slagelse").
++SetInterface("Holbaek", "Holbaek_I_Lyngby").
+
++SetNode("Hobro").
++SetAdminDist("Hobro", "static", 1).
++SetAdminDist("Hobro", "bgp", 2).
++SetAdminDist("Hobro", "ospf", 3).
++SetInterface("Hobro", "Hobro_I_Aalborg").
++SetInterface("Hobro", "Hobro_I_Arthus").
+
++SetNode("NodeID23").
++SetAdminDist("NodeID23", "static", 1).
++SetAdminDist("NodeID23", "bgp", 2).
++SetAdminDist("NodeID23", "ospf", 3).
++SetInterface("NodeID23", "NodeID23_I_Silkeborg").
+
++SetNode("NodeID24").
++SetAdminDist("NodeID24", "static", 1).
++SetAdminDist("NodeID24", "bgp", 2).
++SetAdminDist("NodeID24", "ospf", 3).
++SetInterface("NodeID24", "NodeID24_I_Arthus").
+
++SetNode("Lyngby").
++SetAdminDist("Lyngby", "static", 1).
++SetAdminDist("Lyngby", "bgp", 2).
++SetAdminDist("Lyngby", "ospf", 3).
++SetInterface("Lyngby", "Lyngby_I_Orestad").
++SetInterface("Lyngby", "Lyngby_I_NodeID12").
++SetInterface("Lyngby", "Lyngby_I_NodeID13").
++SetInterface("Lyngby", "Lyngby_I_NORDUnet").
++SetInterface("Lyngby", "Lyngby_I_Holbaek").
+
++SetNode("Herning").
++SetAdminDist("Herning", "static", 1).
++SetAdminDist("Herning", "bgp", 2).
++SetAdminDist("Herning", "ospf", 3).
++SetInterface("Herning", "Herning_I_Vejle").
++SetInterface("Herning", "Herning_I_Silkeborg").
+
++SetNode("Vejle").
++SetAdminDist("Vejle", "static", 1).
++SetAdminDist("Vejle", "bgp", 2).
++SetAdminDist("Vejle", "ospf", 3).
++SetInterface("Vejle", "Vejle_I_Herning").
++SetInterface("Vejle", "Vejle_I_Arthus").
++SetInterface("Vejle", "Vejle_I_Kolding").
++SetInterface("Vejle", "Vejle_I_Odense").
+
++SetNode("Nyborg").
++SetAdminDist("Nyborg", "static", 1).
++SetAdminDist("Nyborg", "bgp", 2).
++SetAdminDist("Nyborg", "ospf", 3).
++SetInterface("Nyborg", "Nyborg_I_Naestved").
++SetInterface("Nyborg", "Nyborg_I_Slagelse").
++SetInterface("Nyborg", "Nyborg_I_Odense").
+
++SetNode("Farso").
++SetAdminDist("Farso", "static", 1).
++SetAdminDist("Farso", "bgp", 2).
++SetAdminDist("Farso", "ospf", 3).
++SetInterface("Farso", "Farso_I_Aalborg").
++SetInterface("Farso", "Farso_I_Silkeborg").
+
++SetLink("Orestad_I_Naestved", "Naestved_I_Orestad").
++SetLink("Orestad_I_NodeID14", "NodeID14_I_Orestad").
++SetLink("Orestad_I_Lyngby", "Lyngby_I_Orestad").
++SetLink("Orestad_I_NORDUnetID10", "NORDUnetID10_I_Orestad").
++SetLink("Kolding_I_Vejle", "Vejle_I_Kolding").
++SetLink("Kolding_I_Odense", "Odense_I_Kolding").
++SetLink("Silkeborg_I_Herning", "Herning_I_Silkeborg").
++SetLink("Silkeborg_I_NodeID23", "NodeID23_I_Silkeborg").
++SetLink("Silkeborg_I_Farso", "Farso_I_Silkeborg").
++SetLink("Slagelse_I_Nyborg", "Nyborg_I_Slagelse").
++SetLink("Slagelse_I_Holbaek", "Holbaek_I_Slagelse").
++SetLink("NodeID12_I_Lyngby", "Lyngby_I_NodeID12").
++SetLink("NodeID13_I_Lyngby", "Lyngby_I_NodeID13").
++SetLink("NodeID13_I_NodeID9", "NodeID9_I_NodeID13").
++SetLink("NodeID15_I_Arthus", "Arthus_I_NodeID15").
++SetLink("NodeID17_I_Aalborg", "Aalborg_I_NodeID17").
++SetLink("Aalborg_I_Farso", "Farso_I_Aalborg").
++SetLink("Aalborg_I_Hobro", "Hobro_I_Aalborg").
++SetLink("Naestved_I_Nyborg", "Nyborg_I_Naestved").
++SetLink("NORDUnet_I_Lyngby", "Lyngby_I_NORDUnet").
++SetLink("Odense_I_Nyborg", "Nyborg_I_Odense").
++SetLink("Odense_I_Vejle", "Vejle_I_Odense").
++SetLink("Arthus_I_Vejle", "Vejle_I_Arthus").
++SetLink("Arthus_I_NodeID24", "NodeID24_I_Arthus").
++SetLink("Arthus_I_Hobro", "Hobro_I_Arthus").
++SetLink("Holbaek_I_Lyngby", "Lyngby_I_Holbaek").
++SetLink("Herning_I_Vejle", "Vejle_I_Herning").
+
+
++SetNetwork("NodeID9", "N_NodeID9").
++SetBGPAnnouncement("NodeID9", "N_NodeID9", "NBGP_NodeID9", "1;2;3", 3).

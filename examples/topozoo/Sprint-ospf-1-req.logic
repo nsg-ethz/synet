@@ -1,0 +1,12 @@
+
++Fwd("N_Cheyenne", "Boulder", "Cheyenne", "ospf").
++Fwd("N_Cheyenne", "KansasTTCity", "Cheyenne", "ospf").
++Fwd("N_Cheyenne", "Stockton", "Washington_TTDC", "ospf").
++Fwd("N_Cheyenne", "Washington_TTDC", "KansasTTCity", "ospf").
++Fwd("N_Cheyenne", "Chicago", "KansasTTCity", "ospf").
++Fwd("N_Cheyenne", "FortTTWorth", "Washington_TTDC", "ospf").
++Fwd("N_Cheyenne", "Anaheim", "FortTTWorth", "ospf").
++Fwd("N_Cheyenne", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("N_Cheyenne", "Seattle", "Stockton", "ospf").
++Fwd("N_Cheyenne", "NewTTYorkTT_Pennsauken_", "Stockton", "ospf").
+

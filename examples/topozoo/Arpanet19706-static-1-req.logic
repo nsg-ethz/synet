@@ -1,0 +1,10 @@
+
++Fwd("N_UTAH", "RAND", "SDC", "static").
++Fwd("N_UTAH", "SDC", "UTAH", "static").
++Fwd("N_UTAH", "HARVARD", "BBN", "static").
++Fwd("N_UTAH", "BBN", "MIT", "static").
++Fwd("N_UTAH", "MIT", "UTAH", "static").
++Fwd("N_UTAH", "SRI", "UCLA", "static").
++Fwd("N_UTAH", "UCLA", "RAND", "static").
++Fwd("N_UTAH", "UCSB", "SRI", "static").
+

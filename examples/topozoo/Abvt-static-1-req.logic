@@ -1,0 +1,24 @@
+
++Fwd("N_NodeID11", "NewTTYork", "Chicago", "static").
++Fwd("N_NodeID11", "Chicago", "NodeID11", "static").
++Fwd("N_NodeID11", "Paris", "London", "static").
++Fwd("N_NodeID11", "London", "NewTTYork", "static").
++Fwd("N_NodeID11", "WashingtonTTCDC", "London", "static").
++Fwd("N_NodeID11", "Philadelphia", "NewTTYork", "static").
++Fwd("N_NodeID11", "Denver", "NodeID11", "static").
++Fwd("N_NodeID11", "Phoenix", "LosTTAngeles", "static").
++Fwd("N_NodeID11", "LosTTAngeles", "SanTTFrancisco", "static").
++Fwd("N_NodeID11", "SanTTFrancisco", "Denver", "static").
++Fwd("N_NodeID11", "Dallas", "NodeID11", "static").
++Fwd("N_NodeID11", "Atlanta", "WashingtonTTCDC", "static").
++Fwd("N_NodeID11", "Tokyo", "SanTTFrancisco", "static").
++Fwd("N_NodeID11", "Miami", "Atlanta", "static").
++Fwd("N_NodeID11", "Austin", "Dallas", "static").
++Fwd("N_NodeID11", "Baltimore", "WashingtonTTCDC", "static").
++Fwd("N_NodeID11", "Houston", "Dallas", "static").
++Fwd("N_NodeID11", "Frankfurt", "Amsterdam", "static").
++Fwd("N_NodeID11", "Amsterdam", "NewTTYork", "static").
++Fwd("N_NodeID11", "Boston", "NewTTYork", "static").
++Fwd("N_NodeID11", "Portland", "SanTTFrancisco", "static").
++Fwd("N_NodeID11", "Seattle", "Chicago", "static").
+

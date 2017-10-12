@@ -1,0 +1,20 @@
+
++Fwd("N_Plzen", "Ostrava", "Brno", "ospf").
++Fwd("NBGP_Plzen", "Ostrava", "Brno", "bgp").
++Fwd("N_Plzen", "Brno", "Praha", "ospf").
++Fwd("NBGP_Plzen", "Brno", "Praha", "bgp").
++Fwd("N_Plzen", "Praha", "Plzen", "ospf").
++Fwd("NBGP_Plzen", "Praha", "Plzen", "bgp").
++Fwd("N_Plzen", "Ebone", "Praha", "ospf").
++Fwd("NBGP_Plzen", "Ebone", "Praha", "bgp").
++Fwd("N_Plzen", "Pardubice", "Praha", "ospf").
++Fwd("NBGP_Plzen", "Pardubice", "Praha", "bgp").
++Fwd("N_Plzen", "Liberec", "Praha", "ospf").
++Fwd("NBGP_Plzen", "Liberec", "Praha", "bgp").
++Fwd("N_Plzen", "HradecTTKralove", "Praha", "ospf").
++Fwd("NBGP_Plzen", "HradecTTKralove", "Praha", "bgp").
++Fwd("N_Plzen", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("NBGP_Plzen", "CeskeTTBudejovice", "Praha", "bgp").
++Fwd("N_Plzen", "Olomouc", "Brno", "ospf").
++Fwd("NBGP_Plzen", "Olomouc", "Brno", "bgp").
+

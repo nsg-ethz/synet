@@ -1,0 +1,323 @@
++SetNode("Igoumenitsa").
++SetAdminDist("Igoumenitsa", "static", 1).
++SetAdminDist("Igoumenitsa", "bgp", 2).
++SetAdminDist("Igoumenitsa", "ospf", 3).
++SetInterface("Igoumenitsa", "Igoumenitsa_I_Kerkira").
++SetInterface("Igoumenitsa", "Igoumenitsa_I_Ioannina").
+
++SetNode("Limnos").
++SetAdminDist("Limnos", "static", 1).
++SetAdminDist("Limnos", "bgp", 2).
++SetAdminDist("Limnos", "ospf", 3).
++SetInterface("Limnos", "Limnos_I_Mytilini").
+
++SetNode("Athens").
++SetAdminDist("Athens", "static", 1).
++SetAdminDist("Athens", "bgp", 2).
++SetAdminDist("Athens", "ospf", 3).
++SetInterface("Athens", "Athens_I_Thessaloniki").
++SetInterface("Athens", "Athens_I_GEANT").
++SetInterface("Athens", "Athens_I_Halkida").
++SetInterface("Athens", "Athens_I_GRIX").
++SetInterface("Athens", "Athens_I_Heraklio").
++SetInterface("Athens", "Athens_I_Korinthos").
++SetInterface("Athens", "Athens_I_Patra").
++SetInterface("Athens", "Athens_I_Chania").
++SetInterface("Athens", "Athens_I_Ermoupoli").
++SetInterface("Athens", "Athens_I_AMSIX").
++SetInterface("Athens", "Athens_I_Larissa").
+
++SetNode("Tripoli").
++SetAdminDist("Tripoli", "static", 1).
++SetAdminDist("Tripoli", "bgp", 2).
++SetAdminDist("Tripoli", "ospf", 3).
++SetInterface("Tripoli", "Tripoli_I_Korinthos").
+
++SetNode("Karditsa").
++SetAdminDist("Karditsa", "static", 1).
++SetAdminDist("Karditsa", "bgp", 2).
++SetAdminDist("Karditsa", "ospf", 3).
++SetInterface("Karditsa", "Karditsa_I_Larissa").
+
++SetNode("Kerkira").
++SetAdminDist("Kerkira", "static", 1).
++SetAdminDist("Kerkira", "bgp", 2).
++SetAdminDist("Kerkira", "ospf", 3).
++SetInterface("Kerkira", "Kerkira_I_Igoumenitsa").
+
++SetNode("Rhodos").
++SetAdminDist("Rhodos", "static", 1).
++SetAdminDist("Rhodos", "bgp", 2).
++SetAdminDist("Rhodos", "ospf", 3).
++SetInterface("Rhodos", "Rhodos_I_Heraklio").
++SetInterface("Rhodos", "Rhodos_I_Karlovassi").
+
++SetNode("Ioannina").
++SetAdminDist("Ioannina", "static", 1).
++SetAdminDist("Ioannina", "bgp", 2).
++SetAdminDist("Ioannina", "ospf", 3).
++SetInterface("Ioannina", "Ioannina_I_Thessaloniki").
++SetInterface("Ioannina", "Ioannina_I_Patra").
++SetInterface("Ioannina", "Ioannina_I_Igoumenitsa").
+
++SetNode("Kalamata").
++SetAdminDist("Kalamata", "static", 1).
++SetAdminDist("Kalamata", "bgp", 2).
++SetAdminDist("Kalamata", "ospf", 3).
++SetInterface("Kalamata", "Kalamata_I_Pylos").
++SetInterface("Kalamata", "Kalamata_I_Patra").
+
++SetNode("Mesologgi").
++SetAdminDist("Mesologgi", "static", 1).
++SetAdminDist("Mesologgi", "bgp", 2).
++SetAdminDist("Mesologgi", "ospf", 3).
++SetInterface("Mesologgi", "Mesologgi_I_Patra").
+
++SetNode("Rethymno").
++SetAdminDist("Rethymno", "static", 1).
++SetAdminDist("Rethymno", "bgp", 2).
++SetAdminDist("Rethymno", "ospf", 3).
++SetInterface("Rethymno", "Rethymno_I_Heraklio").
+
++SetNode("Halkida").
++SetAdminDist("Halkida", "static", 1).
++SetAdminDist("Halkida", "bgp", 2).
++SetAdminDist("Halkida", "ospf", 3).
++SetInterface("Halkida", "Halkida_I_Athens").
+
++SetNode("Xanthi").
++SetAdminDist("Xanthi", "static", 1).
++SetAdminDist("Xanthi", "bgp", 2).
++SetAdminDist("Xanthi", "ospf", 3).
++SetInterface("Xanthi", "Xanthi_I_Thessaloniki").
++SetInterface("Xanthi", "Xanthi_I_Komotini").
++SetInterface("Xanthi", "Xanthi_I_Ermoupoli").
++SetInterface("Xanthi", "Xanthi_I_Kavala").
+
++SetNode("AMSIX").
++SetAdminDist("AMSIX", "static", 1).
++SetAdminDist("AMSIX", "bgp", 2).
++SetAdminDist("AMSIX", "ospf", 3).
++SetInterface("AMSIX", "AMSIX_I_Athens").
+
++SetNode("Volos").
++SetAdminDist("Volos", "static", 1).
++SetAdminDist("Volos", "bgp", 2).
++SetAdminDist("Volos", "ospf", 3).
++SetInterface("Volos", "Volos_I_Larissa").
+
++SetNode("Larissa").
++SetAdminDist("Larissa", "static", 1).
++SetAdminDist("Larissa", "bgp", 2).
++SetAdminDist("Larissa", "ospf", 3).
++SetInterface("Larissa", "Larissa_I_Thessaloniki").
++SetInterface("Larissa", "Larissa_I_Karditsa").
++SetInterface("Larissa", "Larissa_I_Volos").
++SetInterface("Larissa", "Larissa_I_Athens").
++SetInterface("Larissa", "Larissa_I_Trikala").
+
++SetNode("Mytilini").
++SetAdminDist("Mytilini", "static", 1).
++SetAdminDist("Mytilini", "bgp", 2).
++SetAdminDist("Mytilini", "ospf", 3).
++SetInterface("Mytilini", "Mytilini_I_Limnos").
++SetInterface("Mytilini", "Mytilini_I_Chios").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Athens").
+
++SetNode("GRIX").
++SetAdminDist("GRIX", "static", 1).
++SetAdminDist("GRIX", "bgp", 2).
++SetAdminDist("GRIX", "ospf", 3).
++SetInterface("GRIX", "GRIX_I_Athens").
+
++SetNode("Alexandroupoli").
++SetAdminDist("Alexandroupoli", "static", 1).
++SetAdminDist("Alexandroupoli", "bgp", 2).
++SetAdminDist("Alexandroupoli", "ospf", 3).
++SetInterface("Alexandroupoli", "Alexandroupoli_I_Komotini").
+
++SetNode("Kastoria").
++SetAdminDist("Kastoria", "static", 1).
++SetAdminDist("Kastoria", "bgp", 2).
++SetAdminDist("Kastoria", "ospf", 3).
++SetInterface("Kastoria", "Kastoria_I_Edessa").
+
++SetNode("Trikala").
++SetAdminDist("Trikala", "static", 1).
++SetAdminDist("Trikala", "bgp", 2).
++SetAdminDist("Trikala", "ospf", 3).
++SetInterface("Trikala", "Trikala_I_Larissa").
+
++SetNode("Patra").
++SetAdminDist("Patra", "static", 1).
++SetAdminDist("Patra", "bgp", 2).
++SetAdminDist("Patra", "ospf", 3).
++SetInterface("Patra", "Patra_I_Athens").
++SetInterface("Patra", "Patra_I_Kalamata").
++SetInterface("Patra", "Patra_I_Ioannina").
++SetInterface("Patra", "Patra_I_Kalavrita").
++SetInterface("Patra", "Patra_I_Mesologgi").
+
++SetNode("Chania").
++SetAdminDist("Chania", "static", 1).
++SetAdminDist("Chania", "bgp", 2).
++SetAdminDist("Chania", "ospf", 3).
++SetInterface("Chania", "Chania_I_Heraklio").
++SetInterface("Chania", "Chania_I_Athens").
+
++SetNode("Mykonos").
++SetAdminDist("Mykonos", "static", 1).
++SetAdminDist("Mykonos", "bgp", 2).
++SetAdminDist("Mykonos", "ospf", 3).
++SetInterface("Mykonos", "Mykonos_I_Karlovassi").
++SetInterface("Mykonos", "Mykonos_I_Ermoupoli").
+
++SetNode("Serres").
++SetAdminDist("Serres", "static", 1).
++SetAdminDist("Serres", "bgp", 2).
++SetAdminDist("Serres", "ospf", 3).
++SetInterface("Serres", "Serres_I_Thessaloniki").
+
++SetNode("Karlovassi").
++SetAdminDist("Karlovassi", "static", 1).
++SetAdminDist("Karlovassi", "bgp", 2).
++SetAdminDist("Karlovassi", "ospf", 3).
++SetInterface("Karlovassi", "Karlovassi_I_Mykonos").
++SetInterface("Karlovassi", "Karlovassi_I_Rhodos").
+
++SetNode("Kavala").
++SetAdminDist("Kavala", "static", 1).
++SetAdminDist("Kavala", "bgp", 2).
++SetAdminDist("Kavala", "ospf", 3).
++SetInterface("Kavala", "Kavala_I_Xanthi").
+
++SetNode("Thessaloniki").
++SetAdminDist("Thessaloniki", "static", 1).
++SetAdminDist("Thessaloniki", "bgp", 2).
++SetAdminDist("Thessaloniki", "ospf", 3).
++SetInterface("Thessaloniki", "Thessaloniki_I_Edessa").
++SetInterface("Thessaloniki", "Thessaloniki_I_Athens").
++SetInterface("Thessaloniki", "Thessaloniki_I_Xanthi").
++SetInterface("Thessaloniki", "Thessaloniki_I_Serres").
++SetInterface("Thessaloniki", "Thessaloniki_I_Ioannina").
++SetInterface("Thessaloniki", "Thessaloniki_I_Larissa").
+
++SetNode("Chios").
++SetAdminDist("Chios", "static", 1).
++SetAdminDist("Chios", "bgp", 2).
++SetAdminDist("Chios", "ospf", 3).
++SetInterface("Chios", "Chios_I_Ermoupoli").
++SetInterface("Chios", "Chios_I_Mytilini").
+
++SetNode("Pylos").
++SetAdminDist("Pylos", "static", 1).
++SetAdminDist("Pylos", "bgp", 2).
++SetAdminDist("Pylos", "ospf", 3).
++SetInterface("Pylos", "Pylos_I_Kalamata").
+
++SetNode("Heraklio").
++SetAdminDist("Heraklio", "static", 1).
++SetAdminDist("Heraklio", "bgp", 2).
++SetAdminDist("Heraklio", "ospf", 3).
++SetInterface("Heraklio", "Heraklio_I_Rethymno").
++SetInterface("Heraklio", "Heraklio_I_Ermoupoli").
++SetInterface("Heraklio", "Heraklio_I_Chania").
++SetInterface("Heraklio", "Heraklio_I_Athens").
++SetInterface("Heraklio", "Heraklio_I_Rhodos").
+
++SetNode("Edessa").
++SetAdminDist("Edessa", "static", 1).
++SetAdminDist("Edessa", "bgp", 2).
++SetAdminDist("Edessa", "ospf", 3).
++SetInterface("Edessa", "Edessa_I_Thessaloniki").
++SetInterface("Edessa", "Edessa_I_Kastoria").
+
++SetNode("Korinthos").
++SetAdminDist("Korinthos", "static", 1).
++SetAdminDist("Korinthos", "bgp", 2).
++SetAdminDist("Korinthos", "ospf", 3).
++SetInterface("Korinthos", "Korinthos_I_Athens").
++SetInterface("Korinthos", "Korinthos_I_Tripoli").
+
++SetNode("Komotini").
++SetAdminDist("Komotini", "static", 1).
++SetAdminDist("Komotini", "bgp", 2).
++SetAdminDist("Komotini", "ospf", 3).
++SetInterface("Komotini", "Komotini_I_Alexandroupoli").
++SetInterface("Komotini", "Komotini_I_Xanthi").
+
++SetNode("Ermoupoli").
++SetAdminDist("Ermoupoli", "static", 1).
++SetAdminDist("Ermoupoli", "bgp", 2).
++SetAdminDist("Ermoupoli", "ospf", 3).
++SetInterface("Ermoupoli", "Ermoupoli_I_Heraklio").
++SetInterface("Ermoupoli", "Ermoupoli_I_Mykonos").
++SetInterface("Ermoupoli", "Ermoupoli_I_Xanthi").
++SetInterface("Ermoupoli", "Ermoupoli_I_Athens").
++SetInterface("Ermoupoli", "Ermoupoli_I_Chios").
+
++SetNode("Kalavrita").
++SetAdminDist("Kalavrita", "static", 1).
++SetAdminDist("Kalavrita", "bgp", 2).
++SetAdminDist("Kalavrita", "ospf", 3).
++SetInterface("Kalavrita", "Kalavrita_I_Patra").
+
++SetLink("Igoumenitsa_I_Kerkira", "Kerkira_I_Igoumenitsa").
++SetLink("Igoumenitsa_I_Ioannina", "Ioannina_I_Igoumenitsa").
++SetLink("Limnos_I_Mytilini", "Mytilini_I_Limnos").
++SetLink("Athens_I_Thessaloniki", "Thessaloniki_I_Athens").
++SetLink("Athens_I_GEANT", "GEANT_I_Athens").
++SetLink("Athens_I_Halkida", "Halkida_I_Athens").
++SetLink("Athens_I_GRIX", "GRIX_I_Athens").
++SetLink("Athens_I_Heraklio", "Heraklio_I_Athens").
++SetLink("Athens_I_Korinthos", "Korinthos_I_Athens").
++SetLink("Athens_I_Patra", "Patra_I_Athens").
++SetLink("Athens_I_Chania", "Chania_I_Athens").
++SetLink("Athens_I_Ermoupoli", "Ermoupoli_I_Athens").
++SetLink("Athens_I_AMSIX", "AMSIX_I_Athens").
++SetLink("Athens_I_Larissa", "Larissa_I_Athens").
++SetLink("Tripoli_I_Korinthos", "Korinthos_I_Tripoli").
++SetLink("Karditsa_I_Larissa", "Larissa_I_Karditsa").
++SetLink("Rhodos_I_Heraklio", "Heraklio_I_Rhodos").
++SetLink("Rhodos_I_Karlovassi", "Karlovassi_I_Rhodos").
++SetLink("Ioannina_I_Thessaloniki", "Thessaloniki_I_Ioannina").
++SetLink("Ioannina_I_Patra", "Patra_I_Ioannina").
++SetLink("Kalamata_I_Pylos", "Pylos_I_Kalamata").
++SetLink("Kalamata_I_Patra", "Patra_I_Kalamata").
++SetLink("Mesologgi_I_Patra", "Patra_I_Mesologgi").
++SetLink("Rethymno_I_Heraklio", "Heraklio_I_Rethymno").
++SetLink("Xanthi_I_Thessaloniki", "Thessaloniki_I_Xanthi").
++SetLink("Xanthi_I_Komotini", "Komotini_I_Xanthi").
++SetLink("Xanthi_I_Ermoupoli", "Ermoupoli_I_Xanthi").
++SetLink("Xanthi_I_Kavala", "Kavala_I_Xanthi").
++SetLink("Volos_I_Larissa", "Larissa_I_Volos").
++SetLink("Larissa_I_Thessaloniki", "Thessaloniki_I_Larissa").
++SetLink("Larissa_I_Trikala", "Trikala_I_Larissa").
++SetLink("Mytilini_I_Chios", "Chios_I_Mytilini").
++SetLink("Alexandroupoli_I_Komotini", "Komotini_I_Alexandroupoli").
++SetLink("Kastoria_I_Edessa", "Edessa_I_Kastoria").
++SetLink("Patra_I_Kalavrita", "Kalavrita_I_Patra").
++SetLink("Chania_I_Heraklio", "Heraklio_I_Chania").
++SetLink("Mykonos_I_Karlovassi", "Karlovassi_I_Mykonos").
++SetLink("Mykonos_I_Ermoupoli", "Ermoupoli_I_Mykonos").
++SetLink("Serres_I_Thessaloniki", "Thessaloniki_I_Serres").
++SetLink("Thessaloniki_I_Edessa", "Edessa_I_Thessaloniki").
++SetLink("Chios_I_Ermoupoli", "Ermoupoli_I_Chios").
++SetLink("Heraklio_I_Ermoupoli", "Ermoupoli_I_Heraklio").
+
+
++SetNetwork("Thessaloniki", "N_Thessaloniki").
++SetNetwork("Karditsa", "N_Karditsa").
++SetNetwork("Trikala", "N_Trikala").
++SetNetwork("Rhodos", "N_Rhodos").
++SetNetwork("Tripoli", "N_Tripoli").
++SetNetwork("Patra", "N_Patra").
++SetNetwork("Limnos", "N_Limnos").
++SetNetwork("Ioannina", "N_Ioannina").
++SetNetwork("Karlovassi", "N_Karlovassi").
++SetNetwork("Kavala", "N_Kavala").

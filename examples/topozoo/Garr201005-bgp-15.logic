@@ -1,0 +1,514 @@
++SetNode("Pv").
++SetAdminDist("Pv", "static", 1).
++SetAdminDist("Pv", "bgp", 2).
++SetAdminDist("Pv", "ospf", 3).
++SetInterface("Pv", "Pv_I_MI_3").
+
++SetNode("BA").
++SetAdminDist("BA", "static", 1).
++SetAdminDist("BA", "bgp", 2).
++SetAdminDist("BA", "ospf", 3).
++SetInterface("BA", "BA_I_LE").
++SetInterface("BA", "BA_I_PZ").
++SetInterface("BA", "BA_I_NA").
++SetInterface("BA", "BA_I_BO").
++SetInterface("BA", "BA_I_MT").
++SetInterface("BA", "BA_I_FG").
+
++SetNode("GlobalTTCrossing").
++SetAdminDist("GlobalTTCrossing", "static", 1).
++SetAdminDist("GlobalTTCrossing", "bgp", 2).
++SetAdminDist("GlobalTTCrossing", "ospf", 3).
++SetInterface("GlobalTTCrossing", "GlobalTTCrossing_I_MI_1").
+
++SetNode("BO").
++SetAdminDist("BO", "static", 1).
++SetAdminDist("BO", "bgp", 2).
++SetAdminDist("BO", "ospf", 3).
++SetInterface("BO", "BO_I_MI_1").
++SetInterface("BO", "BO_I_RM_2").
++SetInterface("BO", "BO_I_BA").
++SetInterface("BO", "BO_I_AN").
++SetInterface("BO", "BO_I_Fe").
++SetInterface("BO", "BO_I_PD").
++SetInterface("BO", "BO_I_FI").
+
++SetNode("MI_3").
++SetAdminDist("MI_3", "static", 1).
++SetAdminDist("MI_3", "bgp", 2).
++SetAdminDist("MI_3", "ospf", 3).
++SetInterface("MI_3", "MI_3_I_MI_1").
++SetInterface("MI_3", "MI_3_I_MI_5").
++SetInterface("MI_3", "MI_3_I_MI_2").
++SetInterface("MI_3", "MI_3_I_Pv").
++SetInterface("MI_3", "MI_3_I_TN").
+
++SetNode("FUC").
++SetAdminDist("FUC", "static", 1).
++SetAdminDist("FUC", "bgp", 2).
++SetAdminDist("FUC", "ospf", 3).
++SetInterface("FUC", "FUC_I_RM_2").
+
++SetNode("FG").
++SetAdminDist("FG", "static", 1).
++SetAdminDist("FG", "bgp", 2).
++SetAdminDist("FG", "ospf", 3).
++SetInterface("FG", "FG_I_BA").
+
++SetNode("MIXTTTTTTTT").
++SetAdminDist("MIXTTTTTTTT", "static", 1).
++SetAdminDist("MIXTTTTTTTT", "bgp", 2).
++SetAdminDist("MIXTTTTTTTT", "ospf", 3).
++SetInterface("MIXTTTTTTTT", "MIXTTTTTTTT_I_MI_2").
+
++SetNode("RM_1").
++SetAdminDist("RM_1", "static", 1).
++SetAdminDist("RM_1", "bgp", 2).
++SetAdminDist("RM_1", "ospf", 3).
++SetInterface("RM_1", "RM_1_I_RM_2").
++SetInterface("RM_1", "RM_1_I_CA_1").
++SetInterface("RM_1", "RM_1_I_FRA").
++SetInterface("RM_1", "RM_1_I_AN").
++SetInterface("RM_1", "RM_1_I_AQ").
++SetInterface("RM_1", "RM_1_I_PG").
++SetInterface("RM_1", "RM_1_I_CT").
+
++SetNode("RM_2").
++SetAdminDist("RM_2", "static", 1).
++SetAdminDist("RM_2", "bgp", 2).
++SetAdminDist("RM_2", "ospf", 3).
++SetInterface("RM_2", "RM_2_I_RM_1").
++SetInterface("RM_2", "RM_2_I_FRA").
++SetInterface("RM_2", "RM_2_I_MI_2").
++SetInterface("RM_2", "RM_2_I_AQ_1").
++SetInterface("RM_2", "RM_2_I_NA").
++SetInterface("RM_2", "RM_2_I_CA_1").
++SetInterface("RM_2", "RM_2_I_BO").
++SetInterface("RM_2", "RM_2_I_FUC").
++SetInterface("RM_2", "RM_2_I_PI").
++SetInterface("RM_2", "RM_2_I_NAMEX").
+
++SetNode("LE").
++SetAdminDist("LE", "static", 1).
++SetAdminDist("LE", "bgp", 2).
++SetAdminDist("LE", "ospf", 3).
++SetInterface("LE", "LE_I_BA").
+
++SetNode("Mi_4").
++SetAdminDist("Mi_4", "static", 1).
++SetAdminDist("Mi_4", "bgp", 2).
++SetAdminDist("Mi_4", "ospf", 3).
++SetInterface("Mi_4", "Mi_4_I_MI_1").
++SetInterface("Mi_4", "Mi_4_I_MI_2").
++SetInterface("Mi_4", "Mi_4_I_CO").
++SetInterface("Mi_4", "Mi_4_I_TS_1").
+
++SetNode("PZ").
++SetAdminDist("PZ", "static", 1).
++SetAdminDist("PZ", "bgp", 2).
++SetAdminDist("PZ", "ospf", 3).
++SetInterface("PZ", "PZ_I_BA").
+
++SetNode("NA").
++SetAdminDist("NA", "static", 1).
++SetAdminDist("NA", "bgp", 2).
++SetAdminDist("NA", "ospf", 3).
++SetInterface("NA", "NA_I_CB").
++SetInterface("NA", "NA_I_RM_2").
++SetInterface("NA", "NA_I_BA").
++SetInterface("NA", "NA_I_SA").
++SetInterface("NA", "NA_I_CT").
+
++SetNode("CA_1").
++SetAdminDist("CA_1", "static", 1).
++SetAdminDist("CA_1", "bgp", 2).
++SetAdminDist("CA_1", "ospf", 3).
++SetInterface("CA_1", "CA_1_I_SS").
++SetInterface("CA_1", "CA_1_I_RM_1").
++SetInterface("CA_1", "CA_1_I_RM_2").
++SetInterface("CA_1", "CA_1_I_CA").
+
++SetNode("TELIA").
++SetAdminDist("TELIA", "static", 1).
++SetAdminDist("TELIA", "bgp", 2).
++SetAdminDist("TELIA", "ospf", 3).
++SetInterface("TELIA", "TELIA_I_MI_2").
+
++SetNode("TO").
++SetAdminDist("TO", "static", 1).
++SetAdminDist("TO", "bgp", 2).
++SetAdminDist("TO", "ospf", 3).
++SetInterface("TO", "TO_I_TO_PIX").
++SetInterface("TO", "TO_I_PI").
++SetInterface("TO", "TO_I_MI_2").
+
++SetNode("VSIX").
++SetAdminDist("VSIX", "static", 1).
++SetAdminDist("VSIX", "bgp", 2).
++SetAdminDist("VSIX", "ospf", 3).
++SetInterface("VSIX", "VSIX_I_PD").
+
++SetNode("PA").
++SetAdminDist("PA", "static", 1).
++SetAdminDist("PA", "bgp", 2).
++SetAdminDist("PA", "ospf", 3).
++SetInterface("PA", "PA_I_CT").
+
++SetNode("EUMEDTTCONNECT").
++SetAdminDist("EUMEDTTCONNECT", "static", 1).
++SetAdminDist("EUMEDTTCONNECT", "bgp", 2).
++SetAdminDist("EUMEDTTCONNECT", "ospf", 3).
++SetInterface("EUMEDTTCONNECT", "EUMEDTTCONNECT_I_CT").
+
++SetNode("PG").
++SetAdminDist("PG", "static", 1).
++SetAdminDist("PG", "bgp", 2).
++SetAdminDist("PG", "ospf", 3).
++SetInterface("PG", "PG_I_RM_1").
+
++SetNode("PD").
++SetAdminDist("PD", "static", 1).
++SetAdminDist("PD", "bgp", 2).
++SetAdminDist("PD", "ospf", 3).
++SetInterface("PD", "PD_I_MI_1").
++SetInterface("PD", "PD_I_VSIX").
++SetInterface("PD", "PD_I_BO").
++SetInterface("PD", "PD_I_VE").
++SetInterface("PD", "PD_I_TS_1").
+
++SetNode("GEANTID3").
++SetAdminDist("GEANTID3", "static", 1).
++SetAdminDist("GEANTID3", "bgp", 2).
++SetAdminDist("GEANTID3", "ospf", 3).
++SetInterface("GEANTID3", "GEANTID3_I_MI_2").
+
++SetNode("Fi").
++SetAdminDist("Fi", "static", 1).
++SetAdminDist("Fi", "bgp", 2).
++SetAdminDist("Fi", "ospf", 3).
++SetInterface("Fi", "Fi_I_FI").
+
++SetNode("CO").
++SetAdminDist("CO", "static", 1).
++SetAdminDist("CO", "bgp", 2).
++SetAdminDist("CO", "ospf", 3).
++SetInterface("CO", "CO_I_MI_2").
++SetInterface("CO", "CO_I_Mi_4").
+
++SetNode("PI").
++SetAdminDist("PI", "static", 1).
++SetAdminDist("PI", "bgp", 2).
++SetAdminDist("PI", "ospf", 3).
++SetInterface("PI", "PI_I_FI").
++SetInterface("PI", "PI_I_RM_2").
++SetInterface("PI", "PI_I_GE").
++SetInterface("PI", "PI_I_TO").
+
++SetNode("FI").
++SetAdminDist("FI", "static", 1).
++SetAdminDist("FI", "bgp", 2).
++SetAdminDist("FI", "ospf", 3).
++SetInterface("FI", "FI_I_BO").
++SetInterface("FI", "FI_I_Fi").
++SetInterface("FI", "FI_I_PI").
++SetInterface("FI", "FI_I_TIX").
+
++SetNode("NAMEX").
++SetAdminDist("NAMEX", "static", 1).
++SetAdminDist("NAMEX", "bgp", 2).
++SetAdminDist("NAMEX", "ospf", 3).
++SetInterface("NAMEX", "NAMEX_I_RM_2").
+
++SetNode("Fe").
++SetAdminDist("Fe", "static", 1).
++SetAdminDist("Fe", "bgp", 2).
++SetAdminDist("Fe", "ospf", 3).
++SetInterface("Fe", "Fe_I_BO").
+
++SetNode("MI_1").
++SetAdminDist("MI_1", "static", 1).
++SetAdminDist("MI_1", "bgp", 2).
++SetAdminDist("MI_1", "ospf", 3).
++SetInterface("MI_1", "MI_1_I_MI_3").
++SetInterface("MI_1", "MI_1_I_MI_2").
++SetInterface("MI_1", "MI_1_I_Mi_4").
++SetInterface("MI_1", "MI_1_I_GEANT").
++SetInterface("MI_1", "MI_1_I_GlobalTTCrossing").
++SetInterface("MI_1", "MI_1_I_BO").
++SetInterface("MI_1", "MI_1_I_Svizzera").
++SetInterface("MI_1", "MI_1_I_PD").
+
++SetNode("FRA").
++SetAdminDist("FRA", "static", 1).
++SetAdminDist("FRA", "bgp", 2).
++SetAdminDist("FRA", "ospf", 3).
++SetInterface("FRA", "FRA_I_RM_1").
++SetInterface("FRA", "FRA_I_RM_2").
+
++SetNode("MI_2").
++SetAdminDist("MI_2", "static", 1).
++SetAdminDist("MI_2", "bgp", 2).
++SetAdminDist("MI_2", "ospf", 3).
++SetInterface("MI_2", "MI_2_I_MI_1").
++SetInterface("MI_2", "MI_2_I_RM_2").
++SetInterface("MI_2", "MI_2_I_Google").
++SetInterface("MI_2", "MI_2_I_CO").
++SetInterface("MI_2", "MI_2_I_Mi_4").
++SetInterface("MI_2", "MI_2_I_MI_3").
++SetInterface("MI_2", "MI_2_I_TELIA").
++SetInterface("MI_2", "MI_2_I_TO").
++SetInterface("MI_2", "MI_2_I_GE").
++SetInterface("MI_2", "MI_2_I_GEANTID3").
++SetInterface("MI_2", "MI_2_I_MIXTTTTTTTT").
+
++SetNode("MI_5").
++SetAdminDist("MI_5", "static", 1).
++SetAdminDist("MI_5", "bgp", 2).
++SetAdminDist("MI_5", "ospf", 3).
++SetInterface("MI_5", "MI_5_I_MI_3").
+
++SetNode("VE").
++SetAdminDist("VE", "static", 1).
++SetAdminDist("VE", "bgp", 2).
++SetAdminDist("VE", "ospf", 3).
++SetInterface("VE", "VE_I_PD").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_MI_1").
+
++SetNode("CB").
++SetAdminDist("CB", "static", 1).
++SetAdminDist("CB", "bgp", 2).
++SetAdminDist("CB", "ospf", 3).
++SetInterface("CB", "CB_I_NA").
+
++SetNode("CA").
++SetAdminDist("CA", "static", 1).
++SetAdminDist("CA", "bgp", 2).
++SetAdminDist("CA", "ospf", 3).
++SetInterface("CA", "CA_I_CA_1").
+
++SetNode("AN").
++SetAdminDist("AN", "static", 1).
++SetAdminDist("AN", "bgp", 2).
++SetAdminDist("AN", "ospf", 3).
++SetInterface("AN", "AN_I_RM_1").
++SetInterface("AN", "AN_I_BO").
++SetInterface("AN", "AN_I_Ur").
+
++SetNode("AQ").
++SetAdminDist("AQ", "static", 1).
++SetAdminDist("AQ", "bgp", 2).
++SetAdminDist("AQ", "ospf", 3).
++SetInterface("AQ", "AQ_I_RM_1").
++SetInterface("AQ", "AQ_I_AQ_1").
+
++SetNode("CZ").
++SetAdminDist("CZ", "static", 1).
++SetAdminDist("CZ", "bgp", 2).
++SetAdminDist("CZ", "ospf", 3).
++SetInterface("CZ", "CZ_I_CS").
+
++SetNode("GE").
++SetAdminDist("GE", "static", 1).
++SetAdminDist("GE", "bgp", 2).
++SetAdminDist("GE", "ospf", 3).
++SetInterface("GE", "GE_I_PI").
++SetInterface("GE", "GE_I_MI_2").
+
++SetNode("CS").
++SetAdminDist("CS", "static", 1).
++SetAdminDist("CS", "bgp", 2).
++SetAdminDist("CS", "ospf", 3).
++SetInterface("CS", "CS_I_CZ").
++SetInterface("CS", "CS_I_CT").
+
++SetNode("TO_PIX").
++SetAdminDist("TO_PIX", "static", 1).
++SetAdminDist("TO_PIX", "bgp", 2).
++SetAdminDist("TO_PIX", "ospf", 3).
++SetInterface("TO_PIX", "TO_PIX_I_TO").
+
++SetNode("Ur").
++SetAdminDist("Ur", "static", 1).
++SetAdminDist("Ur", "bgp", 2).
++SetAdminDist("Ur", "ospf", 3).
++SetInterface("Ur", "Ur_I_AN").
+
++SetNode("CT").
++SetAdminDist("CT", "static", 1).
++SetAdminDist("CT", "bgp", 2).
++SetAdminDist("CT", "ospf", 3).
++SetInterface("CT", "CT_I_ME").
++SetInterface("CT", "CT_I_RM_1").
++SetInterface("CT", "CT_I_NA").
++SetInterface("CT", "CT_I_PA").
++SetInterface("CT", "CT_I_EUMEDTTCONNECT").
++SetInterface("CT", "CT_I_CS").
+
++SetNode("ME").
++SetAdminDist("ME", "static", 1).
++SetAdminDist("ME", "bgp", 2).
++SetAdminDist("ME", "ospf", 3).
++SetInterface("ME", "ME_I_CT").
+
++SetNode("Google").
++SetAdminDist("Google", "static", 1).
++SetAdminDist("Google", "bgp", 2).
++SetAdminDist("Google", "ospf", 3).
++SetInterface("Google", "Google_I_MI_2").
+
++SetNode("AQ_1").
++SetAdminDist("AQ_1", "static", 1).
++SetAdminDist("AQ_1", "bgp", 2).
++SetAdminDist("AQ_1", "ospf", 3).
++SetInterface("AQ_1", "AQ_1_I_AQ").
++SetInterface("AQ_1", "AQ_1_I_RM_2").
+
++SetNode("SS").
++SetAdminDist("SS", "static", 1).
++SetAdminDist("SS", "bgp", 2).
++SetAdminDist("SS", "ospf", 3).
++SetInterface("SS", "SS_I_CA_1").
+
++SetNode("TIX").
++SetAdminDist("TIX", "static", 1).
++SetAdminDist("TIX", "bgp", 2).
++SetAdminDist("TIX", "ospf", 3).
++SetInterface("TIX", "TIX_I_FI").
+
++SetNode("MT").
++SetAdminDist("MT", "static", 1).
++SetAdminDist("MT", "bgp", 2).
++SetAdminDist("MT", "ospf", 3).
++SetInterface("MT", "MT_I_BA").
+
++SetNode("Svizzera").
++SetAdminDist("Svizzera", "static", 1).
++SetAdminDist("Svizzera", "bgp", 2).
++SetAdminDist("Svizzera", "ospf", 3).
++SetInterface("Svizzera", "Svizzera_I_MI_1").
+
++SetNode("SA").
++SetAdminDist("SA", "static", 1).
++SetAdminDist("SA", "bgp", 2).
++SetAdminDist("SA", "ospf", 3).
++SetInterface("SA", "SA_I_NA").
+
++SetNode("TN").
++SetAdminDist("TN", "static", 1).
++SetAdminDist("TN", "bgp", 2).
++SetAdminDist("TN", "ospf", 3).
++SetInterface("TN", "TN_I_MI_3").
+
++SetNode("TS_1").
++SetAdminDist("TS_1", "static", 1).
++SetAdminDist("TS_1", "bgp", 2).
++SetAdminDist("TS_1", "ospf", 3).
++SetInterface("TS_1", "TS_1_I_Mi_4").
++SetInterface("TS_1", "TS_1_I_PD").
+
++SetLink("Pv_I_MI_3", "MI_3_I_Pv").
++SetLink("BA_I_LE", "LE_I_BA").
++SetLink("BA_I_PZ", "PZ_I_BA").
++SetLink("BA_I_NA", "NA_I_BA").
++SetLink("BA_I_BO", "BO_I_BA").
++SetLink("BA_I_MT", "MT_I_BA").
++SetLink("BA_I_FG", "FG_I_BA").
++SetLink("GlobalTTCrossing_I_MI_1", "MI_1_I_GlobalTTCrossing").
++SetLink("BO_I_MI_1", "MI_1_I_BO").
++SetLink("BO_I_RM_2", "RM_2_I_BO").
++SetLink("BO_I_AN", "AN_I_BO").
++SetLink("BO_I_Fe", "Fe_I_BO").
++SetLink("BO_I_PD", "PD_I_BO").
++SetLink("BO_I_FI", "FI_I_BO").
++SetLink("MI_3_I_MI_1", "MI_1_I_MI_3").
++SetLink("MI_3_I_MI_5", "MI_5_I_MI_3").
++SetLink("MI_3_I_MI_2", "MI_2_I_MI_3").
++SetLink("MI_3_I_TN", "TN_I_MI_3").
++SetLink("FUC_I_RM_2", "RM_2_I_FUC").
++SetLink("MIXTTTTTTTT_I_MI_2", "MI_2_I_MIXTTTTTTTT").
++SetLink("RM_1_I_RM_2", "RM_2_I_RM_1").
++SetLink("RM_1_I_CA_1", "CA_1_I_RM_1").
++SetLink("RM_1_I_FRA", "FRA_I_RM_1").
++SetLink("RM_1_I_AN", "AN_I_RM_1").
++SetLink("RM_1_I_AQ", "AQ_I_RM_1").
++SetLink("RM_1_I_PG", "PG_I_RM_1").
++SetLink("RM_1_I_CT", "CT_I_RM_1").
++SetLink("RM_2_I_FRA", "FRA_I_RM_2").
++SetLink("RM_2_I_MI_2", "MI_2_I_RM_2").
++SetLink("RM_2_I_AQ_1", "AQ_1_I_RM_2").
++SetLink("RM_2_I_NA", "NA_I_RM_2").
++SetLink("RM_2_I_CA_1", "CA_1_I_RM_2").
++SetLink("RM_2_I_PI", "PI_I_RM_2").
++SetLink("RM_2_I_NAMEX", "NAMEX_I_RM_2").
++SetLink("Mi_4_I_MI_1", "MI_1_I_Mi_4").
++SetLink("Mi_4_I_MI_2", "MI_2_I_Mi_4").
++SetLink("Mi_4_I_CO", "CO_I_Mi_4").
++SetLink("Mi_4_I_TS_1", "TS_1_I_Mi_4").
++SetLink("NA_I_CB", "CB_I_NA").
++SetLink("NA_I_SA", "SA_I_NA").
++SetLink("NA_I_CT", "CT_I_NA").
++SetLink("CA_1_I_SS", "SS_I_CA_1").
++SetLink("CA_1_I_CA", "CA_I_CA_1").
++SetLink("TELIA_I_MI_2", "MI_2_I_TELIA").
++SetLink("TO_I_TO_PIX", "TO_PIX_I_TO").
++SetLink("TO_I_PI", "PI_I_TO").
++SetLink("TO_I_MI_2", "MI_2_I_TO").
++SetLink("VSIX_I_PD", "PD_I_VSIX").
++SetLink("PA_I_CT", "CT_I_PA").
++SetLink("EUMEDTTCONNECT_I_CT", "CT_I_EUMEDTTCONNECT").
++SetLink("PD_I_MI_1", "MI_1_I_PD").
++SetLink("PD_I_VE", "VE_I_PD").
++SetLink("PD_I_TS_1", "TS_1_I_PD").
++SetLink("GEANTID3_I_MI_2", "MI_2_I_GEANTID3").
++SetLink("Fi_I_FI", "FI_I_Fi").
++SetLink("CO_I_MI_2", "MI_2_I_CO").
++SetLink("PI_I_FI", "FI_I_PI").
++SetLink("PI_I_GE", "GE_I_PI").
++SetLink("FI_I_TIX", "TIX_I_FI").
++SetLink("MI_1_I_MI_2", "MI_2_I_MI_1").
++SetLink("MI_1_I_GEANT", "GEANT_I_MI_1").
++SetLink("MI_1_I_Svizzera", "Svizzera_I_MI_1").
++SetLink("MI_2_I_Google", "Google_I_MI_2").
++SetLink("MI_2_I_GE", "GE_I_MI_2").
++SetLink("AN_I_Ur", "Ur_I_AN").
++SetLink("AQ_I_AQ_1", "AQ_1_I_AQ").
++SetLink("CZ_I_CS", "CS_I_CZ").
++SetLink("CS_I_CT", "CT_I_CS").
++SetLink("CT_I_ME", "ME_I_CT").
+
+
++SetNetwork("SA", "N_SA").
++SetBGPAnnouncement("SA", "N_SA", "NBGP_SA", "1;2;3", 3).
++SetNetwork("SS", "N_SS").
++SetBGPAnnouncement("SS", "N_SS", "NBGP_SS", "1;2;3", 3).
++SetNetwork("Pv", "N_Pv").
++SetBGPAnnouncement("Pv", "N_Pv", "NBGP_Pv", "1;2;3", 3).
++SetNetwork("AN", "N_AN").
++SetBGPAnnouncement("AN", "N_AN", "NBGP_AN", "1;2;3", 3).
++SetNetwork("TELIA", "N_TELIA").
++SetBGPAnnouncement("TELIA", "N_TELIA", "NBGP_TELIA", "1;2;3", 3).
++SetNetwork("AQ", "N_AQ").
++SetBGPAnnouncement("AQ", "N_AQ", "NBGP_AQ", "1;2;3", 3).
++SetNetwork("PD", "N_PD").
++SetBGPAnnouncement("PD", "N_PD", "NBGP_PD", "1;2;3", 3).
++SetNetwork("PA", "N_PA").
++SetBGPAnnouncement("PA", "N_PA", "NBGP_PA", "1;2;3", 3).
++SetNetwork("GE", "N_GE").
++SetBGPAnnouncement("GE", "N_GE", "NBGP_GE", "1;2;3", 3).
++SetNetwork("GEANTID3", "N_GEANTID3").
++SetBGPAnnouncement("GEANTID3", "N_GEANTID3", "NBGP_GEANTID3", "1;2;3", 3).
++SetNetwork("CZ", "N_CZ").
++SetBGPAnnouncement("CZ", "N_CZ", "NBGP_CZ", "1;2;3", 3).
++SetNetwork("Svizzera", "N_Svizzera").
++SetBGPAnnouncement("Svizzera", "N_Svizzera", "NBGP_Svizzera", "1;2;3", 3).
++SetNetwork("FRA", "N_FRA").
++SetBGPAnnouncement("FRA", "N_FRA", "NBGP_FRA", "1;2;3", 3).
++SetNetwork("NAMEX", "N_NAMEX").
++SetBGPAnnouncement("NAMEX", "N_NAMEX", "NBGP_NAMEX", "1;2;3", 3).
++SetNetwork("Google", "N_Google").
++SetBGPAnnouncement("Google", "N_Google", "NBGP_Google", "1;2;3", 3).

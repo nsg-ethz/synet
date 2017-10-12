@@ -1,0 +1,143 @@
++SetNode("BeaconTTHill").
++SetAdminDist("BeaconTTHill", "static", 1).
++SetAdminDist("BeaconTTHill", "bgp", 2).
++SetAdminDist("BeaconTTHill", "ospf", 3).
++SetInterface("BeaconTTHill", "BeaconTTHill_I_UniversityTTofTTGreenwich").
++SetInterface("BeaconTTHill", "BeaconTTHill_I_Dunkirk").
++SetInterface("BeaconTTHill", "BeaconTTHill_I_KIAD_R").
++SetInterface("BeaconTTHill", "BeaconTTHill_I_BlueTTBellTTHill").
+
++SetNode("CCCU_C").
++SetAdminDist("CCCU_C", "static", 1).
++SetAdminDist("CCCU_C", "bgp", 2).
++SetAdminDist("CCCU_C", "ospf", 3).
++SetInterface("CCCU_C", "CCCU_C_I_Kent").
+
++SetNode("KIAD_C").
++SetAdminDist("KIAD_C", "static", 1).
++SetAdminDist("KIAD_C", "bgp", 2).
++SetAdminDist("KIAD_C", "ospf", 3).
++SetInterface("KIAD_C", "KIAD_C_I_Kent").
+
++SetNode("Cranbrook").
++SetAdminDist("Cranbrook", "static", 1).
++SetAdminDist("Cranbrook", "bgp", 2).
++SetAdminDist("Cranbrook", "ospf", 3).
++SetInterface("Cranbrook", "Cranbrook_I_BlueTTBellTTHill").
++SetInterface("Cranbrook", "Cranbrook_I_NTL_Wye").
+
++SetNode("NTL_Wye").
++SetAdminDist("NTL_Wye", "static", 1).
++SetAdminDist("NTL_Wye", "bgp", 2).
++SetAdminDist("NTL_Wye", "ospf", 3).
++SetInterface("NTL_Wye", "NTL_Wye_I_Wye").
++SetInterface("NTL_Wye", "NTL_Wye_I_Cranbrook").
+
++SetNode("Tonbridge").
++SetAdminDist("Tonbridge", "static", 1).
++SetAdminDist("Tonbridge", "bgp", 2).
++SetAdminDist("Tonbridge", "ospf", 3).
++SetInterface("Tonbridge", "Tonbridge_I_CCCU_S").
++SetInterface("Tonbridge", "Tonbridge_I_BlueTTBellTTHill").
+
++SetNode("KIAD_M").
++SetAdminDist("KIAD_M", "static", 1).
++SetAdminDist("KIAD_M", "bgp", 2).
++SetAdminDist("KIAD_M", "ospf", 3).
++SetInterface("KIAD_M", "KIAD_M_I_BlueTTBellTTHill").
+
++SetNode("BlueTTBellTTHill").
++SetAdminDist("BlueTTBellTTHill", "static", 1).
++SetAdminDist("BlueTTBellTTHill", "bgp", 2).
++SetAdminDist("BlueTTBellTTHill", "ospf", 3).
++SetInterface("BlueTTBellTTHill", "BlueTTBellTTHill_I_BeaconTTHill").
++SetInterface("BlueTTBellTTHill", "BlueTTBellTTHill_I_Cranbrook").
++SetInterface("BlueTTBellTTHill", "BlueTTBellTTHill_I_Tonbridge").
++SetInterface("BlueTTBellTTHill", "BlueTTBellTTHill_I_KIAD_M").
++SetInterface("BlueTTBellTTHill", "BlueTTBellTTHill_I_Horsted").
++SetInterface("BlueTTBellTTHill", "BlueTTBellTTHill_I_UniversityTTofTTGreenwich").
+
++SetNode("Wye").
++SetAdminDist("Wye", "static", 1).
++SetAdminDist("Wye", "bgp", 2).
++SetAdminDist("Wye", "ospf", 3).
++SetInterface("Wye", "Wye_I_Kent").
++SetInterface("Wye", "Wye_I_NTL_Wye").
+
++SetNode("CCCU_T").
++SetAdminDist("CCCU_T", "static", 1).
++SetAdminDist("CCCU_T", "bgp", 2).
++SetAdminDist("CCCU_T", "ospf", 3).
++SetInterface("CCCU_T", "CCCU_T_I_Kent").
+
++SetNode("KIAD_R").
++SetAdminDist("KIAD_R", "static", 1).
++SetAdminDist("KIAD_R", "bgp", 2).
++SetAdminDist("KIAD_R", "ospf", 3).
++SetInterface("KIAD_R", "KIAD_R_I_BeaconTTHill").
+
++SetNode("Horsted").
++SetAdminDist("Horsted", "static", 1).
++SetAdminDist("Horsted", "bgp", 2).
++SetAdminDist("Horsted", "ospf", 3).
++SetInterface("Horsted", "Horsted_I_BlueTTBellTTHill").
+
++SetNode("CCCU_S").
++SetAdminDist("CCCU_S", "static", 1).
++SetAdminDist("CCCU_S", "bgp", 2).
++SetAdminDist("CCCU_S", "ospf", 3).
++SetInterface("CCCU_S", "CCCU_S_I_Tonbridge").
+
++SetNode("Kent").
++SetAdminDist("Kent", "static", 1).
++SetAdminDist("Kent", "bgp", 2).
++SetAdminDist("Kent", "ospf", 3).
++SetInterface("Kent", "Kent_I_CCCU_C").
++SetInterface("Kent", "Kent_I_Wye").
++SetInterface("Kent", "Kent_I_CCCU_T").
++SetInterface("Kent", "Kent_I_Dunkirk").
++SetInterface("Kent", "Kent_I_KIAD_C").
+
++SetNode("Dunkirk").
++SetAdminDist("Dunkirk", "static", 1).
++SetAdminDist("Dunkirk", "bgp", 2).
++SetAdminDist("Dunkirk", "ospf", 3).
++SetInterface("Dunkirk", "Dunkirk_I_BeaconTTHill").
++SetInterface("Dunkirk", "Dunkirk_I_Kent").
+
++SetNode("UniversityTTofTTGreenwich").
++SetAdminDist("UniversityTTofTTGreenwich", "static", 1).
++SetAdminDist("UniversityTTofTTGreenwich", "bgp", 2).
++SetAdminDist("UniversityTTofTTGreenwich", "ospf", 3).
++SetInterface("UniversityTTofTTGreenwich", "UniversityTTofTTGreenwich_I_BeaconTTHill").
++SetInterface("UniversityTTofTTGreenwich", "UniversityTTofTTGreenwich_I_BlueTTBellTTHill").
+
++SetLink("BeaconTTHill_I_UniversityTTofTTGreenwich", "UniversityTTofTTGreenwich_I_BeaconTTHill").
++SetLink("BeaconTTHill_I_Dunkirk", "Dunkirk_I_BeaconTTHill").
++SetLink("BeaconTTHill_I_KIAD_R", "KIAD_R_I_BeaconTTHill").
++SetLink("BeaconTTHill_I_BlueTTBellTTHill", "BlueTTBellTTHill_I_BeaconTTHill").
++SetLink("CCCU_C_I_Kent", "Kent_I_CCCU_C").
++SetLink("KIAD_C_I_Kent", "Kent_I_KIAD_C").
++SetLink("Cranbrook_I_BlueTTBellTTHill", "BlueTTBellTTHill_I_Cranbrook").
++SetLink("Cranbrook_I_NTL_Wye", "NTL_Wye_I_Cranbrook").
++SetLink("NTL_Wye_I_Wye", "Wye_I_NTL_Wye").
++SetLink("Tonbridge_I_CCCU_S", "CCCU_S_I_Tonbridge").
++SetLink("Tonbridge_I_BlueTTBellTTHill", "BlueTTBellTTHill_I_Tonbridge").
++SetLink("KIAD_M_I_BlueTTBellTTHill", "BlueTTBellTTHill_I_KIAD_M").
++SetLink("BlueTTBellTTHill_I_Horsted", "Horsted_I_BlueTTBellTTHill").
++SetLink("BlueTTBellTTHill_I_UniversityTTofTTGreenwich", "UniversityTTofTTGreenwich_I_BlueTTBellTTHill").
++SetLink("Wye_I_Kent", "Kent_I_Wye").
++SetLink("CCCU_T_I_Kent", "Kent_I_CCCU_T").
++SetLink("Kent_I_Dunkirk", "Dunkirk_I_Kent").
+
+
++SetNetwork("CCCU_T", "N_CCCU_T").
++SetBGPAnnouncement("CCCU_T", "N_CCCU_T", "NBGP_CCCU_T", "1;2;3", 3).
++SetNetwork("Wye", "N_Wye").
++SetBGPAnnouncement("Wye", "N_Wye", "NBGP_Wye", "1;2;3", 3).
++SetNetwork("BlueTTBellTTHill", "N_BlueTTBellTTHill").
++SetBGPAnnouncement("BlueTTBellTTHill", "N_BlueTTBellTTHill", "NBGP_BlueTTBellTTHill", "1;2;3", 3).
++SetNetwork("Tonbridge", "N_Tonbridge").
++SetBGPAnnouncement("Tonbridge", "N_Tonbridge", "NBGP_Tonbridge", "1;2;3", 3).
++SetNetwork("KIAD_C", "N_KIAD_C").
++SetBGPAnnouncement("KIAD_C", "N_KIAD_C", "NBGP_KIAD_C", "1;2;3", 3).

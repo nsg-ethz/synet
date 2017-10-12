@@ -1,0 +1,219 @@
++SetNode("Arlon").
++SetAdminDist("Arlon", "static", 1).
++SetAdminDist("Arlon", "bgp", 2).
++SetAdminDist("Arlon", "ospf", 3).
++SetInterface("Arlon", "Arlon_I_LiegeTT2").
++SetInterface("Arlon", "Arlon_I_Namur").
+
++SetNode("Hasselt").
++SetAdminDist("Hasselt", "static", 1).
++SetAdminDist("Hasselt", "bgp", 2).
++SetAdminDist("Hasselt", "ospf", 3).
++SetInterface("Hasselt", "Hasselt_I_Leuven2").
++SetInterface("Hasselt", "Hasselt_I_Geel").
+
++SetNode("Louvain_la_Neuve").
++SetAdminDist("Louvain_la_Neuve", "static", 1).
++SetAdminDist("Louvain_la_Neuve", "bgp", 2).
++SetAdminDist("Louvain_la_Neuve", "ospf", 3).
++SetInterface("Louvain_la_Neuve", "Louvain_la_Neuve_I_Charleroi").
++SetInterface("Louvain_la_Neuve", "Louvain_la_Neuve_I_Namur").
+
++SetNode("LiegeTT2").
++SetAdminDist("LiegeTT2", "static", 1).
++SetAdminDist("LiegeTT2", "bgp", 2).
++SetAdminDist("LiegeTT2", "ospf", 3).
++SetInterface("LiegeTT2", "LiegeTT2_I_LiegeTT1TT").
++SetInterface("LiegeTT2", "LiegeTT2_I_Arlon").
+
++SetNode("LiegeTT1TT").
++SetAdminDist("LiegeTT1TT", "static", 1).
++SetAdminDist("LiegeTT1TT", "bgp", 2).
++SetAdminDist("LiegeTT1TT", "ospf", 3).
++SetInterface("LiegeTT1TT", "LiegeTT1TT_I_LiegeTT2").
++SetInterface("LiegeTT1TT", "LiegeTT1TT_I_Evere").
+
++SetNode("Vilvoorde").
++SetAdminDist("Vilvoorde", "static", 1).
++SetAdminDist("Vilvoorde", "bgp", 2).
++SetAdminDist("Vilvoorde", "ospf", 3).
++SetInterface("Vilvoorde", "Vilvoorde_I_Evere").
++SetInterface("Vilvoorde", "Vilvoorde_I_Korthijk").
++SetInterface("Vilvoorde", "Vilvoorde_I_BrusselsTTCampus").
++SetInterface("Vilvoorde", "Vilvoorde_I_Mons").
++SetInterface("Vilvoorde", "Vilvoorde_I_Geel").
+
++SetNode("BrusselsTTCampus").
++SetAdminDist("BrusselsTTCampus", "static", 1).
++SetAdminDist("BrusselsTTCampus", "bgp", 2).
++SetAdminDist("BrusselsTTCampus", "ospf", 3).
++SetInterface("BrusselsTTCampus", "BrusselsTTCampus_I_BrusselsTTScience").
++SetInterface("BrusselsTTCampus", "BrusselsTTCampus_I_Vilvoorde").
+
++SetNode("AntwerpenTT2").
++SetAdminDist("AntwerpenTT2", "static", 1).
++SetAdminDist("AntwerpenTT2", "bgp", 2).
++SetAdminDist("AntwerpenTT2", "ospf", 3).
++SetInterface("AntwerpenTT2", "AntwerpenTT2_I_Evere").
++SetInterface("AntwerpenTT2", "AntwerpenTT2_I_Antwerpen1").
+
++SetNode("Evere").
++SetAdminDist("Evere", "static", 1).
++SetAdminDist("Evere", "bgp", 2).
++SetAdminDist("Evere", "ospf", 3).
++SetInterface("Evere", "Evere_I_LiegeTT1TT").
++SetInterface("Evere", "Evere_I_BrusselsTTScience").
++SetInterface("Evere", "Evere_I_Vilvoorde").
++SetInterface("Evere", "Evere_I_AntwerpenTT2").
++SetInterface("Evere", "Evere_I_Leuven1").
+
++SetNode("BrusselsTTScience").
++SetAdminDist("BrusselsTTScience", "static", 1).
++SetAdminDist("BrusselsTTScience", "bgp", 2).
++SetAdminDist("BrusselsTTScience", "ospf", 3).
++SetInterface("BrusselsTTScience", "BrusselsTTScience_I_Evere").
++SetInterface("BrusselsTTScience", "BrusselsTTScience_I_BrusselsTTCampus").
+
++SetNode("Antwerpen1").
++SetAdminDist("Antwerpen1", "static", 1).
++SetAdminDist("Antwerpen1", "bgp", 2).
++SetAdminDist("Antwerpen1", "ospf", 3).
++SetInterface("Antwerpen1", "Antwerpen1_I_Gent2").
++SetInterface("Antwerpen1", "Antwerpen1_I_AntwerpenTT2").
+
++SetNode("Korthijk").
++SetAdminDist("Korthijk", "static", 1).
++SetAdminDist("Korthijk", "bgp", 2).
++SetAdminDist("Korthijk", "ospf", 3).
++SetInterface("Korthijk", "Korthijk_I_Brugge").
++SetInterface("Korthijk", "Korthijk_I_Vilvoorde").
+
++SetNode("Mons").
++SetAdminDist("Mons", "static", 1).
++SetAdminDist("Mons", "bgp", 2).
++SetAdminDist("Mons", "ospf", 3).
++SetInterface("Mons", "Mons_I_Charleroi").
++SetInterface("Mons", "Mons_I_Vilvoorde").
+
++SetNode("Gent2").
++SetAdminDist("Gent2", "static", 1).
++SetAdminDist("Gent2", "bgp", 2).
++SetAdminDist("Gent2", "ospf", 3).
++SetInterface("Gent2", "Gent2_I_Antwerpen1").
++SetInterface("Gent2", "Gent2_I_Gent1").
+
++SetNode("Geel").
++SetAdminDist("Geel", "static", 1).
++SetAdminDist("Geel", "bgp", 2).
++SetAdminDist("Geel", "ospf", 3).
++SetInterface("Geel", "Geel_I_Vilvoorde").
++SetInterface("Geel", "Geel_I_Hasselt").
+
++SetNode("Charleroi").
++SetAdminDist("Charleroi", "static", 1).
++SetAdminDist("Charleroi", "bgp", 2).
++SetAdminDist("Charleroi", "ospf", 3).
++SetInterface("Charleroi", "Charleroi_I_Louvain_la_Neuve").
++SetInterface("Charleroi", "Charleroi_I_Mons").
+
++SetNode("Leuven1").
++SetAdminDist("Leuven1", "static", 1).
++SetAdminDist("Leuven1", "bgp", 2).
++SetAdminDist("Leuven1", "ospf", 3).
++SetInterface("Leuven1", "Leuven1_I_Evere").
++SetInterface("Leuven1", "Leuven1_I_Leuven2").
+
++SetNode("Brugge").
++SetAdminDist("Brugge", "static", 1).
++SetAdminDist("Brugge", "bgp", 2).
++SetAdminDist("Brugge", "ospf", 3).
++SetInterface("Brugge", "Brugge_I_Korthijk").
++SetInterface("Brugge", "Brugge_I_Gent1").
+
++SetNode("Namur").
++SetAdminDist("Namur", "static", 1).
++SetAdminDist("Namur", "bgp", 2).
++SetAdminDist("Namur", "ospf", 3).
++SetInterface("Namur", "Namur_I_Louvain_la_Neuve").
++SetInterface("Namur", "Namur_I_Arlon").
+
++SetNode("Leuven2").
++SetAdminDist("Leuven2", "static", 1).
++SetAdminDist("Leuven2", "bgp", 2).
++SetAdminDist("Leuven2", "ospf", 3).
++SetInterface("Leuven2", "Leuven2_I_Leuven1").
++SetInterface("Leuven2", "Leuven2_I_Hasselt").
+
++SetNode("Gent1").
++SetAdminDist("Gent1", "static", 1).
++SetAdminDist("Gent1", "bgp", 2).
++SetAdminDist("Gent1", "ospf", 3).
++SetInterface("Gent1", "Gent1_I_Brugge").
++SetInterface("Gent1", "Gent1_I_Gent2").
+
++SetLink("Arlon_I_LiegeTT2", "LiegeTT2_I_Arlon").
++SetLink("Arlon_I_Namur", "Namur_I_Arlon").
++SetLink("Hasselt_I_Leuven2", "Leuven2_I_Hasselt").
++SetLink("Hasselt_I_Geel", "Geel_I_Hasselt").
++SetLink("Louvain_la_Neuve_I_Charleroi", "Charleroi_I_Louvain_la_Neuve").
++SetLink("Louvain_la_Neuve_I_Namur", "Namur_I_Louvain_la_Neuve").
++SetLink("LiegeTT2_I_LiegeTT1TT", "LiegeTT1TT_I_LiegeTT2").
++SetLink("LiegeTT1TT_I_Evere", "Evere_I_LiegeTT1TT").
++SetLink("Vilvoorde_I_Evere", "Evere_I_Vilvoorde").
++SetLink("Vilvoorde_I_Korthijk", "Korthijk_I_Vilvoorde").
++SetLink("Vilvoorde_I_BrusselsTTCampus", "BrusselsTTCampus_I_Vilvoorde").
++SetLink("Vilvoorde_I_Mons", "Mons_I_Vilvoorde").
++SetLink("Vilvoorde_I_Geel", "Geel_I_Vilvoorde").
++SetLink("BrusselsTTCampus_I_BrusselsTTScience", "BrusselsTTScience_I_BrusselsTTCampus").
++SetLink("AntwerpenTT2_I_Evere", "Evere_I_AntwerpenTT2").
++SetLink("AntwerpenTT2_I_Antwerpen1", "Antwerpen1_I_AntwerpenTT2").
++SetLink("Evere_I_BrusselsTTScience", "BrusselsTTScience_I_Evere").
++SetLink("Evere_I_Leuven1", "Leuven1_I_Evere").
++SetLink("Antwerpen1_I_Gent2", "Gent2_I_Antwerpen1").
++SetLink("Korthijk_I_Brugge", "Brugge_I_Korthijk").
++SetLink("Mons_I_Charleroi", "Charleroi_I_Mons").
++SetLink("Gent2_I_Gent1", "Gent1_I_Gent2").
++SetLink("Leuven1_I_Leuven2", "Leuven2_I_Leuven1").
++SetLink("Brugge_I_Gent1", "Gent1_I_Brugge").
+
+
++SetNetwork("BrusselsTTScience", "N_BrusselsTTScience").
++SetBGPAnnouncement("BrusselsTTScience", "N_BrusselsTTScience", "NBGP_BrusselsTTScience", "1;2;3", 3).
++SetNetwork("Geel", "N_Geel").
++SetBGPAnnouncement("Geel", "N_Geel", "NBGP_Geel", "1;2;3", 3).
++SetNetwork("Antwerpen1", "N_Antwerpen1").
++SetBGPAnnouncement("Antwerpen1", "N_Antwerpen1", "NBGP_Antwerpen1", "1;2;3", 3).
++SetNetwork("Brugge", "N_Brugge").
++SetBGPAnnouncement("Brugge", "N_Brugge", "NBGP_Brugge", "1;2;3", 3).
++SetNetwork("Leuven1", "N_Leuven1").
++SetBGPAnnouncement("Leuven1", "N_Leuven1", "NBGP_Leuven1", "1;2;3", 3).
++SetNetwork("BrusselsTTCampus", "N_BrusselsTTCampus").
++SetBGPAnnouncement("BrusselsTTCampus", "N_BrusselsTTCampus", "NBGP_BrusselsTTCampus", "1;2;3", 3).
++SetNetwork("Gent1", "N_Gent1").
++SetBGPAnnouncement("Gent1", "N_Gent1", "NBGP_Gent1", "1;2;3", 3).
++SetNetwork("Leuven2", "N_Leuven2").
++SetBGPAnnouncement("Leuven2", "N_Leuven2", "NBGP_Leuven2", "1;2;3", 3).
++SetNetwork("AntwerpenTT2", "N_AntwerpenTT2").
++SetBGPAnnouncement("AntwerpenTT2", "N_AntwerpenTT2", "NBGP_AntwerpenTT2", "1;2;3", 3).
++SetNetwork("LiegeTT1TT", "N_LiegeTT1TT").
++SetBGPAnnouncement("LiegeTT1TT", "N_LiegeTT1TT", "NBGP_LiegeTT1TT", "1;2;3", 3).
++SetNetwork("Charleroi", "N_Charleroi").
++SetBGPAnnouncement("Charleroi", "N_Charleroi", "NBGP_Charleroi", "1;2;3", 3).
++SetNetwork("Hasselt", "N_Hasselt").
++SetBGPAnnouncement("Hasselt", "N_Hasselt", "NBGP_Hasselt", "1;2;3", 3).
++SetNetwork("LiegeTT2", "N_LiegeTT2").
++SetBGPAnnouncement("LiegeTT2", "N_LiegeTT2", "NBGP_LiegeTT2", "1;2;3", 3).
++SetNetwork("Evere", "N_Evere").
++SetBGPAnnouncement("Evere", "N_Evere", "NBGP_Evere", "1;2;3", 3).
++SetNetwork("Korthijk", "N_Korthijk").
++SetBGPAnnouncement("Korthijk", "N_Korthijk", "NBGP_Korthijk", "1;2;3", 3).
++SetNetwork("Mons", "N_Mons").
++SetBGPAnnouncement("Mons", "N_Mons", "NBGP_Mons", "1;2;3", 3).
++SetNetwork("Louvain_la_Neuve", "N_Louvain_la_Neuve").
++SetBGPAnnouncement("Louvain_la_Neuve", "N_Louvain_la_Neuve", "NBGP_Louvain_la_Neuve", "1;2;3", 3).
++SetNetwork("Arlon", "N_Arlon").
++SetBGPAnnouncement("Arlon", "N_Arlon", "NBGP_Arlon", "1;2;3", 3).
++SetNetwork("Gent2", "N_Gent2").
++SetBGPAnnouncement("Gent2", "N_Gent2", "NBGP_Gent2", "1;2;3", 3).
++SetNetwork("Vilvoorde", "N_Vilvoorde").
++SetBGPAnnouncement("Vilvoorde", "N_Vilvoorde", "NBGP_Vilvoorde", "1;2;3", 3).

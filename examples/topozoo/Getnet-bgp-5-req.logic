@@ -1,0 +1,66 @@
+
++Fwd("N_Tucson", "Phoenix", "Tucson", "ospf").
++Fwd("NBGP_Tucson", "Phoenix", "Tucson", "bgp").
++Fwd("N_Tucson", "Pittsburgh", "SantaTTClara", "ospf").
++Fwd("NBGP_Tucson", "Pittsburgh", "SantaTTClara", "bgp").
++Fwd("N_Tucson", "SantaTTClara", "Phoenix", "ospf").
++Fwd("NBGP_Tucson", "SantaTTClara", "Phoenix", "bgp").
++Fwd("N_Tucson", "Washington_TTDC", "Phoenix", "ospf").
++Fwd("NBGP_Tucson", "Washington_TTDC", "Phoenix", "bgp").
++Fwd("N_Tucson", "Seattle", "SantaTTClara", "ospf").
++Fwd("NBGP_Tucson", "Seattle", "SantaTTClara", "bgp").
++Fwd("N_Tucson", "Baltimore", "Washington_TTDC", "ospf").
++Fwd("NBGP_Tucson", "Baltimore", "Washington_TTDC", "bgp").
+
++Fwd("N_Pittsburgh", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("NBGP_Pittsburgh", "Phoenix", "Washington_TTDC", "bgp").
++Fwd("N_Pittsburgh", "Washington_TTDC", "SantaTTClara", "ospf").
++Fwd("NBGP_Pittsburgh", "Washington_TTDC", "SantaTTClara", "bgp").
++Fwd("N_Pittsburgh", "SantaTTClara", "Pittsburgh", "ospf").
++Fwd("NBGP_Pittsburgh", "SantaTTClara", "Pittsburgh", "bgp").
++Fwd("N_Pittsburgh", "Tucson", "Phoenix", "ospf").
++Fwd("NBGP_Pittsburgh", "Tucson", "Phoenix", "bgp").
++Fwd("N_Pittsburgh", "Seattle", "SantaTTClara", "ospf").
++Fwd("NBGP_Pittsburgh", "Seattle", "SantaTTClara", "bgp").
++Fwd("N_Pittsburgh", "Baltimore", "Pittsburgh", "ospf").
++Fwd("NBGP_Pittsburgh", "Baltimore", "Pittsburgh", "bgp").
+
++Fwd("N_Baltimore", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("NBGP_Baltimore", "Phoenix", "Washington_TTDC", "bgp").
++Fwd("N_Baltimore", "Washington_TTDC", "Baltimore", "ospf").
++Fwd("NBGP_Baltimore", "Washington_TTDC", "Baltimore", "bgp").
++Fwd("N_Baltimore", "Pittsburgh", "Baltimore", "ospf").
++Fwd("NBGP_Baltimore", "Pittsburgh", "Baltimore", "bgp").
++Fwd("N_Baltimore", "Tucson", "Phoenix", "ospf").
++Fwd("NBGP_Baltimore", "Tucson", "Phoenix", "bgp").
++Fwd("N_Baltimore", "SantaTTClara", "Pittsburgh", "ospf").
++Fwd("NBGP_Baltimore", "SantaTTClara", "Pittsburgh", "bgp").
++Fwd("N_Baltimore", "Seattle", "SantaTTClara", "ospf").
++Fwd("NBGP_Baltimore", "Seattle", "SantaTTClara", "bgp").
+
++Fwd("N_Seattle", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("NBGP_Seattle", "Phoenix", "Washington_TTDC", "bgp").
++Fwd("N_Seattle", "Washington_TTDC", "SantaTTClara", "ospf").
++Fwd("NBGP_Seattle", "Washington_TTDC", "SantaTTClara", "bgp").
++Fwd("N_Seattle", "SantaTTClara", "Seattle", "ospf").
++Fwd("NBGP_Seattle", "SantaTTClara", "Seattle", "bgp").
++Fwd("N_Seattle", "Pittsburgh", "SantaTTClara", "ospf").
++Fwd("NBGP_Seattle", "Pittsburgh", "SantaTTClara", "bgp").
++Fwd("N_Seattle", "Tucson", "Phoenix", "ospf").
++Fwd("NBGP_Seattle", "Tucson", "Phoenix", "bgp").
++Fwd("N_Seattle", "Baltimore", "Washington_TTDC", "ospf").
++Fwd("NBGP_Seattle", "Baltimore", "Washington_TTDC", "bgp").
+
++Fwd("N_SantaTTClara", "Phoenix", "Washington_TTDC", "ospf").
++Fwd("NBGP_SantaTTClara", "Phoenix", "Washington_TTDC", "bgp").
++Fwd("N_SantaTTClara", "Washington_TTDC", "SantaTTClara", "ospf").
++Fwd("NBGP_SantaTTClara", "Washington_TTDC", "SantaTTClara", "bgp").
++Fwd("N_SantaTTClara", "Pittsburgh", "SantaTTClara", "ospf").
++Fwd("NBGP_SantaTTClara", "Pittsburgh", "SantaTTClara", "bgp").
++Fwd("N_SantaTTClara", "Tucson", "Phoenix", "ospf").
++Fwd("NBGP_SantaTTClara", "Tucson", "Phoenix", "bgp").
++Fwd("N_SantaTTClara", "Seattle", "SantaTTClara", "ospf").
++Fwd("NBGP_SantaTTClara", "Seattle", "SantaTTClara", "bgp").
++Fwd("N_SantaTTClara", "Baltimore", "Washington_TTDC", "ospf").
++Fwd("NBGP_SantaTTClara", "Baltimore", "Washington_TTDC", "bgp").
+

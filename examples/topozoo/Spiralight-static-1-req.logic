@@ -1,0 +1,16 @@
+
++Fwd("N_Madison", "Rockford", "Janesville", "static").
++Fwd("N_Madison", "Janesville", "Madison", "static").
++Fwd("N_Madison", "Chicago", "Milwaukee", "static").
++Fwd("N_Madison", "Milwaukee", "Waukesha", "static").
++Fwd("N_Madison", "Waukesha", "Madison", "static").
++Fwd("N_Madison", "BeaverTTDam", "Madison", "static").
++Fwd("N_Madison", "Wausau", "Minneaopolis", "static").
++Fwd("N_Madison", "Minneaopolis", "EauTTClaire", "static").
++Fwd("N_Madison", "EauTTClaire", "CampTTDouglas", "static").
++Fwd("N_Madison", "CampTTDouglas", "Madison", "static").
++Fwd("N_Madison", "FonTTDuTTLac", "BeaverTTDam", "static").
++Fwd("N_Madison", "GreenTTBay", "Wausau", "static").
++Fwd("N_Madison", "Oshkosh", "FonTTDuTTLac", "static").
++Fwd("N_Madison", "Appleton", "Oshkosh", "static").
+

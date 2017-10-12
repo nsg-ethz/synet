@@ -1,0 +1,311 @@
++SetNode("Trbovlje").
++SetAdminDist("Trbovlje", "static", 1).
++SetAdminDist("Trbovlje", "bgp", 2).
++SetAdminDist("Trbovlje", "ospf", 3).
++SetInterface("Trbovlje", "Trbovlje_I_Ljubljana").
++SetInterface("Trbovlje", "Trbovlje_I_Lasko").
+
++SetNode("Dravograd").
++SetAdminDist("Dravograd", "static", 1).
++SetAdminDist("Dravograd", "bgp", 2).
++SetAdminDist("Dravograd", "ospf", 3).
++SetInterface("Dravograd", "Dravograd_I_Velenje").
++SetInterface("Dravograd", "Dravograd_I_Maribor").
++SetInterface("Dravograd", "Dravograd_I_RavneTTnaTTKoroskem").
++SetInterface("Dravograd", "Dravograd_I_SlovenjTTGradec").
+
++SetNode("SlovenjTTGradec").
++SetAdminDist("SlovenjTTGradec", "static", 1).
++SetAdminDist("SlovenjTTGradec", "bgp", 2).
++SetAdminDist("SlovenjTTGradec", "ospf", 3).
++SetInterface("SlovenjTTGradec", "SlovenjTTGradec_I_Velenje").
++SetInterface("SlovenjTTGradec", "SlovenjTTGradec_I_Dravograd").
+
++SetNode("Ljubljana").
++SetAdminDist("Ljubljana", "static", 1).
++SetAdminDist("Ljubljana", "bgp", 2).
++SetAdminDist("Ljubljana", "ospf", 3).
++SetInterface("Ljubljana", "Ljubljana_I_NovaTTGorica").
++SetInterface("Ljubljana", "Ljubljana_I_Kovevje").
++SetInterface("Ljubljana", "Ljubljana_I_Trbovlje").
++SetInterface("Ljubljana", "Ljubljana_I_Koper").
++SetInterface("Ljubljana", "Ljubljana_I_Lasko").
++SetInterface("Ljubljana", "Ljubljana_I_Maribor").
++SetInterface("Ljubljana", "Ljubljana_I_Postojna").
++SetInterface("Ljubljana", "Ljubljana_I_Kamnik").
++SetInterface("Ljubljana", "Ljubljana_I_Kranj").
+
++SetNode("Kamnik").
++SetAdminDist("Kamnik", "static", 1).
++SetAdminDist("Kamnik", "bgp", 2).
++SetAdminDist("Kamnik", "ospf", 3).
++SetInterface("Kamnik", "Kamnik_I_Ljubljana").
++SetInterface("Kamnik", "Kamnik_I_Celje").
+
++SetNode("Divaca").
++SetAdminDist("Divaca", "static", 1).
++SetAdminDist("Divaca", "bgp", 2).
++SetAdminDist("Divaca", "ospf", 3).
++SetInterface("Divaca", "Divaca_I_Senozece").
++SetInterface("Divaca", "Divaca_I_Ajdovscina").
++SetInterface("Divaca", "Divaca_I_Portoroz").
++SetInterface("Divaca", "Divaca_I_Koper").
+
++SetNode("RavneTTnaTTKoroskem").
++SetAdminDist("RavneTTnaTTKoroskem", "static", 1).
++SetAdminDist("RavneTTnaTTKoroskem", "bgp", 2).
++SetAdminDist("RavneTTnaTTKoroskem", "ospf", 3).
++SetInterface("RavneTTnaTTKoroskem", "RavneTTnaTTKoroskem_I_Dravograd").
+
++SetNode("Jesenice").
++SetAdminDist("Jesenice", "static", 1).
++SetAdminDist("Jesenice", "bgp", 2).
++SetAdminDist("Jesenice", "ospf", 3).
++SetInterface("Jesenice", "Jesenice_I_Kranj").
+
++SetNode("Sezana").
++SetAdminDist("Sezana", "static", 1).
++SetAdminDist("Sezana", "bgp", 2).
++SetAdminDist("Sezana", "ospf", 3).
++SetInterface("Sezana", "Sezana_I_Senozece").
+
++SetNode("Krsko").
++SetAdminDist("Krsko", "static", 1).
++SetAdminDist("Krsko", "bgp", 2).
++SetAdminDist("Krsko", "ospf", 3).
++SetInterface("Krsko", "Krsko_I_RogasjaTTSlatina").
++SetInterface("Krsko", "Krsko_I_NovoTTMesto").
+
++SetNode("Koper").
++SetAdminDist("Koper", "static", 1).
++SetAdminDist("Koper", "bgp", 2).
++SetAdminDist("Koper", "ospf", 3).
++SetInterface("Koper", "Koper_I_Divaca").
++SetInterface("Koper", "Koper_I_Ljubljana").
++SetInterface("Koper", "Koper_I_Izola").
++SetInterface("Koper", "Koper_I_Kranj").
+
++SetNode("Lasko").
++SetAdminDist("Lasko", "static", 1).
++SetAdminDist("Lasko", "bgp", 2).
++SetAdminDist("Lasko", "ospf", 3).
++SetInterface("Lasko", "Lasko_I_Ljubljana").
++SetInterface("Lasko", "Lasko_I_Maribor").
++SetInterface("Lasko", "Lasko_I_Trbovlje").
++SetInterface("Lasko", "Lasko_I_Celje").
+
++SetNode("Ljutomer").
++SetAdminDist("Ljutomer", "static", 1).
++SetAdminDist("Ljutomer", "bgp", 2).
++SetAdminDist("Ljutomer", "ospf", 3).
++SetInterface("Ljutomer", "Ljutomer_I_Ormoz").
++SetInterface("Ljutomer", "Ljutomer_I_MurskaTTSobota").
+
++SetNode("NovoTTMesto").
++SetAdminDist("NovoTTMesto", "static", 1).
++SetAdminDist("NovoTTMesto", "bgp", 2).
++SetAdminDist("NovoTTMesto", "ospf", 3).
++SetInterface("NovoTTMesto", "NovoTTMesto_I_Kovevje").
++SetInterface("NovoTTMesto", "NovoTTMesto_I_Krsko").
+
++SetNode("Ajdovscina").
++SetAdminDist("Ajdovscina", "static", 1).
++SetAdminDist("Ajdovscina", "bgp", 2).
++SetAdminDist("Ajdovscina", "ospf", 3).
++SetInterface("Ajdovscina", "Ajdovscina_I_Divaca").
++SetInterface("Ajdovscina", "Ajdovscina_I_NovaTTGorica").
+
++SetNode("Izola").
++SetAdminDist("Izola", "static", 1).
++SetAdminDist("Izola", "bgp", 2).
++SetAdminDist("Izola", "ospf", 3).
++SetInterface("Izola", "Izola_I_Portoroz").
++SetInterface("Izola", "Izola_I_Koper").
+
++SetNode("Tolmin").
++SetAdminDist("Tolmin", "static", 1).
++SetAdminDist("Tolmin", "bgp", 2).
++SetAdminDist("Tolmin", "ospf", 3).
++SetInterface("Tolmin", "Tolmin_I_Bled").
++SetInterface("Tolmin", "Tolmin_I_NovaTTGorica").
+
++SetNode("Ormoz").
++SetAdminDist("Ormoz", "static", 1).
++SetAdminDist("Ormoz", "bgp", 2).
++SetAdminDist("Ormoz", "ospf", 3).
++SetInterface("Ormoz", "Ormoz_I_Ljutomer").
++SetInterface("Ormoz", "Ormoz_I_Ptuj").
+
++SetNode("NovaTTGorica").
++SetAdminDist("NovaTTGorica", "static", 1).
++SetAdminDist("NovaTTGorica", "bgp", 2).
++SetAdminDist("NovaTTGorica", "ospf", 3).
++SetInterface("NovaTTGorica", "NovaTTGorica_I_Ljubljana").
++SetInterface("NovaTTGorica", "NovaTTGorica_I_Ajdovscina").
++SetInterface("NovaTTGorica", "NovaTTGorica_I_Tolmin").
+
++SetNode("Ptuj").
++SetAdminDist("Ptuj", "static", 1).
++SetAdminDist("Ptuj", "bgp", 2).
++SetAdminDist("Ptuj", "ospf", 3).
++SetInterface("Ptuj", "Ptuj_I_RogasjaTTSlatina").
++SetInterface("Ptuj", "Ptuj_I_Ormoz").
++SetInterface("Ptuj", "Ptuj_I_Maribor").
+
++SetNode("Portoroz").
++SetAdminDist("Portoroz", "static", 1).
++SetAdminDist("Portoroz", "bgp", 2).
++SetAdminDist("Portoroz", "ospf", 3).
++SetInterface("Portoroz", "Portoroz_I_Divaca").
++SetInterface("Portoroz", "Portoroz_I_Izola").
+
++SetNode("SlovenskaTTBistrica").
++SetAdminDist("SlovenskaTTBistrica", "static", 1).
++SetAdminDist("SlovenskaTTBistrica", "bgp", 2).
++SetAdminDist("SlovenskaTTBistrica", "ospf", 3).
++SetInterface("SlovenskaTTBistrica", "SlovenskaTTBistrica_I_Maribor").
++SetInterface("SlovenskaTTBistrica", "SlovenskaTTBistrica_I_Celje").
+
++SetNode("Celje").
++SetAdminDist("Celje", "static", 1).
++SetAdminDist("Celje", "bgp", 2).
++SetAdminDist("Celje", "ospf", 3).
++SetInterface("Celje", "Celje_I_Velenje").
++SetInterface("Celje", "Celje_I_Kamnik").
++SetInterface("Celje", "Celje_I_SlovenskaTTBistrica").
++SetInterface("Celje", "Celje_I_Lasko").
+
++SetNode("RogasjaTTSlatina").
++SetAdminDist("RogasjaTTSlatina", "static", 1).
++SetAdminDist("RogasjaTTSlatina", "bgp", 2).
++SetAdminDist("RogasjaTTSlatina", "ospf", 3).
++SetInterface("RogasjaTTSlatina", "RogasjaTTSlatina_I_Ptuj").
++SetInterface("RogasjaTTSlatina", "RogasjaTTSlatina_I_Krsko").
+
++SetNode("Postojna").
++SetAdminDist("Postojna", "static", 1).
++SetAdminDist("Postojna", "bgp", 2).
++SetAdminDist("Postojna", "ospf", 3).
++SetInterface("Postojna", "Postojna_I_Ljubljana").
++SetInterface("Postojna", "Postojna_I_Senozece").
+
++SetNode("Kranj").
++SetAdminDist("Kranj", "static", 1).
++SetAdminDist("Kranj", "bgp", 2).
++SetAdminDist("Kranj", "ospf", 3).
++SetInterface("Kranj", "Kranj_I_Jesenice").
++SetInterface("Kranj", "Kranj_I_Bled").
++SetInterface("Kranj", "Kranj_I_Ljubljana").
++SetInterface("Kranj", "Kranj_I_Koper").
+
++SetNode("MurskaTTSobota").
++SetAdminDist("MurskaTTSobota", "static", 1).
++SetAdminDist("MurskaTTSobota", "bgp", 2).
++SetAdminDist("MurskaTTSobota", "ospf", 3).
++SetInterface("MurskaTTSobota", "MurskaTTSobota_I_Ljutomer").
++SetInterface("MurskaTTSobota", "MurskaTTSobota_I_Radenci").
+
++SetNode("GornjaTTRadgona").
++SetAdminDist("GornjaTTRadgona", "static", 1).
++SetAdminDist("GornjaTTRadgona", "bgp", 2).
++SetAdminDist("GornjaTTRadgona", "ospf", 3).
++SetInterface("GornjaTTRadgona", "GornjaTTRadgona_I_Maribor").
++SetInterface("GornjaTTRadgona", "GornjaTTRadgona_I_Radenci").
+
++SetNode("Radenci").
++SetAdminDist("Radenci", "static", 1).
++SetAdminDist("Radenci", "bgp", 2).
++SetAdminDist("Radenci", "ospf", 3).
++SetInterface("Radenci", "Radenci_I_GornjaTTRadgona").
++SetInterface("Radenci", "Radenci_I_MurskaTTSobota").
+
++SetNode("Kovevje").
++SetAdminDist("Kovevje", "static", 1).
++SetAdminDist("Kovevje", "bgp", 2).
++SetAdminDist("Kovevje", "ospf", 3).
++SetInterface("Kovevje", "Kovevje_I_Ljubljana").
++SetInterface("Kovevje", "Kovevje_I_NovoTTMesto").
+
++SetNode("Velenje").
++SetAdminDist("Velenje", "static", 1).
++SetAdminDist("Velenje", "bgp", 2).
++SetAdminDist("Velenje", "ospf", 3).
++SetInterface("Velenje", "Velenje_I_Dravograd").
++SetInterface("Velenje", "Velenje_I_SlovenjTTGradec").
++SetInterface("Velenje", "Velenje_I_Celje").
+
++SetNode("Bled").
++SetAdminDist("Bled", "static", 1).
++SetAdminDist("Bled", "bgp", 2).
++SetAdminDist("Bled", "ospf", 3).
++SetInterface("Bled", "Bled_I_Tolmin").
++SetInterface("Bled", "Bled_I_Kranj").
+
++SetNode("Senozece").
++SetAdminDist("Senozece", "static", 1).
++SetAdminDist("Senozece", "bgp", 2).
++SetAdminDist("Senozece", "ospf", 3).
++SetInterface("Senozece", "Senozece_I_Divaca").
++SetInterface("Senozece", "Senozece_I_Postojna").
++SetInterface("Senozece", "Senozece_I_Sezana").
+
++SetNode("Maribor").
++SetAdminDist("Maribor", "static", 1).
++SetAdminDist("Maribor", "bgp", 2).
++SetAdminDist("Maribor", "ospf", 3).
++SetInterface("Maribor", "Maribor_I_Dravograd").
++SetInterface("Maribor", "Maribor_I_Ptuj").
++SetInterface("Maribor", "Maribor_I_SlovenskaTTBistrica").
++SetInterface("Maribor", "Maribor_I_Lasko").
++SetInterface("Maribor", "Maribor_I_Ljubljana").
++SetInterface("Maribor", "Maribor_I_GornjaTTRadgona").
+
++SetLink("Trbovlje_I_Ljubljana", "Ljubljana_I_Trbovlje").
++SetLink("Trbovlje_I_Lasko", "Lasko_I_Trbovlje").
++SetLink("Dravograd_I_Velenje", "Velenje_I_Dravograd").
++SetLink("Dravograd_I_Maribor", "Maribor_I_Dravograd").
++SetLink("Dravograd_I_RavneTTnaTTKoroskem", "RavneTTnaTTKoroskem_I_Dravograd").
++SetLink("Dravograd_I_SlovenjTTGradec", "SlovenjTTGradec_I_Dravograd").
++SetLink("SlovenjTTGradec_I_Velenje", "Velenje_I_SlovenjTTGradec").
++SetLink("Ljubljana_I_NovaTTGorica", "NovaTTGorica_I_Ljubljana").
++SetLink("Ljubljana_I_Kovevje", "Kovevje_I_Ljubljana").
++SetLink("Ljubljana_I_Koper", "Koper_I_Ljubljana").
++SetLink("Ljubljana_I_Lasko", "Lasko_I_Ljubljana").
++SetLink("Ljubljana_I_Maribor", "Maribor_I_Ljubljana").
++SetLink("Ljubljana_I_Postojna", "Postojna_I_Ljubljana").
++SetLink("Ljubljana_I_Kamnik", "Kamnik_I_Ljubljana").
++SetLink("Ljubljana_I_Kranj", "Kranj_I_Ljubljana").
++SetLink("Kamnik_I_Celje", "Celje_I_Kamnik").
++SetLink("Divaca_I_Senozece", "Senozece_I_Divaca").
++SetLink("Divaca_I_Ajdovscina", "Ajdovscina_I_Divaca").
++SetLink("Divaca_I_Portoroz", "Portoroz_I_Divaca").
++SetLink("Divaca_I_Koper", "Koper_I_Divaca").
++SetLink("Jesenice_I_Kranj", "Kranj_I_Jesenice").
++SetLink("Sezana_I_Senozece", "Senozece_I_Sezana").
++SetLink("Krsko_I_RogasjaTTSlatina", "RogasjaTTSlatina_I_Krsko").
++SetLink("Krsko_I_NovoTTMesto", "NovoTTMesto_I_Krsko").
++SetLink("Koper_I_Izola", "Izola_I_Koper").
++SetLink("Koper_I_Kranj", "Kranj_I_Koper").
++SetLink("Lasko_I_Maribor", "Maribor_I_Lasko").
++SetLink("Lasko_I_Celje", "Celje_I_Lasko").
++SetLink("Ljutomer_I_Ormoz", "Ormoz_I_Ljutomer").
++SetLink("Ljutomer_I_MurskaTTSobota", "MurskaTTSobota_I_Ljutomer").
++SetLink("NovoTTMesto_I_Kovevje", "Kovevje_I_NovoTTMesto").
++SetLink("Ajdovscina_I_NovaTTGorica", "NovaTTGorica_I_Ajdovscina").
++SetLink("Izola_I_Portoroz", "Portoroz_I_Izola").
++SetLink("Tolmin_I_Bled", "Bled_I_Tolmin").
++SetLink("Tolmin_I_NovaTTGorica", "NovaTTGorica_I_Tolmin").
++SetLink("Ormoz_I_Ptuj", "Ptuj_I_Ormoz").
++SetLink("Ptuj_I_RogasjaTTSlatina", "RogasjaTTSlatina_I_Ptuj").
++SetLink("Ptuj_I_Maribor", "Maribor_I_Ptuj").
++SetLink("SlovenskaTTBistrica_I_Maribor", "Maribor_I_SlovenskaTTBistrica").
++SetLink("SlovenskaTTBistrica_I_Celje", "Celje_I_SlovenskaTTBistrica").
++SetLink("Celje_I_Velenje", "Velenje_I_Celje").
++SetLink("Postojna_I_Senozece", "Senozece_I_Postojna").
++SetLink("Kranj_I_Bled", "Bled_I_Kranj").
++SetLink("MurskaTTSobota_I_Radenci", "Radenci_I_MurskaTTSobota").
++SetLink("GornjaTTRadgona_I_Maribor", "Maribor_I_GornjaTTRadgona").
++SetLink("GornjaTTRadgona_I_Radenci", "Radenci_I_GornjaTTRadgona").
+
+
++SetNetwork("Krsko", "N_Krsko").

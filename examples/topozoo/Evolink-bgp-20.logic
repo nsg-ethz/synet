@@ -1,0 +1,362 @@
++SetNode("Sliven").
++SetAdminDist("Sliven", "static", 1).
++SetAdminDist("Sliven", "bgp", 2).
++SetAdminDist("Sliven", "ospf", 3).
++SetInterface("Sliven", "Sliven_I_Yambol").
++SetInterface("Sliven", "Sliven_I_StTTZagora").
+
++SetNode("Haskovo").
++SetAdminDist("Haskovo", "static", 1).
++SetAdminDist("Haskovo", "bgp", 2).
++SetAdminDist("Haskovo", "ospf", 3).
++SetInterface("Haskovo", "Haskovo_I_Plovdiv").
++SetInterface("Haskovo", "Haskovo_I_StTTZagora").
++SetInterface("Haskovo", "Haskovo_I_Kurjiali").
+
++SetNode("Sevlievo").
++SetAdminDist("Sevlievo", "static", 1).
++SetAdminDist("Sevlievo", "bgp", 2).
++SetAdminDist("Sevlievo", "ospf", 3).
++SetInterface("Sevlievo", "Sevlievo_I_Sofia").
+
++SetNode("Istanbul").
++SetAdminDist("Istanbul", "static", 1).
++SetAdminDist("Istanbul", "bgp", 2).
++SetAdminDist("Istanbul", "ospf", 3).
++SetInterface("Istanbul", "Istanbul_I_KapTTAndreevo").
+
++SetNode("Blagoevgrad").
++SetAdminDist("Blagoevgrad", "static", 1).
++SetAdminDist("Blagoevgrad", "bgp", 2).
++SetAdminDist("Blagoevgrad", "ospf", 3).
++SetInterface("Blagoevgrad", "Blagoevgrad_I_Sofia").
++SetInterface("Blagoevgrad", "Blagoevgrad_I_Petrich").
+
++SetNode("Burgas").
++SetAdminDist("Burgas", "static", 1).
++SetAdminDist("Burgas", "bgp", 2).
++SetAdminDist("Burgas", "ospf", 3).
++SetInterface("Burgas", "Burgas_I_Yambol").
++SetInterface("Burgas", "Burgas_I_Varna").
++SetInterface("Burgas", "Burgas_I_Sofia").
+
++SetNode("Yambol").
++SetAdminDist("Yambol", "static", 1).
++SetAdminDist("Yambol", "bgp", 2).
++SetAdminDist("Yambol", "ospf", 3).
++SetInterface("Yambol", "Yambol_I_Sliven").
++SetInterface("Yambol", "Yambol_I_Burgas").
+
++SetNode("Gabrovo").
++SetAdminDist("Gabrovo", "static", 1).
++SetAdminDist("Gabrovo", "bgp", 2).
++SetAdminDist("Gabrovo", "ospf", 3).
++SetInterface("Gabrovo", "Gabrovo_I_StTTZagora").
+
++SetNode("Dobrich").
++SetAdminDist("Dobrich", "static", 1).
++SetAdminDist("Dobrich", "bgp", 2).
++SetAdminDist("Dobrich", "ospf", 3).
++SetInterface("Dobrich", "Dobrich_I_Shumen").
++SetInterface("Dobrich", "Dobrich_I_Varna").
++SetInterface("Dobrich", "Dobrich_I_Silistra").
+
++SetNode("Pennik").
++SetAdminDist("Pennik", "static", 1).
++SetAdminDist("Pennik", "bgp", 2).
++SetAdminDist("Pennik", "ospf", 3).
++SetInterface("Pennik", "Pennik_I_Sofia").
+
++SetNode("Razgrad").
++SetAdminDist("Razgrad", "static", 1).
++SetAdminDist("Razgrad", "bgp", 2).
++SetAdminDist("Razgrad", "ospf", 3).
++SetInterface("Razgrad", "Razgrad_I_Turgovishte").
++SetInterface("Razgrad", "Razgrad_I_Ruse").
+
++SetNode("KapTTAndreevo").
++SetAdminDist("KapTTAndreevo", "static", 1).
++SetAdminDist("KapTTAndreevo", "bgp", 2).
++SetAdminDist("KapTTAndreevo", "ospf", 3).
++SetInterface("KapTTAndreevo", "KapTTAndreevo_I_Istanbul").
++SetInterface("KapTTAndreevo", "KapTTAndreevo_I_Plovdiv").
+
++SetNode("Skopie").
++SetAdminDist("Skopie", "static", 1).
++SetAdminDist("Skopie", "bgp", 2).
++SetAdminDist("Skopie", "ospf", 3).
++SetInterface("Skopie", "Skopie_I_Sofia").
+
++SetNode("Shumen").
++SetAdminDist("Shumen", "static", 1).
++SetAdminDist("Shumen", "bgp", 2).
++SetAdminDist("Shumen", "ospf", 3).
++SetInterface("Shumen", "Shumen_I_Dobrich").
++SetInterface("Shumen", "Shumen_I_Turgovishte").
+
++SetNode("Lovech").
++SetAdminDist("Lovech", "static", 1).
++SetAdminDist("Lovech", "bgp", 2).
++SetAdminDist("Lovech", "ospf", 3).
++SetInterface("Lovech", "Lovech_I_VTTTurnovo").
++SetInterface("Lovech", "Lovech_I_Pleven").
+
++SetNode("Silistra").
++SetAdminDist("Silistra", "static", 1).
++SetAdminDist("Silistra", "bgp", 2).
++SetAdminDist("Silistra", "ospf", 3).
++SetInterface("Silistra", "Silistra_I_Dobrich").
+
++SetNode("Sofia").
++SetAdminDist("Sofia", "static", 1).
++SetAdminDist("Sofia", "bgp", 2).
++SetAdminDist("Sofia", "ospf", 3).
++SetInterface("Sofia", "Sofia_I_Bucharest").
++SetInterface("Sofia", "Sofia_I_Skopie").
++SetInterface("Sofia", "Sofia_I_Sevlievo").
++SetInterface("Sofia", "Sofia_I_Varna").
++SetInterface("Sofia", "Sofia_I_Blagoevgrad").
++SetInterface("Sofia", "Sofia_I_Kiustendil").
++SetInterface("Sofia", "Sofia_I_Pennik").
++SetInterface("Sofia", "Sofia_I_Burgas").
++SetInterface("Sofia", "Sofia_I_Karlovo").
++SetInterface("Sofia", "Sofia_I_Vraca").
++SetInterface("Sofia", "Sofia_I_Pazardjik").
++SetInterface("Sofia", "Sofia_I_Amsterdam").
++SetInterface("Sofia", "Sofia_I_Frankfurt").
++SetInterface("Sofia", "Sofia_I_StTTZagora").
++SetInterface("Sofia", "Sofia_I_Plovdiv").
+
++SetNode("Montana").
++SetAdminDist("Montana", "static", 1).
++SetAdminDist("Montana", "bgp", 2).
++SetAdminDist("Montana", "ospf", 3).
++SetInterface("Montana", "Montana_I_Vidin").
++SetInterface("Montana", "Montana_I_Kozloduj").
++SetInterface("Montana", "Montana_I_Vraca").
++SetInterface("Montana", "Montana_I_Pleven").
+
++SetNode("Pleven").
++SetAdminDist("Pleven", "static", 1).
++SetAdminDist("Pleven", "bgp", 2).
++SetAdminDist("Pleven", "ospf", 3).
++SetInterface("Pleven", "Pleven_I_Montana").
++SetInterface("Pleven", "Pleven_I_Lovech").
+
++SetNode("Karlovo").
++SetAdminDist("Karlovo", "static", 1).
++SetAdminDist("Karlovo", "bgp", 2).
++SetAdminDist("Karlovo", "ospf", 3).
++SetInterface("Karlovo", "Karlovo_I_Sofia").
+
++SetNode("Kozloduj").
++SetAdminDist("Kozloduj", "static", 1).
++SetAdminDist("Kozloduj", "bgp", 2).
++SetAdminDist("Kozloduj", "ospf", 3).
++SetInterface("Kozloduj", "Kozloduj_I_Montana").
+
++SetNode("StTTZagora").
++SetAdminDist("StTTZagora", "static", 1).
++SetAdminDist("StTTZagora", "bgp", 2).
++SetAdminDist("StTTZagora", "ospf", 3).
++SetInterface("StTTZagora", "StTTZagora_I_Gabrovo").
++SetInterface("StTTZagora", "StTTZagora_I_Sliven").
++SetInterface("StTTZagora", "StTTZagora_I_Sofia").
++SetInterface("StTTZagora", "StTTZagora_I_Haskovo").
++SetInterface("StTTZagora", "StTTZagora_I_Plovdiv").
+
++SetNode("Smolian").
++SetAdminDist("Smolian", "static", 1).
++SetAdminDist("Smolian", "bgp", 2).
++SetAdminDist("Smolian", "ospf", 3).
++SetInterface("Smolian", "Smolian_I_Plovdiv").
+
++SetNode("Kurjiali").
++SetAdminDist("Kurjiali", "static", 1).
++SetAdminDist("Kurjiali", "bgp", 2).
++SetAdminDist("Kurjiali", "ospf", 3).
++SetInterface("Kurjiali", "Kurjiali_I_Haskovo").
+
++SetNode("Ruse").
++SetAdminDist("Ruse", "static", 1).
++SetAdminDist("Ruse", "bgp", 2).
++SetAdminDist("Ruse", "ospf", 3).
++SetInterface("Ruse", "Ruse_I_VTTTurnovo").
++SetInterface("Ruse", "Ruse_I_Razgrad").
+
++SetNode("Petrich").
++SetAdminDist("Petrich", "static", 1).
++SetAdminDist("Petrich", "bgp", 2).
++SetAdminDist("Petrich", "ospf", 3).
++SetInterface("Petrich", "Petrich_I_Blagoevgrad").
+
++SetNode("Vidin").
++SetAdminDist("Vidin", "static", 1).
++SetAdminDist("Vidin", "bgp", 2).
++SetAdminDist("Vidin", "ospf", 3).
++SetInterface("Vidin", "Vidin_I_Montana").
+
++SetNode("Varna").
++SetAdminDist("Varna", "static", 1).
++SetAdminDist("Varna", "bgp", 2).
++SetAdminDist("Varna", "ospf", 3).
++SetInterface("Varna", "Varna_I_Bucharest").
++SetInterface("Varna", "Varna_I_Sofia").
++SetInterface("Varna", "Varna_I_Burgas").
++SetInterface("Varna", "Varna_I_Dobrich").
+
++SetNode("Frankfurt").
++SetAdminDist("Frankfurt", "static", 1).
++SetAdminDist("Frankfurt", "bgp", 2).
++SetAdminDist("Frankfurt", "ospf", 3).
++SetInterface("Frankfurt", "Frankfurt_I_Bucharest").
++SetInterface("Frankfurt", "Frankfurt_I_Amsterdam").
++SetInterface("Frankfurt", "Frankfurt_I_Sofia").
+
++SetNode("Plovdiv").
++SetAdminDist("Plovdiv", "static", 1).
++SetAdminDist("Plovdiv", "bgp", 2).
++SetAdminDist("Plovdiv", "ospf", 3).
++SetInterface("Plovdiv", "Plovdiv_I_Smolian").
++SetInterface("Plovdiv", "Plovdiv_I_Haskovo").
++SetInterface("Plovdiv", "Plovdiv_I_Sofia").
++SetInterface("Plovdiv", "Plovdiv_I_StTTZagora").
++SetInterface("Plovdiv", "Plovdiv_I_Pazardjik").
++SetInterface("Plovdiv", "Plovdiv_I_KapTTAndreevo").
+
++SetNode("Bucharest").
++SetAdminDist("Bucharest", "static", 1).
++SetAdminDist("Bucharest", "bgp", 2).
++SetAdminDist("Bucharest", "ospf", 3).
++SetInterface("Bucharest", "Bucharest_I_Varna").
++SetInterface("Bucharest", "Bucharest_I_Sofia").
++SetInterface("Bucharest", "Bucharest_I_Frankfurt").
+
++SetNode("VTTTurnovo").
++SetAdminDist("VTTTurnovo", "static", 1).
++SetAdminDist("VTTTurnovo", "bgp", 2).
++SetAdminDist("VTTTurnovo", "ospf", 3).
++SetInterface("VTTTurnovo", "VTTTurnovo_I_Lovech").
++SetInterface("VTTTurnovo", "VTTTurnovo_I_Ruse").
+
++SetNode("Kiustendil").
++SetAdminDist("Kiustendil", "static", 1).
++SetAdminDist("Kiustendil", "bgp", 2).
++SetAdminDist("Kiustendil", "ospf", 3).
++SetInterface("Kiustendil", "Kiustendil_I_Sofia").
+
++SetNode("Turgovishte").
++SetAdminDist("Turgovishte", "static", 1).
++SetAdminDist("Turgovishte", "bgp", 2).
++SetAdminDist("Turgovishte", "ospf", 3).
++SetInterface("Turgovishte", "Turgovishte_I_Shumen").
++SetInterface("Turgovishte", "Turgovishte_I_Razgrad").
+
++SetNode("Vraca").
++SetAdminDist("Vraca", "static", 1).
++SetAdminDist("Vraca", "bgp", 2).
++SetAdminDist("Vraca", "ospf", 3).
++SetInterface("Vraca", "Vraca_I_Sofia").
++SetInterface("Vraca", "Vraca_I_Montana").
+
++SetNode("Pazardjik").
++SetAdminDist("Pazardjik", "static", 1).
++SetAdminDist("Pazardjik", "bgp", 2).
++SetAdminDist("Pazardjik", "ospf", 3).
++SetInterface("Pazardjik", "Pazardjik_I_Sofia").
++SetInterface("Pazardjik", "Pazardjik_I_Plovdiv").
+
++SetNode("Amsterdam").
++SetAdminDist("Amsterdam", "static", 1).
++SetAdminDist("Amsterdam", "bgp", 2).
++SetAdminDist("Amsterdam", "ospf", 3).
++SetInterface("Amsterdam", "Amsterdam_I_Sofia").
++SetInterface("Amsterdam", "Amsterdam_I_Frankfurt").
+
++SetLink("Sliven_I_Yambol", "Yambol_I_Sliven").
++SetLink("Sliven_I_StTTZagora", "StTTZagora_I_Sliven").
++SetLink("Haskovo_I_Plovdiv", "Plovdiv_I_Haskovo").
++SetLink("Haskovo_I_StTTZagora", "StTTZagora_I_Haskovo").
++SetLink("Haskovo_I_Kurjiali", "Kurjiali_I_Haskovo").
++SetLink("Sevlievo_I_Sofia", "Sofia_I_Sevlievo").
++SetLink("Istanbul_I_KapTTAndreevo", "KapTTAndreevo_I_Istanbul").
++SetLink("Blagoevgrad_I_Sofia", "Sofia_I_Blagoevgrad").
++SetLink("Blagoevgrad_I_Petrich", "Petrich_I_Blagoevgrad").
++SetLink("Burgas_I_Yambol", "Yambol_I_Burgas").
++SetLink("Burgas_I_Varna", "Varna_I_Burgas").
++SetLink("Burgas_I_Sofia", "Sofia_I_Burgas").
++SetLink("Gabrovo_I_StTTZagora", "StTTZagora_I_Gabrovo").
++SetLink("Dobrich_I_Shumen", "Shumen_I_Dobrich").
++SetLink("Dobrich_I_Varna", "Varna_I_Dobrich").
++SetLink("Dobrich_I_Silistra", "Silistra_I_Dobrich").
++SetLink("Pennik_I_Sofia", "Sofia_I_Pennik").
++SetLink("Razgrad_I_Turgovishte", "Turgovishte_I_Razgrad").
++SetLink("Razgrad_I_Ruse", "Ruse_I_Razgrad").
++SetLink("KapTTAndreevo_I_Plovdiv", "Plovdiv_I_KapTTAndreevo").
++SetLink("Skopie_I_Sofia", "Sofia_I_Skopie").
++SetLink("Shumen_I_Turgovishte", "Turgovishte_I_Shumen").
++SetLink("Lovech_I_VTTTurnovo", "VTTTurnovo_I_Lovech").
++SetLink("Lovech_I_Pleven", "Pleven_I_Lovech").
++SetLink("Sofia_I_Bucharest", "Bucharest_I_Sofia").
++SetLink("Sofia_I_Varna", "Varna_I_Sofia").
++SetLink("Sofia_I_Kiustendil", "Kiustendil_I_Sofia").
++SetLink("Sofia_I_Karlovo", "Karlovo_I_Sofia").
++SetLink("Sofia_I_Vraca", "Vraca_I_Sofia").
++SetLink("Sofia_I_Pazardjik", "Pazardjik_I_Sofia").
++SetLink("Sofia_I_Amsterdam", "Amsterdam_I_Sofia").
++SetLink("Sofia_I_Frankfurt", "Frankfurt_I_Sofia").
++SetLink("Sofia_I_StTTZagora", "StTTZagora_I_Sofia").
++SetLink("Sofia_I_Plovdiv", "Plovdiv_I_Sofia").
++SetLink("Montana_I_Vidin", "Vidin_I_Montana").
++SetLink("Montana_I_Kozloduj", "Kozloduj_I_Montana").
++SetLink("Montana_I_Vraca", "Vraca_I_Montana").
++SetLink("Montana_I_Pleven", "Pleven_I_Montana").
++SetLink("StTTZagora_I_Plovdiv", "Plovdiv_I_StTTZagora").
++SetLink("Smolian_I_Plovdiv", "Plovdiv_I_Smolian").
++SetLink("Ruse_I_VTTTurnovo", "VTTTurnovo_I_Ruse").
++SetLink("Varna_I_Bucharest", "Bucharest_I_Varna").
++SetLink("Frankfurt_I_Bucharest", "Bucharest_I_Frankfurt").
++SetLink("Frankfurt_I_Amsterdam", "Amsterdam_I_Frankfurt").
++SetLink("Plovdiv_I_Pazardjik", "Pazardjik_I_Plovdiv").
+
+
++SetNetwork("VTTTurnovo", "N_VTTTurnovo").
++SetBGPAnnouncement("VTTTurnovo", "N_VTTTurnovo", "NBGP_VTTTurnovo", "1;2;3", 3).
++SetNetwork("KapTTAndreevo", "N_KapTTAndreevo").
++SetBGPAnnouncement("KapTTAndreevo", "N_KapTTAndreevo", "NBGP_KapTTAndreevo", "1;2;3", 3).
++SetNetwork("Montana", "N_Montana").
++SetBGPAnnouncement("Montana", "N_Montana", "NBGP_Montana", "1;2;3", 3).
++SetNetwork("Skopie", "N_Skopie").
++SetBGPAnnouncement("Skopie", "N_Skopie", "NBGP_Skopie", "1;2;3", 3).
++SetNetwork("Razgrad", "N_Razgrad").
++SetBGPAnnouncement("Razgrad", "N_Razgrad", "NBGP_Razgrad", "1;2;3", 3).
++SetNetwork("Smolian", "N_Smolian").
++SetBGPAnnouncement("Smolian", "N_Smolian", "NBGP_Smolian", "1;2;3", 3).
++SetNetwork("Gabrovo", "N_Gabrovo").
++SetBGPAnnouncement("Gabrovo", "N_Gabrovo", "NBGP_Gabrovo", "1;2;3", 3).
++SetNetwork("Silistra", "N_Silistra").
++SetBGPAnnouncement("Silistra", "N_Silistra", "NBGP_Silistra", "1;2;3", 3).
++SetNetwork("Dobrich", "N_Dobrich").
++SetBGPAnnouncement("Dobrich", "N_Dobrich", "NBGP_Dobrich", "1;2;3", 3).
++SetNetwork("Yambol", "N_Yambol").
++SetBGPAnnouncement("Yambol", "N_Yambol", "NBGP_Yambol", "1;2;3", 3).
++SetNetwork("StTTZagora", "N_StTTZagora").
++SetBGPAnnouncement("StTTZagora", "N_StTTZagora", "NBGP_StTTZagora", "1;2;3", 3).
++SetNetwork("Kurjiali", "N_Kurjiali").
++SetBGPAnnouncement("Kurjiali", "N_Kurjiali", "NBGP_Kurjiali", "1;2;3", 3).
++SetNetwork("Petrich", "N_Petrich").
++SetBGPAnnouncement("Petrich", "N_Petrich", "NBGP_Petrich", "1;2;3", 3).
++SetNetwork("Plovdiv", "N_Plovdiv").
++SetBGPAnnouncement("Plovdiv", "N_Plovdiv", "NBGP_Plovdiv", "1;2;3", 3).
++SetNetwork("Istanbul", "N_Istanbul").
++SetBGPAnnouncement("Istanbul", "N_Istanbul", "NBGP_Istanbul", "1;2;3", 3).
++SetNetwork("Pleven", "N_Pleven").
++SetBGPAnnouncement("Pleven", "N_Pleven", "NBGP_Pleven", "1;2;3", 3).
++SetNetwork("Kiustendil", "N_Kiustendil").
++SetBGPAnnouncement("Kiustendil", "N_Kiustendil", "NBGP_Kiustendil", "1;2;3", 3).
++SetNetwork("Frankfurt", "N_Frankfurt").
++SetBGPAnnouncement("Frankfurt", "N_Frankfurt", "NBGP_Frankfurt", "1;2;3", 3).
++SetNetwork("Pazardjik", "N_Pazardjik").
++SetBGPAnnouncement("Pazardjik", "N_Pazardjik", "NBGP_Pazardjik", "1;2;3", 3).
++SetNetwork("Amsterdam", "N_Amsterdam").
++SetBGPAnnouncement("Amsterdam", "N_Amsterdam", "NBGP_Amsterdam", "1;2;3", 3).

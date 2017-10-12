@@ -1,0 +1,22 @@
+
++Fwd("N_HKUST", "HKBU", "CUHK", "static").
++Fwd("N_HKUST", "CUHK", "HKUST", "static").
++Fwd("N_HKUST", "ASGCNET", "HKIX", "static").
++Fwd("N_HKUST", "HKIX", "HKU", "static").
++Fwd("N_HKUST", "HKU", "LU", "static").
++Fwd("N_HKUST", "LU", "HKIEd", "static").
++Fwd("N_HKUST", "HKIEd", "HKUST", "static").
++Fwd("N_HKUST", "GOOGLE", "HKIX", "static").
++Fwd("N_HKUST", "VocationalTTTrainingTTCouncil", "CUHK", "static").
++Fwd("N_HKUST", "ASNET", "HKIX", "static").
++Fwd("N_HKUST", "KREPNET2", "HKIX", "static").
++Fwd("N_HKUST", "PolyU", "HKU", "static").
++Fwd("N_HKUST", "CERNET", "HKUST", "static").
++Fwd("N_HKUST", "APAN_JP", "HKIX", "static").
++Fwd("N_HKUST", "OpenTTUni", "HKU", "static").
++Fwd("N_HKUST", "TechnologyTTPark", "CUHK", "static").
++Fwd("N_HKUST", "TEIN3", "CUHK", "static").
++Fwd("N_HKUST", "International", "HKIEd", "static").
++Fwd("N_HKUST", "HKEAA", "LU", "static").
++Fwd("N_HKUST", "CityU", "HKBU", "static").
+

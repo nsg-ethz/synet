@@ -1,0 +1,113 @@
++SetNode("NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetAdminDist("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "static", 1).
++SetAdminDist("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "bgp", 2).
++SetAdminDist("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "ospf", 3).
++SetInterface("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_MIDnet_TTLincoln_TTNE").
++SetInterface("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_NCAR_TTBoulder").
++SetInterface("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor").
++SetInterface("NCSA_TTUniversityTTofTTIllinois_TTChampaign", "NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_SEQSUINET_TTRiceTTUniversity_TTHouston").
+
++SetNode("SURANET_TTGeorgiaTTTech_TTAtlanta").
++SetAdminDist("SURANET_TTGeorgiaTTTech_TTAtlanta", "static", 1).
++SetAdminDist("SURANET_TTGeorgiaTTTech_TTAtlanta", "bgp", 2).
++SetAdminDist("SURANET_TTGeorgiaTTTech_TTAtlanta", "ospf", 3).
++SetInterface("SURANET_TTGeorgiaTTTech_TTAtlanta", "SURANET_TTGeorgiaTTTech_TTAtlanta_I_JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ").
++SetInterface("SURANET_TTGeorgiaTTTech_TTAtlanta", "SURANET_TTGeorgiaTTTech_TTAtlanta_I_SEQSUINET_TTRiceTTUniversity_TTHouston").
+
++SetNode("SanTTDiegoTTSupercomputerTTCenter").
++SetAdminDist("SanTTDiegoTTSupercomputerTTCenter", "static", 1).
++SetAdminDist("SanTTDiegoTTSupercomputerTTCenter", "bgp", 2).
++SetAdminDist("SanTTDiegoTTSupercomputerTTCenter", "ospf", 3).
++SetInterface("SanTTDiegoTTSupercomputerTTCenter", "SanTTDiegoTTSupercomputerTTCenter_I_BARRnet_TTPaloTTAlto").
++SetInterface("SanTTDiegoTTSupercomputerTTCenter", "SanTTDiegoTTSupercomputerTTCenter_I_SEQSUINET_TTRiceTTUniversity_TTHouston").
+
++SetNode("MIDnet_TTLincoln_TTNE").
++SetAdminDist("MIDnet_TTLincoln_TTNE", "static", 1).
++SetAdminDist("MIDnet_TTLincoln_TTNE", "bgp", 2).
++SetAdminDist("MIDnet_TTLincoln_TTNE", "ospf", 3).
++SetInterface("MIDnet_TTLincoln_TTNE", "MIDnet_TTLincoln_TTNE_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
+
++SetNode("NCAR_TTBoulder").
++SetAdminDist("NCAR_TTBoulder", "static", 1).
++SetAdminDist("NCAR_TTBoulder", "bgp", 2).
++SetAdminDist("NCAR_TTBoulder", "ospf", 3).
++SetInterface("NCAR_TTBoulder", "NCAR_TTBoulder_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetInterface("NCAR_TTBoulder", "NCAR_TTBoulder_I_Westnet_TTSaltTTLakeTTCity").
++SetInterface("NCAR_TTBoulder", "NCAR_TTBoulder_I_NorthWestNet_TTSeattle").
+
++SetNode("Westnet_TTSaltTTLakeTTCity").
++SetAdminDist("Westnet_TTSaltTTLakeTTCity", "static", 1).
++SetAdminDist("Westnet_TTSaltTTLakeTTCity", "bgp", 2).
++SetAdminDist("Westnet_TTSaltTTLakeTTCity", "ospf", 3).
++SetInterface("Westnet_TTSaltTTLakeTTCity", "Westnet_TTSaltTTLakeTTCity_I_NCAR_TTBoulder").
+
++SetNode("BARRnet_TTPaloTTAlto").
++SetAdminDist("BARRnet_TTPaloTTAlto", "static", 1).
++SetAdminDist("BARRnet_TTPaloTTAlto", "bgp", 2).
++SetAdminDist("BARRnet_TTPaloTTAlto", "ospf", 3).
++SetInterface("BARRnet_TTPaloTTAlto", "BARRnet_TTPaloTTAlto_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor").
++SetInterface("BARRnet_TTPaloTTAlto", "BARRnet_TTPaloTTAlto_I_SanTTDiegoTTSupercomputerTTCenter").
++SetInterface("BARRnet_TTPaloTTAlto", "BARRnet_TTPaloTTAlto_I_NorthWestNet_TTSeattle").
+
++SetNode("SEQSUINET_TTRiceTTUniversity_TTHouston").
++SetAdminDist("SEQSUINET_TTRiceTTUniversity_TTHouston", "static", 1).
++SetAdminDist("SEQSUINET_TTRiceTTUniversity_TTHouston", "bgp", 2).
++SetAdminDist("SEQSUINET_TTRiceTTUniversity_TTHouston", "ospf", 3).
++SetInterface("SEQSUINET_TTRiceTTUniversity_TTHouston", "SEQSUINET_TTRiceTTUniversity_TTHouston_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetInterface("SEQSUINET_TTRiceTTUniversity_TTHouston", "SEQSUINET_TTRiceTTUniversity_TTHouston_I_SURANET_TTGeorgiaTTTech_TTAtlanta").
++SetInterface("SEQSUINET_TTRiceTTUniversity_TTHouston", "SEQSUINET_TTRiceTTUniversity_TTHouston_I_SanTTDiegoTTSupercomputerTTCenter").
+
++SetNode("CornellTTTheoryTTCenter_TTIthacaTTNY").
++SetAdminDist("CornellTTTheoryTTCenter_TTIthacaTTNY", "static", 1).
++SetAdminDist("CornellTTTheoryTTCenter_TTIthacaTTNY", "bgp", 2).
++SetAdminDist("CornellTTTheoryTTCenter_TTIthacaTTNY", "ospf", 3).
++SetInterface("CornellTTTheoryTTCenter_TTIthacaTTNY", "CornellTTTheoryTTCenter_TTIthacaTTNY_I_JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ").
++SetInterface("CornellTTTheoryTTCenter_TTIthacaTTNY", "CornellTTTheoryTTCenter_TTIthacaTTNY_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor").
+
++SetNode("JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ").
++SetAdminDist("JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "static", 1).
++SetAdminDist("JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "bgp", 2).
++SetAdminDist("JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "ospf", 3).
++SetInterface("JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ_I_CornellTTTheoryTTCenter_TTIthacaTTNY").
++SetInterface("JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ_I_SURANET_TTGeorgiaTTTech_TTAtlanta").
+
++SetNode("PittsburghTTSupercomputerTTCenter").
++SetAdminDist("PittsburghTTSupercomputerTTCenter", "static", 1).
++SetAdminDist("PittsburghTTSupercomputerTTCenter", "bgp", 2).
++SetAdminDist("PittsburghTTSupercomputerTTCenter", "ospf", 3).
++SetInterface("PittsburghTTSupercomputerTTCenter", "PittsburghTTSupercomputerTTCenter_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor").
+
++SetNode("MeritTTUnivTTofTTMichigan_TTAnnTTArbor").
++SetAdminDist("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "static", 1).
++SetAdminDist("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "bgp", 2).
++SetAdminDist("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "ospf", 3).
++SetInterface("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetInterface("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_CornellTTTheoryTTCenter_TTIthacaTTNY").
++SetInterface("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_PittsburghTTSupercomputerTTCenter").
++SetInterface("MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_BARRnet_TTPaloTTAlto").
+
++SetNode("NorthWestNet_TTSeattle").
++SetAdminDist("NorthWestNet_TTSeattle", "static", 1).
++SetAdminDist("NorthWestNet_TTSeattle", "bgp", 2).
++SetAdminDist("NorthWestNet_TTSeattle", "ospf", 3).
++SetInterface("NorthWestNet_TTSeattle", "NorthWestNet_TTSeattle_I_NCAR_TTBoulder").
++SetInterface("NorthWestNet_TTSeattle", "NorthWestNet_TTSeattle_I_BARRnet_TTPaloTTAlto").
+
++SetLink("NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_MIDnet_TTLincoln_TTNE", "MIDnet_TTLincoln_TTNE_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetLink("NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_NCAR_TTBoulder", "NCAR_TTBoulder_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetLink("NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetLink("NCSA_TTUniversityTTofTTIllinois_TTChampaign_I_SEQSUINET_TTRiceTTUniversity_TTHouston", "SEQSUINET_TTRiceTTUniversity_TTHouston_I_NCSA_TTUniversityTTofTTIllinois_TTChampaign").
++SetLink("SURANET_TTGeorgiaTTTech_TTAtlanta_I_JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ_I_SURANET_TTGeorgiaTTTech_TTAtlanta").
++SetLink("SURANET_TTGeorgiaTTTech_TTAtlanta_I_SEQSUINET_TTRiceTTUniversity_TTHouston", "SEQSUINET_TTRiceTTUniversity_TTHouston_I_SURANET_TTGeorgiaTTTech_TTAtlanta").
++SetLink("SanTTDiegoTTSupercomputerTTCenter_I_BARRnet_TTPaloTTAlto", "BARRnet_TTPaloTTAlto_I_SanTTDiegoTTSupercomputerTTCenter").
++SetLink("SanTTDiegoTTSupercomputerTTCenter_I_SEQSUINET_TTRiceTTUniversity_TTHouston", "SEQSUINET_TTRiceTTUniversity_TTHouston_I_SanTTDiegoTTSupercomputerTTCenter").
++SetLink("NCAR_TTBoulder_I_Westnet_TTSaltTTLakeTTCity", "Westnet_TTSaltTTLakeTTCity_I_NCAR_TTBoulder").
++SetLink("NCAR_TTBoulder_I_NorthWestNet_TTSeattle", "NorthWestNet_TTSeattle_I_NCAR_TTBoulder").
++SetLink("BARRnet_TTPaloTTAlto_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_BARRnet_TTPaloTTAlto").
++SetLink("BARRnet_TTPaloTTAlto_I_NorthWestNet_TTSeattle", "NorthWestNet_TTSeattle_I_BARRnet_TTPaloTTAlto").
++SetLink("CornellTTTheoryTTCenter_TTIthacaTTNY_I_JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ", "JonTTVonTTNeumannTTCenter_TTPrinceton_TTNJ_I_CornellTTTheoryTTCenter_TTIthacaTTNY").
++SetLink("CornellTTTheoryTTCenter_TTIthacaTTNY_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_CornellTTTheoryTTCenter_TTIthacaTTNY").
++SetLink("PittsburghTTSupercomputerTTCenter_I_MeritTTUnivTTofTTMichigan_TTAnnTTArbor", "MeritTTUnivTTofTTMichigan_TTAnnTTArbor_I_PittsburghTTSupercomputerTTCenter").
+
+
++SetNetwork("Westnet_TTSaltTTLakeTTCity", "N_Westnet_TTSaltTTLakeTTCity").

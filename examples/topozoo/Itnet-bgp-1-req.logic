@@ -1,0 +1,22 @@
+
++Fwd("N_Tralee", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Tralee", "ospf").
++Fwd("NBGP_Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Tralee", "bgp").
++Fwd("N_Tralee", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
++Fwd("N_Tralee", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "ospf").
++Fwd("NBGP_Tralee", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "bgp").
+

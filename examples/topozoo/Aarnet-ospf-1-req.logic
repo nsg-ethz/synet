@@ -1,0 +1,20 @@
+
++Fwd("N_Adelaide2", "AliceTTSprings", "Adelaide2", "ospf").
++Fwd("N_Adelaide2", "Brisbane2", "Sydney2", "ospf").
++Fwd("N_Adelaide2", "Sydney2", "Melbourne2", "ospf").
++Fwd("N_Adelaide2", "Melbourne2", "Adelaide2", "ospf").
++Fwd("N_Adelaide2", "Perth1", "Perth2", "ospf").
++Fwd("N_Adelaide2", "Perth2", "Adelaide2", "ospf").
++Fwd("N_Adelaide2", "Sydney1", "Sydney2", "ospf").
++Fwd("N_Adelaide2", "Armidale", "Sydney2", "ospf").
++Fwd("N_Adelaide2", "Cairns", "Townsville", "ospf").
++Fwd("N_Adelaide2", "Townsville", "Rockhampton", "ospf").
++Fwd("N_Adelaide2", "Rockhampton", "Brisbane1", "ospf").
++Fwd("N_Adelaide2", "Brisbane1", "Brisbane2", "ospf").
++Fwd("N_Adelaide2", "Hobart", "Melbourne2", "ospf").
++Fwd("N_Adelaide2", "Melbourne1", "Adelaide1", "ospf").
++Fwd("N_Adelaide2", "Adelaide1", "Adelaide2", "ospf").
++Fwd("N_Adelaide2", "Canberra2", "Sydney1", "ospf").
++Fwd("N_Adelaide2", "Canberra1", "Melbourne1", "ospf").
++Fwd("N_Adelaide2", "Darwin", "AliceTTSprings", "ospf").
+

@@ -1,0 +1,104 @@
++SetNode("Jeju").
++SetAdminDist("Jeju", "static", 1).
++SetAdminDist("Jeju", "bgp", 2).
++SetAdminDist("Jeju", "ospf", 3).
++SetInterface("Jeju", "Jeju_I_Kwangju").
+
++SetNode("Seoul").
++SetAdminDist("Seoul", "static", 1).
++SetAdminDist("Seoul", "bgp", 2).
++SetAdminDist("Seoul", "ospf", 3).
++SetInterface("Seoul", "Seoul_I_Suwon").
++SetInterface("Seoul", "Seoul_I_Daejeon").
++SetInterface("Seoul", "Seoul_I_Incheon").
+
++SetNode("Kwangju").
++SetAdminDist("Kwangju", "static", 1).
++SetAdminDist("Kwangju", "bgp", 2).
++SetAdminDist("Kwangju", "ospf", 3).
++SetInterface("Kwangju", "Kwangju_I_Jeju").
++SetInterface("Kwangju", "Kwangju_I_Daejeon").
+
++SetNode("Suwon").
++SetAdminDist("Suwon", "static", 1).
++SetAdminDist("Suwon", "bgp", 2).
++SetAdminDist("Suwon", "ospf", 3).
++SetInterface("Suwon", "Suwon_I_Seoul").
+
++SetNode("Daejeon").
++SetAdminDist("Daejeon", "static", 1).
++SetAdminDist("Daejeon", "bgp", 2).
++SetAdminDist("Daejeon", "ospf", 3).
++SetInterface("Daejeon", "Daejeon_I_Seoul").
++SetInterface("Daejeon", "Daejeon_I_Kwangju").
++SetInterface("Daejeon", "Daejeon_I_Ochang").
++SetInterface("Daejeon", "Daejeon_I_Jeonju").
++SetInterface("Daejeon", "Daejeon_I_Daegu").
++SetInterface("Daejeon", "Daejeon_I_Changwon").
++SetInterface("Daejeon", "Daejeon_I_Busan").
++SetInterface("Daejeon", "Daejeon_I_Cheonan").
++SetInterface("Daejeon", "Daejeon_I_Pohang").
+
++SetNode("Incheon").
++SetAdminDist("Incheon", "static", 1).
++SetAdminDist("Incheon", "bgp", 2).
++SetAdminDist("Incheon", "ospf", 3).
++SetInterface("Incheon", "Incheon_I_Seoul").
+
++SetNode("Ochang").
++SetAdminDist("Ochang", "static", 1).
++SetAdminDist("Ochang", "bgp", 2).
++SetAdminDist("Ochang", "ospf", 3).
++SetInterface("Ochang", "Ochang_I_Daejeon").
+
++SetNode("Jeonju").
++SetAdminDist("Jeonju", "static", 1).
++SetAdminDist("Jeonju", "bgp", 2).
++SetAdminDist("Jeonju", "ospf", 3).
++SetInterface("Jeonju", "Jeonju_I_Daejeon").
+
++SetNode("Daegu").
++SetAdminDist("Daegu", "static", 1).
++SetAdminDist("Daegu", "bgp", 2).
++SetAdminDist("Daegu", "ospf", 3).
++SetInterface("Daegu", "Daegu_I_Daejeon").
+
++SetNode("Changwon").
++SetAdminDist("Changwon", "static", 1).
++SetAdminDist("Changwon", "bgp", 2).
++SetAdminDist("Changwon", "ospf", 3).
++SetInterface("Changwon", "Changwon_I_Daejeon").
+
++SetNode("Busan").
++SetAdminDist("Busan", "static", 1).
++SetAdminDist("Busan", "bgp", 2).
++SetAdminDist("Busan", "ospf", 3).
++SetInterface("Busan", "Busan_I_Daejeon").
+
++SetNode("Cheonan").
++SetAdminDist("Cheonan", "static", 1).
++SetAdminDist("Cheonan", "bgp", 2).
++SetAdminDist("Cheonan", "ospf", 3).
++SetInterface("Cheonan", "Cheonan_I_Daejeon").
+
++SetNode("Pohang").
++SetAdminDist("Pohang", "static", 1).
++SetAdminDist("Pohang", "bgp", 2).
++SetAdminDist("Pohang", "ospf", 3).
++SetInterface("Pohang", "Pohang_I_Daejeon").
+
++SetLink("Jeju_I_Kwangju", "Kwangju_I_Jeju").
++SetLink("Seoul_I_Suwon", "Suwon_I_Seoul").
++SetLink("Seoul_I_Daejeon", "Daejeon_I_Seoul").
++SetLink("Seoul_I_Incheon", "Incheon_I_Seoul").
++SetLink("Kwangju_I_Daejeon", "Daejeon_I_Kwangju").
++SetLink("Daejeon_I_Ochang", "Ochang_I_Daejeon").
++SetLink("Daejeon_I_Jeonju", "Jeonju_I_Daejeon").
++SetLink("Daejeon_I_Daegu", "Daegu_I_Daejeon").
++SetLink("Daejeon_I_Changwon", "Changwon_I_Daejeon").
++SetLink("Daejeon_I_Busan", "Busan_I_Daejeon").
++SetLink("Daejeon_I_Cheonan", "Cheonan_I_Daejeon").
++SetLink("Daejeon_I_Pohang", "Pohang_I_Daejeon").
+
+
++SetNetwork("Kwangju", "N_Kwangju").

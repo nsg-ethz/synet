@@ -1,0 +1,46 @@
+
++Fwd("N_Dallas", "Houston", "Dallas", "ospf").
++Fwd("N_Dallas", "SanTTFrancisco", "Washington_TTDC", "ospf").
++Fwd("N_Dallas", "Washington_TTDC", "Newark", "ospf").
++Fwd("N_Dallas", "Newark", "Atlanta", "ospf").
++Fwd("N_Dallas", "Atlanta", "Dallas", "ospf").
++Fwd("N_Dallas", "NewTTYork", "Houston", "ospf").
++Fwd("N_Dallas", "Miami", "Atlanta", "ospf").
++Fwd("N_Dallas", "LosTTAngeles", "Houston", "ospf").
+
++Fwd("N_Atlanta", "Houston", "Dallas", "ospf").
++Fwd("N_Atlanta", "Dallas", "Atlanta", "ospf").
++Fwd("N_Atlanta", "SanTTFrancisco", "Washington_TTDC", "ospf").
++Fwd("N_Atlanta", "Washington_TTDC", "Newark", "ospf").
++Fwd("N_Atlanta", "Newark", "Atlanta", "ospf").
++Fwd("N_Atlanta", "NewTTYork", "Miami", "ospf").
++Fwd("N_Atlanta", "Miami", "Atlanta", "ospf").
++Fwd("N_Atlanta", "LosTTAngeles", "Miami", "ospf").
+
++Fwd("N_Washington_TTDC", "Houston", "Dallas", "ospf").
++Fwd("N_Washington_TTDC", "Dallas", "Atlanta", "ospf").
++Fwd("N_Washington_TTDC", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "SanTTFrancisco", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "NewTTYork", "Newark", "ospf").
++Fwd("N_Washington_TTDC", "Newark", "Washington_TTDC", "ospf").
++Fwd("N_Washington_TTDC", "Miami", "Atlanta", "ospf").
++Fwd("N_Washington_TTDC", "LosTTAngeles", "NewTTYork", "ospf").
+
++Fwd("N_Miami", "Houston", "Dallas", "ospf").
++Fwd("N_Miami", "Dallas", "Atlanta", "ospf").
++Fwd("N_Miami", "Atlanta", "Miami", "ospf").
++Fwd("N_Miami", "SanTTFrancisco", "LosTTAngeles", "ospf").
++Fwd("N_Miami", "LosTTAngeles", "Miami", "ospf").
++Fwd("N_Miami", "NewTTYork", "Miami", "ospf").
++Fwd("N_Miami", "Newark", "Atlanta", "ospf").
++Fwd("N_Miami", "Washington_TTDC", "Newark", "ospf").
+
++Fwd("N_SanTTFrancisco", "Houston", "Dallas", "ospf").
++Fwd("N_SanTTFrancisco", "Dallas", "Atlanta", "ospf").
++Fwd("N_SanTTFrancisco", "Atlanta", "Washington_TTDC", "ospf").
++Fwd("N_SanTTFrancisco", "Washington_TTDC", "Newark", "ospf").
++Fwd("N_SanTTFrancisco", "Newark", "SanTTFrancisco", "ospf").
++Fwd("N_SanTTFrancisco", "NewTTYork", "Newark", "ospf").
++Fwd("N_SanTTFrancisco", "Miami", "Atlanta", "ospf").
++Fwd("N_SanTTFrancisco", "LosTTAngeles", "SanTTFrancisco", "ospf").
+

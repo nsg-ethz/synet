@@ -1,0 +1,456 @@
++SetNode("Turnov").
++SetAdminDist("Turnov", "static", 1).
++SetAdminDist("Turnov", "bgp", 2).
++SetAdminDist("Turnov", "ospf", 3).
++SetInterface("Turnov", "Turnov_I_Liberec").
+
++SetNode("Znojmo").
++SetAdminDist("Znojmo", "static", 1).
++SetAdminDist("Znojmo", "bgp", 2).
++SetAdminDist("Znojmo", "ospf", 3).
++SetInterface("Znojmo", "Znojmo_I_Jihlava").
+
++SetNode("MarlanskeTTLazne").
++SetAdminDist("MarlanskeTTLazne", "static", 1).
++SetAdminDist("MarlanskeTTLazne", "bgp", 2).
++SetAdminDist("MarlanskeTTLazne", "ospf", 3).
++SetInterface("MarlanskeTTLazne", "MarlanskeTTLazne_I_Praha").
++SetInterface("MarlanskeTTLazne", "MarlanskeTTLazne_I_Cheb").
++SetInterface("MarlanskeTTLazne", "MarlanskeTTLazne_I_Plzen").
+
++SetNode("Jihlava").
++SetAdminDist("Jihlava", "static", 1).
++SetAdminDist("Jihlava", "bgp", 2).
++SetAdminDist("Jihlava", "ospf", 3).
++SetInterface("Jihlava", "Jihlava_I_Znojmo").
++SetInterface("Jihlava", "Jihlava_I_Brno").
++SetInterface("Jihlava", "Jihlava_I_JindrichuvTTHradec").
+
++SetNode("Decin").
++SetAdminDist("Decin", "static", 1).
++SetAdminDist("Decin", "bgp", 2).
++SetAdminDist("Decin", "ospf", 3).
++SetInterface("Decin", "Decin_I_UstiTTnadTTLabem").
++SetInterface("Decin", "Decin_I_Most").
+
++SetNode("Pisek").
++SetAdminDist("Pisek", "static", 1).
++SetAdminDist("Pisek", "bgp", 2).
++SetAdminDist("Pisek", "ospf", 3).
++SetInterface("Pisek", "Pisek_I_Praha").
+
++SetNode("Ondrejov").
++SetAdminDist("Ondrejov", "static", 1).
++SetAdminDist("Ondrejov", "bgp", 2).
++SetAdminDist("Ondrejov", "ospf", 3).
++SetInterface("Ondrejov", "Ondrejov_I_Praha").
+
++SetNode("Krnov").
++SetAdminDist("Krnov", "static", 1).
++SetAdminDist("Krnov", "bgp", 2).
++SetAdminDist("Krnov", "ospf", 3).
++SetInterface("Krnov", "Krnov_I_Opava").
+
++SetNode("Telc").
++SetAdminDist("Telc", "static", 1).
++SetAdminDist("Telc", "bgp", 2).
++SetAdminDist("Telc", "ospf", 3).
++SetInterface("Telc", "Telc_I_Brno").
+
++SetNode("ACONET").
++SetAdminDist("ACONET", "static", 1).
++SetAdminDist("ACONET", "bgp", 2).
++SetAdminDist("ACONET", "ospf", 3).
++SetInterface("ACONET", "ACONET_I_Brno").
+
++SetNode("Internet").
++SetAdminDist("Internet", "static", 1).
++SetAdminDist("Internet", "bgp", 2).
++SetAdminDist("Internet", "ospf", 3).
++SetInterface("Internet", "Internet_I_Praha").
+
++SetNode("Opava").
++SetAdminDist("Opava", "static", 1).
++SetAdminDist("Opava", "bgp", 2).
++SetAdminDist("Opava", "ospf", 3).
++SetInterface("Opava", "Opava_I_Ostrava").
++SetInterface("Opava", "Opava_I_Krnov").
++SetInterface("Opava", "Opava_I_Letohrad").
+
++SetNode("Podebrady").
++SetAdminDist("Podebrady", "static", 1).
++SetAdminDist("Podebrady", "bgp", 2).
++SetAdminDist("Podebrady", "ospf", 3).
++SetInterface("Podebrady", "Podebrady_I_Praha").
+
++SetNode("Prostejov").
++SetAdminDist("Prostejov", "static", 1).
++SetAdminDist("Prostejov", "bgp", 2).
++SetAdminDist("Prostejov", "ospf", 3).
++SetInterface("Prostejov", "Prostejov_I_Brno").
+
++SetNode("Breclav_Lednice").
++SetAdminDist("Breclav_Lednice", "static", 1).
++SetAdminDist("Breclav_Lednice", "bgp", 2).
++SetAdminDist("Breclav_Lednice", "ospf", 3).
++SetInterface("Breclav_Lednice", "Breclav_Lednice_I_Brno").
+
++SetNode("Tabor").
++SetAdminDist("Tabor", "static", 1).
++SetAdminDist("Tabor", "bgp", 2).
++SetAdminDist("Tabor", "ospf", 3).
++SetInterface("Tabor", "Tabor_I_Praha").
+
++SetNode("Vodnany").
++SetAdminDist("Vodnany", "static", 1).
++SetAdminDist("Vodnany", "bgp", 2).
++SetAdminDist("Vodnany", "ospf", 3).
++SetInterface("Vodnany", "Vodnany_I_CeskeTTBudejovice").
+
++SetNode("Trebon").
++SetAdminDist("Trebon", "static", 1).
++SetAdminDist("Trebon", "bgp", 2).
++SetAdminDist("Trebon", "ospf", 3).
++SetInterface("Trebon", "Trebon_I_CeskeTTBudejovice").
+
++SetNode("JablonecTTnTTN").
++SetAdminDist("JablonecTTnTTN", "static", 1).
++SetAdminDist("JablonecTTnTTN", "bgp", 2).
++SetAdminDist("JablonecTTnTTN", "ospf", 3).
++SetInterface("JablonecTTnTTN", "JablonecTTnTTN_I_Liberec").
+
++SetNode("Vyskov").
++SetAdminDist("Vyskov", "static", 1).
++SetAdminDist("Vyskov", "bgp", 2).
++SetAdminDist("Vyskov", "ospf", 3).
++SetInterface("Vyskov", "Vyskov_I_Brno").
+
++SetNode("CeskaTTTrebova").
++SetAdminDist("CeskaTTTrebova", "static", 1).
++SetAdminDist("CeskaTTTrebova", "bgp", 2).
++SetAdminDist("CeskaTTTrebova", "ospf", 3).
++SetInterface("CeskaTTTrebova", "CeskaTTTrebova_I_Letohrad").
+
++SetNode("SANET").
++SetAdminDist("SANET", "static", 1).
++SetAdminDist("SANET", "bgp", 2).
++SetAdminDist("SANET", "ospf", 3).
++SetInterface("SANET", "SANET_I_Brno").
+
++SetNode("Cheb").
++SetAdminDist("Cheb", "static", 1).
++SetAdminDist("Cheb", "bgp", 2).
++SetAdminDist("Cheb", "ospf", 3).
++SetInterface("Cheb", "Cheb_I_Most").
++SetInterface("Cheb", "Cheb_I_MarlanskeTTLazne").
+
++SetNode("Brno").
++SetAdminDist("Brno", "static", 1).
++SetAdminDist("Brno", "bgp", 2).
++SetAdminDist("Brno", "ospf", 3).
++SetInterface("Brno", "Brno_I_Ostrava").
++SetInterface("Brno", "Brno_I_Prostejov").
++SetInterface("Brno", "Brno_I_Jihlava").
++SetInterface("Brno", "Brno_I_Breclav_Lednice").
++SetInterface("Brno", "Brno_I_Zlin").
++SetInterface("Brno", "Brno_I_Vyskov").
++SetInterface("Brno", "Brno_I_Humpolec").
++SetInterface("Brno", "Brno_I_Kyjov").
++SetInterface("Brno", "Brno_I_Telc").
++SetInterface("Brno", "Brno_I_Praha").
++SetInterface("Brno", "Brno_I_SANET").
++SetInterface("Brno", "Brno_I_ACONET").
++SetInterface("Brno", "Brno_I_Olomouc").
+
++SetNode("Olomouc").
++SetAdminDist("Olomouc", "static", 1).
++SetAdminDist("Olomouc", "bgp", 2).
++SetAdminDist("Olomouc", "ospf", 3).
++SetInterface("Olomouc", "Olomouc_I_Ostrava").
++SetInterface("Olomouc", "Olomouc_I_Letohrad").
++SetInterface("Olomouc", "Olomouc_I_Brno").
++SetInterface("Olomouc", "Olomouc_I_Zlin").
+
++SetNode("KostelecTTnTTC_L").
++SetAdminDist("KostelecTTnTTC_L", "static", 1).
++SetAdminDist("KostelecTTnTTC_L", "bgp", 2).
++SetAdminDist("KostelecTTnTTC_L", "ospf", 3).
++SetInterface("KostelecTTnTTC_L", "KostelecTTnTTC_L_I_Praha").
+
++SetNode("Beroun").
++SetAdminDist("Beroun", "static", 1).
++SetAdminDist("Beroun", "bgp", 2).
++SetAdminDist("Beroun", "ospf", 3).
++SetInterface("Beroun", "Beroun_I_Praha").
+
++SetNode("Pardubice").
++SetAdminDist("Pardubice", "static", 1).
++SetAdminDist("Pardubice", "bgp", 2).
++SetAdminDist("Pardubice", "ospf", 3).
++SetInterface("Pardubice", "Pardubice_I_KutnaTTHora").
++SetInterface("Pardubice", "Pardubice_I_Litomysl").
++SetInterface("Pardubice", "Pardubice_I_Praha").
++SetInterface("Pardubice", "Pardubice_I_HradecTTKralove").
+
++SetNode("Zlin").
++SetAdminDist("Zlin", "static", 1).
++SetAdminDist("Zlin", "bgp", 2).
++SetAdminDist("Zlin", "ospf", 3).
++SetInterface("Zlin", "Zlin_I_UherskeTTHradiste").
++SetInterface("Zlin", "Zlin_I_Brno").
++SetInterface("Zlin", "Zlin_I_Olomouc").
+
++SetNode("KutnaTTHora").
++SetAdminDist("KutnaTTHora", "static", 1).
++SetAdminDist("KutnaTTHora", "bgp", 2).
++SetAdminDist("KutnaTTHora", "ospf", 3).
++SetInterface("KutnaTTHora", "KutnaTTHora_I_Pardubice").
+
++SetNode("Rez").
++SetAdminDist("Rez", "static", 1).
++SetAdminDist("Rez", "bgp", 2).
++SetAdminDist("Rez", "ospf", 3).
++SetInterface("Rez", "Rez_I_Praha").
+
++SetNode("NoveTTHrady").
++SetAdminDist("NoveTTHrady", "static", 1).
++SetAdminDist("NoveTTHrady", "bgp", 2).
++SetAdminDist("NoveTTHrady", "ospf", 3).
++SetInterface("NoveTTHrady", "NoveTTHrady_I_CeskeTTBudejovice").
+
++SetNode("PIONIER").
++SetAdminDist("PIONIER", "static", 1).
++SetAdminDist("PIONIER", "bgp", 2).
++SetAdminDist("PIONIER", "ospf", 3).
++SetInterface("PIONIER", "PIONIER_I_Ostrava").
+
++SetNode("AMS_IX").
++SetAdminDist("AMS_IX", "static", 1).
++SetAdminDist("AMS_IX", "bgp", 2).
++SetAdminDist("AMS_IX", "ospf", 3).
++SetInterface("AMS_IX", "AMS_IX_I_Praha").
+
++SetNode("UstiTTnadTTLabem").
++SetAdminDist("UstiTTnadTTLabem", "static", 1).
++SetAdminDist("UstiTTnadTTLabem", "bgp", 2).
++SetAdminDist("UstiTTnadTTLabem", "ospf", 3).
++SetInterface("UstiTTnadTTLabem", "UstiTTnadTTLabem_I_Decin").
++SetInterface("UstiTTnadTTLabem", "UstiTTnadTTLabem_I_Most").
++SetInterface("UstiTTnadTTLabem", "UstiTTnadTTLabem_I_Praha").
++SetInterface("UstiTTnadTTLabem", "UstiTTnadTTLabem_I_Liberec").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Praha").
+
++SetNode("Karvina").
++SetAdminDist("Karvina", "static", 1).
++SetAdminDist("Karvina", "bgp", 2).
++SetAdminDist("Karvina", "ospf", 3).
++SetInterface("Karvina", "Karvina_I_Ostrava").
+
++SetNode("Humpolec").
++SetAdminDist("Humpolec", "static", 1).
++SetAdminDist("Humpolec", "bgp", 2).
++SetAdminDist("Humpolec", "ospf", 3).
++SetInterface("Humpolec", "Humpolec_I_Brno").
+
++SetNode("Letohrad").
++SetAdminDist("Letohrad", "static", 1).
++SetAdminDist("Letohrad", "bgp", 2).
++SetAdminDist("Letohrad", "ospf", 3).
++SetInterface("Letohrad", "Letohrad_I_Opava").
++SetInterface("Letohrad", "Letohrad_I_CeskaTTTrebova").
++SetInterface("Letohrad", "Letohrad_I_HradecTTKralove").
++SetInterface("Letohrad", "Letohrad_I_Olomouc").
+
++SetNode("Ostrava").
++SetAdminDist("Ostrava", "static", 1).
++SetAdminDist("Ostrava", "bgp", 2).
++SetAdminDist("Ostrava", "ospf", 3).
++SetInterface("Ostrava", "Ostrava_I_Opava").
++SetInterface("Ostrava", "Ostrava_I_Karvina").
++SetInterface("Ostrava", "Ostrava_I_PIONIER").
++SetInterface("Ostrava", "Ostrava_I_Brno").
++SetInterface("Ostrava", "Ostrava_I_Olomouc").
+
++SetNode("UherskeTTHradiste").
++SetAdminDist("UherskeTTHradiste", "static", 1).
++SetAdminDist("UherskeTTHradiste", "bgp", 2).
++SetAdminDist("UherskeTTHradiste", "ospf", 3).
++SetInterface("UherskeTTHradiste", "UherskeTTHradiste_I_Zlin").
+
++SetNode("Plzen").
++SetAdminDist("Plzen", "static", 1).
++SetAdminDist("Plzen", "bgp", 2).
++SetAdminDist("Plzen", "ospf", 3).
++SetInterface("Plzen", "Plzen_I_MarlanskeTTLazne").
++SetInterface("Plzen", "Plzen_I_Praha").
++SetInterface("Plzen", "Plzen_I_CeskeTTBudejovice").
+
++SetNode("Liberec").
++SetAdminDist("Liberec", "static", 1).
++SetAdminDist("Liberec", "bgp", 2).
++SetAdminDist("Liberec", "ospf", 3).
++SetInterface("Liberec", "Liberec_I_JablonecTTnTTN").
++SetInterface("Liberec", "Liberec_I_Turnov").
++SetInterface("Liberec", "Liberec_I_Praha").
++SetInterface("Liberec", "Liberec_I_HradecTTKralove").
++SetInterface("Liberec", "Liberec_I_UstiTTnadTTLabem").
+
++SetNode("Kyjov").
++SetAdminDist("Kyjov", "static", 1).
++SetAdminDist("Kyjov", "bgp", 2).
++SetAdminDist("Kyjov", "ospf", 3).
++SetInterface("Kyjov", "Kyjov_I_Brno").
+
++SetNode("Litomysl").
++SetAdminDist("Litomysl", "static", 1).
++SetAdminDist("Litomysl", "bgp", 2).
++SetAdminDist("Litomysl", "ospf", 3).
++SetInterface("Litomysl", "Litomysl_I_Pardubice").
+
++SetNode("DvurTTKralove").
++SetAdminDist("DvurTTKralove", "static", 1).
++SetAdminDist("DvurTTKralove", "bgp", 2).
++SetAdminDist("DvurTTKralove", "ospf", 3).
++SetInterface("DvurTTKralove", "DvurTTKralove_I_HradecTTKralove").
+
++SetNode("Most").
++SetAdminDist("Most", "static", 1).
++SetAdminDist("Most", "bgp", 2).
++SetAdminDist("Most", "ospf", 3).
++SetInterface("Most", "Most_I_Decin").
++SetInterface("Most", "Most_I_UstiTTnadTTLabem").
++SetInterface("Most", "Most_I_Cheb").
+
++SetNode("NIX").
++SetAdminDist("NIX", "static", 1).
++SetAdminDist("NIX", "bgp", 2).
++SetAdminDist("NIX", "ospf", 3).
++SetInterface("NIX", "NIX_I_Praha").
+
++SetNode("Praha").
++SetAdminDist("Praha", "static", 1).
++SetAdminDist("Praha", "bgp", 2).
++SetAdminDist("Praha", "ospf", 3).
++SetInterface("Praha", "Praha_I_Rez").
++SetInterface("Praha", "Praha_I_MarlanskeTTLazne").
++SetInterface("Praha", "Praha_I_KostelecTTnTTC_L").
++SetInterface("Praha", "Praha_I_Beroun").
++SetInterface("Praha", "Praha_I_Plzen").
++SetInterface("Praha", "Praha_I_Liberec").
++SetInterface("Praha", "Praha_I_GEANT").
++SetInterface("Praha", "Praha_I_Pisek").
++SetInterface("Praha", "Praha_I_Internet").
++SetInterface("Praha", "Praha_I_Tabor").
++SetInterface("Praha", "Praha_I_AMS_IX").
++SetInterface("Praha", "Praha_I_UstiTTnadTTLabem").
++SetInterface("Praha", "Praha_I_NIX").
++SetInterface("Praha", "Praha_I_HradecTTKralove").
++SetInterface("Praha", "Praha_I_CeskeTTBudejovice").
++SetInterface("Praha", "Praha_I_Ondrejov").
++SetInterface("Praha", "Praha_I_Pardubice").
++SetInterface("Praha", "Praha_I_Podebrady").
++SetInterface("Praha", "Praha_I_Brno").
+
++SetNode("HradecTTKralove").
++SetAdminDist("HradecTTKralove", "static", 1).
++SetAdminDist("HradecTTKralove", "bgp", 2).
++SetAdminDist("HradecTTKralove", "ospf", 3).
++SetInterface("HradecTTKralove", "HradecTTKralove_I_Praha").
++SetInterface("HradecTTKralove", "HradecTTKralove_I_DvurTTKralove").
++SetInterface("HradecTTKralove", "HradecTTKralove_I_Pardubice").
++SetInterface("HradecTTKralove", "HradecTTKralove_I_Letohrad").
++SetInterface("HradecTTKralove", "HradecTTKralove_I_Liberec").
+
++SetNode("CeskeTTBudejovice").
++SetAdminDist("CeskeTTBudejovice", "static", 1).
++SetAdminDist("CeskeTTBudejovice", "bgp", 2).
++SetAdminDist("CeskeTTBudejovice", "ospf", 3).
++SetInterface("CeskeTTBudejovice", "CeskeTTBudejovice_I_Plzen").
++SetInterface("CeskeTTBudejovice", "CeskeTTBudejovice_I_Vodnany").
++SetInterface("CeskeTTBudejovice", "CeskeTTBudejovice_I_NoveTTHrady").
++SetInterface("CeskeTTBudejovice", "CeskeTTBudejovice_I_Trebon").
++SetInterface("CeskeTTBudejovice", "CeskeTTBudejovice_I_Praha").
++SetInterface("CeskeTTBudejovice", "CeskeTTBudejovice_I_JindrichuvTTHradec").
+
++SetNode("JindrichuvTTHradec").
++SetAdminDist("JindrichuvTTHradec", "static", 1).
++SetAdminDist("JindrichuvTTHradec", "bgp", 2).
++SetAdminDist("JindrichuvTTHradec", "ospf", 3).
++SetInterface("JindrichuvTTHradec", "JindrichuvTTHradec_I_Jihlava").
++SetInterface("JindrichuvTTHradec", "JindrichuvTTHradec_I_CeskeTTBudejovice").
+
++SetLink("Turnov_I_Liberec", "Liberec_I_Turnov").
++SetLink("Znojmo_I_Jihlava", "Jihlava_I_Znojmo").
++SetLink("MarlanskeTTLazne_I_Praha", "Praha_I_MarlanskeTTLazne").
++SetLink("MarlanskeTTLazne_I_Cheb", "Cheb_I_MarlanskeTTLazne").
++SetLink("MarlanskeTTLazne_I_Plzen", "Plzen_I_MarlanskeTTLazne").
++SetLink("Jihlava_I_Brno", "Brno_I_Jihlava").
++SetLink("Jihlava_I_JindrichuvTTHradec", "JindrichuvTTHradec_I_Jihlava").
++SetLink("Decin_I_UstiTTnadTTLabem", "UstiTTnadTTLabem_I_Decin").
++SetLink("Decin_I_Most", "Most_I_Decin").
++SetLink("Pisek_I_Praha", "Praha_I_Pisek").
++SetLink("Ondrejov_I_Praha", "Praha_I_Ondrejov").
++SetLink("Krnov_I_Opava", "Opava_I_Krnov").
++SetLink("Telc_I_Brno", "Brno_I_Telc").
++SetLink("ACONET_I_Brno", "Brno_I_ACONET").
++SetLink("Internet_I_Praha", "Praha_I_Internet").
++SetLink("Opava_I_Ostrava", "Ostrava_I_Opava").
++SetLink("Opava_I_Letohrad", "Letohrad_I_Opava").
++SetLink("Podebrady_I_Praha", "Praha_I_Podebrady").
++SetLink("Prostejov_I_Brno", "Brno_I_Prostejov").
++SetLink("Breclav_Lednice_I_Brno", "Brno_I_Breclav_Lednice").
++SetLink("Tabor_I_Praha", "Praha_I_Tabor").
++SetLink("Vodnany_I_CeskeTTBudejovice", "CeskeTTBudejovice_I_Vodnany").
++SetLink("Trebon_I_CeskeTTBudejovice", "CeskeTTBudejovice_I_Trebon").
++SetLink("JablonecTTnTTN_I_Liberec", "Liberec_I_JablonecTTnTTN").
++SetLink("Vyskov_I_Brno", "Brno_I_Vyskov").
++SetLink("CeskaTTTrebova_I_Letohrad", "Letohrad_I_CeskaTTTrebova").
++SetLink("SANET_I_Brno", "Brno_I_SANET").
++SetLink("Cheb_I_Most", "Most_I_Cheb").
++SetLink("Brno_I_Ostrava", "Ostrava_I_Brno").
++SetLink("Brno_I_Zlin", "Zlin_I_Brno").
++SetLink("Brno_I_Humpolec", "Humpolec_I_Brno").
++SetLink("Brno_I_Kyjov", "Kyjov_I_Brno").
++SetLink("Brno_I_Praha", "Praha_I_Brno").
++SetLink("Brno_I_Olomouc", "Olomouc_I_Brno").
++SetLink("Olomouc_I_Ostrava", "Ostrava_I_Olomouc").
++SetLink("Olomouc_I_Letohrad", "Letohrad_I_Olomouc").
++SetLink("Olomouc_I_Zlin", "Zlin_I_Olomouc").
++SetLink("KostelecTTnTTC_L_I_Praha", "Praha_I_KostelecTTnTTC_L").
++SetLink("Beroun_I_Praha", "Praha_I_Beroun").
++SetLink("Pardubice_I_KutnaTTHora", "KutnaTTHora_I_Pardubice").
++SetLink("Pardubice_I_Litomysl", "Litomysl_I_Pardubice").
++SetLink("Pardubice_I_Praha", "Praha_I_Pardubice").
++SetLink("Pardubice_I_HradecTTKralove", "HradecTTKralove_I_Pardubice").
++SetLink("Zlin_I_UherskeTTHradiste", "UherskeTTHradiste_I_Zlin").
++SetLink("Rez_I_Praha", "Praha_I_Rez").
++SetLink("NoveTTHrady_I_CeskeTTBudejovice", "CeskeTTBudejovice_I_NoveTTHrady").
++SetLink("PIONIER_I_Ostrava", "Ostrava_I_PIONIER").
++SetLink("AMS_IX_I_Praha", "Praha_I_AMS_IX").
++SetLink("UstiTTnadTTLabem_I_Most", "Most_I_UstiTTnadTTLabem").
++SetLink("UstiTTnadTTLabem_I_Praha", "Praha_I_UstiTTnadTTLabem").
++SetLink("UstiTTnadTTLabem_I_Liberec", "Liberec_I_UstiTTnadTTLabem").
++SetLink("GEANT_I_Praha", "Praha_I_GEANT").
++SetLink("Karvina_I_Ostrava", "Ostrava_I_Karvina").
++SetLink("Letohrad_I_HradecTTKralove", "HradecTTKralove_I_Letohrad").
++SetLink("Plzen_I_Praha", "Praha_I_Plzen").
++SetLink("Plzen_I_CeskeTTBudejovice", "CeskeTTBudejovice_I_Plzen").
++SetLink("Liberec_I_Praha", "Praha_I_Liberec").
++SetLink("Liberec_I_HradecTTKralove", "HradecTTKralove_I_Liberec").
++SetLink("DvurTTKralove_I_HradecTTKralove", "HradecTTKralove_I_DvurTTKralove").
++SetLink("NIX_I_Praha", "Praha_I_NIX").
++SetLink("Praha_I_HradecTTKralove", "HradecTTKralove_I_Praha").
++SetLink("Praha_I_CeskeTTBudejovice", "CeskeTTBudejovice_I_Praha").
++SetLink("CeskeTTBudejovice_I_JindrichuvTTHradec", "JindrichuvTTHradec_I_CeskeTTBudejovice").
+
+
++SetNetwork("KostelecTTnTTC_L", "N_KostelecTTnTTC_L").
++SetNetwork("Zlin", "N_Zlin").
++SetNetwork("JablonecTTnTTN", "N_JablonecTTnTTN").
++SetNetwork("Tabor", "N_Tabor").
++SetNetwork("Turnov", "N_Turnov").

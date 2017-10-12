@@ -1,0 +1,159 @@
++SetNode("CENIC").
++SetAdminDist("CENIC", "static", 1).
++SetAdminDist("CENIC", "bgp", 2).
++SetAdminDist("CENIC", "ospf", 3).
++SetInterface("CENIC", "CENIC_I_PacificTTWaveTTLosTTAngeles").
++SetInterface("CENIC", "CENIC_I_NLRTTFrameNetID8").
+
++SetNode("PacificTTWaveTTSeattle").
++SetAdminDist("PacificTTWaveTTSeattle", "static", 1).
++SetAdminDist("PacificTTWaveTTSeattle", "bgp", 2).
++SetAdminDist("PacificTTWaveTTSeattle", "ospf", 3).
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_StarLight").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_KRLight").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_PacificTTWaveTTLosTTAngeles").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_Internet2TTDCNID7").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_CANARIE").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_CSTNetTTHKEOEP").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_NLRTTFrameNetID6").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_PacificTTNorthwestTTGigapop").
++SetInterface("PacificTTWaveTTSeattle", "PacificTTWaveTTSeattle_I_PacificTTWaveTTSunnyvale").
+
++SetNode("StarLight").
++SetAdminDist("StarLight", "static", 1).
++SetAdminDist("StarLight", "bgp", 2).
++SetAdminDist("StarLight", "ospf", 3).
++SetInterface("StarLight", "StarLight_I_PacificTTWaveTTSeattle").
+
++SetNode("KRLight").
++SetAdminDist("KRLight", "static", 1).
++SetAdminDist("KRLight", "bgp", 2).
++SetAdminDist("KRLight", "ospf", 3).
++SetInterface("KRLight", "KRLight_I_PacificTTWaveTTSeattle").
+
++SetNode("CSTNetTTHKEOEP").
++SetAdminDist("CSTNetTTHKEOEP", "static", 1).
++SetAdminDist("CSTNetTTHKEOEP", "bgp", 2).
++SetAdminDist("CSTNetTTHKEOEP", "ospf", 3).
++SetInterface("CSTNetTTHKEOEP", "CSTNetTTHKEOEP_I_PacificTTWaveTTSeattle").
+
++SetNode("PacificTTWaveTTLosTTAngeles").
++SetAdminDist("PacificTTWaveTTLosTTAngeles", "static", 1).
++SetAdminDist("PacificTTWaveTTLosTTAngeles", "bgp", 2).
++SetAdminDist("PacificTTWaveTTLosTTAngeles", "ospf", 3).
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_CENIC").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_PacificTTWaveTTSeattle").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_AARNETTTSydney").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_Internet2TTDCN").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_JGN2TTPlusTTTokyo").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_PacificTTWaveTTHawaii").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_PacificTTWaveTTSunnyvale").
++SetInterface("PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_NLRTTFrameNetID8").
+
++SetNode("Internet2TTDCNID7").
++SetAdminDist("Internet2TTDCNID7", "static", 1).
++SetAdminDist("Internet2TTDCNID7", "bgp", 2).
++SetAdminDist("Internet2TTDCNID7", "ospf", 3).
++SetInterface("Internet2TTDCNID7", "Internet2TTDCNID7_I_PacificTTWaveTTSeattle").
++SetInterface("Internet2TTDCNID7", "Internet2TTDCNID7_I_PacificTTNorthwestTTGigapop").
+
++SetNode("CANARIE").
++SetAdminDist("CANARIE", "static", 1).
++SetAdminDist("CANARIE", "bgp", 2).
++SetAdminDist("CANARIE", "ospf", 3).
++SetInterface("CANARIE", "CANARIE_I_PacificTTWaveTTSeattle").
+
++SetNode("CENICID9").
++SetAdminDist("CENICID9", "static", 1).
++SetAdminDist("CENICID9", "bgp", 2).
++SetAdminDist("CENICID9", "ospf", 3).
++SetInterface("CENICID9", "CENICID9_I_PacificTTWaveTTSunnyvale").
++SetInterface("CENICID9", "CENICID9_I_NLRTTFrameNet").
+
++SetNode("AARNETTTSydney").
++SetAdminDist("AARNETTTSydney", "static", 1).
++SetAdminDist("AARNETTTSydney", "bgp", 2).
++SetAdminDist("AARNETTTSydney", "ospf", 3).
++SetInterface("AARNETTTSydney", "AARNETTTSydney_I_PacificTTWaveTTLosTTAngeles").
+
++SetNode("Internet2TTDCN").
++SetAdminDist("Internet2TTDCN", "static", 1).
++SetAdminDist("Internet2TTDCN", "bgp", 2).
++SetAdminDist("Internet2TTDCN", "ospf", 3).
++SetInterface("Internet2TTDCN", "Internet2TTDCN_I_PacificTTWaveTTLosTTAngeles").
+
++SetNode("NLRTTFrameNetID6").
++SetAdminDist("NLRTTFrameNetID6", "static", 1).
++SetAdminDist("NLRTTFrameNetID6", "bgp", 2).
++SetAdminDist("NLRTTFrameNetID6", "ospf", 3).
++SetInterface("NLRTTFrameNetID6", "NLRTTFrameNetID6_I_PacificTTWaveTTSeattle").
++SetInterface("NLRTTFrameNetID6", "NLRTTFrameNetID6_I_PacificTTNorthwestTTGigapop").
+
++SetNode("JGN2TTPlusTTTokyo").
++SetAdminDist("JGN2TTPlusTTTokyo", "static", 1).
++SetAdminDist("JGN2TTPlusTTTokyo", "bgp", 2).
++SetAdminDist("JGN2TTPlusTTTokyo", "ospf", 3).
++SetInterface("JGN2TTPlusTTTokyo", "JGN2TTPlusTTTokyo_I_PacificTTWaveTTLosTTAngeles").
+
++SetNode("NLRTTFrameNet").
++SetAdminDist("NLRTTFrameNet", "static", 1).
++SetAdminDist("NLRTTFrameNet", "bgp", 2).
++SetAdminDist("NLRTTFrameNet", "ospf", 3).
++SetInterface("NLRTTFrameNet", "NLRTTFrameNet_I_PacificTTWaveTTSunnyvale").
++SetInterface("NLRTTFrameNet", "NLRTTFrameNet_I_CENICID9").
+
++SetNode("PacificTTNorthwestTTGigapop").
++SetAdminDist("PacificTTNorthwestTTGigapop", "static", 1).
++SetAdminDist("PacificTTNorthwestTTGigapop", "bgp", 2).
++SetAdminDist("PacificTTNorthwestTTGigapop", "ospf", 3).
++SetInterface("PacificTTNorthwestTTGigapop", "PacificTTNorthwestTTGigapop_I_Internet2TTDCNID7").
++SetInterface("PacificTTNorthwestTTGigapop", "PacificTTNorthwestTTGigapop_I_NLRTTFrameNetID6").
++SetInterface("PacificTTNorthwestTTGigapop", "PacificTTNorthwestTTGigapop_I_PacificTTWaveTTSeattle").
+
++SetNode("PacificTTWaveTTHawaii").
++SetAdminDist("PacificTTWaveTTHawaii", "static", 1).
++SetAdminDist("PacificTTWaveTTHawaii", "bgp", 2).
++SetAdminDist("PacificTTWaveTTHawaii", "ospf", 3).
++SetInterface("PacificTTWaveTTHawaii", "PacificTTWaveTTHawaii_I_PacificTTWaveTTLosTTAngeles").
+
++SetNode("PacificTTWaveTTSunnyvale").
++SetAdminDist("PacificTTWaveTTSunnyvale", "static", 1).
++SetAdminDist("PacificTTWaveTTSunnyvale", "bgp", 2).
++SetAdminDist("PacificTTWaveTTSunnyvale", "ospf", 3).
++SetInterface("PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_PacificTTWaveTTLosTTAngeles").
++SetInterface("PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_PacificTTWaveTTSeattle").
++SetInterface("PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_NLRTTFrameNet").
++SetInterface("PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_CENICID9").
+
++SetNode("NLRTTFrameNetID8").
++SetAdminDist("NLRTTFrameNetID8", "static", 1).
++SetAdminDist("NLRTTFrameNetID8", "bgp", 2).
++SetAdminDist("NLRTTFrameNetID8", "ospf", 3).
++SetInterface("NLRTTFrameNetID8", "NLRTTFrameNetID8_I_PacificTTWaveTTLosTTAngeles").
++SetInterface("NLRTTFrameNetID8", "NLRTTFrameNetID8_I_CENIC").
+
++SetLink("CENIC_I_PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_CENIC").
++SetLink("CENIC_I_NLRTTFrameNetID8", "NLRTTFrameNetID8_I_CENIC").
++SetLink("PacificTTWaveTTSeattle_I_StarLight", "StarLight_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_KRLight", "KRLight_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_PacificTTWaveTTLosTTAngeles", "PacificTTWaveTTLosTTAngeles_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_Internet2TTDCNID7", "Internet2TTDCNID7_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_CANARIE", "CANARIE_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_CSTNetTTHKEOEP", "CSTNetTTHKEOEP_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_NLRTTFrameNetID6", "NLRTTFrameNetID6_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_PacificTTNorthwestTTGigapop", "PacificTTNorthwestTTGigapop_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTSeattle_I_PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_PacificTTWaveTTSeattle").
++SetLink("PacificTTWaveTTLosTTAngeles_I_AARNETTTSydney", "AARNETTTSydney_I_PacificTTWaveTTLosTTAngeles").
++SetLink("PacificTTWaveTTLosTTAngeles_I_Internet2TTDCN", "Internet2TTDCN_I_PacificTTWaveTTLosTTAngeles").
++SetLink("PacificTTWaveTTLosTTAngeles_I_JGN2TTPlusTTTokyo", "JGN2TTPlusTTTokyo_I_PacificTTWaveTTLosTTAngeles").
++SetLink("PacificTTWaveTTLosTTAngeles_I_PacificTTWaveTTHawaii", "PacificTTWaveTTHawaii_I_PacificTTWaveTTLosTTAngeles").
++SetLink("PacificTTWaveTTLosTTAngeles_I_PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_PacificTTWaveTTLosTTAngeles").
++SetLink("PacificTTWaveTTLosTTAngeles_I_NLRTTFrameNetID8", "NLRTTFrameNetID8_I_PacificTTWaveTTLosTTAngeles").
++SetLink("Internet2TTDCNID7_I_PacificTTNorthwestTTGigapop", "PacificTTNorthwestTTGigapop_I_Internet2TTDCNID7").
++SetLink("CENICID9_I_PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_CENICID9").
++SetLink("CENICID9_I_NLRTTFrameNet", "NLRTTFrameNet_I_CENICID9").
++SetLink("NLRTTFrameNetID6_I_PacificTTNorthwestTTGigapop", "PacificTTNorthwestTTGigapop_I_NLRTTFrameNetID6").
++SetLink("NLRTTFrameNet_I_PacificTTWaveTTSunnyvale", "PacificTTWaveTTSunnyvale_I_NLRTTFrameNet").
+
+
++SetNetwork("Internet2TTDCN", "N_Internet2TTDCN").

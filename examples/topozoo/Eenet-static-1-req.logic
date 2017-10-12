@@ -1,0 +1,14 @@
+
++Fwd("N_Voru", "Tartu", "Voru", "static").
++Fwd("N_Voru", "Rakvere", "Tallinn", "static").
++Fwd("N_Voru", "Tallinn", "Paide", "static").
++Fwd("N_Voru", "Paide", "Jogeva", "static").
++Fwd("N_Voru", "Jogeva", "Tartu", "static").
++Fwd("N_Voru", "Narva", "Tallinn", "static").
++Fwd("N_Voru", "Viljandi", "Paide", "static").
++Fwd("N_Voru", "Kuressaare", "Tallinn", "static").
++Fwd("N_Voru", "Turi", "Paide", "static").
++Fwd("N_Voru", "Parnu", "Tallinn", "static").
++Fwd("N_Voru", "Haapsald", "Tallinn", "static").
++Fwd("N_Voru", "GEANT2", "Tallinn", "static").
+

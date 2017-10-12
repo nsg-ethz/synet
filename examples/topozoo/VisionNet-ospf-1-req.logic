@@ -1,0 +1,25 @@
+
++Fwd("N_DCNTTNetwork", "Fairfield", "GreatTTFalls", "ospf").
++Fwd("N_DCNTTNetwork", "GreatTTFalls", "FortTTBenton", "ospf").
++Fwd("N_DCNTTNetwork", "FortTTBenton", "Havre", "ospf").
++Fwd("N_DCNTTNetwork", "Havre", "Glasgow", "ospf").
++Fwd("N_DCNTTNetwork", "Glasgow", "Culbertson", "ospf").
++Fwd("N_DCNTTNetwork", "Culbertson", "Bainville", "ospf").
++Fwd("N_DCNTTNetwork", "Bainville", "DCNTTNetwork", "ospf").
++Fwd("N_DCNTTNetwork", "Kalispell", "Noxon", "ospf").
++Fwd("N_DCNTTNetwork", "Noxon", "Missoula", "ospf").
++Fwd("N_DCNTTNetwork", "Missoula", "Lincoln", "ospf").
++Fwd("N_DCNTTNetwork", "Lincoln", "Fairfield", "ospf").
++Fwd("N_DCNTTNetwork", "MilesTTCity", "Forsyth", "ospf").
++Fwd("N_DCNTTNetwork", "Forsyth", "Billings", "ospf").
++Fwd("N_DCNTTNetwork", "Billings", "BigTTTimber", "ospf").
++Fwd("N_DCNTTNetwork", "BigTTTimber", "Moore", "ospf").
++Fwd("N_DCNTTNetwork", "Moore", "FortTTBenton", "ospf").
++Fwd("N_DCNTTNetwork", "NTTCutbank", "Havre", "ospf").
++Fwd("N_DCNTTNetwork", "Sheridan", "Forsyth", "ospf").
++Fwd("N_DCNTTNetwork", "Bozeman", "Helena", "ospf").
++Fwd("N_DCNTTNetwork", "Helena", "Lincoln", "ospf").
++Fwd("N_DCNTTNetwork", "Dillion", "Helena", "ospf").
++Fwd("N_DCNTTNetwork", "Glendive", "MilesTTCity", "ospf").
++Fwd("N_DCNTTNetwork", "Seattle", "Noxon", "ospf").
+

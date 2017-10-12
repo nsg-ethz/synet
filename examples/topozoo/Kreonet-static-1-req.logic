@@ -1,0 +1,14 @@
+
++Fwd("N_Kwangju", "Jeju", "Kwangju", "static").
++Fwd("N_Kwangju", "Seoul", "Daejeon", "static").
++Fwd("N_Kwangju", "Daejeon", "Kwangju", "static").
++Fwd("N_Kwangju", "Suwon", "Seoul", "static").
++Fwd("N_Kwangju", "Incheon", "Seoul", "static").
++Fwd("N_Kwangju", "Ochang", "Daejeon", "static").
++Fwd("N_Kwangju", "Jeonju", "Daejeon", "static").
++Fwd("N_Kwangju", "Daegu", "Daejeon", "static").
++Fwd("N_Kwangju", "Changwon", "Daejeon", "static").
++Fwd("N_Kwangju", "Busan", "Daejeon", "static").
++Fwd("N_Kwangju", "Cheonan", "Daejeon", "static").
++Fwd("N_Kwangju", "Pohang", "Daejeon", "static").
+

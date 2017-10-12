@@ -1,0 +1,10 @@
+
++Fwd("N_UCSB", "RAND", "UCLA", "ospf").
++Fwd("N_UCSB", "UCLA", "UCSB", "ospf").
++Fwd("N_UCSB", "HARVARD", "BBN", "ospf").
++Fwd("N_UCSB", "BBN", "RAND", "ospf").
++Fwd("N_UCSB", "SRI", "UCSB", "ospf").
++Fwd("N_UCSB", "UTAH", "MIT", "ospf").
++Fwd("N_UCSB", "MIT", "BBN", "ospf").
++Fwd("N_UCSB", "SDC", "RAND", "ospf").
+

@@ -1,0 +1,21 @@
+
++Fwd("N_Seoul", "Chenai", "Singapore", "static").
++Fwd("N_Seoul", "Singapore", "Bangkok", "static").
++Fwd("N_Seoul", "Bangkok", "HongTTKong", "static").
++Fwd("N_Seoul", "HongTTKong", "Seoul", "static").
++Fwd("N_Seoul", "KualaTTLumpur", "Singapore", "static").
++Fwd("N_Seoul", "Tokyo", "Seoul", "static").
++Fwd("N_Seoul", "Sydney", "LosTTAngeles", "static").
++Fwd("N_Seoul", "LosTTAngeles", "Tokyo", "static").
++Fwd("N_Seoul", "Jakarta", "HongTTKong", "static").
++Fwd("N_Seoul", "Auckland", "LosTTAngeles", "static").
++Fwd("N_Seoul", "MumbaiID19", "Singapore", "static").
++Fwd("N_Seoul", "SanTTJose", "Tokyo", "static").
++Fwd("N_Seoul", "PaloTTAlto", "HongTTKong", "static").
++Fwd("N_Seoul", "Mumbai", "HongTTKong", "static").
++Fwd("N_Seoul", "NewTTDelhi", "Mumbai", "static").
++Fwd("N_Seoul", "Manila", "Tokyo", "static").
++Fwd("N_Seoul", "Perth", "Singapore", "static").
++Fwd("N_Seoul", "London", "Singapore", "static").
++Fwd("N_Seoul", "Taipei", "Tokyo", "static").
+

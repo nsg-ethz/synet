@@ -1,0 +1,206 @@
++SetNode("Fairfield").
++SetAdminDist("Fairfield", "static", 1).
++SetAdminDist("Fairfield", "bgp", 2).
++SetAdminDist("Fairfield", "ospf", 3).
++SetInterface("Fairfield", "Fairfield_I_Lincoln").
++SetInterface("Fairfield", "Fairfield_I_GreatTTFalls").
+
++SetNode("Kalispell").
++SetAdminDist("Kalispell", "static", 1).
++SetAdminDist("Kalispell", "bgp", 2).
++SetAdminDist("Kalispell", "ospf", 3).
++SetInterface("Kalispell", "Kalispell_I_Noxon").
+
++SetNode("Lincoln").
++SetAdminDist("Lincoln", "static", 1).
++SetAdminDist("Lincoln", "bgp", 2).
++SetAdminDist("Lincoln", "ospf", 3).
++SetInterface("Lincoln", "Lincoln_I_Helena").
++SetInterface("Lincoln", "Lincoln_I_Missoula").
++SetInterface("Lincoln", "Lincoln_I_Fairfield").
+
++SetNode("Havre").
++SetAdminDist("Havre", "static", 1).
++SetAdminDist("Havre", "bgp", 2).
++SetAdminDist("Havre", "ospf", 3).
++SetInterface("Havre", "Havre_I_FortTTBenton").
++SetInterface("Havre", "Havre_I_Glasgow").
++SetInterface("Havre", "Havre_I_NTTCutbank").
+
++SetNode("Glasgow").
++SetAdminDist("Glasgow", "static", 1).
++SetAdminDist("Glasgow", "bgp", 2).
++SetAdminDist("Glasgow", "ospf", 3).
++SetInterface("Glasgow", "Glasgow_I_Culbertson").
++SetInterface("Glasgow", "Glasgow_I_Havre").
+
++SetNode("MilesTTCity").
++SetAdminDist("MilesTTCity", "static", 1).
++SetAdminDist("MilesTTCity", "bgp", 2).
++SetAdminDist("MilesTTCity", "ospf", 3).
++SetInterface("MilesTTCity", "MilesTTCity_I_Glendive").
++SetInterface("MilesTTCity", "MilesTTCity_I_Forsyth").
+
++SetNode("NTTCutbank").
++SetAdminDist("NTTCutbank", "static", 1).
++SetAdminDist("NTTCutbank", "bgp", 2).
++SetAdminDist("NTTCutbank", "ospf", 3).
++SetInterface("NTTCutbank", "NTTCutbank_I_Havre").
+
++SetNode("Billings").
++SetAdminDist("Billings", "static", 1).
++SetAdminDist("Billings", "bgp", 2).
++SetAdminDist("Billings", "ospf", 3).
++SetInterface("Billings", "Billings_I_BigTTTimber").
++SetInterface("Billings", "Billings_I_Forsyth").
+
++SetNode("Sheridan").
++SetAdminDist("Sheridan", "static", 1).
++SetAdminDist("Sheridan", "bgp", 2).
++SetAdminDist("Sheridan", "ospf", 3).
++SetInterface("Sheridan", "Sheridan_I_Forsyth").
+
++SetNode("Missoula").
++SetAdminDist("Missoula", "static", 1).
++SetAdminDist("Missoula", "bgp", 2).
++SetAdminDist("Missoula", "ospf", 3).
++SetInterface("Missoula", "Missoula_I_Lincoln").
++SetInterface("Missoula", "Missoula_I_Noxon").
+
++SetNode("Forsyth").
++SetAdminDist("Forsyth", "static", 1).
++SetAdminDist("Forsyth", "bgp", 2).
++SetAdminDist("Forsyth", "ospf", 3).
++SetInterface("Forsyth", "Forsyth_I_Billings").
++SetInterface("Forsyth", "Forsyth_I_Sheridan").
++SetInterface("Forsyth", "Forsyth_I_MilesTTCity").
+
++SetNode("GreatTTFalls").
++SetAdminDist("GreatTTFalls", "static", 1).
++SetAdminDist("GreatTTFalls", "bgp", 2).
++SetAdminDist("GreatTTFalls", "ospf", 3).
++SetInterface("GreatTTFalls", "GreatTTFalls_I_FortTTBenton").
++SetInterface("GreatTTFalls", "GreatTTFalls_I_Fairfield").
+
++SetNode("Bozeman").
++SetAdminDist("Bozeman", "static", 1).
++SetAdminDist("Bozeman", "bgp", 2).
++SetAdminDist("Bozeman", "ospf", 3).
++SetInterface("Bozeman", "Bozeman_I_Helena").
+
++SetNode("Dillion").
++SetAdminDist("Dillion", "static", 1).
++SetAdminDist("Dillion", "bgp", 2).
++SetAdminDist("Dillion", "ospf", 3).
++SetInterface("Dillion", "Dillion_I_Helena").
+
++SetNode("DCNTTNetwork").
++SetAdminDist("DCNTTNetwork", "static", 1).
++SetAdminDist("DCNTTNetwork", "bgp", 2).
++SetAdminDist("DCNTTNetwork", "ospf", 3).
++SetInterface("DCNTTNetwork", "DCNTTNetwork_I_Bainville").
+
++SetNode("FortTTBenton").
++SetAdminDist("FortTTBenton", "static", 1).
++SetAdminDist("FortTTBenton", "bgp", 2).
++SetAdminDist("FortTTBenton", "ospf", 3).
++SetInterface("FortTTBenton", "FortTTBenton_I_Havre").
++SetInterface("FortTTBenton", "FortTTBenton_I_Moore").
++SetInterface("FortTTBenton", "FortTTBenton_I_GreatTTFalls").
+
++SetNode("Glendive").
++SetAdminDist("Glendive", "static", 1).
++SetAdminDist("Glendive", "bgp", 2).
++SetAdminDist("Glendive", "ospf", 3).
++SetInterface("Glendive", "Glendive_I_MilesTTCity").
+
++SetNode("Moore").
++SetAdminDist("Moore", "static", 1).
++SetAdminDist("Moore", "bgp", 2).
++SetAdminDist("Moore", "ospf", 3).
++SetInterface("Moore", "Moore_I_BigTTTimber").
++SetInterface("Moore", "Moore_I_FortTTBenton").
+
++SetNode("Culbertson").
++SetAdminDist("Culbertson", "static", 1).
++SetAdminDist("Culbertson", "bgp", 2).
++SetAdminDist("Culbertson", "ospf", 3).
++SetInterface("Culbertson", "Culbertson_I_Glasgow").
++SetInterface("Culbertson", "Culbertson_I_Bainville").
+
++SetNode("Bainville").
++SetAdminDist("Bainville", "static", 1).
++SetAdminDist("Bainville", "bgp", 2).
++SetAdminDist("Bainville", "ospf", 3).
++SetInterface("Bainville", "Bainville_I_Culbertson").
++SetInterface("Bainville", "Bainville_I_DCNTTNetwork").
+
++SetNode("Helena").
++SetAdminDist("Helena", "static", 1).
++SetAdminDist("Helena", "bgp", 2).
++SetAdminDist("Helena", "ospf", 3).
++SetInterface("Helena", "Helena_I_Lincoln").
++SetInterface("Helena", "Helena_I_Bozeman").
++SetInterface("Helena", "Helena_I_Dillion").
+
++SetNode("Noxon").
++SetAdminDist("Noxon", "static", 1).
++SetAdminDist("Noxon", "bgp", 2).
++SetAdminDist("Noxon", "ospf", 3).
++SetInterface("Noxon", "Noxon_I_Kalispell").
++SetInterface("Noxon", "Noxon_I_Seattle").
++SetInterface("Noxon", "Noxon_I_Missoula").
+
++SetNode("BigTTTimber").
++SetAdminDist("BigTTTimber", "static", 1).
++SetAdminDist("BigTTTimber", "bgp", 2).
++SetAdminDist("BigTTTimber", "ospf", 3).
++SetInterface("BigTTTimber", "BigTTTimber_I_Billings").
++SetInterface("BigTTTimber", "BigTTTimber_I_Moore").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_Noxon").
+
++SetLink("Fairfield_I_Lincoln", "Lincoln_I_Fairfield").
++SetLink("Fairfield_I_GreatTTFalls", "GreatTTFalls_I_Fairfield").
++SetLink("Kalispell_I_Noxon", "Noxon_I_Kalispell").
++SetLink("Lincoln_I_Helena", "Helena_I_Lincoln").
++SetLink("Lincoln_I_Missoula", "Missoula_I_Lincoln").
++SetLink("Havre_I_FortTTBenton", "FortTTBenton_I_Havre").
++SetLink("Havre_I_Glasgow", "Glasgow_I_Havre").
++SetLink("Havre_I_NTTCutbank", "NTTCutbank_I_Havre").
++SetLink("Glasgow_I_Culbertson", "Culbertson_I_Glasgow").
++SetLink("MilesTTCity_I_Glendive", "Glendive_I_MilesTTCity").
++SetLink("MilesTTCity_I_Forsyth", "Forsyth_I_MilesTTCity").
++SetLink("Billings_I_BigTTTimber", "BigTTTimber_I_Billings").
++SetLink("Billings_I_Forsyth", "Forsyth_I_Billings").
++SetLink("Sheridan_I_Forsyth", "Forsyth_I_Sheridan").
++SetLink("Missoula_I_Noxon", "Noxon_I_Missoula").
++SetLink("GreatTTFalls_I_FortTTBenton", "FortTTBenton_I_GreatTTFalls").
++SetLink("Bozeman_I_Helena", "Helena_I_Bozeman").
++SetLink("Dillion_I_Helena", "Helena_I_Dillion").
++SetLink("DCNTTNetwork_I_Bainville", "Bainville_I_DCNTTNetwork").
++SetLink("FortTTBenton_I_Moore", "Moore_I_FortTTBenton").
++SetLink("Moore_I_BigTTTimber", "BigTTTimber_I_Moore").
++SetLink("Culbertson_I_Bainville", "Bainville_I_Culbertson").
++SetLink("Noxon_I_Seattle", "Seattle_I_Noxon").
+
+
++SetNetwork("Lincoln", "N_Lincoln").
++SetNetwork("MilesTTCity", "N_MilesTTCity").
++SetNetwork("Havre", "N_Havre").
++SetNetwork("Sheridan", "N_Sheridan").
++SetNetwork("Glasgow", "N_Glasgow").
++SetNetwork("Bainville", "N_Bainville").
++SetNetwork("Kalispell", "N_Kalispell").
++SetNetwork("GreatTTFalls", "N_GreatTTFalls").
++SetNetwork("Dillion", "N_Dillion").
++SetNetwork("BigTTTimber", "N_BigTTTimber").
++SetNetwork("Missoula", "N_Missoula").
++SetNetwork("Noxon", "N_Noxon").
++SetNetwork("Seattle", "N_Seattle").
++SetNetwork("Fairfield", "N_Fairfield").
++SetNetwork("FortTTBenton", "N_FortTTBenton").

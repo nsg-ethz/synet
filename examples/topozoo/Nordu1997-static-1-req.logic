@@ -1,0 +1,15 @@
+
++Fwd("N_Oslo", "Kaunas", "Stockholm", "static").
++Fwd("N_Oslo", "Stockholm", "Oslo", "static").
++Fwd("N_Oslo", "USA", "Stockholm", "static").
++Fwd("N_Oslo", "Helsinki", "Stockholm", "static").
++Fwd("N_Oslo", "Riga", "Stockholm", "static").
++Fwd("N_Oslo", "TEN_34", "Stockholm", "static").
++Fwd("N_Oslo", "Lviv", "Stockholm", "static").
++Fwd("N_Oslo", "StTTPetersburg", "Helsinki", "static").
++Fwd("N_Oslo", "Petrozavodsk", "Helsinki", "static").
++Fwd("N_Oslo", "Reykjavik", "Stockholm", "static").
++Fwd("N_Oslo", "Tallinn", "Helsinki", "static").
++Fwd("N_Oslo", "Copenhagen", "Stockholm", "static").
++Fwd("N_Oslo", "Warsaw", "Stockholm", "static").
+

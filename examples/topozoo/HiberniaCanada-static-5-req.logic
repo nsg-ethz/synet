@@ -1,0 +1,66 @@
+
++Fwd("N_Edmundston", "Toronto", "Montreal", "static").
++Fwd("N_Edmundston", "Montreal", "Quebec", "static").
++Fwd("N_Edmundston", "Quebec", "Edmundston", "static").
++Fwd("N_Edmundston", "Albany", "NewTTYork", "static").
++Fwd("N_Edmundston", "NewTTYork", "Boston", "static").
++Fwd("N_Edmundston", "Boston", "NodeID4", "static").
++Fwd("N_Edmundston", "NodeID4", "Halifax", "static").
++Fwd("N_Edmundston", "Halifax", "Moncton", "static").
++Fwd("N_Edmundston", "Moncton", "Edmundston", "static").
++Fwd("N_Edmundston", "NodeID1", "NodeID4", "static").
++Fwd("N_Edmundston", "NodeID2", "Halifax", "static").
++Fwd("N_Edmundston", "Buffalo", "Toronto", "static").
+
++Fwd("N_Buffalo", "Toronto", "Buffalo", "static").
++Fwd("N_Buffalo", "Albany", "Buffalo", "static").
++Fwd("N_Buffalo", "Edmundston", "Quebec", "static").
++Fwd("N_Buffalo", "Quebec", "Montreal", "static").
++Fwd("N_Buffalo", "Montreal", "Albany", "static").
++Fwd("N_Buffalo", "NewTTYork", "Albany", "static").
++Fwd("N_Buffalo", "Boston", "NewTTYork", "static").
++Fwd("N_Buffalo", "NodeID1", "NodeID4", "static").
++Fwd("N_Buffalo", "NodeID4", "Halifax", "static").
++Fwd("N_Buffalo", "Halifax", "Moncton", "static").
++Fwd("N_Buffalo", "Moncton", "Edmundston", "static").
++Fwd("N_Buffalo", "NodeID2", "Halifax", "static").
+
++Fwd("N_Montreal", "Toronto", "Montreal", "static").
++Fwd("N_Montreal", "Albany", "Buffalo", "static").
++Fwd("N_Montreal", "Buffalo", "Toronto", "static").
++Fwd("N_Montreal", "Edmundston", "Quebec", "static").
++Fwd("N_Montreal", "Quebec", "Montreal", "static").
++Fwd("N_Montreal", "NewTTYork", "Albany", "static").
++Fwd("N_Montreal", "Boston", "NodeID4", "static").
++Fwd("N_Montreal", "NodeID4", "Halifax", "static").
++Fwd("N_Montreal", "Halifax", "Moncton", "static").
++Fwd("N_Montreal", "Moncton", "Edmundston", "static").
++Fwd("N_Montreal", "NodeID1", "NodeID4", "static").
++Fwd("N_Montreal", "NodeID2", "Halifax", "static").
+
++Fwd("N_Quebec", "Toronto", "Montreal", "static").
++Fwd("N_Quebec", "Montreal", "Quebec", "static").
++Fwd("N_Quebec", "Albany", "Buffalo", "static").
++Fwd("N_Quebec", "Buffalo", "Toronto", "static").
++Fwd("N_Quebec", "Edmundston", "Quebec", "static").
++Fwd("N_Quebec", "NewTTYork", "Boston", "static").
++Fwd("N_Quebec", "Boston", "NodeID4", "static").
++Fwd("N_Quebec", "NodeID4", "Halifax", "static").
++Fwd("N_Quebec", "Halifax", "Moncton", "static").
++Fwd("N_Quebec", "Moncton", "Edmundston", "static").
++Fwd("N_Quebec", "NodeID1", "NodeID4", "static").
++Fwd("N_Quebec", "NodeID2", "Halifax", "static").
+
++Fwd("N_Toronto", "Albany", "Buffalo", "static").
++Fwd("N_Toronto", "Buffalo", "Toronto", "static").
++Fwd("N_Toronto", "Edmundston", "Quebec", "static").
++Fwd("N_Toronto", "Quebec", "Montreal", "static").
++Fwd("N_Toronto", "Montreal", "Toronto", "static").
++Fwd("N_Toronto", "NewTTYork", "Albany", "static").
++Fwd("N_Toronto", "Boston", "NewTTYork", "static").
++Fwd("N_Toronto", "NodeID1", "NodeID4", "static").
++Fwd("N_Toronto", "NodeID4", "Halifax", "static").
++Fwd("N_Toronto", "Halifax", "Moncton", "static").
++Fwd("N_Toronto", "Moncton", "Edmundston", "static").
++Fwd("N_Toronto", "NodeID2", "Halifax", "static").
+

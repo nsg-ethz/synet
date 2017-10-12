@@ -1,0 +1,237 @@
++SetNode("Turku").
++SetAdminDist("Turku", "static", 1).
++SetAdminDist("Turku", "bgp", 2).
++SetAdminDist("Turku", "ospf", 3).
++SetInterface("Turku", "Turku_I_Rauma").
++SetInterface("Turku", "Turku_I_Salo").
+
++SetNode("Rovaniemi").
++SetAdminDist("Rovaniemi", "static", 1).
++SetAdminDist("Rovaniemi", "bgp", 2).
++SetAdminDist("Rovaniemi", "ospf", 3).
++SetInterface("Rovaniemi", "Rovaniemi_I_Ristijavi").
++SetInterface("Rovaniemi", "Rovaniemi_I_Sodankyla").
++SetInterface("Rovaniemi", "Rovaniemi_I_Haukipudas").
+
++SetNode("Espoo").
++SetAdminDist("Espoo", "static", 1).
++SetAdminDist("Espoo", "bgp", 2).
++SetAdminDist("Espoo", "ospf", 3).
++SetInterface("Espoo", "Espoo_I_NORDU").
++SetInterface("Espoo", "Espoo_I_Salo").
++SetInterface("Espoo", "Espoo_I_Hameenlinna").
++SetInterface("Espoo", "Espoo_I_NORDUID14").
++SetInterface("Espoo", "Espoo_I_Helsinki").
+
++SetNode("Tampere").
++SetAdminDist("Tampere", "static", 1).
++SetAdminDist("Tampere", "bgp", 2).
++SetAdminDist("Tampere", "ospf", 3).
++SetInterface("Tampere", "Tampere_I_Jyvaskyla").
++SetInterface("Tampere", "Tampere_I_Hameenlinna").
+
++SetNode("Hameenlinna").
++SetAdminDist("Hameenlinna", "static", 1).
++SetAdminDist("Hameenlinna", "bgp", 2).
++SetAdminDist("Hameenlinna", "ospf", 3).
++SetInterface("Hameenlinna", "Hameenlinna_I_Espoo").
++SetInterface("Hameenlinna", "Hameenlinna_I_Tampere").
+
++SetNode("Kouvola").
++SetAdminDist("Kouvola", "static", 1).
++SetAdminDist("Kouvola", "bgp", 2).
++SetAdminDist("Kouvola", "ospf", 3).
++SetInterface("Kouvola", "Kouvola_I_Lappeenranta").
++SetInterface("Kouvola", "Kouvola_I_Mikkeli").
++SetInterface("Kouvola", "Kouvola_I_Kotka").
++SetInterface("Kouvola", "Kouvola_I_Lahti").
+
++SetNode("Seinajoki").
++SetAdminDist("Seinajoki", "static", 1).
++SetAdminDist("Seinajoki", "bgp", 2).
++SetAdminDist("Seinajoki", "ospf", 3).
++SetInterface("Seinajoki", "Seinajoki_I_Pori").
++SetInterface("Seinajoki", "Seinajoki_I_Vaasa").
+
++SetNode("Ristijavi").
++SetAdminDist("Ristijavi", "static", 1).
++SetAdminDist("Ristijavi", "bgp", 2).
++SetAdminDist("Ristijavi", "ospf", 3).
++SetInterface("Ristijavi", "Ristijavi_I_Rovaniemi").
++SetInterface("Ristijavi", "Ristijavi_I_Koupio").
++SetInterface("Ristijavi", "Ristijavi_I_Oulu").
+
++SetNode("Kokkola").
++SetAdminDist("Kokkola", "static", 1).
++SetAdminDist("Kokkola", "bgp", 2).
++SetAdminDist("Kokkola", "ospf", 3).
++SetInterface("Kokkola", "Kokkola_I_Vaasa").
++SetInterface("Kokkola", "Kokkola_I_Oulu").
+
++SetNode("Joensuu").
++SetAdminDist("Joensuu", "static", 1).
++SetAdminDist("Joensuu", "bgp", 2).
++SetAdminDist("Joensuu", "ospf", 3).
++SetInterface("Joensuu", "Joensuu_I_Lappeenranta").
++SetInterface("Joensuu", "Joensuu_I_Koupio").
+
++SetNode("Koupio").
++SetAdminDist("Koupio", "static", 1).
++SetAdminDist("Koupio", "bgp", 2).
++SetAdminDist("Koupio", "ospf", 3).
++SetInterface("Koupio", "Koupio_I_Ristijavi").
++SetInterface("Koupio", "Koupio_I_Joensuu").
++SetInterface("Koupio", "Koupio_I_Mikkeli").
+
++SetNode("Salo").
++SetAdminDist("Salo", "static", 1).
++SetAdminDist("Salo", "bgp", 2).
++SetAdminDist("Salo", "ospf", 3).
++SetInterface("Salo", "Salo_I_Turku").
++SetInterface("Salo", "Salo_I_Espoo").
+
++SetNode("Kotka").
++SetAdminDist("Kotka", "static", 1).
++SetAdminDist("Kotka", "bgp", 2).
++SetAdminDist("Kotka", "ospf", 3).
++SetInterface("Kotka", "Kotka_I_Kouvola").
+
++SetNode("Helsinki").
++SetAdminDist("Helsinki", "static", 1).
++SetAdminDist("Helsinki", "bgp", 2).
++SetAdminDist("Helsinki", "ospf", 3).
++SetInterface("Helsinki", "Helsinki_I_NORDU").
++SetInterface("Helsinki", "Helsinki_I_Espoo").
++SetInterface("Helsinki", "Helsinki_I_Lahti").
+
++SetNode("NORDU").
++SetAdminDist("NORDU", "static", 1).
++SetAdminDist("NORDU", "bgp", 2).
++SetAdminDist("NORDU", "ospf", 3).
++SetInterface("NORDU", "NORDU_I_Espoo").
++SetInterface("NORDU", "NORDU_I_Helsinki").
+
++SetNode("Haukipudas").
++SetAdminDist("Haukipudas", "static", 1).
++SetAdminDist("Haukipudas", "bgp", 2).
++SetAdminDist("Haukipudas", "ospf", 3).
++SetInterface("Haukipudas", "Haukipudas_I_Rovaniemi").
++SetInterface("Haukipudas", "Haukipudas_I_Oulu").
+
++SetNode("Jyvaskyla").
++SetAdminDist("Jyvaskyla", "static", 1).
++SetAdminDist("Jyvaskyla", "bgp", 2).
++SetAdminDist("Jyvaskyla", "ospf", 3).
++SetInterface("Jyvaskyla", "Jyvaskyla_I_Tampere").
++SetInterface("Jyvaskyla", "Jyvaskyla_I_Mikkeli").
+
++SetNode("NORDUID14").
++SetAdminDist("NORDUID14", "static", 1).
++SetAdminDist("NORDUID14", "bgp", 2).
++SetAdminDist("NORDUID14", "ospf", 3).
++SetInterface("NORDUID14", "NORDUID14_I_Espoo").
+
++SetNode("Oulu").
++SetAdminDist("Oulu", "static", 1).
++SetAdminDist("Oulu", "bgp", 2).
++SetAdminDist("Oulu", "ospf", 3).
++SetInterface("Oulu", "Oulu_I_Ristijavi").
++SetInterface("Oulu", "Oulu_I_Kokkola").
++SetInterface("Oulu", "Oulu_I_Haukipudas").
+
++SetNode("Mikkeli").
++SetAdminDist("Mikkeli", "static", 1).
++SetAdminDist("Mikkeli", "bgp", 2).
++SetAdminDist("Mikkeli", "ospf", 3).
++SetInterface("Mikkeli", "Mikkeli_I_Jyvaskyla").
++SetInterface("Mikkeli", "Mikkeli_I_Koupio").
++SetInterface("Mikkeli", "Mikkeli_I_Kouvola").
+
++SetNode("Pori").
++SetAdminDist("Pori", "static", 1).
++SetAdminDist("Pori", "bgp", 2).
++SetAdminDist("Pori", "ospf", 3).
++SetInterface("Pori", "Pori_I_Rauma").
++SetInterface("Pori", "Pori_I_Seinajoki").
+
++SetNode("Lappeenranta").
++SetAdminDist("Lappeenranta", "static", 1).
++SetAdminDist("Lappeenranta", "bgp", 2).
++SetAdminDist("Lappeenranta", "ospf", 3).
++SetInterface("Lappeenranta", "Lappeenranta_I_Joensuu").
++SetInterface("Lappeenranta", "Lappeenranta_I_Kouvola").
+
++SetNode("Vaasa").
++SetAdminDist("Vaasa", "static", 1).
++SetAdminDist("Vaasa", "bgp", 2).
++SetAdminDist("Vaasa", "ospf", 3).
++SetInterface("Vaasa", "Vaasa_I_Kokkola").
++SetInterface("Vaasa", "Vaasa_I_Seinajoki").
+
++SetNode("Lahti").
++SetAdminDist("Lahti", "static", 1).
++SetAdminDist("Lahti", "bgp", 2).
++SetAdminDist("Lahti", "ospf", 3).
++SetInterface("Lahti", "Lahti_I_Kouvola").
++SetInterface("Lahti", "Lahti_I_Helsinki").
+
++SetNode("Rauma").
++SetAdminDist("Rauma", "static", 1).
++SetAdminDist("Rauma", "bgp", 2).
++SetAdminDist("Rauma", "ospf", 3).
++SetInterface("Rauma", "Rauma_I_Pori").
++SetInterface("Rauma", "Rauma_I_Turku").
+
++SetNode("Sodankyla").
++SetAdminDist("Sodankyla", "static", 1).
++SetAdminDist("Sodankyla", "bgp", 2).
++SetAdminDist("Sodankyla", "ospf", 3).
++SetInterface("Sodankyla", "Sodankyla_I_Rovaniemi").
+
++SetLink("Turku_I_Rauma", "Rauma_I_Turku").
++SetLink("Turku_I_Salo", "Salo_I_Turku").
++SetLink("Rovaniemi_I_Ristijavi", "Ristijavi_I_Rovaniemi").
++SetLink("Rovaniemi_I_Sodankyla", "Sodankyla_I_Rovaniemi").
++SetLink("Rovaniemi_I_Haukipudas", "Haukipudas_I_Rovaniemi").
++SetLink("Espoo_I_NORDU", "NORDU_I_Espoo").
++SetLink("Espoo_I_Salo", "Salo_I_Espoo").
++SetLink("Espoo_I_Hameenlinna", "Hameenlinna_I_Espoo").
++SetLink("Espoo_I_NORDUID14", "NORDUID14_I_Espoo").
++SetLink("Espoo_I_Helsinki", "Helsinki_I_Espoo").
++SetLink("Tampere_I_Jyvaskyla", "Jyvaskyla_I_Tampere").
++SetLink("Tampere_I_Hameenlinna", "Hameenlinna_I_Tampere").
++SetLink("Kouvola_I_Lappeenranta", "Lappeenranta_I_Kouvola").
++SetLink("Kouvola_I_Mikkeli", "Mikkeli_I_Kouvola").
++SetLink("Kouvola_I_Kotka", "Kotka_I_Kouvola").
++SetLink("Kouvola_I_Lahti", "Lahti_I_Kouvola").
++SetLink("Seinajoki_I_Pori", "Pori_I_Seinajoki").
++SetLink("Seinajoki_I_Vaasa", "Vaasa_I_Seinajoki").
++SetLink("Ristijavi_I_Koupio", "Koupio_I_Ristijavi").
++SetLink("Ristijavi_I_Oulu", "Oulu_I_Ristijavi").
++SetLink("Kokkola_I_Vaasa", "Vaasa_I_Kokkola").
++SetLink("Kokkola_I_Oulu", "Oulu_I_Kokkola").
++SetLink("Joensuu_I_Lappeenranta", "Lappeenranta_I_Joensuu").
++SetLink("Joensuu_I_Koupio", "Koupio_I_Joensuu").
++SetLink("Koupio_I_Mikkeli", "Mikkeli_I_Koupio").
++SetLink("Helsinki_I_NORDU", "NORDU_I_Helsinki").
++SetLink("Helsinki_I_Lahti", "Lahti_I_Helsinki").
++SetLink("Haukipudas_I_Oulu", "Oulu_I_Haukipudas").
++SetLink("Jyvaskyla_I_Mikkeli", "Mikkeli_I_Jyvaskyla").
++SetLink("Pori_I_Rauma", "Rauma_I_Pori").
+
+
++SetNetwork("Ristijavi", "N_Ristijavi").
++SetNetwork("Lahti", "N_Lahti").
++SetNetwork("Rovaniemi", "N_Rovaniemi").
++SetNetwork("Seinajoki", "N_Seinajoki").
++SetNetwork("Mikkeli", "N_Mikkeli").
++SetNetwork("Haukipudas", "N_Haukipudas").
++SetNetwork("Kouvola", "N_Kouvola").
++SetNetwork("Jyvaskyla", "N_Jyvaskyla").
++SetNetwork("Pori", "N_Pori").
++SetNetwork("Turku", "N_Turku").
++SetNetwork("Salo", "N_Salo").
++SetNetwork("Kotka", "N_Kotka").
++SetNetwork("Hameenlinna", "N_Hameenlinna").
++SetNetwork("Rauma", "N_Rauma").
++SetNetwork("Oulu", "N_Oulu").

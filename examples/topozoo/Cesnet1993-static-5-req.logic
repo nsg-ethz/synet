@@ -1,0 +1,51 @@
+
++Fwd("N_Olomouc", "Ostrava", "Brno", "static").
++Fwd("N_Olomouc", "Brno", "Olomouc", "static").
++Fwd("N_Olomouc", "Ebone", "Praha", "static").
++Fwd("N_Olomouc", "Praha", "Brno", "static").
++Fwd("N_Olomouc", "Pardubice", "Praha", "static").
++Fwd("N_Olomouc", "Plzen", "Praha", "static").
++Fwd("N_Olomouc", "Liberec", "Praha", "static").
++Fwd("N_Olomouc", "HradecTTKralove", "Praha", "static").
++Fwd("N_Olomouc", "CeskeTTBudejovice", "Praha", "static").
+
++Fwd("N_Liberec", "Ostrava", "Brno", "static").
++Fwd("N_Liberec", "Brno", "Praha", "static").
++Fwd("N_Liberec", "Praha", "Liberec", "static").
++Fwd("N_Liberec", "Ebone", "Praha", "static").
++Fwd("N_Liberec", "Pardubice", "Praha", "static").
++Fwd("N_Liberec", "Plzen", "Praha", "static").
++Fwd("N_Liberec", "HradecTTKralove", "Praha", "static").
++Fwd("N_Liberec", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Liberec", "Olomouc", "Brno", "static").
+
++Fwd("N_Ebone", "Ostrava", "Brno", "static").
++Fwd("N_Ebone", "Brno", "Praha", "static").
++Fwd("N_Ebone", "Praha", "Ebone", "static").
++Fwd("N_Ebone", "Pardubice", "Praha", "static").
++Fwd("N_Ebone", "Plzen", "Praha", "static").
++Fwd("N_Ebone", "Liberec", "Praha", "static").
++Fwd("N_Ebone", "HradecTTKralove", "Praha", "static").
++Fwd("N_Ebone", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Ebone", "Olomouc", "Brno", "static").
+
++Fwd("N_Ostrava", "Ebone", "Praha", "static").
++Fwd("N_Ostrava", "Praha", "Brno", "static").
++Fwd("N_Ostrava", "Brno", "Ostrava", "static").
++Fwd("N_Ostrava", "Pardubice", "Praha", "static").
++Fwd("N_Ostrava", "Plzen", "Praha", "static").
++Fwd("N_Ostrava", "Liberec", "Praha", "static").
++Fwd("N_Ostrava", "HradecTTKralove", "Praha", "static").
++Fwd("N_Ostrava", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Ostrava", "Olomouc", "Brno", "static").
+
++Fwd("N_Pardubice", "Ostrava", "Brno", "static").
++Fwd("N_Pardubice", "Brno", "Praha", "static").
++Fwd("N_Pardubice", "Praha", "Pardubice", "static").
++Fwd("N_Pardubice", "Ebone", "Praha", "static").
++Fwd("N_Pardubice", "Plzen", "Praha", "static").
++Fwd("N_Pardubice", "Liberec", "Praha", "static").
++Fwd("N_Pardubice", "HradecTTKralove", "Praha", "static").
++Fwd("N_Pardubice", "CeskeTTBudejovice", "Praha", "static").
++Fwd("N_Pardubice", "Olomouc", "Brno", "static").
+

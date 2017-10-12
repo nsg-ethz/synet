@@ -1,0 +1,61 @@
+
++Fwd("N_WIDETTAS2500", "DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_WIDETTAS2500", "NetIronTTN140GTTAS23814", "WIDETTAS2500", "static").
++Fwd("N_WIDETTAS2500", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "static").
++Fwd("N_WIDETTAS2500", "ONS_15454", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_WIDETTAS2500", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "static").
++Fwd("N_WIDETTAS2500", "BigIronTT15000TTAS23814", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_WIDETTAS2500", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "static").
++Fwd("N_WIDETTAS2500", "JGN2", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_WIDETTAS2500", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_WIDETTAS2500", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_WIDETTAS2500", "CatTT6500TTAS23814", "NetIronTTN140GTTAS23814", "static").
+
++Fwd("N_JGN2", "DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_JGN2", "NetIronTTN140GTTAS23814", "JGN2", "static").
++Fwd("N_JGN2", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "static").
++Fwd("N_JGN2", "ONS_15454", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_JGN2", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "static").
++Fwd("N_JGN2", "BigIronTT15000TTAS23814", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_JGN2", "WIDETTAS2500", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_JGN2", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "static").
++Fwd("N_JGN2", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_JGN2", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_JGN2", "CatTT6500TTAS23814", "NetIronTTN140GTTAS23814", "static").
+
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "NetIronTTN140GTTAS23814", "ONS_15454", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "BigIronTT15000TTAS23814", "ONS_15454", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "WIDETTAS2500", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "JGN2", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_PacificTTNWTTGigapopTT_Seattle_TTWA_", "CatTT6500TTAS23814", "ONS_15454", "static").
+
++Fwd("N_ONS_15454", "DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_ONS_15454", "NetIronTTN140GTTAS23814", "ONS_15454", "static").
++Fwd("N_ONS_15454", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "static").
++Fwd("N_ONS_15454", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "static").
++Fwd("N_ONS_15454", "BigIronTT15000TTAS23814", "ONS_15454", "static").
++Fwd("N_ONS_15454", "WIDETTAS2500", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_ONS_15454", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "static").
++Fwd("N_ONS_15454", "JGN2", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_ONS_15454", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_ONS_15454", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_ONS_15454", "CatTT6500TTAS23814", "ONS_15454", "static").
+
++Fwd("N_NetIronTTN140GTTAS23814", "DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "ONS_15454", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "BigIronTT15000TTAS23814", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "WIDETTAS2500", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "JGN2", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "static").
++Fwd("N_NetIronTTN140GTTAS23814", "CatTT6500TTAS23814", "NetIronTTN140GTTAS23814", "static").
+

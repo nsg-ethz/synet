@@ -1,0 +1,26 @@
+
++Fwd("N_KKN", "NPM", "NRT", "ospf").
++Fwd("NBGP_KKN", "NPM", "NRT", "bgp").
++Fwd("N_KKN", "NRT", "BKK", "ospf").
++Fwd("NBGP_KKN", "NRT", "BKK", "bgp").
++Fwd("N_KKN", "BKK", "CMI", "ospf").
++Fwd("NBGP_KKN", "BKK", "CMI", "bgp").
++Fwd("N_KKN", "CMI", "PNK", "ospf").
++Fwd("NBGP_KKN", "CMI", "PNK", "bgp").
++Fwd("N_KKN", "PNK", "KKN", "ospf").
++Fwd("NBGP_KKN", "PNK", "KKN", "bgp").
++Fwd("N_KKN", "SKN", "KKN", "ospf").
++Fwd("NBGP_KKN", "SKN", "KKN", "bgp").
++Fwd("N_KKN", "NRM", "KKN", "ospf").
++Fwd("NBGP_KKN", "NRM", "KKN", "bgp").
++Fwd("N_KKN", "CBI", "BKK", "ospf").
++Fwd("NBGP_KKN", "CBI", "BKK", "bgp").
++Fwd("N_KKN", "SKA", "NRT", "ospf").
++Fwd("NBGP_KKN", "SKA", "NRT", "bgp").
++Fwd("N_KKN", "CRI", "PNK", "ospf").
++Fwd("NBGP_KKN", "CRI", "PNK", "bgp").
++Fwd("N_KKN", "UBI", "NRM", "ospf").
++Fwd("NBGP_KKN", "UBI", "NRM", "bgp").
++Fwd("N_KKN", "_", "KKN", "ospf").
++Fwd("NBGP_KKN", "_", "KKN", "bgp").
+

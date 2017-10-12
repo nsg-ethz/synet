@@ -1,0 +1,314 @@
++SetNode("Gulfport").
++SetAdminDist("Gulfport", "static", 1).
++SetAdminDist("Gulfport", "bgp", 2).
++SetAdminDist("Gulfport", "ospf", 3).
++SetInterface("Gulfport", "Gulfport_I_Slidell").
++SetInterface("Gulfport", "Gulfport_I_NewTTOrleans").
+
++SetNode("Jackson").
++SetAdminDist("Jackson", "static", 1).
++SetAdminDist("Jackson", "bgp", 2).
++SetAdminDist("Jackson", "ospf", 3).
++SetInterface("Jackson", "Jackson_I_Hammond").
++SetInterface("Jackson", "Jackson_I_Shreveport").
+
++SetNode("Waco").
++SetAdminDist("Waco", "static", 1).
++SetAdminDist("Waco", "bgp", 2).
++SetAdminDist("Waco", "ospf", 3).
++SetInterface("Waco", "Waco_I_CollegeTTStation").
++SetInterface("Waco", "Waco_I_Dallas").
+
++SetNode("Nome").
++SetAdminDist("Nome", "static", 1).
++SetAdminDist("Nome", "bgp", 2).
++SetAdminDist("Nome", "ospf", 3).
++SetInterface("Nome", "Nome_I_Beaumont").
++SetInterface("Nome", "Nome_I_Liberty").
+
++SetNode("Ruston").
++SetAdminDist("Ruston", "static", 1).
++SetAdminDist("Ruston", "bgp", 2).
++SetAdminDist("Ruston", "ospf", 3).
++SetInterface("Ruston", "Ruston_I_Monroe").
++SetInterface("Ruston", "Ruston_I_Minden").
+
++SetNode("Opelousas").
++SetAdminDist("Opelousas", "static", 1).
++SetAdminDist("Opelousas", "bgp", 2).
++SetAdminDist("Opelousas", "ospf", 3).
++SetInterface("Opelousas", "Opelousas_I_StTTLandry").
++SetInterface("Opelousas", "Opelousas_I_Lafayette").
+
++SetNode("Minden").
++SetAdminDist("Minden", "static", 1).
++SetAdminDist("Minden", "bgp", 2).
++SetAdminDist("Minden", "ospf", 3).
++SetInterface("Minden", "Minden_I_Ruston").
++SetInterface("Minden", "Minden_I_BossierTTCity").
+
++SetNode("Liberty").
++SetAdminDist("Liberty", "static", 1).
++SetAdminDist("Liberty", "bgp", 2).
++SetAdminDist("Liberty", "ospf", 3).
++SetInterface("Liberty", "Liberty_I_Houston").
++SetInterface("Liberty", "Liberty_I_Nome").
+
++SetNode("Dallas").
++SetAdminDist("Dallas", "static", 1).
++SetAdminDist("Dallas", "bgp", 2).
++SetAdminDist("Dallas", "ospf", 3).
++SetInterface("Dallas", "Dallas_I_Tyler").
++SetInterface("Dallas", "Dallas_I_Waco").
+
++SetNode("MorganTTCity").
++SetAdminDist("MorganTTCity", "static", 1).
++SetAdminDist("MorganTTCity", "bgp", 2).
++SetAdminDist("MorganTTCity", "ospf", 3).
++SetInterface("MorganTTCity", "MorganTTCity_I_Thi_bodaux").
++SetInterface("MorganTTCity", "MorganTTCity_I_Lafayette").
+
++SetNode("Covington").
++SetAdminDist("Covington", "static", 1).
++SetAdminDist("Covington", "bgp", 2).
++SetAdminDist("Covington", "ospf", 3).
++SetInterface("Covington", "Covington_I_Slidell").
++SetInterface("Covington", "Covington_I_Hammond").
+
++SetNode("Tyler").
++SetAdminDist("Tyler", "static", 1).
++SetAdminDist("Tyler", "bgp", 2).
++SetAdminDist("Tyler", "ospf", 3).
++SetInterface("Tyler", "Tyler_I_Longview").
++SetInterface("Tyler", "Tyler_I_Dallas").
+
++SetNode("BatonTTRouge").
++SetAdminDist("BatonTTRouge", "static", 1).
++SetAdminDist("BatonTTRouge", "bgp", 2).
++SetAdminDist("BatonTTRouge", "ospf", 3).
++SetInterface("BatonTTRouge", "BatonTTRouge_I_Hammond").
++SetInterface("BatonTTRouge", "BatonTTRouge_I_Lafayette").
+
++SetNode("Deridder").
++SetAdminDist("Deridder", "static", 1).
++SetAdminDist("Deridder", "bgp", 2).
++SetAdminDist("Deridder", "ospf", 3).
++SetInterface("Deridder", "Deridder_I_FortTTPolk").
++SetInterface("Deridder", "Deridder_I_LakeTTCharles").
+
++SetNode("Hammond").
++SetAdminDist("Hammond", "static", 1).
++SetAdminDist("Hammond", "bgp", 2).
++SetAdminDist("Hammond", "ospf", 3).
++SetInterface("Hammond", "Hammond_I_NewTTOrleans").
++SetInterface("Hammond", "Hammond_I_BatonTTRouge").
++SetInterface("Hammond", "Hammond_I_Covington").
++SetInterface("Hammond", "Hammond_I_Jackson").
+
++SetNode("BossierTTCity").
++SetAdminDist("BossierTTCity", "static", 1).
++SetAdminDist("BossierTTCity", "bgp", 2).
++SetAdminDist("BossierTTCity", "ospf", 3).
++SetInterface("BossierTTCity", "BossierTTCity_I_Shreveport").
++SetInterface("BossierTTCity", "BossierTTCity_I_Minden").
+
++SetNode("Coushatta").
++SetAdminDist("Coushatta", "static", 1).
++SetAdminDist("Coushatta", "bgp", 2).
++SetAdminDist("Coushatta", "ospf", 3).
++SetInterface("Coushatta", "Coushatta_I_Natchitoches").
++SetInterface("Coushatta", "Coushatta_I_Shreveport").
+
++SetNode("SanTTAntonio").
++SetAdminDist("SanTTAntonio", "static", 1).
++SetAdminDist("SanTTAntonio", "bgp", 2).
++SetAdminDist("SanTTAntonio", "ospf", 3).
++SetInterface("SanTTAntonio", "SanTTAntonio_I_Houston").
++SetInterface("SanTTAntonio", "SanTTAntonio_I_Austin").
+
++SetNode("Thi_bodaux").
++SetAdminDist("Thi_bodaux", "static", 1).
++SetAdminDist("Thi_bodaux", "bgp", 2).
++SetAdminDist("Thi_bodaux", "ospf", 3).
++SetInterface("Thi_bodaux", "Thi_bodaux_I_NewTTOrleans").
++SetInterface("Thi_bodaux", "Thi_bodaux_I_MorganTTCity").
+
++SetNode("CollegeTTStation").
++SetAdminDist("CollegeTTStation", "static", 1).
++SetAdminDist("CollegeTTStation", "bgp", 2).
++SetAdminDist("CollegeTTStation", "ospf", 3).
++SetInterface("CollegeTTStation", "CollegeTTStation_I_Austin").
++SetInterface("CollegeTTStation", "CollegeTTStation_I_Waco").
+
++SetNode("NewTTOrleans").
++SetAdminDist("NewTTOrleans", "static", 1).
++SetAdminDist("NewTTOrleans", "bgp", 2).
++SetAdminDist("NewTTOrleans", "ospf", 3).
++SetInterface("NewTTOrleans", "NewTTOrleans_I_Thi_bodaux").
++SetInterface("NewTTOrleans", "NewTTOrleans_I_Gulfport").
++SetInterface("NewTTOrleans", "NewTTOrleans_I_Hammond").
+
++SetNode("Natchitoches").
++SetAdminDist("Natchitoches", "static", 1).
++SetAdminDist("Natchitoches", "bgp", 2).
++SetAdminDist("Natchitoches", "ospf", 3).
++SetInterface("Natchitoches", "Natchitoches_I_Coushatta").
++SetInterface("Natchitoches", "Natchitoches_I_Derry").
+
++SetNode("Shreveport").
++SetAdminDist("Shreveport", "static", 1).
++SetAdminDist("Shreveport", "bgp", 2).
++SetAdminDist("Shreveport", "ospf", 3).
++SetInterface("Shreveport", "Shreveport_I_BossierTTCity").
++SetInterface("Shreveport", "Shreveport_I_Jackson").
++SetInterface("Shreveport", "Shreveport_I_Coushatta").
++SetInterface("Shreveport", "Shreveport_I_Monroe").
++SetInterface("Shreveport", "Shreveport_I_Longview").
+
++SetNode("LakeTTCharles").
++SetAdminDist("LakeTTCharles", "static", 1).
++SetAdminDist("LakeTTCharles", "bgp", 2).
++SetAdminDist("LakeTTCharles", "ospf", 3).
++SetInterface("LakeTTCharles", "LakeTTCharles_I_Lafayette").
++SetInterface("LakeTTCharles", "LakeTTCharles_I_Deridder").
++SetInterface("LakeTTCharles", "LakeTTCharles_I_Beaumont").
+
++SetNode("Slidell").
++SetAdminDist("Slidell", "static", 1).
++SetAdminDist("Slidell", "bgp", 2).
++SetAdminDist("Slidell", "ospf", 3).
++SetInterface("Slidell", "Slidell_I_Covington").
++SetInterface("Slidell", "Slidell_I_Gulfport").
+
++SetNode("Lafayette").
++SetAdminDist("Lafayette", "static", 1).
++SetAdminDist("Lafayette", "bgp", 2).
++SetAdminDist("Lafayette", "ospf", 3).
++SetInterface("Lafayette", "Lafayette_I_BatonTTRouge").
++SetInterface("Lafayette", "Lafayette_I_MorganTTCity").
++SetInterface("Lafayette", "Lafayette_I_Opelousas").
++SetInterface("Lafayette", "Lafayette_I_LakeTTCharles").
+
++SetNode("FortTTPolk").
++SetAdminDist("FortTTPolk", "static", 1).
++SetAdminDist("FortTTPolk", "bgp", 2).
++SetAdminDist("FortTTPolk", "ospf", 3).
++SetInterface("FortTTPolk", "FortTTPolk_I_Deridder").
+
++SetNode("Austin").
++SetAdminDist("Austin", "static", 1).
++SetAdminDist("Austin", "bgp", 2).
++SetAdminDist("Austin", "ospf", 3).
++SetInterface("Austin", "Austin_I_CollegeTTStation").
++SetInterface("Austin", "Austin_I_SanTTAntonio").
+
++SetNode("Houston").
++SetAdminDist("Houston", "static", 1).
++SetAdminDist("Houston", "bgp", 2).
++SetAdminDist("Houston", "ospf", 3).
++SetInterface("Houston", "Houston_I_Liberty").
++SetInterface("Houston", "Houston_I_SanTTAntonio").
+
++SetNode("Alexandria").
++SetAdminDist("Alexandria", "static", 1).
++SetAdminDist("Alexandria", "bgp", 2).
++SetAdminDist("Alexandria", "ospf", 3).
++SetInterface("Alexandria", "Alexandria_I_StTTLandry").
++SetInterface("Alexandria", "Alexandria_I_Derry").
+
++SetNode("Beaumont").
++SetAdminDist("Beaumont", "static", 1).
++SetAdminDist("Beaumont", "bgp", 2).
++SetAdminDist("Beaumont", "ospf", 3).
++SetInterface("Beaumont", "Beaumont_I_LakeTTCharles").
++SetInterface("Beaumont", "Beaumont_I_Nome").
+
++SetNode("Derry").
++SetAdminDist("Derry", "static", 1).
++SetAdminDist("Derry", "bgp", 2).
++SetAdminDist("Derry", "ospf", 3).
++SetInterface("Derry", "Derry_I_Alexandria").
++SetInterface("Derry", "Derry_I_Natchitoches").
+
++SetNode("StTTLandry").
++SetAdminDist("StTTLandry", "static", 1).
++SetAdminDist("StTTLandry", "bgp", 2).
++SetAdminDist("StTTLandry", "ospf", 3).
++SetInterface("StTTLandry", "StTTLandry_I_Alexandria").
++SetInterface("StTTLandry", "StTTLandry_I_Opelousas").
+
++SetNode("Longview").
++SetAdminDist("Longview", "static", 1).
++SetAdminDist("Longview", "bgp", 2).
++SetAdminDist("Longview", "ospf", 3).
++SetInterface("Longview", "Longview_I_Tyler").
++SetInterface("Longview", "Longview_I_Shreveport").
+
++SetNode("Monroe").
++SetAdminDist("Monroe", "static", 1).
++SetAdminDist("Monroe", "bgp", 2).
++SetAdminDist("Monroe", "ospf", 3).
++SetInterface("Monroe", "Monroe_I_Ruston").
++SetInterface("Monroe", "Monroe_I_Shreveport").
+
++SetLink("Gulfport_I_Slidell", "Slidell_I_Gulfport").
++SetLink("Gulfport_I_NewTTOrleans", "NewTTOrleans_I_Gulfport").
++SetLink("Jackson_I_Hammond", "Hammond_I_Jackson").
++SetLink("Jackson_I_Shreveport", "Shreveport_I_Jackson").
++SetLink("Waco_I_CollegeTTStation", "CollegeTTStation_I_Waco").
++SetLink("Waco_I_Dallas", "Dallas_I_Waco").
++SetLink("Nome_I_Beaumont", "Beaumont_I_Nome").
++SetLink("Nome_I_Liberty", "Liberty_I_Nome").
++SetLink("Ruston_I_Monroe", "Monroe_I_Ruston").
++SetLink("Ruston_I_Minden", "Minden_I_Ruston").
++SetLink("Opelousas_I_StTTLandry", "StTTLandry_I_Opelousas").
++SetLink("Opelousas_I_Lafayette", "Lafayette_I_Opelousas").
++SetLink("Minden_I_BossierTTCity", "BossierTTCity_I_Minden").
++SetLink("Liberty_I_Houston", "Houston_I_Liberty").
++SetLink("Dallas_I_Tyler", "Tyler_I_Dallas").
++SetLink("MorganTTCity_I_Thi_bodaux", "Thi_bodaux_I_MorganTTCity").
++SetLink("MorganTTCity_I_Lafayette", "Lafayette_I_MorganTTCity").
++SetLink("Covington_I_Slidell", "Slidell_I_Covington").
++SetLink("Covington_I_Hammond", "Hammond_I_Covington").
++SetLink("Tyler_I_Longview", "Longview_I_Tyler").
++SetLink("BatonTTRouge_I_Hammond", "Hammond_I_BatonTTRouge").
++SetLink("BatonTTRouge_I_Lafayette", "Lafayette_I_BatonTTRouge").
++SetLink("Deridder_I_FortTTPolk", "FortTTPolk_I_Deridder").
++SetLink("Deridder_I_LakeTTCharles", "LakeTTCharles_I_Deridder").
++SetLink("Hammond_I_NewTTOrleans", "NewTTOrleans_I_Hammond").
++SetLink("BossierTTCity_I_Shreveport", "Shreveport_I_BossierTTCity").
++SetLink("Coushatta_I_Natchitoches", "Natchitoches_I_Coushatta").
++SetLink("Coushatta_I_Shreveport", "Shreveport_I_Coushatta").
++SetLink("SanTTAntonio_I_Houston", "Houston_I_SanTTAntonio").
++SetLink("SanTTAntonio_I_Austin", "Austin_I_SanTTAntonio").
++SetLink("Thi_bodaux_I_NewTTOrleans", "NewTTOrleans_I_Thi_bodaux").
++SetLink("CollegeTTStation_I_Austin", "Austin_I_CollegeTTStation").
++SetLink("Natchitoches_I_Derry", "Derry_I_Natchitoches").
++SetLink("Shreveport_I_Monroe", "Monroe_I_Shreveport").
++SetLink("Shreveport_I_Longview", "Longview_I_Shreveport").
++SetLink("LakeTTCharles_I_Lafayette", "Lafayette_I_LakeTTCharles").
++SetLink("LakeTTCharles_I_Beaumont", "Beaumont_I_LakeTTCharles").
++SetLink("Alexandria_I_StTTLandry", "StTTLandry_I_Alexandria").
++SetLink("Alexandria_I_Derry", "Derry_I_Alexandria").
+
+
++SetNetwork("Hammond", "N_Hammond").
++SetNetwork("Coushatta", "N_Coushatta").
++SetNetwork("Tyler", "N_Tyler").
++SetNetwork("Nome", "N_Nome").
++SetNetwork("Natchitoches", "N_Natchitoches").
++SetNetwork("Thi_bodaux", "N_Thi_bodaux").
++SetNetwork("Lafayette", "N_Lafayette").
++SetNetwork("Waco", "N_Waco").
++SetNetwork("Minden", "N_Minden").
++SetNetwork("NewTTOrleans", "N_NewTTOrleans").
++SetNetwork("StTTLandry", "N_StTTLandry").
++SetNetwork("BossierTTCity", "N_BossierTTCity").
++SetNetwork("CollegeTTStation", "N_CollegeTTStation").
++SetNetwork("Longview", "N_Longview").
++SetNetwork("Beaumont", "N_Beaumont").
++SetNetwork("Alexandria", "N_Alexandria").
++SetNetwork("Ruston", "N_Ruston").
++SetNetwork("Austin", "N_Austin").
++SetNetwork("SanTTAntonio", "N_SanTTAntonio").
++SetNetwork("FortTTPolk", "N_FortTTPolk").

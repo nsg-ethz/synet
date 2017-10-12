@@ -1,0 +1,18 @@
+
++Fwd("N_Newark", "Houston", "Miami", "ospf").
++Fwd("NBGP_Newark", "Houston", "Miami", "bgp").
++Fwd("N_Newark", "Miami", "Atlanta", "ospf").
++Fwd("NBGP_Newark", "Miami", "Atlanta", "bgp").
++Fwd("N_Newark", "Atlanta", "Dallas", "ospf").
++Fwd("NBGP_Newark", "Atlanta", "Dallas", "bgp").
++Fwd("N_Newark", "Dallas", "Newark", "ospf").
++Fwd("NBGP_Newark", "Dallas", "Newark", "bgp").
++Fwd("N_Newark", "SanTTFrancisco", "Newark", "ospf").
++Fwd("NBGP_Newark", "SanTTFrancisco", "Newark", "bgp").
++Fwd("N_Newark", "NewTTYork", "Newark", "ospf").
++Fwd("NBGP_Newark", "NewTTYork", "Newark", "bgp").
++Fwd("N_Newark", "Washington_TTDC", "Newark", "ospf").
++Fwd("NBGP_Newark", "Washington_TTDC", "Newark", "bgp").
++Fwd("N_Newark", "LosTTAngeles", "SanTTFrancisco", "ospf").
++Fwd("NBGP_Newark", "LosTTAngeles", "SanTTFrancisco", "bgp").
+

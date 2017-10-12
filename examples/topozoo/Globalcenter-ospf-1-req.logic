@@ -1,0 +1,10 @@
+
++Fwd("N_Minneapolis", "Phoenix", "Whippany", "ospf").
++Fwd("N_Minneapolis", "Whippany", "Minneapolis", "ospf").
++Fwd("N_Minneapolis", "Dallas", "Whippany", "ospf").
++Fwd("N_Minneapolis", "Chicago", "Whippany", "ospf").
++Fwd("N_Minneapolis", "Atlanta", "Chicago", "ospf").
++Fwd("N_Minneapolis", "Seattle", "Phoenix", "ospf").
++Fwd("N_Minneapolis", "SanTTJose", "Seattle", "ospf").
++Fwd("N_Minneapolis", "Vienna", "Seattle", "ospf").
+

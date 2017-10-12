@@ -1,0 +1,56 @@
+
++Fwd("N_SingARENTTmembers", "Biopolis", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "SingAREN_GIX", "SingARENTTmembers", "ospf").
++Fwd("N_SingARENTTmembers", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "AARNET", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "NTU", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "NUS", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "TEIN3", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "Schools", "SingAREN_GIX", "ospf").
++Fwd("N_SingARENTTmembers", "Fusionopolis", "SingAREN_GIX", "ospf").
+
++Fwd("N_TEIN3", "Biopolis", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "SingAREN_GIX", "TEIN3", "ospf").
++Fwd("N_TEIN3", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "AARNET", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "NTU", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "NUS", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "SingARENTTmembers", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "Schools", "SingAREN_GIX", "ospf").
++Fwd("N_TEIN3", "Fusionopolis", "SingAREN_GIX", "ospf").
+
++Fwd("N_Biopolis", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "SingAREN_GIX", "Biopolis", "ospf").
++Fwd("N_Biopolis", "AARNET", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "NTU", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "NUS", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "TEIN3", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "SingARENTTmembers", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "Schools", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "Fusionopolis", "SingAREN_GIX", "ospf").
+
++Fwd("N_NTU", "Biopolis", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "SingAREN_GIX", "NTU", "ospf").
++Fwd("N_NTU", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "AARNET", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "NUS", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "TEIN3", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "SingARENTTmembers", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "Schools", "SingAREN_GIX", "ospf").
++Fwd("N_NTU", "Fusionopolis", "SingAREN_GIX", "ospf").
+
++Fwd("N_NUS", "Biopolis", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "SingAREN_GIX", "NUS", "ospf").
++Fwd("N_NUS", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "AARNET", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "NTU", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "TEIN3", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "SingARENTTmembers", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "Schools", "SingAREN_GIX", "ospf").
++Fwd("N_NUS", "Fusionopolis", "SingAREN_GIX", "ospf").
+

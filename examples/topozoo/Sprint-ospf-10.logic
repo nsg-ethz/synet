@@ -1,0 +1,121 @@
++SetNode("Boulder").
++SetAdminDist("Boulder", "static", 1).
++SetAdminDist("Boulder", "bgp", 2).
++SetAdminDist("Boulder", "ospf", 3).
++SetInterface("Boulder", "Boulder_I_Cheyenne").
+
++SetNode("KansasTTCity").
++SetAdminDist("KansasTTCity", "static", 1).
++SetAdminDist("KansasTTCity", "bgp", 2).
++SetAdminDist("KansasTTCity", "ospf", 3).
++SetInterface("KansasTTCity", "KansasTTCity_I_FortTTWorth").
++SetInterface("KansasTTCity", "KansasTTCity_I_Cheyenne").
++SetInterface("KansasTTCity", "KansasTTCity_I_Washington_TTDC").
++SetInterface("KansasTTCity", "KansasTTCity_I_Chicago").
+
++SetNode("Stockton").
++SetAdminDist("Stockton", "static", 1).
++SetAdminDist("Stockton", "bgp", 2).
++SetAdminDist("Stockton", "ospf", 3).
++SetInterface("Stockton", "Stockton_I_Chicago").
++SetInterface("Stockton", "Stockton_I_Anaheim").
++SetInterface("Stockton", "Stockton_I_Cheyenne").
++SetInterface("Stockton", "Stockton_I_Washington_TTDC").
++SetInterface("Stockton", "Stockton_I_Seattle").
++SetInterface("Stockton", "Stockton_I_NewTTYorkTT_Pennsauken_").
+
++SetNode("Chicago").
++SetAdminDist("Chicago", "static", 1).
++SetAdminDist("Chicago", "bgp", 2).
++SetAdminDist("Chicago", "ospf", 3).
++SetInterface("Chicago", "Chicago_I_Seattle").
++SetInterface("Chicago", "Chicago_I_KansasTTCity").
++SetInterface("Chicago", "Chicago_I_Stockton").
++SetInterface("Chicago", "Chicago_I_NewTTYorkTT_Pennsauken_").
+
++SetNode("FortTTWorth").
++SetAdminDist("FortTTWorth", "static", 1).
++SetAdminDist("FortTTWorth", "bgp", 2).
++SetAdminDist("FortTTWorth", "ospf", 3).
++SetInterface("FortTTWorth", "FortTTWorth_I_Atlanta").
++SetInterface("FortTTWorth", "FortTTWorth_I_KansasTTCity").
++SetInterface("FortTTWorth", "FortTTWorth_I_Anaheim").
++SetInterface("FortTTWorth", "FortTTWorth_I_Washington_TTDC").
+
++SetNode("Anaheim").
++SetAdminDist("Anaheim", "static", 1).
++SetAdminDist("Anaheim", "bgp", 2).
++SetAdminDist("Anaheim", "ospf", 3).
++SetInterface("Anaheim", "Anaheim_I_FortTTWorth").
++SetInterface("Anaheim", "Anaheim_I_Stockton").
+
++SetNode("Cheyenne").
++SetAdminDist("Cheyenne", "static", 1).
++SetAdminDist("Cheyenne", "bgp", 2).
++SetAdminDist("Cheyenne", "ospf", 3).
++SetInterface("Cheyenne", "Cheyenne_I_Boulder").
++SetInterface("Cheyenne", "Cheyenne_I_KansasTTCity").
++SetInterface("Cheyenne", "Cheyenne_I_Stockton").
+
++SetNode("Washington_TTDC").
++SetAdminDist("Washington_TTDC", "static", 1).
++SetAdminDist("Washington_TTDC", "bgp", 2).
++SetAdminDist("Washington_TTDC", "ospf", 3).
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Atlanta").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_KansasTTCity").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_NewTTYorkTT_Pennsauken_").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_FortTTWorth").
++SetInterface("Washington_TTDC", "Washington_TTDC_I_Stockton").
+
++SetNode("Atlanta").
++SetAdminDist("Atlanta", "static", 1).
++SetAdminDist("Atlanta", "bgp", 2).
++SetAdminDist("Atlanta", "ospf", 3).
++SetInterface("Atlanta", "Atlanta_I_FortTTWorth").
++SetInterface("Atlanta", "Atlanta_I_Washington_TTDC").
+
++SetNode("Seattle").
++SetAdminDist("Seattle", "static", 1).
++SetAdminDist("Seattle", "bgp", 2).
++SetAdminDist("Seattle", "ospf", 3).
++SetInterface("Seattle", "Seattle_I_Stockton").
++SetInterface("Seattle", "Seattle_I_Chicago").
+
++SetNode("NewTTYorkTT_Pennsauken_").
++SetAdminDist("NewTTYorkTT_Pennsauken_", "static", 1).
++SetAdminDist("NewTTYorkTT_Pennsauken_", "bgp", 2).
++SetAdminDist("NewTTYorkTT_Pennsauken_", "ospf", 3).
++SetInterface("NewTTYorkTT_Pennsauken_", "NewTTYorkTT_Pennsauken__I_Stockton").
++SetInterface("NewTTYorkTT_Pennsauken_", "NewTTYorkTT_Pennsauken__I_Washington_TTDC").
++SetInterface("NewTTYorkTT_Pennsauken_", "NewTTYorkTT_Pennsauken__I_Chicago").
+
++SetLink("Boulder_I_Cheyenne", "Cheyenne_I_Boulder").
++SetLink("KansasTTCity_I_FortTTWorth", "FortTTWorth_I_KansasTTCity").
++SetLink("KansasTTCity_I_Cheyenne", "Cheyenne_I_KansasTTCity").
++SetLink("KansasTTCity_I_Washington_TTDC", "Washington_TTDC_I_KansasTTCity").
++SetLink("KansasTTCity_I_Chicago", "Chicago_I_KansasTTCity").
++SetLink("Stockton_I_Chicago", "Chicago_I_Stockton").
++SetLink("Stockton_I_Anaheim", "Anaheim_I_Stockton").
++SetLink("Stockton_I_Cheyenne", "Cheyenne_I_Stockton").
++SetLink("Stockton_I_Washington_TTDC", "Washington_TTDC_I_Stockton").
++SetLink("Stockton_I_Seattle", "Seattle_I_Stockton").
++SetLink("Stockton_I_NewTTYorkTT_Pennsauken_", "NewTTYorkTT_Pennsauken__I_Stockton").
++SetLink("Chicago_I_Seattle", "Seattle_I_Chicago").
++SetLink("Chicago_I_NewTTYorkTT_Pennsauken_", "NewTTYorkTT_Pennsauken__I_Chicago").
++SetLink("FortTTWorth_I_Atlanta", "Atlanta_I_FortTTWorth").
++SetLink("FortTTWorth_I_Anaheim", "Anaheim_I_FortTTWorth").
++SetLink("FortTTWorth_I_Washington_TTDC", "Washington_TTDC_I_FortTTWorth").
++SetLink("Washington_TTDC_I_Atlanta", "Atlanta_I_Washington_TTDC").
++SetLink("Washington_TTDC_I_NewTTYorkTT_Pennsauken_", "NewTTYorkTT_Pennsauken__I_Washington_TTDC").
+
+
++SetNetwork("Chicago", "N_Chicago").
++SetNetwork("Anaheim", "N_Anaheim").
++SetNetwork("Seattle", "N_Seattle").
++SetNetwork("FortTTWorth", "N_FortTTWorth").
++SetNetwork("KansasTTCity", "N_KansasTTCity").
++SetNetwork("Atlanta", "N_Atlanta").
++SetNetwork("Boulder", "N_Boulder").
++SetNetwork("Stockton", "N_Stockton").
++SetNetwork("Washington_TTDC", "N_Washington_TTDC").
++SetNetwork("NewTTYorkTT_Pennsauken_", "N_NewTTYorkTT_Pennsauken_").

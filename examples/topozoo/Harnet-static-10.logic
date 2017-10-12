@@ -1,0 +1,186 @@
++SetNode("HKBU").
++SetAdminDist("HKBU", "static", 1).
++SetAdminDist("HKBU", "bgp", 2).
++SetAdminDist("HKBU", "ospf", 3).
++SetInterface("HKBU", "HKBU_I_CUHK").
++SetInterface("HKBU", "HKBU_I_CityU").
+
++SetNode("ASGCNET").
++SetAdminDist("ASGCNET", "static", 1).
++SetAdminDist("ASGCNET", "bgp", 2).
++SetAdminDist("ASGCNET", "ospf", 3).
++SetInterface("ASGCNET", "ASGCNET_I_HKIX").
+
++SetNode("CUHK").
++SetAdminDist("CUHK", "static", 1).
++SetAdminDist("CUHK", "bgp", 2).
++SetAdminDist("CUHK", "ospf", 3).
++SetInterface("CUHK", "CUHK_I_HKBU").
++SetInterface("CUHK", "CUHK_I_VocationalTTTrainingTTCouncil").
++SetInterface("CUHK", "CUHK_I_TEIN3").
++SetInterface("CUHK", "CUHK_I_HKUST").
++SetInterface("CUHK", "CUHK_I_PolyU").
++SetInterface("CUHK", "CUHK_I_TechnologyTTPark").
+
++SetNode("GOOGLE").
++SetAdminDist("GOOGLE", "static", 1).
++SetAdminDist("GOOGLE", "bgp", 2).
++SetAdminDist("GOOGLE", "ospf", 3).
++SetInterface("GOOGLE", "GOOGLE_I_HKIX").
+
++SetNode("VocationalTTTrainingTTCouncil").
++SetAdminDist("VocationalTTTrainingTTCouncil", "static", 1).
++SetAdminDist("VocationalTTTrainingTTCouncil", "bgp", 2).
++SetAdminDist("VocationalTTTrainingTTCouncil", "ospf", 3).
++SetInterface("VocationalTTTrainingTTCouncil", "VocationalTTTrainingTTCouncil_I_CUHK").
+
++SetNode("HKIX").
++SetAdminDist("HKIX", "static", 1).
++SetAdminDist("HKIX", "bgp", 2).
++SetAdminDist("HKIX", "ospf", 3).
++SetInterface("HKIX", "HKIX_I_ASGCNET").
++SetInterface("HKIX", "HKIX_I_GOOGLE").
++SetInterface("HKIX", "HKIX_I_ASNET").
++SetInterface("HKIX", "HKIX_I_KREPNET2").
++SetInterface("HKIX", "HKIX_I_HKU").
++SetInterface("HKIX", "HKIX_I_APAN_JP").
+
++SetNode("ASNET").
++SetAdminDist("ASNET", "static", 1).
++SetAdminDist("ASNET", "bgp", 2).
++SetAdminDist("ASNET", "ospf", 3).
++SetInterface("ASNET", "ASNET_I_HKIX").
+
++SetNode("KREPNET2").
++SetAdminDist("KREPNET2", "static", 1).
++SetAdminDist("KREPNET2", "bgp", 2).
++SetAdminDist("KREPNET2", "ospf", 3).
++SetInterface("KREPNET2", "KREPNET2_I_HKIX").
+
++SetNode("LU").
++SetAdminDist("LU", "static", 1).
++SetAdminDist("LU", "bgp", 2).
++SetAdminDist("LU", "ospf", 3).
++SetInterface("LU", "LU_I_HKEAA").
++SetInterface("LU", "LU_I_HKIEd").
++SetInterface("LU", "LU_I_HKU").
+
++SetNode("PolyU").
++SetAdminDist("PolyU", "static", 1).
++SetAdminDist("PolyU", "bgp", 2).
++SetAdminDist("PolyU", "ospf", 3).
++SetInterface("PolyU", "PolyU_I_CUHK").
++SetInterface("PolyU", "PolyU_I_CityU").
++SetInterface("PolyU", "PolyU_I_HKU").
+
++SetNode("HKU").
++SetAdminDist("HKU", "static", 1).
++SetAdminDist("HKU", "bgp", 2).
++SetAdminDist("HKU", "ospf", 3).
++SetInterface("HKU", "HKU_I_HKUST").
++SetInterface("HKU", "HKU_I_OpenTTUni").
++SetInterface("HKU", "HKU_I_HKIX").
++SetInterface("HKU", "HKU_I_LU").
++SetInterface("HKU", "HKU_I_PolyU").
+
++SetNode("CERNET").
++SetAdminDist("CERNET", "static", 1).
++SetAdminDist("CERNET", "bgp", 2).
++SetAdminDist("CERNET", "ospf", 3).
++SetInterface("CERNET", "CERNET_I_HKUST").
+
++SetNode("APAN_JP").
++SetAdminDist("APAN_JP", "static", 1).
++SetAdminDist("APAN_JP", "bgp", 2).
++SetAdminDist("APAN_JP", "ospf", 3).
++SetInterface("APAN_JP", "APAN_JP_I_HKIX").
+
++SetNode("OpenTTUni").
++SetAdminDist("OpenTTUni", "static", 1).
++SetAdminDist("OpenTTUni", "bgp", 2).
++SetAdminDist("OpenTTUni", "ospf", 3).
++SetInterface("OpenTTUni", "OpenTTUni_I_HKU").
+
++SetNode("HKUST").
++SetAdminDist("HKUST", "static", 1).
++SetAdminDist("HKUST", "bgp", 2).
++SetAdminDist("HKUST", "ospf", 3).
++SetInterface("HKUST", "HKUST_I_CERNET").
++SetInterface("HKUST", "HKUST_I_CUHK").
++SetInterface("HKUST", "HKUST_I_HKIEd").
++SetInterface("HKUST", "HKUST_I_HKU").
+
++SetNode("TechnologyTTPark").
++SetAdminDist("TechnologyTTPark", "static", 1).
++SetAdminDist("TechnologyTTPark", "bgp", 2).
++SetAdminDist("TechnologyTTPark", "ospf", 3).
++SetInterface("TechnologyTTPark", "TechnologyTTPark_I_CUHK").
+
++SetNode("TEIN3").
++SetAdminDist("TEIN3", "static", 1).
++SetAdminDist("TEIN3", "bgp", 2).
++SetAdminDist("TEIN3", "ospf", 3).
++SetInterface("TEIN3", "TEIN3_I_CUHK").
+
++SetNode("International").
++SetAdminDist("International", "static", 1).
++SetAdminDist("International", "bgp", 2).
++SetAdminDist("International", "ospf", 3).
++SetInterface("International", "International_I_HKIEd").
+
++SetNode("HKEAA").
++SetAdminDist("HKEAA", "static", 1).
++SetAdminDist("HKEAA", "bgp", 2).
++SetAdminDist("HKEAA", "ospf", 3).
++SetInterface("HKEAA", "HKEAA_I_LU").
+
++SetNode("HKIEd").
++SetAdminDist("HKIEd", "static", 1).
++SetAdminDist("HKIEd", "bgp", 2).
++SetAdminDist("HKIEd", "ospf", 3).
++SetInterface("HKIEd", "HKIEd_I_International").
++SetInterface("HKIEd", "HKIEd_I_LU").
++SetInterface("HKIEd", "HKIEd_I_HKUST").
+
++SetNode("CityU").
++SetAdminDist("CityU", "static", 1).
++SetAdminDist("CityU", "bgp", 2).
++SetAdminDist("CityU", "ospf", 3).
++SetInterface("CityU", "CityU_I_HKBU").
++SetInterface("CityU", "CityU_I_PolyU").
+
++SetLink("HKBU_I_CUHK", "CUHK_I_HKBU").
++SetLink("HKBU_I_CityU", "CityU_I_HKBU").
++SetLink("ASGCNET_I_HKIX", "HKIX_I_ASGCNET").
++SetLink("CUHK_I_VocationalTTTrainingTTCouncil", "VocationalTTTrainingTTCouncil_I_CUHK").
++SetLink("CUHK_I_TEIN3", "TEIN3_I_CUHK").
++SetLink("CUHK_I_HKUST", "HKUST_I_CUHK").
++SetLink("CUHK_I_PolyU", "PolyU_I_CUHK").
++SetLink("CUHK_I_TechnologyTTPark", "TechnologyTTPark_I_CUHK").
++SetLink("GOOGLE_I_HKIX", "HKIX_I_GOOGLE").
++SetLink("HKIX_I_ASNET", "ASNET_I_HKIX").
++SetLink("HKIX_I_KREPNET2", "KREPNET2_I_HKIX").
++SetLink("HKIX_I_HKU", "HKU_I_HKIX").
++SetLink("HKIX_I_APAN_JP", "APAN_JP_I_HKIX").
++SetLink("LU_I_HKEAA", "HKEAA_I_LU").
++SetLink("LU_I_HKIEd", "HKIEd_I_LU").
++SetLink("LU_I_HKU", "HKU_I_LU").
++SetLink("PolyU_I_CityU", "CityU_I_PolyU").
++SetLink("PolyU_I_HKU", "HKU_I_PolyU").
++SetLink("HKU_I_HKUST", "HKUST_I_HKU").
++SetLink("HKU_I_OpenTTUni", "OpenTTUni_I_HKU").
++SetLink("CERNET_I_HKUST", "HKUST_I_CERNET").
++SetLink("HKUST_I_HKIEd", "HKIEd_I_HKUST").
++SetLink("International_I_HKIEd", "HKIEd_I_International").
+
+
++SetNetwork("VocationalTTTrainingTTCouncil", "N_VocationalTTTrainingTTCouncil").
++SetNetwork("CityU", "N_CityU").
++SetNetwork("HKBU", "N_HKBU").
++SetNetwork("TechnologyTTPark", "N_TechnologyTTPark").
++SetNetwork("OpenTTUni", "N_OpenTTUni").
++SetNetwork("HKUST", "N_HKUST").
++SetNetwork("GOOGLE", "N_GOOGLE").
++SetNetwork("APAN_JP", "N_APAN_JP").
++SetNetwork("HKEAA", "N_HKEAA").
++SetNetwork("CERNET", "N_CERNET").

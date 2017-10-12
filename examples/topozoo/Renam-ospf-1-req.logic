@@ -1,0 +1,6 @@
+
++Fwd("N_StarNetTTISP", "TTTTTTTTTTTTTTCahul", "Chisinau", "ospf").
++Fwd("N_StarNetTTISP", "Chisinau", "StarNetTTISP", "ospf").
++Fwd("N_StarNetTTISP", "Balti", "Chisinau", "ospf").
++Fwd("N_StarNetTTISP", "RoEduNet", "Chisinau", "ospf").
+

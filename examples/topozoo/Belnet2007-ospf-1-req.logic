@@ -1,0 +1,22 @@
+
++Fwd("N_Leuven2", "Arlon", "LiegeTT2", "ospf").
++Fwd("N_Leuven2", "LiegeTT2", "LiegeTT1TT", "ospf").
++Fwd("N_Leuven2", "LiegeTT1TT", "Evere", "ospf").
++Fwd("N_Leuven2", "Evere", "Leuven1", "ospf").
++Fwd("N_Leuven2", "Leuven1", "Leuven2", "ospf").
++Fwd("N_Leuven2", "Antwerpen1", "AntwerpenTT2", "ospf").
++Fwd("N_Leuven2", "AntwerpenTT2", "Evere", "ospf").
++Fwd("N_Leuven2", "Namur", "Arlon", "ospf").
++Fwd("N_Leuven2", "Vilvoorde", "Geel", "ospf").
++Fwd("N_Leuven2", "Geel", "Hasselt", "ospf").
++Fwd("N_Leuven2", "Hasselt", "Leuven2", "ospf").
++Fwd("N_Leuven2", "BrusselsTTCampus", "Vilvoorde", "ospf").
++Fwd("N_Leuven2", "Brugge", "Korthijk", "ospf").
++Fwd("N_Leuven2", "Korthijk", "Vilvoorde", "ospf").
++Fwd("N_Leuven2", "Mons", "Vilvoorde", "ospf").
++Fwd("N_Leuven2", "Gent2", "Gent1", "ospf").
++Fwd("N_Leuven2", "Gent1", "Brugge", "ospf").
++Fwd("N_Leuven2", "Charleroi", "Mons", "ospf").
++Fwd("N_Leuven2", "BrusselsTTScience", "Evere", "ospf").
++Fwd("N_Leuven2", "Louvain_la_Neuve", "Charleroi", "ospf").
+

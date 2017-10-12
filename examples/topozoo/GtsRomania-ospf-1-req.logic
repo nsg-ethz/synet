@@ -1,0 +1,22 @@
+
++Fwd("N_Galati", "Timisoara", "Craiova", "ospf").
++Fwd("N_Galati", "Craiova", "Bucarest", "ospf").
++Fwd("N_Galati", "Bucarest", "Galati", "ospf").
++Fwd("N_Galati", "Cluj", "Oradea", "ospf").
++Fwd("N_Galati", "Oradea", "Bucarest", "ospf").
++Fwd("N_Galati", "Deva", "Timisoara", "ospf").
++Fwd("N_Galati", "PiatraTTNeamt", "Focsani", "ospf").
++Fwd("N_Galati", "Focsani", "Bucarest", "ospf").
++Fwd("N_Galati", "Constanta", "Bucarest", "ospf").
++Fwd("N_Galati", "TarguTTMures", "Bucarest", "ospf").
++Fwd("N_Galati", "Bors", "Oradea", "ospf").
++Fwd("N_Galati", "Sibiu", "Oradea", "ospf").
++Fwd("N_Galati", "Targoviste", "Bucarest", "ospf").
++Fwd("N_Galati", "Budapest", "Arad", "ospf").
++Fwd("N_Galati", "Arad", "Oradea", "ospf").
++Fwd("N_Galati", "Plaiesti", "Bucarest", "ospf").
++Fwd("N_Galati", "Brasov", "Bucarest", "ospf").
++Fwd("N_Galati", "Bacau", "Bucarest", "ospf").
++Fwd("N_Galati", "Iasi", "Bucarest", "ospf").
++Fwd("N_Galati", "BudapestID8", "Bors", "ospf").
+

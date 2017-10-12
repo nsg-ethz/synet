@@ -1,0 +1,18 @@
+
++Fwd("N_NodeID2", "Dubbo", "Parkes", "ospf").
++Fwd("N_NodeID2", "Parkes", "NodeID2", "ospf").
++Fwd("N_NodeID2", "Geelong", "Melbourne", "ospf").
++Fwd("N_NodeID2", "Melbourne", "Shepparton", "ospf").
++Fwd("N_NodeID2", "Shepparton", "NodeID2", "ospf").
++Fwd("N_NodeID2", "Coff_sTTHarbour", "Brisbane", "ospf").
++Fwd("N_NodeID2", "Brisbane", "Moree", "ospf").
++Fwd("N_NodeID2", "Moree", "Dubbo", "ospf").
++Fwd("N_NodeID2", "Canberra", "NodeID2", "ospf").
++Fwd("N_NodeID2", "Albury", "Canberra", "ospf").
++Fwd("N_NodeID2", "PortTTAugusta", "Adelaide", "ospf").
++Fwd("N_NodeID2", "Adelaide", "Geelong", "ospf").
++Fwd("N_NodeID2", "Kalgoorlie", "PortTTAugusta", "ospf").
++Fwd("N_NodeID2", "Sydney", "Canberra", "ospf").
++Fwd("N_NodeID2", "Newcastle", "Coff_sTTHarbour", "ospf").
++Fwd("N_NodeID2", "Perth", "Adelaide", "ospf").
+

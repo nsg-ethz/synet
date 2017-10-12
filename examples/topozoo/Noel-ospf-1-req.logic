@@ -1,0 +1,20 @@
+
++Fwd("N_Ellensburg", "Olympia", "Tacoma", "ospf").
++Fwd("N_Ellensburg", "Tacoma", "WestinTT_TTSeattle", "ospf").
++Fwd("N_Ellensburg", "WestinTT_TTSeattle", "Wenatchee", "ospf").
++Fwd("N_Ellensburg", "Wenatchee", "Ellensburg", "ospf").
++Fwd("N_Ellensburg", "Bellingham", "MtTTVernon", "ospf").
++Fwd("N_Ellensburg", "MtTTVernon", "Everett", "ospf").
++Fwd("N_Ellensburg", "Everett", "WestinTT_TTSeattle", "ospf").
++Fwd("N_Ellensburg", "Spokane", "Wenatchee", "ospf").
++Fwd("N_Ellensburg", "WallaTTWalla", "Kennewick", "ospf").
++Fwd("N_Ellensburg", "Kennewick", "Yakima", "ospf").
++Fwd("N_Ellensburg", "Yakima", "WestinTT_TTSeattle", "ospf").
++Fwd("N_Ellensburg", "Lewiston", "Pullman", "ospf").
++Fwd("N_Ellensburg", "Pullman", "Spokane", "ospf").
++Fwd("N_Ellensburg", "Othello", "Spokane", "ospf").
++Fwd("N_Ellensburg", "Pasco", "Yakima", "ospf").
++Fwd("N_Ellensburg", "Vancouver", "WestinTT_TTSeattle", "ospf").
++Fwd("N_Ellensburg", "CoeurTTd_Alene", "Spokane", "ospf").
++Fwd("N_Ellensburg", "Portland", "WestinTT_TTSeattle", "ospf").
+

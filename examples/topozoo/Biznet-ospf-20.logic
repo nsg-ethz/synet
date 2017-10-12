@@ -1,0 +1,266 @@
++SetNode("Kudus").
++SetAdminDist("Kudus", "static", 1).
++SetAdminDist("Kudus", "bgp", 2).
++SetAdminDist("Kudus", "ospf", 3).
++SetInterface("Kudus", "Kudus_I_Semarang").
++SetInterface("Kudus", "Kudus_I_Tuban").
+
++SetNode("Surabaya").
++SetAdminDist("Surabaya", "static", 1).
++SetAdminDist("Surabaya", "bgp", 2).
++SetAdminDist("Surabaya", "ospf", 3).
++SetInterface("Surabaya", "Surabaya_I_Probolinggo").
++SetInterface("Surabaya", "Surabaya_I_Kediri").
++SetInterface("Surabaya", "Surabaya_I_Tuban").
+
++SetNode("Kediri").
++SetAdminDist("Kediri", "static", 1).
++SetAdminDist("Kediri", "bgp", 2).
++SetAdminDist("Kediri", "ospf", 3).
++SetInterface("Kediri", "Kediri_I_Surabaya").
++SetInterface("Kediri", "Kediri_I_Malang").
++SetInterface("Kediri", "Kediri_I_Madium").
+
++SetNode("Surakarta").
++SetAdminDist("Surakarta", "static", 1).
++SetAdminDist("Surakarta", "bgp", 2).
++SetAdminDist("Surakarta", "ospf", 3).
++SetInterface("Surakarta", "Surakarta_I_Semarang").
++SetInterface("Surakarta", "Surakarta_I_Yogyakarta").
++SetInterface("Surakarta", "Surakarta_I_Madium").
+
++SetNode("Yogyakarta").
++SetAdminDist("Yogyakarta", "static", 1).
++SetAdminDist("Yogyakarta", "bgp", 2).
++SetAdminDist("Yogyakarta", "ospf", 3).
++SetInterface("Yogyakarta", "Yogyakarta_I_Surakarta").
++SetInterface("Yogyakarta", "Yogyakarta_I_Magelang").
+
++SetNode("Bakauhuni").
++SetAdminDist("Bakauhuni", "static", 1).
++SetAdminDist("Bakauhuni", "bgp", 2).
++SetAdminDist("Bakauhuni", "ospf", 3).
++SetInterface("Bakauhuni", "Bakauhuni_I_Anyer").
+
++SetNode("Cirebon").
++SetAdminDist("Cirebon", "static", 1).
++SetAdminDist("Cirebon", "bgp", 2).
++SetAdminDist("Cirebon", "ospf", 3).
++SetInterface("Cirebon", "Cirebon_I_Bandung").
++SetInterface("Cirebon", "Cirebon_I_Tegal").
+
++SetNode("Pekalongan").
++SetAdminDist("Pekalongan", "static", 1).
++SetAdminDist("Pekalongan", "bgp", 2).
++SetAdminDist("Pekalongan", "ospf", 3).
++SetInterface("Pekalongan", "Pekalongan_I_Semarang").
++SetInterface("Pekalongan", "Pekalongan_I_Tegal").
+
++SetNode("Purwokerto").
++SetAdminDist("Purwokerto", "static", 1).
++SetAdminDist("Purwokerto", "bgp", 2).
++SetAdminDist("Purwokerto", "ospf", 3).
++SetInterface("Purwokerto", "Purwokerto_I_Cilacap").
++SetInterface("Purwokerto", "Purwokerto_I_Magelang").
+
++SetNode("Madium").
++SetAdminDist("Madium", "static", 1).
++SetAdminDist("Madium", "bgp", 2).
++SetAdminDist("Madium", "ospf", 3).
++SetInterface("Madium", "Madium_I_Surakarta").
++SetInterface("Madium", "Madium_I_Kediri").
+
++SetNode("Cilacap").
++SetAdminDist("Cilacap", "static", 1).
++SetAdminDist("Cilacap", "bgp", 2).
++SetAdminDist("Cilacap", "ospf", 3).
++SetInterface("Cilacap", "Cilacap_I_Tasikmalaya").
++SetInterface("Cilacap", "Cilacap_I_Purwokerto").
+
++SetNode("Malang").
++SetAdminDist("Malang", "static", 1).
++SetAdminDist("Malang", "bgp", 2).
++SetAdminDist("Malang", "ospf", 3).
++SetInterface("Malang", "Malang_I_Jember").
++SetInterface("Malang", "Malang_I_Kediri").
+
++SetNode("Serang").
++SetAdminDist("Serang", "static", 1).
++SetAdminDist("Serang", "bgp", 2).
++SetAdminDist("Serang", "ospf", 3).
++SetInterface("Serang", "Serang_I_Jakarta").
++SetInterface("Serang", "Serang_I_Anyer").
+
++SetNode("Tegal").
++SetAdminDist("Tegal", "static", 1).
++SetAdminDist("Tegal", "bgp", 2).
++SetAdminDist("Tegal", "ospf", 3).
++SetInterface("Tegal", "Tegal_I_Cirebon").
++SetInterface("Tegal", "Tegal_I_Pekalongan").
+
++SetNode("Semarang").
++SetAdminDist("Semarang", "static", 1).
++SetAdminDist("Semarang", "bgp", 2).
++SetAdminDist("Semarang", "ospf", 3).
++SetInterface("Semarang", "Semarang_I_Kudus").
++SetInterface("Semarang", "Semarang_I_Surakarta").
++SetInterface("Semarang", "Semarang_I_Pekalongan").
+
++SetNode("NusaTTDua").
++SetAdminDist("NusaTTDua", "static", 1).
++SetAdminDist("NusaTTDua", "bgp", 2).
++SetAdminDist("NusaTTDua", "ospf", 3).
++SetInterface("NusaTTDua", "NusaTTDua_I_Banyunwangi").
+
++SetNode("Magelang").
++SetAdminDist("Magelang", "static", 1).
++SetAdminDist("Magelang", "bgp", 2).
++SetAdminDist("Magelang", "ospf", 3).
++SetInterface("Magelang", "Magelang_I_Yogyakarta").
++SetInterface("Magelang", "Magelang_I_Purwokerto").
+
++SetNode("Bogor").
++SetAdminDist("Bogor", "static", 1).
++SetAdminDist("Bogor", "bgp", 2).
++SetAdminDist("Bogor", "ospf", 3).
++SetInterface("Bogor", "Bogor_I_Jakarta").
++SetInterface("Bogor", "Bogor_I_Cibaliung").
++SetInterface("Bogor", "Bogor_I_Sukabumi").
+
++SetNode("Jakarta").
++SetAdminDist("Jakarta", "static", 1).
++SetAdminDist("Jakarta", "bgp", 2).
++SetAdminDist("Jakarta", "ospf", 3).
++SetInterface("Jakarta", "Jakarta_I_Serang").
++SetInterface("Jakarta", "Jakarta_I_Bogor").
++SetInterface("Jakarta", "Jakarta_I_Karawang").
+
++SetNode("Bandung").
++SetAdminDist("Bandung", "static", 1).
++SetAdminDist("Bandung", "bgp", 2).
++SetAdminDist("Bandung", "ospf", 3).
++SetInterface("Bandung", "Bandung_I_Sukabumi").
++SetInterface("Bandung", "Bandung_I_Cirebon").
++SetInterface("Bandung", "Bandung_I_Tasikmalaya").
++SetInterface("Bandung", "Bandung_I_Karawang").
+
++SetNode("Banyunwangi").
++SetAdminDist("Banyunwangi", "static", 1).
++SetAdminDist("Banyunwangi", "bgp", 2).
++SetAdminDist("Banyunwangi", "ospf", 3).
++SetInterface("Banyunwangi", "Banyunwangi_I_Jember").
++SetInterface("Banyunwangi", "Banyunwangi_I_NusaTTDua").
+
++SetNode("Jember").
++SetAdminDist("Jember", "static", 1).
++SetAdminDist("Jember", "bgp", 2).
++SetAdminDist("Jember", "ospf", 3).
++SetInterface("Jember", "Jember_I_Probolinggo").
++SetInterface("Jember", "Jember_I_Malang").
++SetInterface("Jember", "Jember_I_Banyunwangi").
+
++SetNode("Tasikmalaya").
++SetAdminDist("Tasikmalaya", "static", 1).
++SetAdminDist("Tasikmalaya", "bgp", 2).
++SetAdminDist("Tasikmalaya", "ospf", 3).
++SetInterface("Tasikmalaya", "Tasikmalaya_I_Bandung").
++SetInterface("Tasikmalaya", "Tasikmalaya_I_Cilacap").
+
++SetNode("Sukabumi").
++SetAdminDist("Sukabumi", "static", 1).
++SetAdminDist("Sukabumi", "bgp", 2).
++SetAdminDist("Sukabumi", "ospf", 3).
++SetInterface("Sukabumi", "Sukabumi_I_Bandung").
++SetInterface("Sukabumi", "Sukabumi_I_Bogor").
+
++SetNode("Anyer").
++SetAdminDist("Anyer", "static", 1).
++SetAdminDist("Anyer", "bgp", 2).
++SetAdminDist("Anyer", "ospf", 3).
++SetInterface("Anyer", "Anyer_I_Cibaliung").
++SetInterface("Anyer", "Anyer_I_Serang").
++SetInterface("Anyer", "Anyer_I_Bakauhuni").
+
++SetNode("Cibaliung").
++SetAdminDist("Cibaliung", "static", 1).
++SetAdminDist("Cibaliung", "bgp", 2).
++SetAdminDist("Cibaliung", "ospf", 3).
++SetInterface("Cibaliung", "Cibaliung_I_Anyer").
++SetInterface("Cibaliung", "Cibaliung_I_Bogor").
+
++SetNode("Karawang").
++SetAdminDist("Karawang", "static", 1).
++SetAdminDist("Karawang", "bgp", 2).
++SetAdminDist("Karawang", "ospf", 3).
++SetInterface("Karawang", "Karawang_I_Bandung").
++SetInterface("Karawang", "Karawang_I_Jakarta").
+
++SetNode("Tuban").
++SetAdminDist("Tuban", "static", 1).
++SetAdminDist("Tuban", "bgp", 2).
++SetAdminDist("Tuban", "ospf", 3).
++SetInterface("Tuban", "Tuban_I_Kudus").
++SetInterface("Tuban", "Tuban_I_Surabaya").
+
++SetNode("Probolinggo").
++SetAdminDist("Probolinggo", "static", 1).
++SetAdminDist("Probolinggo", "bgp", 2).
++SetAdminDist("Probolinggo", "ospf", 3).
++SetInterface("Probolinggo", "Probolinggo_I_Jember").
++SetInterface("Probolinggo", "Probolinggo_I_Surabaya").
+
++SetLink("Kudus_I_Semarang", "Semarang_I_Kudus").
++SetLink("Kudus_I_Tuban", "Tuban_I_Kudus").
++SetLink("Surabaya_I_Probolinggo", "Probolinggo_I_Surabaya").
++SetLink("Surabaya_I_Kediri", "Kediri_I_Surabaya").
++SetLink("Surabaya_I_Tuban", "Tuban_I_Surabaya").
++SetLink("Kediri_I_Malang", "Malang_I_Kediri").
++SetLink("Kediri_I_Madium", "Madium_I_Kediri").
++SetLink("Surakarta_I_Semarang", "Semarang_I_Surakarta").
++SetLink("Surakarta_I_Yogyakarta", "Yogyakarta_I_Surakarta").
++SetLink("Surakarta_I_Madium", "Madium_I_Surakarta").
++SetLink("Yogyakarta_I_Magelang", "Magelang_I_Yogyakarta").
++SetLink("Bakauhuni_I_Anyer", "Anyer_I_Bakauhuni").
++SetLink("Cirebon_I_Bandung", "Bandung_I_Cirebon").
++SetLink("Cirebon_I_Tegal", "Tegal_I_Cirebon").
++SetLink("Pekalongan_I_Semarang", "Semarang_I_Pekalongan").
++SetLink("Pekalongan_I_Tegal", "Tegal_I_Pekalongan").
++SetLink("Purwokerto_I_Cilacap", "Cilacap_I_Purwokerto").
++SetLink("Purwokerto_I_Magelang", "Magelang_I_Purwokerto").
++SetLink("Cilacap_I_Tasikmalaya", "Tasikmalaya_I_Cilacap").
++SetLink("Malang_I_Jember", "Jember_I_Malang").
++SetLink("Serang_I_Jakarta", "Jakarta_I_Serang").
++SetLink("Serang_I_Anyer", "Anyer_I_Serang").
++SetLink("NusaTTDua_I_Banyunwangi", "Banyunwangi_I_NusaTTDua").
++SetLink("Bogor_I_Jakarta", "Jakarta_I_Bogor").
++SetLink("Bogor_I_Cibaliung", "Cibaliung_I_Bogor").
++SetLink("Bogor_I_Sukabumi", "Sukabumi_I_Bogor").
++SetLink("Jakarta_I_Karawang", "Karawang_I_Jakarta").
++SetLink("Bandung_I_Sukabumi", "Sukabumi_I_Bandung").
++SetLink("Bandung_I_Tasikmalaya", "Tasikmalaya_I_Bandung").
++SetLink("Bandung_I_Karawang", "Karawang_I_Bandung").
++SetLink("Banyunwangi_I_Jember", "Jember_I_Banyunwangi").
++SetLink("Jember_I_Probolinggo", "Probolinggo_I_Jember").
++SetLink("Anyer_I_Cibaliung", "Cibaliung_I_Anyer").
+
+
++SetNetwork("Tuban", "N_Tuban").
++SetNetwork("Jember", "N_Jember").
++SetNetwork("Pekalongan", "N_Pekalongan").
++SetNetwork("Tasikmalaya", "N_Tasikmalaya").
++SetNetwork("Bandung", "N_Bandung").
++SetNetwork("Madium", "N_Madium").
++SetNetwork("Tegal", "N_Tegal").
++SetNetwork("Yogyakarta", "N_Yogyakarta").
++SetNetwork("Surakarta", "N_Surakarta").
++SetNetwork("Bogor", "N_Bogor").
++SetNetwork("Semarang", "N_Semarang").
++SetNetwork("NusaTTDua", "N_NusaTTDua").
++SetNetwork("Surabaya", "N_Surabaya").
++SetNetwork("Serang", "N_Serang").
++SetNetwork("Probolinggo", "N_Probolinggo").
++SetNetwork("Purwokerto", "N_Purwokerto").
++SetNetwork("Cibaliung", "N_Cibaliung").
++SetNetwork("Malang", "N_Malang").
++SetNetwork("Cilacap", "N_Cilacap").
++SetNetwork("Sukabumi", "N_Sukabumi").

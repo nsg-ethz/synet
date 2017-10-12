@@ -1,0 +1,21 @@
+
++Fwd("N_CampusBiotech_TTSciences", "StTTClementTTofTTOhridTTUniversityTTinTTBitola", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "NOCTTandTTCampusSocialTTSciences", "CampusBiotech_TTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "NationalBroadcastingcompanyTTComm_TTTower", "CampusBiotech_TTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "CampusTTArchTTandTTCivilTTEng", "NationalBroadcastingcompanyTTComm_TTTower", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "I_TTofTTEconomy", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "I_TTofTTMacedonianTTLiterature", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "CampusTTNaturalTTSciencesTTandTTMathematics", "NationalBroadcastingcompanyTTComm_TTTower", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "CampusTechnical", "NationalBroadcastingcompanyTTComm_TTTower", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "F_TTofTTMiningTTandTTGeologyTTStip", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "I_TTofTTNationalTTHistory", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "F_TTofTTPedagogy", "CampusTechnical", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "NationalTTandTTUnivTTLibrary", "NationalBroadcastingcompanyTTComm_TTTower", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "SeveralTTMinistriesTTofTTtheTTGovernment", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "I_TTofTTEarthquakeTTEngineering", "NationalBroadcastingcompanyTTComm_TTTower", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "MOL", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "ONnetTTNEOTELTTSONET", "NationalBroadcastingcompanyTTComm_TTTower", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "CampusTTMedicine", "NOCTTandTTCampusSocialTTSciences", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "ITTofTTPoliticalTTandTTJuridicalTTRes", "CampusTechnical", "ospf").
++Fwd("N_CampusBiotech_TTSciences", "GEANTTTSEEREN", "NOCTTandTTCampusSocialTTSciences", "ospf").
+

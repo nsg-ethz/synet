@@ -1,0 +1,26 @@
+
++Fwd("N_NIX", "Ostrava", "Brno", "ospf").
++Fwd("NBGP_NIX", "Ostrava", "Brno", "bgp").
++Fwd("N_NIX", "Brno", "Praha", "ospf").
++Fwd("NBGP_NIX", "Brno", "Praha", "bgp").
++Fwd("N_NIX", "Praha", "NIX", "ospf").
++Fwd("NBGP_NIX", "Praha", "NIX", "bgp").
++Fwd("N_NIX", "TEN_155", "Praha", "ospf").
++Fwd("NBGP_NIX", "TEN_155", "Praha", "bgp").
++Fwd("N_NIX", "Plzen", "Praha", "ospf").
++Fwd("NBGP_NIX", "Plzen", "Praha", "bgp").
++Fwd("N_NIX", "Pardubice", "Praha", "ospf").
++Fwd("NBGP_NIX", "Pardubice", "Praha", "bgp").
++Fwd("N_NIX", "Zlin", "Brno", "ospf").
++Fwd("NBGP_NIX", "Zlin", "Brno", "bgp").
++Fwd("N_NIX", "Liberec", "Praha", "ospf").
++Fwd("NBGP_NIX", "Liberec", "Praha", "bgp").
++Fwd("N_NIX", "UstiTTnadTTLabem", "Praha", "ospf").
++Fwd("NBGP_NIX", "UstiTTnadTTLabem", "Praha", "bgp").
++Fwd("N_NIX", "HradecTTKralove", "Praha", "ospf").
++Fwd("NBGP_NIX", "HradecTTKralove", "Praha", "bgp").
++Fwd("N_NIX", "CeskeTTBudejovice", "Praha", "ospf").
++Fwd("NBGP_NIX", "CeskeTTBudejovice", "Praha", "bgp").
++Fwd("N_NIX", "Olomouc", "Brno", "ospf").
++Fwd("NBGP_NIX", "Olomouc", "Brno", "bgp").
+

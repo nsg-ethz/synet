@@ -1,0 +1,78 @@
++SetNode("RAND").
++SetAdminDist("RAND", "static", 1).
++SetAdminDist("RAND", "bgp", 2).
++SetAdminDist("RAND", "ospf", 3).
++SetInterface("RAND", "RAND_I_BBN").
++SetInterface("RAND", "RAND_I_UCLA").
++SetInterface("RAND", "RAND_I_SDC").
+
++SetNode("HARVARD").
++SetAdminDist("HARVARD", "static", 1).
++SetAdminDist("HARVARD", "bgp", 2).
++SetAdminDist("HARVARD", "ospf", 3).
++SetInterface("HARVARD", "HARVARD_I_BBN").
+
++SetNode("BBN").
++SetAdminDist("BBN", "static", 1).
++SetAdminDist("BBN", "bgp", 2).
++SetAdminDist("BBN", "ospf", 3).
++SetInterface("BBN", "BBN_I_RAND").
++SetInterface("BBN", "BBN_I_HARVARD").
++SetInterface("BBN", "BBN_I_MIT").
+
++SetNode("SRI").
++SetAdminDist("SRI", "static", 1).
++SetAdminDist("SRI", "bgp", 2).
++SetAdminDist("SRI", "ospf", 3).
++SetInterface("SRI", "SRI_I_UCSB").
++SetInterface("SRI", "SRI_I_UCLA").
+
++SetNode("UTAH").
++SetAdminDist("UTAH", "static", 1).
++SetAdminDist("UTAH", "bgp", 2).
++SetAdminDist("UTAH", "ospf", 3).
++SetInterface("UTAH", "UTAH_I_MIT").
++SetInterface("UTAH", "UTAH_I_SDC").
+
++SetNode("UCLA").
++SetAdminDist("UCLA", "static", 1).
++SetAdminDist("UCLA", "bgp", 2).
++SetAdminDist("UCLA", "ospf", 3).
++SetInterface("UCLA", "UCLA_I_RAND").
++SetInterface("UCLA", "UCLA_I_SRI").
++SetInterface("UCLA", "UCLA_I_UCSB").
+
++SetNode("UCSB").
++SetAdminDist("UCSB", "static", 1).
++SetAdminDist("UCSB", "bgp", 2).
++SetAdminDist("UCSB", "ospf", 3).
++SetInterface("UCSB", "UCSB_I_SRI").
++SetInterface("UCSB", "UCSB_I_UCLA").
+
++SetNode("SDC").
++SetAdminDist("SDC", "static", 1).
++SetAdminDist("SDC", "bgp", 2).
++SetAdminDist("SDC", "ospf", 3).
++SetInterface("SDC", "SDC_I_RAND").
++SetInterface("SDC", "SDC_I_UTAH").
+
++SetNode("MIT").
++SetAdminDist("MIT", "static", 1).
++SetAdminDist("MIT", "bgp", 2).
++SetAdminDist("MIT", "ospf", 3).
++SetInterface("MIT", "MIT_I_BBN").
++SetInterface("MIT", "MIT_I_UTAH").
+
++SetLink("RAND_I_BBN", "BBN_I_RAND").
++SetLink("RAND_I_UCLA", "UCLA_I_RAND").
++SetLink("RAND_I_SDC", "SDC_I_RAND").
++SetLink("HARVARD_I_BBN", "BBN_I_HARVARD").
++SetLink("BBN_I_MIT", "MIT_I_BBN").
++SetLink("SRI_I_UCSB", "UCSB_I_SRI").
++SetLink("SRI_I_UCLA", "UCLA_I_SRI").
++SetLink("UTAH_I_MIT", "MIT_I_UTAH").
++SetLink("UTAH_I_SDC", "SDC_I_UTAH").
++SetLink("UCLA_I_UCSB", "UCSB_I_UCLA").
+
+
++SetNetwork("UTAH", "N_UTAH").

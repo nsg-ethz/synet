@@ -1,0 +1,429 @@
++SetNode("Lancaster").
++SetAdminDist("Lancaster", "static", 1).
++SetAdminDist("Lancaster", "bgp", 2).
++SetAdminDist("Lancaster", "ospf", 3).
++SetInterface("Lancaster", "Lancaster_I_RockTTHill").
++SetInterface("Lancaster", "Lancaster_I_Bethune").
+
++SetNode("Bethune").
++SetAdminDist("Bethune", "static", 1).
++SetAdminDist("Bethune", "bgp", 2).
++SetAdminDist("Bethune", "ospf", 3).
++SetInterface("Bethune", "Bethune_I_Lancaster").
++SetInterface("Bethune", "Bethune_I_Sumter").
++SetInterface("Bethune", "Bethune_I_Florence").
+
++SetNode("Sparta").
++SetAdminDist("Sparta", "static", 1).
++SetAdminDist("Sparta", "bgp", 2).
++SetAdminDist("Sparta", "ospf", 3).
++SetInterface("Sparta", "Sparta_I_Baldwin").
++SetInterface("Sparta", "Sparta_I_LevelTTCross").
+
++SetNode("Sumter").
++SetAdminDist("Sumter", "static", 1).
++SetAdminDist("Sumter", "bgp", 2).
++SetAdminDist("Sumter", "ospf", 3).
++SetInterface("Sumter", "Sumter_I_Bethune").
++SetInterface("Sumter", "Sumter_I_Georgetown").
++SetInterface("Sumter", "Sumter_I_MoncksTTCorner").
++SetInterface("Sumter", "Sumter_I_Florence").
++SetInterface("Sumter", "Sumter_I_Columbia").
+
++SetNode("Greenville").
++SetAdminDist("Greenville", "static", 1).
++SetAdminDist("Greenville", "bgp", 2).
++SetAdminDist("Greenville", "ospf", 3).
++SetInterface("Greenville", "Greenville_I_Spartanburg").
++SetInterface("Greenville", "Greenville_I_Asheville").
++SetInterface("Greenville", "Greenville_I_Clemson").
++SetInterface("Greenville", "Greenville_I_Toccoa").
+
++SetNode("Walterboro").
++SetAdminDist("Walterboro", "static", 1).
++SetAdminDist("Walterboro", "bgp", 2).
++SetAdminDist("Walterboro", "ospf", 3).
++SetInterface("Walterboro", "Walterboro_I_Yemassee").
++SetInterface("Walterboro", "Walterboro_I_StTTGeorge").
+
++SetNode("Asheboro").
++SetAdminDist("Asheboro", "static", 1).
++SetAdminDist("Asheboro", "bgp", 2).
++SetAdminDist("Asheboro", "ospf", 3).
++SetInterface("Asheboro", "Asheboro_I_Lexington").
++SetInterface("Asheboro", "Asheboro_I_HighTTPoint").
+
++SetNode("DueTTWest").
++SetAdminDist("DueTTWest", "static", 1).
++SetAdminDist("DueTTWest", "bgp", 2).
++SetAdminDist("DueTTWest", "ospf", 3).
++SetInterface("DueTTWest", "DueTTWest_I_Anderson").
++SetInterface("DueTTWest", "DueTTWest_I_Chester").
++SetInterface("DueTTWest", "DueTTWest_I_Greenwood").
+
++SetNode("Courtney").
++SetAdminDist("Courtney", "static", 1).
++SetAdminDist("Courtney", "bgp", 2).
++SetAdminDist("Courtney", "ospf", 3).
++SetInterface("Courtney", "Courtney_I_Baldwin").
++SetInterface("Courtney", "Courtney_I_Lexington").
++SetInterface("Courtney", "Courtney_I_LevelTTCross").
+
++SetNode("Spartanburg").
++SetAdminDist("Spartanburg", "static", 1).
++SetAdminDist("Spartanburg", "bgp", 2).
++SetAdminDist("Spartanburg", "ospf", 3).
++SetInterface("Spartanburg", "Spartanburg_I_Charlotte").
++SetInterface("Spartanburg", "Spartanburg_I_Greenville").
++SetInterface("Spartanburg", "Spartanburg_I_Hickory").
+
++SetNode("StTTGeorge").
++SetAdminDist("StTTGeorge", "static", 1).
++SetAdminDist("StTTGeorge", "bgp", 2).
++SetAdminDist("StTTGeorge", "ospf", 3).
++SetInterface("StTTGeorge", "StTTGeorge_I_Charleston").
++SetInterface("StTTGeorge", "StTTGeorge_I_Orangeburg").
++SetInterface("StTTGeorge", "StTTGeorge_I_Walterboro").
+
++SetNode("Clemson").
++SetAdminDist("Clemson", "static", 1).
++SetAdminDist("Clemson", "bgp", 2).
++SetAdminDist("Clemson", "ospf", 3).
++SetInterface("Clemson", "Clemson_I_Anderson").
++SetInterface("Clemson", "Clemson_I_Greenville").
++SetInterface("Clemson", "Clemson_I_Toccoa").
+
++SetNode("Toccoa").
++SetAdminDist("Toccoa", "static", 1).
++SetAdminDist("Toccoa", "bgp", 2).
++SetAdminDist("Toccoa", "ospf", 3).
++SetInterface("Toccoa", "Toccoa_I_Anderson").
++SetInterface("Toccoa", "Toccoa_I_Clemson").
++SetInterface("Toccoa", "Toccoa_I_Greenville").
+
++SetNode("Georgetown").
++SetAdminDist("Georgetown", "static", 1).
++SetAdminDist("Georgetown", "bgp", 2).
++SetAdminDist("Georgetown", "ospf", 3).
++SetInterface("Georgetown", "Georgetown_I_Sumter").
++SetInterface("Georgetown", "Georgetown_I_MyrtleTTBeach").
+
++SetNode("Columbia").
++SetAdminDist("Columbia", "static", 1).
++SetAdminDist("Columbia", "bgp", 2).
++SetAdminDist("Columbia", "ospf", 3).
++SetInterface("Columbia", "Columbia_I_Orangeburg").
++SetInterface("Columbia", "Columbia_I_Sumter").
++SetInterface("Columbia", "Columbia_I_Aiken").
++SetInterface("Columbia", "Columbia_I_Chester").
++SetInterface("Columbia", "Columbia_I_Augusta").
+
++SetNode("MoncksTTCorner").
++SetAdminDist("MoncksTTCorner", "static", 1).
++SetAdminDist("MoncksTTCorner", "bgp", 2).
++SetAdminDist("MoncksTTCorner", "ospf", 3).
++SetInterface("MoncksTTCorner", "MoncksTTCorner_I_Charleston").
++SetInterface("MoncksTTCorner", "MoncksTTCorner_I_Sumter").
+
++SetNode("Asheville").
++SetAdminDist("Asheville", "static", 1).
++SetAdminDist("Asheville", "bgp", 2).
++SetAdminDist("Asheville", "ospf", 3).
++SetInterface("Asheville", "Asheville_I_Greenville").
++SetInterface("Asheville", "Asheville_I_Hickory").
+
++SetNode("Beaufort").
++SetAdminDist("Beaufort", "static", 1).
++SetAdminDist("Beaufort", "bgp", 2).
++SetAdminDist("Beaufort", "ospf", 3).
++SetInterface("Beaufort", "Beaufort_I_Yemassee").
+
++SetNode("Greenwood").
++SetAdminDist("Greenwood", "static", 1).
++SetAdminDist("Greenwood", "bgp", 2).
++SetAdminDist("Greenwood", "ospf", 3).
++SetInterface("Greenwood", "Greenwood_I_DueTTWest").
+
++SetNode("Orangeburg").
++SetAdminDist("Orangeburg", "static", 1).
++SetAdminDist("Orangeburg", "bgp", 2).
++SetAdminDist("Orangeburg", "ospf", 3).
++SetInterface("Orangeburg", "Orangeburg_I_Columbia").
++SetInterface("Orangeburg", "Orangeburg_I_StTTGeorge").
+
++SetNode("HighTTPoint").
++SetAdminDist("HighTTPoint", "static", 1).
++SetAdminDist("HighTTPoint", "bgp", 2).
++SetAdminDist("HighTTPoint", "ospf", 3).
++SetInterface("HighTTPoint", "HighTTPoint_I_Asheboro").
++SetInterface("HighTTPoint", "HighTTPoint_I_Lexington").
++SetInterface("HighTTPoint", "HighTTPoint_I_Greensboro").
+
++SetNode("Hickory").
++SetAdminDist("Hickory", "static", 1).
++SetAdminDist("Hickory", "bgp", 2).
++SetAdminDist("Hickory", "ospf", 3).
++SetInterface("Hickory", "Hickory_I_Spartanburg").
++SetInterface("Hickory", "Hickory_I_Asheville").
+
++SetNode("Wilmington").
++SetAdminDist("Wilmington", "static", 1).
++SetAdminDist("Wilmington", "bgp", 2).
++SetAdminDist("Wilmington", "ospf", 3).
++SetInterface("Wilmington", "Wilmington_I_Fayetteville").
++SetInterface("Wilmington", "Wilmington_I_MyrtleTTBeach").
+
++SetNode("Lexington").
++SetAdminDist("Lexington", "static", 1).
++SetAdminDist("Lexington", "bgp", 2).
++SetAdminDist("Lexington", "ospf", 3).
++SetInterface("Lexington", "Lexington_I_Asheboro").
++SetInterface("Lexington", "Lexington_I_Concord").
++SetInterface("Lexington", "Lexington_I_Salisbury").
++SetInterface("Lexington", "Lexington_I_HighTTPoint").
++SetInterface("Lexington", "Lexington_I_Courtney").
+
++SetNode("Augusta").
++SetAdminDist("Augusta", "static", 1).
++SetAdminDist("Augusta", "bgp", 2).
++SetAdminDist("Augusta", "ospf", 3).
++SetInterface("Augusta", "Augusta_I_Savannah").
++SetInterface("Augusta", "Augusta_I_Anderson").
++SetInterface("Augusta", "Augusta_I_Columbia").
++SetInterface("Augusta", "Augusta_I_Aiken").
+
++SetNode("Yemassee").
++SetAdminDist("Yemassee", "static", 1).
++SetAdminDist("Yemassee", "bgp", 2).
++SetAdminDist("Yemassee", "ospf", 3).
++SetInterface("Yemassee", "Yemassee_I_Savannah").
++SetInterface("Yemassee", "Yemassee_I_HiltonTTHead").
++SetInterface("Yemassee", "Yemassee_I_Beaufort").
++SetInterface("Yemassee", "Yemassee_I_Walterboro").
+
++SetNode("Raleigh").
++SetAdminDist("Raleigh", "static", 1).
++SetAdminDist("Raleigh", "bgp", 2).
++SetAdminDist("Raleigh", "ospf", 3).
++SetInterface("Raleigh", "Raleigh_I_Fayetteville").
++SetInterface("Raleigh", "Raleigh_I_RockyTTMount").
++SetInterface("Raleigh", "Raleigh_I_Greensboro").
+
++SetNode("Boone").
++SetAdminDist("Boone", "static", 1).
++SetAdminDist("Boone", "bgp", 2).
++SetAdminDist("Boone", "ospf", 3).
++SetInterface("Boone", "Boone_I_Baldwin").
+
++SetNode("Charleston").
++SetAdminDist("Charleston", "static", 1).
++SetAdminDist("Charleston", "bgp", 2).
++SetAdminDist("Charleston", "ospf", 3).
++SetInterface("Charleston", "Charleston_I_Savannah").
++SetInterface("Charleston", "Charleston_I_MoncksTTCorner").
++SetInterface("Charleston", "Charleston_I_StTTGeorge").
++SetInterface("Charleston", "Charleston_I_MyrtleTTBeach").
+
++SetNode("Fayetteville").
++SetAdminDist("Fayetteville", "static", 1).
++SetAdminDist("Fayetteville", "bgp", 2).
++SetAdminDist("Fayetteville", "ospf", 3).
++SetInterface("Fayetteville", "Fayetteville_I_Florence").
++SetInterface("Fayetteville", "Fayetteville_I_RockyTTMount").
++SetInterface("Fayetteville", "Fayetteville_I_Wilmington").
++SetInterface("Fayetteville", "Fayetteville_I_Raleigh").
+
++SetNode("MyrtleTTBeach").
++SetAdminDist("MyrtleTTBeach", "static", 1).
++SetAdminDist("MyrtleTTBeach", "bgp", 2).
++SetAdminDist("MyrtleTTBeach", "ospf", 3).
++SetInterface("MyrtleTTBeach", "MyrtleTTBeach_I_Georgetown").
++SetInterface("MyrtleTTBeach", "MyrtleTTBeach_I_Florence").
++SetInterface("MyrtleTTBeach", "MyrtleTTBeach_I_Wilmington").
++SetInterface("MyrtleTTBeach", "MyrtleTTBeach_I_Charleston").
+
++SetNode("HiltonTTHead").
++SetAdminDist("HiltonTTHead", "static", 1).
++SetAdminDist("HiltonTTHead", "bgp", 2).
++SetAdminDist("HiltonTTHead", "ospf", 3).
++SetInterface("HiltonTTHead", "HiltonTTHead_I_Savannah").
++SetInterface("HiltonTTHead", "HiltonTTHead_I_Yemassee").
+
++SetNode("Greensboro").
++SetAdminDist("Greensboro", "static", 1).
++SetAdminDist("Greensboro", "bgp", 2).
++SetAdminDist("Greensboro", "ospf", 3).
++SetInterface("Greensboro", "Greensboro_I_HighTTPoint").
++SetInterface("Greensboro", "Greensboro_I_Raleigh").
+
++SetNode("RockTTHill").
++SetAdminDist("RockTTHill", "static", 1).
++SetAdminDist("RockTTHill", "bgp", 2).
++SetAdminDist("RockTTHill", "ospf", 3).
++SetInterface("RockTTHill", "RockTTHill_I_Lancaster").
++SetInterface("RockTTHill", "RockTTHill_I_Charlotte").
++SetInterface("RockTTHill", "RockTTHill_I_Chester").
+
++SetNode("Charlotte").
++SetAdminDist("Charlotte", "static", 1).
++SetAdminDist("Charlotte", "bgp", 2).
++SetAdminDist("Charlotte", "ospf", 3).
++SetInterface("Charlotte", "Charlotte_I_Spartanburg").
++SetInterface("Charlotte", "Charlotte_I_RockTTHill").
++SetInterface("Charlotte", "Charlotte_I_Concord").
+
++SetNode("Aiken").
++SetAdminDist("Aiken", "static", 1).
++SetAdminDist("Aiken", "bgp", 2).
++SetAdminDist("Aiken", "ospf", 3).
++SetInterface("Aiken", "Aiken_I_Columbia").
++SetInterface("Aiken", "Aiken_I_Augusta").
+
++SetNode("Concord").
++SetAdminDist("Concord", "static", 1).
++SetAdminDist("Concord", "bgp", 2).
++SetAdminDist("Concord", "ospf", 3).
++SetInterface("Concord", "Concord_I_Charlotte").
++SetInterface("Concord", "Concord_I_Lexington").
++SetInterface("Concord", "Concord_I_Salisbury").
+
++SetNode("Savannah").
++SetAdminDist("Savannah", "static", 1).
++SetAdminDist("Savannah", "bgp", 2).
++SetAdminDist("Savannah", "ospf", 3).
++SetInterface("Savannah", "Savannah_I_Yemassee").
++SetInterface("Savannah", "Savannah_I_Charleston").
++SetInterface("Savannah", "Savannah_I_HiltonTTHead").
++SetInterface("Savannah", "Savannah_I_Augusta").
+
++SetNode("Florence").
++SetAdminDist("Florence", "static", 1).
++SetAdminDist("Florence", "bgp", 2).
++SetAdminDist("Florence", "ospf", 3).
++SetInterface("Florence", "Florence_I_Bethune").
++SetInterface("Florence", "Florence_I_Fayetteville").
++SetInterface("Florence", "Florence_I_Sumter").
++SetInterface("Florence", "Florence_I_MyrtleTTBeach").
+
++SetNode("Anderson").
++SetAdminDist("Anderson", "static", 1).
++SetAdminDist("Anderson", "bgp", 2).
++SetAdminDist("Anderson", "ospf", 3).
++SetInterface("Anderson", "Anderson_I_DueTTWest").
++SetInterface("Anderson", "Anderson_I_Toccoa").
++SetInterface("Anderson", "Anderson_I_Clemson").
++SetInterface("Anderson", "Anderson_I_Augusta").
+
++SetNode("LevelTTCross").
++SetAdminDist("LevelTTCross", "static", 1).
++SetAdminDist("LevelTTCross", "bgp", 2).
++SetAdminDist("LevelTTCross", "ospf", 3).
++SetInterface("LevelTTCross", "LevelTTCross_I_Sparta").
++SetInterface("LevelTTCross", "LevelTTCross_I_Courtney").
+
++SetNode("Salisbury").
++SetAdminDist("Salisbury", "static", 1).
++SetAdminDist("Salisbury", "bgp", 2).
++SetAdminDist("Salisbury", "ospf", 3).
++SetInterface("Salisbury", "Salisbury_I_Lexington").
++SetInterface("Salisbury", "Salisbury_I_Concord").
+
++SetNode("RockyTTMount").
++SetAdminDist("RockyTTMount", "static", 1).
++SetAdminDist("RockyTTMount", "bgp", 2).
++SetAdminDist("RockyTTMount", "ospf", 3).
++SetInterface("RockyTTMount", "RockyTTMount_I_Fayetteville").
++SetInterface("RockyTTMount", "RockyTTMount_I_Raleigh").
+
++SetNode("Baldwin").
++SetAdminDist("Baldwin", "static", 1).
++SetAdminDist("Baldwin", "bgp", 2).
++SetAdminDist("Baldwin", "ospf", 3).
++SetInterface("Baldwin", "Baldwin_I_Sparta").
++SetInterface("Baldwin", "Baldwin_I_Boone").
++SetInterface("Baldwin", "Baldwin_I_Courtney").
+
++SetNode("Chester").
++SetAdminDist("Chester", "static", 1).
++SetAdminDist("Chester", "bgp", 2).
++SetAdminDist("Chester", "ospf", 3).
++SetInterface("Chester", "Chester_I_RockTTHill").
++SetInterface("Chester", "Chester_I_DueTTWest").
++SetInterface("Chester", "Chester_I_Columbia").
+
++SetLink("Lancaster_I_RockTTHill", "RockTTHill_I_Lancaster").
++SetLink("Lancaster_I_Bethune", "Bethune_I_Lancaster").
++SetLink("Bethune_I_Sumter", "Sumter_I_Bethune").
++SetLink("Bethune_I_Florence", "Florence_I_Bethune").
++SetLink("Sparta_I_Baldwin", "Baldwin_I_Sparta").
++SetLink("Sparta_I_LevelTTCross", "LevelTTCross_I_Sparta").
++SetLink("Sumter_I_Georgetown", "Georgetown_I_Sumter").
++SetLink("Sumter_I_MoncksTTCorner", "MoncksTTCorner_I_Sumter").
++SetLink("Sumter_I_Florence", "Florence_I_Sumter").
++SetLink("Sumter_I_Columbia", "Columbia_I_Sumter").
++SetLink("Greenville_I_Spartanburg", "Spartanburg_I_Greenville").
++SetLink("Greenville_I_Asheville", "Asheville_I_Greenville").
++SetLink("Greenville_I_Clemson", "Clemson_I_Greenville").
++SetLink("Greenville_I_Toccoa", "Toccoa_I_Greenville").
++SetLink("Walterboro_I_Yemassee", "Yemassee_I_Walterboro").
++SetLink("Walterboro_I_StTTGeorge", "StTTGeorge_I_Walterboro").
++SetLink("Asheboro_I_Lexington", "Lexington_I_Asheboro").
++SetLink("Asheboro_I_HighTTPoint", "HighTTPoint_I_Asheboro").
++SetLink("DueTTWest_I_Anderson", "Anderson_I_DueTTWest").
++SetLink("DueTTWest_I_Chester", "Chester_I_DueTTWest").
++SetLink("DueTTWest_I_Greenwood", "Greenwood_I_DueTTWest").
++SetLink("Courtney_I_Baldwin", "Baldwin_I_Courtney").
++SetLink("Courtney_I_Lexington", "Lexington_I_Courtney").
++SetLink("Courtney_I_LevelTTCross", "LevelTTCross_I_Courtney").
++SetLink("Spartanburg_I_Charlotte", "Charlotte_I_Spartanburg").
++SetLink("Spartanburg_I_Hickory", "Hickory_I_Spartanburg").
++SetLink("StTTGeorge_I_Charleston", "Charleston_I_StTTGeorge").
++SetLink("StTTGeorge_I_Orangeburg", "Orangeburg_I_StTTGeorge").
++SetLink("Clemson_I_Anderson", "Anderson_I_Clemson").
++SetLink("Clemson_I_Toccoa", "Toccoa_I_Clemson").
++SetLink("Toccoa_I_Anderson", "Anderson_I_Toccoa").
++SetLink("Georgetown_I_MyrtleTTBeach", "MyrtleTTBeach_I_Georgetown").
++SetLink("Columbia_I_Orangeburg", "Orangeburg_I_Columbia").
++SetLink("Columbia_I_Aiken", "Aiken_I_Columbia").
++SetLink("Columbia_I_Chester", "Chester_I_Columbia").
++SetLink("Columbia_I_Augusta", "Augusta_I_Columbia").
++SetLink("MoncksTTCorner_I_Charleston", "Charleston_I_MoncksTTCorner").
++SetLink("Asheville_I_Hickory", "Hickory_I_Asheville").
++SetLink("Beaufort_I_Yemassee", "Yemassee_I_Beaufort").
++SetLink("HighTTPoint_I_Lexington", "Lexington_I_HighTTPoint").
++SetLink("HighTTPoint_I_Greensboro", "Greensboro_I_HighTTPoint").
++SetLink("Wilmington_I_Fayetteville", "Fayetteville_I_Wilmington").
++SetLink("Wilmington_I_MyrtleTTBeach", "MyrtleTTBeach_I_Wilmington").
++SetLink("Lexington_I_Concord", "Concord_I_Lexington").
++SetLink("Lexington_I_Salisbury", "Salisbury_I_Lexington").
++SetLink("Augusta_I_Savannah", "Savannah_I_Augusta").
++SetLink("Augusta_I_Anderson", "Anderson_I_Augusta").
++SetLink("Augusta_I_Aiken", "Aiken_I_Augusta").
++SetLink("Yemassee_I_Savannah", "Savannah_I_Yemassee").
++SetLink("Yemassee_I_HiltonTTHead", "HiltonTTHead_I_Yemassee").
++SetLink("Raleigh_I_Fayetteville", "Fayetteville_I_Raleigh").
++SetLink("Raleigh_I_RockyTTMount", "RockyTTMount_I_Raleigh").
++SetLink("Raleigh_I_Greensboro", "Greensboro_I_Raleigh").
++SetLink("Boone_I_Baldwin", "Baldwin_I_Boone").
++SetLink("Charleston_I_Savannah", "Savannah_I_Charleston").
++SetLink("Charleston_I_MyrtleTTBeach", "MyrtleTTBeach_I_Charleston").
++SetLink("Fayetteville_I_Florence", "Florence_I_Fayetteville").
++SetLink("Fayetteville_I_RockyTTMount", "RockyTTMount_I_Fayetteville").
++SetLink("MyrtleTTBeach_I_Florence", "Florence_I_MyrtleTTBeach").
++SetLink("HiltonTTHead_I_Savannah", "Savannah_I_HiltonTTHead").
++SetLink("RockTTHill_I_Charlotte", "Charlotte_I_RockTTHill").
++SetLink("RockTTHill_I_Chester", "Chester_I_RockTTHill").
++SetLink("Charlotte_I_Concord", "Concord_I_Charlotte").
++SetLink("Concord_I_Salisbury", "Salisbury_I_Concord").
+
+
++SetNetwork("RockyTTMount", "N_RockyTTMount").
++SetBGPAnnouncement("RockyTTMount", "N_RockyTTMount", "NBGP_RockyTTMount", "1;2;3", 3).
++SetNetwork("Orangeburg", "N_Orangeburg").
++SetBGPAnnouncement("Orangeburg", "N_Orangeburg", "NBGP_Orangeburg", "1;2;3", 3).
++SetNetwork("Fayetteville", "N_Fayetteville").
++SetBGPAnnouncement("Fayetteville", "N_Fayetteville", "NBGP_Fayetteville", "1;2;3", 3).
++SetNetwork("Hickory", "N_Hickory").
++SetBGPAnnouncement("Hickory", "N_Hickory", "NBGP_Hickory", "1;2;3", 3).
++SetNetwork("Greenwood", "N_Greenwood").
++SetBGPAnnouncement("Greenwood", "N_Greenwood", "NBGP_Greenwood", "1;2;3", 3).

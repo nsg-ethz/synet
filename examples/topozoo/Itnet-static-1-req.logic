@@ -1,0 +1,12 @@
+
++Fwd("N_Dundalk", "Galway", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "Dundalk", "static").
++Fwd("N_Dundalk", "Tralee", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Limerick", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Athlone", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Cork", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Waterford", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Letterkenny", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Carlow", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
++Fwd("N_Dundalk", "Sligo", "Blanchardstown_TTDunTTLaoghaire_TTTallaght", "static").
+

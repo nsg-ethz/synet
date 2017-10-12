@@ -1,0 +1,268 @@
++SetNode("NodeID13").
++SetAdminDist("NodeID13", "static", 1).
++SetAdminDist("NodeID13", "bgp", 2).
++SetAdminDist("NodeID13", "ospf", 3).
++SetInterface("NodeID13", "NodeID13_I_Pune").
+
++SetNode("Mumbai").
++SetAdminDist("Mumbai", "static", 1).
++SetAdminDist("Mumbai", "bgp", 2).
++SetAdminDist("Mumbai", "ospf", 3).
++SetInterface("Mumbai", "Mumbai_I_Pune").
++SetInterface("Mumbai", "Mumbai_I_Delhi").
++SetInterface("Mumbai", "Mumbai_I_NodeID14").
++SetInterface("Mumbai", "Mumbai_I_NodeID4").
++SetInterface("Mumbai", "Mumbai_I_Indore").
+
++SetNode("Kalkota").
++SetAdminDist("Kalkota", "static", 1).
++SetAdminDist("Kalkota", "bgp", 2).
++SetAdminDist("Kalkota", "ospf", 3).
++SetInterface("Kalkota", "Kalkota_I_NodeID10").
++SetInterface("Kalkota", "Kalkota_I_Hyderabad").
++SetInterface("Kalkota", "Kalkota_I_Guwahati").
++SetInterface("Kalkota", "Kalkota_I_Delhi").
++SetInterface("Kalkota", "Kalkota_I_Bhubaneswar").
+
++SetNode("Bengaluru").
++SetAdminDist("Bengaluru", "static", 1).
++SetAdminDist("Bengaluru", "bgp", 2).
++SetAdminDist("Bengaluru", "ospf", 3).
++SetInterface("Bengaluru", "Bengaluru_I_Hyderabad").
++SetInterface("Bengaluru", "Bengaluru_I_Pune").
++SetInterface("Bengaluru", "Bengaluru_I_Chennai").
++SetInterface("Bengaluru", "Bengaluru_I_NodeID19").
++SetInterface("Bengaluru", "Bengaluru_I_NodeID12").
++SetInterface("Bengaluru", "Bengaluru_I_Delhi").
++SetInterface("Bengaluru", "Bengaluru_I_NodeID5").
++SetInterface("Bengaluru", "Bengaluru_I_Trivandrum").
+
++SetNode("NodeID18").
++SetAdminDist("NodeID18", "static", 1).
++SetAdminDist("NodeID18", "bgp", 2).
++SetAdminDist("NodeID18", "ospf", 3).
++SetInterface("NodeID18", "NodeID18_I_Trivandrum").
+
++SetNode("NodeID19").
++SetAdminDist("NodeID19", "static", 1).
++SetAdminDist("NodeID19", "bgp", 2).
++SetAdminDist("NodeID19", "ospf", 3).
++SetInterface("NodeID19", "NodeID19_I_Bengaluru").
+
++SetNode("Chennai").
++SetAdminDist("Chennai", "static", 1).
++SetAdminDist("Chennai", "bgp", 2).
++SetAdminDist("Chennai", "ospf", 3).
++SetInterface("Chennai", "Chennai_I_Hyderabad").
++SetInterface("Chennai", "Chennai_I_Bengaluru").
++SetInterface("Chennai", "Chennai_I_NodeID16").
+
++SetNode("NodeID10").
++SetAdminDist("NodeID10", "static", 1).
++SetAdminDist("NodeID10", "bgp", 2).
++SetAdminDist("NodeID10", "ospf", 3).
++SetInterface("NodeID10", "NodeID10_I_Kalkota").
+
++SetNode("NodeID11").
++SetAdminDist("NodeID11", "static", 1).
++SetAdminDist("NodeID11", "bgp", 2).
++SetAdminDist("NodeID11", "ospf", 3).
++SetInterface("NodeID11", "NodeID11_I_Bhubaneswar").
+
++SetNode("NodeID12").
++SetAdminDist("NodeID12", "static", 1).
++SetAdminDist("NodeID12", "bgp", 2).
++SetAdminDist("NodeID12", "ospf", 3).
++SetInterface("NodeID12", "NodeID12_I_Bengaluru").
+
++SetNode("Delhi").
++SetAdminDist("Delhi", "static", 1).
++SetAdminDist("Delhi", "bgp", 2).
++SetAdminDist("Delhi", "ospf", 3).
++SetInterface("Delhi", "Delhi_I_Kanpur").
++SetInterface("Delhi", "Delhi_I_Mumbai").
++SetInterface("Delhi", "Delhi_I_Jaipur").
++SetInterface("Delhi", "Delhi_I_NodeID15").
++SetInterface("Delhi", "Delhi_I_Kalkota").
++SetInterface("Delhi", "Delhi_I_Bengaluru").
++SetInterface("Delhi", "Delhi_I_Ahmedabad").
++SetInterface("Delhi", "Delhi_I_NodeID9").
+
++SetNode("NodeID14").
++SetAdminDist("NodeID14", "static", 1).
++SetAdminDist("NodeID14", "bgp", 2).
++SetAdminDist("NodeID14", "ospf", 3).
++SetInterface("NodeID14", "NodeID14_I_Mumbai").
+
++SetNode("NodeID15").
++SetAdminDist("NodeID15", "static", 1).
++SetAdminDist("NodeID15", "bgp", 2).
++SetAdminDist("NodeID15", "ospf", 3).
++SetInterface("NodeID15", "NodeID15_I_Delhi").
+
++SetNode("NodeID16").
++SetAdminDist("NodeID16", "static", 1).
++SetAdminDist("NodeID16", "bgp", 2).
++SetAdminDist("NodeID16", "ospf", 3).
++SetInterface("NodeID16", "NodeID16_I_Chennai").
+
++SetNode("NodeID17").
++SetAdminDist("NodeID17", "static", 1).
++SetAdminDist("NodeID17", "bgp", 2).
++SetAdminDist("NodeID17", "ospf", 3).
++SetInterface("NodeID17", "NodeID17_I_Hyderabad").
+
++SetNode("NodeID4").
++SetAdminDist("NodeID4", "static", 1).
++SetAdminDist("NodeID4", "bgp", 2).
++SetAdminDist("NodeID4", "ospf", 3).
++SetInterface("NodeID4", "NodeID4_I_Mumbai").
+
++SetNode("NodeID5").
++SetAdminDist("NodeID5", "static", 1).
++SetAdminDist("NodeID5", "bgp", 2).
++SetAdminDist("NodeID5", "ospf", 3).
++SetInterface("NodeID5", "NodeID5_I_Bengaluru").
+
++SetNode("Jaipur").
++SetAdminDist("Jaipur", "static", 1).
++SetAdminDist("Jaipur", "bgp", 2).
++SetAdminDist("Jaipur", "ospf", 3).
++SetInterface("Jaipur", "Jaipur_I_Delhi").
+
++SetNode("Allahabad").
++SetAdminDist("Allahabad", "static", 1).
++SetAdminDist("Allahabad", "bgp", 2).
++SetAdminDist("Allahabad", "ospf", 3).
++SetInterface("Allahabad", "Allahabad_I_Kanpur").
+
++SetNode("Trivandrum").
++SetAdminDist("Trivandrum", "static", 1).
++SetAdminDist("Trivandrum", "bgp", 2).
++SetAdminDist("Trivandrum", "ospf", 3).
++SetInterface("Trivandrum", "Trivandrum_I_NodeID18").
++SetInterface("Trivandrum", "Trivandrum_I_Bengaluru").
+
++SetNode("Ahmedabad").
++SetAdminDist("Ahmedabad", "static", 1).
++SetAdminDist("Ahmedabad", "bgp", 2).
++SetAdminDist("Ahmedabad", "ospf", 3).
++SetInterface("Ahmedabad", "Ahmedabad_I_Delhi").
+
++SetNode("NodeID8").
++SetAdminDist("NodeID8", "static", 1).
++SetAdminDist("NodeID8", "bgp", 2).
++SetAdminDist("NodeID8", "ospf", 3).
++SetInterface("NodeID8", "NodeID8_I_Kanpur").
+
++SetNode("NodeID9").
++SetAdminDist("NodeID9", "static", 1).
++SetAdminDist("NodeID9", "bgp", 2).
++SetAdminDist("NodeID9", "ospf", 3).
++SetInterface("NodeID9", "NodeID9_I_Delhi").
+
++SetNode("Pune").
++SetAdminDist("Pune", "static", 1).
++SetAdminDist("Pune", "bgp", 2).
++SetAdminDist("Pune", "ospf", 3).
++SetInterface("Pune", "Pune_I_NodeID13").
++SetInterface("Pune", "Pune_I_Bengaluru").
++SetInterface("Pune", "Pune_I_Mumbai").
+
++SetNode("Indore").
++SetAdminDist("Indore", "static", 1).
++SetAdminDist("Indore", "bgp", 2).
++SetAdminDist("Indore", "ospf", 3).
++SetInterface("Indore", "Indore_I_Mumbai").
+
++SetNode("Hyderabad").
++SetAdminDist("Hyderabad", "static", 1).
++SetAdminDist("Hyderabad", "bgp", 2).
++SetAdminDist("Hyderabad", "ospf", 3).
++SetInterface("Hyderabad", "Hyderabad_I_Kalkota").
++SetInterface("Hyderabad", "Hyderabad_I_Chennai").
++SetInterface("Hyderabad", "Hyderabad_I_Bengaluru").
++SetInterface("Hyderabad", "Hyderabad_I_NodeID17").
+
++SetNode("Kanpur").
++SetAdminDist("Kanpur", "static", 1).
++SetAdminDist("Kanpur", "bgp", 2).
++SetAdminDist("Kanpur", "ospf", 3).
++SetInterface("Kanpur", "Kanpur_I_Gorakhpur").
++SetInterface("Kanpur", "Kanpur_I_Delhi").
++SetInterface("Kanpur", "Kanpur_I_Allahabad").
++SetInterface("Kanpur", "Kanpur_I_NodeID8").
+
++SetNode("Gorakhpur").
++SetAdminDist("Gorakhpur", "static", 1).
++SetAdminDist("Gorakhpur", "bgp", 2).
++SetAdminDist("Gorakhpur", "ospf", 3).
++SetInterface("Gorakhpur", "Gorakhpur_I_Kanpur").
+
++SetNode("Guwahati").
++SetAdminDist("Guwahati", "static", 1).
++SetAdminDist("Guwahati", "bgp", 2).
++SetAdminDist("Guwahati", "ospf", 3).
++SetInterface("Guwahati", "Guwahati_I_Kalkota").
+
++SetNode("Bhubaneswar").
++SetAdminDist("Bhubaneswar", "static", 1).
++SetAdminDist("Bhubaneswar", "bgp", 2).
++SetAdminDist("Bhubaneswar", "ospf", 3).
++SetInterface("Bhubaneswar", "Bhubaneswar_I_Kalkota").
++SetInterface("Bhubaneswar", "Bhubaneswar_I_NodeID11").
+
++SetLink("NodeID13_I_Pune", "Pune_I_NodeID13").
++SetLink("Mumbai_I_Pune", "Pune_I_Mumbai").
++SetLink("Mumbai_I_Delhi", "Delhi_I_Mumbai").
++SetLink("Mumbai_I_NodeID14", "NodeID14_I_Mumbai").
++SetLink("Mumbai_I_NodeID4", "NodeID4_I_Mumbai").
++SetLink("Mumbai_I_Indore", "Indore_I_Mumbai").
++SetLink("Kalkota_I_NodeID10", "NodeID10_I_Kalkota").
++SetLink("Kalkota_I_Hyderabad", "Hyderabad_I_Kalkota").
++SetLink("Kalkota_I_Guwahati", "Guwahati_I_Kalkota").
++SetLink("Kalkota_I_Delhi", "Delhi_I_Kalkota").
++SetLink("Kalkota_I_Bhubaneswar", "Bhubaneswar_I_Kalkota").
++SetLink("Bengaluru_I_Hyderabad", "Hyderabad_I_Bengaluru").
++SetLink("Bengaluru_I_Pune", "Pune_I_Bengaluru").
++SetLink("Bengaluru_I_Chennai", "Chennai_I_Bengaluru").
++SetLink("Bengaluru_I_NodeID19", "NodeID19_I_Bengaluru").
++SetLink("Bengaluru_I_NodeID12", "NodeID12_I_Bengaluru").
++SetLink("Bengaluru_I_Delhi", "Delhi_I_Bengaluru").
++SetLink("Bengaluru_I_NodeID5", "NodeID5_I_Bengaluru").
++SetLink("Bengaluru_I_Trivandrum", "Trivandrum_I_Bengaluru").
++SetLink("NodeID18_I_Trivandrum", "Trivandrum_I_NodeID18").
++SetLink("Chennai_I_Hyderabad", "Hyderabad_I_Chennai").
++SetLink("Chennai_I_NodeID16", "NodeID16_I_Chennai").
++SetLink("NodeID11_I_Bhubaneswar", "Bhubaneswar_I_NodeID11").
++SetLink("Delhi_I_Kanpur", "Kanpur_I_Delhi").
++SetLink("Delhi_I_Jaipur", "Jaipur_I_Delhi").
++SetLink("Delhi_I_NodeID15", "NodeID15_I_Delhi").
++SetLink("Delhi_I_Ahmedabad", "Ahmedabad_I_Delhi").
++SetLink("Delhi_I_NodeID9", "NodeID9_I_Delhi").
++SetLink("NodeID17_I_Hyderabad", "Hyderabad_I_NodeID17").
++SetLink("Allahabad_I_Kanpur", "Kanpur_I_Allahabad").
++SetLink("NodeID8_I_Kanpur", "Kanpur_I_NodeID8").
++SetLink("Kanpur_I_Gorakhpur", "Gorakhpur_I_Kanpur").
+
+
++SetNetwork("NodeID5", "N_NodeID5").
++SetBGPAnnouncement("NodeID5", "N_NodeID5", "NBGP_NodeID5", "1;2;3", 3).
++SetNetwork("NodeID11", "N_NodeID11").
++SetBGPAnnouncement("NodeID11", "N_NodeID11", "NBGP_NodeID11", "1;2;3", 3).
++SetNetwork("Ahmedabad", "N_Ahmedabad").
++SetBGPAnnouncement("Ahmedabad", "N_Ahmedabad", "NBGP_Ahmedabad", "1;2;3", 3).
++SetNetwork("NodeID4", "N_NodeID4").
++SetBGPAnnouncement("NodeID4", "N_NodeID4", "NBGP_NodeID4", "1;2;3", 3).
++SetNetwork("Bengaluru", "N_Bengaluru").
++SetBGPAnnouncement("Bengaluru", "N_Bengaluru", "NBGP_Bengaluru", "1;2;3", 3).
++SetNetwork("NodeID15", "N_NodeID15").
++SetBGPAnnouncement("NodeID15", "N_NodeID15", "NBGP_NodeID15", "1;2;3", 3).
++SetNetwork("Delhi", "N_Delhi").
++SetBGPAnnouncement("Delhi", "N_Delhi", "NBGP_Delhi", "1;2;3", 3).
++SetNetwork("NodeID13", "N_NodeID13").
++SetBGPAnnouncement("NodeID13", "N_NodeID13", "NBGP_NodeID13", "1;2;3", 3).
++SetNetwork("NodeID17", "N_NodeID17").
++SetBGPAnnouncement("NodeID17", "N_NodeID17", "NBGP_NodeID17", "1;2;3", 3).
++SetNetwork("Kanpur", "N_Kanpur").
++SetBGPAnnouncement("Kanpur", "N_Kanpur", "NBGP_Kanpur", "1;2;3", 3).

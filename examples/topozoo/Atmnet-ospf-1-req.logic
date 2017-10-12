@@ -1,0 +1,22 @@
+
++Fwd("N_SanTTDiego", "Houston", "Dallas", "ospf").
++Fwd("N_SanTTDiego", "Dallas", "Tucson", "ospf").
++Fwd("N_SanTTDiego", "Tucson", "Phoenix", "ospf").
++Fwd("N_SanTTDiego", "Phoenix", "SanTTDiego", "ospf").
++Fwd("N_SanTTDiego", "Oakland", "SantaTTClara", "ospf").
++Fwd("N_SanTTDiego", "SantaTTClara", "LosTTAngeles", "ospf").
++Fwd("N_SanTTDiego", "LosTTAngeles", "SanTTDiego", "ospf").
++Fwd("N_SanTTDiego", "StTTLouis", "KansasTTCity", "ospf").
++Fwd("N_SanTTDiego", "KansasTTCity", "Denver", "ospf").
++Fwd("N_SanTTDiego", "Denver", "SaltTTLakeTTCity", "ospf").
++Fwd("N_SanTTDiego", "SaltTTLakeTTCity", "Oakland", "ospf").
++Fwd("N_SanTTDiego", "Pittsburgh", "Detroit", "ospf").
++Fwd("N_SanTTDiego", "Detroit", "Chicago", "ospf").
++Fwd("N_SanTTDiego", "Chicago", "StTTLouis", "ospf").
++Fwd("N_SanTTDiego", "NewTTYork", "Washington_TTDC", "ospf").
++Fwd("N_SanTTDiego", "Washington_TTDC", "Atlanta", "ospf").
++Fwd("N_SanTTDiego", "Atlanta", "Houston", "ospf").
++Fwd("N_SanTTDiego", "Philadelphia", "NewTTYork", "ospf").
++Fwd("N_SanTTDiego", "Minneapolis", "Chicago", "ospf").
++Fwd("N_SanTTDiego", "Seattle", "Oakland", "ospf").
+

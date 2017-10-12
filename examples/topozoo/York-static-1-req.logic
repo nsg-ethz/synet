@@ -1,0 +1,24 @@
+
++Fwd("N_York", "Slough", "London", "static").
++Fwd("N_York", "London", "MiltonTTKeynes", "static").
++Fwd("N_York", "MiltonTTKeynes", "Northampton", "static").
++Fwd("N_York", "Northampton", "Leicester", "static").
++Fwd("N_York", "Leicester", "Nottingham", "static").
++Fwd("N_York", "Nottingham", "Sheffield", "static").
++Fwd("N_York", "Sheffield", "Leeds", "static").
++Fwd("N_York", "Leeds", "York", "static").
++Fwd("N_York", "Reading", "Slough", "static").
++Fwd("N_York", "Banbury", "Birmingham", "static").
++Fwd("N_York", "Birmingham", "Manchester", "static").
++Fwd("N_York", "Manchester", "Preston", "static").
++Fwd("N_York", "Preston", "Carlisle", "static").
++Fwd("N_York", "Carlisle", "Glasgow", "static").
++Fwd("N_York", "Glasgow", "Edinburgh", "static").
++Fwd("N_York", "Edinburgh", "Newcastle", "static").
++Fwd("N_York", "Newcastle", "Middlesborough", "static").
++Fwd("N_York", "Middlesborough", "York", "static").
++Fwd("N_York", "Croydon", "London", "static").
++Fwd("N_York", "Brighton", "Reading", "static").
++Fwd("N_York", "Harrogate", "York", "static").
++Fwd("N_York", "Bristol", "Reading", "static").
+

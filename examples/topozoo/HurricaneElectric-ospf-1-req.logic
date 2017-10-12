@@ -1,0 +1,25 @@
+
++Fwd("N_Zurich", "NewTTYorkTT1", "Amsterdam", "ospf").
++Fwd("N_Zurich", "Amsterdam", "Paris", "ospf").
++Fwd("N_Zurich", "Paris", "Frankfurt", "ospf").
++Fwd("N_Zurich", "Frankfurt", "Zurich", "ospf").
++Fwd("N_Zurich", "Chicago", "Dallas", "ospf").
++Fwd("N_Zurich", "Dallas", "Ashburn", "ospf").
++Fwd("N_Zurich", "Ashburn", "Paris", "ospf").
++Fwd("N_Zurich", "PaloTTAlto", "LosTTAngeles", "ospf").
++Fwd("N_Zurich", "LosTTAngeles", "NewTTYorkTT1", "ospf").
++Fwd("N_Zurich", "SanTTJoseTT1", "SanTTJoseTT2", "ospf").
++Fwd("N_Zurich", "SanTTJoseTT2", "NewTTYorkTT1", "ospf").
++Fwd("N_Zurich", "Atlanta", "Ashburn", "ospf").
++Fwd("N_Zurich", "Toronto", "NewTTYorkTT2", "ospf").
++Fwd("N_Zurich", "NewTTYorkTT2", "NewTTYorkTT1", "ospf").
++Fwd("N_Zurich", "NewTTYorkTT3", "NewTTYorkTT1", "ospf").
++Fwd("N_Zurich", "Tokyo", "SanTTJoseTT1", "ospf").
++Fwd("N_Zurich", "Miami", "Ashburn", "ospf").
++Fwd("N_Zurich", "Stockholm", "Frankfurt", "ospf").
++Fwd("N_Zurich", "HongTTKong", "SanTTJoseTT1", "ospf").
++Fwd("N_Zurich", "London", "NewTTYorkTT1", "ospf").
++Fwd("N_Zurich", "FremontTT2", "PaloTTAlto", "ospf").
++Fwd("N_Zurich", "FremontTT1", "PaloTTAlto", "ospf").
++Fwd("N_Zurich", "Seattle", "SanTTJoseTT2", "ospf").
+

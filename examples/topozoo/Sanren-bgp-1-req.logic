@@ -1,0 +1,14 @@
+
++Fwd("N_Pretoria", "PortTTElizabeth", "EastTTLondon", "ospf").
++Fwd("NBGP_Pretoria", "PortTTElizabeth", "EastTTLondon", "bgp").
++Fwd("N_Pretoria", "EastTTLondon", "Durban", "ospf").
++Fwd("NBGP_Pretoria", "EastTTLondon", "Durban", "bgp").
++Fwd("N_Pretoria", "Durban", "Pretoria", "ospf").
++Fwd("NBGP_Pretoria", "Durban", "Pretoria", "bgp").
++Fwd("N_Pretoria", "Bloemfontein", "Johannesburg", "ospf").
++Fwd("NBGP_Pretoria", "Bloemfontein", "Johannesburg", "bgp").
++Fwd("N_Pretoria", "Johannesburg", "Pretoria", "ospf").
++Fwd("NBGP_Pretoria", "Johannesburg", "Pretoria", "bgp").
++Fwd("N_Pretoria", "CapeTTTown", "Bloemfontein", "ospf").
++Fwd("NBGP_Pretoria", "CapeTTTown", "Bloemfontein", "bgp").
+

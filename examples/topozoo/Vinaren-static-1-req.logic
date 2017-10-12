@@ -1,0 +1,26 @@
+
++Fwd("N_JP", "DN", "VNTTHN", "static").
++Fwd("N_JP", "VNTTHN", "HK", "static").
++Fwd("N_JP", "HK", "JP", "static").
++Fwd("N_JP", "AbileneTTInternet2TTUSA", "JP", "static").
++Fwd("N_JP", "Internet", "VNTTHN", "static").
++Fwd("N_JP", "HaiTTPhong", "VNTTHN", "static").
++Fwd("N_JP", "Hue", "DN", "static").
++Fwd("N_JP", "ThaiTTNguyen", "VNTTHN", "static").
++Fwd("N_JP", "TH", "SG", "static").
++Fwd("N_JP", "SG", "JP", "static").
++Fwd("N_JP", "PH", "JP", "static").
++Fwd("N_JP", "CT", "HCM", "static").
++Fwd("N_JP", "HCM", "DN", "static").
++Fwd("N_JP", "CN", "HK", "static").
++Fwd("N_JP", "AnTTGiang", "CT", "static").
++Fwd("N_JP", "AU", "SG", "static").
++Fwd("N_JP", "NhaTTTrang", "DN", "static").
++Fwd("N_JP", "EU", "CN", "static").
++Fwd("N_JP", "ID", "SG", "static").
++Fwd("N_JP", "Vinh", "VNTTHN", "static").
++Fwd("N_JP", "MY", "SG", "static").
++Fwd("N_JP", "KR", "SG", "static").
++Fwd("N_JP", "DaTTLat", "HCM", "static").
++Fwd("N_JP", "EUID23", "SG", "static").
+

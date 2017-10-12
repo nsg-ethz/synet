@@ -1,0 +1,131 @@
++SetNode("NPM").
++SetAdminDist("NPM", "static", 1).
++SetAdminDist("NPM", "bgp", 2).
++SetAdminDist("NPM", "ospf", 3).
++SetInterface("NPM", "NPM_I_BKK").
++SetInterface("NPM", "NPM_I_NRT").
+
++SetNode("SKN").
++SetAdminDist("SKN", "static", 1).
++SetAdminDist("SKN", "bgp", 2).
++SetAdminDist("SKN", "ospf", 3).
++SetInterface("SKN", "SKN_I_KKN").
++SetInterface("SKN", "SKN_I_UBI").
+
++SetNode("CMI").
++SetAdminDist("CMI", "static", 1).
++SetAdminDist("CMI", "bgp", 2).
++SetAdminDist("CMI", "ospf", 3).
++SetInterface("CMI", "CMI_I_PNK").
++SetInterface("CMI", "CMI_I_CRI").
++SetInterface("CMI", "CMI_I_BKK").
+
++SetNode("NRM").
++SetAdminDist("NRM", "static", 1).
++SetAdminDist("NRM", "bgp", 2).
++SetAdminDist("NRM", "ospf", 3).
++SetInterface("NRM", "NRM_I_KKN").
++SetInterface("NRM", "NRM_I_UBI").
++SetInterface("NRM", "NRM_I_BKK").
+
++SetNode("CBI").
++SetAdminDist("CBI", "static", 1).
++SetAdminDist("CBI", "bgp", 2).
++SetAdminDist("CBI", "ospf", 3).
++SetInterface("CBI", "CBI_I_SKA").
++SetInterface("CBI", "CBI_I_BKK").
+
++SetNode("BKK").
++SetAdminDist("BKK", "static", 1).
++SetAdminDist("BKK", "bgp", 2).
++SetAdminDist("BKK", "ospf", 3).
++SetInterface("BKK", "BKK_I_NPM").
++SetInterface("BKK", "BKK_I_NRM").
++SetInterface("BKK", "BKK_I_CMI").
++SetInterface("BKK", "BKK_I_CBI").
++SetInterface("BKK", "BKK_I_PNK").
++SetInterface("BKK", "BKK_I_NRT").
+
++SetNode("PNK").
++SetAdminDist("PNK", "static", 1).
++SetAdminDist("PNK", "bgp", 2).
++SetAdminDist("PNK", "ospf", 3).
++SetInterface("PNK", "PNK_I_KKN").
++SetInterface("PNK", "PNK_I_CRI").
++SetInterface("PNK", "PNK_I_CMI").
++SetInterface("PNK", "PNK_I_BKK").
+
++SetNode("KKN").
++SetAdminDist("KKN", "static", 1).
++SetAdminDist("KKN", "bgp", 2).
++SetAdminDist("KKN", "ospf", 3).
++SetInterface("KKN", "KKN_I_PNK").
++SetInterface("KKN", "KKN_I_SKN").
++SetInterface("KKN", "KKN_I__").
++SetInterface("KKN", "KKN_I_NRM").
+
++SetNode("SKA").
++SetAdminDist("SKA", "static", 1).
++SetAdminDist("SKA", "bgp", 2).
++SetAdminDist("SKA", "ospf", 3).
++SetInterface("SKA", "SKA_I_CBI").
++SetInterface("SKA", "SKA_I_NRT").
+
++SetNode("CRI").
++SetAdminDist("CRI", "static", 1).
++SetAdminDist("CRI", "bgp", 2).
++SetAdminDist("CRI", "ospf", 3).
++SetInterface("CRI", "CRI_I_PNK").
++SetInterface("CRI", "CRI_I_CMI").
+
++SetNode("UBI").
++SetAdminDist("UBI", "static", 1).
++SetAdminDist("UBI", "bgp", 2).
++SetAdminDist("UBI", "ospf", 3).
++SetInterface("UBI", "UBI_I_SKN").
++SetInterface("UBI", "UBI_I_NRM").
+
++SetNode("_").
++SetAdminDist("_", "static", 1).
++SetAdminDist("_", "bgp", 2).
++SetAdminDist("_", "ospf", 3).
++SetInterface("_", "__I_KKN").
+
++SetNode("NRT").
++SetAdminDist("NRT", "static", 1).
++SetAdminDist("NRT", "bgp", 2).
++SetAdminDist("NRT", "ospf", 3).
++SetInterface("NRT", "NRT_I_NPM").
++SetInterface("NRT", "NRT_I_SKA").
++SetInterface("NRT", "NRT_I_BKK").
+
++SetLink("NPM_I_BKK", "BKK_I_NPM").
++SetLink("NPM_I_NRT", "NRT_I_NPM").
++SetLink("SKN_I_KKN", "KKN_I_SKN").
++SetLink("SKN_I_UBI", "UBI_I_SKN").
++SetLink("CMI_I_PNK", "PNK_I_CMI").
++SetLink("CMI_I_CRI", "CRI_I_CMI").
++SetLink("CMI_I_BKK", "BKK_I_CMI").
++SetLink("NRM_I_KKN", "KKN_I_NRM").
++SetLink("NRM_I_UBI", "UBI_I_NRM").
++SetLink("NRM_I_BKK", "BKK_I_NRM").
++SetLink("CBI_I_SKA", "SKA_I_CBI").
++SetLink("CBI_I_BKK", "BKK_I_CBI").
++SetLink("BKK_I_PNK", "PNK_I_BKK").
++SetLink("BKK_I_NRT", "NRT_I_BKK").
++SetLink("PNK_I_KKN", "KKN_I_PNK").
++SetLink("PNK_I_CRI", "CRI_I_PNK").
++SetLink("KKN_I__", "__I_KKN").
++SetLink("SKA_I_NRT", "NRT_I_SKA").
+
+
++SetNetwork("_", "N__").
++SetNetwork("NRM", "N_NRM").
++SetNetwork("BKK", "N_BKK").
++SetNetwork("NRT", "N_NRT").
++SetNetwork("CBI", "N_CBI").
++SetNetwork("UBI", "N_UBI").
++SetNetwork("SKA", "N_SKA").
++SetNetwork("SKN", "N_SKN").
++SetNetwork("CRI", "N_CRI").
++SetNetwork("KKN", "N_KKN").

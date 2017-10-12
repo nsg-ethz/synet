@@ -1,0 +1,325 @@
++SetNode("Szeged").
++SetAdminDist("Szeged", "static", 1).
++SetAdminDist("Szeged", "bgp", 2).
++SetAdminDist("Szeged", "ospf", 3).
++SetInterface("Szeged", "Szeged_I_Szabadka").
++SetInterface("Szeged", "Szeged_I_Budapest").
++SetInterface("Szeged", "Szeged_I_Pecs").
++SetInterface("Szeged", "Szeged_I_Hodmazovasarhely").
+
++SetNode("Vac").
++SetAdminDist("Vac", "static", 1).
++SetAdminDist("Vac", "bgp", 2).
++SetAdminDist("Vac", "ospf", 3).
++SetInterface("Vac", "Vac_I_Budapest").
+
++SetNode("Nyiregyhaza").
++SetAdminDist("Nyiregyhaza", "static", 1).
++SetAdminDist("Nyiregyhaza", "bgp", 2).
++SetAdminDist("Nyiregyhaza", "ospf", 3).
++SetInterface("Nyiregyhaza", "Nyiregyhaza_I_Debrecen").
+
++SetNode("Keszthely").
++SetAdminDist("Keszthely", "static", 1).
++SetAdminDist("Keszthely", "bgp", 2).
++SetAdminDist("Keszthely", "ospf", 3).
++SetInterface("Keszthely", "Keszthely_I_Veszprem").
+
++SetNode("Revkomarom").
++SetAdminDist("Revkomarom", "static", 1).
++SetAdminDist("Revkomarom", "bgp", 2).
++SetAdminDist("Revkomarom", "ospf", 3).
++SetInterface("Revkomarom", "Revkomarom_I_Budapest").
+
++SetNode("Szavas").
++SetAdminDist("Szavas", "static", 1).
++SetAdminDist("Szavas", "bgp", 2).
++SetAdminDist("Szavas", "ospf", 3).
++SetInterface("Szavas", "Szavas_I_Bekescsaba").
+
++SetNode("Jaszbereny").
++SetAdminDist("Jaszbereny", "static", 1).
++SetAdminDist("Jaszbereny", "bgp", 2).
++SetAdminDist("Jaszbereny", "ospf", 3).
++SetInterface("Jaszbereny", "Jaszbereny_I_Godollo").
++SetInterface("Jaszbereny", "Jaszbereny_I_Szolnok").
+
++SetNode("Dunaujvaros").
++SetAdminDist("Dunaujvaros", "static", 1).
++SetAdminDist("Dunaujvaros", "bgp", 2).
++SetAdminDist("Dunaujvaros", "ospf", 3).
++SetInterface("Dunaujvaros", "Dunaujvaros_I_Budapest").
++SetInterface("Dunaujvaros", "Dunaujvaros_I_Kecskemet").
+
++SetNode("Debrecen").
++SetAdminDist("Debrecen", "static", 1).
++SetAdminDist("Debrecen", "bgp", 2).
++SetAdminDist("Debrecen", "ospf", 3).
++SetInterface("Debrecen", "Debrecen_I_Budapest").
++SetInterface("Debrecen", "Debrecen_I_Bekescsaba").
++SetInterface("Debrecen", "Debrecen_I_Nyiregyhaza").
++SetInterface("Debrecen", "Debrecen_I_Miskolc").
+
++SetNode("Sopron").
++SetAdminDist("Sopron", "static", 1).
++SetAdminDist("Sopron", "bgp", 2).
++SetAdminDist("Sopron", "ospf", 3).
++SetInterface("Sopron", "Sopron_I_Szombathely").
++SetInterface("Sopron", "Sopron_I_Veszprem").
++SetInterface("Sopron", "Sopron_I_Gyor").
+
++SetNode("Pecs").
++SetAdminDist("Pecs", "static", 1).
++SetAdminDist("Pecs", "bgp", 2).
++SetAdminDist("Pecs", "ospf", 3).
++SetInterface("Pecs", "Pecs_I_Baja").
++SetInterface("Pecs", "Pecs_I_Budapest").
++SetInterface("Pecs", "Pecs_I_Kaposvar").
++SetInterface("Pecs", "Pecs_I_Szeged").
++SetInterface("Pecs", "Pecs_I_Szekszard").
+
++SetNode("Kaposvar").
++SetAdminDist("Kaposvar", "static", 1).
++SetAdminDist("Kaposvar", "bgp", 2).
++SetAdminDist("Kaposvar", "ospf", 3).
++SetInterface("Kaposvar", "Kaposvar_I_Pecs").
++SetInterface("Kaposvar", "Kaposvar_I_Nagykanizsa").
+
++SetNode("Sarospatak").
++SetAdminDist("Sarospatak", "static", 1).
++SetAdminDist("Sarospatak", "bgp", 2).
++SetAdminDist("Sarospatak", "ospf", 3).
++SetInterface("Sarospatak", "Sarospatak_I_Miskolc").
+
++SetNode("Zalaegerszeg").
++SetAdminDist("Zalaegerszeg", "static", 1).
++SetAdminDist("Zalaegerszeg", "bgp", 2).
++SetAdminDist("Zalaegerszeg", "ospf", 3).
++SetInterface("Zalaegerszeg", "Zalaegerszeg_I_Szombathely").
++SetInterface("Zalaegerszeg", "Zalaegerszeg_I_Nagykanizsa").
+
++SetNode("Szolnok").
++SetAdminDist("Szolnok", "static", 1).
++SetAdminDist("Szolnok", "bgp", 2).
++SetAdminDist("Szolnok", "ospf", 3).
++SetInterface("Szolnok", "Szolnok_I_Jaszbereny").
++SetInterface("Szolnok", "Szolnok_I_Kecskemet").
+
++SetNode("Esztergom").
++SetAdminDist("Esztergom", "static", 1).
++SetAdminDist("Esztergom", "bgp", 2).
++SetAdminDist("Esztergom", "ospf", 3).
++SetInterface("Esztergom", "Esztergom_I_Budapest").
+
++SetNode("Baja").
++SetAdminDist("Baja", "static", 1).
++SetAdminDist("Baja", "bgp", 2).
++SetAdminDist("Baja", "ospf", 3).
++SetInterface("Baja", "Baja_I_Pecs").
+
++SetNode("Salgotarjan").
++SetAdminDist("Salgotarjan", "static", 1).
++SetAdminDist("Salgotarjan", "bgp", 2).
++SetAdminDist("Salgotarjan", "ospf", 3).
++SetInterface("Salgotarjan", "Salgotarjan_I_Budapest").
+
++SetNode("Mosonmagyarovar").
++SetAdminDist("Mosonmagyarovar", "static", 1).
++SetAdminDist("Mosonmagyarovar", "bgp", 2).
++SetAdminDist("Mosonmagyarovar", "ospf", 3).
++SetInterface("Mosonmagyarovar", "Mosonmagyarovar_I_Gyor").
+
++SetNode("Budapest").
++SetAdminDist("Budapest", "static", 1).
++SetAdminDist("Budapest", "bgp", 2).
++SetAdminDist("Budapest", "ospf", 3).
++SetInterface("Budapest", "Budapest_I_Pecs").
++SetInterface("Budapest", "Budapest_I_Szeged").
++SetInterface("Budapest", "Budapest_I_GEANT").
++SetInterface("Budapest", "Budapest_I_Miskolc").
++SetInterface("Budapest", "Budapest_I_Vac").
++SetInterface("Budapest", "Budapest_I_Gyor").
++SetInterface("Budapest", "Budapest_I_Revkomarom").
++SetInterface("Budapest", "Budapest_I_Veszprem").
++SetInterface("Budapest", "Budapest_I_Godollo").
++SetInterface("Budapest", "Budapest_I_Esztergom").
++SetInterface("Budapest", "Budapest_I_Dunaujvaros").
++SetInterface("Budapest", "Budapest_I_Debrecen").
++SetInterface("Budapest", "Budapest_I_Salgotarjan").
++SetInterface("Budapest", "Budapest_I_Piliscsaba").
+
++SetNode("Kecskemet").
++SetAdminDist("Kecskemet", "static", 1).
++SetAdminDist("Kecskemet", "bgp", 2).
++SetAdminDist("Kecskemet", "ospf", 3).
++SetInterface("Kecskemet", "Kecskemet_I_Dunaujvaros").
++SetInterface("Kecskemet", "Kecskemet_I_Szolnok").
+
++SetNode("GEANT").
++SetAdminDist("GEANT", "static", 1).
++SetAdminDist("GEANT", "bgp", 2).
++SetAdminDist("GEANT", "ospf", 3).
++SetInterface("GEANT", "GEANT_I_Budapest").
+
++SetNode("Eger").
++SetAdminDist("Eger", "static", 1).
++SetAdminDist("Eger", "bgp", 2).
++SetAdminDist("Eger", "ospf", 3).
++SetInterface("Eger", "Eger_I_Miskolc").
+
++SetNode("Gyor").
++SetAdminDist("Gyor", "static", 1).
++SetAdminDist("Gyor", "bgp", 2).
++SetAdminDist("Gyor", "ospf", 3).
++SetInterface("Gyor", "Gyor_I_Sopron").
++SetInterface("Gyor", "Gyor_I_Budapest").
++SetInterface("Gyor", "Gyor_I_Mosonmagyarovar").
+
++SetNode("Nagykanizsa").
++SetAdminDist("Nagykanizsa", "static", 1).
++SetAdminDist("Nagykanizsa", "bgp", 2).
++SetAdminDist("Nagykanizsa", "ospf", 3).
++SetInterface("Nagykanizsa", "Nagykanizsa_I_Zalaegerszeg").
++SetInterface("Nagykanizsa", "Nagykanizsa_I_Kaposvar").
+
++SetNode("Szombathely").
++SetAdminDist("Szombathely", "static", 1).
++SetAdminDist("Szombathely", "bgp", 2).
++SetAdminDist("Szombathely", "ospf", 3).
++SetInterface("Szombathely", "Szombathely_I_Sopron").
++SetInterface("Szombathely", "Szombathely_I_Zalaegerszeg").
+
++SetNode("Gyongyos").
++SetAdminDist("Gyongyos", "static", 1).
++SetAdminDist("Gyongyos", "bgp", 2).
++SetAdminDist("Gyongyos", "ospf", 3).
++SetInterface("Gyongyos", "Gyongyos_I_Godollo").
+
++SetNode("Szabadka").
++SetAdminDist("Szabadka", "static", 1).
++SetAdminDist("Szabadka", "bgp", 2).
++SetAdminDist("Szabadka", "ospf", 3).
++SetInterface("Szabadka", "Szabadka_I_Szeged").
+
++SetNode("Godollo").
++SetAdminDist("Godollo", "static", 1).
++SetAdminDist("Godollo", "bgp", 2).
++SetAdminDist("Godollo", "ospf", 3).
++SetInterface("Godollo", "Godollo_I_Budapest").
++SetInterface("Godollo", "Godollo_I_Gyongyos").
++SetInterface("Godollo", "Godollo_I_Jaszbereny").
+
++SetNode("Szekszard").
++SetAdminDist("Szekszard", "static", 1).
++SetAdminDist("Szekszard", "bgp", 2).
++SetAdminDist("Szekszard", "ospf", 3).
++SetInterface("Szekszard", "Szekszard_I_Pecs").
+
++SetNode("Miskolc").
++SetAdminDist("Miskolc", "static", 1).
++SetAdminDist("Miskolc", "bgp", 2).
++SetAdminDist("Miskolc", "ospf", 3).
++SetInterface("Miskolc", "Miskolc_I_Eger").
++SetInterface("Miskolc", "Miskolc_I_Budapest").
++SetInterface("Miskolc", "Miskolc_I_Debrecen").
++SetInterface("Miskolc", "Miskolc_I_Sarospatak").
+
++SetNode("Veszprem").
++SetAdminDist("Veszprem", "static", 1).
++SetAdminDist("Veszprem", "bgp", 2).
++SetAdminDist("Veszprem", "ospf", 3).
++SetInterface("Veszprem", "Veszprem_I_Keszthely").
++SetInterface("Veszprem", "Veszprem_I_Sopron").
++SetInterface("Veszprem", "Veszprem_I_Budapest").
++SetInterface("Veszprem", "Veszprem_I_Szekesfahervar").
+
++SetNode("Piliscsaba").
++SetAdminDist("Piliscsaba", "static", 1).
++SetAdminDist("Piliscsaba", "bgp", 2).
++SetAdminDist("Piliscsaba", "ospf", 3).
++SetInterface("Piliscsaba", "Piliscsaba_I_Budapest").
+
++SetNode("Bekescsaba").
++SetAdminDist("Bekescsaba", "static", 1).
++SetAdminDist("Bekescsaba", "bgp", 2).
++SetAdminDist("Bekescsaba", "ospf", 3).
++SetInterface("Bekescsaba", "Bekescsaba_I_Debrecen").
++SetInterface("Bekescsaba", "Bekescsaba_I_Szavas").
++SetInterface("Bekescsaba", "Bekescsaba_I_Hodmazovasarhely").
+
++SetNode("Szekesfahervar").
++SetAdminDist("Szekesfahervar", "static", 1).
++SetAdminDist("Szekesfahervar", "bgp", 2).
++SetAdminDist("Szekesfahervar", "ospf", 3).
++SetInterface("Szekesfahervar", "Szekesfahervar_I_Veszprem").
+
++SetNode("Hodmazovasarhely").
++SetAdminDist("Hodmazovasarhely", "static", 1).
++SetAdminDist("Hodmazovasarhely", "bgp", 2).
++SetAdminDist("Hodmazovasarhely", "ospf", 3).
++SetInterface("Hodmazovasarhely", "Hodmazovasarhely_I_Bekescsaba").
++SetInterface("Hodmazovasarhely", "Hodmazovasarhely_I_Szeged").
+
++SetLink("Szeged_I_Szabadka", "Szabadka_I_Szeged").
++SetLink("Szeged_I_Budapest", "Budapest_I_Szeged").
++SetLink("Szeged_I_Pecs", "Pecs_I_Szeged").
++SetLink("Szeged_I_Hodmazovasarhely", "Hodmazovasarhely_I_Szeged").
++SetLink("Vac_I_Budapest", "Budapest_I_Vac").
++SetLink("Nyiregyhaza_I_Debrecen", "Debrecen_I_Nyiregyhaza").
++SetLink("Keszthely_I_Veszprem", "Veszprem_I_Keszthely").
++SetLink("Revkomarom_I_Budapest", "Budapest_I_Revkomarom").
++SetLink("Szavas_I_Bekescsaba", "Bekescsaba_I_Szavas").
++SetLink("Jaszbereny_I_Godollo", "Godollo_I_Jaszbereny").
++SetLink("Jaszbereny_I_Szolnok", "Szolnok_I_Jaszbereny").
++SetLink("Dunaujvaros_I_Budapest", "Budapest_I_Dunaujvaros").
++SetLink("Dunaujvaros_I_Kecskemet", "Kecskemet_I_Dunaujvaros").
++SetLink("Debrecen_I_Budapest", "Budapest_I_Debrecen").
++SetLink("Debrecen_I_Bekescsaba", "Bekescsaba_I_Debrecen").
++SetLink("Debrecen_I_Miskolc", "Miskolc_I_Debrecen").
++SetLink("Sopron_I_Szombathely", "Szombathely_I_Sopron").
++SetLink("Sopron_I_Veszprem", "Veszprem_I_Sopron").
++SetLink("Sopron_I_Gyor", "Gyor_I_Sopron").
++SetLink("Pecs_I_Baja", "Baja_I_Pecs").
++SetLink("Pecs_I_Budapest", "Budapest_I_Pecs").
++SetLink("Pecs_I_Kaposvar", "Kaposvar_I_Pecs").
++SetLink("Pecs_I_Szekszard", "Szekszard_I_Pecs").
++SetLink("Kaposvar_I_Nagykanizsa", "Nagykanizsa_I_Kaposvar").
++SetLink("Sarospatak_I_Miskolc", "Miskolc_I_Sarospatak").
++SetLink("Zalaegerszeg_I_Szombathely", "Szombathely_I_Zalaegerszeg").
++SetLink("Zalaegerszeg_I_Nagykanizsa", "Nagykanizsa_I_Zalaegerszeg").
++SetLink("Szolnok_I_Kecskemet", "Kecskemet_I_Szolnok").
++SetLink("Esztergom_I_Budapest", "Budapest_I_Esztergom").
++SetLink("Salgotarjan_I_Budapest", "Budapest_I_Salgotarjan").
++SetLink("Mosonmagyarovar_I_Gyor", "Gyor_I_Mosonmagyarovar").
++SetLink("Budapest_I_GEANT", "GEANT_I_Budapest").
++SetLink("Budapest_I_Miskolc", "Miskolc_I_Budapest").
++SetLink("Budapest_I_Gyor", "Gyor_I_Budapest").
++SetLink("Budapest_I_Veszprem", "Veszprem_I_Budapest").
++SetLink("Budapest_I_Godollo", "Godollo_I_Budapest").
++SetLink("Budapest_I_Piliscsaba", "Piliscsaba_I_Budapest").
++SetLink("Eger_I_Miskolc", "Miskolc_I_Eger").
++SetLink("Gyongyos_I_Godollo", "Godollo_I_Gyongyos").
++SetLink("Veszprem_I_Szekesfahervar", "Szekesfahervar_I_Veszprem").
++SetLink("Bekescsaba_I_Hodmazovasarhely", "Hodmazovasarhely_I_Bekescsaba").
+
+
++SetNetwork("Sarospatak", "N_Sarospatak").
++SetNetwork("Miskolc", "N_Miskolc").
++SetNetwork("Keszthely", "N_Keszthely").
++SetNetwork("Budapest", "N_Budapest").
++SetNetwork("Nagykanizsa", "N_Nagykanizsa").
++SetNetwork("Bekescsaba", "N_Bekescsaba").
++SetNetwork("Debrecen", "N_Debrecen").
++SetNetwork("Szabadka", "N_Szabadka").
++SetNetwork("Hodmazovasarhely", "N_Hodmazovasarhely").
++SetNetwork("GEANT", "N_GEANT").
++SetNetwork("Szekesfahervar", "N_Szekesfahervar").
++SetNetwork("Szekszard", "N_Szekszard").
++SetNetwork("Vac", "N_Vac").
++SetNetwork("Szolnok", "N_Szolnok").
++SetNetwork("Nyiregyhaza", "N_Nyiregyhaza").
++SetNetwork("Sopron", "N_Sopron").
++SetNetwork("Pecs", "N_Pecs").
++SetNetwork("Salgotarjan", "N_Salgotarjan").
++SetNetwork("Gyor", "N_Gyor").
++SetNetwork("Dunaujvaros", "N_Dunaujvaros").

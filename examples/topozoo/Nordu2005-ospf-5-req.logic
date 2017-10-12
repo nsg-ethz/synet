@@ -1,0 +1,46 @@
+
++Fwd("N_NETNOD", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_NETNOD", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_NETNOD", "Stockholm", "NETNOD", "ospf").
++Fwd("N_NETNOD", "GEANT", "Stockholm", "ospf").
++Fwd("N_NETNOD", "Helsinki", "Stockholm", "ospf").
++Fwd("N_NETNOD", "Oslo", "Stockholm", "ospf").
++Fwd("N_NETNOD", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_NETNOD", "GeneralTTInternet", "Stockholm", "ospf").
+
++Fwd("N_StTTPetersburg", "NETNOD", "Stockholm", "ospf").
++Fwd("N_StTTPetersburg", "Stockholm", "StTTPetersburg", "ospf").
++Fwd("N_StTTPetersburg", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_StTTPetersburg", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_StTTPetersburg", "GEANT", "Stockholm", "ospf").
++Fwd("N_StTTPetersburg", "Helsinki", "Stockholm", "ospf").
++Fwd("N_StTTPetersburg", "Oslo", "Stockholm", "ospf").
++Fwd("N_StTTPetersburg", "GeneralTTInternet", "Stockholm", "ospf").
+
++Fwd("N_Copenhagen", "NETNOD", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "Stockholm", "Copenhagen", "ospf").
++Fwd("N_Copenhagen", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_Copenhagen", "GEANT", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "Helsinki", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "Oslo", "Copenhagen", "ospf").
++Fwd("N_Copenhagen", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Copenhagen", "GeneralTTInternet", "Stockholm", "ospf").
+
++Fwd("N_Stockholm", "NETNOD", "Stockholm", "ospf").
++Fwd("N_Stockholm", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_Stockholm", "Copenhagen", "Stockholm", "ospf").
++Fwd("N_Stockholm", "GEANT", "Stockholm", "ospf").
++Fwd("N_Stockholm", "Helsinki", "Stockholm", "ospf").
++Fwd("N_Stockholm", "Oslo", "Stockholm", "ospf").
++Fwd("N_Stockholm", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Stockholm", "GeneralTTInternet", "Stockholm", "ospf").
+
++Fwd("N_Oslo", "NETNOD", "Stockholm", "ospf").
++Fwd("N_Oslo", "Stockholm", "Oslo", "ospf").
++Fwd("N_Oslo", "Reykjavik", "Copenhagen", "ospf").
++Fwd("N_Oslo", "Copenhagen", "Oslo", "ospf").
++Fwd("N_Oslo", "GEANT", "Stockholm", "ospf").
++Fwd("N_Oslo", "Helsinki", "Stockholm", "ospf").
++Fwd("N_Oslo", "StTTPetersburg", "Stockholm", "ospf").
++Fwd("N_Oslo", "GeneralTTInternet", "Stockholm", "ospf").
+

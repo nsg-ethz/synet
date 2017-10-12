@@ -1,0 +1,25 @@
+
++Fwd("N_FrankfurtTT_Internet_", "Kiev", "FrankfurtTT_Internet_", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Mykolaiv", "Cherkassy", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Cherkassy", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Lutsk", "Zhitomir", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Zhitomir", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Simferopol", "Kherson", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Kherson", "Mykolaiv", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Odessa", "Mykolaiv", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Odessa_IX", "Odessa", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Kharkiv_IX", "Kharkiv", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Kharkiv", "Poltava", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Poltava", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Vinnitsa", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Kamianets_Podilsky", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Lviv", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Dnipropetrovsk", "Poltava", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Zaporizhia", "Dnipropetrovsk", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "PoznanTT_GEANTTT_TTInternet_", "Lviv", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Pereyaslav", "Kiev", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Sevastopol", "Simferopol", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Khmelnitsky", "Vinnitsa", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "Donetsk", "Dnipropetrovsk", "ospf").
++Fwd("N_FrankfurtTT_Internet_", "UA_IX", "Kiev", "ospf").
+

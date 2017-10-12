@@ -1,0 +1,17 @@
+
++Fwd("N_Mumbai", "Palermo", "Chennai", "ospf").
++Fwd("N_Mumbai", "Chennai", "Mumbai", "ospf").
++Fwd("N_Mumbai", "LosTTAngeles", "Chennai", "ospf").
++Fwd("N_Mumbai", "NewTTYork", "Mumbai", "ospf").
++Fwd("N_Mumbai", "Singapore", "Chennai", "ospf").
++Fwd("N_Mumbai", "LINX", "London", "ospf").
++Fwd("N_Mumbai", "London", "Mumbai", "ospf").
++Fwd("N_Mumbai", "NYIX", "NewTTYork", "ospf").
++Fwd("N_Mumbai", "HongTTKong", "Chennai", "ospf").
++Fwd("N_Mumbai", "HKIX", "HongTTKong", "ospf").
++Fwd("N_Mumbai", "LAIX", "LosTTAngeles", "ospf").
++Fwd("N_Mumbai", "EQUINOXTTIX", "Singapore", "ospf").
++Fwd("N_Mumbai", "STIX", "Singapore", "ospf").
++Fwd("N_Mumbai", "Marseille", "Chennai", "ospf").
++Fwd("N_Mumbai", "NiXI", "Mumbai", "ospf").
+

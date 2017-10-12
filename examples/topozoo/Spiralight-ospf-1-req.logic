@@ -1,0 +1,16 @@
+
++Fwd("N_Milwaukee", "Rockford", "Chicago", "ospf").
++Fwd("N_Milwaukee", "Chicago", "Milwaukee", "ospf").
++Fwd("N_Milwaukee", "Madison", "Waukesha", "ospf").
++Fwd("N_Milwaukee", "Waukesha", "Milwaukee", "ospf").
++Fwd("N_Milwaukee", "BeaverTTDam", "Madison", "ospf").
++Fwd("N_Milwaukee", "Wausau", "Minneaopolis", "ospf").
++Fwd("N_Milwaukee", "Minneaopolis", "EauTTClaire", "ospf").
++Fwd("N_Milwaukee", "EauTTClaire", "CampTTDouglas", "ospf").
++Fwd("N_Milwaukee", "CampTTDouglas", "Madison", "ospf").
++Fwd("N_Milwaukee", "FonTTDuTTLac", "BeaverTTDam", "ospf").
++Fwd("N_Milwaukee", "GreenTTBay", "Wausau", "ospf").
++Fwd("N_Milwaukee", "Janesville", "Rockford", "ospf").
++Fwd("N_Milwaukee", "Oshkosh", "FonTTDuTTLac", "ospf").
++Fwd("N_Milwaukee", "Appleton", "Oshkosh", "ospf").
+

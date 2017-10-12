@@ -1,0 +1,14 @@
+
++Fwd("N_CRI", "NPM", "BKK", "static").
++Fwd("N_CRI", "BKK", "PNK", "static").
++Fwd("N_CRI", "PNK", "CRI", "static").
++Fwd("N_CRI", "SKN", "KKN", "static").
++Fwd("N_CRI", "KKN", "PNK", "static").
++Fwd("N_CRI", "CMI", "CRI", "static").
++Fwd("N_CRI", "NRM", "BKK", "static").
++Fwd("N_CRI", "CBI", "BKK", "static").
++Fwd("N_CRI", "SKA", "CBI", "static").
++Fwd("N_CRI", "UBI", "NRM", "static").
++Fwd("N_CRI", "_", "KKN", "static").
++Fwd("N_CRI", "NRT", "BKK", "static").
+

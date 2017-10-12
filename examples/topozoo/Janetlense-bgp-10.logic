@@ -1,0 +1,224 @@
++SetNode("AldershotTTAggregation").
++SetAdminDist("AldershotTTAggregation", "static", 1).
++SetAdminDist("AldershotTTAggregation", "bgp", 2).
++SetAdminDist("AldershotTTAggregation", "ospf", 3).
++SetInterface("AldershotTTAggregation", "AldershotTTAggregation_I_SouthamptonTTCore").
++SetInterface("AldershotTTAggregation", "AldershotTTAggregation_I_AldershotTTCore").
+
++SetNode("Surrey").
++SetAdminDist("Surrey", "static", 1).
++SetAdminDist("Surrey", "bgp", 2).
++SetAdminDist("Surrey", "ospf", 3).
++SetInterface("Surrey", "Surrey_I_SouthamptonTTCore").
++SetInterface("Surrey", "Surrey_I_AldershotTTCore").
+
++SetNode("Portsmouth").
++SetAdminDist("Portsmouth", "static", 1).
++SetAdminDist("Portsmouth", "bgp", 2).
++SetAdminDist("Portsmouth", "ospf", 3).
++SetInterface("Portsmouth", "Portsmouth_I_SouthamptonTTCore").
++SetInterface("Portsmouth", "Portsmouth_I_AldershotTTCore").
+
++SetNode("HamptonTTParkTTColocation").
++SetAdminDist("HamptonTTParkTTColocation", "static", 1).
++SetAdminDist("HamptonTTParkTTColocation", "bgp", 2).
++SetAdminDist("HamptonTTParkTTColocation", "ospf", 3).
++SetInterface("HamptonTTParkTTColocation", "HamptonTTParkTTColocation_I_BrightonTTAggregation").
+
++SetNode("Winchester").
++SetAdminDist("Winchester", "static", 1).
++SetAdminDist("Winchester", "bgp", 2).
++SetAdminDist("Winchester", "ospf", 3).
++SetInterface("Winchester", "Winchester_I_SouthamptonTTCore").
++SetInterface("Winchester", "Winchester_I_AldershotTTCore").
+
++SetNode("Chichester").
++SetAdminDist("Chichester", "static", 1).
++SetAdminDist("Chichester", "bgp", 2).
++SetAdminDist("Chichester", "ospf", 3).
++SetInterface("Chichester", "Chichester_I_SouthamptonTTCore").
++SetInterface("Chichester", "Chichester_I_AldershotTTCore").
+
++SetNode("Southampton").
++SetAdminDist("Southampton", "static", 1).
++SetAdminDist("Southampton", "bgp", 2).
++SetAdminDist("Southampton", "ospf", 3).
++SetInterface("Southampton", "Southampton_I_SouthamptonTTCore").
++SetInterface("Southampton", "Southampton_I_AldershotTTCore").
+
++SetNode("Wymering").
++SetAdminDist("Wymering", "static", 1).
++SetAdminDist("Wymering", "bgp", 2).
++SetAdminDist("Wymering", "ospf", 3).
++SetInterface("Wymering", "Wymering_I_AldershotTTCore").
++SetInterface("Wymering", "Wymering_I_SouthamptonTTCore").
++SetInterface("Wymering", "Wymering_I_IsleTTofTTWightTTColocation").
+
++SetNode("Sussex").
++SetAdminDist("Sussex", "static", 1).
++SetAdminDist("Sussex", "bgp", 2).
++SetAdminDist("Sussex", "ospf", 3).
++SetInterface("Sussex", "Sussex_I_SouthamptonTTCore").
++SetInterface("Sussex", "Sussex_I_AldershotTTCore").
+
++SetNode("BereTTRegisTTColocation").
++SetAdminDist("BereTTRegisTTColocation", "static", 1).
++SetAdminDist("BereTTRegisTTColocation", "bgp", 2).
++SetAdminDist("BereTTRegisTTColocation", "ospf", 3).
++SetInterface("BereTTRegisTTColocation", "BereTTRegisTTColocation_I_BournemouthTTAggregation").
+
++SetNode("Bournemouth").
++SetAdminDist("Bournemouth", "static", 1).
++SetAdminDist("Bournemouth", "bgp", 2).
++SetAdminDist("Bournemouth", "ospf", 3).
++SetInterface("Bournemouth", "Bournemouth_I_SouthamptonTTCore").
++SetInterface("Bournemouth", "Bournemouth_I_AldershotTTCore").
+
++SetNode("BrightonTTAggregation").
++SetAdminDist("BrightonTTAggregation", "static", 1).
++SetAdminDist("BrightonTTAggregation", "bgp", 2).
++SetAdminDist("BrightonTTAggregation", "ospf", 3).
++SetInterface("BrightonTTAggregation", "BrightonTTAggregation_I_SouthamptonTTCore").
++SetInterface("BrightonTTAggregation", "BrightonTTAggregation_I_HamptonTTParkTTColocation").
++SetInterface("BrightonTTAggregation", "BrightonTTAggregation_I_AldershotTTCore").
+
++SetNode("IsleTTofTTWightTTColocation").
++SetAdminDist("IsleTTofTTWightTTColocation", "static", 1).
++SetAdminDist("IsleTTofTTWightTTColocation", "bgp", 2).
++SetAdminDist("IsleTTofTTWightTTColocation", "ospf", 3).
++SetInterface("IsleTTofTTWightTTColocation", "IsleTTofTTWightTTColocation_I_Wymering").
+
++SetNode("BournemouthTTAggregation").
++SetAdminDist("BournemouthTTAggregation", "static", 1).
++SetAdminDist("BournemouthTTAggregation", "bgp", 2).
++SetAdminDist("BournemouthTTAggregation", "ospf", 3).
++SetInterface("BournemouthTTAggregation", "BournemouthTTAggregation_I_SouthamptonTTCore").
++SetInterface("BournemouthTTAggregation", "BournemouthTTAggregation_I_AldershotTTCore").
++SetInterface("BournemouthTTAggregation", "BournemouthTTAggregation_I_BereTTRegisTTColocation").
+
++SetNode("SouthamptonTTCore").
++SetAdminDist("SouthamptonTTCore", "static", 1).
++SetAdminDist("SouthamptonTTCore", "bgp", 2).
++SetAdminDist("SouthamptonTTCore", "ospf", 3).
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_AldershotTTAggregation").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Surrey").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Portsmouth").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Winchester").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Chichester").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Southampton").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Wymering").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Sussex").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Bournemouth").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_BrightonTTAggregation").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_AldershotTTCore").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Solent").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_SouthamptonTTAggregation").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_BournemouthTTAggregation").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_JanetTTSJ5").
++SetInterface("SouthamptonTTCore", "SouthamptonTTCore_I_Brighton").
+
++SetNode("Solent").
++SetAdminDist("Solent", "static", 1).
++SetAdminDist("Solent", "bgp", 2).
++SetAdminDist("Solent", "ospf", 3).
++SetInterface("Solent", "Solent_I_SouthamptonTTCore").
++SetInterface("Solent", "Solent_I_AldershotTTCore").
+
++SetNode("SouthamptonTTAggregation").
++SetAdminDist("SouthamptonTTAggregation", "static", 1).
++SetAdminDist("SouthamptonTTAggregation", "bgp", 2).
++SetAdminDist("SouthamptonTTAggregation", "ospf", 3).
++SetInterface("SouthamptonTTAggregation", "SouthamptonTTAggregation_I_SouthamptonTTCore").
++SetInterface("SouthamptonTTAggregation", "SouthamptonTTAggregation_I_AldershotTTCore").
+
++SetNode("AldershotTTCore").
++SetAdminDist("AldershotTTCore", "static", 1).
++SetAdminDist("AldershotTTCore", "bgp", 2).
++SetAdminDist("AldershotTTCore", "ospf", 3).
++SetInterface("AldershotTTCore", "AldershotTTCore_I_AldershotTTAggregation").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Surrey").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Portsmouth").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Winchester").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Chichester").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Southampton").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Wymering").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Sussex").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Bournemouth").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_BrightonTTAggregation").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_SouthamptonTTCore").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Solent").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_SouthamptonTTAggregation").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_BournemouthTTAggregation").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_JanetTTSJ5").
++SetInterface("AldershotTTCore", "AldershotTTCore_I_Brighton").
+
++SetNode("JanetTTSJ5").
++SetAdminDist("JanetTTSJ5", "static", 1).
++SetAdminDist("JanetTTSJ5", "bgp", 2).
++SetAdminDist("JanetTTSJ5", "ospf", 3).
++SetInterface("JanetTTSJ5", "JanetTTSJ5_I_SouthamptonTTCore").
++SetInterface("JanetTTSJ5", "JanetTTSJ5_I_AldershotTTCore").
+
++SetNode("Brighton").
++SetAdminDist("Brighton", "static", 1).
++SetAdminDist("Brighton", "bgp", 2).
++SetAdminDist("Brighton", "ospf", 3).
++SetInterface("Brighton", "Brighton_I_SouthamptonTTCore").
++SetInterface("Brighton", "Brighton_I_AldershotTTCore").
+
++SetLink("AldershotTTAggregation_I_SouthamptonTTCore", "SouthamptonTTCore_I_AldershotTTAggregation").
++SetLink("AldershotTTAggregation_I_AldershotTTCore", "AldershotTTCore_I_AldershotTTAggregation").
++SetLink("Surrey_I_SouthamptonTTCore", "SouthamptonTTCore_I_Surrey").
++SetLink("Surrey_I_AldershotTTCore", "AldershotTTCore_I_Surrey").
++SetLink("Portsmouth_I_SouthamptonTTCore", "SouthamptonTTCore_I_Portsmouth").
++SetLink("Portsmouth_I_AldershotTTCore", "AldershotTTCore_I_Portsmouth").
++SetLink("HamptonTTParkTTColocation_I_BrightonTTAggregation", "BrightonTTAggregation_I_HamptonTTParkTTColocation").
++SetLink("Winchester_I_SouthamptonTTCore", "SouthamptonTTCore_I_Winchester").
++SetLink("Winchester_I_AldershotTTCore", "AldershotTTCore_I_Winchester").
++SetLink("Chichester_I_SouthamptonTTCore", "SouthamptonTTCore_I_Chichester").
++SetLink("Chichester_I_AldershotTTCore", "AldershotTTCore_I_Chichester").
++SetLink("Southampton_I_SouthamptonTTCore", "SouthamptonTTCore_I_Southampton").
++SetLink("Southampton_I_AldershotTTCore", "AldershotTTCore_I_Southampton").
++SetLink("Wymering_I_AldershotTTCore", "AldershotTTCore_I_Wymering").
++SetLink("Wymering_I_SouthamptonTTCore", "SouthamptonTTCore_I_Wymering").
++SetLink("Wymering_I_IsleTTofTTWightTTColocation", "IsleTTofTTWightTTColocation_I_Wymering").
++SetLink("Sussex_I_SouthamptonTTCore", "SouthamptonTTCore_I_Sussex").
++SetLink("Sussex_I_AldershotTTCore", "AldershotTTCore_I_Sussex").
++SetLink("BereTTRegisTTColocation_I_BournemouthTTAggregation", "BournemouthTTAggregation_I_BereTTRegisTTColocation").
++SetLink("Bournemouth_I_SouthamptonTTCore", "SouthamptonTTCore_I_Bournemouth").
++SetLink("Bournemouth_I_AldershotTTCore", "AldershotTTCore_I_Bournemouth").
++SetLink("BrightonTTAggregation_I_SouthamptonTTCore", "SouthamptonTTCore_I_BrightonTTAggregation").
++SetLink("BrightonTTAggregation_I_AldershotTTCore", "AldershotTTCore_I_BrightonTTAggregation").
++SetLink("BournemouthTTAggregation_I_SouthamptonTTCore", "SouthamptonTTCore_I_BournemouthTTAggregation").
++SetLink("BournemouthTTAggregation_I_AldershotTTCore", "AldershotTTCore_I_BournemouthTTAggregation").
++SetLink("SouthamptonTTCore_I_AldershotTTCore", "AldershotTTCore_I_SouthamptonTTCore").
++SetLink("SouthamptonTTCore_I_Solent", "Solent_I_SouthamptonTTCore").
++SetLink("SouthamptonTTCore_I_SouthamptonTTAggregation", "SouthamptonTTAggregation_I_SouthamptonTTCore").
++SetLink("SouthamptonTTCore_I_JanetTTSJ5", "JanetTTSJ5_I_SouthamptonTTCore").
++SetLink("SouthamptonTTCore_I_Brighton", "Brighton_I_SouthamptonTTCore").
++SetLink("Solent_I_AldershotTTCore", "AldershotTTCore_I_Solent").
++SetLink("SouthamptonTTAggregation_I_AldershotTTCore", "AldershotTTCore_I_SouthamptonTTAggregation").
++SetLink("AldershotTTCore_I_JanetTTSJ5", "JanetTTSJ5_I_AldershotTTCore").
++SetLink("AldershotTTCore_I_Brighton", "Brighton_I_AldershotTTCore").
+
+
++SetNetwork("BournemouthTTAggregation", "N_BournemouthTTAggregation").
++SetBGPAnnouncement("BournemouthTTAggregation", "N_BournemouthTTAggregation", "NBGP_BournemouthTTAggregation", "1;2;3", 3).
++SetNetwork("AldershotTTAggregation", "N_AldershotTTAggregation").
++SetBGPAnnouncement("AldershotTTAggregation", "N_AldershotTTAggregation", "NBGP_AldershotTTAggregation", "1;2;3", 3).
++SetNetwork("Southampton", "N_Southampton").
++SetBGPAnnouncement("Southampton", "N_Southampton", "NBGP_Southampton", "1;2;3", 3).
++SetNetwork("AldershotTTCore", "N_AldershotTTCore").
++SetBGPAnnouncement("AldershotTTCore", "N_AldershotTTCore", "NBGP_AldershotTTCore", "1;2;3", 3).
++SetNetwork("Portsmouth", "N_Portsmouth").
++SetBGPAnnouncement("Portsmouth", "N_Portsmouth", "NBGP_Portsmouth", "1;2;3", 3).
++SetNetwork("Wymering", "N_Wymering").
++SetBGPAnnouncement("Wymering", "N_Wymering", "NBGP_Wymering", "1;2;3", 3).
++SetNetwork("Bournemouth", "N_Bournemouth").
++SetBGPAnnouncement("Bournemouth", "N_Bournemouth", "NBGP_Bournemouth", "1;2;3", 3).
++SetNetwork("HamptonTTParkTTColocation", "N_HamptonTTParkTTColocation").
++SetBGPAnnouncement("HamptonTTParkTTColocation", "N_HamptonTTParkTTColocation", "NBGP_HamptonTTParkTTColocation", "1;2;3", 3).
++SetNetwork("Winchester", "N_Winchester").
++SetBGPAnnouncement("Winchester", "N_Winchester", "NBGP_Winchester", "1;2;3", 3).
++SetNetwork("Chichester", "N_Chichester").
++SetBGPAnnouncement("Chichester", "N_Chichester", "NBGP_Chichester", "1;2;3", 3).

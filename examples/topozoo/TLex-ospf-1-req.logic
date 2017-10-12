@@ -1,0 +1,13 @@
+
++Fwd("N_JGN2", "DRTTDataTTReservoir", "NetIronTTN140GTTAS23814", "ospf").
++Fwd("N_JGN2", "NetIronTTN140GTTAS23814", "JGN2", "ospf").
++Fwd("N_JGN2", "PacificTTNWTTGigapopTT_Seattle_TTWA_", "ONS_15454", "ospf").
++Fwd("N_JGN2", "ONS_15454", "BigIronTT15000TTAS23814", "ospf").
++Fwd("N_JGN2", "BigIronTT15000TTAS23814", "NetIronTTN140GTTAS23814", "ospf").
++Fwd("N_JGN2", "ASCC_TWTTAS9264", "BigIronTT15000TTAS23814", "ospf").
++Fwd("N_JGN2", "WIDETTAS2500", "NetIronTTN140GTTAS23814", "ospf").
++Fwd("N_JGN2", "FutureTTIEEAFTTAsianTTExtension", "ONS_15454", "ospf").
++Fwd("N_JGN2", "U_TokyoTTakihabara", "NetIronTTN140GTTAS23814", "ospf").
++Fwd("N_JGN2", "APAN_JPTTAS7660", "NetIronTTN140GTTAS23814", "ospf").
++Fwd("N_JGN2", "CatTT6500TTAS23814", "NetIronTTN140GTTAS23814", "ospf").
+

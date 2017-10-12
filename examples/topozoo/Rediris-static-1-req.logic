@@ -1,0 +1,20 @@
+
++Fwd("N_CastillaTTLaTTMancha", "PaisTTVasco", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "Nacional", "CastillaTTLaTTMancha", "static").
++Fwd("N_CastillaTTLaTTMancha", "Murcia", "Valencia", "static").
++Fwd("N_CastillaTTLaTTMancha", "Valencia", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "CanariasTT_tenerife_", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "Madrid", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "Andalucia", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "Galacia", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "Asturias", "Galacia", "static").
++Fwd("N_CastillaTTLaTTMancha", "Rioja", "Aragon", "static").
++Fwd("N_CastillaTTLaTTMancha", "Aragon", "Cataluna", "static").
++Fwd("N_CastillaTTLaTTMancha", "Cataluna", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "CastillaTTYTTLeon", "Nacional", "static").
++Fwd("N_CastillaTTLaTTMancha", "Cantabria", "PaisTTVasco", "static").
++Fwd("N_CastillaTTLaTTMancha", "CanariasTT_lasTTpalmas_", "Andalucia", "static").
++Fwd("N_CastillaTTLaTTMancha", "Baleares", "Cataluna", "static").
++Fwd("N_CastillaTTLaTTMancha", "Extremadura", "Andalucia", "static").
++Fwd("N_CastillaTTLaTTMancha", "Navarra", "Aragon", "static").
+

@@ -1,0 +1,201 @@
++SetNode("KosovskaTTMitrovica").
++SetAdminDist("KosovskaTTMitrovica", "static", 1).
++SetAdminDist("KosovskaTTMitrovica", "bgp", 2).
++SetAdminDist("KosovskaTTMitrovica", "ospf", 3).
++SetInterface("KosovskaTTMitrovica", "KosovskaTTMitrovica_I_Beograd").
+
++SetNode("BosniaTTandTTHerzegovina").
++SetAdminDist("BosniaTTandTTHerzegovina", "static", 1).
++SetAdminDist("BosniaTTandTTHerzegovina", "bgp", 2).
++SetAdminDist("BosniaTTandTTHerzegovina", "ospf", 3).
++SetInterface("BosniaTTandTTHerzegovina", "BosniaTTandTTHerzegovina_I_Sabac").
+
++SetNode("Valjevo").
++SetAdminDist("Valjevo", "static", 1).
++SetAdminDist("Valjevo", "bgp", 2).
++SetAdminDist("Valjevo", "ospf", 3).
++SetInterface("Valjevo", "Valjevo_I_Beograd").
++SetInterface("Valjevo", "Valjevo_I_Uzice").
+
++SetNode("NoviTTPazar").
++SetAdminDist("NoviTTPazar", "static", 1).
++SetAdminDist("NoviTTPazar", "bgp", 2).
++SetAdminDist("NoviTTPazar", "ospf", 3).
++SetInterface("NoviTTPazar", "NoviTTPazar_I_Raska").
+
++SetNode("Kragujevac").
++SetAdminDist("Kragujevac", "static", 1).
++SetAdminDist("Kragujevac", "bgp", 2).
++SetAdminDist("Kragujevac", "ospf", 3).
++SetInterface("Kragujevac", "Kragujevac_I_VelikaTTPlana").
++SetInterface("Kragujevac", "Kragujevac_I_Kraljevo").
+
++SetNode("Kraljevo").
++SetAdminDist("Kraljevo", "static", 1).
++SetAdminDist("Kraljevo", "bgp", 2).
++SetAdminDist("Kraljevo", "ospf", 3).
++SetInterface("Kraljevo", "Kraljevo_I_Raska").
++SetInterface("Kraljevo", "Kraljevo_I_Krustevac").
++SetInterface("Kraljevo", "Kraljevo_I_Kragujevac").
+
++SetNode("Zrenjanin").
++SetAdminDist("Zrenjanin", "static", 1).
++SetAdminDist("Zrenjanin", "bgp", 2).
++SetAdminDist("Zrenjanin", "ospf", 3).
++SetInterface("Zrenjanin", "Zrenjanin_I_NoviTTSad").
+
++SetNode("HUNGARNET").
++SetAdminDist("HUNGARNET", "static", 1).
++SetAdminDist("HUNGARNET", "bgp", 2).
++SetAdminDist("HUNGARNET", "ospf", 3).
++SetInterface("HUNGARNET", "HUNGARNET_I_Subotica").
+
++SetNode("VelikaTTPlana").
++SetAdminDist("VelikaTTPlana", "static", 1).
++SetAdminDist("VelikaTTPlana", "bgp", 2).
++SetAdminDist("VelikaTTPlana", "ospf", 3).
++SetInterface("VelikaTTPlana", "VelikaTTPlana_I_Beograd").
++SetInterface("VelikaTTPlana", "VelikaTTPlana_I_Kragujevac").
+
++SetNode("Nis").
++SetAdminDist("Nis", "static", 1).
++SetAdminDist("Nis", "bgp", 2).
++SetAdminDist("Nis", "ospf", 3).
++SetInterface("Nis", "Nis_I_Bor").
++SetInterface("Nis", "Nis_I_Leskovac").
++SetInterface("Nis", "Nis_I_Krustevac").
++SetInterface("Nis", "Nis_I_Pirot").
+
++SetNode("Sabac").
++SetAdminDist("Sabac", "static", 1).
++SetAdminDist("Sabac", "bgp", 2).
++SetAdminDist("Sabac", "ospf", 3).
++SetInterface("Sabac", "Sabac_I_BosniaTTandTTHerzegovina").
++SetInterface("Sabac", "Sabac_I_Beograd").
+
++SetNode("Pirot").
++SetAdminDist("Pirot", "static", 1).
++SetAdminDist("Pirot", "bgp", 2).
++SetAdminDist("Pirot", "ospf", 3).
++SetInterface("Pirot", "Pirot_I_Nis").
+
++SetNode("Raska").
++SetAdminDist("Raska", "static", 1).
++SetAdminDist("Raska", "bgp", 2).
++SetAdminDist("Raska", "ospf", 3).
++SetInterface("Raska", "Raska_I_NoviTTPazar").
++SetInterface("Raska", "Raska_I_Kraljevo").
+
++SetNode("Leskovac").
++SetAdminDist("Leskovac", "static", 1).
++SetAdminDist("Leskovac", "bgp", 2).
++SetAdminDist("Leskovac", "ospf", 3).
++SetInterface("Leskovac", "Leskovac_I_Nis").
++SetInterface("Leskovac", "Leskovac_I_Vranje").
+
++SetNode("Bor").
++SetAdminDist("Bor", "static", 1).
++SetAdminDist("Bor", "bgp", 2).
++SetAdminDist("Bor", "ospf", 3).
++SetInterface("Bor", "Bor_I_Nis").
+
++SetNode("Sombor").
++SetAdminDist("Sombor", "static", 1).
++SetAdminDist("Sombor", "bgp", 2).
++SetAdminDist("Sombor", "ospf", 3).
++SetInterface("Sombor", "Sombor_I_NoviTTSad").
+
++SetNode("Uzice").
++SetAdminDist("Uzice", "static", 1).
++SetAdminDist("Uzice", "bgp", 2).
++SetAdminDist("Uzice", "ospf", 3).
++SetInterface("Uzice", "Uzice_I_Valjevo").
++SetInterface("Uzice", "Uzice_I_Cacak").
+
++SetNode("NoviTTSad").
++SetAdminDist("NoviTTSad", "static", 1).
++SetAdminDist("NoviTTSad", "bgp", 2).
++SetAdminDist("NoviTTSad", "ospf", 3).
++SetInterface("NoviTTSad", "NoviTTSad_I_Zrenjanin").
++SetInterface("NoviTTSad", "NoviTTSad_I_Beograd").
++SetInterface("NoviTTSad", "NoviTTSad_I_Sombor").
++SetInterface("NoviTTSad", "NoviTTSad_I_Subotica").
+
++SetNode("TelekomTTSerbia").
++SetAdminDist("TelekomTTSerbia", "static", 1).
++SetAdminDist("TelekomTTSerbia", "bgp", 2).
++SetAdminDist("TelekomTTSerbia", "ospf", 3).
++SetInterface("TelekomTTSerbia", "TelekomTTSerbia_I_Beograd").
+
++SetNode("Subotica").
++SetAdminDist("Subotica", "static", 1).
++SetAdminDist("Subotica", "bgp", 2).
++SetAdminDist("Subotica", "ospf", 3).
++SetInterface("Subotica", "Subotica_I_HUNGARNET").
++SetInterface("Subotica", "Subotica_I_NoviTTSad").
+
++SetNode("Beograd").
++SetAdminDist("Beograd", "static", 1).
++SetAdminDist("Beograd", "bgp", 2).
++SetAdminDist("Beograd", "ospf", 3).
++SetInterface("Beograd", "Beograd_I_KosovskaTTMitrovica").
++SetInterface("Beograd", "Beograd_I_Valjevo").
++SetInterface("Beograd", "Beograd_I_VelikaTTPlana").
++SetInterface("Beograd", "Beograd_I_NoviTTSad").
++SetInterface("Beograd", "Beograd_I_TelekomTTSerbia").
++SetInterface("Beograd", "Beograd_I_Sabac").
++SetInterface("Beograd", "Beograd_I_Pancevo").
+
++SetNode("Krustevac").
++SetAdminDist("Krustevac", "static", 1).
++SetAdminDist("Krustevac", "bgp", 2).
++SetAdminDist("Krustevac", "ospf", 3).
++SetInterface("Krustevac", "Krustevac_I_Nis").
++SetInterface("Krustevac", "Krustevac_I_Kraljevo").
+
++SetNode("Vranje").
++SetAdminDist("Vranje", "static", 1).
++SetAdminDist("Vranje", "bgp", 2).
++SetAdminDist("Vranje", "ospf", 3).
++SetInterface("Vranje", "Vranje_I_Leskovac").
+
++SetNode("Cacak").
++SetAdminDist("Cacak", "static", 1).
++SetAdminDist("Cacak", "bgp", 2).
++SetAdminDist("Cacak", "ospf", 3).
++SetInterface("Cacak", "Cacak_I_Uzice").
+
++SetNode("Pancevo").
++SetAdminDist("Pancevo", "static", 1).
++SetAdminDist("Pancevo", "bgp", 2).
++SetAdminDist("Pancevo", "ospf", 3).
++SetInterface("Pancevo", "Pancevo_I_Beograd").
+
++SetLink("KosovskaTTMitrovica_I_Beograd", "Beograd_I_KosovskaTTMitrovica").
++SetLink("BosniaTTandTTHerzegovina_I_Sabac", "Sabac_I_BosniaTTandTTHerzegovina").
++SetLink("Valjevo_I_Beograd", "Beograd_I_Valjevo").
++SetLink("Valjevo_I_Uzice", "Uzice_I_Valjevo").
++SetLink("NoviTTPazar_I_Raska", "Raska_I_NoviTTPazar").
++SetLink("Kragujevac_I_VelikaTTPlana", "VelikaTTPlana_I_Kragujevac").
++SetLink("Kragujevac_I_Kraljevo", "Kraljevo_I_Kragujevac").
++SetLink("Kraljevo_I_Raska", "Raska_I_Kraljevo").
++SetLink("Kraljevo_I_Krustevac", "Krustevac_I_Kraljevo").
++SetLink("Zrenjanin_I_NoviTTSad", "NoviTTSad_I_Zrenjanin").
++SetLink("HUNGARNET_I_Subotica", "Subotica_I_HUNGARNET").
++SetLink("VelikaTTPlana_I_Beograd", "Beograd_I_VelikaTTPlana").
++SetLink("Nis_I_Bor", "Bor_I_Nis").
++SetLink("Nis_I_Leskovac", "Leskovac_I_Nis").
++SetLink("Nis_I_Krustevac", "Krustevac_I_Nis").
++SetLink("Nis_I_Pirot", "Pirot_I_Nis").
++SetLink("Sabac_I_Beograd", "Beograd_I_Sabac").
++SetLink("Leskovac_I_Vranje", "Vranje_I_Leskovac").
++SetLink("Sombor_I_NoviTTSad", "NoviTTSad_I_Sombor").
++SetLink("Uzice_I_Cacak", "Cacak_I_Uzice").
++SetLink("NoviTTSad_I_Beograd", "Beograd_I_NoviTTSad").
++SetLink("NoviTTSad_I_Subotica", "Subotica_I_NoviTTSad").
++SetLink("TelekomTTSerbia_I_Beograd", "Beograd_I_TelekomTTSerbia").
++SetLink("Beograd_I_Pancevo", "Pancevo_I_Beograd").
+
+
++SetNetwork("Cacak", "N_Cacak").
++SetBGPAnnouncement("Cacak", "N_Cacak", "NBGP_Cacak", "1;2;3", 3).

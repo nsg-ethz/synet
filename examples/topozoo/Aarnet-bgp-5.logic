@@ -1,0 +1,179 @@
++SetNode("AliceTTSprings").
++SetAdminDist("AliceTTSprings", "static", 1).
++SetAdminDist("AliceTTSprings", "bgp", 2).
++SetAdminDist("AliceTTSprings", "ospf", 3).
++SetInterface("AliceTTSprings", "AliceTTSprings_I_Darwin").
++SetInterface("AliceTTSprings", "AliceTTSprings_I_Adelaide2").
+
++SetNode("Brisbane2").
++SetAdminDist("Brisbane2", "static", 1).
++SetAdminDist("Brisbane2", "bgp", 2).
++SetAdminDist("Brisbane2", "ospf", 3).
++SetInterface("Brisbane2", "Brisbane2_I_Brisbane1").
++SetInterface("Brisbane2", "Brisbane2_I_Sydney2").
+
++SetNode("Perth1").
++SetAdminDist("Perth1", "static", 1).
++SetAdminDist("Perth1", "bgp", 2).
++SetAdminDist("Perth1", "ospf", 3).
++SetInterface("Perth1", "Perth1_I_Adelaide1").
++SetInterface("Perth1", "Perth1_I_Perth2").
+
++SetNode("Sydney2").
++SetAdminDist("Sydney2", "static", 1).
++SetAdminDist("Sydney2", "bgp", 2).
++SetAdminDist("Sydney2", "ospf", 3).
++SetInterface("Sydney2", "Sydney2_I_Brisbane2").
++SetInterface("Sydney2", "Sydney2_I_Melbourne2").
++SetInterface("Sydney2", "Sydney2_I_Sydney1").
++SetInterface("Sydney2", "Sydney2_I_Armidale").
+
++SetNode("Sydney1").
++SetAdminDist("Sydney1", "static", 1).
++SetAdminDist("Sydney1", "bgp", 2).
++SetAdminDist("Sydney1", "ospf", 3).
++SetInterface("Sydney1", "Sydney1_I_Brisbane1").
++SetInterface("Sydney1", "Sydney1_I_Canberra2").
++SetInterface("Sydney1", "Sydney1_I_Sydney2").
+
++SetNode("Perth2").
++SetAdminDist("Perth2", "static", 1).
++SetAdminDist("Perth2", "bgp", 2).
++SetAdminDist("Perth2", "ospf", 3).
++SetInterface("Perth2", "Perth2_I_Perth1").
++SetInterface("Perth2", "Perth2_I_Adelaide2").
+
++SetNode("Armidale").
++SetAdminDist("Armidale", "static", 1).
++SetAdminDist("Armidale", "bgp", 2).
++SetAdminDist("Armidale", "ospf", 3).
++SetInterface("Armidale", "Armidale_I_Sydney2").
+
++SetNode("Cairns").
++SetAdminDist("Cairns", "static", 1).
++SetAdminDist("Cairns", "bgp", 2).
++SetAdminDist("Cairns", "ospf", 3).
++SetInterface("Cairns", "Cairns_I_Townsville").
+
++SetNode("Hobart").
++SetAdminDist("Hobart", "static", 1).
++SetAdminDist("Hobart", "bgp", 2).
++SetAdminDist("Hobart", "ospf", 3).
++SetInterface("Hobart", "Hobart_I_Melbourne1").
++SetInterface("Hobart", "Hobart_I_Melbourne2").
+
++SetNode("Melbourne1").
++SetAdminDist("Melbourne1", "static", 1).
++SetAdminDist("Melbourne1", "bgp", 2).
++SetAdminDist("Melbourne1", "ospf", 3).
++SetInterface("Melbourne1", "Melbourne1_I_Hobart").
++SetInterface("Melbourne1", "Melbourne1_I_Canberra1").
++SetInterface("Melbourne1", "Melbourne1_I_Melbourne2").
++SetInterface("Melbourne1", "Melbourne1_I_Adelaide1").
+
++SetNode("Canberra2").
++SetAdminDist("Canberra2", "static", 1).
++SetAdminDist("Canberra2", "bgp", 2).
++SetAdminDist("Canberra2", "ospf", 3).
++SetInterface("Canberra2", "Canberra2_I_Canberra1").
++SetInterface("Canberra2", "Canberra2_I_Sydney1").
+
++SetNode("Canberra1").
++SetAdminDist("Canberra1", "static", 1).
++SetAdminDist("Canberra1", "bgp", 2).
++SetAdminDist("Canberra1", "ospf", 3).
++SetInterface("Canberra1", "Canberra1_I_Melbourne1").
++SetInterface("Canberra1", "Canberra1_I_Canberra2").
+
++SetNode("Melbourne2").
++SetAdminDist("Melbourne2", "static", 1).
++SetAdminDist("Melbourne2", "bgp", 2).
++SetAdminDist("Melbourne2", "ospf", 3).
++SetInterface("Melbourne2", "Melbourne2_I_Melbourne1").
++SetInterface("Melbourne2", "Melbourne2_I_Hobart").
++SetInterface("Melbourne2", "Melbourne2_I_Sydney2").
++SetInterface("Melbourne2", "Melbourne2_I_Adelaide2").
+
++SetNode("Rockhampton").
++SetAdminDist("Rockhampton", "static", 1).
++SetAdminDist("Rockhampton", "bgp", 2).
++SetAdminDist("Rockhampton", "ospf", 3).
++SetInterface("Rockhampton", "Rockhampton_I_Brisbane1").
++SetInterface("Rockhampton", "Rockhampton_I_Townsville").
+
++SetNode("Brisbane1").
++SetAdminDist("Brisbane1", "static", 1).
++SetAdminDist("Brisbane1", "bgp", 2).
++SetAdminDist("Brisbane1", "ospf", 3).
++SetInterface("Brisbane1", "Brisbane1_I_Brisbane2").
++SetInterface("Brisbane1", "Brisbane1_I_Rockhampton").
++SetInterface("Brisbane1", "Brisbane1_I_Sydney1").
+
++SetNode("Darwin").
++SetAdminDist("Darwin", "static", 1).
++SetAdminDist("Darwin", "bgp", 2).
++SetAdminDist("Darwin", "ospf", 3).
++SetInterface("Darwin", "Darwin_I_AliceTTSprings").
++SetInterface("Darwin", "Darwin_I_Adelaide1").
+
++SetNode("Adelaide1").
++SetAdminDist("Adelaide1", "static", 1).
++SetAdminDist("Adelaide1", "bgp", 2).
++SetAdminDist("Adelaide1", "ospf", 3).
++SetInterface("Adelaide1", "Adelaide1_I_Melbourne1").
++SetInterface("Adelaide1", "Adelaide1_I_Darwin").
++SetInterface("Adelaide1", "Adelaide1_I_Perth1").
++SetInterface("Adelaide1", "Adelaide1_I_Adelaide2").
+
++SetNode("Adelaide2").
++SetAdminDist("Adelaide2", "static", 1).
++SetAdminDist("Adelaide2", "bgp", 2).
++SetAdminDist("Adelaide2", "ospf", 3).
++SetInterface("Adelaide2", "Adelaide2_I_AliceTTSprings").
++SetInterface("Adelaide2", "Adelaide2_I_Melbourne2").
++SetInterface("Adelaide2", "Adelaide2_I_Adelaide1").
++SetInterface("Adelaide2", "Adelaide2_I_Perth2").
+
++SetNode("Townsville").
++SetAdminDist("Townsville", "static", 1).
++SetAdminDist("Townsville", "bgp", 2).
++SetAdminDist("Townsville", "ospf", 3).
++SetInterface("Townsville", "Townsville_I_Cairns").
++SetInterface("Townsville", "Townsville_I_Rockhampton").
+
++SetLink("AliceTTSprings_I_Darwin", "Darwin_I_AliceTTSprings").
++SetLink("AliceTTSprings_I_Adelaide2", "Adelaide2_I_AliceTTSprings").
++SetLink("Brisbane2_I_Brisbane1", "Brisbane1_I_Brisbane2").
++SetLink("Brisbane2_I_Sydney2", "Sydney2_I_Brisbane2").
++SetLink("Perth1_I_Adelaide1", "Adelaide1_I_Perth1").
++SetLink("Perth1_I_Perth2", "Perth2_I_Perth1").
++SetLink("Sydney2_I_Melbourne2", "Melbourne2_I_Sydney2").
++SetLink("Sydney2_I_Sydney1", "Sydney1_I_Sydney2").
++SetLink("Sydney2_I_Armidale", "Armidale_I_Sydney2").
++SetLink("Sydney1_I_Brisbane1", "Brisbane1_I_Sydney1").
++SetLink("Sydney1_I_Canberra2", "Canberra2_I_Sydney1").
++SetLink("Perth2_I_Adelaide2", "Adelaide2_I_Perth2").
++SetLink("Cairns_I_Townsville", "Townsville_I_Cairns").
++SetLink("Hobart_I_Melbourne1", "Melbourne1_I_Hobart").
++SetLink("Hobart_I_Melbourne2", "Melbourne2_I_Hobart").
++SetLink("Melbourne1_I_Canberra1", "Canberra1_I_Melbourne1").
++SetLink("Melbourne1_I_Melbourne2", "Melbourne2_I_Melbourne1").
++SetLink("Melbourne1_I_Adelaide1", "Adelaide1_I_Melbourne1").
++SetLink("Canberra2_I_Canberra1", "Canberra1_I_Canberra2").
++SetLink("Melbourne2_I_Adelaide2", "Adelaide2_I_Melbourne2").
++SetLink("Rockhampton_I_Brisbane1", "Brisbane1_I_Rockhampton").
++SetLink("Rockhampton_I_Townsville", "Townsville_I_Rockhampton").
++SetLink("Darwin_I_Adelaide1", "Adelaide1_I_Darwin").
++SetLink("Adelaide1_I_Adelaide2", "Adelaide2_I_Adelaide1").
+
+
++SetNetwork("Canberra2", "N_Canberra2").
++SetBGPAnnouncement("Canberra2", "N_Canberra2", "NBGP_Canberra2", "1;2;3", 3).
++SetNetwork("Rockhampton", "N_Rockhampton").
++SetBGPAnnouncement("Rockhampton", "N_Rockhampton", "NBGP_Rockhampton", "1;2;3", 3).
++SetNetwork("Adelaide2", "N_Adelaide2").
++SetBGPAnnouncement("Adelaide2", "N_Adelaide2", "NBGP_Adelaide2", "1;2;3", 3).
++SetNetwork("Armidale", "N_Armidale").
++SetBGPAnnouncement("Armidale", "N_Armidale", "NBGP_Armidale", "1;2;3", 3).
++SetNetwork("Sydney1", "N_Sydney1").
++SetBGPAnnouncement("Sydney1", "N_Sydney1", "NBGP_Sydney1", "1;2;3", 3).

@@ -1,0 +1,412 @@
++SetNode("LATTDC").
++SetAdminDist("LATTDC", "static", 1).
++SetAdminDist("LATTDC", "bgp", 2).
++SetAdminDist("LATTDC", "ospf", 3).
++SetInterface("LATTDC", "LATTDC_I_NewyorkTTDC").
++SetInterface("LATTDC", "LATTDC_I_PaloAltoTTDC").
++SetInterface("LATTDC", "LATTDC_I_Osaka").
++SetInterface("LATTDC", "LATTDC_I_LAIIX").
++SetInterface("LATTDC", "LATTDC_I_ShibuyaTTDC").
++SetInterface("LATTDC", "LATTDC_I_EquinixTTexchange").
++SetInterface("LATTDC", "LATTDC_I_AshburnTTDC").
++SetInterface("LATTDC", "LATTDC_I_SanTTJoseTTDC").
+
++SetNode("SendaiTTDC").
++SetAdminDist("SendaiTTDC", "static", 1).
++SetAdminDist("SendaiTTDC", "bgp", 2).
++SetAdminDist("SendaiTTDC", "ospf", 3).
++SetInterface("SendaiTTDC", "SendaiTTDC_I_ShibuyaTTDC").
++SetInterface("SendaiTTDC", "SendaiTTDC_I_Tokyo").
+
++SetNode("FukuokaTTDC").
++SetAdminDist("FukuokaTTDC", "static", 1).
++SetAdminDist("FukuokaTTDC", "bgp", 2).
++SetAdminDist("FukuokaTTDC", "ospf", 3).
++SetInterface("FukuokaTTDC", "FukuokaTTDC_I_Osaka").
++SetInterface("FukuokaTTDC", "FukuokaTTDC_I_ShinsaibashiTTDC").
++SetInterface("FukuokaTTDC", "FukuokaTTDC_I_Okinawa").
+
++SetNode("SaitamaTTDC").
++SetAdminDist("SaitamaTTDC", "static", 1).
++SetAdminDist("SaitamaTTDC", "bgp", 2).
++SetAdminDist("SaitamaTTDC", "ospf", 3).
++SetInterface("SaitamaTTDC", "SaitamaTTDC_I_ShibuyaTTDC").
++SetInterface("SaitamaTTDC", "SaitamaTTDC_I_Tokyo").
+
++SetNode("Chiba").
++SetAdminDist("Chiba", "static", 1).
++SetAdminDist("Chiba", "bgp", 2).
++SetAdminDist("Chiba", "ospf", 3).
++SetInterface("Chiba", "Chiba_I_ShibuyaTTDC").
++SetInterface("Chiba", "Chiba_I_Tokyo").
+
++SetNode("PAIX").
++SetAdminDist("PAIX", "static", 1).
++SetAdminDist("PAIX", "bgp", 2).
++SetAdminDist("PAIX", "ospf", 3).
++SetInterface("PAIX", "PAIX_I_NewyorkTTDC").
+
++SetNode("Okayama").
++SetAdminDist("Okayama", "static", 1).
++SetAdminDist("Okayama", "bgp", 2).
++SetAdminDist("Okayama", "ospf", 3).
++SetInterface("Okayama", "Okayama_I_Osaka").
++SetInterface("Okayama", "Okayama_I_ShinsaibashiTTDC").
+
++SetNode("SanTTJoseTTDC").
++SetAdminDist("SanTTJoseTTDC", "static", 1).
++SetAdminDist("SanTTJoseTTDC", "bgp", 2).
++SetAdminDist("SanTTJoseTTDC", "ospf", 3).
++SetInterface("SanTTJoseTTDC", "SanTTJoseTTDC_I_NewyorkTTDC").
++SetInterface("SanTTJoseTTDC", "SanTTJoseTTDC_I_LATTDC").
++SetInterface("SanTTJoseTTDC", "SanTTJoseTTDC_I_Tokyo").
++SetInterface("SanTTJoseTTDC", "SanTTJoseTTDC_I_PaloAltoTTDC").
++SetInterface("SanTTJoseTTDC", "SanTTJoseTTDC_I_EquinixTTexchange").
++SetInterface("SanTTJoseTTDC", "SanTTJoseTTDC_I_AshburnTTDC").
+
++SetNode("NerimaTTDC").
++SetAdminDist("NerimaTTDC", "static", 1).
++SetAdminDist("NerimaTTDC", "bgp", 2).
++SetAdminDist("NerimaTTDC", "ospf", 3).
++SetInterface("NerimaTTDC", "NerimaTTDC_I_ShibuyaTTDC").
+
++SetNode("SapporaTTDC").
++SetAdminDist("SapporaTTDC", "static", 1).
++SetAdminDist("SapporaTTDC", "bgp", 2).
++SetAdminDist("SapporaTTDC", "ospf", 3).
++SetInterface("SapporaTTDC", "SapporaTTDC_I_ShibuyaTTDC").
++SetInterface("SapporaTTDC", "SapporaTTDC_I_Tokyo").
+
++SetNode("PaloAltoTTDC").
++SetAdminDist("PaloAltoTTDC", "static", 1).
++SetAdminDist("PaloAltoTTDC", "bgp", 2).
++SetAdminDist("PaloAltoTTDC", "ospf", 3).
++SetInterface("PaloAltoTTDC", "PaloAltoTTDC_I_LATTDC").
++SetInterface("PaloAltoTTDC", "PaloAltoTTDC_I_SanTTJoseTTDC").
+
++SetNode("Tokyo").
++SetAdminDist("Tokyo", "static", 1).
++SetAdminDist("Tokyo", "bgp", 2).
++SetAdminDist("Tokyo", "ospf", 3).
++SetInterface("Tokyo", "Tokyo_I_dix_ie").
++SetInterface("Tokyo", "Tokyo_I_NagoyaTTDC").
++SetInterface("Tokyo", "Tokyo_I_JPNAPTTTokyoTT1").
++SetInterface("Tokyo", "Tokyo_I_SapporaTTDC").
++SetInterface("Tokyo", "Tokyo_I_SendaiTTDC").
++SetInterface("Tokyo", "Tokyo_I_Osaka").
++SetInterface("Tokyo", "Tokyo_I_ShinsaibashiTTDC").
++SetInterface("Tokyo", "Tokyo_I_Toyama").
++SetInterface("Tokyo", "Tokyo_I_SaitamaTTDC").
++SetInterface("Tokyo", "Tokyo_I_Chiba").
++SetInterface("Tokyo", "Tokyo_I_YokohamaTTDC2").
++SetInterface("Tokyo", "Tokyo_I_YokohamaTTDC1").
++SetInterface("Tokyo", "Tokyo_I_ShibuyaTTDC").
++SetInterface("Tokyo", "Tokyo_I_TokyoTTDC1").
++SetInterface("Tokyo", "Tokyo_I_TokyoTTDC2").
++SetInterface("Tokyo", "Tokyo_I_Hamamatsu").
++SetInterface("Tokyo", "Tokyo_I_IkebukuroTTDC").
++SetInterface("Tokyo", "Tokyo_I_SanTTJoseTTDC").
+
++SetNode("Okinawa").
++SetAdminDist("Okinawa", "static", 1).
++SetAdminDist("Okinawa", "bgp", 2).
++SetAdminDist("Okinawa", "ospf", 3).
++SetInterface("Okinawa", "Okinawa_I_FukuokaTTDC").
+
++SetNode("KyotoTTDC").
++SetAdminDist("KyotoTTDC", "static", 1).
++SetAdminDist("KyotoTTDC", "bgp", 2).
++SetAdminDist("KyotoTTDC", "ospf", 3).
++SetInterface("KyotoTTDC", "KyotoTTDC_I_Osaka").
++SetInterface("KyotoTTDC", "KyotoTTDC_I_ShinsaibashiTTDC").
+
++SetNode("ShibuyaTTDC").
++SetAdminDist("ShibuyaTTDC", "static", 1).
++SetAdminDist("ShibuyaTTDC", "bgp", 2).
++SetAdminDist("ShibuyaTTDC", "ospf", 3).
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_LATTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_NagoyaTTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_Tokyo").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_SapporaTTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_SendaiTTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_Osaka").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_ShinsaibashiTTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_SaitamaTTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_Chiba").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_YokohamaTTDC2").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_YokohamaTTDC1").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_TokyoTTDC1").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_TokyoTTDC2").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_IkebukuroTTDC").
++SetInterface("ShibuyaTTDC", "ShibuyaTTDC_I_NerimaTTDC").
+
++SetNode("China").
++SetAdminDist("China", "static", 1).
++SetAdminDist("China", "bgp", 2).
++SetAdminDist("China", "ospf", 3).
++SetInterface("China", "China_I_Osaka").
+
++SetNode("JPNAPTTOsaka").
++SetAdminDist("JPNAPTTOsaka", "static", 1).
++SetAdminDist("JPNAPTTOsaka", "bgp", 2).
++SetAdminDist("JPNAPTTOsaka", "ospf", 3).
++SetInterface("JPNAPTTOsaka", "JPNAPTTOsaka_I_Osaka").
+
++SetNode("AshburnTTDC").
++SetAdminDist("AshburnTTDC", "static", 1).
++SetAdminDist("AshburnTTDC", "bgp", 2).
++SetAdminDist("AshburnTTDC", "ospf", 3).
++SetInterface("AshburnTTDC", "AshburnTTDC_I_EquinixTTexchange").
++SetInterface("AshburnTTDC", "AshburnTTDC_I_NewyorkTTDC").
++SetInterface("AshburnTTDC", "AshburnTTDC_I_LATTDC").
++SetInterface("AshburnTTDC", "AshburnTTDC_I_SanTTJoseTTDC").
+
++SetNode("Kanazawa").
++SetAdminDist("Kanazawa", "static", 1).
++SetAdminDist("Kanazawa", "bgp", 2).
++SetAdminDist("Kanazawa", "ospf", 3).
++SetInterface("Kanazawa", "Kanazawa_I_ShinsaibashiTTDC").
++SetInterface("Kanazawa", "Kanazawa_I_Toyama").
+
++SetNode("NewyorkTTDC").
++SetAdminDist("NewyorkTTDC", "static", 1).
++SetAdminDist("NewyorkTTDC", "bgp", 2).
++SetAdminDist("NewyorkTTDC", "ospf", 3).
++SetInterface("NewyorkTTDC", "NewyorkTTDC_I_PAIX").
++SetInterface("NewyorkTTDC", "NewyorkTTDC_I_AshburnTTDC").
++SetInterface("NewyorkTTDC", "NewyorkTTDC_I_LATTDC").
++SetInterface("NewyorkTTDC", "NewyorkTTDC_I_SanTTJoseTTDC").
++SetInterface("NewyorkTTDC", "NewyorkTTDC_I_NYIIX").
+
++SetNode("JPNAPTTTokyoTT2").
++SetAdminDist("JPNAPTTTokyoTT2", "static", 1).
++SetAdminDist("JPNAPTTTokyoTT2", "bgp", 2).
++SetAdminDist("JPNAPTTTokyoTT2", "ospf", 3).
++SetInterface("JPNAPTTTokyoTT2", "JPNAPTTTokyoTT2_I_IkebukuroTTDC").
+
++SetNode("JPNAPTTTokyoTT1").
++SetAdminDist("JPNAPTTTokyoTT1", "static", 1).
++SetAdminDist("JPNAPTTTokyoTT1", "bgp", 2).
++SetAdminDist("JPNAPTTTokyoTT1", "ospf", 3).
++SetInterface("JPNAPTTTokyoTT1", "JPNAPTTTokyoTT1_I_Tokyo").
+
++SetNode("Toyama").
++SetAdminDist("Toyama", "static", 1).
++SetAdminDist("Toyama", "bgp", 2).
++SetAdminDist("Toyama", "ospf", 3).
++SetInterface("Toyama", "Toyama_I_Kanazawa").
++SetInterface("Toyama", "Toyama_I_Tokyo").
+
++SetNode("Hamamatsu").
++SetAdminDist("Hamamatsu", "static", 1).
++SetAdminDist("Hamamatsu", "bgp", 2).
++SetAdminDist("Hamamatsu", "ospf", 3).
++SetInterface("Hamamatsu", "Hamamatsu_I_NagoyaTTDC").
++SetInterface("Hamamatsu", "Hamamatsu_I_Tokyo").
+
++SetNode("EquinixTTexchange").
++SetAdminDist("EquinixTTexchange", "static", 1).
++SetAdminDist("EquinixTTexchange", "bgp", 2).
++SetAdminDist("EquinixTTexchange", "ospf", 3).
++SetInterface("EquinixTTexchange", "EquinixTTexchange_I_AshburnTTDC").
++SetInterface("EquinixTTexchange", "EquinixTTexchange_I_LATTDC").
++SetInterface("EquinixTTexchange", "EquinixTTexchange_I_SanTTJoseTTDC").
+
++SetNode("TokyoTTDC1").
++SetAdminDist("TokyoTTDC1", "static", 1).
++SetAdminDist("TokyoTTDC1", "bgp", 2).
++SetAdminDist("TokyoTTDC1", "ospf", 3).
++SetInterface("TokyoTTDC1", "TokyoTTDC1_I_ShibuyaTTDC").
++SetInterface("TokyoTTDC1", "TokyoTTDC1_I_Tokyo").
+
++SetNode("TokyoTTDC2").
++SetAdminDist("TokyoTTDC2", "static", 1).
++SetAdminDist("TokyoTTDC2", "bgp", 2).
++SetAdminDist("TokyoTTDC2", "ospf", 3).
++SetInterface("TokyoTTDC2", "TokyoTTDC2_I_ShibuyaTTDC").
++SetInterface("TokyoTTDC2", "TokyoTTDC2_I_Tokyo").
+
++SetNode("Hiroshima").
++SetAdminDist("Hiroshima", "static", 1).
++SetAdminDist("Hiroshima", "bgp", 2).
++SetAdminDist("Hiroshima", "ospf", 3).
++SetInterface("Hiroshima", "Hiroshima_I_Osaka").
++SetInterface("Hiroshima", "Hiroshima_I_ShinsaibashiTTDC").
+
++SetNode("NagoyaTTDC").
++SetAdminDist("NagoyaTTDC", "static", 1).
++SetAdminDist("NagoyaTTDC", "bgp", 2).
++SetAdminDist("NagoyaTTDC", "ospf", 3).
++SetInterface("NagoyaTTDC", "NagoyaTTDC_I_Hamamatsu").
++SetInterface("NagoyaTTDC", "NagoyaTTDC_I_ShibuyaTTDC").
++SetInterface("NagoyaTTDC", "NagoyaTTDC_I_Osaka").
++SetInterface("NagoyaTTDC", "NagoyaTTDC_I_Tokyo").
+
++SetNode("IkebukuroTTDC").
++SetAdminDist("IkebukuroTTDC", "static", 1).
++SetAdminDist("IkebukuroTTDC", "bgp", 2).
++SetAdminDist("IkebukuroTTDC", "ospf", 3).
++SetInterface("IkebukuroTTDC", "IkebukuroTTDC_I_Osaka").
++SetInterface("IkebukuroTTDC", "IkebukuroTTDC_I_ShibuyaTTDC").
++SetInterface("IkebukuroTTDC", "IkebukuroTTDC_I_JPNAPTTTokyoTT2").
++SetInterface("IkebukuroTTDC", "IkebukuroTTDC_I_Tokyo").
+
++SetNode("Osaka").
++SetAdminDist("Osaka", "static", 1).
++SetAdminDist("Osaka", "bgp", 2).
++SetAdminDist("Osaka", "ospf", 3).
++SetInterface("Osaka", "Osaka_I_LATTDC").
++SetInterface("Osaka", "Osaka_I_NagoyaTTDC").
++SetInterface("Osaka", "Osaka_I_Tokyo").
++SetInterface("Osaka", "Osaka_I_IkebukuroTTDC").
++SetInterface("Osaka", "Osaka_I_FukuokaTTDC").
++SetInterface("Osaka", "Osaka_I_ShinsaibashiTTDC").
++SetInterface("Osaka", "Osaka_I_Okayama").
++SetInterface("Osaka", "Osaka_I_KyotoTTDC").
++SetInterface("Osaka", "Osaka_I_ShibuyaTTDC").
++SetInterface("Osaka", "Osaka_I_China").
++SetInterface("Osaka", "Osaka_I_JPNAPTTOsaka").
++SetInterface("Osaka", "Osaka_I_Hiroshima").
+
++SetNode("ShinsaibashiTTDC").
++SetAdminDist("ShinsaibashiTTDC", "static", 1).
++SetAdminDist("ShinsaibashiTTDC", "bgp", 2).
++SetAdminDist("ShinsaibashiTTDC", "ospf", 3).
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Tokyo").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_FukuokaTTDC").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Okayama").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_KyotoTTDC").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_ShibuyaTTDC").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Osaka").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Kanazawa").
++SetInterface("ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Hiroshima").
+
++SetNode("LAIIX").
++SetAdminDist("LAIIX", "static", 1).
++SetAdminDist("LAIIX", "bgp", 2).
++SetAdminDist("LAIIX", "ospf", 3).
++SetInterface("LAIIX", "LAIIX_I_LATTDC").
+
++SetNode("dix_ie").
++SetAdminDist("dix_ie", "static", 1).
++SetAdminDist("dix_ie", "bgp", 2).
++SetAdminDist("dix_ie", "ospf", 3).
++SetInterface("dix_ie", "dix_ie_I_Tokyo").
+
++SetNode("YokohamaTTDC2").
++SetAdminDist("YokohamaTTDC2", "static", 1).
++SetAdminDist("YokohamaTTDC2", "bgp", 2).
++SetAdminDist("YokohamaTTDC2", "ospf", 3).
++SetInterface("YokohamaTTDC2", "YokohamaTTDC2_I_ShibuyaTTDC").
++SetInterface("YokohamaTTDC2", "YokohamaTTDC2_I_Tokyo").
+
++SetNode("YokohamaTTDC1").
++SetAdminDist("YokohamaTTDC1", "static", 1).
++SetAdminDist("YokohamaTTDC1", "bgp", 2).
++SetAdminDist("YokohamaTTDC1", "ospf", 3).
++SetInterface("YokohamaTTDC1", "YokohamaTTDC1_I_ShibuyaTTDC").
++SetInterface("YokohamaTTDC1", "YokohamaTTDC1_I_Tokyo").
+
++SetNode("NYIIX").
++SetAdminDist("NYIIX", "static", 1).
++SetAdminDist("NYIIX", "bgp", 2).
++SetAdminDist("NYIIX", "ospf", 3).
++SetInterface("NYIIX", "NYIIX_I_NewyorkTTDC").
+
++SetLink("LATTDC_I_NewyorkTTDC", "NewyorkTTDC_I_LATTDC").
++SetLink("LATTDC_I_PaloAltoTTDC", "PaloAltoTTDC_I_LATTDC").
++SetLink("LATTDC_I_Osaka", "Osaka_I_LATTDC").
++SetLink("LATTDC_I_LAIIX", "LAIIX_I_LATTDC").
++SetLink("LATTDC_I_ShibuyaTTDC", "ShibuyaTTDC_I_LATTDC").
++SetLink("LATTDC_I_EquinixTTexchange", "EquinixTTexchange_I_LATTDC").
++SetLink("LATTDC_I_AshburnTTDC", "AshburnTTDC_I_LATTDC").
++SetLink("LATTDC_I_SanTTJoseTTDC", "SanTTJoseTTDC_I_LATTDC").
++SetLink("SendaiTTDC_I_ShibuyaTTDC", "ShibuyaTTDC_I_SendaiTTDC").
++SetLink("SendaiTTDC_I_Tokyo", "Tokyo_I_SendaiTTDC").
++SetLink("FukuokaTTDC_I_Osaka", "Osaka_I_FukuokaTTDC").
++SetLink("FukuokaTTDC_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_FukuokaTTDC").
++SetLink("FukuokaTTDC_I_Okinawa", "Okinawa_I_FukuokaTTDC").
++SetLink("SaitamaTTDC_I_ShibuyaTTDC", "ShibuyaTTDC_I_SaitamaTTDC").
++SetLink("SaitamaTTDC_I_Tokyo", "Tokyo_I_SaitamaTTDC").
++SetLink("Chiba_I_ShibuyaTTDC", "ShibuyaTTDC_I_Chiba").
++SetLink("Chiba_I_Tokyo", "Tokyo_I_Chiba").
++SetLink("PAIX_I_NewyorkTTDC", "NewyorkTTDC_I_PAIX").
++SetLink("Okayama_I_Osaka", "Osaka_I_Okayama").
++SetLink("Okayama_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Okayama").
++SetLink("SanTTJoseTTDC_I_NewyorkTTDC", "NewyorkTTDC_I_SanTTJoseTTDC").
++SetLink("SanTTJoseTTDC_I_Tokyo", "Tokyo_I_SanTTJoseTTDC").
++SetLink("SanTTJoseTTDC_I_PaloAltoTTDC", "PaloAltoTTDC_I_SanTTJoseTTDC").
++SetLink("SanTTJoseTTDC_I_EquinixTTexchange", "EquinixTTexchange_I_SanTTJoseTTDC").
++SetLink("SanTTJoseTTDC_I_AshburnTTDC", "AshburnTTDC_I_SanTTJoseTTDC").
++SetLink("NerimaTTDC_I_ShibuyaTTDC", "ShibuyaTTDC_I_NerimaTTDC").
++SetLink("SapporaTTDC_I_ShibuyaTTDC", "ShibuyaTTDC_I_SapporaTTDC").
++SetLink("SapporaTTDC_I_Tokyo", "Tokyo_I_SapporaTTDC").
++SetLink("Tokyo_I_dix_ie", "dix_ie_I_Tokyo").
++SetLink("Tokyo_I_NagoyaTTDC", "NagoyaTTDC_I_Tokyo").
++SetLink("Tokyo_I_JPNAPTTTokyoTT1", "JPNAPTTTokyoTT1_I_Tokyo").
++SetLink("Tokyo_I_Osaka", "Osaka_I_Tokyo").
++SetLink("Tokyo_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Tokyo").
++SetLink("Tokyo_I_Toyama", "Toyama_I_Tokyo").
++SetLink("Tokyo_I_YokohamaTTDC2", "YokohamaTTDC2_I_Tokyo").
++SetLink("Tokyo_I_YokohamaTTDC1", "YokohamaTTDC1_I_Tokyo").
++SetLink("Tokyo_I_ShibuyaTTDC", "ShibuyaTTDC_I_Tokyo").
++SetLink("Tokyo_I_TokyoTTDC1", "TokyoTTDC1_I_Tokyo").
++SetLink("Tokyo_I_TokyoTTDC2", "TokyoTTDC2_I_Tokyo").
++SetLink("Tokyo_I_Hamamatsu", "Hamamatsu_I_Tokyo").
++SetLink("Tokyo_I_IkebukuroTTDC", "IkebukuroTTDC_I_Tokyo").
++SetLink("KyotoTTDC_I_Osaka", "Osaka_I_KyotoTTDC").
++SetLink("KyotoTTDC_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_KyotoTTDC").
++SetLink("ShibuyaTTDC_I_NagoyaTTDC", "NagoyaTTDC_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_Osaka", "Osaka_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_YokohamaTTDC2", "YokohamaTTDC2_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_YokohamaTTDC1", "YokohamaTTDC1_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_TokyoTTDC1", "TokyoTTDC1_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_TokyoTTDC2", "TokyoTTDC2_I_ShibuyaTTDC").
++SetLink("ShibuyaTTDC_I_IkebukuroTTDC", "IkebukuroTTDC_I_ShibuyaTTDC").
++SetLink("China_I_Osaka", "Osaka_I_China").
++SetLink("JPNAPTTOsaka_I_Osaka", "Osaka_I_JPNAPTTOsaka").
++SetLink("AshburnTTDC_I_EquinixTTexchange", "EquinixTTexchange_I_AshburnTTDC").
++SetLink("AshburnTTDC_I_NewyorkTTDC", "NewyorkTTDC_I_AshburnTTDC").
++SetLink("Kanazawa_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Kanazawa").
++SetLink("Kanazawa_I_Toyama", "Toyama_I_Kanazawa").
++SetLink("NewyorkTTDC_I_NYIIX", "NYIIX_I_NewyorkTTDC").
++SetLink("JPNAPTTTokyoTT2_I_IkebukuroTTDC", "IkebukuroTTDC_I_JPNAPTTTokyoTT2").
++SetLink("Hamamatsu_I_NagoyaTTDC", "NagoyaTTDC_I_Hamamatsu").
++SetLink("Hiroshima_I_Osaka", "Osaka_I_Hiroshima").
++SetLink("Hiroshima_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Hiroshima").
++SetLink("NagoyaTTDC_I_Osaka", "Osaka_I_NagoyaTTDC").
++SetLink("IkebukuroTTDC_I_Osaka", "Osaka_I_IkebukuroTTDC").
++SetLink("Osaka_I_ShinsaibashiTTDC", "ShinsaibashiTTDC_I_Osaka").
+
+
++SetNetwork("dix_ie", "N_dix_ie").
++SetBGPAnnouncement("dix_ie", "N_dix_ie", "NBGP_dix_ie", "1;2;3", 3).
++SetNetwork("YokohamaTTDC2", "N_YokohamaTTDC2").
++SetBGPAnnouncement("YokohamaTTDC2", "N_YokohamaTTDC2", "NBGP_YokohamaTTDC2", "1;2;3", 3).
++SetNetwork("LAIIX", "N_LAIIX").
++SetBGPAnnouncement("LAIIX", "N_LAIIX", "NBGP_LAIIX", "1;2;3", 3).
++SetNetwork("Hiroshima", "N_Hiroshima").
++SetBGPAnnouncement("Hiroshima", "N_Hiroshima", "NBGP_Hiroshima", "1;2;3", 3).
++SetNetwork("SendaiTTDC", "N_SendaiTTDC").
++SetBGPAnnouncement("SendaiTTDC", "N_SendaiTTDC", "NBGP_SendaiTTDC", "1;2;3", 3).
++SetNetwork("Kanazawa", "N_Kanazawa").
++SetBGPAnnouncement("Kanazawa", "N_Kanazawa", "NBGP_Kanazawa", "1;2;3", 3).
++SetNetwork("NagoyaTTDC", "N_NagoyaTTDC").
++SetBGPAnnouncement("NagoyaTTDC", "N_NagoyaTTDC", "NBGP_NagoyaTTDC", "1;2;3", 3).
++SetNetwork("Toyama", "N_Toyama").
++SetBGPAnnouncement("Toyama", "N_Toyama", "NBGP_Toyama", "1;2;3", 3).
++SetNetwork("China", "N_China").
++SetBGPAnnouncement("China", "N_China", "NBGP_China", "1;2;3", 3).
++SetNetwork("Hamamatsu", "N_Hamamatsu").
++SetBGPAnnouncement("Hamamatsu", "N_Hamamatsu", "NBGP_Hamamatsu", "1;2;3", 3).
++SetNetwork("NerimaTTDC", "N_NerimaTTDC").
++SetBGPAnnouncement("NerimaTTDC", "N_NerimaTTDC", "NBGP_NerimaTTDC", "1;2;3", 3).
++SetNetwork("YokohamaTTDC1", "N_YokohamaTTDC1").
++SetBGPAnnouncement("YokohamaTTDC1", "N_YokohamaTTDC1", "NBGP_YokohamaTTDC1", "1;2;3", 3).
++SetNetwork("SapporaTTDC", "N_SapporaTTDC").
++SetBGPAnnouncement("SapporaTTDC", "N_SapporaTTDC", "NBGP_SapporaTTDC", "1;2;3", 3).
++SetNetwork("Okayama", "N_Okayama").
++SetBGPAnnouncement("Okayama", "N_Okayama", "NBGP_Okayama", "1;2;3", 3).
++SetNetwork("PAIX", "N_PAIX").
++SetBGPAnnouncement("PAIX", "N_PAIX", "NBGP_PAIX", "1;2;3", 3).

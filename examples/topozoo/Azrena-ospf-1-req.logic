@@ -1,0 +1,23 @@
+
++Fwd("N_ForeignTTLanguageTTUni_", "DistributionTTswitch", "NodeID0", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "NodeID0", "WirelessTTrouter", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "WirelessTTrouter", "ForeignTTLanguageTTUni_", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "Cybenetics", "InformationTTTech_", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "InformationTTTech_", "DistributionTTswitch", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "VSATTTStation", "NOC", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "NOC", "NodeID0", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "WirelessTTserver", "NodeID0", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "KhazarTTUni", "WirelessTTrouter", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "Geology", "DistributionTTswitch", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "TechnicalTTUni", "WirelessTTserver", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "LocalTTISP", "NOC", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "RENASCENE", "WirelessTTserver", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "BakuTTUni", "InformationTTTech_", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "SilkTTHighway", "VSATTTStation", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "DialupTTserver", "NodeID0", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "Architecture_BuildingTTUni", "WirelessTTserver", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "EconomicalTTUni", "NOC", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "Physics", "DistributionTTswitch", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "ShamsaTTObs_", "InformationTTTech_", "ospf").
++Fwd("N_ForeignTTLanguageTTUni_", "ANASTTusers", "DialupTTserver", "ospf").
+

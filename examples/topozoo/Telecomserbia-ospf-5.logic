@@ -1,0 +1,55 @@
++SetNode("Krusevac").
++SetAdminDist("Krusevac", "static", 1).
++SetAdminDist("Krusevac", "bgp", 2).
++SetAdminDist("Krusevac", "ospf", 3).
++SetInterface("Krusevac", "Krusevac_I_Nis").
++SetInterface("Krusevac", "Krusevac_I_Podgorica").
+
++SetNode("Belgrade").
++SetAdminDist("Belgrade", "static", 1).
++SetAdminDist("Belgrade", "bgp", 2).
++SetAdminDist("Belgrade", "ospf", 3).
++SetInterface("Belgrade", "Belgrade_I_Kragujevac").
++SetInterface("Belgrade", "Belgrade_I_NoviTTSad").
+
++SetNode("Podgorica").
++SetAdminDist("Podgorica", "static", 1).
++SetAdminDist("Podgorica", "bgp", 2).
++SetAdminDist("Podgorica", "ospf", 3).
++SetInterface("Podgorica", "Podgorica_I_Krusevac").
++SetInterface("Podgorica", "Podgorica_I_NoviTTSad").
+
++SetNode("NoviTTSad").
++SetAdminDist("NoviTTSad", "static", 1).
++SetAdminDist("NoviTTSad", "bgp", 2).
++SetAdminDist("NoviTTSad", "ospf", 3).
++SetInterface("NoviTTSad", "NoviTTSad_I_Podgorica").
++SetInterface("NoviTTSad", "NoviTTSad_I_Belgrade").
+
++SetNode("Nis").
++SetAdminDist("Nis", "static", 1).
++SetAdminDist("Nis", "bgp", 2).
++SetAdminDist("Nis", "ospf", 3).
++SetInterface("Nis", "Nis_I_Krusevac").
++SetInterface("Nis", "Nis_I_Kragujevac").
+
++SetNode("Kragujevac").
++SetAdminDist("Kragujevac", "static", 1).
++SetAdminDist("Kragujevac", "bgp", 2).
++SetAdminDist("Kragujevac", "ospf", 3).
++SetInterface("Kragujevac", "Kragujevac_I_Nis").
++SetInterface("Kragujevac", "Kragujevac_I_Belgrade").
+
++SetLink("Krusevac_I_Nis", "Nis_I_Krusevac").
++SetLink("Krusevac_I_Podgorica", "Podgorica_I_Krusevac").
++SetLink("Belgrade_I_Kragujevac", "Kragujevac_I_Belgrade").
++SetLink("Belgrade_I_NoviTTSad", "NoviTTSad_I_Belgrade").
++SetLink("Podgorica_I_NoviTTSad", "NoviTTSad_I_Podgorica").
++SetLink("Nis_I_Kragujevac", "Kragujevac_I_Nis").
+
+
++SetNetwork("Podgorica", "N_Podgorica").
++SetNetwork("Krusevac", "N_Krusevac").
++SetNetwork("NoviTTSad", "N_NoviTTSad").
++SetNetwork("Kragujevac", "N_Kragujevac").
++SetNetwork("Belgrade", "N_Belgrade").

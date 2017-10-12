@@ -1,0 +1,20 @@
+
++Fwd("N_CampusTTGeesseknaeppchen", "RESTENA", "Luxembourg", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Luxembourg", "CampusTTGeesseknaeppchen", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Rollingergrund", "CampusTTGeesseknaeppchen", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Bettembourg", "Esch_sur_Alzette", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Esch_sur_Alzette", "CampusTTGeesseknaeppchen", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "UNI_iu", "CampusTTGeesseknaeppchen", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "BCE", "Limpertsberg", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Limpertsberg", "UNI_iu", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "GEANTTTParisTT_FR_", "BCE", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "ADSLTT_viaTTEPT_", "RESTENA", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "France", "Esch_sur_Alzette", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Walferdange", "RESTENA", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "ADSLTT_viaTTTango_", "BCE", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "CCRN", "RESTENA", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "InternetTTviaTTBruxellesTT_BE_", "BCE", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "GEANTTTFrankfurtTT_DE_", "BCE", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Diekirch", "RESTENA", "static").
++Fwd("N_CampusTTGeesseknaeppchen", "Ettelbruck", "Diekirch", "static").
+

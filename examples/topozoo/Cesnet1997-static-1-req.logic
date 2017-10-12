@@ -1,0 +1,14 @@
+
++Fwd("N_Pardubice", "Ostrava", "Olomouc", "static").
++Fwd("N_Pardubice", "Olomouc", "NodeID0", "static").
++Fwd("N_Pardubice", "NodeID0", "NodeID1", "static").
++Fwd("N_Pardubice", "NodeID1", "Praha", "static").
++Fwd("N_Pardubice", "Praha", "NodeID2", "static").
++Fwd("N_Pardubice", "NodeID2", "Pardubice", "static").
++Fwd("N_Pardubice", "Plzen", "Praha", "static").
++Fwd("N_Pardubice", "Liberec", "Praha", "static").
++Fwd("N_Pardubice", "TEN_34", "Praha", "static").
++Fwd("N_Pardubice", "HradecTTKralove", "NodeID2", "static").
++Fwd("N_Pardubice", "CeskeTTBudejovice", "NodeID1", "static").
++Fwd("N_Pardubice", "Brno", "NodeID0", "static").
+

@@ -1,0 +1,68 @@
++SetNode("NewTTYork").
++SetAdminDist("NewTTYork", "static", 1).
++SetAdminDist("NewTTYork", "bgp", 2).
++SetAdminDist("NewTTYork", "ospf", 3).
++SetInterface("NewTTYork", "NewTTYork_I_Amsterdam").
+
++SetNode("Paris").
++SetAdminDist("Paris", "static", 1).
++SetAdminDist("Paris", "bgp", 2).
++SetAdminDist("Paris", "ospf", 3).
++SetInterface("Paris", "Paris_I_Amsterdam").
+
++SetNode("Moscow").
++SetAdminDist("Moscow", "static", 1).
++SetAdminDist("Moscow", "bgp", 2).
++SetAdminDist("Moscow", "ospf", 3).
++SetInterface("Moscow", "Moscow_I_StTTPetersburg").
+
++SetNode("StTTPetersburg").
++SetAdminDist("StTTPetersburg", "static", 1).
++SetAdminDist("StTTPetersburg", "bgp", 2).
++SetAdminDist("StTTPetersburg", "ospf", 3).
++SetInterface("StTTPetersburg", "StTTPetersburg_I_Moscow").
++SetInterface("StTTPetersburg", "StTTPetersburg_I_Stockholm").
+
++SetNode("London").
++SetAdminDist("London", "static", 1).
++SetAdminDist("London", "bgp", 2).
++SetAdminDist("London", "ospf", 3).
++SetInterface("London", "London_I_Amsterdam").
+
++SetNode("Stockholm").
++SetAdminDist("Stockholm", "static", 1).
++SetAdminDist("Stockholm", "bgp", 2).
++SetAdminDist("Stockholm", "ospf", 3).
++SetInterface("Stockholm", "Stockholm_I_StTTPetersburg").
++SetInterface("Stockholm", "Stockholm_I_Amsterdam").
+
++SetNode("Amsterdam").
++SetAdminDist("Amsterdam", "static", 1).
++SetAdminDist("Amsterdam", "bgp", 2).
++SetAdminDist("Amsterdam", "ospf", 3).
++SetInterface("Amsterdam", "Amsterdam_I_Paris").
++SetInterface("Amsterdam", "Amsterdam_I_Frankfurt").
++SetInterface("Amsterdam", "Amsterdam_I_London").
++SetInterface("Amsterdam", "Amsterdam_I_Stockholm").
++SetInterface("Amsterdam", "Amsterdam_I_NewTTYork").
+
++SetNode("Frankfurt").
++SetAdminDist("Frankfurt", "static", 1).
++SetAdminDist("Frankfurt", "bgp", 2).
++SetAdminDist("Frankfurt", "ospf", 3).
++SetInterface("Frankfurt", "Frankfurt_I_Amsterdam").
+
++SetLink("NewTTYork_I_Amsterdam", "Amsterdam_I_NewTTYork").
++SetLink("Paris_I_Amsterdam", "Amsterdam_I_Paris").
++SetLink("Moscow_I_StTTPetersburg", "StTTPetersburg_I_Moscow").
++SetLink("StTTPetersburg_I_Stockholm", "Stockholm_I_StTTPetersburg").
++SetLink("London_I_Amsterdam", "Amsterdam_I_London").
++SetLink("Stockholm_I_Amsterdam", "Amsterdam_I_Stockholm").
++SetLink("Amsterdam_I_Frankfurt", "Frankfurt_I_Amsterdam").
+
+
++SetNetwork("London", "N_London").
++SetNetwork("Amsterdam", "N_Amsterdam").
++SetNetwork("Paris", "N_Paris").
++SetNetwork("Stockholm", "N_Stockholm").
++SetNetwork("Moscow", "N_Moscow").

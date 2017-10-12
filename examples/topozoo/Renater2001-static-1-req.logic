@@ -1,0 +1,25 @@
+
++Fwd("N_Marseille", "Orleans", "Paris", "static").
++Fwd("N_Marseille", "Paris", "Lyon", "static").
++Fwd("N_Marseille", "Lyon", "Marseille", "static").
++Fwd("N_Marseille", "Strasbourg", "Besancon", "static").
++Fwd("N_Marseille", "Besancon", "Lyon", "static").
++Fwd("N_Marseille", "Lille", "Paris", "static").
++Fwd("N_Marseille", "Poiters", "Paris", "static").
++Fwd("N_Marseille", "Compiegne", "Paris", "static").
++Fwd("N_Marseille", "Clermont_Ferrand", "Lyon", "static").
++Fwd("N_Marseille", "Reims", "Paris", "static").
++Fwd("N_Marseille", "Limoges", "Poiters", "static").
++Fwd("N_Marseille", "Grenoble", "Lyon", "static").
++Fwd("N_Marseille", "Caen", "Rouen", "static").
++Fwd("N_Marseille", "Rouen", "Paris", "static").
++Fwd("N_Marseille", "Nantes", "Poiters", "static").
++Fwd("N_Marseille", "Dijon", "Besancon", "static").
++Fwd("N_Marseille", "Nancy", "Paris", "static").
++Fwd("N_Marseille", "Rennes", "Paris", "static").
++Fwd("N_Marseille", "Bordeaux", "Toulouse", "static").
++Fwd("N_Marseille", "Toulouse", "Lyon", "static").
++Fwd("N_Marseille", "Sophia", "Marseille", "static").
++Fwd("N_Marseille", "Montpellier", "Marseille", "static").
++Fwd("N_Marseille", "Corte", "Sophia", "static").
+

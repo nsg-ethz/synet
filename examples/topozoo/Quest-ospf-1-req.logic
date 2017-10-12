@@ -1,0 +1,21 @@
+
++Fwd("N_HawaiiTT2", "SydneyTT1", "SydneyTT2", "ospf").
++Fwd("N_HawaiiTT2", "SydneyTT2", "AucklandTT2", "ospf").
++Fwd("N_HawaiiTT2", "AucklandTT2", "AucklandTT1", "ospf").
++Fwd("N_HawaiiTT2", "AucklandTT1", "HawaiiTT2", "ospf").
++Fwd("N_HawaiiTT2", "Singapore_Malaysia", "Guam", "ospf").
++Fwd("N_HawaiiTT2", "Guam", "HawaiiTT1", "ospf").
++Fwd("N_HawaiiTT2", "HawaiiTT1", "HawaiiTT2", "ospf").
++Fwd("N_HawaiiTT2", "Korea", "Japan", "ospf").
++Fwd("N_HawaiiTT2", "Japan", "HawaiiTT1", "ospf").
++Fwd("N_HawaiiTT2", "LosTTAngeles", "HawaiiTT2", "ospf").
++Fwd("N_HawaiiTT2", "Sacramento", "Japan", "ospf").
++Fwd("N_HawaiiTT2", "HongTTKong", "PhilippinesTT2", "ospf").
++Fwd("N_HawaiiTT2", "PhilippinesTT2", "Guam", "ospf").
++Fwd("N_HawaiiTT2", "PhilippinesTT1", "Guam", "ospf").
++Fwd("N_HawaiiTT2", "Melbourne", "SydneyTT1", "ospf").
++Fwd("N_HawaiiTT2", "Perth", "Singapore_Malaysia", "ospf").
++Fwd("N_HawaiiTT2", "Thailand", "Singapore_Malaysia", "ospf").
++Fwd("N_HawaiiTT2", "Fiji", "HawaiiTT1", "ospf").
++Fwd("N_HawaiiTT2", "Taiwan", "PhilippinesTT1", "ospf").
+

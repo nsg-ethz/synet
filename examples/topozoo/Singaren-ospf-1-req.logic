@@ -1,0 +1,12 @@
+
++Fwd("N_Biopolis", "NICTTTQGPOPTTAPAN_JPTTJapan", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "SingAREN_GIX", "Biopolis", "ospf").
++Fwd("N_Biopolis", "AARNET", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "NTU", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "NUS", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "TEIN3", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "SingARENTTmembers", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "AcademiaTTSinicaTTTaiwan", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "Schools", "SingAREN_GIX", "ospf").
++Fwd("N_Biopolis", "Fusionopolis", "SingAREN_GIX", "ospf").
+

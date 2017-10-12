@@ -1,0 +1,27 @@
+
++Fwd("N_Kristianstad", "Halmstad", "Lund", "ospf").
++Fwd("N_Kristianstad", "Lund", "Malmo", "ospf").
++Fwd("N_Kristianstad", "Malmo", "Kristianstad", "ospf").
++Fwd("N_Kristianstad", "Uppsala", "Stockholm", "ospf").
++Fwd("N_Kristianstad", "Stockholm", "Linkoping", "ospf").
++Fwd("N_Kristianstad", "Linkoping", "Jonkoping", "ospf").
++Fwd("N_Kristianstad", "Jonkoping", "Vaxjo", "ospf").
++Fwd("N_Kristianstad", "Vaxjo", "Kalmar", "ospf").
++Fwd("N_Kristianstad", "Kalmar", "Ronneby", "ospf").
++Fwd("N_Kristianstad", "Ronneby", "Kristianstad", "ospf").
++Fwd("N_Kristianstad", "Kiruna", "Lulea", "ospf").
++Fwd("N_Kristianstad", "Lulea", "Umea", "ospf").
++Fwd("N_Kristianstad", "Umea", "Sundsvall", "ospf").
++Fwd("N_Kristianstad", "Sundsvall", "Gavle", "ospf").
++Fwd("N_Kristianstad", "Gavle", "Uppsala", "ospf").
++Fwd("N_Kristianstad", "Goteborg", "Halmstad", "ospf").
++Fwd("N_Kristianstad", "Boras", "Goteborg", "ospf").
++Fwd("N_Kristianstad", "Borlange", "Gavle", "ospf").
++Fwd("N_Kristianstad", "Vasten", "Stockholm", "ospf").
++Fwd("N_Kristianstad", "Trollhattan", "Goteborg", "ospf").
++Fwd("N_Kristianstad", "Skovde", "Trollhattan", "ospf").
++Fwd("N_Kristianstad", "Visby", "Stockholm", "ospf").
++Fwd("N_Kristianstad", "NodeID20", "Sundsvall", "ospf").
++Fwd("N_Kristianstad", "Orebro", "Vasten", "ospf").
++Fwd("N_Kristianstad", "Karlstad", "Trollhattan", "ospf").
+

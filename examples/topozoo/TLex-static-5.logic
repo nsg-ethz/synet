@@ -1,0 +1,106 @@
++SetNode("DRTTDataTTReservoir").
++SetAdminDist("DRTTDataTTReservoir", "static", 1).
++SetAdminDist("DRTTDataTTReservoir", "bgp", 2).
++SetAdminDist("DRTTDataTTReservoir", "ospf", 3).
++SetInterface("DRTTDataTTReservoir", "DRTTDataTTReservoir_I_NetIronTTN140GTTAS23814").
+
++SetNode("PacificTTNWTTGigapopTT_Seattle_TTWA_").
++SetAdminDist("PacificTTNWTTGigapopTT_Seattle_TTWA_", "static", 1).
++SetAdminDist("PacificTTNWTTGigapopTT_Seattle_TTWA_", "bgp", 2).
++SetAdminDist("PacificTTNWTTGigapopTT_Seattle_TTWA_", "ospf", 3).
++SetInterface("PacificTTNWTTGigapopTT_Seattle_TTWA_", "PacificTTNWTTGigapopTT_Seattle_TTWA__I_ONS_15454").
+
++SetNode("ASCC_TWTTAS9264").
++SetAdminDist("ASCC_TWTTAS9264", "static", 1).
++SetAdminDist("ASCC_TWTTAS9264", "bgp", 2).
++SetAdminDist("ASCC_TWTTAS9264", "ospf", 3).
++SetInterface("ASCC_TWTTAS9264", "ASCC_TWTTAS9264_I_BigIronTT15000TTAS23814").
+
++SetNode("ONS_15454").
++SetAdminDist("ONS_15454", "static", 1).
++SetAdminDist("ONS_15454", "bgp", 2).
++SetAdminDist("ONS_15454", "ospf", 3).
++SetInterface("ONS_15454", "ONS_15454_I_NetIronTTN140GTTAS23814").
++SetInterface("ONS_15454", "ONS_15454_I_CatTT6500TTAS23814").
++SetInterface("ONS_15454", "ONS_15454_I_PacificTTNWTTGigapopTT_Seattle_TTWA_").
++SetInterface("ONS_15454", "ONS_15454_I_BigIronTT15000TTAS23814").
++SetInterface("ONS_15454", "ONS_15454_I_FutureTTIEEAFTTAsianTTExtension").
+
++SetNode("NetIronTTN140GTTAS23814").
++SetAdminDist("NetIronTTN140GTTAS23814", "static", 1).
++SetAdminDist("NetIronTTN140GTTAS23814", "bgp", 2).
++SetAdminDist("NetIronTTN140GTTAS23814", "ospf", 3).
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_DRTTDataTTReservoir").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_WIDETTAS2500").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_ONS_15454").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_BigIronTT15000TTAS23814").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_JGN2").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_U_TokyoTTakihabara").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_CatTT6500TTAS23814").
++SetInterface("NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_APAN_JPTTAS7660").
+
++SetNode("BigIronTT15000TTAS23814").
++SetAdminDist("BigIronTT15000TTAS23814", "static", 1).
++SetAdminDist("BigIronTT15000TTAS23814", "bgp", 2).
++SetAdminDist("BigIronTT15000TTAS23814", "ospf", 3).
++SetInterface("BigIronTT15000TTAS23814", "BigIronTT15000TTAS23814_I_ONS_15454").
++SetInterface("BigIronTT15000TTAS23814", "BigIronTT15000TTAS23814_I_NetIronTTN140GTTAS23814").
++SetInterface("BigIronTT15000TTAS23814", "BigIronTT15000TTAS23814_I_ASCC_TWTTAS9264").
+
++SetNode("WIDETTAS2500").
++SetAdminDist("WIDETTAS2500", "static", 1).
++SetAdminDist("WIDETTAS2500", "bgp", 2).
++SetAdminDist("WIDETTAS2500", "ospf", 3).
++SetInterface("WIDETTAS2500", "WIDETTAS2500_I_NetIronTTN140GTTAS23814").
+
++SetNode("FutureTTIEEAFTTAsianTTExtension").
++SetAdminDist("FutureTTIEEAFTTAsianTTExtension", "static", 1).
++SetAdminDist("FutureTTIEEAFTTAsianTTExtension", "bgp", 2).
++SetAdminDist("FutureTTIEEAFTTAsianTTExtension", "ospf", 3).
++SetInterface("FutureTTIEEAFTTAsianTTExtension", "FutureTTIEEAFTTAsianTTExtension_I_ONS_15454").
+
++SetNode("JGN2").
++SetAdminDist("JGN2", "static", 1).
++SetAdminDist("JGN2", "bgp", 2).
++SetAdminDist("JGN2", "ospf", 3).
++SetInterface("JGN2", "JGN2_I_NetIronTTN140GTTAS23814").
+
++SetNode("U_TokyoTTakihabara").
++SetAdminDist("U_TokyoTTakihabara", "static", 1).
++SetAdminDist("U_TokyoTTakihabara", "bgp", 2).
++SetAdminDist("U_TokyoTTakihabara", "ospf", 3).
++SetInterface("U_TokyoTTakihabara", "U_TokyoTTakihabara_I_NetIronTTN140GTTAS23814").
+
++SetNode("APAN_JPTTAS7660").
++SetAdminDist("APAN_JPTTAS7660", "static", 1).
++SetAdminDist("APAN_JPTTAS7660", "bgp", 2).
++SetAdminDist("APAN_JPTTAS7660", "ospf", 3).
++SetInterface("APAN_JPTTAS7660", "APAN_JPTTAS7660_I_NetIronTTN140GTTAS23814").
+
++SetNode("CatTT6500TTAS23814").
++SetAdminDist("CatTT6500TTAS23814", "static", 1).
++SetAdminDist("CatTT6500TTAS23814", "bgp", 2).
++SetAdminDist("CatTT6500TTAS23814", "ospf", 3).
++SetInterface("CatTT6500TTAS23814", "CatTT6500TTAS23814_I_ONS_15454").
++SetInterface("CatTT6500TTAS23814", "CatTT6500TTAS23814_I_NetIronTTN140GTTAS23814").
+
++SetLink("DRTTDataTTReservoir_I_NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_DRTTDataTTReservoir").
++SetLink("PacificTTNWTTGigapopTT_Seattle_TTWA__I_ONS_15454", "ONS_15454_I_PacificTTNWTTGigapopTT_Seattle_TTWA_").
++SetLink("ASCC_TWTTAS9264_I_BigIronTT15000TTAS23814", "BigIronTT15000TTAS23814_I_ASCC_TWTTAS9264").
++SetLink("ONS_15454_I_NetIronTTN140GTTAS23814", "NetIronTTN140GTTAS23814_I_ONS_15454").
++SetLink("ONS_15454_I_CatTT6500TTAS23814", "CatTT6500TTAS23814_I_ONS_15454").
++SetLink("ONS_15454_I_BigIronTT15000TTAS23814", "BigIronTT15000TTAS23814_I_ONS_15454").
++SetLink("ONS_15454_I_FutureTTIEEAFTTAsianTTExtension", "FutureTTIEEAFTTAsianTTExtension_I_ONS_15454").
++SetLink("NetIronTTN140GTTAS23814_I_WIDETTAS2500", "WIDETTAS2500_I_NetIronTTN140GTTAS23814").
++SetLink("NetIronTTN140GTTAS23814_I_BigIronTT15000TTAS23814", "BigIronTT15000TTAS23814_I_NetIronTTN140GTTAS23814").
++SetLink("NetIronTTN140GTTAS23814_I_JGN2", "JGN2_I_NetIronTTN140GTTAS23814").
++SetLink("NetIronTTN140GTTAS23814_I_U_TokyoTTakihabara", "U_TokyoTTakihabara_I_NetIronTTN140GTTAS23814").
++SetLink("NetIronTTN140GTTAS23814_I_CatTT6500TTAS23814", "CatTT6500TTAS23814_I_NetIronTTN140GTTAS23814").
++SetLink("NetIronTTN140GTTAS23814_I_APAN_JPTTAS7660", "APAN_JPTTAS7660_I_NetIronTTN140GTTAS23814").
+
+
++SetNetwork("WIDETTAS2500", "N_WIDETTAS2500").
++SetNetwork("JGN2", "N_JGN2").
++SetNetwork("PacificTTNWTTGigapopTT_Seattle_TTWA_", "N_PacificTTNWTTGigapopTT_Seattle_TTWA_").
++SetNetwork("ONS_15454", "N_ONS_15454").
++SetNetwork("NetIronTTN140GTTAS23814", "N_NetIronTTN140GTTAS23814").

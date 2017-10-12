@@ -1,0 +1,14 @@
+
++Fwd("N_PionierTTGEANTTT2", "Vitebsk", "Minsk", "ospf").
++Fwd("NBGP_PionierTTGEANTTT2", "Vitebsk", "Minsk", "bgp").
++Fwd("N_PionierTTGEANTTT2", "Minsk", "PionierTTGEANTTT2", "ospf").
++Fwd("NBGP_PionierTTGEANTTT2", "Minsk", "PionierTTGEANTTT2", "bgp").
++Fwd("N_PionierTTGEANTTT2", "Gomel", "Minsk", "ospf").
++Fwd("NBGP_PionierTTGEANTTT2", "Gomel", "Minsk", "bgp").
++Fwd("N_PionierTTGEANTTT2", "Mogilev", "Minsk", "ospf").
++Fwd("NBGP_PionierTTGEANTTT2", "Mogilev", "Minsk", "bgp").
++Fwd("N_PionierTTGEANTTT2", "Brest", "Minsk", "ospf").
++Fwd("NBGP_PionierTTGEANTTT2", "Brest", "Minsk", "bgp").
++Fwd("N_PionierTTGEANTTT2", "Grodno", "Minsk", "ospf").
++Fwd("NBGP_PionierTTGEANTTT2", "Grodno", "Minsk", "bgp").
+

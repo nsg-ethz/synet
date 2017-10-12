@@ -1,0 +1,270 @@
++SetNode("Orleans").
++SetAdminDist("Orleans", "static", 1).
++SetAdminDist("Orleans", "bgp", 2).
++SetAdminDist("Orleans", "ospf", 3).
++SetInterface("Orleans", "Orleans_I_Paris").
+
++SetNode("Lyon").
++SetAdminDist("Lyon", "static", 1).
++SetAdminDist("Lyon", "bgp", 2).
++SetAdminDist("Lyon", "ospf", 3).
++SetInterface("Lyon", "Lyon_I_Montpellier").
++SetInterface("Lyon", "Lyon_I_Paris").
++SetInterface("Lyon", "Lyon_I_InternetTTmondial").
++SetInterface("Lyon", "Lyon_I_Besancon").
++SetInterface("Lyon", "Lyon_I_Marseille").
++SetInterface("Lyon", "Lyon_I_Grenoble").
++SetInterface("Lyon", "Lyon_I_Clermont_Ferrand").
+
++SetNode("Strasbourg").
++SetAdminDist("Strasbourg", "static", 1).
++SetAdminDist("Strasbourg", "bgp", 2).
++SetAdminDist("Strasbourg", "ospf", 3).
++SetInterface("Strasbourg", "Strasbourg_I_Besancon").
++SetInterface("Strasbourg", "Strasbourg_I_Nancy").
+
++SetNode("Lille").
++SetAdminDist("Lille", "static", 1).
++SetAdminDist("Lille", "bgp", 2).
++SetAdminDist("Lille", "ospf", 3).
++SetInterface("Lille", "Lille_I_Paris").
+
++SetNode("Paris").
++SetAdminDist("Paris", "static", 1).
++SetAdminDist("Paris", "bgp", 2).
++SetAdminDist("Paris", "ospf", 3).
++SetInterface("Paris", "Paris_I_Reims").
++SetInterface("Paris", "Paris_I_Lyon").
++SetInterface("Paris", "Paris_I_ConnexionTTversTTleTTStarTTTap").
++SetInterface("Paris", "Paris_I_Rouen").
++SetInterface("Paris", "Paris_I_Lille").
++SetInterface("Paris", "Paris_I_Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti").
++SetInterface("Paris", "Paris_I_InternetTTmondial").
++SetInterface("Paris", "Paris_I_Dijon").
++SetInterface("Paris", "Paris_I_Orleans").
++SetInterface("Paris", "Paris_I_Nancy").
++SetInterface("Paris", "Paris_I_SFINX").
++SetInterface("Paris", "Paris_I_ConnexionTTAsieTTPacifique").
++SetInterface("Paris", "Paris_I_Poiters").
++SetInterface("Paris", "Paris_I_Compiegne").
++SetInterface("Paris", "Paris_I_Geant2").
+
++SetNode("ConnexionTTversTTleTTStarTTTap").
++SetAdminDist("ConnexionTTversTTleTTStarTTTap", "static", 1).
++SetAdminDist("ConnexionTTversTTleTTStarTTTap", "bgp", 2).
++SetAdminDist("ConnexionTTversTTleTTStarTTTap", "ospf", 3).
++SetInterface("ConnexionTTversTTleTTStarTTTap", "ConnexionTTversTTleTTStarTTTap_I_Paris").
+
++SetNode("Compiegne").
++SetAdminDist("Compiegne", "static", 1).
++SetAdminDist("Compiegne", "bgp", 2).
++SetAdminDist("Compiegne", "ospf", 3).
++SetInterface("Compiegne", "Compiegne_I_Paris").
+
++SetNode("Limoges").
++SetAdminDist("Limoges", "static", 1).
++SetAdminDist("Limoges", "bgp", 2).
++SetAdminDist("Limoges", "ospf", 3).
++SetInterface("Limoges", "Limoges_I_Poiters").
++SetInterface("Limoges", "Limoges_I_Clermont_Ferrand").
+
++SetNode("Reims").
++SetAdminDist("Reims", "static", 1).
++SetAdminDist("Reims", "bgp", 2).
++SetAdminDist("Reims", "ospf", 3).
++SetInterface("Reims", "Reims_I_Paris").
+
++SetNode("Poiters").
++SetAdminDist("Poiters", "static", 1).
++SetAdminDist("Poiters", "bgp", 2).
++SetAdminDist("Poiters", "ospf", 3).
++SetInterface("Poiters", "Poiters_I_Paris").
++SetInterface("Poiters", "Poiters_I_Bordeaux").
++SetInterface("Poiters", "Poiters_I_Limoges").
++SetInterface("Poiters", "Poiters_I_Nantes").
+
++SetNode("InternetTTmondial").
++SetAdminDist("InternetTTmondial", "static", 1).
++SetAdminDist("InternetTTmondial", "bgp", 2).
++SetAdminDist("InternetTTmondial", "ospf", 3).
++SetInterface("InternetTTmondial", "InternetTTmondial_I_Paris").
++SetInterface("InternetTTmondial", "InternetTTmondial_I_Lyon").
+
++SetNode("Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti").
++SetAdminDist("Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti", "static", 1).
++SetAdminDist("Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti", "bgp", 2).
++SetAdminDist("Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti", "ospf", 3).
++SetInterface("Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti", "Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti_I_Paris").
+
++SetNode("Clermont_Ferrand").
++SetAdminDist("Clermont_Ferrand", "static", 1).
++SetAdminDist("Clermont_Ferrand", "bgp", 2).
++SetAdminDist("Clermont_Ferrand", "ospf", 3).
++SetInterface("Clermont_Ferrand", "Clermont_Ferrand_I_Lyon").
++SetInterface("Clermont_Ferrand", "Clermont_Ferrand_I_Limoges").
+
++SetNode("ConnexionTTAsieTTPacifique").
++SetAdminDist("ConnexionTTAsieTTPacifique", "static", 1).
++SetAdminDist("ConnexionTTAsieTTPacifique", "bgp", 2).
++SetAdminDist("ConnexionTTAsieTTPacifique", "ospf", 3).
++SetInterface("ConnexionTTAsieTTPacifique", "ConnexionTTAsieTTPacifique_I_Paris").
+
++SetNode("Nice").
++SetAdminDist("Nice", "static", 1).
++SetAdminDist("Nice", "bgp", 2).
++SetAdminDist("Nice", "ospf", 3).
++SetInterface("Nice", "Nice_I_Corte").
++SetInterface("Nice", "Nice_I_Marseille").
++SetInterface("Nice", "Nice_I_Grenoble").
+
++SetNode("Grenoble").
++SetAdminDist("Grenoble", "static", 1).
++SetAdminDist("Grenoble", "bgp", 2).
++SetAdminDist("Grenoble", "ospf", 3).
++SetInterface("Grenoble", "Grenoble_I_Lyon").
++SetInterface("Grenoble", "Grenoble_I_Nice").
+
++SetNode("Caen").
++SetAdminDist("Caen", "static", 1).
++SetAdminDist("Caen", "bgp", 2).
++SetAdminDist("Caen", "ospf", 3).
++SetInterface("Caen", "Caen_I_Rennes").
++SetInterface("Caen", "Caen_I_Rouen").
+
++SetNode("Nantes").
++SetAdminDist("Nantes", "static", 1).
++SetAdminDist("Nantes", "bgp", 2).
++SetAdminDist("Nantes", "ospf", 3).
++SetInterface("Nantes", "Nantes_I_Rennes").
++SetInterface("Nantes", "Nantes_I_Poiters").
+
++SetNode("Dijon").
++SetAdminDist("Dijon", "static", 1).
++SetAdminDist("Dijon", "bgp", 2).
++SetAdminDist("Dijon", "ospf", 3).
++SetInterface("Dijon", "Dijon_I_Paris").
+
++SetNode("Nancy").
++SetAdminDist("Nancy", "static", 1).
++SetAdminDist("Nancy", "bgp", 2).
++SetAdminDist("Nancy", "ospf", 3).
++SetInterface("Nancy", "Nancy_I_Paris").
++SetInterface("Nancy", "Nancy_I_Strasbourg").
+
++SetNode("Rennes").
++SetAdminDist("Rennes", "static", 1).
++SetAdminDist("Rennes", "bgp", 2).
++SetAdminDist("Rennes", "ospf", 3).
++SetInterface("Rennes", "Rennes_I_Caen").
++SetInterface("Rennes", "Rennes_I_Nantes").
+
++SetNode("Bordeaux").
++SetAdminDist("Bordeaux", "static", 1).
++SetAdminDist("Bordeaux", "bgp", 2).
++SetAdminDist("Bordeaux", "ospf", 3).
++SetInterface("Bordeaux", "Bordeaux_I_Poiters").
++SetInterface("Bordeaux", "Bordeaux_I_Toulouse").
+
++SetNode("Marseille").
++SetAdminDist("Marseille", "static", 1).
++SetAdminDist("Marseille", "bgp", 2).
++SetAdminDist("Marseille", "ospf", 3).
++SetInterface("Marseille", "Marseille_I_Lyon").
++SetInterface("Marseille", "Marseille_I_Montpellier").
++SetInterface("Marseille", "Marseille_I_Nice").
+
++SetNode("Toulouse").
++SetAdminDist("Toulouse", "static", 1).
++SetAdminDist("Toulouse", "bgp", 2).
++SetAdminDist("Toulouse", "ospf", 3).
++SetInterface("Toulouse", "Toulouse_I_Bordeaux").
++SetInterface("Toulouse", "Toulouse_I_Montpellier").
+
++SetNode("Montpellier").
++SetAdminDist("Montpellier", "static", 1).
++SetAdminDist("Montpellier", "bgp", 2).
++SetAdminDist("Montpellier", "ospf", 3).
++SetInterface("Montpellier", "Montpellier_I_Lyon").
++SetInterface("Montpellier", "Montpellier_I_Marseille").
++SetInterface("Montpellier", "Montpellier_I_Toulouse").
+
++SetNode("SFINX").
++SetAdminDist("SFINX", "static", 1).
++SetAdminDist("SFINX", "bgp", 2).
++SetAdminDist("SFINX", "ospf", 3).
++SetInterface("SFINX", "SFINX_I_Paris").
+
++SetNode("Besancon").
++SetAdminDist("Besancon", "static", 1).
++SetAdminDist("Besancon", "bgp", 2).
++SetAdminDist("Besancon", "ospf", 3).
++SetInterface("Besancon", "Besancon_I_Lyon").
++SetInterface("Besancon", "Besancon_I_Strasbourg").
+
++SetNode("Rouen").
++SetAdminDist("Rouen", "static", 1).
++SetAdminDist("Rouen", "bgp", 2).
++SetAdminDist("Rouen", "ospf", 3).
++SetInterface("Rouen", "Rouen_I_Paris").
++SetInterface("Rouen", "Rouen_I_Caen").
+
++SetNode("Corte").
++SetAdminDist("Corte", "static", 1).
++SetAdminDist("Corte", "bgp", 2).
++SetAdminDist("Corte", "ospf", 3).
++SetInterface("Corte", "Corte_I_Nice").
+
++SetNode("Geant2").
++SetAdminDist("Geant2", "static", 1).
++SetAdminDist("Geant2", "bgp", 2).
++SetAdminDist("Geant2", "ospf", 3).
++SetInterface("Geant2", "Geant2_I_Paris").
+
++SetLink("Orleans_I_Paris", "Paris_I_Orleans").
++SetLink("Lyon_I_Montpellier", "Montpellier_I_Lyon").
++SetLink("Lyon_I_Paris", "Paris_I_Lyon").
++SetLink("Lyon_I_InternetTTmondial", "InternetTTmondial_I_Lyon").
++SetLink("Lyon_I_Besancon", "Besancon_I_Lyon").
++SetLink("Lyon_I_Marseille", "Marseille_I_Lyon").
++SetLink("Lyon_I_Grenoble", "Grenoble_I_Lyon").
++SetLink("Lyon_I_Clermont_Ferrand", "Clermont_Ferrand_I_Lyon").
++SetLink("Strasbourg_I_Besancon", "Besancon_I_Strasbourg").
++SetLink("Strasbourg_I_Nancy", "Nancy_I_Strasbourg").
++SetLink("Lille_I_Paris", "Paris_I_Lille").
++SetLink("Paris_I_Reims", "Reims_I_Paris").
++SetLink("Paris_I_ConnexionTTversTTleTTStarTTTap", "ConnexionTTversTTleTTStarTTTap_I_Paris").
++SetLink("Paris_I_Rouen", "Rouen_I_Paris").
++SetLink("Paris_I_Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti", "Martinique_TTGuadeloupe_TTGuyane_TTLaTTReunion_TTNouvelleTTCaledonie_TTTahiti_I_Paris").
++SetLink("Paris_I_InternetTTmondial", "InternetTTmondial_I_Paris").
++SetLink("Paris_I_Dijon", "Dijon_I_Paris").
++SetLink("Paris_I_Nancy", "Nancy_I_Paris").
++SetLink("Paris_I_SFINX", "SFINX_I_Paris").
++SetLink("Paris_I_ConnexionTTAsieTTPacifique", "ConnexionTTAsieTTPacifique_I_Paris").
++SetLink("Paris_I_Poiters", "Poiters_I_Paris").
++SetLink("Paris_I_Compiegne", "Compiegne_I_Paris").
++SetLink("Paris_I_Geant2", "Geant2_I_Paris").
++SetLink("Limoges_I_Poiters", "Poiters_I_Limoges").
++SetLink("Limoges_I_Clermont_Ferrand", "Clermont_Ferrand_I_Limoges").
++SetLink("Poiters_I_Bordeaux", "Bordeaux_I_Poiters").
++SetLink("Poiters_I_Nantes", "Nantes_I_Poiters").
++SetLink("Nice_I_Corte", "Corte_I_Nice").
++SetLink("Nice_I_Marseille", "Marseille_I_Nice").
++SetLink("Nice_I_Grenoble", "Grenoble_I_Nice").
++SetLink("Caen_I_Rennes", "Rennes_I_Caen").
++SetLink("Caen_I_Rouen", "Rouen_I_Caen").
++SetLink("Nantes_I_Rennes", "Rennes_I_Nantes").
++SetLink("Bordeaux_I_Toulouse", "Toulouse_I_Bordeaux").
++SetLink("Marseille_I_Montpellier", "Montpellier_I_Marseille").
++SetLink("Toulouse_I_Montpellier", "Montpellier_I_Toulouse").
+
+
++SetNetwork("Lille", "N_Lille").
++SetNetwork("Rouen", "N_Rouen").
++SetNetwork("Strasbourg", "N_Strasbourg").
++SetNetwork("Montpellier", "N_Montpellier").
++SetNetwork("Lyon", "N_Lyon").
++SetNetwork("Nancy", "N_Nancy").
++SetNetwork("Nantes", "N_Nantes").
++SetNetwork("Clermont_Ferrand", "N_Clermont_Ferrand").
++SetNetwork("InternetTTmondial", "N_InternetTTmondial").
++SetNetwork("Caen", "N_Caen").

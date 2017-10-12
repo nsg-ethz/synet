@@ -1,0 +1,22 @@
+
++Fwd("N_BrusselsTTCampus", "Arlon", "LiegeTT2", "static").
++Fwd("N_BrusselsTTCampus", "LiegeTT2", "LiegeTT1TT", "static").
++Fwd("N_BrusselsTTCampus", "LiegeTT1TT", "Evere", "static").
++Fwd("N_BrusselsTTCampus", "Evere", "Vilvoorde", "static").
++Fwd("N_BrusselsTTCampus", "Vilvoorde", "BrusselsTTCampus", "static").
++Fwd("N_BrusselsTTCampus", "Antwerpen1", "AntwerpenTT2", "static").
++Fwd("N_BrusselsTTCampus", "AntwerpenTT2", "Evere", "static").
++Fwd("N_BrusselsTTCampus", "Namur", "Louvain_la_Neuve", "static").
++Fwd("N_BrusselsTTCampus", "Louvain_la_Neuve", "Charleroi", "static").
++Fwd("N_BrusselsTTCampus", "Charleroi", "Mons", "static").
++Fwd("N_BrusselsTTCampus", "Mons", "Vilvoorde", "static").
++Fwd("N_BrusselsTTCampus", "Brugge", "Korthijk", "static").
++Fwd("N_BrusselsTTCampus", "Korthijk", "Vilvoorde", "static").
++Fwd("N_BrusselsTTCampus", "Leuven2", "Leuven1", "static").
++Fwd("N_BrusselsTTCampus", "Leuven1", "Evere", "static").
++Fwd("N_BrusselsTTCampus", "Hasselt", "Geel", "static").
++Fwd("N_BrusselsTTCampus", "Geel", "Vilvoorde", "static").
++Fwd("N_BrusselsTTCampus", "Gent2", "Gent1", "static").
++Fwd("N_BrusselsTTCampus", "Gent1", "Brugge", "static").
++Fwd("N_BrusselsTTCampus", "BrusselsTTScience", "BrusselsTTCampus", "static").
+

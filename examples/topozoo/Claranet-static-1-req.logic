@@ -1,0 +1,16 @@
+
++Fwd("N_Porto", "Eindhoven", "Amsterdam", "static").
++Fwd("N_Porto", "Amsterdam", "Frankfurt", "static").
++Fwd("N_Porto", "Frankfurt", "London", "static").
++Fwd("N_Porto", "London", "Lisbon", "static").
++Fwd("N_Porto", "Lisbon", "Porto", "static").
++Fwd("N_Porto", "NewTTYork", "London", "static").
++Fwd("N_Porto", "Manchester", "London", "static").
++Fwd("N_Porto", "Paris", "Barcelona", "static").
++Fwd("N_Porto", "Barcelona", "Madrid", "static").
++Fwd("N_Porto", "Madrid", "Lisbon", "static").
++Fwd("N_Porto", "Faro", "Lisbon", "static").
++Fwd("N_Porto", "Munich", "Frankfurt", "static").
++Fwd("N_Porto", "Berlin", "Frankfurt", "static").
++Fwd("N_Porto", "Rennes", "Paris", "static").
+

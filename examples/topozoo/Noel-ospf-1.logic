@@ -1,0 +1,173 @@
++SetNode("Olympia").
++SetAdminDist("Olympia", "static", 1).
++SetAdminDist("Olympia", "bgp", 2).
++SetAdminDist("Olympia", "ospf", 3).
++SetInterface("Olympia", "Olympia_I_Portland").
++SetInterface("Olympia", "Olympia_I_Tacoma").
+
++SetNode("Bellingham").
++SetAdminDist("Bellingham", "static", 1).
++SetAdminDist("Bellingham", "bgp", 2).
++SetAdminDist("Bellingham", "ospf", 3).
++SetInterface("Bellingham", "Bellingham_I_MtTTVernon").
++SetInterface("Bellingham", "Bellingham_I_Vancouver").
+
++SetNode("Spokane").
++SetAdminDist("Spokane", "static", 1).
++SetAdminDist("Spokane", "bgp", 2).
++SetAdminDist("Spokane", "ospf", 3).
++SetInterface("Spokane", "Spokane_I_Pullman").
++SetInterface("Spokane", "Spokane_I_Othello").
++SetInterface("Spokane", "Spokane_I_CoeurTTd_Alene").
++SetInterface("Spokane", "Spokane_I_Wenatchee").
+
++SetNode("WallaTTWalla").
++SetAdminDist("WallaTTWalla", "static", 1).
++SetAdminDist("WallaTTWalla", "bgp", 2).
++SetAdminDist("WallaTTWalla", "ospf", 3).
++SetInterface("WallaTTWalla", "WallaTTWalla_I_Kennewick").
++SetInterface("WallaTTWalla", "WallaTTWalla_I_Pasco").
+
++SetNode("Ellensburg").
++SetAdminDist("Ellensburg", "static", 1).
++SetAdminDist("Ellensburg", "bgp", 2).
++SetAdminDist("Ellensburg", "ospf", 3).
++SetInterface("Ellensburg", "Ellensburg_I_Yakima").
++SetInterface("Ellensburg", "Ellensburg_I_Wenatchee").
+
++SetNode("Lewiston").
++SetAdminDist("Lewiston", "static", 1).
++SetAdminDist("Lewiston", "bgp", 2).
++SetAdminDist("Lewiston", "ospf", 3).
++SetInterface("Lewiston", "Lewiston_I_Pullman").
+
++SetNode("Kennewick").
++SetAdminDist("Kennewick", "static", 1).
++SetAdminDist("Kennewick", "bgp", 2).
++SetAdminDist("Kennewick", "ospf", 3).
++SetInterface("Kennewick", "Kennewick_I_Portland").
++SetInterface("Kennewick", "Kennewick_I_Pasco").
++SetInterface("Kennewick", "Kennewick_I_Yakima").
++SetInterface("Kennewick", "Kennewick_I_WallaTTWalla").
+
++SetNode("Everett").
++SetAdminDist("Everett", "static", 1).
++SetAdminDist("Everett", "bgp", 2).
++SetAdminDist("Everett", "ospf", 3).
++SetInterface("Everett", "Everett_I_MtTTVernon").
++SetInterface("Everett", "Everett_I_WestinTT_TTSeattle").
+
++SetNode("Othello").
++SetAdminDist("Othello", "static", 1).
++SetAdminDist("Othello", "bgp", 2).
++SetAdminDist("Othello", "ospf", 3).
++SetInterface("Othello", "Othello_I_Yakima").
++SetInterface("Othello", "Othello_I_Spokane").
+
++SetNode("Yakima").
++SetAdminDist("Yakima", "static", 1).
++SetAdminDist("Yakima", "bgp", 2).
++SetAdminDist("Yakima", "ospf", 3).
++SetInterface("Yakima", "Yakima_I_Kennewick").
++SetInterface("Yakima", "Yakima_I_Pasco").
++SetInterface("Yakima", "Yakima_I_Othello").
++SetInterface("Yakima", "Yakima_I_WestinTT_TTSeattle").
++SetInterface("Yakima", "Yakima_I_Ellensburg").
+
++SetNode("Pasco").
++SetAdminDist("Pasco", "static", 1).
++SetAdminDist("Pasco", "bgp", 2).
++SetAdminDist("Pasco", "ospf", 3).
++SetInterface("Pasco", "Pasco_I_Yakima").
++SetInterface("Pasco", "Pasco_I_Kennewick").
++SetInterface("Pasco", "Pasco_I_WallaTTWalla").
+
++SetNode("Vancouver").
++SetAdminDist("Vancouver", "static", 1).
++SetAdminDist("Vancouver", "bgp", 2).
++SetAdminDist("Vancouver", "ospf", 3).
++SetInterface("Vancouver", "Vancouver_I_Bellingham").
++SetInterface("Vancouver", "Vancouver_I_WestinTT_TTSeattle").
+
++SetNode("CoeurTTd_Alene").
++SetAdminDist("CoeurTTd_Alene", "static", 1).
++SetAdminDist("CoeurTTd_Alene", "bgp", 2).
++SetAdminDist("CoeurTTd_Alene", "ospf", 3).
++SetInterface("CoeurTTd_Alene", "CoeurTTd_Alene_I_Spokane").
+
++SetNode("MtTTVernon").
++SetAdminDist("MtTTVernon", "static", 1).
++SetAdminDist("MtTTVernon", "bgp", 2).
++SetAdminDist("MtTTVernon", "ospf", 3).
++SetInterface("MtTTVernon", "MtTTVernon_I_Everett").
++SetInterface("MtTTVernon", "MtTTVernon_I_Bellingham").
+
++SetNode("Portland").
++SetAdminDist("Portland", "static", 1).
++SetAdminDist("Portland", "bgp", 2).
++SetAdminDist("Portland", "ospf", 3).
++SetInterface("Portland", "Portland_I_Olympia").
++SetInterface("Portland", "Portland_I_Kennewick").
++SetInterface("Portland", "Portland_I_WestinTT_TTSeattle").
+
++SetNode("Tacoma").
++SetAdminDist("Tacoma", "static", 1).
++SetAdminDist("Tacoma", "bgp", 2).
++SetAdminDist("Tacoma", "ospf", 3).
++SetInterface("Tacoma", "Tacoma_I_Olympia").
++SetInterface("Tacoma", "Tacoma_I_WestinTT_TTSeattle").
+
++SetNode("Pullman").
++SetAdminDist("Pullman", "static", 1).
++SetAdminDist("Pullman", "bgp", 2).
++SetAdminDist("Pullman", "ospf", 3).
++SetInterface("Pullman", "Pullman_I_Lewiston").
++SetInterface("Pullman", "Pullman_I_Spokane").
+
++SetNode("WestinTT_TTSeattle").
++SetAdminDist("WestinTT_TTSeattle", "static", 1).
++SetAdminDist("WestinTT_TTSeattle", "bgp", 2).
++SetAdminDist("WestinTT_TTSeattle", "ospf", 3).
++SetInterface("WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Everett").
++SetInterface("WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Vancouver").
++SetInterface("WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Portland").
++SetInterface("WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Tacoma").
++SetInterface("WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Yakima").
++SetInterface("WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Wenatchee").
+
++SetNode("Wenatchee").
++SetAdminDist("Wenatchee", "static", 1).
++SetAdminDist("Wenatchee", "bgp", 2).
++SetAdminDist("Wenatchee", "ospf", 3).
++SetInterface("Wenatchee", "Wenatchee_I_Spokane").
++SetInterface("Wenatchee", "Wenatchee_I_WestinTT_TTSeattle").
++SetInterface("Wenatchee", "Wenatchee_I_Ellensburg").
+
++SetLink("Olympia_I_Portland", "Portland_I_Olympia").
++SetLink("Olympia_I_Tacoma", "Tacoma_I_Olympia").
++SetLink("Bellingham_I_MtTTVernon", "MtTTVernon_I_Bellingham").
++SetLink("Bellingham_I_Vancouver", "Vancouver_I_Bellingham").
++SetLink("Spokane_I_Pullman", "Pullman_I_Spokane").
++SetLink("Spokane_I_Othello", "Othello_I_Spokane").
++SetLink("Spokane_I_CoeurTTd_Alene", "CoeurTTd_Alene_I_Spokane").
++SetLink("Spokane_I_Wenatchee", "Wenatchee_I_Spokane").
++SetLink("WallaTTWalla_I_Kennewick", "Kennewick_I_WallaTTWalla").
++SetLink("WallaTTWalla_I_Pasco", "Pasco_I_WallaTTWalla").
++SetLink("Ellensburg_I_Yakima", "Yakima_I_Ellensburg").
++SetLink("Ellensburg_I_Wenatchee", "Wenatchee_I_Ellensburg").
++SetLink("Lewiston_I_Pullman", "Pullman_I_Lewiston").
++SetLink("Kennewick_I_Portland", "Portland_I_Kennewick").
++SetLink("Kennewick_I_Pasco", "Pasco_I_Kennewick").
++SetLink("Kennewick_I_Yakima", "Yakima_I_Kennewick").
++SetLink("Everett_I_MtTTVernon", "MtTTVernon_I_Everett").
++SetLink("Everett_I_WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Everett").
++SetLink("Othello_I_Yakima", "Yakima_I_Othello").
++SetLink("Yakima_I_Pasco", "Pasco_I_Yakima").
++SetLink("Yakima_I_WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Yakima").
++SetLink("Vancouver_I_WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Vancouver").
++SetLink("Portland_I_WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Portland").
++SetLink("Tacoma_I_WestinTT_TTSeattle", "WestinTT_TTSeattle_I_Tacoma").
++SetLink("WestinTT_TTSeattle_I_Wenatchee", "Wenatchee_I_WestinTT_TTSeattle").
+
+
++SetNetwork("Ellensburg", "N_Ellensburg").

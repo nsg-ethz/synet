@@ -1,0 +1,41 @@
+
++Fwd("N_Limerick", "Galway", "Limerick", "ospf").
++Fwd("N_Limerick", "Portlaioise", "Limerick", "ospf").
++Fwd("N_Limerick", "Dublin", "Portlaioise", "ospf").
++Fwd("N_Limerick", "Cork", "Limerick", "ospf").
++Fwd("N_Limerick", "NodeID6", "Dublin", "ospf").
++Fwd("N_Limerick", "NodeID7", "Dublin", "ospf").
++Fwd("N_Limerick", "Waterford", "Dublin", "ospf").
+
++Fwd("N_Cork", "Galway", "Limerick", "ospf").
++Fwd("N_Cork", "Limerick", "Cork", "ospf").
++Fwd("N_Cork", "Portlaioise", "Limerick", "ospf").
++Fwd("N_Cork", "Dublin", "Portlaioise", "ospf").
++Fwd("N_Cork", "NodeID6", "Dublin", "ospf").
++Fwd("N_Cork", "NodeID7", "Dublin", "ospf").
++Fwd("N_Cork", "Waterford", "Cork", "ospf").
+
++Fwd("N_NodeID7", "Galway", "Limerick", "ospf").
++Fwd("N_NodeID7", "Limerick", "Portlaioise", "ospf").
++Fwd("N_NodeID7", "Portlaioise", "Dublin", "ospf").
++Fwd("N_NodeID7", "Dublin", "NodeID7", "ospf").
++Fwd("N_NodeID7", "Cork", "Waterford", "ospf").
++Fwd("N_NodeID7", "Waterford", "Dublin", "ospf").
++Fwd("N_NodeID7", "NodeID6", "Dublin", "ospf").
+
++Fwd("N_NodeID6", "Galway", "Limerick", "ospf").
++Fwd("N_NodeID6", "Limerick", "Portlaioise", "ospf").
++Fwd("N_NodeID6", "Portlaioise", "Dublin", "ospf").
++Fwd("N_NodeID6", "Dublin", "NodeID6", "ospf").
++Fwd("N_NodeID6", "Cork", "Waterford", "ospf").
++Fwd("N_NodeID6", "Waterford", "Dublin", "ospf").
++Fwd("N_NodeID6", "NodeID7", "Dublin", "ospf").
+
++Fwd("N_Dublin", "Galway", "Limerick", "ospf").
++Fwd("N_Dublin", "Limerick", "Portlaioise", "ospf").
++Fwd("N_Dublin", "Portlaioise", "Dublin", "ospf").
++Fwd("N_Dublin", "Cork", "Waterford", "ospf").
++Fwd("N_Dublin", "Waterford", "Dublin", "ospf").
++Fwd("N_Dublin", "NodeID6", "Dublin", "ospf").
++Fwd("N_Dublin", "NodeID7", "Dublin", "ospf").
+
