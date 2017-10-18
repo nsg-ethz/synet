@@ -1,0 +1,7 @@
+Node(n) -> string(n).
+Network(n) -> string(n).
+
+BestBGPRoute(net, node, nxt) -> Network(net), Node(node), Node(node).
+Route(net, node, nxt, protocol) -> Network(net), Node(node), Node(node), string(protocol).
+
+Route(net, node, nxt, protocol) <- BestBGPRoute(net, node, nxt), protocol="STRING_bgp".

@@ -144,7 +144,9 @@ class Translator:
                 z3_right_terms.append(STRING_TO_IFACE[right_term.value])
               elif right_term.is_constant and right_term.type == Constant.NET_CONSTANT and right_term.value in STRING_TO_NET.keys():
                 z3_right_terms.append(STRING_TO_NET[right_term.value])
-              elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value not in STRING_TO_NODE.keys() + STRING_TO_NET.keys() + STRING_TO_IFACE.keys():
+              elif right_term.is_constant and right_term.type == Constant.STRING_CONSTANT and right_term.value in STRING_TO_BITVAL.keys():
+                z3_right_terms.append(STRING_TO_BITVAL[right_term.value])
+              elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value not in STRING_TO_NODE.keys() + STRING_TO_NET.keys() + STRING_TO_IFACE.keys() + STRING_TO_BITVAL.keys():
                 z3_right_terms.append(get_string_const_val(right_term.value))
               else:
                 raise NameError('Unknown term: {}'.format(right_term))             
@@ -188,6 +190,6 @@ class Translator:
       
 if __name__ == '__main__':
   unroll_limit = 2
-  box = Translator('synet/datalog/types.logic', unroll_limit)
+  box = Translator('/Users/ptsankov/work/synet/synet.git/synet/datalog/ahmed-example-01.logic', unroll_limit)
     
   print box.to_z3()
