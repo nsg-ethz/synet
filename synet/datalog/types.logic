@@ -1,0 +1,28 @@
+//------------------------------- TYPES -------------------------------//
+
+// Custom types
+Node(n) -> string(n).
+Network(n) -> string(n).
+Interface(n) -> string(n).
+
+// Types of EDB predicates
+Link(iface1, iface2) -> Interface(iface1), Interface(iface2).
+ConnectedNetwork(network, iface) -> Network(network), Interface(iface).
+SetInterface(node, iface) -> Node(node), Interface(iface).
+
+// Types of IDB predicates
+NodeReach(node1, node2) -> Node(node1), Node(node2).
+NetworkReach(network1, network2) -> Network(network1), Network(network2).
+
+//------------------------------- RULES -------------------------------//
+
+// Properties
+// Links are bi-directional
+Link(iface1, iface2) <- Link(iface2, iface1).
+
+// Rules
+NodeReach(node1, node2) <- SetInterface(node1, iface1), Link(iface1, iface2), SetInterface(node2, iface2).
+NodeReach(node1, node2) <- NodeReach(node1, node3), NodeReach(node3, node2).
+NetworkReach(network1, network2) <- ConnectedNetwork(network1, iface1), ConnectedNetwork(network2, iface2), SetInterface(node1, iface1), SetInterface(node2, iface2), NodeReach(node1, node2).
+
+//------------------------------ THE END ------------------------------//

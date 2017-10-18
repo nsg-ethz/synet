@@ -5,12 +5,19 @@ from constant import Constant
 
 BIT_VEC_SIZE = 5 # for encoding string constants
 LB_TYPE_TO_Z3_TYPE = {}
-(VERTEX, x) = z3.EnumSort('Vertex', ['R1']) # link with the synthesizer type for VERTEX
-LB_TYPE_TO_Z3_TYPE['Vertex'] = VERTEX
+(NODE, x) = z3.EnumSort('Node', ['R1']) # link with the synthesizer type for network node
+(IFACE, x) = z3.EnumSort('Interface', ['I1']) # link with the synthesizer type for interface
+(NET, x) = z3.EnumSort('Network', ['N1']) # link with the synthesizer type for network
+
+LB_TYPE_TO_Z3_TYPE['Node'] = NODE
+LB_TYPE_TO_Z3_TYPE['Interface'] = IFACE
+LB_TYPE_TO_Z3_TYPE['Network'] = NET
 LB_TYPE_TO_Z3_TYPE['string'] = z3.BitVecSort(BIT_VEC_SIZE)
 LB_TYPE_TO_Z3_TYPE['int'] = z3.IntSort()
 
-STRING_TO_VERTEX = {'Router11': z3.Const('Router11', VERTEX)}
+STRING_TO_NODE = {'R1': z3.Const('R1', NODE)}
+STRING_TO_IFACE = {'I1': z3.Const('I1', IFACE)}
+STRING_TO_NET = {'N1': z3.Const('N1', NET)}
 STRING_TO_BITVAL = {}
 
 
@@ -131,9 +138,13 @@ class Translator:
                 z3_right_terms.append(lb_vars_to_z3_vars[right_term])
               elif right_term.is_constant and right_term.type == Constant.INTEGER_CONSTANT:
                 z3_right_terms.append(right_term.value)
-              elif right_term.is_constant and right_term.type == Constant.STRING_CONSTANT and right_term.value in STRING_TO_VERTEX.keys():
-                z3_right_terms.append(STRING_TO_VERTEX[right_term.value])
-              elif right_term.is_constant and right_term.type == Constant.STRING_CONSTANT and right_term.value not in STRING_TO_VERTEX.keys():
+              elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value in STRING_TO_NODE.keys():
+                z3_right_terms.append(STRING_TO_NODE[right_term.value])
+              elif right_term.is_constant and right_term.type == Constant.IFACE_CONSTANT and right_term.value in STRING_TO_IFACE.keys():
+                z3_right_terms.append(STRING_TO_IFACE[right_term.value])
+              elif right_term.is_constant and right_term.type == Constant.NET_CONSTANT and right_term.value in STRING_TO_NET.keys():
+                z3_right_terms.append(STRING_TO_NET[right_term.value])
+              elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value not in STRING_TO_NODE.keys() + STRING_TO_NET.keys() + STRING_TO_IFACE.keys():
                 z3_right_terms.append(get_string_const_val(right_term.value))
               else:
                 raise NameError('Unknown term: {}'.format(right_term))             
@@ -176,6 +187,7 @@ class Translator:
     return z3_constraints
       
 if __name__ == '__main__':
-  unroll_limit = 1
-  box = Translator('../../logicblox/stratum-03-ospf-02-1.logic', unroll_limit)
+  unroll_limit = 2
+  box = Translator('synet/datalog/types.logic', unroll_limit)
+    
   print box.to_z3()

@@ -2,6 +2,9 @@ class Constant:
   
   INTEGER_CONSTANT = 'INTEGER'
   STRING_CONSTANT = 'STRING'
+  NODE_CONSTANT = 'NODE'
+  IFACE_CONSTANT = 'IFACE'
+  NET_CONSTANT = 'NET'
   
   def __init__(self, value):
     self.is_constant = True
@@ -11,8 +14,8 @@ class Constant:
       self.type = Constant.INTEGER_CONSTANT
       self.value = int(value)
     elif value.startswith('"'):
-      self.type = Constant.STRING_CONSTANT
-      self.value = value[1:-1]
+      self.type = value[1:-1].split('_')[0] #  Constant.STRING_CONSTANT
+      self.value = value[1:-1].split('_')[1]
     else:
       raise NameError('Unknown constant type: {}'.format(value))
       
