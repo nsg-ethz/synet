@@ -42,7 +42,7 @@ class Synthesizer(object):
         self.fixed_inputs = {}
         self.parse_initial_inputs(inputs)
         self.set_bgp_annoucement = {}
-        self._create_vertices('Vertex')
+        self._create_vertices()
         self.network_graph = nx.DiGraph()
         self.unrolling_limit = unrolling_limit
         self.ospf_costs = {}
@@ -1950,6 +1950,11 @@ class Synthesizer(object):
             return inv_map3[vertex]
 
     def _get_names(self):
+        """
+        Read the input files and extract all object names
+        e.g., node names, network names, etc..
+        :return: node_names, interface_names, network_names, announced_network_names
+        """
         node_names = []
         interface_names = []
         network_names = []
@@ -1981,8 +1986,8 @@ class Synthesizer(object):
                 pathlength = int(args[4])
                 if edge not in self.set_bgp_annoucement:
                     self.set_bgp_annoucement[edge] = []
-                print "Setting", (edge, net, ext, path, pathlength)
-                self.set_bgp_annoucement[edge].append((edge, net, ext, path, pathlength))
+                self.set_bgp_annoucement[edge].append(
+                    (edge, net, ext, path, pathlength))
                 # network_names.append(args[2])
                 as_paths.append(args[3])
                 as_paths_length[args[3]] = int(args[4])
@@ -2001,21 +2006,18 @@ class Synthesizer(object):
         self.as_paths_length = as_paths_length
         return node_names, interface_names, network_names, announced_network_names
 
-    def _create_vertices(self, vertex_name):
-        node_names, interface_names, network_names, announced_network_names = self._get_names()
+    def _create_vertices(self):
+        # Extract all names from the input files
+        (node_names, interface_names, network_names,
+         announced_network_names) = self._get_names()
         self.node_names = node_names
         self.interface_names = interface_names
         self.network_names = network_names
         self.announced_network_names = announced_network_names
-        #all_names = node_names + interface_names + network_names + announced_network_names
-        #(vertex, all_vertices) = z3.EnumSort(vertex_name, all_names)
-
+        nets = list(set(self.network_names + self.announced_network_names))
         (self.node_sort, self.nodes) = z3.EnumSort("NodeSort", self.node_names)
         (self.iface_sort, self.interfaces) = z3.EnumSort("IfaceSort", self.interface_names)
-        (self.network_sort, self.networks) = z3.EnumSort("NetSort", self.network_names + self.announced_network_names)
-        #self.vertex = vertex
-        #self.all_vertices = all_vertices
-        #translator.LB_TYPE_TO_Z3_TYPE['Vertex'] = self.vertex
+        (self.network_sort, self.networks) = z3.EnumSort("NetSort", nets)
         translator.LB_TYPE_TO_Z3_TYPE['Node'] = self.node_sort
         translator.LB_TYPE_TO_Z3_TYPE['Interface'] = self.iface_sort
         translator.LB_TYPE_TO_Z3_TYPE['Network'] = self.network_sort
@@ -2027,12 +2029,8 @@ class Synthesizer(object):
         translator.STRING_TO_NODE = self.name_to_node
         translator.STRING_TO_NET = self.name_to_network
         translator.STRING_TO_IFACE = self.name_to_iface
-        #self.name_to_vertex = dict((str(v), v) for v in self.all_vertices)
-        #translator.STRING_TO_VERTEX = self.name_to_vertex
-        #self.nodes = [self.get_vertex(name) for name in node_names]
-        #self.interfaces = [self.get_vertex(name) for name in interface_names]
-        #self.networks = [self.get_vertex(name) for name in network_names]
-        self.announced_networks = [self.name_to_network[name] for name in self.announced_network_names]
+        self.announced_networks = [self.name_to_network[name] for name
+                                   in self.announced_network_names]
 
     def construct_input_graph(self):
         for node in self.node_names:
