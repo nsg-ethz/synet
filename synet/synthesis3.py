@@ -104,29 +104,37 @@ class Synthesizer(object):
         print ''
 
     def evaluate_function(self, func, model):
+        """
+        Evaluate function over all possible values in the domain
+        Z3 by default summarizes the functions, this force z3 to evaluate
+        every single combination. However, this is very slow.
+        """
         func_name = str(func)
         values = []
+
         def get_domain_values(domain):
-            if domain == 'Vertex':
-                return self.all_vertices
-            elif domain == 'Node':
-                return self.nodes
+            """Get all the possible value for a given function arg"""
+            ret_val = None
+            if domain == 'Node':
+                ret_val = self.nodes
             elif domain == 'Network':
-                return self.networks
+                ret_val = self.networks
             elif domain == 'Interface':
-                return self.interfaces
+                ret_val = self.interfaces
             elif domain == 'AnnouncedNetwork':
-                return self.announced_networks
+                ret_val = self.announced_networks
             elif domain == 'NetworkOrAnnouncedNetwork':
-                return self.announced_networks + self.networks
+                ret_val = self.announced_networks + self.networks
             elif domain == 'Protocol':
-                return [get_string_const_val(p) for p in ['static', 'ospf', 'bgp']]
+                ret_val = [get_string_const_val(p) for p in ['static', 'ospf', 'bgp']]
             elif domain == 'ASPath':
-                return [get_string_const_val(p) for p in self.as_paths]
+                ret_val = [get_string_const_val(p) for p in self.as_paths]
             elif domain == 'Int':
-                return list(range(100))
+                ret_val = list(range(100))
             else:
                 raise ValueError("Unknown domain '%s" % domain)
+            return ret_val
+
         domains = [get_domain_values(arg) for arg in FUNCS_SIG[func_name]]
         for vals in itertools.product(*domains):
             values.append((vals, z3.is_true(model.eval(func(*vals), True))))
