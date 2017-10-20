@@ -398,8 +398,10 @@ class Synthesizer(object):
                     print c
                     self.boxes[box_name]['solver'].append(c)
                     t = z3.Const('cost', z3.IntSort())
-                    c = z3.ForAll([t], newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](t) == (
-                    t == cost))
+                    c = z3.ForAll(
+                        [t],
+                        newTranslator.predicates[
+                            'OSPFRoute_{}_{}_{}'.format(net, src, nxt)](t) == (t == cost))
                     print c
                     self.boxes[box_name]['solver'].append(c)
 
@@ -412,7 +414,7 @@ class Synthesizer(object):
                         # print "TO APPEND", box_name, self.fixed_inputs[i]
                         self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
                 self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
-              
+
             solver = self.boxes[box_name]['solver']
             solver.push()
             print "#" * 30
@@ -451,11 +453,13 @@ class Synthesizer(object):
                     t1 = z3.Const('t1', z3.IntSort())
                     c = z3.ForAll(
                         [net1, node1, node2, t1],
-                            IGPRouteCost(net1, node1, node2, t1) ==
-                                z3.Or(
-                                    *[z3.And(net1 == p[0], node1 == p[1], node2 == p[2], t1 == p[3]) for p in valid_igp]
-                                ))
-
+                        IGPRouteCost(net1, node1, node2, t1) == z3.Or(
+                            *[
+                                z3.And(
+                                    net1 == p[0],
+                                    node1 == p[1],
+                                    node2 == p[2],
+                                    t1 == p[3]) for p in valid_igp]))
                     solver.append(c)
                 orig_name = get_original_version(func_name)
                 return_else = True
