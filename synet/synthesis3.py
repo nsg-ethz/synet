@@ -144,43 +144,43 @@ class Synthesizer(object):
         return values
 
     def _process_vals(self, func, vals, functions, return_else=True):
-        #print "-" * 30
-        #print "IN PROCESS VALS", func, vals
-        #return_else = False
+        """
+        Used in processing the values synthesized in box and extract the inputs
+        for the next box.
+        """
         func_name = str(func)
         variables = []
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
-        for i, t in enumerate(FUNCS_SIG[func_name]):
-            if t == 'Vertex':
-                variables.append(z3.Const('t%d' % i, self.vertex))
-            elif t == 'Node':
-                tmp = z3.Const('t%d' % i, self.node_sort)
+        # Get the variables used in the quantifier
+        for index, arg in enumerate(FUNCS_SIG[func_name]):
+            if arg == 'Node':
+                tmp = z3.Const('t%d' % index, self.node_sort)
                 variables.append(tmp)
-            elif t == 'Network':
-                tmp = z3.Const('t%d' % i, self.network_sort)
+            elif arg == 'Network':
+                tmp = z3.Const('t%d' % index, self.network_sort)
                 variables.append(tmp)
-            elif t == 'Interface':
-                tmp = z3.Const('t%d' % i, self.iface_sort)
+            elif arg == 'Interface':
+                tmp = z3.Const('t%d' % index, self.iface_sort)
                 variables.append(tmp)
-            elif t == 'AnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.network_sort)
+            elif arg == 'AnnouncedNetwork':
+                tmp = z3.Const('t%d' % index, self.network_sort)
                 variables.append(tmp)
-            elif t == 'NetworkOrAnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.network_sort)
+            elif arg == 'NetworkOrAnnouncedNetwork':
+                tmp = z3.Const('t%d' % index, self.network_sort)
                 variables.append(tmp)
-            elif t == 'Int':
-                variables.append(z3.Const('t%d' % i, z3.IntSort()))
-            elif t == 'ASPath':
-                tmp = z3.Const('t%d' % i, string_sort)
+            elif arg == 'Int':
+                variables.append(z3.Const('t%d' % index, z3.IntSort()))
+            elif arg == 'ASPath':
+                tmp = z3.Const('t%d' % index, string_sort)
                 variables.append(tmp)
-            elif t == 'ASPathLength':
-                variables.append(z3.Const('t%d' % i, z3.IntSort()))
-            elif t == 'Protocol':
-                tmp = z3.Const('t%d' % i, string_sort)
+            elif arg == 'ASPathLength':
+                variables.append(z3.Const('t%d' % index, z3.IntSort()))
+            elif arg == 'Protocol':
+                tmp = z3.Const('t%d' % index, string_sort)
                 variables.append(tmp)
             else:
                 raise ValueError(
-                    "Unrecoginzed function %s domain '%s" % (func_name, t))
+                    "Unrecoginzed function %s domain '%s" % (func_name, arg))
 
         global_ret = None
         for val in vals[:]:
@@ -192,41 +192,40 @@ class Synthesizer(object):
         true_set = [val for val in vals if z3.is_expr(val[-1]) and z3.is_true(val[-1])]
         false_set = [val for val in vals if z3.is_expr(val[-1]) and z3.is_false(val[-1])]
 
-        c = []
+        constraints = []
         if true_set:
             for val in true_set:
                 f_name = get_unrolled_version(func_name)
-                f = functions.get(f_name, func)
-                c.append(f(*val[:-1]) == True)
+                new_f = functions.get(f_name, func)
+                constraints.append(new_f(*val[:-1]) == True)
         if false_set:
             f_name = get_original_version(func_name)
-            f = functions[f_name]
+            new_f = functions[f_name]
             for val in false_set:
-                c.append(f(*val[:-1]) == False)
+                constraints.append(new_f(*val[:-1]) == False)
 
         if global_ret is not None:
             if global_ret == True:
                 f_name = get_unrolled_version(func_name)
-                f = functions.get(f_name, func)
+                new_f = functions.get(f_name, func)
             else:
                 f_name = get_original_version(func_name)
-                f = functions[f_name]
-            if len(vals) > 0:
-                if return_else:
-                    c.append(
-                        z3.ForAll(
-                            variables,
-                            z3.Implies(
-                                z3.Not(z3.Or([z3.And(
-                                    [v == val[i] for i, v in enumerate(variables)])
-                                              for
-                                              val in vals])),
-                                f(*variables) == global_ret)))
+                new_f = functions[f_name]
+            if len(vals) > 0 and return_else:
+                constraints.append(
+                    z3.ForAll(
+                        variables,
+                        z3.Implies(
+                            z3.Not(
+                                z3.Or(
+                                    [z3.And([tmp == val[index] for
+                                             index, tmp in enumerate(variables)])
+                                     for val in vals])),
+                            new_f(*variables) == global_ret)))
             else:
-                c.append(z3.ForAll(variables, f(*variables) == global_ret))
-        #print "Final constrinats", c
-        #print "-" * 30
-        return c
+                constraints.append(
+                    z3.ForAll(variables, new_f(*variables) == global_ret))
+        return constraints
 
     def _get_function_vals(self, func, model):
         """Recursively go through the model to get the values of a function"""
