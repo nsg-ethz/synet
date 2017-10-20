@@ -237,11 +237,11 @@ class Synthesizer(object):
             return vals
         for val in model[func].as_list()[:-1]:
             vals.append(val)
-        el = model[func].else_value()
-        if z3.is_true(el) or z3.is_false(el):
-            vals.append(str(el))
+        else_val = model[func].else_value()
+        if z3.is_true(else_val) or z3.is_false(else_val):
+            vals.append(str(else_val))
             return vals
-        ret = self._get_function_vals(el.decl(), model)
+        ret = self._get_function_vals(else_val.decl(), model)
         if ret:
             vals.extend(ret)
         return vals
