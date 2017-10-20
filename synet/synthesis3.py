@@ -29,6 +29,10 @@ __author__ = "Ahmed El-Hassany"
 __email__ = "eahmed@ethz.ch"
 
 
+MAX_OSPF_COST = 30
+MAX_INT_VAL = 17
+
+
 class Synthesizer(object):
     def __init__(self, boxes, boxes_names, inputs, fixed_outputs, unrolling_limit=5):
         self.boxes = boxes
@@ -764,7 +768,14 @@ class Synthesizer(object):
         return self._tmp_dnodes
 
     def generate_function_constraints(self, func):
-        is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
+        """
+        Generate constraints to limit the search space of the function based
+        on it's signature
+        :param func: z3 function
+        :return: constraints
+        """
+        (is_announced_network, is_protocol,
+         is_as_path, is_as_path_length, _) = self._common_datatypes()
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
         func_name = str(func)
         assert func_name in FUNCS_SIG, \
@@ -773,63 +784,64 @@ class Synthesizer(object):
             "The function '%s' has different signature" % func_name
         variables = []
         checks = []
-        for i, t in enumerate(FUNCS_SIG[func_name]):
-            if t == 'Vertex':
-                variables.append(z3.Const('t%d' % i, self.vertex))
-            elif t == 'Node':
-                tmp = z3.Const('t%d' % i, self.node_sort)
+        # Iterate over the functions domain and generate constraints
+        # to limit the search space of it (if necessary)
+        for index, func_var in enumerate(FUNCS_SIG[func_name]):
+            if func_var == 'Node':
+                tmp = z3.Const('t%d' % index, self.node_sort)
                 variables.append(tmp)
-                #checks.append(z3.Not(is_node(tmp)))
-            elif t == 'Network':
-                tmp = z3.Const('t%d' % i, self.network_sort)
+            elif func_var == 'Network':
+                tmp = z3.Const('t%d' % index, self.network_sort)
                 variables.append(tmp)
-                #checks.append(z3.Not(is_network(tmp)))
-            elif t == 'Interface':
-                tmp = z3.Const('t%d' % i, self.iface_sort)
+            elif func_var == 'Interface':
+                tmp = z3.Const('t%d' % index, self.iface_sort)
                 variables.append(tmp)
-                #checks.append(z3.Not(is_interface(tmp)))
-            elif t == 'AnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.network_sort)
+            elif func_var == 'AnnouncedNetwork':
+                tmp = z3.Const('t%d' % index, self.network_sort)
                 variables.append(tmp)
                 checks.append(z3.Not(is_announced_network(tmp)))
-            elif t == 'NetworkOrAnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.network_sort)
+            elif func_var == 'NetworkOrAnnouncedNetwork':
+                tmp = z3.Const('t%d' % index, self.network_sort)
                 variables.append(tmp)
-                #checks.append(z3.Not(z3.Or(is_announced_network(tmp), is_network(tmp))))
-            elif t == 'Int':
-                tmp = z3.Const('t%d' % i, z3.IntSort())
+            elif func_var == 'Int':
+                tmp = z3.Const('t%d' % index, z3.IntSort())
                 variables.append(tmp)
                 if func_name.startswith('OSPFRoute'):
-                    checks.append(z3.Not(z3.And(tmp <= 30, tmp >= 0)))
+                    checks.append(z3.Not(z3.And(tmp <= MAX_OSPF_COST, tmp >= 0)))
                 else:
-                    checks.append(z3.Not(z3.And(tmp <= 17, tmp >= 0)))
-            elif t == 'ASPathLength':
-                tmp = z3.Const('t%d' % i, z3.IntSort())
+                    checks.append(z3.Not(z3.And(tmp <= MAX_INT_VAL, tmp >= 0)))
+            elif func_var == 'ASPathLength':
+                tmp = z3.Const('t%d' % index, z3.IntSort())
                 variables.append(tmp)
-                if FUNCS_SIG[func_name][i - 1] == 'ASPath':
+                if FUNCS_SIG[func_name][index - 1] == 'ASPath':
                     p = variables[-2]
                     checks.append(z3.Not(is_as_path_length(p, tmp)))
-            elif t == 'ASPath':
-                tmp = z3.Const('t%d' % i, string_sort)
+            elif func_var == 'ASPath':
+                tmp = z3.Const('t%d' % index, string_sort)
                 variables.append(tmp)
                 checks.append(z3.Not(is_as_path(tmp)))
-            elif t == 'Protocol':
-                tmp = z3.Const('t%d' % i, string_sort)
+            elif func_var == 'Protocol':
+                tmp = z3.Const('t%d' % index, string_sort)
                 variables.append(tmp)
                 checks.append(z3.Not(is_protocol(tmp)))
             else:
-                raise ValueError("Unrecoginzed function %s domain '%s" % (func_name, t))
-
-        c = [z3.ForAll(variables, z3.Not(z3.And(func(*variables), z3.Or(*checks))))]
+                err = "Unrecognized function %s domain '%s" % (func_name, func_var)
+                raise ValueError(err)
+        # Create the constraint
+        constraint = [z3.ForAll(
+            variables, z3.Not(z3.And(func(*variables), z3.Or(*checks))))]
         if func_name == 'BGPAnnouncement':
-            c.append(
+            constraint.append(
                 z3.ForAll(
                     variables,
                     z3.Implies(
                         z3.Not(
-                            z3.Or([z3.And([v == announcement[i] for i, v in enumerate(variables)]) for announcement in self.bgp_annoucements])),
+                            z3.Or(
+                                [z3.And([v == announcement[index]
+                                         for index, v in enumerate(variables)])
+                                 for announcement in self.bgp_annoucements])),
                         z3.Not(func(*variables)))))
-        return c
+        return constraint
 
     def fill_boxes_input_constraints(self, box_name):
         inputs = self.boxes[box_name]['inputs']
