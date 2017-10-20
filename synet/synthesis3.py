@@ -40,6 +40,7 @@ class Synthesizer(object):
         self.protocols = []
         self.as_paths = []
         self.fixed_inputs = {}
+        self._tmp_connected_networks = []
         self.connected_nodes = []  # Holds (node, iface, iface, node)
         self.parse_initial_inputs(inputs)
         self.set_bgp_annoucement = {}
@@ -711,8 +712,10 @@ class Synthesizer(object):
         return r1 == r2
 
     def fill_connected_networks_f(self):
-        if not hasattr(self, '_tmp_connected_networks'):
-            self._tmp_connected_networks = []
+        """
+        Partially evaluate self.connected_networks_f(node, net) -> true if the
+        network is attached to that given router
+        """
         if self._tmp_connected_networks:
             return self._tmp_connected_networks
         constraints = []
