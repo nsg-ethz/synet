@@ -40,7 +40,10 @@ class Synthesizer(object):
         self.protocols = []
         self.as_paths = []
         self.fixed_inputs = {}
+        # Holds partial evaluation constrains for connected networks
         self._tmp_connected_networks = []
+        # Holds partial evaluation constrains for directly connected nodes
+        self._tmp_dnodes = []
         self.connected_nodes = []  # Holds (node, iface, iface, node)
         self.parse_initial_inputs(inputs)
         self.set_bgp_annoucement = {}
@@ -730,30 +733,33 @@ class Synthesizer(object):
         return self._tmp_connected_networks
 
     def fill_directly_connected_nodes(self):
-        if not hasattr(self, '_tmp_dnodes'):
-            self._tmp_dnodes = []
+        """
+        Partially evaluate directly connected nodes
+        self.directly_connected_nodes(node, node) -> true if there is
+        an interfaces and link connecting them
+        :return: constraints for the partial evaluation
+        """
+        # Check whether we already partially evaluated this value
         if self._tmp_dnodes:
             return self._tmp_dnodes
         constraints = []
         direct_nodes = []
-        for snode in self.node_names:
+        for sname in self.node_names:
             for siface in self.interface_names:
                 for diface in self.interface_names:
-                    for dnode in self.node_names:
-                        l = [snode, siface, diface, dnode]
-                        if l in self.connected_nodes:
-                            direct_nodes.append((snode, dnode))
+                    for dname in self.node_names:
+                        link = [sname, siface, diface, dname]
+                        if link in self.connected_nodes:
+                            direct_nodes.append((sname, dname))
         direct_nodes = list(set(direct_nodes))
-        for snode in self.node_names:
-            for dnode in self.node_names:
-                sv = self.name_to_node[snode]
-                dv = self.name_to_node[dnode]
-                if (snode, dnode) in direct_nodes:
+        for sname, svar in self.name_to_node.iteritems():
+            for dname, dvar in self.name_to_node.iteritems():
+                if (sname, dname) in direct_nodes:
                     constraints.append(
-                        self.directly_connected_nodes(sv, dv) == True)
+                        self.directly_connected_nodes(svar, dvar) == True)
                 else:
                     constraints.append(
-                        self.directly_connected_nodes(sv, dv) == False)
+                        self.directly_connected_nodes(svar, dvar) == False)
         self._tmp_dnodes = constraints
         return self._tmp_dnodes
 
