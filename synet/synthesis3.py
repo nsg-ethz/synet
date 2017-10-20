@@ -333,36 +333,36 @@ class Synthesizer(object):
             box_name = self.boxes_names[box_index]
             box_tries_count[box_name] += 1
             if box_name == 'ospf01':
-              solver = z3.Solver()
-              print 'partially evaluate the OSPF Datalog rules'
-              translator = Translator(self.boxes[box_name]['file'], 1)
-              ospf_costs = {}
-              DEBUG_OSPF = False
-              if DEBUG_OSPF:                
-                ospf_routes = []
-                for ospf_route in self.boxes[box_name]['fixed_outputs']:
-                  ospf_route = ospf_route.arg(0)
-                  net = ospf_route.arg(0)
-                  src = ospf_route.arg(1)
-                  nxt = ospf_route.arg(2)
-                  cost = ospf_route.arg(3)
-                  ospf_routes.append([net, src, nxt, cost])
-                yes_func_vals['OSPFRoute'] = ospf_routes                          
-              for out in yes_func_vals['OSPFRoute']:
-                if str(out) == 'False' :
-                  continue
-                net = str(out[0])
-                if net not in ospf_costs.keys():
-                  ospf_costs[net] = {}
-                src = str(out[1])
-                if src not in ospf_costs[net].keys():
-                  ospf_costs[net][src] = {}
-                nxt = str(out[2])                
-                cost = str(out[3])
-                ospf_costs[net][src][nxt] = cost
-              ospf_reduced = tempfile.NamedTemporaryFile() #open('/tmp/ospf_reduced.sssmt2', 'w')
-              print 'Writing OSPF partial evaluation rules to:', ospf_reduced.name
-              ospf_reduced.write("""// ----------------------------- TYPES ----------------------------- //
+                solver = z3.Solver()
+                print 'partially evaluate the OSPF Datalog rules'
+                translator = Translator(self.boxes[box_name]['file'], 1)
+                ospf_costs = {}
+                DEBUG_OSPF = False
+                if DEBUG_OSPF:
+                    ospf_routes = []
+                    for ospf_route in self.boxes[box_name]['fixed_outputs']:
+                        ospf_route = ospf_route.arg(0)
+                        net = ospf_route.arg(0)
+                        src = ospf_route.arg(1)
+                        nxt = ospf_route.arg(2)
+                        cost = ospf_route.arg(3)
+                        ospf_routes.append([net, src, nxt, cost])
+                    yes_func_vals['OSPFRoute'] = ospf_routes
+                for out in yes_func_vals['OSPFRoute']:
+                    if str(out) == 'False':
+                        continue
+                    net = str(out[0])
+                    if net not in ospf_costs.keys():
+                        ospf_costs[net] = {}
+                    src = str(out[1])
+                    if src not in ospf_costs[net].keys():
+                        ospf_costs[net][src] = {}
+                    nxt = str(out[2])
+                    cost = str(out[3])
+                    ospf_costs[net][src][nxt] = cost
+                ospf_reduced = tempfile.NamedTemporaryFile()  # open('/tmp/ospf_reduced.sssmt2', 'w')
+                print 'Writing OSPF partial evaluation rules to:', ospf_reduced.name
+                ospf_reduced.write("""// ----------------------------- TYPES ----------------------------- //
                                   // Generic Vertex type
                                   Node(n) -> string(n).
                                   Network(n) -> string(n).
@@ -373,71 +373,75 @@ class Synthesizer(object):
                                   SetOSPFEdgeCost(src, dst, cost) -> Interface(src), Interface(dst), int(cost).
                                   //IDB: LinkOSPF, OSPFRoute
                                   OSPFRoute(net, src, next, cost) -> Network(net), Node(src), Node(next), int(cost).
-                                  
+
                                   // ----------------------------- OSPF 1/2 ----------------------------- //
                                   """)
-              for rule in translator.program.get_rules_for_predicate('OSPFRoute'):
-                if rule.head.name in [l.atom.name for l in rule.get_literals()]:
-                  print rule
-                  for net in ospf_costs.keys():
-                    for src in ospf_costs[net].keys():
-                      for nxt in ospf_costs[net][src].keys():
-                        src_nxt_link = [link for link in self.connected_nodes if link[0] == src and link[3] == nxt][0]
-                        src_iface = src_nxt_link[1] 
-                        nxt_iface = src_nxt_link[2]
-                        if nxt not in ospf_costs[net].keys():                          
-                          newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = {}.'.format(net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
-                          print newRule
-                          ospf_reduced.write(newRule + '\n')
-                          newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
-                          print newRule
-                          ospf_reduced.write(newRule + '\n')
-                        else:
-                          for next2 in ospf_costs[net][nxt].keys():                            
-                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = cost1 + {}.'.format(net, src, nxt, src_iface, nxt_iface, ospf_costs[net][nxt][next2])
-                            print newRule
-                            ospf_reduced.write(newRule + '\n')
-                            newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
-                            print newRule
-                            ospf_reduced.write(newRule + '\n')
-              
-              ospf_reduced.flush()
-              with open(ospf_reduced.name) as f:
-                  print "X" * 100
-                  print f.read()
-                  print "X" * 100
-              newTranslator = Translator(ospf_reduced.name, self.unrolling_limit)
-              newTranslator.STRING_TO_NODE = self.name_to_node
-              newTranslator.STRING_TO_NET = self.name_to_network
-              newTranslator.STRING_TO_IFACE = self.name_to_iface
+                for rule in translator.program.get_rules_for_predicate('OSPFRoute'):
+                    if rule.head.name in [l.atom.name for l in rule.get_literals()]:
+                        print rule
+                        for net in ospf_costs.keys():
+                            for src in ospf_costs[net].keys():
+                                for nxt in ospf_costs[net][src].keys():
+                                    src_nxt_link = \
+                                    [link for link in self.connected_nodes if link[0] == src and link[3] == nxt][0]
+                                    src_iface = src_nxt_link[1]
+                                    nxt_iface = src_nxt_link[2]
+                                    if nxt not in ospf_costs[net].keys():
+                                        newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = {}.'.format(
+                                            net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
+                                        print newRule
+                                        ospf_reduced.write(newRule + '\n')
+                                        newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
+                                        print newRule
+                                        ospf_reduced.write(newRule + '\n')
+                                    else:
+                                        for next2 in ospf_costs[net][nxt].keys():
+                                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = cost1 + {}.'.format(
+                                                net, src, nxt, src_iface, nxt_iface, ospf_costs[net][nxt][next2])
+                                            print newRule
+                                            ospf_reduced.write(newRule + '\n')
+                                            newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
+                                            print newRule
+                                            ospf_reduced.write(newRule + '\n')
 
-              self.boxes[box_name]['solver'] = z3.Solver()
-              self.boxes[box_name]['solver'].append(newTranslator.to_z3())
-                          
-              for fix_output in yes_func_vals['OSPFRoute']:                
-                if str(fix_output) == 'False':
-                  continue
-                net = fix_output[0] 
-                src = fix_output[1]
-                nxt = fix_output[2]
-                cost = fix_output[3]
-                c = newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](cost) == True
-                print c
-                self.boxes[box_name]['solver'].append(c)
-                t = z3.Const('cost', z3.IntSort())
-                c = z3.ForAll([t], newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](t) == (t == cost))
-                print c
-                self.boxes[box_name]['solver'].append(c)
-              
-              for c in self.boxes[box_name]['input_constraints']:
-                  if c is None: continue
-                  self.boxes[box_name]['solver'].append(c)
-              self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_inputs'])
-              for i in self.boxes[box_name]['inputs']:
-                  if i in self.fixed_inputs:
-                      #print "TO APPEND", box_name, self.fixed_inputs[i]
-                      self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
-              self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
+                ospf_reduced.flush()
+                with open(ospf_reduced.name) as f:
+                    print "X" * 100
+                    print f.read()
+                    print "X" * 100
+                newTranslator = Translator(ospf_reduced.name, self.unrolling_limit)
+                newTranslator.STRING_TO_NODE = self.name_to_node
+                newTranslator.STRING_TO_NET = self.name_to_network
+                newTranslator.STRING_TO_IFACE = self.name_to_iface
+
+                self.boxes[box_name]['solver'] = z3.Solver()
+                self.boxes[box_name]['solver'].append(newTranslator.to_z3())
+
+                for fix_output in yes_func_vals['OSPFRoute']:
+                    if str(fix_output) == 'False':
+                        continue
+                    net = fix_output[0]
+                    src = fix_output[1]
+                    nxt = fix_output[2]
+                    cost = fix_output[3]
+                    c = newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](cost) == True
+                    print c
+                    self.boxes[box_name]['solver'].append(c)
+                    t = z3.Const('cost', z3.IntSort())
+                    c = z3.ForAll([t], newTranslator.predicates['OSPFRoute_{}_{}_{}'.format(net, src, nxt)](t) == (
+                    t == cost))
+                    print c
+                    self.boxes[box_name]['solver'].append(c)
+
+                for c in self.boxes[box_name]['input_constraints']:
+                    if c is None: continue
+                    self.boxes[box_name]['solver'].append(c)
+                self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_inputs'])
+                for i in self.boxes[box_name]['inputs']:
+                    if i in self.fixed_inputs:
+                        # print "TO APPEND", box_name, self.fixed_inputs[i]
+                        self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
+                self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
               
             solver = self.boxes[box_name]['solver']
             solver.push()
