@@ -607,106 +607,95 @@ class Synthesizer(object):
                 #print self.boxes[box_name]['solver'].model()
 
     def _common_datatypes(self):
-        """Common dataypes Node, Networks, Interfaces"""
-        # Common
-        #is_node = z3.Function('is_node', self.vertex, z3.BoolSort())
-        #is_network = z3.Function('is_network', self.vertex, z3.BoolSort())
-        #is_interface = z3.Function('is_interface', self.vertex, z3.BoolSort())
-        is_announced_network = z3.Function('is_announced_network', self.network_sort, z3.BoolSort())
+        """Common data is_announced_network, is_protocol, is_as_path,
+        is_as_path_length, constraints"""
+        is_announced_network = z3.Function('is_announced_network',
+                                           self.network_sort, z3.BoolSort())
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
         is_protocol = z3.Function('is_protocol', string_sort, z3.BoolSort())
         is_as_path = z3.Function('is_as_path', string_sort, z3.BoolSort())
-        is_as_path_length = z3.Function('is_as_path_length', string_sort, z3.IntSort(), z3.BoolSort())
+        is_as_path_length = z3.Function('is_as_path_length',
+                                        string_sort, z3.IntSort(), z3.BoolSort())
         protocols = [get_string_const_val('static'),
                      get_string_const_val('ospf'),
                      get_string_const_val('bgp')]
         as_paths = [get_string_const_val(p) for p in self.as_paths]
-        v1 = z3.Const('v1', self.network_sort)
-        s1 = z3.Const('s1', string_sort)
-        t1 = z3.Const('t1', z3.IntSort())
-        self.connected_networks_f = z3.Function('ConnectedNetwork', self.node_sort, self.network_sort, z3.BoolSort())
-
+        string_var = z3.Const('s1', string_sort)
+        int_var = z3.Const('t1', z3.IntSort())
+        self.connected_networks_f = z3.Function('ConnectedNetwork',
+                                                self.node_sort, self.network_sort,
+                                                z3.BoolSort())
         constraints = []
+        # Mark externally learned networks
+        for name, net in self.name_to_network.iteritems():
+            if name in self.announced_network_names:
+                constraints.append(is_announced_network(net) == True)
+            else:
+                constraints.append(is_announced_network(net) == False)
 
-        if self.announced_networks:
-            constraints.append(
-                z3.ForAll(
-                    [v1],
-                    z3.Implies(
-                        z3.Or([v1 == tmp for tmp in self.announced_networks]),
-                        is_announced_network(v1) == True
-                    )))
-            constraints.append(
-                z3.ForAll(
-                    [v1],
-                    z3.Implies(
-                        z3.And([v1 != tmp for tmp in self.announced_networks]),
-                        is_announced_network(v1) == False
-                    )))
-        else:
-            constraints.append(z3.ForAll([v1], is_announced_network(v1) == False))
-
+        # Constrain the protocols to only known ones
         constraints.append(
             z3.ForAll(
-                [s1],
+                [string_var],
                 z3.Implies(
-                    z3.Or([s1 == tmp for tmp in protocols]),
-                    is_protocol(s1) == True
+                    z3.Or([string_var == tmp for tmp in protocols]),
+                    is_protocol(string_var) == True
                 )))
         constraints.append(
             z3.ForAll(
-                [s1],
+                [string_var],
                 z3.Implies(
                     z3.And(
-                        [s1 != tmp for tmp in protocols]),
-                    is_protocol(s1) == False
+                        [string_var != tmp for tmp in protocols]),
+                    is_protocol(string_var) == False
                 )))
 
+        # Constrain AS Paths to only known ones
         if as_paths:
             constraints.append(
                 z3.ForAll(
-                    [s1],
+                    [string_var],
                     z3.Implies(
-                        z3.Or([s1 == tmp for tmp in as_paths]),
-                        is_as_path(s1) == True
+                        z3.Or([string_var == tmp for tmp in as_paths]),
+                        is_as_path(string_var) == True
                     )))
             constraints.append(
                 z3.ForAll(
-                    [s1],
+                    [string_var],
                     z3.Implies(
                         z3.And(
-                            [s1 != tmp for tmp in as_paths]),
-                        is_as_path(s1) == False
+                            [string_var != tmp for tmp in as_paths]),
+                        is_as_path(string_var) == False
                     )))
         else:
-            constraints.append(z3.ForAll([s1],  is_as_path(s1) == False))
+            constraints.append(z3.ForAll([string_var],
+                                         is_as_path(string_var) == False))
 
         if self.as_paths_length:
             constraints.append(
                 z3.ForAll(
-                    [s1, t1],
+                    [string_var, int_var],
                     z3.Implies(
                         z3.Or(
-                            [z3.And(s1 == p, t1 == l) for p, l in self.as_paths_length.iteritems()]),
-                        is_as_path_length(s1, t1) == True
-                    )))
+                            [z3.And(string_var == p, int_var == l) for
+                             p, l in self.as_paths_length.iteritems()]),
+                        is_as_path_length(string_var, int_var) == True)))
             constraints.append(
                 z3.ForAll(
-                    [s1],
+                    [string_var],
                     z3.Implies(
                         z3.And(
-                                [z3.Not(z3.And(s1 == p, t1 == l))
-                                 for p, l in self.as_paths_length.iteritems()]),
-                        is_as_path_length(s1, t1) == False
-                    )))
+                            [z3.Not(z3.And(string_var == p, int_var == l))
+                             for p, l in self.as_paths_length.iteritems()]),
+                        is_as_path_length(string_var, int_var) == False)))
         else:
             constraints.append(
-                z3.ForAll([s1, t1], is_as_path_length(s1, t1) == False))
+                z3.ForAll([string_var, int_var],
+                          is_as_path_length(string_var, int_var) == False))
         # Pair of directly connected routers
         self.directly_connected_nodes = z3.Function('DirectlyConnectedNodes',
                                                     self.node_sort, self.node_sort,
                                                     z3.BoolSort())
-
 
         return is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints
 
