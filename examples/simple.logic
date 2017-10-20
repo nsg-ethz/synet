@@ -1,0 +1,26 @@
++SetNode("R1").
++SetNode("R2").
++SetNode("R3").
+
++SetInterface("R1", "R1_I1").
++SetInterface("R1", "R1_I2").
++SetInterface("R2", "R2_I1").
++SetInterface("R2", "R2_I2").
++SetInterface("R3", "R3_I1").
++SetInterface("R3", "R3_I2").
+
++SetLink("R1_I1", "R2_I1").
++SetLink("R1_I2", "R3_I1").
++SetLink("R2_I2", "R3_I2").
+
++SetAdminDist("R1","static",1).
++SetAdminDist("R1","bgp",2).
++SetAdminDist("R1","ospf",3).
+
++SetAdminDist("R2","static",1).
++SetAdminDist("R2","bgp",2).
++SetAdminDist("R2","ospf",3).
+
+
++SetNetwork("R2", "R2_N1").
++SetBGPAnnouncement("R2", "R2_N1", "Google", "1;2;3", 3).
