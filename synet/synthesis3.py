@@ -40,6 +40,7 @@ class Synthesizer(object):
         self.protocols = []
         self.as_paths = []
         self.fixed_inputs = {}
+        self.connected_nodes = []  # Holds (node, iface, iface, node)
         self.parse_initial_inputs(inputs)
         self.set_bgp_annoucement = {}
         self._create_vertices()
@@ -2033,6 +2034,13 @@ class Synthesizer(object):
                                    in self.announced_network_names]
 
     def construct_input_graph(self):
+        """
+        From the inputs constructs self.network_graph
+        And fill self.connected_nodes with the tuples
+        (src node, src iface, dst iface, dst node)
+        that is used in partial eval
+        :return: None
+        """
         for node in self.node_names:
             self.network_graph.add_node(node, **{VERTEX_TYPE: NODE_TYPE})
         for network in self.network_names:
