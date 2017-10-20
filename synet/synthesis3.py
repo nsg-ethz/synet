@@ -1,25 +1,28 @@
 #!/usr/bin/env python
 
-import z3
-import networkx as nx
 import itertools
-
-#from translation.translator_nonrecursive import Translator
-#from translation.translator_nonrecursive import get_string_const_val
-#from translation import translator_nonrecursive as translator
-from translation.translator import Translator
-from translation.translator import get_string_const_val
-from translation import translator
-
-from synet.utils import parse_inputs
-from synet.utils import fill_box_info
-from synet.utils import get_unrolled_version
-from synet.utils import get_original_version
-from synet.utils import FUNCS_SIG
-
 import tempfile
 
-from common import *
+import networkx as nx
+import z3
+
+from synet.common import INTERFACE_TYPE
+from synet.common import INTERNAL_EDGE
+from synet.common import LINK_EDGE
+from synet.common import NETWORK_TYPE
+from synet.common import NODE_TYPE
+from synet.common import PEER_TYPE
+from synet.common import VERTEX_TYPE
+from synet.common import datatype_route_cost
+from synet.common import z3_interface_links
+from synet.translation import translator
+from synet.translation.translator import Translator
+from synet.translation.translator import get_string_const_val
+from synet.utils import FUNCS_SIG
+from synet.utils import fill_box_info
+from synet.utils import get_original_version
+from synet.utils import get_unrolled_version
+from synet.utils import parse_inputs
 
 
 __author__ = "Ahmed El-Hassany"
@@ -2067,7 +2070,6 @@ class Synthesizer(object):
         from synet.graph_util import get_bgp_attrs
         from synet.graph_util import SetAnnouncement
         from synet.graph_util import SetExternalPeer
-        from synet.graph_util import add_bgp_external_peer
         from synet.graph_util import add_input_filter
         from synet.graph_util import add_bgp_neighbor
         from synet.graph_util import add_ip_prefix_list
