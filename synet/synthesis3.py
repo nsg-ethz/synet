@@ -270,39 +270,6 @@ class Synthesizer(object):
             filterd_val = [val[:-1] for val in vals if z3.is_true(val[-1])]
             print "\tSynthesized output", name, filterd_val
 
-    def get_dj_constraints(self, dj, vals):
-        ret = []
-        t1, t2 = z3.Consts('t1 t2', z3.IntSort())
-        v1, v2 = z3.Consts('v1 v2', self.vertex)
-
-        net_map = {}
-        for src, net in self.connected_networks:
-            net_map[net] = src
-
-        considered = []
-        for val in vals:
-            print "In val", val
-            if not isinstance(val, list):
-                continue
-            net, src, nxt = val[0], val[1], val[2]
-            r = self.get_vertex(net_map[str(net)])
-            ss = [str(r), str(src), str(nxt)]
-            if ss not in considered:
-                considered.append(ss)
-            else:
-                continue
-            c = z3.And(
-                z3.Exists([t1], dj(r, src, nxt, t1)),
-                z3.Not(z3.Exists([v1, t2], z3.And(
-                    dj(r, src, v1, t2),
-                    v1 != v2,
-                    t2 < t1
-                ))
-                       ))
-            print "Added", c
-            ret.append(c)
-        return ret
-
     def get_ospf_constraints(self, ospf_route, ospf_route2, vals):
         ret = []
         t1, t2 = z3.Consts('t1 t2', z3.IntSort())
@@ -312,15 +279,18 @@ class Synthesizer(object):
             if not isinstance(val, list):
                 continue
             net, src, nxt = val[0], val[1], val[2]
-            c = z3.And(
-                z3.Exists([t1], ospf_route(net, src, nxt , t1)),
-                z3.Not(z3.Exists([v1, t2], z3.And(
-                    ospf_route2(net, src, v1, t2),
-                    v1 != v2,
-                    t2 < t1
-                ))
-            ))
-            ret.append(c)
+            const = z3.And(
+                z3.Exists(
+                    [t1],
+                    ospf_route(net, src, nxt, t1)),
+                z3.Not(
+                    z3.Exists(
+                        [v1, t2],
+                        z3.And(
+                            ospf_route2(net, src, v1, t2),
+                            v1 != v2,
+                            t2 < t1))))
+            ret.append(const)
         return ret
 
     def synthesize(self):
@@ -360,7 +330,7 @@ class Synthesizer(object):
                     nxt = str(out[2])
                     cost = str(out[3])
                     ospf_costs[net][src][nxt] = cost
-                ospf_reduced = tempfile.NamedTemporaryFile()  # open('/tmp/ospf_reduced.sssmt2', 'w')
+                ospf_reduced = tempfile.NamedTemporaryFile()
                 print 'Writing OSPF partial evaluation rules to:', ospf_reduced.name
                 ospf_reduced.write("""// ----------------------------- TYPES ----------------------------- //
                                   // Generic Vertex type
@@ -458,12 +428,6 @@ class Synthesizer(object):
                     self.boxes[box_name]['outputs']['OSPFRoute'], vals)
                 solver.append(c)
             '''
-            if box_name in ['opt2']:
-                orig_name = get_original_version('BestOSPFRoute')
-                vals = yes_func_vals[orig_name]
-                c = self.get_dj_constraints(self.boxes[box_name]['outputs']['DJ'],
-                                              vals)
-                solver.append(c)
             for func_name, func in self.boxes[box_name]['outputs'].iteritems():
                 # Pre compute IGPRouteCost of OSPF
                 if func_name == 'MinIGPBGPRoute' and 'BestOSPFRoute' in yes_func_vals and 'IGPRouteCost' in self.boxes[box_name]['inputs']:
