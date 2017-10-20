@@ -1,18 +1,19 @@
 
 // ----------------------------- TYPES ----------------------------- //
 
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
 
 // EDB: IGPRouteCost, nonMinIGPCost, MinAsPathBGPRoute, Route
-IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
-nonMinIGPCost(node, next_hop, cost) -> Vertex(node), Vertex(next_hop), int(cost).
+IGPRouteCost(network, src, next, cost) -> Network(network), Node(src), Node(next), int(cost).
+nonMinIGPCost(node, next_hop, cost) -> Node(node), Network(next_hop), int(cost).
 MinAsPathBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 
 // IDB: MinIGPBGPRoute
 MinIGPBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 
 // ------------------------------ IBGP 9/9 ------------------------------//

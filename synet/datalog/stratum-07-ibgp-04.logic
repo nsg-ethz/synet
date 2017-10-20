@@ -1,26 +1,27 @@
 
 // ----------------------------- TYPES ----------------------------- //
 
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
 
 // EDB: nonMaxBGPLocalPref, BGPLocalPref, BGPRoute, SetNetwork
-nonMaxBGPLocalPref(prefix, pref) -> Vertex(prefix), int(pref).
+nonMaxBGPLocalPref(prefix, pref) -> Network(prefix), int(pref).
 
 BGPLocalPref(node, next_hop, prefix, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), int(pref).
+    Node(node), Network(next_hop), Network(prefix), int(pref).
 
 BGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 
-SetNetwork(node, network) -> Vertex(node), Vertex(network).
+SetNetwork(node, network) -> Node(node), Network(network).
 
 // IDB: MaxBGPLocalPrefBGPRoute, ConnectedBGPAnnouncement
 MaxBGPLocalPrefBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 
-ConnectedBGPAnnouncement(node, next_hop, prefix) -> Vertex(node), Vertex(next_hop), Vertex(prefix).
+ConnectedBGPAnnouncement(node, next_hop, prefix) -> Node(node), Network(next_hop), Network(prefix).
 
 // ------------------------------ IBGP 4/9 ------------------------------//
 

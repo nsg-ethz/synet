@@ -1,13 +1,15 @@
 
 // ----------------------------- TYPES ----------------------------- //
 
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
+
 
 // EDB: IGPRouteCost
-IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+IGPRouteCost(network, src, next, cost) -> Network(network), Node(src), Node(next), int(cost).
 
 // IDB: nonMinIGPCost
-nonMinIGPCost(node, next_hop, cost) -> Vertex(node), Vertex(next_hop), int(cost).
+nonMinIGPCost(node, next_hop, cost) -> Node(node), Network(next_hop), int(cost).
 
 
 // ------------------------------ IBGP 8/9 ------------------------------//

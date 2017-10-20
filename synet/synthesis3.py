@@ -132,19 +132,19 @@ class Synthesizer(object):
             if t == 'Vertex':
                 variables.append(z3.Const('t%d' % i, self.vertex))
             elif t == 'Node':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.node_sort)
                 variables.append(tmp)
             elif t == 'Network':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.network_sort)
                 variables.append(tmp)
             elif t == 'Interface':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.iface_sort)
                 variables.append(tmp)
             elif t == 'AnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.network_sort)
                 variables.append(tmp)
             elif t == 'NetworkOrAnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.network_sort)
                 variables.append(tmp)
             elif t == 'Int':
                 variables.append(z3.Const('t%d' % i, z3.IntSort()))
@@ -373,13 +373,15 @@ class Synthesizer(object):
               print 'Writing OSPF partial evaluation rules to:', ospf_reduced.name
               ospf_reduced.write("""// ----------------------------- TYPES ----------------------------- //
                                   // Generic Vertex type
-                                  Vertex(n) -> string(n).
+                                  Node(n) -> string(n).
+                                  Network(n) -> string(n).
+                                  Interface(n) -> string(n).
                                   ConnectedNodes(snode, siface, diface, dnode) ->
-                                  Vertex(snode), Vertex(siface), Vertex(diface), Vertex(dnode).
+                                  Node(snode), Interface(siface), Interface(diface), Node(dnode).
                                   //EDB: SetOSPFEdgeCost, Node, Network, EdgePhy
-                                  SetOSPFEdgeCost(src, dst, cost) -> Vertex(src), Vertex(dst), int(cost).                                  
+                                  SetOSPFEdgeCost(src, dst, cost) -> Interface(src), Interface(dst), int(cost).
                                   //IDB: LinkOSPF, OSPFRoute
-                                  OSPFRoute(net, src, next, cost) -> Vertex(net), Vertex(src), Vertex(next), int(cost).
+                                  OSPFRoute(net, src, next, cost) -> Network(net), Node(src), Node(next), int(cost).
                                   
                                   // ----------------------------- OSPF 1/2 ----------------------------- //
                                   """)
@@ -393,7 +395,7 @@ class Synthesizer(object):
                         src_iface = src_nxt_link[1] 
                         nxt_iface = src_nxt_link[2]
                         if nxt not in ospf_costs[net].keys():                          
-                          newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="{}", nxt="{}", cost = {}.'.format(net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
+                          newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost  ), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = {}.'.format(net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
                           print newRule
                           ospf_reduced.write(newRule + '\n')
                           newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
@@ -401,7 +403,7 @@ class Synthesizer(object):
                           ospf_reduced.write(newRule + '\n')
                         else:
                           for next2 in ospf_costs[net][nxt].keys():                            
-                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="{}", nxt="{}", cost = cost1 + {}.'.format(net, src, nxt, src_iface, nxt_iface, ospf_costs[net][nxt][next2])
+                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = cost1 + {}.'.format(net, src, nxt, src_iface, nxt_iface, ospf_costs[net][nxt][next2])
                             print newRule
                             ospf_reduced.write(newRule + '\n')
                             newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
@@ -409,8 +411,15 @@ class Synthesizer(object):
                             ospf_reduced.write(newRule + '\n')
               
               ospf_reduced.flush()
+              with open(ospf_reduced.name) as f:
+                  print "X" * 100
+                  print f.read()
+                  print "X" * 100
               newTranslator = Translator(ospf_reduced.name, self.unrolling_limit)
-              newTranslator.STRING_TO_VERTEX = self.name_to_vertex
+              newTranslator.STRING_TO_NODE = self.name_to_node
+              newTranslator.STRING_TO_NET = self.name_to_network
+              newTranslator.STRING_TO_IFACE = self.name_to_iface
+
               self.boxes[box_name]['solver'] = z3.Solver()
               self.boxes[box_name]['solver'].append(newTranslator.to_z3())
                           
@@ -477,17 +486,16 @@ class Synthesizer(object):
 
                     print "Synthesized IGPRouteCost", [(p[0], p[1], p[2], p[3]) for p in valid_igp]
 
-                    v1, v2, v3 = z3.Consts('v1 v2 v3', self.vertex)
+                    #v1, v2, v3 = z3.Consts('v1 v2 v3', self.vertex)
+                    net1 = z3.Const('Net1', self.network_sort)
+                    node1, node2 = z3.Consts('Node1 Node2', self.node_sort)
                     t1 = z3.Const('t1', z3.IntSort())
                     c = z3.ForAll(
-                        [v1, v2, v3, t1],
-                            IGPRouteCost(v1, v2, v3, t1) ==
+                        [net1, node1, node2, t1],
+                            IGPRouteCost(net1, node1, node2, t1) ==
                                 z3.Or(
-                                    *[z3.And(v1 == p[0], v2 == p[1], v3 == p[2], t1 == p[3]) for p in valid_igp]
-                                ),
-
-
-                    )
+                                    *[z3.And(net1 == p[0], node1 == p[1], node2 == p[2], t1 == p[3]) for p in valid_igp]
+                                ))
 
                     solver.append(c)
                 orig_name = get_original_version(func_name)
@@ -552,6 +560,7 @@ class Synthesizer(object):
                 #    self.print_box_results(self.boxes_names[box_index + 1])
                 #return
                 if box_index == len(self.boxes_names) - 1:
+                    print solver.to_smt2()
                     print "FAILED!!!"
                     return
                 solver.pop()
@@ -561,6 +570,7 @@ class Synthesizer(object):
                 box_name = self.boxes_names[box_index]
                 print "!" * 20
                 print "UNSAT going back to", box_index, box_name
+                exit(-1)
                 no_vals = []
                 for func_name, func in self.boxes[box_name]['inputs'].iteritems():
                     orig_name = get_original_version(func_name)
@@ -589,14 +599,16 @@ class Synthesizer(object):
                     print "\t", out
             else:
                 self.print_box_results(box_name)
+                #print self.boxes[box_name]['solver'].to_smt2()
+                #print self.boxes[box_name]['solver'].model()
 
     def _common_datatypes(self):
         """Common dataypes Node, Networks, Interfaces"""
         # Common
-        is_node = z3.Function('is_node', self.vertex, z3.BoolSort())
-        is_network = z3.Function('is_network', self.vertex, z3.BoolSort())
-        is_interface = z3.Function('is_interface', self.vertex, z3.BoolSort())
-        is_announced_network = z3.Function('is_announced_network', self.vertex, z3.BoolSort())
+        #is_node = z3.Function('is_node', self.vertex, z3.BoolSort())
+        #is_network = z3.Function('is_network', self.vertex, z3.BoolSort())
+        #is_interface = z3.Function('is_interface', self.vertex, z3.BoolSort())
+        is_announced_network = z3.Function('is_announced_network', self.network_sort, z3.BoolSort())
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
         is_protocol = z3.Function('is_protocol', string_sort, z3.BoolSort())
         is_as_path = z3.Function('is_as_path', string_sort, z3.BoolSort())
@@ -605,55 +617,13 @@ class Synthesizer(object):
                      get_string_const_val('ospf'),
                      get_string_const_val('bgp')]
         as_paths = [get_string_const_val(p) for p in self.as_paths]
-        v1 = z3.Const('v1', self.vertex)
+        v1 = z3.Const('v1', self.network_sort)
         s1 = z3.Const('s1', string_sort)
         t1 = z3.Const('t1', z3.IntSort())
-        self.connected_networks_f = z3.Function('ConnectedNetwork', self.vertex, self.vertex, z3.BoolSort())
+        self.connected_networks_f = z3.Function('ConnectedNetwork', self.node_sort, self.network_sort, z3.BoolSort())
 
         constraints = []
-        constraints.append(
-            z3.ForAll(
-                [v1],
-                z3.Implies(
-                    z3.Or([v1 == tmp for tmp in self.nodes]),
-                    is_node(v1) == True
-                )))
-        constraints.append(
-            z3.ForAll(
-                [v1],
-                z3.Implies(
-                    z3.And([v1 != tmp for tmp in self.nodes]),
-                    is_node(v1) == False
-                )))
-        constraints.append(
-            z3.ForAll(
-                [v1],
-                z3.Implies(
-                    z3.Or([v1 == tmp for tmp in self.networks]),
-                    is_network(v1) == True
-                )))
-        constraints.append(
-            z3.ForAll(
-                [v1],
-                z3.Implies(
-                    z3.And([v1 != tmp for tmp in self.networks]),
-                    is_network(v1) == False
-                )))
 
-        constraints.append(
-            z3.ForAll(
-                [v1],
-                z3.Implies(
-                    z3.Or([v1 == tmp for tmp in self.interfaces]),
-                    is_interface(v1) == True
-                )))
-        constraints.append(
-            z3.ForAll(
-                [v1],
-                z3.Implies(
-                    z3.And([v1 != tmp for tmp in self.interfaces]),
-                    is_interface(v1) == False
-                )))
         if self.announced_networks:
             constraints.append(
                 z3.ForAll(
@@ -730,11 +700,11 @@ class Synthesizer(object):
                 z3.ForAll([s1, t1], is_as_path_length(s1, t1) == False))
         # Pair of directly connected routers
         self.directly_connected_nodes = z3.Function('DirectlyConnectedNodes',
-                                                    self.vertex, self.vertex,
+                                                    self.node_sort, self.node_sort,
                                                     z3.BoolSort())
 
 
-        return is_node, is_network, is_interface, is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints
+        return is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints
 
     def is_connected_to_same(self, net1, net2):
         r1, r2 = None, None
@@ -753,9 +723,9 @@ class Synthesizer(object):
         if self._tmp_connected_networks:
             return self._tmp_connected_networks
         constraints = []
-        for src in self.all_vertices:
-            for dst in self.all_vertices:
-                if (str(src), str(dst)) in self.connected_networks:
+        for src_name, src in self.name_to_node.iteritems():
+            for dst_name, dst in self.name_to_network.iteritems():
+                if (src_name, dst_name) in self.connected_networks:
                     constraints.append(self.connected_networks_f(src, dst) == True)
                 else:
                     constraints.append(
@@ -780,8 +750,8 @@ class Synthesizer(object):
         direct_nodes = list(set(direct_nodes))
         for snode in self.node_names:
             for dnode in self.node_names:
-                sv = self.get_vertex(snode)
-                dv = self.get_vertex(dnode)
+                sv = self.name_to_node[snode]
+                dv = self.name_to_node[dnode]
                 if (snode, dnode) in direct_nodes:
                     constraints.append(
                         self.directly_connected_nodes(sv, dv) == True)
@@ -792,7 +762,7 @@ class Synthesizer(object):
         return self._tmp_dnodes
 
     def generate_function_constraints(self, func):
-        is_node, is_network, is_interface, is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
+        is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
         func_name = str(func)
         assert func_name in FUNCS_SIG, \
@@ -805,25 +775,25 @@ class Synthesizer(object):
             if t == 'Vertex':
                 variables.append(z3.Const('t%d' % i, self.vertex))
             elif t == 'Node':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.node_sort)
                 variables.append(tmp)
-                checks.append(z3.Not(is_node(tmp)))
+                #checks.append(z3.Not(is_node(tmp)))
             elif t == 'Network':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.network_sort)
                 variables.append(tmp)
-                checks.append(z3.Not(is_network(tmp)))
+                #checks.append(z3.Not(is_network(tmp)))
             elif t == 'Interface':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.iface_sort)
                 variables.append(tmp)
-                checks.append(z3.Not(is_interface(tmp)))
+                #checks.append(z3.Not(is_interface(tmp)))
             elif t == 'AnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.network_sort)
                 variables.append(tmp)
                 checks.append(z3.Not(is_announced_network(tmp)))
             elif t == 'NetworkOrAnnouncedNetwork':
-                tmp = z3.Const('t%d' % i, self.vertex)
+                tmp = z3.Const('t%d' % i, self.network_sort)
                 variables.append(tmp)
-                checks.append(z3.Not(z3.Or(is_announced_network(tmp), is_network(tmp))))
+                #checks.append(z3.Not(z3.Or(is_announced_network(tmp), is_network(tmp))))
             elif t == 'Int':
                 tmp = z3.Const('t%d' % i, z3.IntSort())
                 variables.append(tmp)
@@ -860,11 +830,9 @@ class Synthesizer(object):
         return c
 
     def fill_boxes_input_constraints(self, box_name):
-        #if box_name == 'ospf01':
-        #  return
         inputs = self.boxes[box_name]['inputs']
         outputs = self.boxes[box_name]['outputs']
-        is_node, is_network, is_interface, is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
+        is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
 
         Node = inputs.get('Node', None)
@@ -903,7 +871,12 @@ class Synthesizer(object):
         MinAsPathBGPRoute = inputs.get('MinAsPathBGPRoute', outputs.get('MinAsPathBGPRoute', None))
         BGPAnnouncement = inputs.get('BGPAnnouncement', outputs.get('BGPAnnouncement', None))
 
-        v1, v2, v3, v4, v5, v6 = z3.Consts('v1 v2 v3 v4 v5 v6', self.vertex)
+        #v1, v2, v3, v4, v5, v6 = z3.Consts('v1 v2 v3 v4 v5 v6', self.vertex)
+
+        net1, net2, net3 = z3.Consts('Net1 Net2 Net3', self.network_sort)
+        node1, node2, node3, node4 = z3.Consts('Node1 Node2 Node3 Node4', self.node_sort)
+        iface1, iface2 = z3.Consts('Iface1 Iface2', self.iface_sort)
+
         t1, t2, t3, t4 = z3.Consts('t1 t2 t3 t4', z3.IntSort())
         s1, s2, s3 = z3.Consts('s1 s2 s3', string_sort)
 
@@ -911,69 +884,69 @@ class Synthesizer(object):
         directly_connected_nodes_used = False
 
         check = constraints[:]
-        if StaticRouteCost is not None:
-            c = datatype_route_cost(StaticRouteCost, is_network, is_node, self.vertex)
-            constraints.append(c)
+        #if StaticRouteCost is not None:
+        #    c = datatype_route_cost(StaticRouteCost, is_network, is_node, self.vertex)
+        #    constraints.append(c)
 
         if IGPRouteCost is not None:
-            c = datatype_route_cost(IGPRouteCost, is_network, is_node, self.vertex)
-            constraints.append(c)
+            #c = datatype_route_cost(IGPRouteCost, is_network, is_node, self.vertex)
+            #constraints.append(c)
 
             # The cost of any not directly connected network is Zero
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
                     z3.And(
-                        IGPRouteCost(v1, v2, v3, t1),
-                        self.connected_networks_f(v2, v1)),
+                        IGPRouteCost(net1, node1, node2, t1),
+                        self.connected_networks_f(node1, net1)),
                     t1 == 0))
             constraints.append(c)
 
             # The cost of any not directly connected network is more than zero
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
                     z3.And(
-                        IGPRouteCost(v1, v2, v3, t1),
-                        z3.Not(self.connected_networks_f(v2, v1))),
+                        IGPRouteCost(net1, node1, node2, t1),
+                        z3.Not(self.connected_networks_f(node1, net1))),
                     t1 > 0))
             constraints.append(c)
 
         if MinIGPBGPRoute is not None:
-            c = datatype_route_bgp(MinIGPBGPRoute, is_network, is_node,
-                                   is_as_path_length, string_sort, self.vertex)
-            constraints.append(c)
+            #c = datatype_route_bgp(MinIGPBGPRoute, is_network, is_node,
+            #                       is_as_path_length, string_sort, self.vertex)
+            #constraints.append(c)
             # HACK: we assume all the BGP routes has the the same preference
             # HACK: we need to propagate properly the ASPath Length from the input
-            c = z3.ForAll(
-                [v1, v2, v3, s1, t1, t2],
-                z3.Implies(
-                    MinIGPBGPRoute(v1, v2, v3, s1, t1, t2),
-                    z3.And(t1 == 3, t2 == 6)))
-            constraints.append(c)
 
+            c = z3.ForAll(
+                [node1, net1, net2, s1, t1, t2],
+                z3.Implies(
+                    MinIGPBGPRoute(node1, net1, net2, s1, t1, t2),
+                    z3.And(t1 == 3, t2 == 6, is_announced_network(net2))))
+            constraints.append(c)
 
         if nonMinIGPCost is not None and IGPRouteCost is not None:
             c = z3.ForAll(
-                [v1, v2, v3, v4, t1, t1],
+                [net1, node1, node2, node3, t1, t1],
                 z3.Implies(
                     z3.And(
-                        IGPRouteCost(v1, v2, v3, t1),
-                        IGPRouteCost(v1, v2, v4, t2),
+                        IGPRouteCost(net1, node1, node2, t1),
+                        IGPRouteCost(net1, node1, node3, t2),
                         t2 < t1),
-                    nonMinIGPCost(v2, v1, t2)))
+                    nonMinIGPCost(node1, net1, t2)))
             constraints.append(c)
 
         if BGPAnnouncement is not None and BGPRoute is not None:
             c = z3.ForAll(
-                [v1, v2, v3, s1, t1, t2],
+                [node1, net1, net2, s1, t1, t2],
                 z3.Implies(
-                    BGPRoute(v1, v2, v3, s1, t1, t2),
+                    BGPRoute(node1, net1, net2, s1, t1, t2),
                     z3.Exists(
-                        [v4],
+                        [node2],
                         z3.And(
-                            BGPAnnouncement(v4, v2, v3, s1, t1, t2),
-                            self.connected_networks_f(v2, v4)
+                            BGPAnnouncement(node2, net1, net2, s1, t1, t2),
+                            self.connected_networks_f(node2, net1)
                         )
                     )
                 ))
@@ -982,126 +955,126 @@ class Synthesizer(object):
         if BestOSPFRoute is not None:
             connected_networks_used = True
             directly_connected_nodes_used = True
-            c = datatype_route_cost(BestOSPFRoute, is_network, is_node, self.vertex)
-            constraints.append(c)
+            #c = datatype_route_cost(BestOSPFRoute, is_network, is_node, self.vertex)
+            #constraints.append(c)
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
+                    BestOSPFRoute(net1, node1, node2, t1),
                     z3.Not(
                         z3.Exists(
-                            [v4, t2],
-                            z3.And(BestOSPFRoute(v1, v2, v4, t2), t1 != t2)))))
+                            [node3, t2],
+                            z3.And(BestOSPFRoute(net1, node1, node3, t2), t1 != t2)))))
             constraints.append(c)
 
             # Route cost should be larger than 0
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
+                    BestOSPFRoute(net1, node1, node2, t1),
                     t1 > 0))
             constraints.append(c)
 
             # Only one best BestOSPFRoute
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
+                    BestOSPFRoute(net1, node1, node2, t1),
                     z3.Not(
                         z3.Exists(
-                            [v4, t2],
+                            [node3, t2],
                             z3.And(
-                                BestOSPFRoute(v1, v2, v4, t2),
-                                v4 != v3)))))
+                                BestOSPFRoute(net1, node1, node3, t2),
+                                node2 != node3)))))
             constraints.append(c)
 
             # If a route has BestOSPFRoute then the next hop should either have
             # a BestOSPFRoute for the given network or should be connected directly
             # to the given network
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
+                    BestOSPFRoute(net1, node1, node2, t1),
                     z3.Exists(
-                        [v4, t2],
+                        [node3, t2],
                         z3.Or(
                             z3.And(
-                                BestOSPFRoute(v1, v3, v4, t2),
+                                BestOSPFRoute(net1, node2, node3, t2),
                                 t2 < t1,
-                                v4 != v2
+                                node3 != node1
                             ),
-                            self.connected_networks_f(v3, v1)))))
+                            self.connected_networks_f(node3, net1)))))
             constraints.append(c)
 
             # Don't Forward directly connected networks
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
-                    z3.Not(self.connected_networks_f(v2, v1))))
+                    BestOSPFRoute(net1, node1, node2, t1),
+                    z3.Not(self.connected_networks_f(node1, net1))))
             constraints.append(c)
             
             # For a given router, BestOSPFRoute must forward any
             # given network to only one router
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
+                    BestOSPFRoute(net1, node1, node2, t1),
                     z3.Not(z3.Exists(
-                        [v4, t2],
+                        [node3, t2],
                         z3.And(
-                            BestOSPFRoute(v1, v2, v4, t2),
-                            v4 != v3
+                            BestOSPFRoute(net1, node1, node3, t2),
+                            node3 != node2
                         )))))
             constraints.append(c)
 
             # OSPF must use the same next hop cost
             # if the two networks are on the same destination router
             c = z3.ForAll(
-                [v1, v2, v3, v4, v5, t1, t2],
+                [net1, node1, node2, net2, node3, t1, t2],
                 z3.Implies(
                     z3.And(
                         # two Route entries on the same router
-                        BestOSPFRoute(v1, v2, v3, t1),
-                        BestOSPFRoute(v4, v2, v5, t2),
+                        BestOSPFRoute(net1, node1, node2, t1),
+                        BestOSPFRoute(net2, node1, node3, t2),
                         z3.Exists(
                             # The two networks are connected to the same dest router
-                            [v6],
+                            [node4],
                             z3.And(
-                                self.connected_networks_f(v6, v1),
-                                self.connected_networks_f(v6, v4),
+                                self.connected_networks_f(node4, net1),
+                                self.connected_networks_f(node4, net2),
                             )),
                     ),
-                    z3.And(v3 == v5, t1 == t2)
+                    z3.And(node2 == node3, t1 == t2)
                 )
             )
             constraints.append(c)
 
             # Only route to directly connected nodes
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
-                    self.directly_connected_nodes(v2, v3)))
+                    BestOSPFRoute(net1, node1, node2, t1),
+                    self.directly_connected_nodes(node1, node2)))
             constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
+                    BestOSPFRoute(net1, node1, node2, t1),
                     t1 <= 20)
             )
             constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, v3, v4, v5, v6, t1, t2, t3],
+                [net1, node1, node2, net2, node3, t1, t2, t3],
                 z3.Implies(
                     z3.And(
-                        BestOSPFRoute(v1, v2, v3, t1),
-                        self.connected_networks_f(v3, v1),
-                        BestOSPFRoute(v5, v2, v3, t2),
-                        BestOSPFRoute(v5, v3, v6, t3),
-                        v5 != v1
+                        BestOSPFRoute(net1, node1, node2, t1),
+                        self.connected_networks_f(node2, net1),
+                        BestOSPFRoute(net2, node1, node2, t2),
+                        BestOSPFRoute(net2, node2, node3, t3),
+                        net2 != net1
                     ),
                     t1 == t2 - t3
                 )
@@ -1110,13 +1083,13 @@ class Synthesizer(object):
 
             # Ensure reasonable costs
             c = z3.ForAll(
-                [v1, v2, v3, v4, v5, v6, t1, t2, t3, t4],
+                [net1, node1, node2, node3, net2, node4, t1, t2, t3, t4],
                 z3.Implies(
                     z3.And(
-                        BestOSPFRoute(v1, v2, v3, t1),
-                        BestOSPFRoute(v1, v3, v4, t2),
-                        BestOSPFRoute(v5, v2, v3, t3),
-                        BestOSPFRoute(v5, v3, v6, t4),
+                        BestOSPFRoute(net1, node1, node2, t1),
+                        BestOSPFRoute(net1, node2, node3, t2),
+                        BestOSPFRoute(net2, node1, node2, t3),
+                        BestOSPFRoute(net2, node2, node4, t4),
                     ),
                     t1 - t2 == t3 - t4
                 )
@@ -1126,30 +1099,30 @@ class Synthesizer(object):
         if OSPFRoute is not None:
             connected_networks_used = True
             directly_connected_nodes_used = True
-            c = datatype_route_cost(OSPFRoute, is_network, is_node, self.vertex)
-            constraints.append(c)
+            #c = datatype_route_cost(OSPFRoute, is_network, is_node, self.vertex)
+            #constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    OSPFRoute(v1, v2, v3, t1),
+                    OSPFRoute(net1, node1, node2, t1),
                     z3.Exists(
-                        [v4, t2],
+                        [node3, t2],
                         z3.Or(
                             z3.And(
-                                OSPFRoute(v1, v3, v4, t2),
+                                OSPFRoute(net1, node2, node3, t2),
                                 t2 < t1,
-                                v4 != v2
+                                node3 != node1
                             ),
-                            self.connected_networks_f(v3, v1)))))
+                            self.connected_networks_f(node2, net1)))))
             #constraints.append(c)
             
             c = z3.ForAll(
-              [v1, v2, v3, v4, t1, t2],
+              [net1, node1, node2, node3, t1, t2],
               z3.Implies(
                 z3.And(                
-                  OSPFRoute(v1, v2, v3, t1),
-                  OSPFRoute(v1, v2, v4, t2)
+                  OSPFRoute(net1, node1, node2, t1),
+                  OSPFRoute(net1, node1, node3, t2)
                   ),
                   t1 == t2
                 )
@@ -1158,28 +1131,28 @@ class Synthesizer(object):
 
             # OSPF Route cost should be larger than 0
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    OSPFRoute(v1, v2, v3, t1),
+                    OSPFRoute(net1, node1, node2, t1),
                     t1 > 0))
             constraints.append(c)
 
             # OSPF must use the same next hop and cost
             # if the two networks are on the same destination router
             c = z3.ForAll(
-                [v1, v2, v3, v4, v5, t1, t2],
+                [net1, node1, node2, net2, node3, t1, t2],
                 z3.Implies(
                     z3.And(
                         # two Route entries on the same router
-                        OSPFRoute(v1, v2, v3, t1),
-                        OSPFRoute(v4, v2, v5, t2),
-                        v3 == v5,
+                        OSPFRoute(net1, node1, node2, t1),
+                        OSPFRoute(net2, node1, node3, t2),
+                        node2 == node3,
                         z3.Exists(
                             # The two networks are connected to the same dest router
-                            [v6],
+                            [node4],
                             z3.And(
-                                self.connected_networks_f(v6, v1),
-                                self.connected_networks_f(v6, v4),
+                                self.connected_networks_f(node4, net1),
+                                self.connected_networks_f(node4, net2),
                             )),
                     ),
                     z3.And(t1 == t2)
@@ -1189,43 +1162,19 @@ class Synthesizer(object):
 
             # Only route to directly connected nodes
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    OSPFRoute(v1, v2, v3, t1),
-                    self.directly_connected_nodes(v2, v3)))
-            #constraints.append(c)
-
+                    OSPFRoute(net1, node1, node2, t1),
+                    self.directly_connected_nodes(node1, node2)))
+            constraints.append(c)
 
         if SetStaticRouteCost is not None:
             c = datatype_route_cost(SetStaticRouteCost, is_network, is_node, self.vertex)
             constraints.append(c)
 
-        if not(Node is None or Network is None or Interface is None):
-            c = datatypes_unique(self.vertex, [Node, Interface, Network])
-            constraints.append(c)
         if EdgePhy is not None:
             c = z3_interface_links(self.vertex, is_interface, EdgePhy)
             constraints.append(c)
-
-        if Node is not None:
-            for v in self.all_vertices:
-                if str(v) in self.node_names:
-                    constraints.append(Node(v) == True)
-                else:
-                    constraints.append(Node(v) == False)
-        if Network is not None:
-            for v in self.all_vertices:
-                if str(v) in self.network_names:
-                    constraints.append(Network(v) == True)
-                else:
-                    constraints.append(Network(v) == False)
-
-        if Interface is not None:
-            for v in self.all_vertices:
-                if str(v) in self.interface_names:
-                    constraints.append(Interface(v) == True)
-                else:
-                    constraints.append(Interface(v) == False)
 
         if EdgePhy is not None:
             for src in self.network_graph.nodes():
@@ -1240,29 +1189,34 @@ class Synthesizer(object):
             constraints.append(c)
 
         if ConnectedNodes is not None:
-            pairs = [[self.get_vertex(v) for v in p] for p in self.connected_nodes]
+            pairs = [
+                [self.name_to_node[p[0]],
+                 self.name_to_iface[p[1]],
+                 self.name_to_iface[p[2]],
+                 self.name_to_node[p[3]],
+                 ] for p in self.connected_nodes]
             c = z3.ForAll(
-                [v1, v2, v3, v4],
-                ConnectedNodes(v1, v2, v3, v4) == z3.Or(
-                *[z3.And(v1 == p[0], v2 == p[1], v3 == p[2], v4 == p[3]) for p in pairs]))
+                [node1, iface1, iface2, node2],
+                ConnectedNodes(node1, iface1, iface2, node2) == z3.Or(
+                *[z3.And(node1 == p[0], iface1 == p[1], iface2 == p[2], node2 == p[3]) for p in pairs]))
             constraints.append(c)
 
         if nonMinOSPFRouteCost is not None and OSPFRoute is not None:
             c = z3.ForAll(
-                [v1, v2, t1],
+                [net1, node1, t1],
                 z3.Implies(
-                    nonMinOSPFRouteCost(v1, v2, t1),
-                    z3.Exists([v3], OSPFRoute(v1, v2, v3, t1))))
+                    nonMinOSPFRouteCost(net1, node1, t1),
+                    z3.Exists([node2], OSPFRoute(net1, node1, node2, t1))))
             constraints.append(c)
             
             c = z3.ForAll(
-                [v1, v2, t1],
-                nonMinOSPFRouteCost(v1, v2, t1) ==
+                [net1, node1, t1],
+                nonMinOSPFRouteCost(net1, node1, t1) ==
                 z3.Exists(
-                  [v3, v4, t2],
+                  [node2, node3, t2],
                   z3.And(
-                    OSPFRoute(v1, v2, v3, t1),
-                    OSPFRoute(v1, v2, v4, t2),
+                    OSPFRoute(net1, node1, node2, t1),
+                    OSPFRoute(net1, node1, node3, t2),
                     t2 < t1
                   )
                 )
@@ -1272,104 +1226,102 @@ class Synthesizer(object):
         if BestOSPFRoute is not None and nonMinOSPFRouteCost is not None:
             # Best route must be the min set
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
-                    z3.Not(nonMinOSPFRouteCost(v1, v2, t1))))
+                    BestOSPFRoute(net1, node1, node2, t1),
+                    z3.Not(nonMinOSPFRouteCost(net1, node1, t1))))
             constraints.append(c)
 
         if minOSPFRouteCost is not None and BestOSPFRoute is not None:
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    BestOSPFRoute(v1, v2, v3, t1),
-                    minOSPFRouteCost(v1, v2, t1)))
+                    BestOSPFRoute(net1, node1, node2, t1),
+                    minOSPFRouteCost(net1, node1, t1)))
             constraints.append(c)
 
         if minOSPFRouteCost is not None and nonMinOSPFRouteCost is not None:
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    minOSPFRouteCost(v1, v2, t1),
-                    z3.Not(nonMinOSPFRouteCost(v1, v2, t1))))
+                    minOSPFRouteCost(net1, node1, t1),
+                    z3.Not(nonMinOSPFRouteCost(net1, node1, t1))))
             constraints.append(c)
 
         if SetAdminDist is not None:
             # Set Admin Distance only once
             c = z3.ForAll(
-                [v1, s1, t1],
+                [node1, s1, t1],
                 z3.Implies(
-                    SetAdminDist(v1, s1, t1),
-                    z3.Not(z3.Exists([t2], z3.And(SetAdminDist(v1, s1, t2), t1 != t2)))))
+                    SetAdminDist(node1, s1, t1),
+                    z3.Not(z3.Exists([t2], z3.And(SetAdminDist(node1, s1, t2), t1 != t2)))))
             constraints.append(c)
 
         if nonMinCostAD is not None:
             c = z3.ForAll(
-                [v1, v2, s1],
+                [net1, node1, s1],
                 z3.Implies(
                     z3.And(
-                        nonMinCostAD(v1, v2, t1),
-                        is_announced_network(v1)
+                        nonMinCostAD(net1, node1, t1),
+                        is_announced_network(net1)
                     ), t1 == 2))
             constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, s1],
+                [net1, node1, s1],
                 z3.Implies(
                     z3.And(
-                        nonMinCostAD(v1, v2, t1),
-                        z3.Not(is_announced_network(v1))
+                        nonMinCostAD(net1, node1, t1),
+                        z3.Not(is_announced_network(net1))
                     ), z3.Or(t1 == 1, t1 == 3)))
             constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, s1],
+                [net1, node1, s1],
                 z3.Implies(
                     z3.And(
-                        nonMinCostAD(v1, v2, t1),
+                        nonMinCostAD(net1, node1, t1),
                     ), t1 == 3))
 
             constraints.append(c)
 
         if nonMinCostAD is not None and SetAdminDist is not None and Route is not None:
             c = z3.ForAll(
-                [v1, v2, v3, v4, s1, s2, t1],
+                [net1, node1, node2, node3, s1, s2, t1],
                 #z3.Implies(
                     z3.And(
-                        Route(v1, v2, v3, s1),
-                        Route(v1, v2, v4, s2),
+                        Route(net1, node1, node2, s1),
+                        Route(net1, node1, node3, s2),
                         s1 != s2,
-                        SetAdminDist(v2, s1, t1),
-                        SetAdminDist(v2, s2, t2),
+                        SetAdminDist(node1, s1, t1),
+                        SetAdminDist(node1, s2, t2),
                         t1 < t2
                     ) ==
-                        nonMinCostAD(v1, v2, t2)
+                        nonMinCostAD(net1, node1, t2)
                 )#)
             constraints.append(c)
 
         if nonMinCostAD is not None and SetAdminDist is not None and Route is not None:
-
             c = z3.ForAll(
-                [v1, v2, t1],
-                nonMinCostAD(v1, v2, t1) == z3.Exists(
-                    [s1, s2, v3, t2],
+                [net1, node1, t1],
+                nonMinCostAD(net1, node1, t1) == z3.Exists(
+                    [s1, s2, node2, t2],
                     z3.And(
-                        SetAdminDist(v2, s1, t1),
-                        Route(v1, v2, v3, s2),
-                        SetAdminDist(v2, s2, t2),
+                        SetAdminDist(node1, s1, t1),
+                        Route(net1, node1, node2, s2),
+                        SetAdminDist(node1, s2, t2),
                         t2 < t1
                     ))
             )
             constraints.append(c)
 
         if Fwd is not None:
-            print 'HEY'
             c = z3.ForAll(
-                [v1, v2, v3, v4, s1, s2],
+                [net1, node1, node2, node3, s1, s2],
                 z3.Implies(
-                    z3.And(Fwd(v1, v2, v3, s1),
-                           Fwd(v1, v2, v4, s2)),                          
-                                 z3.And(v4 == v3, s1 == s2)))
+                    z3.And(Fwd(net1, node1, node2, s1),
+                           Fwd(net1, node1, node3, s2)),
+                    z3.And(node3 == node2, s1 == s2)))
             constraints.append(c)
 
         if OSPFRoute is not None or BestOSPFRoute is not None:
@@ -1379,31 +1331,31 @@ class Synthesizer(object):
                 func = BestOSPFRoute
             # Block announced networks from being advertised over OSPF
             c = z3.ForAll(
-                [v1, v2, v3, t1],
+                [net1, node1, node2, t1],
                 z3.Implies(
-                    is_announced_network(v1),
-                    z3.Not(func(v1, v2, v3, t1))))
+                    is_announced_network(net1),
+                    z3.Not(func(net1, node1, node2, t1))))
             constraints.append(c)
 
         if ConnectedBGPAnnouncement is not None:
             connected_networks_used = True
             c = z3.ForAll(
-                [v1, v2, v3],
+                [node1, net1, net2],
                 z3.Implies(
-                    ConnectedBGPAnnouncement(v1, v2, v3),
-                    self.connected_networks_f(v1, v2)))
+                    ConnectedBGPAnnouncement(node1, net1, net2),
+                    self.connected_networks_f(node1, net1)))
             constraints.append(c)
 
         if ConnectedBGPAnnouncement is not None and MaxBGPLocalPrefBGPRoute is not None:
             pass
             connected_networks_used = True
             c = z3.ForAll(
-                [v1, v2, v3],
-                ConnectedBGPAnnouncement(v1, v2, v3) == z3.Exists(
+                [node1, net1, net2],
+                ConnectedBGPAnnouncement(node1, net1, net2) == z3.Exists(
                     [s1, t1, t2],
                     z3.And(
-                        MaxBGPLocalPrefBGPRoute(v1, v2, v3, s1, t1, t2),
-                        self.connected_networks_f(v1, v2)
+                        MaxBGPLocalPrefBGPRoute(node1, net1, net2, s1, t1, t2),
+                        self.connected_networks_f(node1, net1)
                     )
                 )
             )
@@ -1411,27 +1363,27 @@ class Synthesizer(object):
 
         if nonMaxBGPLocalPref is not None and BGPLocalPref is not None:
             c = z3.ForAll(
-                [v1, v2, v3, t1],
-                nonMaxBGPLocalPref(v3, t1) == z3.And(
-                    BGPLocalPref(v1, v2, v3, t1),
+                [node1, net2, net1, t1],
+                nonMaxBGPLocalPref(net1, t1) == z3.And(
+                    BGPLocalPref(node1, net2, net1, t1),
                     z3.Exists(
-                        [v4, v5, t2],
-                        z3.And(BGPLocalPref(v4, v5, v3, t2), t1 < t2))
+                        [node2, net3, t2],
+                        z3.And(BGPLocalPref(node2, net3, net1, t2), t1 < t2))
 
                     ))
             constraints.append(c)
 
         if MaxBGPLocalPrefBGPRoute is not None and BGPLocalPref is not None:
             c = z3.ForAll(
-                [v1, v2, v3, s1, t1, t2],
+                [node1, net1, net2, s1, t1, t2],
                 z3.Implies(
-                    MaxBGPLocalPrefBGPRoute(v1, v2, v3, s1, t1, t2),
+                    MaxBGPLocalPrefBGPRoute(node1, net1, net2, s1, t1, t2),
                     z3.And(
-                        BGPLocalPref(v1, v2, v3, t2),
+                        BGPLocalPref(node1, net1, net2, t2),
                         z3.Not(
                             z3.Exists(
-                                [v4, v5, t3],
-                                z3.And(BGPLocalPref(v4, v5, v3, t3), t3 > t2))))))
+                                [node2, net3, t3],
+                                z3.And(BGPLocalPref(node2, net3, net2, t3), t3 > t2))))))
             constraints.append(c)
 
             #if BGPLocalPref is not None:
@@ -1450,14 +1402,14 @@ class Synthesizer(object):
 
         if MaxBGPLocalPrefBGPRoute is not None:
             c = z3.ForAll(
-                [v1, v2, v3, s1, t1, t2],
+                [node1, net1, net2, s1, t1, t2],
                 z3.Implies(
-                    MaxBGPLocalPrefBGPRoute(v1, v2, v3, s1, t1, t2),
+                    MaxBGPLocalPrefBGPRoute(node1, net1, net2, s1, t1, t2),
                     z3.Not(
                         z3.Exists(
-                            [v4, t3, t4],
+                            [node2, t3, t4],
                             z3.And(
-                                MaxBGPLocalPrefBGPRoute(v4, v2, v3, s2, t3, t4),
+                                MaxBGPLocalPrefBGPRoute(node2, net1, net2, s2, t3, t4),
                                 t2 < t4
                             )
                         ))))
@@ -1465,23 +1417,20 @@ class Synthesizer(object):
 
         if BGPRoute is not None and BGPLocalPref is not None:
             c = z3.ForAll(
-                [v1, v2, v3, s1, t1, t2],
+                [node1, net1, net2, s1, t1, t2],
                 z3.Implies(
-                    BGPRoute(v1, v2, v3, s1, t1, t2),
-                    z3.Exists([v4, t2], BGPLocalPref(v4, v2, v3, t2))))
+                    BGPRoute(node1, net1, net2, s1, t1, t2),
+                    z3.Exists([node2, t2], BGPLocalPref(node2, net1, net2, t2))))
             constraints.append(c)
 
         if SetNetwork is not None:
             c = z3.ForAll(
-                [v1, v2],
+                [node1, node2, net1],
                 z3.Implies(
-                    SetNetwork(v1, v2) == True,
-                    z3.Not(
-                        z3.Exists(
-                            [v3],
-                            z3.And(
-                                v3 != v1,
-                                z3.Or(SetNetwork(v3, v2), SetNetwork(v2, v3)))))))
+                    z3.And(
+                        SetNetwork(node1, net1) == True,
+                        SetNetwork(node2, net1) == True),
+                    node2 == node1))
             constraints.append(c)
 
         if SetInterface is not None:
@@ -1541,94 +1490,96 @@ class Synthesizer(object):
 
         if Route is not None:
             connected_networks_used = True
+            # Cannot route back the same node
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
-                    Route(v1, v2, v3, s1),
-                    v2 != v3))
+                    Route(net1, node1, node2, s1),
+                    node1 != node2))
             constraints.append(c)
 
+            # Externally learned prefixes, must be routed via BGP
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
                     z3.And(
-                        Route(v1, v2, v3, s1),
-                        is_announced_network(v1)
+                        Route(net1, node1, node2, s1),
+                        is_announced_network(net1)
                     ), s1 == get_string_const_val('bgp')))
             constraints.append(c)
 
+            # Internally learned prefixes cannot be routed over BGP
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
                     z3.And(
-                        Route(v1, v2, v3, s1),
-                        z3.Not(is_announced_network(v1))
+                        Route(net1, node1, node2, s1),
+                        z3.Not(is_announced_network(net1))
                     ), s1 != get_string_const_val('bgp')))
             constraints.append(c)
 
-            # Have continueous OSPFRoutes
+            # Have continuous OSPFRoutes
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
-                    z3.And(Route(v1, v2, v3, s1), s1 == get_string_const_val('ospf')),
+                    z3.And(
+                        Route(net1, node1, node2, s1),
+                        s1 == get_string_const_val('ospf')),
                     z3.Exists(
-                        [v4],
+                        [node3],
                         z3.Or(
                             z3.And(
-                                Route(v1, v3, v4, s1),
-                                v4 != v2
+                                Route(net1, node2, node3, s1),
+                                node3 != node1
                             ),
-                            self.connected_networks_f(v3, v1)))))
+                            self.connected_networks_f(node2, net1),
+                        ))))
             # Long
             constraints.append(c)
 
-
-            # Compute OSPF routes for all not directly connnect networks
+            # Compute OSPF routes for all not directly connected networks
             c = z3.ForAll(
-                [v1, v2],
+                [net1, node1],
                 z3.Or(
-                    z3.Not(z3.And(is_node(v2), is_network(v1))),
-                    z3.And(self.connected_networks_f(v2, v1), z3.Not(is_announced_network(v1))),
+                    self.connected_networks_f(node1, net1),
+                    is_announced_network(net1),
                     z3.Exists(
-                        [v3],
-                        Route(v1, v2, v3, get_string_const_val('ospf')),
+                        [node2],
+                        Route(net1, node1, node2, get_string_const_val('ospf')),
                     )))
             constraints.append(c)
 
             # There should be no more than one route for the same network,
             # the same protocol, the same router
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, node3, s1],
                 z3.Implies(
-                    Route(v1, v2, v3, s1),
-                    z3.Not(z3.Exists(
-                        [v4],
-                        z3.And(
-                            Route(v1, v2, v4, s1),
-                            v4 != v3
-                        )))))
+                    z3.And(
+                        Route(net1, node1, node2, s1),
+                        Route(net1, node1, node3, s1)),
+                    node2 == node3))
             # Long
             constraints.append(c)
 
             # OSPF must use the same next hop if the two networks are on the same
             # destination router
             c = z3.ForAll(
-                [v1, v2, v3, v4, v5, s1],
+                [net1, node1, node2, net2, node3, s1],
                 z3.Implies(
                     z3.And(
                         # two Route entries on the same router
-                        Route(v1, v2, v3, s1),
-                        Route(v4, v2, v5, s1),
+                        Route(net1, node1, node2, s1),
+                        Route(net2, node1, node3, s1),
                         z3.Exists(
                             # The two networks are connected to the same dest router
-                            [v6],
+                            [node4],
                             z3.And(
-                                self.connected_networks_f(v6, v1),
-                                self.connected_networks_f(v6, v4),
+                                self.connected_networks_f(node4, net1),
+                                self.connected_networks_f(node4, net2),
                             )),
                         s1 == get_string_const_val('ospf'),
                     ),
-                    v3 == v5
+                    node2 == node3
                 )
             )
             # Long
@@ -1637,54 +1588,44 @@ class Synthesizer(object):
             directly_connected_nodes_used = True
             # Only route to directly connected nodes
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
-                    Route(v1, v2, v3, s1),
-                    self.directly_connected_nodes(v2, v3)))
+                    Route(net1, node1, node2, s1),
+                    self.directly_connected_nodes(node1, node2)))
             constraints.append(c)
 
         if Fwd is not None:
             connected_networks_used = True
-            ## Use only static routes
             c = z3.ForAll(
-                [v1, v2, v3, s1],
-                z3.Implies(
-                    Fwd(v1, v2, v3, s1),
-                    s1 == get_string_const_val('static')
-                )
-            )
-            #constraints.append(c)
-
-            c = z3.ForAll(
-                [v1, v2, v3, s1],
-                z3.Implies(Fwd(v1, v2, v3, s1), v2 != v3))
+                [net1, node1, node2, s1],
+                z3.Implies(Fwd(net1, node1, node2, s1), node1 != node2))
             constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
                     z3.And(
-                        Fwd(v1, v2, v3, s1),
-                        is_announced_network(v1)
+                        Fwd(net1, node1, node2, s1),
+                        is_announced_network(net1)
                     ), s1 == get_string_const_val('bgp')))
             constraints.append(c)
 
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
                     z3.And(
-                        Fwd(v1, v2, v3, s1),
-                        z3.Not(is_announced_network(v1))
+                        Fwd(net1, node1, node2, s1),
+                        z3.Not(is_announced_network(net1))
                     ), s1 != get_string_const_val('bgp')))
             constraints.append(c)
 
             directly_connected_nodes_used = True
             # Next hop can be only directly connected node
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
-                    Fwd(v1, v2, v3, s1),
-                    self.directly_connected_nodes(v2, v3)
+                    Fwd(net1, node1, node2, s1),
+                    self.directly_connected_nodes(node1, node2)
                 ))
             constraints.append(c)
 
@@ -1712,11 +1653,11 @@ class Synthesizer(object):
             #constraints.append(c)
             # Don't Forward directly connected networks
             c = z3.ForAll(
-                [v1, v2, v3, s1],
+                [net1, node1, node2, s1],
                 z3.Implies(
-                    Fwd(v1, v2, v3, s1),
+                    Fwd(net1, node1, node2, s1),
                     z3.Not(
-                        self.connected_networks_f(v2, v1))))
+                        self.connected_networks_f(node1, net1))))
             constraints.append(c)
 
             # IF two networks are connected to the same router
@@ -1756,27 +1697,27 @@ class Synthesizer(object):
             not_bgp_nets = []
             for net in self.network_names:
                 if 'BGP' in net:
-                    bgp_nets.append(self.get_vertex(net))
+                    bgp_nets.append(self.name_to_network[net])
                 else:
-                    not_bgp_nets.append(self.get_vertex(net))
-            for net in not_bgp_nets:
-                c = z3.Not(z3.Exists(
-                    [v1, v2, v3, s1, t1, t2],
-                    z3.And(
-                        MinAsPathBGPRoute(v1, v2, v3, s1, t1, t2),
-                        v2 == net)
-                ))
-                #constraints.append(c)
+                    not_bgp_nets.append(self.name_to_network[net])
+            #for net in not_bgp_nets:
+            #    c = z3.Not(z3.Exists(
+            #        [v1, v2, v3, s1, t1, t2],
+            #        z3.And(
+            #            MinAsPathBGPRoute(v1, v2, v3, s1, t1, t2),
+            #            v2 == net)
+            #    ))
+            #    #constraints.append(c)
 
-            c = z3.ForAll(
-                [v1, v2, v3, s1, t1, t2],
-                z3.Implies(
-                    MinAsPathBGPRoute(v1, v2, v3, s1, t1, t2),
-                    z3.And(
-                        z3.Not(self.connected_networks_f(v2, v1)),
-                        z3.Or(*[v2 == net for net in bgp_nets]))
-            ))
-            #constraints.append(c)
+            #c = z3.ForAll(
+            #    [v1, v2, v3, s1, t1, t2],
+            #    z3.Implies(
+            #        MinAsPathBGPRoute(v1, v2, v3, s1, t1, t2),
+            #        z3.And(
+            #            z3.Not(self.connected_networks_f(v2, v1)),
+            #            z3.Or(*[v2 == net for net in bgp_nets]))
+            #))
+            ##constraints.append(c)
 
         if OutgoingFwdInterface is not None and Fwd is not None and ConnectedNodes is not None:
             # Fwd entry must exists on the router to output the packet
@@ -1872,9 +1813,7 @@ class Synthesizer(object):
                         [v4, v5, v6],
                         z3.And(IncomingFwdInterface(v4, v5, v6), v4 == v1, v6 == v2, v4 != v3))))
             #constraints.append(c)
-        if box_name == 'ibgp08':
-            #constraints = []
-            pass
+
         for name, func in self.boxes[box_name]['inputs'].iteritems():
             func_const = self.generate_function_constraints(func)
             #if name in ['MinAsPathBGPRoute']: continue
@@ -1907,8 +1846,12 @@ class Synthesizer(object):
                 assert func.arity() == len(args), "%s %s" % (func, args)
                 for i, arg in enumerate(args):
                     domain = str(func.domain(i))
-                    if domain == 'Vertex':
-                        parsed_arg = self.get_vertex(arg)
+                    if domain == 'NodeSort':
+                        parsed_arg = self.name_to_node[arg]
+                    elif domain == 'NetSort':
+                        parsed_arg = self.name_to_network[arg]
+                    elif domain == 'IfaceSort':
+                        parsed_arg = self.name_to_iface[arg]
                     elif domain.startswith('BitVec'):
                         parsed_arg = get_string_const_val(arg)
                     elif domain == 'Int':
@@ -1952,8 +1895,12 @@ class Synthesizer(object):
                 assert func.arity() == len(args), "%s %s" % (func, args)
                 for i, arg in enumerate(args):
                     domain = str(func.domain(i))
-                    if domain == 'Vertex':
-                        parsed_arg = self.get_vertex(arg)
+                    if domain == 'NodeSort':
+                        parsed_arg = self.name_to_node[arg]
+                    elif domain == 'NetSort':
+                        parsed_arg = self.name_to_network[arg]
+                    elif domain == 'IfaceSort':
+                        parsed_arg = self.name_to_iface[arg]
                     elif domain.startswith('BitVec'):
                         parsed_arg = get_string_const_val(arg)
                     elif domain == 'Int':
@@ -1987,10 +1934,17 @@ class Synthesizer(object):
         else:
             return name
 
-    def get_name(self, vetrex):
+    def get_name(self, vertex):
         """Takes a Z3 object and returns the corresponding name string """
-        inv_map = {v: k for k, v in self.name_to_vertex.items()}
-        return inv_map[vetrex]
+        inv_map1 = {v: k for k, v in self.name_to_node.items()}
+        inv_map2 = {v: k for k, v in self.name_to_network.items()}
+        inv_map3 = {v: k for k, v in self.name_to_iface.items()}
+        if vertex in inv_map1:
+            return inv_map1[vertex]
+        if vertex in inv_map2:
+            return inv_map2[vertex]
+        if vertex in inv_map3:
+            return inv_map3[vertex]
 
     def _get_names(self):
         node_names = []
@@ -2003,7 +1957,7 @@ class Synthesizer(object):
         for op, func_name, args in self.init_inputs:
             if func_name in ['SetNode', 'Node', 'SetInterface', 'SetNetwork',
                              'SetBGPAnnouncement', 'SetBGPLocalPref',
-                             'SetBGPLocalPref']:
+                             'SetBGPLocalPref', 'SetAdminDist']:
                 node_names.append(args[0])
             if func_name in ['SetInterface']:
                 interface_names.append(args[1])
@@ -2031,6 +1985,7 @@ class Synthesizer(object):
                 as_paths_length[args[3]] = int(args[4])
                 announced_network_names.append(args[2])
                 self.connected_networks.append((args[0], args[2]))
+
         # Make unique
         node_names = list(set(node_names))
         interface_names = list(set(interface_names))
@@ -2048,17 +2003,33 @@ class Synthesizer(object):
         self.node_names = node_names
         self.interface_names = interface_names
         self.network_names = network_names
-        all_names = node_names + interface_names + network_names + announced_network_names
-        (vertex, all_vertices) = z3.EnumSort(vertex_name, all_names)
-        self.vertex = vertex
-        self.all_vertices = all_vertices
-        translator.LB_TYPE_TO_Z3_TYPE['Vertex'] = self.vertex
-        self.name_to_vertex = dict((str(v), v) for v in self.all_vertices)
-        translator.STRING_TO_VERTEX = self.name_to_vertex
-        self.nodes = [self.get_vertex(name) for name in node_names]
-        self.interfaces = [self.get_vertex(name) for name in interface_names]
-        self.networks = [self.get_vertex(name) for name in network_names]
-        self.announced_networks = [self.get_vertex(name) for name in self.announced_network_names]
+        self.announced_network_names = announced_network_names
+        #all_names = node_names + interface_names + network_names + announced_network_names
+        #(vertex, all_vertices) = z3.EnumSort(vertex_name, all_names)
+
+        (self.node_sort, self.nodes) = z3.EnumSort("NodeSort", self.node_names)
+        (self.iface_sort, self.interfaces) = z3.EnumSort("IfaceSort", self.interface_names)
+        (self.network_sort, self.networks) = z3.EnumSort("NetSort", self.network_names + self.announced_network_names)
+        #self.vertex = vertex
+        #self.all_vertices = all_vertices
+        #translator.LB_TYPE_TO_Z3_TYPE['Vertex'] = self.vertex
+        translator.LB_TYPE_TO_Z3_TYPE['Node'] = self.node_sort
+        translator.LB_TYPE_TO_Z3_TYPE['Interface'] = self.iface_sort
+        translator.LB_TYPE_TO_Z3_TYPE['Network'] = self.network_sort
+
+        self.c = dict((str(v), v) for v in self.nodes)
+        self.name_to_node = dict((str(v), v) for v in self.nodes)
+        self.name_to_network = dict((str(v), v) for v in self.networks)
+        self.name_to_iface = dict((str(v), v) for v in self.interfaces)
+        translator.STRING_TO_NODE = self.name_to_node
+        translator.STRING_TO_NET = self.name_to_network
+        translator.STRING_TO_IFACE = self.name_to_iface
+        #self.name_to_vertex = dict((str(v), v) for v in self.all_vertices)
+        #translator.STRING_TO_VERTEX = self.name_to_vertex
+        #self.nodes = [self.get_vertex(name) for name in node_names]
+        #self.interfaces = [self.get_vertex(name) for name in interface_names]
+        #self.networks = [self.get_vertex(name) for name in network_names]
+        self.announced_networks = [self.name_to_network[name] for name in self.announced_network_names]
 
     def construct_input_graph(self):
         for node in self.node_names:
@@ -2092,15 +2063,15 @@ class Synthesizer(object):
 
     def gen_configs(self, outdir):
         print "Generating router configs"
-        from gen_configs import GNS3TopologyGen
-        from graph_util import get_bgp_attrs
-        from graph_util import SetAnnouncement
-        from graph_util import SetExternalPeer
-        from graph_util import add_bgp_external_peer
-        from graph_util import add_input_filter
-        from graph_util import add_bgp_neighbor
-        from graph_util import add_ip_prefix_list
-        from graph_util import IPList
+        from synet.gen_configs import GNS3TopologyGen
+        from synet.graph_util import get_bgp_attrs
+        from synet.graph_util import SetAnnouncement
+        from synet.graph_util import SetExternalPeer
+        from synet.graph_util import add_bgp_external_peer
+        from synet.graph_util import add_input_filter
+        from synet.graph_util import add_bgp_neighbor
+        from synet.graph_util import add_ip_prefix_list
+        from synet.graph_util import IPList
 
 
         g = nx.DiGraph()

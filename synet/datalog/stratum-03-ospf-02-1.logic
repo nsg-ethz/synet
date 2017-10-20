@@ -2,15 +2,17 @@
 // ----------------------------- TYPES ----------------------------- //
 
 // Generic Vertex type
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
+
 
 // EDB: OSPFRoute, minOSPFRouteCost
-OSPFRoute(net, src, nxt, cost) -> Vertex(net), Vertex(src), Vertex(nxt), int(cost).
-nonMinOSPFRouteCost(net, src, cost) -> Vertex(net), Vertex(src), int(cost).
+OSPFRoute(net, src, nxt, cost) -> Network(net), Node(src), Node(nxt), int(cost).
+nonMinOSPFRouteCost(net, src, cost) -> Network(net), Node(src), int(cost).
 
 // EDB: OSPFRoute
-BestOSPFRoute(net, src, nxt, cost) -> Vertex(net), Vertex(src), Vertex(nxt), int(cost).
-minOSPFRouteCost(net, src, cost) -> Vertex(net), Vertex(src), int(cost).
+BestOSPFRoute(net, src, nxt, cost) -> Network(net), Node(src), Node(nxt), int(cost).
+minOSPFRouteCost(net, src, cost) -> Network(net), Node(src), int(cost).
 
 // ----------------------------- OSPF 2-1/2 ----------------------------- //
 

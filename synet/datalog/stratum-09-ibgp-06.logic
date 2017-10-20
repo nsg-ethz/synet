@@ -1,15 +1,16 @@
 
 // ----------------------------- TYPES ----------------------------- //
 
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
 
 // EDB: ConnectedBGPRoute
 ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref)  ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 
 // IDB: nonMinAsPath
-nonMinAsPath(node, prefix, asPathLength) -> Vertex(node), Vertex(prefix), int(asPathLength).
+nonMinAsPath(node, prefix, asPathLength) -> Node(node), Network(prefix), int(asPathLength).
 
 // ------------------------------ IBGP 6/9 ------------------------------//
 

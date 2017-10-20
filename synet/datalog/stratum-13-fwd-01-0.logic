@@ -1,20 +1,26 @@
+
+
+
+
 // ----------------------------- TYPES ----------------------------- //
 
 // Generic Vertex type
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
+
 
 // EDB: BestOSPFRoute, SetStaticRoute, SetAdminDist
-BestOSPFRoute(net, node, nxt, cost) -> Vertex(net), Vertex(node), Vertex(nxt), int(cost).
-SetStaticRoute(net, node, nxt) -> Vertex(net), Vertex(node), Vertex(nxt).
-SetAdminDist(node, protocol, cost) -> Vertex(node), string(protocol), int(cost).
+BestOSPFRoute(net, node, nxt, cost) -> Network(net), Node(node), Node(nxt), int(cost).
+SetStaticRoute(net, node, nxt) -> Network(net), Node(node), Node(nxt).
+SetAdminDist(node, protocol, cost) -> Node(node), string(protocol), int(cost).
 MinIGPBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 
 // IDB: Route, nonMinCostAD, Fwd
-BestBGPRoute(network, src, next) -> Vertex(network), Vertex(src), Vertex(next).
-nonMinCostAD(network, node, cost) -> Vertex(network), Vertex(node), int(cost).
-Route(net, node, nxt, protocol) -> Vertex(net), Vertex(node), Vertex(nxt), string(protocol).
+BestBGPRoute(network, src, next) -> Network(network), Node(src), Node(next).
+nonMinCostAD(network, node, cost) -> Network(network), Node(node), int(cost).
+Route(net, node, nxt, protocol) -> Network(net), Node(node), Node(nxt), string(protocol).
 
 // ------------------------------ FWD 1/3 ------------------------------//
 
@@ -29,21 +35,21 @@ BestBGPRoute(network, src, next) <-
 
 Route(net, node, nxt, protocol) <-
    BestBGPRoute(net, node, nxt),
-   protocol="bgp".
+   protocol="STRING_bgp".
 
 Route(net, node, nxt, protocol) <-
     BestOSPFRoute(net, node, nxt, _),
-    protocol="ospf".
+    protocol="STRING_ospf".
 
 Route(net, node, nxt, protocol) <-
     SetStaticRoute(net, node, nxt),
-    protocol="static".
+    protocol="STRING_static".
 
 // Computation
-nonMinCostAD(network, node, cost) <- 
+nonMinCostAD(network, node, cost) <-
     SetAdminDist(node, _, cost),
     Route(network, node, _, protocol),
     SetAdminDist(node, protocol, smallerCost),
     smallerCost < cost.
-        
+
 // ------------------------------ THE END ------------------------------//

@@ -1,30 +1,28 @@
 // ----------------------------- TYPES ----------------------------- //
 
-// Generic Vertex type
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
+Interface(n) -> string(n).
+
 
 //EDB: SetOSPFEdgeCost, Node, Network, EdgePhy
-SetOSPFEdgeCost(src, dst, cost) -> Vertex(src), Vertex(dst), int(cost).
-Node(n) -> Vertex(n).
-Network(n) -> Vertex(n).
-EdgePhy(node1, node2) -> Vertex(node1), Vertex(node2).
+SetOSPFEdgeCost(src, dst, cost) -> Interface(src), Interface(dst), int(cost).
+SetNetwork(node1, net) -> Node(node1), Network(net).
 ConnectedNodes(snode, siface, diface, dnode) ->
-    Vertex(snode), Vertex(siface), Vertex(diface), Vertex(dnode).
+    Node(snode), Interface(siface), Interface(diface), Node(dnode).
 
 //IDB: LinkOSPF, OSPFRoute
-OSPFRoute(net, src, next, cost) -> Vertex(net), Vertex(src), Vertex(next), int(cost).
+OSPFRoute(net, src, next, cost) -> Network(net), Node(src), Node(next), int(cost).
 
 // ----------------------------- OSPF 1/2 ----------------------------- //
 
 OSPFRoute(network, src, next, cost) <-
     ConnectedNodes(src, siface, diface, next),
     SetOSPFEdgeCost(siface, diface, cost),
-    EdgePhy(next, network),
-    Network(network).
+    SetNetwork(next, network).
 
 OSPFRoute(network, src, next, cost) <-
-    !EdgePhy(src, network), 
-    Network(network),
+    !SetNetwork(src, network),
     ConnectedNodes(src, siface, diface, next),
     SetOSPFEdgeCost(siface, diface, cost1),
     OSPFRoute(network, next, next2, cost2),
