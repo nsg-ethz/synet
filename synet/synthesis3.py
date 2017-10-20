@@ -87,21 +87,20 @@ class Synthesizer(object):
         for box_name in self.boxes:
             self.fill_boxes_input_constraints(box_name)
             # Load input constraints
-            self.boxes[box_name]['solver'].append(self.boxes[box_name]['box'].to_z3())
-            for c in self.boxes[box_name]['input_constraints']:
-                if c is None: continue
-                self.boxes[box_name]['solver'].append(c)
+            solver = self.boxes[box_name]['solver']
+            solver.append(self.boxes[box_name]['box'].to_z3())
+            for constraint in self.boxes[box_name]['input_constraints']:
+                if constraint is None:
+                    continue
+                solver.append(constraint)
             # Load fixed input by the user
-            print "Loading user provided input for box:", box_name  # , self.boxes[box_name]['fixed_inputs']
-            self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_inputs'])
-            print "Checking initial inputs for box", box_name
-            #assert self.boxes[box_name]['solver'].check() == z3.sat, \
-            #    "%s: %s" % (box_name, self.boxes[box_name]['box'].to_z3())
-            print "Loading user provided outputs for box:", box_name  # , self.boxes[box_name]['fixed_outputs']
-            for i in self.boxes[box_name]['inputs']:
-                if i in self.fixed_inputs:
-                    self.boxes[box_name]['solver'].append(self.fixed_inputs[i])
-            self.boxes[box_name]['solver'].append(self.boxes[box_name]['fixed_outputs'])
+            print "Loading user provided input for box:", box_name
+            solver.append(self.boxes[box_name]['fixed_inputs'])
+            print "Loading user provided outputs for box:", box_name
+            for constraint in self.boxes[box_name]['inputs']:
+                if constraint in self.fixed_inputs:
+                    solver.append(self.fixed_inputs[constraint])
+            solver.append(self.boxes[box_name]['fixed_outputs'])
         print ''
 
     def evaluate_function(self, func, model):
