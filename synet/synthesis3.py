@@ -325,34 +325,6 @@ class Synthesizer(object):
         while True:
             box_name = self.boxes_names[box_index]
             box_tries_count[box_name] += 1
-            if box_name == 'OSPF_FIXED':
-                print "Using custom OSPF " * 5
-                ff = []
-                for val in yes_func_vals['BestOSPFRoute']:
-                    if val == 'False':
-                        continue
-                    elif val == 'True':
-                        raise ValueError("All values must be explicitly specificed for OSPFRoute")
-                    else:
-                        ff.append(OSPFSyn.BestOSPFRoute(*[str(v) for v in val[:-1]]))
-                ospf_syn = OSPFSyn(ff, self.network_graph)
-                self.boxes[box_name]['ospf_fixed'] = ospf_syn
-                assert ospf_syn.solve()
-                costs = []
-                for out in ospf_syn.get_output_configs():
-                    if not isinstance(out, OSPFSyn.SetOSPFEdgeCost): continue
-                    c = [self.get_vertex(out.src),
-                         self.get_vertex(out.dst),
-                         int(out.cost), z3.BoolVal(True)]
-                    costs.append(c)
-                costs.append(z3.BoolVal(False))
-                yes_func_vals['SetOSPFEdgeCost'] = costs
-                box_index -= 1
-                if box_index < 0:
-                    print "Done!!!"
-                    break
-                else:
-                    continue
             if box_name == 'ospf01':
               solver = z3.Solver()
               print 'partially evaluate the OSPF Datalog rules'
@@ -1928,10 +1900,6 @@ class Synthesizer(object):
                     self.fixed_inputs[name] = []
                 if op == '+':
                     f = (func(parsed_args) == True)
-                    if name == 'BestOSPFRoute':
-                        self.fixed_best_ospf.append(
-                            OSPFSyn.BestOSPFRoute(args[0], args[1], args[2],
-                                                  args[3]))
                 else:
                     f = (func(parsed_args) == False)
                 self.boxes[box_name]['fixed_outputs'].append(f)
