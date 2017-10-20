@@ -65,9 +65,12 @@ class Synthesizer(object):
         self.construct_input_graph()
         #draw(self.network_graph, '/tmp/gg.ddot')
         self._fill_boxes()
-        self.build_dependency_graph()
 
     def build_dependency_graph(self):
+        """
+        Build dependency graph between the different boxes
+        This is not used anywhere, however very helpful for debugging
+        """
         self.dep_g = nx.DiGraph()
         for box_name in self.boxes_names:
             self.dep_g.add_node(box_name)
