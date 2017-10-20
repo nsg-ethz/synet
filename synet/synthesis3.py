@@ -332,20 +332,20 @@ class Synthesizer(object):
                     ospf_costs[net][src][nxt] = cost
                 ospf_reduced = tempfile.NamedTemporaryFile()
                 print 'Writing OSPF partial evaluation rules to:', ospf_reduced.name
-                ospf_reduced.write("""// ----------------------------- TYPES ----------------------------- //
-                                  // Generic Vertex type
-                                  Node(n) -> string(n).
-                                  Network(n) -> string(n).
-                                  Interface(n) -> string(n).
-                                  ConnectedNodes(snode, siface, diface, dnode) ->
-                                  Node(snode), Interface(siface), Interface(diface), Node(dnode).
-                                  //EDB: SetOSPFEdgeCost, Node, Network, EdgePhy
-                                  SetOSPFEdgeCost(src, dst, cost) -> Interface(src), Interface(dst), int(cost).
-                                  //IDB: LinkOSPF, OSPFRoute
-                                  OSPFRoute(net, src, next, cost) -> Network(net), Node(src), Node(next), int(cost).
-
-                                  // ----------------------------- OSPF 1/2 ----------------------------- //
-                                  """)
+                ospf_reduced.write("""
+                // ----------------------------- TYPES ----------------------------- //
+                // Generic Vertex type
+                Node(n) -> string(n).
+                Ntwork(n) -> string(n).
+                Interface(n) -> string(n).
+                ConnectedNodes(snode, siface, diface, dnode) ->
+                Node(snode), Interface(siface), Interface(diface), Node(dnode).
+                //EDB: SetOSPFEdgeCost, Node, Network, EdgePhy
+                SetOSPFEdgeCost(src, dst, cost) -> Interface(src), Interface(dst), int(cost).
+                //IDB: LinkOSPF, OSPFRoute
+                OSPFRoute(net, src, next, cost) -> Network(net), Node(src), Node(next), int(cost).
+                // ----------------------------- OSPF 1/2 ----------------------------- //
+                """)
                 for rule in translator.program.get_rules_for_predicate('OSPFRoute'):
                     if rule.head.name in [l.atom.name for l in rule.get_literals()]:
                         print rule
@@ -1126,7 +1126,7 @@ class Synthesizer(object):
                 ConnectedNodes(node1, iface1, iface2, node2) == z3.Or(
                     *[z3.And(
                         node1 == p[0], iface1 == p[1], iface2 == p[2], node2 == p[3])
-                        for p in pairs]))
+                      for p in pairs]))
             constraints.append(const)
 
         if nonMinOSPFRouteCost is not None and OSPFRoute is not None:
@@ -1372,15 +1372,15 @@ class Synthesizer(object):
         if SetLink is not None:
             const = z3.ForAll(
                 [iface1, iface2],
-                 z3.Not(
-                     z3.And(
-                         SetLink(iface1, iface2),
-                         z3.Exists(
-                             [iface3],
-                             z3.And(
-                                 z3.Distinct(iface1, iface2, iface3),
-                                 z3.Or(SetLink(iface1, iface3),
-                                       SetLink(iface3, iface1)))))))
+                z3.Not(
+                    z3.And(
+                        SetLink(iface1, iface2),
+                        z3.Exists(
+                            [iface3],
+                            z3.And(
+                                z3.Distinct(iface1, iface2, iface3),
+                                z3.Or(SetLink(iface1, iface3),
+                                      SetLink(iface3, iface1)))))))
             constraints.append(const)
 
         #if LinkOSPF is not None:
@@ -1795,7 +1795,7 @@ class Synthesizer(object):
                 self.boxes[box_name]['fixed_inputs'].append(f)
                 #print "PROCESESS " * 50
                 process = self._process_vals(func, func_true_vals + ['False'],
-                                   self.boxes[box_name]['inputs'])
+                                             self.boxes[box_name]['inputs'])
                 #print process
                 #self.boxes[box_name]['fixed_inputs'].extend(process)
                 self.fixed_inputs[name].append(f)
