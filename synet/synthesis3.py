@@ -870,306 +870,265 @@ class Synthesizer(object):
 
         net1, net2, net3 = z3.Consts('Net1 Net2 Net3', self.network_sort)
         node1, node2, node3, node4 = z3.Consts('Node1 Node2 Node3 Node4', self.node_sort)
-        iface1, iface2 = z3.Consts('Iface1 Iface2', self.iface_sort)
+        iface1, iface2, iface3 = z3.Consts('Iface1 Iface2 Iface3', self.iface_sort)
 
-        t1, t2, t3, t4 = z3.Consts('t1 t2 t3 t4', z3.IntSort())
-        s1, s2, s3 = z3.Consts('s1 s2 s3', string_sort)
+        int1, int2, int3, int4 = z3.Consts('t1 t2 t3 t4', z3.IntSort())
+        str1, str2, str3 = z3.Consts('s1 s2 s3', string_sort)
 
         connected_networks_used = False
         directly_connected_nodes_used = False
 
-        check = constraints[:]
-        #if StaticRouteCost is not None:
-        #    c = datatype_route_cost(StaticRouteCost, is_network, is_node, self.vertex)
-        #    constraints.append(c)
-
         if IGPRouteCost is not None:
-            #c = datatype_route_cost(IGPRouteCost, is_network, is_node, self.vertex)
-            #constraints.append(c)
-
             # The cost of any not directly connected network is Zero
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
                     z3.And(
-                        IGPRouteCost(net1, node1, node2, t1),
+                        IGPRouteCost(net1, node1, node2, int1),
                         self.connected_networks_f(node1, net1)),
-                    t1 == 0))
-            constraints.append(c)
+                    int1 == 0))
+            constraints.append(const)
 
             # The cost of any not directly connected network is more than zero
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
                     z3.And(
-                        IGPRouteCost(net1, node1, node2, t1),
+                        IGPRouteCost(net1, node1, node2, int1),
                         z3.Not(self.connected_networks_f(node1, net1))),
-                    t1 > 0))
-            constraints.append(c)
+                    int1 > 0))
+            constraints.append(const)
 
         if MinIGPBGPRoute is not None:
-            #c = datatype_route_bgp(MinIGPBGPRoute, is_network, is_node,
-            #                       is_as_path_length, string_sort, self.vertex)
-            #constraints.append(c)
-            # HACK: we assume all the BGP routes has the the same preference
+            # HACK: FIXME we assume all the BGP routes has the the same preference
             # HACK: we need to propagate properly the ASPath Length from the input
-
-            c = z3.ForAll(
-                [node1, net1, net2, s1, t1, t2],
+            const = z3.ForAll(
+                [node1, net1, net2, str1, int1, int2],
                 z3.Implies(
-                    MinIGPBGPRoute(node1, net1, net2, s1, t1, t2),
-                    z3.And(t1 == 3, t2 == 6, is_announced_network(net2))))
-            constraints.append(c)
+                    MinIGPBGPRoute(node1, net1, net2, str1, int1, int2),
+                    z3.And(int1 == 3, int2 == 6, is_announced_network(net2))))
+            constraints.append(const)
 
         if nonMinIGPCost is not None and IGPRouteCost is not None:
-            c = z3.ForAll(
-                [net1, node1, node2, node3, t1, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, node3, int1, int1],
                 z3.Implies(
                     z3.And(
-                        IGPRouteCost(net1, node1, node2, t1),
-                        IGPRouteCost(net1, node1, node3, t2),
-                        t2 < t1),
-                    nonMinIGPCost(node1, net1, t2)))
-            constraints.append(c)
+                        IGPRouteCost(net1, node1, node2, int1),
+                        IGPRouteCost(net1, node1, node3, int2),
+                        int2 < int1),
+                    nonMinIGPCost(node1, net1, int2)))
+            constraints.append(const)
 
         if BGPAnnouncement is not None and BGPRoute is not None:
-            c = z3.ForAll(
-                [node1, net1, net2, s1, t1, t2],
+            const = z3.ForAll(
+                [node1, net1, net2, str1, int1, int2],
                 z3.Implies(
-                    BGPRoute(node1, net1, net2, s1, t1, t2),
+                    BGPRoute(node1, net1, net2, str1, int1, int2),
                     z3.Exists(
                         [node2],
                         z3.And(
-                            BGPAnnouncement(node2, net1, net2, s1, t1, t2),
+                            BGPAnnouncement(node2, net1, net2, str1, int1, int2),
                             self.connected_networks_f(node2, net1)
-                        )
-                    )
-                ))
-            constraints.append(c)
+                        ))))
+            constraints.append(const)
 
         if BestOSPFRoute is not None:
             connected_networks_used = True
             directly_connected_nodes_used = True
-            #c = datatype_route_cost(BestOSPFRoute, is_network, is_node, self.vertex)
-            #constraints.append(c)
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
+                    BestOSPFRoute(net1, node1, node2, int1),
                     z3.Not(
                         z3.Exists(
-                            [node3, t2],
-                            z3.And(BestOSPFRoute(net1, node1, node3, t2), t1 != t2)))))
-            constraints.append(c)
+                            [node3, int2],
+                            z3.And(
+                                BestOSPFRoute(net1, node1, node3, int2),
+                                int1 != int2)))))
+            constraints.append(const)
 
             # Route cost should be larger than 0
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
-                    t1 > 0))
-            constraints.append(c)
+                    BestOSPFRoute(net1, node1, node2, int1),
+                    int1 > 0))
+            constraints.append(const)
 
             # Only one best BestOSPFRoute
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
+                    BestOSPFRoute(net1, node1, node2, int1),
                     z3.Not(
                         z3.Exists(
-                            [node3, t2],
+                            [node3, int2],
                             z3.And(
-                                BestOSPFRoute(net1, node1, node3, t2),
+                                BestOSPFRoute(net1, node1, node3, int2),
                                 node2 != node3)))))
-            constraints.append(c)
+            constraints.append(const)
 
             # If a route has BestOSPFRoute then the next hop should either have
             # a BestOSPFRoute for the given network or should be connected directly
             # to the given network
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
+                    BestOSPFRoute(net1, node1, node2, int1),
                     z3.Exists(
-                        [node3, t2],
+                        [node3, int2],
                         z3.Or(
                             z3.And(
-                                BestOSPFRoute(net1, node2, node3, t2),
-                                t2 < t1,
-                                node3 != node1
-                            ),
+                                BestOSPFRoute(net1, node2, node3, int2),
+                                int2 < int1,
+                                node3 != node1),
                             self.connected_networks_f(node3, net1)))))
-            constraints.append(c)
+            constraints.append(const)
 
             # Don't Forward directly connected networks
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
+                    BestOSPFRoute(net1, node1, node2, int1),
                     z3.Not(self.connected_networks_f(node1, net1))))
-            constraints.append(c)
-            
+            constraints.append(const)
+
             # For a given router, BestOSPFRoute must forward any
             # given network to only one router
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
+                    BestOSPFRoute(net1, node1, node2, int1),
                     z3.Not(z3.Exists(
-                        [node3, t2],
+                        [node3, int2],
                         z3.And(
-                            BestOSPFRoute(net1, node1, node3, t2),
-                            node3 != node2
-                        )))))
-            constraints.append(c)
+                            BestOSPFRoute(net1, node1, node3, int2),
+                            node3 != node2)))))
+            constraints.append(const)
 
             # OSPF must use the same next hop cost
             # if the two networks are on the same destination router
-            c = z3.ForAll(
-                [net1, node1, node2, net2, node3, t1, t2],
+            const = z3.ForAll(
+                [net1, node1, node2, net2, node3, int1, int2],
                 z3.Implies(
                     z3.And(
                         # two Route entries on the same router
-                        BestOSPFRoute(net1, node1, node2, t1),
-                        BestOSPFRoute(net2, node1, node3, t2),
+                        BestOSPFRoute(net1, node1, node2, int1),
+                        BestOSPFRoute(net2, node1, node3, int2),
                         z3.Exists(
                             # The two networks are connected to the same dest router
                             [node4],
                             z3.And(
                                 self.connected_networks_f(node4, net1),
-                                self.connected_networks_f(node4, net2),
-                            )),
-                    ),
-                    z3.And(node2 == node3, t1 == t2)
-                )
-            )
-            constraints.append(c)
+                                self.connected_networks_f(node4, net2),)),),
+                    z3.And(node2 == node3, int1 == int2)))
+            constraints.append(const)
 
             # Only route to directly connected nodes
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
+                    BestOSPFRoute(net1, node1, node2, int1),
                     self.directly_connected_nodes(node1, node2)))
-            constraints.append(c)
+            constraints.append(const)
 
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
-                    t1 <= 20)
-            )
-            constraints.append(c)
+                    BestOSPFRoute(net1, node1, node2, int1),
+                    int1 <= 20))
+            constraints.append(const)
 
-            c = z3.ForAll(
-                [net1, node1, node2, net2, node3, t1, t2, t3],
+            const = z3.ForAll(
+                [net1, node1, node2, net2, node3, int1, int2, int3],
                 z3.Implies(
                     z3.And(
-                        BestOSPFRoute(net1, node1, node2, t1),
+                        BestOSPFRoute(net1, node1, node2, int1),
                         self.connected_networks_f(node2, net1),
-                        BestOSPFRoute(net2, node1, node2, t2),
-                        BestOSPFRoute(net2, node2, node3, t3),
-                        net2 != net1
-                    ),
-                    t1 == t2 - t3
-                )
-            )
-            constraints.append(c)
+                        BestOSPFRoute(net2, node1, node2, int2),
+                        BestOSPFRoute(net2, node2, node3, int3),
+                        net2 != net1),
+                    int1 == int2 - int3))
+            constraints.append(const)
 
             # Ensure reasonable costs
-            c = z3.ForAll(
-                [net1, node1, node2, node3, net2, node4, t1, t2, t3, t4],
+            const = z3.ForAll(
+                [net1, node1, node2, node3, net2, node4, int1, int2, int3, int4],
                 z3.Implies(
                     z3.And(
-                        BestOSPFRoute(net1, node1, node2, t1),
-                        BestOSPFRoute(net1, node2, node3, t2),
-                        BestOSPFRoute(net2, node1, node2, t3),
-                        BestOSPFRoute(net2, node2, node4, t4),
-                    ),
-                    t1 - t2 == t3 - t4
-                )
-            )
-            constraints.append(c)
+                        BestOSPFRoute(net1, node1, node2, int1),
+                        BestOSPFRoute(net1, node2, node3, int2),
+                        BestOSPFRoute(net2, node1, node2, int3),
+                        BestOSPFRoute(net2, node2, node4, int4),),
+                    int1 - int2 == int3 - int4))
+            constraints.append(const)
 
         if OSPFRoute is not None:
             connected_networks_used = True
             directly_connected_nodes_used = True
-            #c = datatype_route_cost(OSPFRoute, is_network, is_node, self.vertex)
-            #constraints.append(c)
 
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    OSPFRoute(net1, node1, node2, t1),
+                    OSPFRoute(net1, node1, node2, int1),
                     z3.Exists(
-                        [node3, t2],
+                        [node3, int2],
                         z3.Or(
                             z3.And(
-                                OSPFRoute(net1, node2, node3, t2),
-                                t2 < t1,
-                                node3 != node1
-                            ),
+                                OSPFRoute(net1, node2, node3, int2),
+                                int2 < int1,
+                                node3 != node1),
                             self.connected_networks_f(node2, net1)))))
             #constraints.append(c)
-            
-            c = z3.ForAll(
-              [net1, node1, node2, node3, t1, t2],
-              z3.Implies(
-                z3.And(                
-                  OSPFRoute(net1, node1, node2, t1),
-                  OSPFRoute(net1, node1, node3, t2)
-                  ),
-                  t1 == t2
-                )
-              )
+
+            const = z3.ForAll(
+                [net1, node1, node2, node3, int1, int2],
+                z3.Implies(
+                    z3.And(
+                        OSPFRoute(net1, node1, node2, int1),
+                        OSPFRoute(net1, node1, node3, int2)),
+                    int1 == int2))
             #constraints.append(c)
 
             # OSPF Route cost should be larger than 0
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    OSPFRoute(net1, node1, node2, t1),
-                    t1 > 0))
-            constraints.append(c)
+                    OSPFRoute(net1, node1, node2, int1),
+                    int1 > 0))
+            constraints.append(const)
 
             # OSPF must use the same next hop and cost
             # if the two networks are on the same destination router
-            c = z3.ForAll(
-                [net1, node1, node2, net2, node3, t1, t2],
+            const = z3.ForAll(
+                [net1, node1, node2, net2, node3, int1, int2],
                 z3.Implies(
                     z3.And(
                         # two Route entries on the same router
-                        OSPFRoute(net1, node1, node2, t1),
-                        OSPFRoute(net2, node1, node3, t2),
+                        OSPFRoute(net1, node1, node2, int1),
+                        OSPFRoute(net2, node1, node3, int2),
                         node2 == node3,
                         z3.Exists(
                             # The two networks are connected to the same dest router
                             [node4],
                             z3.And(
                                 self.connected_networks_f(node4, net1),
-                                self.connected_networks_f(node4, net2),
-                            )),
-                    ),
-                    z3.And(t1 == t2)
-                )
-            )
-            constraints.append(c)
+                                self.connected_networks_f(node4, net2),)),),
+                    z3.And(int1 == int2)))
+            constraints.append(const)
 
             # Only route to directly connected nodes
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    OSPFRoute(net1, node1, node2, t1),
+                    OSPFRoute(net1, node1, node2, int1),
                     self.directly_connected_nodes(node1, node2)))
-            constraints.append(c)
+            constraints.append(const)
 
-        if SetStaticRouteCost is not None:
-            c = datatype_route_cost(SetStaticRouteCost, is_network, is_node, self.vertex)
-            constraints.append(c)
-
-        if EdgePhy is not None:
-            c = z3_interface_links(self.vertex, is_interface, EdgePhy)
-            constraints.append(c)
+        #if SetStaticRouteCost is not None:
+        #    const = datatype_route_cost(SetStaticRouteCost, is_network, is_node, self.vertex)
+        #    constraints.append(const)
 
         if EdgePhy is not None:
             for src in self.network_graph.nodes():
@@ -1180,144 +1139,143 @@ class Synthesizer(object):
                         constraints.append(EdgePhy(src_v, dst_v) == True)
                     else:
                         constraints.append(EdgePhy(src_v, dst_v) == False)
-            c = z3.ForAll([v1, v2], z3.Implies(EdgePhy(v1, v2), EdgePhy(v2, v1)))
-            constraints.append(c)
+            #const = z3.ForAll([v1, v2], z3.Implies(EdgePhy(v1, v2), EdgePhy(v2, v1)))
+            constraints.append(const)
 
         if ConnectedNodes is not None:
             pairs = [
-                [self.name_to_node[p[0]],
-                 self.name_to_iface[p[1]],
-                 self.name_to_iface[p[2]],
-                 self.name_to_node[p[3]],
-                 ] for p in self.connected_nodes]
-            c = z3.ForAll(
+                [
+                    self.name_to_node[p[0]],
+                    self.name_to_iface[p[1]],
+                    self.name_to_iface[p[2]],
+                    self.name_to_node[p[3]],
+                ] for p in self.connected_nodes]
+
+            const = z3.ForAll(
                 [node1, iface1, iface2, node2],
                 ConnectedNodes(node1, iface1, iface2, node2) == z3.Or(
-                *[z3.And(node1 == p[0], iface1 == p[1], iface2 == p[2], node2 == p[3]) for p in pairs]))
-            constraints.append(c)
+                    *[z3.And(
+                        node1 == p[0], iface1 == p[1], iface2 == p[2], node2 == p[3])
+                        for p in pairs]))
+            constraints.append(const)
 
         if nonMinOSPFRouteCost is not None and OSPFRoute is not None:
-            c = z3.ForAll(
-                [net1, node1, t1],
+            const = z3.ForAll(
+                [net1, node1, int1],
                 z3.Implies(
-                    nonMinOSPFRouteCost(net1, node1, t1),
-                    z3.Exists([node2], OSPFRoute(net1, node1, node2, t1))))
-            constraints.append(c)
-            
-            c = z3.ForAll(
-                [net1, node1, t1],
-                nonMinOSPFRouteCost(net1, node1, t1) ==
-                z3.Exists(
-                  [node2, node3, t2],
-                  z3.And(
-                    OSPFRoute(net1, node1, node2, t1),
-                    OSPFRoute(net1, node1, node3, t2),
-                    t2 < t1
-                  )
-                )
-              )
-            constraints.append(c)
+                    nonMinOSPFRouteCost(net1, node1, int1),
+                    z3.Exists([node2], OSPFRoute(net1, node1, node2, int1))))
+            constraints.append(const)
+
+            const = z3.ForAll(
+                [net1, node1, int1],
+                nonMinOSPFRouteCost(net1, node1, int1) == z3.Exists(
+                    [node2, node3, int2],
+                    z3.And(
+                        OSPFRoute(net1, node1, node2, int1),
+                        OSPFRoute(net1, node1, node3, int2),
+                        int2 < int1)))
+            constraints.append(const)
 
         if BestOSPFRoute is not None and nonMinOSPFRouteCost is not None:
             # Best route must be the min set
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
-                    z3.Not(nonMinOSPFRouteCost(net1, node1, t1))))
-            constraints.append(c)
+                    BestOSPFRoute(net1, node1, node2, int1),
+                    z3.Not(nonMinOSPFRouteCost(net1, node1, int1))))
+            constraints.append(const)
 
         if minOSPFRouteCost is not None and BestOSPFRoute is not None:
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    BestOSPFRoute(net1, node1, node2, t1),
-                    minOSPFRouteCost(net1, node1, t1)))
-            constraints.append(c)
+                    BestOSPFRoute(net1, node1, node2, int1),
+                    minOSPFRouteCost(net1, node1, int1)))
+            constraints.append(const)
 
         if minOSPFRouteCost is not None and nonMinOSPFRouteCost is not None:
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
-                    minOSPFRouteCost(net1, node1, t1),
-                    z3.Not(nonMinOSPFRouteCost(net1, node1, t1))))
-            constraints.append(c)
+                    minOSPFRouteCost(net1, node1, int1),
+                    z3.Not(nonMinOSPFRouteCost(net1, node1, int1))))
+            constraints.append(const)
 
         if SetAdminDist is not None:
             # Set Admin Distance only once
-            c = z3.ForAll(
-                [node1, s1, t1],
+            const = z3.ForAll(
+                [node1, str1, int1],
                 z3.Implies(
-                    SetAdminDist(node1, s1, t1),
-                    z3.Not(z3.Exists([t2], z3.And(SetAdminDist(node1, s1, t2), t1 != t2)))))
-            constraints.append(c)
+                    SetAdminDist(node1, str1, int1),
+                    z3.Not(
+                        z3.Exists(
+                            [int2],
+                            z3.And(
+                                SetAdminDist(node1, str1, int2),
+                                int1 != int2)))))
+            constraints.append(const)
 
         if nonMinCostAD is not None:
-            c = z3.ForAll(
-                [net1, node1, s1],
+            const = z3.ForAll(
+                [net1, node1, str1],
                 z3.Implies(
                     z3.And(
-                        nonMinCostAD(net1, node1, t1),
+                        nonMinCostAD(net1, node1, int1),
                         is_announced_network(net1)
-                    ), t1 == 2))
-            constraints.append(c)
+                    ), int1 == 2))
+            constraints.append(const)
 
-            c = z3.ForAll(
-                [net1, node1, s1],
+            const = z3.ForAll(
+                [net1, node1, str1],
                 z3.Implies(
                     z3.And(
-                        nonMinCostAD(net1, node1, t1),
+                        nonMinCostAD(net1, node1, int1),
                         z3.Not(is_announced_network(net1))
-                    ), z3.Or(t1 == 1, t1 == 3)))
-            constraints.append(c)
+                    ), z3.Or(int1 == 1, int1 == 3)))
+            constraints.append(const)
 
-            c = z3.ForAll(
-                [net1, node1, s1],
+            const = z3.ForAll(
+                [net1, node1, str1],
                 z3.Implies(
                     z3.And(
-                        nonMinCostAD(net1, node1, t1),
-                    ), t1 == 3))
+                        nonMinCostAD(net1, node1, int1),
+                    ), int1 == 3))
 
-            constraints.append(c)
-
-        if nonMinCostAD is not None and SetAdminDist is not None and Route is not None:
-            c = z3.ForAll(
-                [net1, node1, node2, node3, s1, s2, t1],
-                #z3.Implies(
-                    z3.And(
-                        Route(net1, node1, node2, s1),
-                        Route(net1, node1, node3, s2),
-                        s1 != s2,
-                        SetAdminDist(node1, s1, t1),
-                        SetAdminDist(node1, s2, t2),
-                        t1 < t2
-                    ) ==
-                        nonMinCostAD(net1, node1, t2)
-                )#)
-            constraints.append(c)
+            constraints.append(const)
 
         if nonMinCostAD is not None and SetAdminDist is not None and Route is not None:
-            c = z3.ForAll(
-                [net1, node1, t1],
-                nonMinCostAD(net1, node1, t1) == z3.Exists(
-                    [s1, s2, node2, t2],
+            const = z3.ForAll(
+                [net1, node1, node2, node3, str1, str2, int1],
+                z3.And(
+                    Route(net1, node1, node2, str1),
+                    Route(net1, node1, node3, str2),
+                    str1 != str2,
+                    SetAdminDist(node1, str1, int1),
+                    SetAdminDist(node1, str2, int2),
+                    int1 < int2) == nonMinCostAD(net1, node1, int2))
+            constraints.append(const)
+
+        if nonMinCostAD is not None and SetAdminDist is not None and Route is not None:
+            const = z3.ForAll(
+                [net1, node1, int1],
+                nonMinCostAD(net1, node1, int1) == z3.Exists(
+                    [str1, str2, node2, int2],
                     z3.And(
-                        SetAdminDist(node1, s1, t1),
-                        Route(net1, node1, node2, s2),
-                        SetAdminDist(node1, s2, t2),
-                        t2 < t1
-                    ))
-            )
-            constraints.append(c)
+                        SetAdminDist(node1, str1, int1),
+                        Route(net1, node1, node2, str2),
+                        SetAdminDist(node1, str2, int2),
+                        int2 < int1)))
+            constraints.append(const)
 
         if Fwd is not None:
-            c = z3.ForAll(
-                [net1, node1, node2, node3, s1, s2],
+            const = z3.ForAll(
+                [net1, node1, node2, node3, str1, str2],
                 z3.Implies(
-                    z3.And(Fwd(net1, node1, node2, s1),
-                           Fwd(net1, node1, node3, s2)),
-                    z3.And(node3 == node2, s1 == s2)))
-            constraints.append(c)
+                    z3.And(Fwd(net1, node1, node2, str1),
+                           Fwd(net1, node1, node3, str2)),
+                    z3.And(node3 == node2, str1 == str2)))
+            constraints.append(const)
 
         if OSPFRoute is not None or BestOSPFRoute is not None:
             if OSPFRoute is not None:
@@ -1325,31 +1283,31 @@ class Synthesizer(object):
             elif BestOSPFRoute is not None:
                 func = BestOSPFRoute
             # Block announced networks from being advertised over OSPF
-            c = z3.ForAll(
-                [net1, node1, node2, t1],
+            const = z3.ForAll(
+                [net1, node1, node2, int1],
                 z3.Implies(
                     is_announced_network(net1),
-                    z3.Not(func(net1, node1, node2, t1))))
-            constraints.append(c)
+                    z3.Not(func(net1, node1, node2, int1))))
+            constraints.append(const)
 
         if ConnectedBGPAnnouncement is not None:
             connected_networks_used = True
-            c = z3.ForAll(
+            const = z3.ForAll(
                 [node1, net1, net2],
                 z3.Implies(
                     ConnectedBGPAnnouncement(node1, net1, net2),
                     self.connected_networks_f(node1, net1)))
-            constraints.append(c)
+            constraints.append(const)
 
         if ConnectedBGPAnnouncement is not None and MaxBGPLocalPrefBGPRoute is not None:
             pass
             connected_networks_used = True
-            c = z3.ForAll(
+            const = z3.ForAll(
                 [node1, net1, net2],
                 ConnectedBGPAnnouncement(node1, net1, net2) == z3.Exists(
-                    [s1, t1, t2],
+                    [str1, int1, int2],
                     z3.And(
-                        MaxBGPLocalPrefBGPRoute(node1, net1, net2, s1, t1, t2),
+                        MaxBGPLocalPrefBGPRoute(node1, net1, net2, str1, int1, int2),
                         self.connected_networks_f(node1, net1)
                     )
                 )
@@ -1357,29 +1315,29 @@ class Synthesizer(object):
             #constraints.append(c)
 
         if nonMaxBGPLocalPref is not None and BGPLocalPref is not None:
-            c = z3.ForAll(
-                [node1, net2, net1, t1],
-                nonMaxBGPLocalPref(net1, t1) == z3.And(
-                    BGPLocalPref(node1, net2, net1, t1),
+            const = z3.ForAll(
+                [node1, net2, net1, int1],
+                nonMaxBGPLocalPref(net1, int1) == z3.And(
+                    BGPLocalPref(node1, net2, net1, int1),
                     z3.Exists(
-                        [node2, net3, t2],
-                        z3.And(BGPLocalPref(node2, net3, net1, t2), t1 < t2))
+                        [node2, net3, int2],
+                        z3.And(BGPLocalPref(node2, net3, net1, int2), int1 < int2))
 
                     ))
-            constraints.append(c)
+            constraints.append(const)
 
         if MaxBGPLocalPrefBGPRoute is not None and BGPLocalPref is not None:
-            c = z3.ForAll(
-                [node1, net1, net2, s1, t1, t2],
+            const = z3.ForAll(
+                [node1, net1, net2, str1, int1, int2],
                 z3.Implies(
-                    MaxBGPLocalPrefBGPRoute(node1, net1, net2, s1, t1, t2),
+                    MaxBGPLocalPrefBGPRoute(node1, net1, net2, str1, int1, int2),
                     z3.And(
-                        BGPLocalPref(node1, net1, net2, t2),
+                        BGPLocalPref(node1, net1, net2, int2),
                         z3.Not(
                             z3.Exists(
-                                [node2, net3, t3],
-                                z3.And(BGPLocalPref(node2, net3, net2, t3), t3 > t2))))))
-            constraints.append(c)
+                                [node2, net3, int3],
+                                z3.And(BGPLocalPref(node2, net3, net2, int3), int3 > int2))))))
+            constraints.append(const)
 
             #if BGPLocalPref is not None:
             #     #connected_networks_used = True
@@ -1396,144 +1354,144 @@ class Synthesizer(object):
             #    constraints.append(c)
 
         if MaxBGPLocalPrefBGPRoute is not None:
-            c = z3.ForAll(
-                [node1, net1, net2, s1, t1, t2],
+            const = z3.ForAll(
+                [node1, net1, net2, str1, int1, int2],
                 z3.Implies(
-                    MaxBGPLocalPrefBGPRoute(node1, net1, net2, s1, t1, t2),
+                    MaxBGPLocalPrefBGPRoute(node1, net1, net2, str1, int1, int2),
                     z3.Not(
                         z3.Exists(
-                            [node2, t3, t4],
+                            [node2, int3, int4],
                             z3.And(
-                                MaxBGPLocalPrefBGPRoute(node2, net1, net2, s2, t3, t4),
-                                t2 < t4
+                                MaxBGPLocalPrefBGPRoute(node2, net1, net2, str2, int3, int4),
+                                int2 < int4
                             )
                         ))))
-            constraints.append(c)
+            constraints.append(const)
 
         if BGPRoute is not None and BGPLocalPref is not None:
-            c = z3.ForAll(
-                [node1, net1, net2, s1, t1, t2],
+            const = z3.ForAll(
+                [node1, net1, net2, str1, int1, int2],
                 z3.Implies(
-                    BGPRoute(node1, net1, net2, s1, t1, t2),
-                    z3.Exists([node2, t2], BGPLocalPref(node2, net1, net2, t2))))
-            constraints.append(c)
+                    BGPRoute(node1, net1, net2, str1, int1, int2),
+                    z3.Exists([node2, int2], BGPLocalPref(node2, net1, net2, int2))))
+            constraints.append(const)
 
         if SetNetwork is not None:
-            c = z3.ForAll(
+            const = z3.ForAll(
                 [node1, node2, net1],
                 z3.Implies(
                     z3.And(
                         SetNetwork(node1, net1) == True,
                         SetNetwork(node2, net1) == True),
                     node2 == node1))
-            constraints.append(c)
+            constraints.append(const)
 
         if SetInterface is not None:
-            c = z3.ForAll(
-                [v1, v2],
+            const = z3.ForAll(
+                [node1, iface1],
                 z3.Implies(
-                    SetInterface(v1, v2) == True,
+                    SetInterface(node1, iface1) == True,
                     z3.Not(
                         z3.Exists(
-                            [v3],
+                            [node2],
                             z3.And(
-                                v3 != v1,
-                                z3.Or(SetInterface(v3, v2), SetInterface(v2, v3)))))))
-            constraints.append(c)
+                                node2 != node1,
+                                z3.Or(SetInterface(node2, iface1)))))))
+            constraints.append(const)
 
         if SetLink is not None:
-            c = z3.ForAll(
-                [v1, v2],
+            const = z3.ForAll(
+                [iface1, iface2],
                  z3.Not(
                      z3.And(
-                         SetLink(v1, v2),
+                         SetLink(iface1, iface2),
                          z3.Exists(
-                             [v3],
+                             [iface3],
                              z3.And(
-                                 z3.Distinct(v1, v2, v3),
-                                 z3.Or(SetLink(v1, v3),
-                                       SetLink(v3, v1)))))))
-            constraints.append(c)
+                                 z3.Distinct(iface1, iface2, iface3),
+                                 z3.Or(SetLink(iface1, iface3),
+                                       SetLink(iface3, iface1)))))))
+            constraints.append(const)
 
-        if LinkOSPF is not None:
-            c = z3.ForAll(
-                [v1, v2, t1],
-                z3.Implies(
-                    LinkOSPF(v1, v2, t1),
-                    z3.Exists(
-                        [v3, v4],
-                        z3.And(
-                            EdgePhy(v1, v3),
-                            EdgePhy(v3, v4),
-                            SetOSPFEdgeCost(v3, v4, t1),
-                            EdgePhy(v4, v2)))))
-            constraints.append(c)
+        #if LinkOSPF is not None:
+        #    const = z3.ForAll(
+        #        [v1, v2, int1],
+        #        z3.Implies(
+        #            LinkOSPF(v1, v2, int1),
+        #            z3.Exists(
+        #                [v3, v4],
+        #                z3.And(
+        #                    EdgePhy(v1, v3),
+        #                    EdgePhy(v3, v4),
+        #                    SetOSPFEdgeCost(v3, v4, int1),
+        #                    EdgePhy(v4, v2)))))
+        #    constraints.append(const)
 
-        if SetOSPFEdgeCost is not None and EdgePhy is not None:
-            c = z3.ForAll(
-                [v1, v2, t1],
-                z3.Implies(
-                    SetOSPFEdgeCost(v1, v2, t1),
-                    EdgePhy(v1, v2)))
-            constraints.append(c)
-            c = z3.ForAll(
-                [v1, v2, t1],
-                z3.Implies(
-                    SetOSPFEdgeCost(v1, v2, t1),
-                    z3.Not(z3.Exists([t2], z3.And(SetOSPFEdgeCost(v1, v2, t2), t1 != t2)))))
-            constraints.append(c)
+        #if SetOSPFEdgeCost is not None and EdgePhy is not None:
+        #    const = z3.ForAll(
+        #        [v1, v2, int1],
+        #        z3.Implies(
+        #            SetOSPFEdgeCost(v1, v2, int1),
+        #            EdgePhy(v1, v2)))
+        #    constraints.append(const)
+        #    const = z3.ForAll(
+        #        [v1, v2, int1],
+        #        z3.Implies(
+        #            SetOSPFEdgeCost(v1, v2, int1),
+        #            z3.Not(z3.Exists([int2], z3.And(SetOSPFEdgeCost(v1, v2, int2), int1 != int2)))))
+        #    constraints.append(const)
 
         if Route is not None:
             connected_networks_used = True
             # Cannot route back the same node
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
-                    Route(net1, node1, node2, s1),
+                    Route(net1, node1, node2, str1),
                     node1 != node2))
-            constraints.append(c)
+            constraints.append(const)
 
             # Externally learned prefixes, must be routed via BGP
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
                     z3.And(
-                        Route(net1, node1, node2, s1),
+                        Route(net1, node1, node2, str1),
                         is_announced_network(net1)
-                    ), s1 == get_string_const_val('bgp')))
-            constraints.append(c)
+                    ), str1 == get_string_const_val('bgp')))
+            constraints.append(const)
 
             # Internally learned prefixes cannot be routed over BGP
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
                     z3.And(
-                        Route(net1, node1, node2, s1),
+                        Route(net1, node1, node2, str1),
                         z3.Not(is_announced_network(net1))
-                    ), s1 != get_string_const_val('bgp')))
-            constraints.append(c)
+                    ), str1 != get_string_const_val('bgp')))
+            constraints.append(const)
 
             # Have continuous OSPFRoutes
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
                     z3.And(
-                        Route(net1, node1, node2, s1),
-                        s1 == get_string_const_val('ospf')),
+                        Route(net1, node1, node2, str1),
+                        str1 == get_string_const_val('ospf')),
                     z3.Exists(
                         [node3],
                         z3.Or(
                             z3.And(
-                                Route(net1, node2, node3, s1),
+                                Route(net1, node2, node3, str1),
                                 node3 != node1
                             ),
                             self.connected_networks_f(node2, net1),
                         ))))
             # Long
-            constraints.append(c)
+            constraints.append(const)
 
             # Compute OSPF routes for all not directly connected networks
-            c = z3.ForAll(
+            const = z3.ForAll(
                 [net1, node1],
                 z3.Or(
                     self.connected_networks_f(node1, net1),
@@ -1542,29 +1500,29 @@ class Synthesizer(object):
                         [node2],
                         Route(net1, node1, node2, get_string_const_val('ospf')),
                     )))
-            constraints.append(c)
+            constraints.append(const)
 
             # There should be no more than one route for the same network,
             # the same protocol, the same router
-            c = z3.ForAll(
-                [net1, node1, node2, node3, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, node3, str1],
                 z3.Implies(
                     z3.And(
-                        Route(net1, node1, node2, s1),
-                        Route(net1, node1, node3, s1)),
+                        Route(net1, node1, node2, str1),
+                        Route(net1, node1, node3, str1)),
                     node2 == node3))
             # Long
-            constraints.append(c)
+            constraints.append(const)
 
             # OSPF must use the same next hop if the two networks are on the same
             # destination router
-            c = z3.ForAll(
-                [net1, node1, node2, net2, node3, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, net2, node3, str1],
                 z3.Implies(
                     z3.And(
                         # two Route entries on the same router
-                        Route(net1, node1, node2, s1),
-                        Route(net2, node1, node3, s1),
+                        Route(net1, node1, node2, str1),
+                        Route(net2, node1, node3, str1),
                         z3.Exists(
                             # The two networks are connected to the same dest router
                             [node4],
@@ -1572,57 +1530,57 @@ class Synthesizer(object):
                                 self.connected_networks_f(node4, net1),
                                 self.connected_networks_f(node4, net2),
                             )),
-                        s1 == get_string_const_val('ospf'),
+                        str1 == get_string_const_val('ospf'),
                     ),
                     node2 == node3
                 )
             )
             # Long
-            constraints.append(c)
+            constraints.append(const)
 
             directly_connected_nodes_used = True
             # Only route to directly connected nodes
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
-                    Route(net1, node1, node2, s1),
+                    Route(net1, node1, node2, str1),
                     self.directly_connected_nodes(node1, node2)))
-            constraints.append(c)
+            constraints.append(const)
 
         if Fwd is not None:
             connected_networks_used = True
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
-                z3.Implies(Fwd(net1, node1, node2, s1), node1 != node2))
-            constraints.append(c)
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
+                z3.Implies(Fwd(net1, node1, node2, str1), node1 != node2))
+            constraints.append(const)
 
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
                     z3.And(
-                        Fwd(net1, node1, node2, s1),
+                        Fwd(net1, node1, node2, str1),
                         is_announced_network(net1)
-                    ), s1 == get_string_const_val('bgp')))
-            constraints.append(c)
+                    ), str1 == get_string_const_val('bgp')))
+            constraints.append(const)
 
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
                     z3.And(
-                        Fwd(net1, node1, node2, s1),
+                        Fwd(net1, node1, node2, str1),
                         z3.Not(is_announced_network(net1))
-                    ), s1 != get_string_const_val('bgp')))
-            constraints.append(c)
+                    ), str1 != get_string_const_val('bgp')))
+            constraints.append(const)
 
             directly_connected_nodes_used = True
             # Next hop can be only directly connected node
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
-                    Fwd(net1, node1, node2, s1),
+                    Fwd(net1, node1, node2, str1),
                     self.directly_connected_nodes(node1, node2)
                 ))
-            constraints.append(c)
+            constraints.append(const)
 
             # Only forward to one destination
             #c = z3.ForAll(
@@ -1647,13 +1605,13 @@ class Synthesizer(object):
             #                      v3 == v5, s1 == s2)))))
             #constraints.append(c)
             # Don't Forward directly connected networks
-            c = z3.ForAll(
-                [net1, node1, node2, s1],
+            const = z3.ForAll(
+                [net1, node1, node2, str1],
                 z3.Implies(
-                    Fwd(net1, node1, node2, s1),
+                    Fwd(net1, node1, node2, str1),
                     z3.Not(
                         self.connected_networks_f(node1, net1))))
-            constraints.append(c)
+            constraints.append(const)
 
             # IF two networks are connected to the same router
             # then they must have the same Forwarding entry for a given
@@ -1714,100 +1672,100 @@ class Synthesizer(object):
             #))
             ##constraints.append(c)
 
-        if OutgoingFwdInterface is not None and Fwd is not None and ConnectedNodes is not None:
-            # Fwd entry must exists on the router to output the packet
-            c = z3.ForAll(
-                [v1, v2, v3],
-                OutgoingFwdInterface(v1, v2, v3) == z3.Exists(
-                    [v4, s1, v5],
-                    z3.And(
-                        Fwd(v1, v2, v4, s1),
-                        ConnectedNodes(v2, v3, v5, v4))))
-            constraints.append(c)
+        #if OutgoingFwdInterface is not None and Fwd is not None and ConnectedNodes is not None:
+        #    # Fwd entry must exists on the router to output the packet
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        OutgoingFwdInterface(v1, v2, v3) == z3.Exists(
+        #            [v4, str1, v5],
+        #            z3.And(
+        #                Fwd(v1, v2, v4, str1),
+        #                ConnectedNodes(v2, v3, v5, v4))))
+        #    constraints.append(const)
+#
+        #if OutgoingFwdInterface is not None and Interface is not None:
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            OutgoingFwdInterface(v1, v2, v3),
+        #            Interface(v3)))
+        #    constraints.append(const)
 
-        if OutgoingFwdInterface is not None and Interface is not None:
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    OutgoingFwdInterface(v1, v2, v3),
-                    Interface(v3)))
-            constraints.append(c)
+        #if IncomingFwdInterface is not None and Fwd is not None and ConnectedNodes is not None:
+        #    # Fwd entry must exists on a PREVIOUS router to output the packet
+        #    # to this router
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        IncomingFwdInterface(v1, v2, v3) == z3.Exists(
+        #            [v4, str1, v5],
+        #            z3.And(Fwd(v1, v4, v3, str1),
+        #                   ConnectedNodes(v4, v5, v2, v3))))
+        #    constraints.append(const)
 
-        if IncomingFwdInterface is not None and Fwd is not None and ConnectedNodes is not None:
-            # Fwd entry must exists on a PREVIOUS router to output the packet
-            # to this router
-            c = z3.ForAll(
-                [v1, v2, v3],
-                IncomingFwdInterface(v1, v2, v3) == z3.Exists(
-                    [v4, s1, v5],
-                    z3.And(Fwd(v1, v4, v3, s1),
-                           ConnectedNodes(v4, v5, v2, v3))))
-            constraints.append(c)
+        #if OutgoingFwdInterface is not None:
+        #    # Only one outgoing interface
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            OutgoingFwdInterface(v1, v2, v3),
+        #            z3.Not(
+        #                z3.Exists(
+        #                    [v4, v5, v6],
+        #                    z3.And(OutgoingFwdInterface(v4, v5, v6), v4 == v1, v5 == v2, v6 != v3)
+        #                ))))
+        #    constraints.append(const)
 
-        if OutgoingFwdInterface is not None:
-            # Only one outgoing interface
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    OutgoingFwdInterface(v1, v2, v3),
-                    z3.Not(
-                        z3.Exists(
-                            [v4, v5, v6],
-                            z3.And(OutgoingFwdInterface(v4, v5, v6), v4 == v1, v5 == v2, v6 != v3)
-                        ))))
-            constraints.append(c)
+        #if OutgoingFwdInterface is not None and EdgePhy is not None:
+        #    # Only have OutgoingFwdInterface through interfaces connected
+        #    # directly to the router
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            OutgoingFwdInterface(v1, v2, v3),
+        #            EdgePhy(v2, v3)))
+        #    constraints.append(const)
 
-        if OutgoingFwdInterface is not None and EdgePhy is not None:
-            # Only have OutgoingFwdInterface through interfaces connected
-            # directly to the router
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    OutgoingFwdInterface(v1, v2, v3),
-                    EdgePhy(v2, v3)))
-            constraints.append(c)
+        #if IncomingFwdInterface is not None and EdgePhy is not None:
+        #    # Only have IncomingFwdInterface through interfaces connected
+        #    # directly to the router
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            IncomingFwdInterface(v1, v2, v3),
+        #            EdgePhy(v2, v3)))
+        #    constraints.append(const)
 
-        if IncomingFwdInterface is not None and EdgePhy is not None:
-            # Only have IncomingFwdInterface through interfaces connected
-            # directly to the router
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    IncomingFwdInterface(v1, v2, v3),
-                    EdgePhy(v2, v3)))
-            constraints.append(c)
+        #if OutgoingFwdInterface is not None and IncomingFwdInterface is not None:
+        #    # If an interface is marked as outgoing then it cannot be incomming as well
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            OutgoingFwdInterface(v1, v2, v3),
+        #            z3.Not(IncomingFwdInterface(v1, v3, v2))))
+        #    constraints.append(const)
 
-        if OutgoingFwdInterface is not None and IncomingFwdInterface is not None:
-            # If an interface is marked as outgoing then it cannot be incomming as well
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    OutgoingFwdInterface(v1, v2, v3),
-                    z3.Not(IncomingFwdInterface(v1, v3, v2))))
-            constraints.append(c)
+        #    # If an interface is marked as incoming then it cannot be outgoing as well
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            IncomingFwdInterface(v1, v2, v3),
+        #            z3.Not(OutgoingFwdInterface(v1, v3, v2))))
+        #    constraints.append(const)
 
-            # If an interface is marked as incoming then it cannot be outgoing as well
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    IncomingFwdInterface(v1, v2, v3),
-                    z3.Not(OutgoingFwdInterface(v1, v3, v2))))
-            constraints.append(c)
-
-        if OutgoingFwdInterface is not None and EdgePhy is not None and IncomingFwdInterface is not None:
-            # If the router is not a terminating for the given network,
-            # The must have IncomingFwdInterface
-            # TODO(AH): NOT WORKING RIGHT NOW
-            c = z3.ForAll(
-                [v1, v2, v3],
-                z3.Implies(
-                    z3.And(
-                        OutgoingFwdInterface(v1, v2, v3),
-                        z3.Not(EdgePhy(v1, v2))),
-                    z3.Exists(
-                        [v4, v5, v6],
-                        z3.And(IncomingFwdInterface(v4, v5, v6), v4 == v1, v6 == v2, v4 != v3))))
-            #constraints.append(c)
+        #if OutgoingFwdInterface is not None and EdgePhy is not None and IncomingFwdInterface is not None:
+        #    # If the router is not a terminating for the given network,
+        #    # The must have IncomingFwdInterface
+        #    # TODO(AH): NOT WORKING RIGHT NOW
+        #    const = z3.ForAll(
+        #        [v1, v2, v3],
+        #        z3.Implies(
+        #            z3.And(
+        #                OutgoingFwdInterface(v1, v2, v3),
+        #                z3.Not(EdgePhy(v1, v2))),
+        #            z3.Exists(
+        #                [v4, v5, v6],
+        #                z3.And(IncomingFwdInterface(v4, v5, v6), v4 == v1, v6 == v2, v4 != v3))))
+        #    #constraints.append(c)
 
         for name, func in self.boxes[box_name]['inputs'].iteritems():
             func_const = self.generate_function_constraints(func)
