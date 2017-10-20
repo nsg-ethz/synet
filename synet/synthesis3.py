@@ -13,8 +13,6 @@ from synet.common import NETWORK_TYPE
 from synet.common import NODE_TYPE
 from synet.common import PEER_TYPE
 from synet.common import VERTEX_TYPE
-from synet.common import datatype_route_cost
-from synet.common import z3_interface_links
 from synet.translation import translator
 from synet.translation.translator import Translator
 from synet.translation.translator import get_string_const_val
