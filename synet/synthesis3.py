@@ -2025,7 +2025,8 @@ class Synthesizer(object):
                         if net not in peer_asnums:
                             peer_asnums[net] = nextpeer_asnum
                             nextpeer_asnum += 10
-                        external_peers.append(SetExternalPeer(net, peer_asnums[net], node))
+                        external_peers.append(
+                            SetExternalPeer(net, peer_asnums[net], node))
                         if ext not in origins_asnums:
                             origins_asnums[ext] = nextorigin_asnum
                             nextorigin_asnum += 10
@@ -2033,7 +2034,8 @@ class Synthesizer(object):
                         peername = 'AS%d' % peer_asnums[net]
                         attrs = {
                             VERTEX_TYPE: PEER_TYPE,
-                            'bgp': {'asnum': peer_asnums[net], 'neighbors': {}, 'announces': {}}
+                            'bgp': {'asnum': peer_asnums[net],
+                                    'neighbors': {}, 'announces': {}}
                         }
                         if not g.has_node(peername):
                             g.add_node(peername, **attrs)
@@ -2046,7 +2048,8 @@ class Synthesizer(object):
                                          access='permit', match=match,
                                          action='set local-preference 200')
 
-                        announcements.append(SetAnnouncement(ext, net, node, origins_asnums[ext]))
+                        announcements.append(
+                            SetAnnouncement(ext, net, node, origins_asnums[ext]))
                         peering_nets.append(ext)
                         # g, node, neighbor, access, match, action, lineno = None)
         if gen_bgp:
@@ -2064,8 +2067,10 @@ class Synthesizer(object):
                 g.add_edge(src, dst, **dict(EDGE_TYPE=NETWORK_TYPE))
                 g.add_edge(dst, src, **dict(EDGE_TYPE=NETWORK_TYPE))
             elif t == (INTERFACE_TYPE, INTERFACE_TYPE):
-                srouter = [i for i in self.network_graph.neighbors(src) if is_router(self.network_graph, i)][0]
-                drouter = [i for i in self.network_graph.neighbors(dst) if is_router(self.network_graph, i)][0]
+                srouter = [i for i in self.network_graph.neighbors(src)
+                           if is_router(self.network_graph, i)][0]
+                drouter = [i for i in self.network_graph.neighbors(dst)
+                           if is_router(self.network_graph, i)][0]
                 g.add_edge(srouter, drouter, edge_type=INTERNAL_EDGE)
                 if gen_ospf:
                     cost = self.ospf_costs.get((src, dst), None)
