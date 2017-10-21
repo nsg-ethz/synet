@@ -1,0 +1,7 @@
+Node(n) -> string(n).
+Network(n) -> string(n).
+Interface(n) -> string(n).
+
+TestNode(n1, n2) -> Node(n1), Node(n1).
+
+TestNode(n1, n2) <- n1="NODE:R1", n2="NODE:R2".

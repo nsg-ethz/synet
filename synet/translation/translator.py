@@ -15,7 +15,8 @@ LB_TYPE_TO_Z3_TYPE['Network'] = NETWORK
 LB_TYPE_TO_Z3_TYPE['string'] = z3.BitVecSort(BIT_VEC_SIZE)
 LB_TYPE_TO_Z3_TYPE['int'] = z3.IntSort()
 
-STRING_TO_NODE = {'R1': z3.Const('R1', NODE)}
+STRING_TO_NODE = {'R1': z3.Const('R1', NODE),
+                  'R2': z3.Const('R2', NODE)}
 STRING_TO_INTERFACE = {'R3_I2': z3.Const('R3_I2', INTERFACE),
                        'R2_I2': z3.Const('R2_I2', INTERFACE),
                        'R1_I2': z3.Const('R1_I2', INTERFACE),
@@ -193,6 +194,6 @@ class Translator:
       
 if __name__ == '__main__':
   unroll_limit = 2
-  box = Translator('/Users/ptsankov/work/synet/synet.git/synet/datalog/ahmed-example-02.logic', unroll_limit)
+  box = Translator('/Users/ptsankov/work/synet/synet.git/synet/datalog/ahmed-example-03.logic', unroll_limit)
     
   print box.to_z3()
