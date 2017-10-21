@@ -6,8 +6,8 @@ from constant import Constant
 BIT_VEC_SIZE = 5 # for encoding string constants
 LB_TYPE_TO_Z3_TYPE = {}
 (NODE, x) = z3.EnumSort('Node', ['R1']) # link with the synthesizer type for network node
-(INTERFACE, x) = z3.EnumSort('Interface', ['I1']) # link with the synthesizer type for interface
-(NETWORK, x) = z3.EnumSort('Network', ['N1']) # link with the synthesizer type for network
+(INTERFACE, y) = z3.EnumSort('Interface', ['I1']) # link with the synthesizer type for interface
+(NETWORK, z) = z3.EnumSort('Network', ['N1']) # link with the synthesizer type for network
 
 LB_TYPE_TO_Z3_TYPE['Node'] = NODE
 LB_TYPE_TO_Z3_TYPE['Interface'] = INTERFACE
