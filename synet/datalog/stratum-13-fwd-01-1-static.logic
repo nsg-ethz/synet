@@ -15,6 +15,6 @@ Fwd(net, node, nxt, protocol) -> Network(net), Node(node), Node(nxt), string(pro
 
 Fwd(net, node, nxt, protocol) <-
     SetStaticRoute(net, node, nxt),
-    protocol="STRING_static".
+    protocol="STRING:static".
 
 // ------------------------------ THE END ------------------------------//

@@ -31,15 +31,15 @@ BestBGPRoute(network, src, next) <-
 
 Route(net, node, nxt, protocol) <-
     BestBGPRoute(net, node, nxt),
-    protocol="bgp".
+    protocol="STRING:bgp".
 
 Route(net, node, nxt, protocol) <-
     BestOSPFRoute(net, node, nxt, _),
-    protocol="ospf".
+    protocol="STRING:ospf".
 
 Route(net, node, nxt, protocol) <-
     SetStaticRoute(net, node, nxt),
-    protocol="static".
+    protocol="STRING:static".
 
 // Computation
 nonMinCostAD(network, node, cost) <- 
