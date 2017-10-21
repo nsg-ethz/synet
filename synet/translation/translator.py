@@ -6,18 +6,21 @@ from constant import Constant
 BIT_VEC_SIZE = 5 # for encoding string constants
 LB_TYPE_TO_Z3_TYPE = {}
 (NODE, x) = z3.EnumSort('Node', ['R1']) # link with the synthesizer type for network node
-(IFACE, x) = z3.EnumSort('Interface', ['I1']) # link with the synthesizer type for interface
-(NET, x) = z3.EnumSort('Network', ['N1']) # link with the synthesizer type for network
+(INTERFACE, x) = z3.EnumSort('Interface', ['I1']) # link with the synthesizer type for interface
+(NETWORK, x) = z3.EnumSort('Network', ['N1']) # link with the synthesizer type for network
 
 LB_TYPE_TO_Z3_TYPE['Node'] = NODE
-LB_TYPE_TO_Z3_TYPE['Interface'] = IFACE
-LB_TYPE_TO_Z3_TYPE['Network'] = NET
+LB_TYPE_TO_Z3_TYPE['Interface'] = INTERFACE
+LB_TYPE_TO_Z3_TYPE['Network'] = NETWORK
 LB_TYPE_TO_Z3_TYPE['string'] = z3.BitVecSort(BIT_VEC_SIZE)
 LB_TYPE_TO_Z3_TYPE['int'] = z3.IntSort()
 
 STRING_TO_NODE = {'R1': z3.Const('R1', NODE)}
-STRING_TO_IFACE = {'I1': z3.Const('I1', IFACE)}
-STRING_TO_NET = {'N1': z3.Const('N1', NET)}
+STRING_TO_INTERFACE = {'R3_I2': z3.Const('R3_I2', INTERFACE),
+                       'R2_I2': z3.Const('R2_I2', INTERFACE),
+                       'R1_I2': z3.Const('R1_I2', INTERFACE),
+                       'R3_I1': z3.Const('R3_I1', INTERFACE)}
+STRING_TO_NETWORK = {'N1': z3.Const('N1', NETWORK)}
 STRING_TO_BITVAL = {}
 
 
@@ -140,13 +143,13 @@ class Translator:
                 z3_right_terms.append(right_term.value)
               elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value in STRING_TO_NODE.keys():
                 z3_right_terms.append(STRING_TO_NODE[right_term.value])
-              elif right_term.is_constant and right_term.type == Constant.IFACE_CONSTANT and right_term.value in STRING_TO_IFACE.keys():
-                z3_right_terms.append(STRING_TO_IFACE[right_term.value])
-              elif right_term.is_constant and right_term.type == Constant.NET_CONSTANT and right_term.value in STRING_TO_NET.keys():
-                z3_right_terms.append(STRING_TO_NET[right_term.value])
+              elif right_term.is_constant and right_term.type == Constant.INTERFACE_CONSTANT and right_term.value in STRING_TO_INTERFACE.keys():
+                z3_right_terms.append(STRING_TO_INTERFACE[right_term.value])
+              elif right_term.is_constant and right_term.type == Constant.NETWORK_CONSTANT and right_term.value in STRING_TO_NETWORK.keys():
+                z3_right_terms.append(STRING_TO_NETWORK[right_term.value])
               elif right_term.is_constant and right_term.type == Constant.STRING_CONSTANT and right_term.value in STRING_TO_BITVAL.keys():
                 z3_right_terms.append(STRING_TO_BITVAL[right_term.value])
-              elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value not in STRING_TO_NODE.keys() + STRING_TO_NET.keys() + STRING_TO_IFACE.keys() + STRING_TO_BITVAL.keys():
+              elif right_term.is_constant and right_term.type == Constant.NODE_CONSTANT and right_term.value not in STRING_TO_NODE.keys() + STRING_TO_NETWORK.keys() + STRING_TO_INTERFACE.keys() + STRING_TO_BITVAL.keys():
                 z3_right_terms.append(get_string_const_val(right_term.value))
               else:
                 raise NameError('Unknown term: {}'.format(right_term))             
@@ -190,6 +193,6 @@ class Translator:
       
 if __name__ == '__main__':
   unroll_limit = 2
-  box = Translator('/Users/ptsankov/work/synet/synet.git/synet/datalog/ahmed-example-01.logic', unroll_limit)
+  box = Translator('/Users/ptsankov/work/synet/synet.git/synet/datalog/ahmed-example-02.logic', unroll_limit)
     
   print box.to_z3()

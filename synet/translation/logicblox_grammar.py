@@ -19,7 +19,7 @@ from program import Program
 
 predicate_name = Regex(r'[a-zA-Z][a-zA-Z0-9_]*')
 variable_name = Regex(r'[a-zA-Z_][a-zA-Z0-9_]*').setParseAction(parse_variable)
-string_constant = Regex(r'"[a-zA-Z0-9\_\-]+"').setParseAction(parse_constant)
+string_constant = Regex(r'"[a-zA-Z0-9\_\-]+:[a-zA-Z0-9\_\-]+"').setParseAction(parse_constant)
 integer_constant = Word(nums).setParseAction(parse_constant)
 constant = string_constant | integer_constant
 term = variable_name | constant
@@ -36,6 +36,7 @@ eq = Literal('=')
 neq = Literal('!=')
 lt = Literal('<')
 gt = Literal('>')
+colon = Literal(':')
 leq = Literal('<=')
 geq = Literal('>=')
 comp = eq | neq | lt | gt | leq | geq
