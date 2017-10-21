@@ -336,7 +336,7 @@ class Synthesizer(object):
                 // ----------------------------- TYPES ----------------------------- //
                 // Generic Vertex type
                 Node(n) -> string(n).
-                Ntwork(n) -> string(n).
+                Network(n) -> string(n).
                 Interface(n) -> string(n).
                 ConnectedNodes(snode, siface, diface, dnode) ->
                 Node(snode), Interface(siface), Interface(diface), Node(dnode).
@@ -357,7 +357,7 @@ class Synthesizer(object):
                                     src_iface = src_nxt_link[1]
                                     nxt_iface = src_nxt_link[2]
                                     if nxt not in ospf_costs[net].keys():
-                                        newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = {}.'.format(
+                                        newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost), src="INTERFACE:{}", nxt="INTERFACE:{}", cost = {}.'.format(
                                             net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
                                         print newRule
                                         ospf_reduced.write(newRule + '\n')
@@ -366,7 +366,7 @@ class Synthesizer(object):
                                         ospf_reduced.write(newRule + '\n')
                                     else:
                                         for next2 in ospf_costs[net][nxt].keys():
-                                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE_{}", nxt="INTERFACE_{}", cost = cost1 + {}.'.format(
+                                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE:{}", nxt="INTERFACE:{}", cost = cost1 + {}.'.format(
                                                 net, src, nxt, src_iface, nxt_iface, ospf_costs[net][nxt][next2])
                                             print newRule
                                             ospf_reduced.write(newRule + '\n')
@@ -382,7 +382,7 @@ class Synthesizer(object):
                 newTranslator = Translator(ospf_reduced.name, self.unrolling_limit)
                 newTranslator.STRING_TO_NODE = self.name_to_node
                 newTranslator.STRING_TO_NET = self.name_to_network
-                newTranslator.STRING_TO_IFACE = self.name_to_iface
+                newTranslator.STRING_TO_INTERFACE = self.name_to_iface
 
                 self.boxes[box_name]['solver'] = z3.Solver()
                 self.boxes[box_name]['solver'].append(newTranslator.to_z3())
@@ -1944,7 +1944,7 @@ class Synthesizer(object):
         self.name_to_iface = dict((str(v), v) for v in self.interfaces)
         translator.STRING_TO_NODE = self.name_to_node
         translator.STRING_TO_NET = self.name_to_network
-        translator.STRING_TO_IFACE = self.name_to_iface
+        translator.STRING_TO_INTERFACE = self.name_to_iface
         self.announced_networks = [self.name_to_network[name] for name
                                    in self.announced_network_names]
 
