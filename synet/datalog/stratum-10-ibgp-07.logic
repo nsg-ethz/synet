@@ -1,24 +1,26 @@
 
 // ----------------------------- TYPES ----------------------------- //
 
-Vertex(n) -> string(n).
+Node(n) -> string(n).
+Network(n) -> string(n).
+
 
 // EDB: nonMinAsPath, ConnectedBGPRoute, SetStaticRoute, SetStaticRouteCost, SetNetwork, BestOSPFRoute
-nonMinAsPath(node, prefix, asPathLength) -> Vertex(node), Vertex(prefix), int(asPathLength).
+nonMinAsPath(node, prefix, asPathLength) -> Node(node), Network(prefix), int(asPathLength).
 ConnectedBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath),
+    Node(node), Network(next_hop), Network(prefix), string(ASPath),
     int(ASPathLength), int(pref).
 //SetStaticRoute(network, src, next) -> Vertex(network), Vertex(src), Vertex(next).
 //SetStaticRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
 //SetNetwork(src, network) -> Vertex(src), Vertex(network).
-BestOSPFRoute(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+BestOSPFRoute(network, src, next, cost) -> Network(network), Node(src), Node(next), int(cost).
 
 // IBGP: MinAsPathBGPRoute, StaticRouteCost
 MinAsPathBGPRoute(node, next_hop, prefix, ASPath, ASPathLength, pref) ->
-    Vertex(node), Vertex(next_hop), Vertex(prefix), string(ASPath), int(ASPathLength), int(pref).
+    Node(node), Network(next_hop), Network(prefix), string(ASPath), int(ASPathLength), int(pref).
 
 //StaticRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
-IGPRouteCost(network, src, next, cost) -> Vertex(network), Vertex(src), Vertex(next), int(cost).
+IGPRouteCost(network, src, next, cost) -> Network(network), Node(src), Node(next), int(cost).
 
 // ------------------------------ IBGP 7/9 ------------------------------//
 

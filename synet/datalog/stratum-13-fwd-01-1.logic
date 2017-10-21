@@ -2,16 +2,18 @@
 
 // ----------------------------- TYPES ----------------------------- //
 
-// Generic Vertex type
-Vertex(n) -> string(n).
+// Custom types
+Node(n) -> string(n).
+Network(n) -> string(n).
+
 
 // EDB: BestOSPFRoute, SetStaticRoute, SetAdminDist
-Route(net, node, nxt, protocol) -> Vertex(net), Vertex(node), Vertex(nxt), string(protocol).
-SetAdminDist(node, protocol, cost) -> Vertex(node), string(protocol), int(cost).
+Route(net, node, nxt, protocol) -> Network(net), Node(node), Node(nxt), string(protocol).
+SetAdminDist(node, protocol, cost) -> Node(node), string(protocol), int(cost).
 
 // IDB: Route, nonMinCostAD, Fwd
-nonMinCostAD(network, node, cost) -> Vertex(network), Vertex(node), int(cost).
-Fwd(net, node, nxt, protocol) -> Vertex(net), Vertex(node), Vertex(nxt), string(protocol).
+nonMinCostAD(network, node, cost) -> Network(network), Node(node), int(cost).
+Fwd(net, node, nxt, protocol) -> Network(net), Node(node), Node(nxt), string(protocol).
 
 // ------------------------------ FWD 1/3 ------------------------------//
 
