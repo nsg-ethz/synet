@@ -358,7 +358,7 @@ class Synthesizer(object):
                                     src_iface = src_nxt_link[1]
                                     nxt_iface = src_nxt_link[2]
                                     if nxt not in ospf_costs[net].keys():
-                                        newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost), src="INTERFACE:{}", nxt="INTERFACE:{}", cost = {}.'.format(
+                                        newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE:{}", nxt="INTERFACE:{}", cost = cost1 + {}.'.format(
                                             net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
                                         print newRule
                                         ospf_reduced.write(newRule + '\n')
@@ -367,8 +367,8 @@ class Synthesizer(object):
                                         ospf_reduced.write(newRule + '\n')
                                     else:
                                         for next2 in ospf_costs[net][nxt].keys():
-                                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE:{}", nxt="INTERFACE:{}", cost = cost1 + {}.'.format(
-                                                net, src, nxt, src_iface, nxt_iface, ospf_costs[net][nxt][next2])
+                                            newRule = 'OSPFRoute_{}_{}_{}(cost) <- SetOSPFEdgeCost(src, nxt, cost), src="INTERFACE:{}", nxt="INTERFACE:{}", cost = {}.'.format(
+                                                net, src, nxt, src_iface, nxt_iface, ospf_costs[net][src][nxt])
                                             print newRule
                                             ospf_reduced.write(newRule + '\n')
                                             newRule = 'OSPFRoute_{}_{}_{}(cost) -> int(cost).'.format(net, src, nxt)
