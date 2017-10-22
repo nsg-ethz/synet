@@ -947,14 +947,14 @@ class Synthesizer(object):
                 [net1, node1, node2, int1],
                 z3.Implies(
                     BestOSPFRoute(net1, node1, node2, int1),
-                    z3.Exists(
-                        [node3, int2],
-                        z3.Or(
+                    z3.Or(
+                        self.connected_networks_f(node3, net1),
+                        z3.Exists(
+                           [node3, int2],
                             z3.And(
                                 BestOSPFRoute(net1, node2, node3, int2),
-                                int2 < int1,
-                                node3 != node1),
-                            self.connected_networks_f(node3, net1)))))
+                                int1 < int2,
+                                node3 != node1)))))
             constraints.append(const)
 
             # Don't Forward directly connected networks
@@ -1043,15 +1043,15 @@ class Synthesizer(object):
                 [net1, node1, node2, int1],
                 z3.Implies(
                     OSPFRoute(net1, node1, node2, int1),
-                    z3.Exists(
-                        [node3, int2],
-                        z3.Or(
+                    z3.Or(
+                        self.connected_networks_f(node2, net1),
+                        z3.Exists(
+                            [node3, int2],
                             z3.And(
                                 OSPFRoute(net1, node2, node3, int2),
-                                int2 < int1,
-                                node3 != node1),
-                            self.connected_networks_f(node2, net1)))))
-            #constraints.append(c)
+                                int1 < int2,
+                                node3 != node1)))))
+            #constraints.append(const)
 
             const = z3.ForAll(
                 [net1, node1, node2, node3, int1, int2],
