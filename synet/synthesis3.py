@@ -1348,13 +1348,10 @@ class Synthesizer(object):
             constraints.append(const)
 
         if SetNetwork is not None:
+            connected_networks_used = True
             const = z3.ForAll(
-                [node1, node2, net1],
-                z3.Implies(
-                    z3.And(
-                        SetNetwork(node1, net1) == True,
-                        SetNetwork(node2, net1) == True),
-                    node2 == node1))
+                [node1, net1],
+                self.connected_networks_f(node1, net1) == SetNetwork(node1, net1))
             constraints.append(const)
 
         if SetInterface is not None:
