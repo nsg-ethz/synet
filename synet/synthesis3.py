@@ -464,7 +464,7 @@ class Synthesizer(object):
                     solver.append(c)
                 orig_name = get_original_version(func_name)
                 return_else = True
-                if orig_name in ['BGPLocalPref', 'OSPFRoute']:
+                if orig_name in ['BGPLocalPref', 'OSPFRoute', 'BGPRoute']:
                     return_else = False
                 if orig_name in yes_func_vals:
                     fed_output = self._process_vals(
@@ -482,7 +482,7 @@ class Synthesizer(object):
             for func_name, func in self.boxes[box_name]['inputs'].iteritems():
                 orig_name = get_original_version(func_name)
                 return_else = True
-                if orig_name in ['BGPLocalPref', 'OSPFRoute', 'nonMinOSPFRouteCost', 'nonMaxBGPLocalPref']:
+                if orig_name in ['BGPLocalPref', 'OSPFRoute', 'BGPRoute', 'nonMinOSPFRouteCost', 'nonMaxBGPLocalPref']:
                     return_else = False
                 if orig_name in yes_func_vals:
                     fed_output = self._process_vals(
@@ -503,7 +503,7 @@ class Synthesizer(object):
                 print 'SAT, reading inputs...'
                 model = solver.model()
                 for name, func in self.boxes[box_name]['inputs'].iteritems():
-                    if name == 'BGPRoute': continue
+                    #if name == 'BGPRoute': continue
                     vals = self._get_function_vals(func, model)
                     if len(vals) == 0:
                         vals = ['False']
@@ -782,7 +782,7 @@ class Synthesizer(object):
         # Create the constraint
         constraint = [z3.ForAll(
             variables, z3.Not(z3.And(func(*variables), z3.Or(*checks))))]
-        if func_name == 'BGPAnnouncement':
+        if func_name == 'BGPAnnouncement' and False:
             constraint.append(
                 z3.ForAll(
                     variables,
@@ -1302,9 +1302,25 @@ class Synthesizer(object):
                     z3.Exists(
                         [node2, net3, int2],
                         z3.And(BGPLocalPref(node2, net3, net1, int2), int1 < int2))
-
-                    ))
+                   ))
+            #constraints.append(const)
+            const = z3.ForAll(
+                [net1, int1],
+                z3.Implies(
+                    nonMaxBGPLocalPref(net1, int1),
+                    z3.Exists([node1, net2], BGPLocalPref(node1, net2, net1, int1))))
             constraints.append(const)
+
+            const = z3.ForAll(
+                [net1, int1],
+                nonMaxBGPLocalPref(net1, int1) == z3.Exists(
+                    [node1, node2, net2, net3, int2],
+                    z3.And(
+                        BGPLocalPref(node1, net2, net1, int1),
+                        BGPLocalPref(node2, net3, net1, int2),
+                        int2 < int1)))
+            constraints.append(const)
+
 
         if MaxBGPLocalPrefBGPRoute is not None and BGPLocalPref is not None:
             const = z3.ForAll(
