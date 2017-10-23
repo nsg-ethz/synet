@@ -953,7 +953,7 @@ class Synthesizer(object):
                            [node3, int2],
                             z3.And(
                                 BestOSPFRoute(net1, node2, node3, int2),
-                                int1 < int2,
+                                int1 > int2,
                                 node3 != node1)))))
             constraints.append(const)
 
