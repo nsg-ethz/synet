@@ -21,7 +21,7 @@ def main():
     with open(args.fixed_outputs) as f:
         fixed_outputs = f.read()
     if args.mode == 'bgp':
-        BOXES_ORDER = ['ibgp03', 'ibgp04', 'ibgp05', 'ibgp06', 'ibgp07', 'ibgp08', 'ibgp09',
+        BOXES_ORDER = ['ibgp01', 'ibgp02', 'ibgp03', 'ibgp04', 'ibgp05', 'ibgp06', 'ibgp07', 'ibgp08', 'ibgp09',
                        'ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']
     elif args.mode == 'ospf':
         BOXES_ORDER = ['ospf01', 'ospf02-0', 'ospf02-1', 'fwd01-0', 'fwd01-1']
