@@ -948,7 +948,7 @@ class Synthesizer(object):
                 z3.Implies(
                     BestOSPFRoute(net1, node1, node2, int1),
                     z3.Or(
-                        self.connected_networks_f(node3, net1),
+                        self.connected_networks_f(node2, net1),
                         z3.Exists(
                            [node3, int2],
                             z3.And(
