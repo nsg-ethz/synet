@@ -882,13 +882,22 @@ class Synthesizer(object):
 
         if nonMinIGPCost is not None and IGPRouteCost is not None:
             const = z3.ForAll(
-                [net1, node1, node2, node3, int1, int1],
-                z3.Implies(
+                [net1, node1, int1],
+                nonMinIGPCost(node1, net1, int1) == z3.Exists(
+                    [node2, node3, int2],
                     z3.And(
                         IGPRouteCost(net1, node1, node2, int1),
                         IGPRouteCost(net1, node1, node3, int2),
-                        int2 < int1),
-                    nonMinIGPCost(node1, net1, int2)))
+                        int2 < int1)))
+            constraints.append(const)
+
+            const = z3.ForAll(
+                [net1, node1, node2, int1, int1],
+                z3.Implies(
+                    nonMinIGPCost(node1, net1, int1),
+                    z3.Exists(
+                        [node2],
+                        IGPRouteCost(net1, node1, node2, int1))))
             constraints.append(const)
 
         if BGPAnnouncement is not None and BGPRoute is not None:
