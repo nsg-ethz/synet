@@ -31,8 +31,9 @@ To synthesize the configrations for this example, SyNET can be invoked as follow
 ```
 
 The argument `-i` specifies the input topology. The topology is represented as a set of Datalog predicates.
-For instance. `+SetNode("R1"").` adds a router `R1` to the topology, while `+SetLink("R1_I1", "R2_I1").`
+For instance. `+SetNode("R1").` adds a router `R1` to the topology, while `+SetLink("R1_I1", "R2_I1").`
 specifics that there is a link between the two interfaces `R1_I1` and `R2_I1`.
+_Note_, the `+` at the beginning of the predicate and `.` at the end of it.
 
 
 The argument `-r` specifices the requirements to be implemented on the given topology.
