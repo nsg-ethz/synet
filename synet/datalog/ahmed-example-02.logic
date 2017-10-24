@@ -1,8 +1,0 @@
-Interface(n) -> string(n).
-
-OSPFRoute_R2_N1_R1_R3(cost) -> int(cost).
-OSPFRoute_R2_N1_R3_R2(cost) -> int(cost).
-SetOSPFEdgeCost(src, nxt, cost1) -> Interface(src), Interface(nxt), int(cost1).
-
-OSPFRoute_R2_N1_R1_R3(cost) <- SetOSPFEdgeCost(src, nxt, cost1), src="INTERFACE:R1_I2", nxt="INTERFACE:R3_I1", cost = cost1 + 16.
-OSPFRoute_R2_N1_R3_R2(cost) <- SetOSPFEdgeCost(src, nxt, cost), src="INTERFACE:R3_I2", nxt="INTERFACE:R2_I2", cost = 16.

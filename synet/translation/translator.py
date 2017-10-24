@@ -191,9 +191,3 @@ class Translator:
         if predicate_name in self.nonrecursive_idb_predicate_names:
           break
     return z3_constraints
-      
-if __name__ == '__main__':
-  unroll_limit = 2
-  box = Translator('/Users/ptsankov/work/synet/synet.git/synet/datalog/ahmed-example-03.logic', unroll_limit)
-    
-  print box.to_z3()
