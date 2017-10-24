@@ -517,7 +517,6 @@ class Synthesizer(object):
                 box_name = self.boxes_names[box_index]
                 print "!" * 20
                 print "UNSAT going back to", box_index, box_name
-                exit(-1)
                 no_vals = []
                 for func_name, func in self.boxes[box_name]['inputs'].iteritems():
                     orig_name = get_original_version(func_name)
