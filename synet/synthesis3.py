@@ -13,6 +13,14 @@ from synet.common import NETWORK_TYPE
 from synet.common import NODE_TYPE
 from synet.common import PEER_TYPE
 from synet.common import VERTEX_TYPE
+from synet.gen_configs import GNS3TopologyGen
+from synet.graph_util import get_bgp_attrs
+from synet.graph_util import SetAnnouncement
+from synet.graph_util import SetExternalPeer
+from synet.graph_util import add_input_filter
+from synet.graph_util import add_bgp_neighbor
+from synet.graph_util import add_ip_prefix_list
+from synet.graph_util import IPList
 from synet.translation import translator
 from synet.translation.translator import Translator
 from synet.translation.translator import get_string_const_val
@@ -149,9 +157,7 @@ class Synthesizer(object):
         variables = []
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
         for i, t in enumerate(FUNCS_SIG[func_name]):
-            if t == 'Vertex':
-                variables.append(z3.Const('t%d' % i, self.vertex))
-            elif t == 'Node':
+            if t == 'Node':
                 tmp = z3.Const('t%d' % i, self.node_sort)
                 variables.append(tmp)
             elif t == 'Network':
@@ -270,29 +276,6 @@ class Synthesizer(object):
             vals = self._get_function_vals(func, model)
             filterd_val = [val[:-1] for val in vals if z3.is_true(val[-1])]
             print "\tSynthesized output", name, filterd_val
-
-    def get_ospf_constraints(self, ospf_route, ospf_route2, vals):
-        ret = []
-        t1, t2 = z3.Consts('t1 t2', z3.IntSort())
-        v1, v2 = z3.Consts('v1 v2', self.vertex)
-
-        for val in vals:
-            if not isinstance(val, list):
-                continue
-            net, src, nxt = val[0], val[1], val[2]
-            const = z3.And(
-                z3.Exists(
-                    [t1],
-                    ospf_route(net, src, nxt, t1)),
-                z3.Not(
-                    z3.Exists(
-                        [v1, t2],
-                        z3.And(
-                            ospf_route2(net, src, v1, t2),
-                            v1 != v2,
-                            t2 < t1))))
-            ret.append(const)
-        return ret
 
     def synthesize(self):
         print "Beginning Synthesis..."
@@ -801,24 +784,24 @@ class Synthesizer(object):
         is_announced_network, is_protocol, is_as_path, is_as_path_length, constraints = self._common_datatypes()
         string_sort = translator.LB_TYPE_TO_Z3_TYPE['string']
 
-        Node = inputs.get('Node', None)
-        Interface = inputs.get('Interface', None)
-        Network = inputs.get('Network', None)
-        EdgePhy = inputs.get('EdgePhy', outputs.get('EdgePhy', None))
+        #Node = inputs.get('Node', None)
+        #Interface = inputs.get('Interface', None)
+        #Network = inputs.get('Network', None)
+        #EdgePhy = inputs.get('EdgePhy', outputs.get('EdgePhy', None))
         SetNetwork = inputs.get('SetNetwork', None)
         SetInterface = inputs.get('SetInterface', None)
         SetLink = inputs.get('SetLink', outputs.get('SetLink', None))
-        LinkOSPF = inputs.get('LinkOSPF', outputs.get('LinkOSPF', None))
+        #LinkOSPF = inputs.get('LinkOSPF', outputs.get('LinkOSPF', None))
         SetOSPFEdgeCost = inputs.get('SetOSPFEdgeCost', outputs.get('SetOSPFEdgeCost', None))
-        StaticRouteCost = inputs.get('StaticRouteCost', None)
+        #StaticRouteCost = inputs.get('StaticRouteCost', None)
         IGPRouteCost = inputs.get('IGPRouteCost', outputs.get('IGPRouteCost', None))
-        ConnectedBGPRoute = inputs.get('ConnectedBGPRoute', outputs.get('ConnectedBGPRoute', None))
+        #ConnectedBGPRoute = inputs.get('ConnectedBGPRoute', outputs.get('ConnectedBGPRoute', None))
         BestOSPFRoute = inputs.get('BestOSPFRoute', outputs.get('BestOSPFRoute', None))
         OSPFRoute = inputs.get('OSPFRoute', outputs.get('OSPFRoute', None))
         nonMinOSPFRouteCost = inputs.get('nonMinOSPFRouteCost', outputs.get('nonMinOSPFRouteCost', None))
         Route = inputs.get('Route', outputs.get('Route', None))
-        SetStaticRouteCost = inputs.get('SetStaticRouteCost', None)
-        SetStaticRoute = inputs.get('SetStaticRoute', outputs.get('SetStaticRoute', None))
+        #SetStaticRouteCost = inputs.get('SetStaticRouteCost', None)
+        #SetStaticRoute = inputs.get('SetStaticRoute', outputs.get('SetStaticRoute', None))
         MinIGPBGPRoute = inputs.get('MinIGPBGPRoute', outputs.get('MinIGPBGPRoute', None))
         nonMaxBGPLocalPref = inputs.get('nonMaxBGPLocalPref', outputs.get('nonMaxBGPLocalPref', None))
         BGPLocalPref = inputs.get('BGPLocalPref', outputs.get('BGPLocalPref', None))
@@ -959,7 +942,7 @@ class Synthesizer(object):
                     z3.Or(
                         self.connected_networks_f(node2, net1),
                         z3.Exists(
-                           [node3, int2],
+                            [node3, int2],
                             z3.And(
                                 BestOSPFRoute(net1, node2, node3, int2),
                                 int1 > int2,
@@ -1110,17 +1093,17 @@ class Synthesizer(object):
         #    const = datatype_route_cost(SetStaticRouteCost, is_network, is_node, self.vertex)
         #    constraints.append(const)
 
-        if EdgePhy is not None:
-            for src in self.network_graph.nodes():
-                src_v = self.get_vertex(src)
-                for dst in self.network_graph.nodes():
-                    dst_v = self.get_vertex(dst)
-                    if self.network_graph.has_edge(src, dst):
-                        constraints.append(EdgePhy(src_v, dst_v) == True)
-                    else:
-                        constraints.append(EdgePhy(src_v, dst_v) == False)
-            #const = z3.ForAll([v1, v2], z3.Implies(EdgePhy(v1, v2), EdgePhy(v2, v1)))
-            constraints.append(const)
+        #if EdgePhy is not None:
+        #    for src in self.network_graph.nodes():
+        #        src_v = self.get_vertex(src)
+        #        for dst in self.network_graph.nodes():
+        #            dst_v = self.get_vertex(dst)
+        #            if self.network_graph.has_edge(src, dst):
+        #                constraints.append(EdgePhy(src_v, dst_v) == True)
+        #            else:
+        #                constraints.append(EdgePhy(src_v, dst_v) == False)
+        #    #const = z3.ForAll([v1, v2], z3.Implies(EdgePhy(v1, v2), EdgePhy(v2, v1)))
+        #    constraints.append(const)
 
         if ConnectedNodes is not None:
             pairs = [
@@ -1295,15 +1278,6 @@ class Synthesizer(object):
             #constraints.append(c)
 
         if nonMaxBGPLocalPref is not None and BGPLocalPref is not None:
-            const = z3.ForAll(
-                [node1, net2, net1, int1],
-                nonMaxBGPLocalPref(net1, int1) == z3.And(
-                    BGPLocalPref(node1, net2, net1, int1),
-                    z3.Exists(
-                        [node2, net3, int2],
-                        z3.And(BGPLocalPref(node2, net3, net1, int2), int1 < int2))
-                   ))
-            #constraints.append(const)
             const = z3.ForAll(
                 [net1, int1],
                 z3.Implies(
@@ -1867,15 +1841,6 @@ class Synthesizer(object):
         # Make sure we read everything
         #assert not set([name for name, args in parsed_outputs]) - set(skipped)
 
-    def get_vertex(self, name):
-        """Takes a name string and returns the corresponding Z3 object"""
-        if isinstance(name, int):
-            name = str(name)
-        if isinstance(name, basestring):
-            return self.name_to_vertex[name]
-        else:
-            return name
-
     def get_name(self, vertex):
         """Takes a Z3 object and returns the corresponding name string """
         inv_map1 = {v: k for k, v in self.name_to_node.items()}
@@ -2010,16 +1975,6 @@ class Synthesizer(object):
 
     def gen_configs(self, outdir):
         print "Generating router configs"
-        from synet.gen_configs import GNS3TopologyGen
-        from synet.graph_util import get_bgp_attrs
-        from synet.graph_util import SetAnnouncement
-        from synet.graph_util import SetExternalPeer
-        from synet.graph_util import add_input_filter
-        from synet.graph_util import add_bgp_neighbor
-        from synet.graph_util import add_ip_prefix_list
-        from synet.graph_util import IPList
-
-
         g = nx.DiGraph()
         is_network = lambda g, node: g.node[node][VERTEX_TYPE] == NETWORK_TYPE
         is_router = lambda g, node: g.node[node][VERTEX_TYPE] == NODE_TYPE
