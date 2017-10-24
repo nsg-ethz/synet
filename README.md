@@ -5,9 +5,10 @@ SyNET is a system to synthesis network wide configurations given forwarding requ
 ## SyNET requirements
 
 SyNET depends on the following packages
-
+0. Install `pip`: check your operating system specific instructions or https://pip.pypa.io/en/stable/installing/.
 1. networkx: `pip install networkx`
-2. z3 wih python bindings, see https://github.com/Z3Prover/z3
+2. enum34: `pip install enum34`
+3. z3 wih python bindings, see https://github.com/Z3Prover/z3
 
 
 ## Running SyNET
