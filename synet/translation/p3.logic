@@ -1,6 +1,0 @@
-XX(x, y) -> int(x), int(y).
-WW(x, y) -> int(x), int(y).
-
-
-WW(x, y) <- XX(x, y).
-WW(x, y) <- WW(x, z), WW(z, y).
