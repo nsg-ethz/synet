@@ -52,7 +52,7 @@ in addition to Internet2 topology. This set were used in evaluating SyNET for CA
 You can run these examples via:
 
 ```bash
-TOPO=gridrand4; REQ=5; PROT=bgp; time ./synet.py -i examples/CAV-experiments/$TOPO-$PROT-$REQ.logic  -r examples/CAV-experiments/$TOPO-$PROT-$REQ-req.logic -m $PROT
+TOPO=examples/CAV-experiments/gridrand3; REQ=5; PROT=bgp; ./synet.py -i $TOPO-$PROT-$REQ.logic -r $TOPO-$PROT-$REQ-req.logic -m $PROT
 ```
 
 
@@ -62,5 +62,5 @@ at `examples/topozoo`.
 You can run these examples via:
 
 ```bash
-TOPO=AttMpls; REQ=1; PROT=bgp; time ./synet.py -i examples/topozoo/$TOPO-$PROT-$REQ.logic  -r examples/topozoo/$TOPO-$PROT-$REQ-req.logic -m $PROT
+TOPO=examples/topozoo/AttMpls; REQ=1; PROT=bgp; ./synet.py -i $TOPO-$PROT-$REQ.logic -r $TOPO-$PROT-$REQ-req.logic -m $PROT
 ```
