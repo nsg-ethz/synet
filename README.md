@@ -22,14 +22,13 @@ SyNET is invoked using the following command
 TOPO=gridrand4; REQ=5; PROT=bgp; time ./synet.py -i examples/CAV-experiments/$TOPO-$PROT-$REQ.logic  -r examples/CAV-experiments/$TOPO-$PROT-$REQ-req.logic -m $PROT
 ```
 
-
 ```bash
 TOPO=AttMpls; REQ=1; PROT=bgp; time ./synet.py -i examples/topozoo/$TOPO-$PROT-$REQ.logic  -r examples/topozoo/$TOPO-$PROT-$REQ-req.logic -m $PROT
 ```
 
 
 ### Provided Examples:
-We provide two sets of examples. The first set in `examples/CAV-experiments` is a set of synthesized grid topologies
+We provide two sets of examples. The first set, in `examples/CAV-experiments`, is a set of synthesized grid topologies
 in addition to Internet2 topology. This set were used in evaluating SyNET for CAV'17 paper.
 The second set, are more realistic examples take from [The Internet Topology Zoo](http://www.topology-zoo.org/) and located
 at `examples/topozoo`.
