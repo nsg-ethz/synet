@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+"""
+Read GraphML topology files from topozoo and generate SyNET inputs
+for the topology and the requirements.
+"""
+
 import glob
 import os
 import networkx as nx
@@ -6,6 +12,10 @@ from synet.graph_util import topozoo_to_datalog
 from synet.graph_util import gen_ospf_reqs
 from synet.graph_util import gen_bgp_reqs
 from synet.graph_util import gen_static_reqs
+
+
+__author__ = "Ahmed El-Hassany"
+__email__ = "eahmed@ethz.ch"
 
 
 def main():
@@ -46,6 +56,7 @@ def main():
                     f.write(spec_static)
                 with open('examples/topozoo/%s-static-%d-req.logic' % (toponame, traffic_classes), 'w') as f:
                     f.write(reqs_static)
+
 
 if __name__ == '__main__':
     main()

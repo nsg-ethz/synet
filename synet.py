@@ -1,11 +1,16 @@
 #!/usr/bin/env python
+"""
+SyNET main runner
+"""
 
 import argparse
 import time
 
-#from synet.synthesizer import Synthesizer
 from synet.synthesis3 import Synthesizer
 from synet.utils import read_all_boxes
+
+__author__ = "Ahmed El-Hassany"
+__email__ = "eahmed@ethz.ch"
 
 
 def main():
