@@ -23,4 +23,4 @@
 
 
 +SetNetwork("R2", "R2_N1").
-+SetBGPAnnouncement("R2", "R2_N1", "Google", "1;2;3", 3).
++SetBGPAnnouncement("R2", "R2_N1", "ExtTraffic", "1;2;3", 3).
